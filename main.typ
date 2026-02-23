@@ -1388,6 +1388,10 @@ Every power starts with a header that lists the power's name, type and rank, as 
 
 The next line in the power describes what the power does from the perspective of the game world.
 
+=== Prerequisites
+
+The first entry in the power block proper describes what conditions a character must fulfill to be able to invoke the power. For example, a power might require a specific type of weapon 
+
 === Range
 
 This entry describes what the power affects and at what range it does so. Ranges are expressed in the form [target] [within [range][; [special]]], where _target_ is either a number of valid targets and their description or an area, _range_ expresses the distance from the user that the power can be manifested in (if any) and _special_ expresses any special modifiers to the range.
