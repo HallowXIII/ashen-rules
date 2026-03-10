@@ -1448,11 +1448,17 @@ Spellcasting is an intricately formulaic affair, and due to the required accurac
 
 Where arcane powers represent an almost scientific approach to the working of magic, supernatural might distilled into repeatable and distributable formulas accessible to any one with the required training, psychic powers are a much older and more primal way of using magical power. It is said that psychic magic is as close as mortals may get to understanding the power wielded by the gods when they still walked the earth.
 
+Psychic powers may be *augmented*, trading a greater difficulty to manifest the power for greater effects. This comes at a risk, as psychic powers manipulate reality itself; if a practitioner loses control over their magic, the consequences can be dire indeed.
+
+Psychic powers require a great deal of practice and study to master, and thus require XP to be spent for each power learned.
+
 === Divine Powers
 
 Divine powers are also known as _Prayers_. In order to use a prayer, a character must have a Reliquary equipped. A prayer's effects and focus cost depend on the reliquary equipped.
 
 Unlike spells, characters normally do not permanently learn new prayers. Instead, the divine power contained within a reliquary temporarily gives them access to a list of prayers specific to that reliquary as long as the reliquary remains equipped.
+
+Prayers are organized by _domain_, which represent an area of the world that a given deity has dominion over. Domains typically encompass one prayer per tier, but this may be more or fewer depending on the domain.
 
 Divine powers may have a _tap_ effect, which increases the strength of the power, but consumes favor (see _reliquaries_ for an explanation of favor).
 
@@ -1476,6 +1482,68 @@ Divine powers may have a _tap_ effect, which increases the strength of the power
 
 ==== Tier 6
 
+=== Divine
+
+  ==== Life Domain
+                                                                                                                                     
+  #power-description[
+  *Mend Wounds (tier 1)* \                                                                                                                        
+  Prayer (Life); Divine \                                            
+  Command 12; 1 Increment, 2 AP \
+  Range: one creature within 15 \
+  Effect: The target recovers HP equal to 100% of your catalyst's damage. \
+  Tap: The recovery increases to 200%.
+  ]
+
+  #power-description[
+  *Vigor of the Living (tier 2)* \
+  Prayer (Life); Divine \
+  Command 14; 2 Increments, 2 AP \
+  Range: Close; one creature \
+  Effect: The target gains temporary HP equal to 3D6 + twice your Will. These temporary HP last until the end of the encounter. \
+  Tap: The target also gains +2d to Endurance checks until the end of the encounter.
+  ]
+
+  #power-description[
+  *Cleansing Light (tier 3)* \
+  Prayer (Life); Divine \
+  Command 16; 2 Increments, 2 AP \
+  Range: Short; one creature \
+  Effect: Remove one status condition from the target (Poisoned, Diseased, Bleeding, Burning, or Blinded). The target then recovers HP equal to
+  2D8 + your Will. \
+  Tap: You may remove up to two status conditions instead of one.
+  ]
+
+  #power-description[
+  *Breath of Resurrection (tier 4)* \
+  Prayer (Life); Divine, Ritual \
+  Command 18; 4 Increments, 3 AP \
+  Range: Melee; one dead creature \
+  Effect: A creature that has been dead for no more than one hour is restored to life with HP equal to twice your Will. The resurrected creature
+  is Exhausted and Vulnerable until they complete a rest. \
+  Tap: The creature is restored with HP equal to half their maximum HP instead, and they are no longer Exhausted or Vulnerable.
+  ]
+
+  #power-description[
+  *Regeneration (tier 5)* \
+  Prayer (Life); Divine \
+  Command 20; 3 Increments; sustain 1, 2 AP; sustain 1 AP \
+  Range: Close; one creature \
+  Effect: At the start of each of the target's turns, they recover HP equal to 2D6 + your Will. \
+  Tap: The regeneration increases to 3D6 + your Will.
+  ]
+
+  #power-description[
+  *Circle of Vitality (tier 6)* \
+  Prayer (Life); Divine \
+  Command 22; 4 Increments, 3 AP \
+  Range: Burst 4 centered on you; all allies in burst \
+  Effect: All allies in the area immediately recover HP equal to 4D8 + twice your Will. Additionally, all allies gain immunity to one status
+  condition of your choice (chosen when you cast this prayer) for 3 rounds. \
+  Tap: Allies also gain temporary HP equal to 3D6 and the immunity duration increases to 5 rounds.
+  ]
+
+
 == Spell Descriptions
 
 = Equipment
@@ -1490,22 +1558,11 @@ Reliquaries are catalysts with two unique stats: *will* and *favor*. These repre
 
 If the favor check is passed, the character loses the casting penalties to prayers with that reliquary and gains the amount of *favor* indicated on the reliquary's stat block (usually 1). A character may expend favor in two ways: to *tap* a prayer, increasing its power (see the section on prayers for an explanation) as well as to pass a failed command check made to cast a prayer. If a character's favor with a reliquary drops to 0, casting prayers with that reliquary is again subject to the will penalty of the reliquary.
 
-If a character fails a favor check, they have displeased the deity and suffer the consequences. Roll on the table below:
+If a character fails a favor check, they have displeased the deity and suffer the consequences.
 
-#table(
-  columns: 2,
-  align: (center, left),
+Reliquaries also control the prayers that a wielder can make use of. Each reliquary typically gives access to prayers from between one to three domains. The maximum tier of prayer that a wielder receives from the reliquary is equal to the tier of the reliquary. For example, a tier three reliquary that grants access to the Life and Fire domains would grant access to prayers in those domains up to tier three, as long as it remained wielded.
 
-  [*d100*], [*Effect*],
-  [01-05], [The deity takes pity on you; the favor check is counted as passed.],
-  [06-15], [The deity is slightly rankled at your ineptitude. Until you pass a favor check, all subsequent favor checks are made at +2 difficulty.],
-  [16-30], [The deity is annoyed at your incapacity. You are afflicted with a curse that increases the difficulty of all checks made to use powers by 2, until you pass a favor check.],
-  [31-50], [The deity is incensed at your imbecility. You immediately take 200% damage (reduced by Magic Armor); until you pass a favor check, any healing you receive is halved.],
-  [51-75], [The deity is enraged at your fecklessness. You immediately take 100% damage, bypassing any damage reduction; additionally, you become slowed and weakened (5) until you return to the deity's good graces.],
-  [76-89], [The deity is deeply wroth at your impudence. You and all your allies immediately take 100% damage, bypassing any damage reduction; additionally, you all take a -2 penalty to all checks you make until the disfavor passes.],
-  [90-99], [The deity is utterly furious at your heresy. You die instantly. When you revive, you are afflicted with a curse that prevents you from benefiting from favor, even with the reliquaries of other deities. Until you absolve yourself of the stain, you cannot attempt another favor check with the reliquary.],
-  [100], [The deity is blind with rage at your blasphemy. You are destroyed in a fulminant burst of divine power; you die instantly, and everything within 5 squares of takes 400% radiant damage. Until you perform a quest for absolution, you can no longer cast divine prayers with any reliquary of that deity.],
-)
+Some reliquaries may grant access to unique prayers not part of any domain, or specific prayers outside of the domains they ordinarily grant access to. In these cases, those prayers are specially noted in the reliquary's stat block.
 
 == Equipment Tables
 
