@@ -330,12 +330,16 @@ All Echoes gain the following racial traits:
 
 You gain the following power:
 
-#power-description[
-*Fey Jaunt* \
-Psionic Power (Warp); Innate \
-Move Action, 6 F, 2 AP \
-Select one square within your move range. You teleport to it. \
-]
+#power-description(
+  "Fey Jaunt",
+  "Psionic Power",
+  none,
+  "Move Action, 2 AP",
+  "Select one square within your move range. You teleport to it.",
+  domain: "Warp",
+  keywords: "Innate",
+  cost: "6 FP",
+)
 
 *Vindictive*
 
@@ -360,15 +364,17 @@ Mirrors gain the following racial trait:
 The old, hidden world of the fey is dead, but you can still call up its echoes
 to bewilder your foes. You gain the following power:
 
-#power-description[
-*Dance of the Spring Court* \
-Psionic Power (Warp); Innate \
-6 F; Reaction (Immediate Interrupt) \
-Trigger: You are targeted by an attack \
-Effect: You may immediately teleport to any free space within 2 meters. This
-power does not stop the triggering attack; apply the rules for a missing
-target.
-]
+#power-description(
+  "Dance of the Spring Court",
+  "Psionic Power",
+  none,
+  "Reaction (Immediate Interrupt)",
+  "You may immediately teleport to any free space within 2 meters. This power does not stop the triggering attack; apply the rules for a missing target.",
+  domain: "Warp",
+  keywords: "Innate",
+  cost: "6 FP",
+  trigger: "You are targeted by an attack",
+)
 
 
 === Shades
@@ -386,17 +392,16 @@ huntress. You retain some of her essence.
 
 You gain the following power:
 
-#power-description[
-*Hunt of the Autumn Court* \
-Psychic Power (Innate, Unerring) \
-AP 2 • F 6 / Tier \
-Range 15; One target \
-Target one enemy within range that you or your allies can see. You place a mark
-upon it; while it is marked, your ranged attacks against the target ignore
-obscuration and partial cover. Additionally, whenever you use your Fey Jaunt
-power, you can choose to appear in a square adjacent to your enemy instead,
-even if the enemy would otherwise be out of range.
-]
+#power-description(
+  "Hunt of the Autumn Court",
+  "Psychic Power",
+  none,
+  "2 AP",
+  "Target one enemy within range that you or your allies can see. You place a mark upon it; while it is marked, your ranged attacks against the target ignore obscuration and partial cover. Additionally, whenever you use your Fey Jaunt power, you can choose to appear in a square adjacent to your enemy instead, even if the enemy would otherwise be out of range.",
+  keywords: "Innate, Unerring",
+  cost: "6 FP per Tier",
+  range: "15; one target",
+)
 
 == Soot-Beasts
 #flavor[“The Lion-Headed God of War, jealous of his brother, pawned his innocence to the Boar-Mother
@@ -501,13 +506,14 @@ two points of disapproval.
 Falcon-Headed Kharu is a great and terrible father; he demands much, but he
 rewards with pride the efforts of his children. You gain the following power:
 
-#power-description[
-*Gift of the Sun* \
-Spell Action, 0 F, 1 AP \
-You can lose half your Health; all allies within close range
-that have line of sight to you immediately recover a quarter of their
-Health.
-]
+#power-description(
+  "Gift of the Sun",
+  "Spell",
+  none,
+  "Spell Action, 1 AP",
+  "You can lose half your Health; all allies within close range that have line of sight to you immediately recover a quarter of their Health.",
+  cost: "0 FP",
+)
 
 *Gift of the Earth*
 
@@ -1486,62 +1492,65 @@ Divine powers may have a _tap_ effect, which increases the strength of the power
 
   ==== Life Domain
                                                                                                                                      
-  #power-description[
-  *Mend Wounds (tier 1)* \                                                                                                                        
-  Prayer (Life); Divine \                                            
-  Command 12; 1 Increment, 2 AP \
-  Range: one creature within 15 \
-  Effect: The target recovers HP equal to 100% of your catalyst's damage. \
-  Tap: The recovery increases to 200%.
-  ]
+  #power-description(
+    "Mend Wounds", "Prayer", 1,
+    "2 AP",
+    "The target recovers HP equal to 100% of your catalyst's damage.",
+    domain: "Life", keywords: "Divine",
+    difficulty: "12", cost: "1 Increment",
+    range: "one creature within 15",
+    tap: "The recovery increases to 200%.",
+  )
 
-  #power-description[
-  *Vigor of the Living (tier 2)* \
-  Prayer (Life); Divine \
-  Command 14; 2 Increments, 2 AP \
-  Range: Close; one creature \
-  Effect: The target gains temporary HP equal to 3D6 + twice your Will. These temporary HP last until the end of the encounter. \
-  Tap: The target also gains +2d to Endurance checks until the end of the encounter.
-  ]
+  #power-description(
+    "Vigor of the Living", "Prayer", 2,
+    "2 AP",
+    "The target gains temporary HP equal to 3D6 + twice your Will. These temporary HP last until the end of the encounter.",
+    domain: "Life", keywords: "Divine",
+    difficulty: "Command 14", cost: "2 Increments",
+    range: "Close; one creature",
+    tap: "The target also gains +2d to Endurance checks until the end of the encounter.",
+  )
 
-  #power-description[
-  *Cleansing Light (tier 3)* \
-  Prayer (Life); Divine \
-  Command 16; 2 Increments, 2 AP \
-  Range: Short; one creature \
-  Effect: Remove one status condition from the target (Poisoned, Diseased, Bleeding, Burning, or Blinded). The target then recovers HP equal to
-  2D8 + your Will. \
-  Tap: You may remove up to two status conditions instead of one.
-  ]
+  #power-description(
+    "Cleansing Light", "Prayer", 3,
+    "2 AP",
+    "Remove one status condition from the target (Poisoned, Diseased, Bleeding, Burning, or Blinded). The target then recovers HP equal to 2D8 + your Will.",
+    domain: "Life", keywords: "Divine",
+    difficulty: "Command 16", cost: "2 Increments",
+    range: "Short; one creature",
+    tap: "You may remove up to two status conditions instead of one.",
+  )
 
-  #power-description[
-  *Breath of Resurrection (tier 4)* \
-  Prayer (Life); Divine, Ritual \
-  Command 18; 4 Increments, 3 AP \
-  Range: Melee; one dead creature \
-  Effect: A creature that has been dead for no more than one hour is restored to life with HP equal to twice your Will. The resurrected creature
-  is Exhausted and Vulnerable until they complete a rest. \
-  Tap: The creature is restored with HP equal to half their maximum HP instead, and they are no longer Exhausted or Vulnerable.
-  ]
+  #power-description(
+    "Breath of Resurrection", "Prayer", 4,
+    "3 AP",
+    "A creature that has been dead for no more than one hour is restored to life with HP equal to twice your Will. The resurrected creature is Exhausted and Vulnerable until they complete a rest.",
+    domain: "Life", keywords: "Divine, Ritual",
+    difficulty: "Command 18", cost: "4 Increments",
+    range: "Melee; one dead creature",
+    tap: "The creature is restored with HP equal to half their maximum HP instead, and they are no longer Exhausted or Vulnerable.",
+  )
 
-  #power-description[
-  *Regeneration (tier 5)* \
-  Prayer (Life); Divine \
-  Command 20; 3 Increments; sustain 1, 2 AP; sustain 1 AP \
-  Range: Close; one creature \
-  Effect: At the start of each of the target's turns, they recover HP equal to 2D6 + your Will. \
-  Tap: The regeneration increases to 3D6 + your Will.
-  ]
+  #power-description(
+    "Regeneration", "Prayer", 5,
+    "2 AP; sustain 1 AP",
+    "At the start of each of the target's turns, they recover HP equal to 2D6 + your Will.",
+    domain: "Life", keywords: "Divine",
+    difficulty: "Command 20", cost: "3 Increments; sustain 1",
+    range: "Close; one creature",
+    tap: "The regeneration increases to 3D6 + your Will.",
+  )
 
-  #power-description[
-  *Circle of Vitality (tier 6)* \
-  Prayer (Life); Divine \
-  Command 22; 4 Increments, 3 AP \
-  Range: Burst 4 centered on you; all allies in burst \
-  Effect: All allies in the area immediately recover HP equal to 4D8 + twice your Will. Additionally, all allies gain immunity to one status
-  condition of your choice (chosen when you cast this prayer) for 3 rounds. \
-  Tap: Allies also gain temporary HP equal to 3D6 and the immunity duration increases to 5 rounds.
-  ]
+  #power-description(
+    "Circle of Vitality", "Prayer", 6,
+    "3 AP",
+    "All allies in the area immediately recover HP equal to 4D8 + twice your Will. Additionally, all allies gain immunity to one status condition of your choice (chosen when you cast this prayer) for 3 rounds.",
+    domain: "Life", keywords: "Divine",
+    difficulty: "Command 22", cost: "4 Increments",
+    range: "Burst 4 centered on you; all allies in burst",
+    tap: "Allies also gain temporary HP equal to 3D6 and the immunity duration increases to 5 rounds.",
+  )
 
 
 == Spell Descriptions
