@@ -152,19 +152,16 @@ Once you have made up your mind on what kind of character you wish to play, you 
 
 The first step is to pick your character’s race. Your character’s race indicates a lot about their history and origin. It also sets your basic physical traits and grants you access to race-specific powers – choose wisely!
 
-=== 2. Pick a Background
-Once you have determined your character’s race, the next step is to pick a Background. Backgrounds represent your character’s past experience and training, and determine your initial trained skills and skill talents.
+=== 2. Determine Attributes
+When you have picked your race, pick three of your attributes (page xx) to start at 2. The rest start at 1.
 
-=== 3. Determine Attributes
-When you have picked your race and background, pick three of your attributes (page xx) to start at 2. The rest start at 1.
-
-=== 4. Buy Advances 
+=== 3. Buy Advances
 Every character starts with some number of experience points (1000 at the beginning of the game) representing their previous combat experience and training. You can spend these points to improve your stats and learn combat powers.
 
-=== 5. Buy Equipment
+=== 4. Buy Equipment
 Each character begins the game with some amount of money that can be used to buy gear and items for your character.
 
-=== 6. Finishing Details
+=== 5. Finishing Details
 Once you have completed all the above steps, you can complete your character sheet by calculating your character’s statistics, which all depend on the choices made in previous sections.
 
 
@@ -531,7 +528,7 @@ before modifiers are applied.
 
 Attributes are used together with skills to make die rolls. Every point in an
 attribute adds one die to the pool. For a description of each skill, see the
-skills section of the rules. //TODO link
+skills section of the rules.
 
 Attributes also influence a character’s combat statistics, which are described below:
 
@@ -729,7 +726,7 @@ your skill check was successful.
 The modalities of your skill check depend on the circumstances and your
 character’s training. Some talents or items can grant you a bonus to your skill
 check, while some external circumstances may increase the difficulty of your
-task. As an ex3 (Copy)ample, if you are making an athletics check to climb up a cliff
+task. As an example, if you are making an athletics check to climb up a cliff
 face, you may benefit from a bonus to your check if you have taken along proper
 mountaineering equipment. Conversely, if you are surprised by a sudden storm,
 your skill check may become more difficult than you expected.
@@ -1525,7 +1522,19 @@ Advances are unlocked by spending experience points during downtime. Insert more
 
 = Advance Lists
 
-== Arcane 
+== Arcane
+
+#advance-block("Spell Memory I", 1, 150, 0, 2, "None", [You gain the ability to cast Tier 1 spells. You can prepare up to one Tier 1 spell each time you memorize spells for the day. You may take this advance multiple times, adding a new Tier 1 spell slot each time.])
+
+#advance-block("Spell Memory II", 2, 250, 0, 2, "Spell Memory I", [You gain the ability to cast Tier 2 spells. You gain a Tier 2 spell slot with which you can prepare one Tier 2 or lower spell each time you memorize spells for the day. You may take this advance multiple times, adding a new Tier 2 slot each time.])
+
+#advance-block("Spell Memory III", 3, 375, 1, 2, "Spell Memory II, Arcane 8", [You gain the ability to cast Tier 3 spells. You gain a Tier 3 spell slot with which you can prepare one Tier 3 or lower spell each time you memorize spells for the day. You may take this advance multiple times, adding a new Tier 3 slot each time.])
+
+#advance-block("Spell Memory IV", 4, 500, 1, 4, "Spell Memory III", [You gain the ability to cast Tier 4 spells. You gain a Tier 4 spell slot with which you can prepare one Tier 4 or lower spell each time you memorize spells for the day. You may take this advance multiple times, adding a new Tier 4 slot each time.])
+
+#advance-block("Spell Memory V", 5, 750, 2, 5, "Spell Memory IV, Arcane 10", [You gain the ability to cast Tier 5 spells. You gain a Tier 5 spell slot with which you can prepare one Tier 5 or lower spell each time you memorize spells for the day. You may take this advance multiple times, adding a new Tier 5 slot each time.])
+
+#advance-block("Spell Memory VI", 6, 1100, 3, 8, "Spell Memory V, Arcane 12", [You gain the ability to cast Tier 6 spells. You gain a Tier 6 spell slot with which you can prepare one Tier 6 or lower spell each time you memorize spells for the day. You may take this advance multiple times, adding a new Tier 6 slot each time.])
 
 #advance-block("Ambient Power", 3, 550, 1, 4, "Arcane 8", [You gain a +3 bonus to your Arcane rolls to cast every spell beyond the first one on your turn.])
 
@@ -1535,11 +1544,19 @@ Advances are unlocked by spending experience points during downtime. Insert more
 
 == Command
 
+#advance-block("Warlock Acolyte", 1, 200, 1, 1, "None", [While you are controlling a summoned creature, you gain one extra AP per round. This AP can only be spent to perform a move action.])
+
 == Dodge
 
 #advance-block("Action Roll", 3, 500, 3, 2, "Dodge 7", [Your dive range is increased from 3 to 5 squares.])
 
 #advance-block("Parting Strike", 2, 350, 3, 0, "Dodge 5, Martial 5", [When you disengage, you may make a melee attack against an adjacent target. This attack cannot hit more than once.])
+
+#advance-block("Vault", 1, 150, 2, 0, "None", [You can pass through squares occupied by enemy creatures as if they were difficult terrain.])
+
+#advance-block("Outmaneuver", 1, 200, 1, 1, "Press the Advantage, Vault", [When an enemy misses you with a melee attack, you can immediately move through its space as a free action, ending on the other side of it. While neither you nor that enemy perform any further actions, you have combat advantage against it.])
+
+#advance-block("Bullet Time", 4, 1000, 6, 4, "None", [When targeted by a single-target ranged attack, you can spend a reaction to make a Dodge resist. Add half the successes to your Evasion for the purposes of calculating hits for this attack only.])
 
 == Grit
 
@@ -1559,11 +1576,37 @@ Advances are unlocked by spending experience points during downtime. Insert more
 
 #advance-block("Seize the Moment", 3, 550, 2, 3, "Initiative 8", [When you act before all other combatants do, you gain 2 extra AP on your first turn.])
 
+#advance-block("Riposte", 1, 150, 1, 0, "None", [If an enemy within your reach misses you with a melee attack: as a reaction, you can immediately make an attack against that enemy with your equipped melee weapon.])
+
+#advance-block("Press the Advantage", 1, 200, 2, 0, "None", [You become adept at exploiting moments of inattentiveness. When you have combat advantage against a creature, your attacks and powers against that target have a +2 bonus to hit; additionally, your attacks against that target gain extra AP equal to your tier. You gain combat advantage against a creature when you are totally obscured from it, or when you are in a flanking position.])
+
+#advance-block("Lightning Reflexes", 3, 600, 3, 3, "Initiative 7, at least two Reaction advances", [You may take up to two reactions per round.])
+
 == Marksmanship
 
 #advance-block("Heavy Gunner", 3, 500, 5, 0, "Marksmanship 6, Stamina 5", [Wielding heavy weapons is second nature to you. You can brace your weapon as a free action.])
 
 == Martial
+
+#advance-block("Exploit (Tier 1)", 1, 250, 0, 2, "None", [This advance stands in for learning any Tier 1 Exploit. You learn one Tier 1 Exploit of your choice.])
+
+#advance-block("Pursuit", 1, 250, 2, 1, "Opportunity Attack", [When you use your opportunity attack reaction, after the attack resolves, you can immediately move up to your speed in the direction of the triggering enemy. You must end your move adjacent to the triggering enemy if possible.])
+
+#advance-block("Exploit (Tier 2)", 2, 550, 2, 4, "Any Tier 1 Exploit", [This advance stands in for learning any Tier 2 Exploit. You learn one Tier 2 Exploit of your choice.])
+
+#advance-block("Weapon Focus", 2, 300, 2, 1, "None", [Pick a class of melee weapon (such as sword, hammer, or axe). All attack rolls with a weapon of that type gain a +2 bonus. You may take this advance multiple times, but each one must apply to a different weapon type.])
+
+#advance-block("Monkey Grip", 2, 375, 4, 0, "None", [You can wield a two-handed weapon in one hand. When you do so, you gain a -2 penalty to attack rolls with that weapon.])
+
+#advance-block("Lotus Leaf Kata", 2, 300, 2, 1, "Lotus Art: Sage's Stance, Martial 5, Dodge 5", [While in _Sage's Stance_, you gain a +3 bonus to Parry checks.])
+
+#advance-block("Exploit (Tier 3)", 3, 1000, 4, 6, "Any Tier 2 Exploit", [This advance stands in for learning any Tier 3 Exploit. You learn one Tier 3 Exploit of your choice.])
+
+#advance-block("Exploit (Tier 4)", 4, 1850, 9, 9, "Any Tier 3 Exploit", [This advance stands in for learning any Tier 4 Exploit. You learn one Tier 4 Exploit of your choice.])
+
+#advance-block("Exploit (Tier 5)", 5, 2500, 12, 13, "Any Tier 4 Exploit", [This advance stands in for learning any Tier 5 Exploit. You learn one Tier 5 Exploit of your choice.])
+
+#advance-block("Exploit (Tier 6)", 6, 3500, 15, 20, "Any Tier 5 Exploit", [This advance stands in for learning any Tier 6 Exploit. You learn one Tier 6 Exploit of your choice.])
 
 == Potential
 
@@ -1573,9 +1616,31 @@ Advances are unlocked by spending experience points during downtime. Insert more
 
 == Psychic
 
+#advance-block("Quicken Magic", 1, 300, 0, 3, "None", [When you manifest a psychic power that costs 2 or more AP, you can expend one additional increment of focus to reduce the AP cost of that power by 1.])
+
+#advance-block("Maximize Magic", 1, 300, 0, 3, "None", [When you manifest a psychic power, you can expend one additional increment of focus to use the maximum value for each die roll to determine the effects or duration of the power instead of rolling.])
+
+#advance-block("Telepathy", 1, 300, 1, 2, "None", [You can communicate telepathically with creatures within 30 squares that you can see. Neither party requires a common spoken language.])
+
+#advance-block("Discipline (Tier 1)", 1, 250, 1, 2, "None", [This advance stands in for learning any Tier 1 Psychic power. You learn one Tier 1 Psychic power of your choice.])
+
+#advance-block("Discipline (Tier 2)", 2, 550, 1, 5, "Any Tier 1 Psychic power", [This advance stands in for learning any Tier 2 Psychic power. You learn one Tier 2 Psychic power of your choice.])
+
+#advance-block("Discipline (Tier 3)", 3, 1000, 3, 7, "Any Tier 2 Psychic power", [This advance stands in for learning any Tier 3 Psychic power. You learn one Tier 3 Psychic power of your choice.])
+
+#advance-block("Discipline (Tier 4)", 4, 1850, 5, 13, "Any Tier 3 Psychic power", [This advance stands in for learning any Tier 4 Psychic power. You learn one Tier 4 Psychic power of your choice.])
+
+#advance-block("Discipline (Tier 5)", 5, 2500, 7, 18, "Any Tier 4 Psychic power", [This advance stands in for learning any Tier 5 Psychic power. You learn one Tier 5 Psychic power of your choice.])
+
+#advance-block("Discipline (Tier 6)", 6, 3500, 10, 25, "Any Tier 5 Psychic power", [This advance stands in for learning any Tier 6 Psychic power. You learn one Tier 6 Psychic power of your choice.])
+
 == Speed
 
 == Stamina
+
+#advance-block("Conditioning", 1, 150, 2, 0, "Strength 2, Endurance 2", [Treat the bulk of all armor as 1 lower than it actually is (subject to category minimums).])
+
+#advance-block("Powered Proficiency", 3, 550, 4, 1, "Conditioning, Stamina 6", [You gain the ability to use powered armor in powered mode. While wearing powered armor, you benefit from all your advances that improve your wearing of armor.])
 
 = Magic and Powers
 
@@ -1669,7 +1734,11 @@ Divine powers may have a _tap_ effect, which increases the strength of the power
 
 === Martial Powers
 
+Martial powers, also known as _Exploits_, are special techniques and disciplines practiced by warriors and fighters. Unlike spells, exploits do not require a catalyst; most require only a weapon to use. Exploits are learned permanently and remain available for as long as the character meets their prerequisites.
+
 === Command Powers
+
+Command powers represent the use of authority and force of will over other creatures. They include abilities to direct summoned creatures, rally allies, and break the morale of enemies.
 
 == Spell Lists
 
@@ -1677,15 +1746,91 @@ Divine powers may have a _tap_ effect, which increases the strength of the power
 
 ==== Tier 1
 
+#power-description(
+  "Flamethrower", "Arcane Spell", 1,
+  "2",
+  "All creatures and objects within the cone take 100% Thermal damage. All flammable objects within the area catch fire. All targets struck take ongoing 3/T Thermal damage (save ends).",
+  keywords: "Fire",
+  range: "Cone 10",
+  difficulty: "2",
+  cost: "1 Increment",
+  resistance: "Yes (Dodge vs Arcane Check)",
+)
+
+#power-description(
+  "Lightning Bolt", "Arcane Spell", 1,
+  "2",
+  "On hit: 100% electric damage vs MArm, and the target is stunned for one round.",
+  keywords: "Lightning",
+  flavor: "You raise your catalyst, and with a deafening peal of thunder, a bolt of lightning erupts from it to smite your enemies.",
+  range: "Line 10",
+  difficulty: "3",
+  cost: "1 Increment",
+  resistance: "Yes (Stamina 3)",
+)
+
 ==== Tier 2
+
+#power-description(
+  "Fireball", "Arcane Spell", 2,
+  "2",
+  "On hit: All creatures and objects within the burst take 200% Thermal damage. Flammable objects within the target area catch fire; all creatures take ongoing 5/T Thermal damage (save ends).",
+  keywords: "Fire",
+  flavor: "With a wave of your hand, a brilliant sphere of energy erupts from your catalyst, streaking towards your target before detonating with a dull roar.",
+  range: "Burst 3 within 30",
+  difficulty: "4",
+  cost: "2 Increments",
+  resistance: "Yes (Dodge 4)",
+)
 
 ==== Tier 3
 
+#power-description(
+  "Fulmination", "Arcane Spell", 3,
+  "3",
+  "On hit: 200% electric damage, and the target is stunned for one round.",
+  keywords: "Lightning",
+  flavor: "For a split second, hair stands on end and the air crackles with anticipation before a terrifying burst of electrical energy discharges from your catalyst, sending bolts of brilliant blue plasma tearing into every foe unfortunate enough to stand close to you.",
+  range: "Close Burst 5; all enemies within burst",
+  difficulty: "6",
+  cost: "3 Increments",
+  resistance: "Yes (Stamina 6)",
+  miss: "Half damage and the target is dazed instead.",
+)
+
+#power-description(
+  "Ice Storm", "Arcane Spell", 3,
+  "3",
+  "All targets within the range take 200% cold damage and must make a D6 Stamina resist. On failure, they are stunned for one round; afterwards, they are dazed and slowed (5) (save ends).",
+  keywords: "Ice, Wind",
+  flavor: "Temperatures start to drop precipitously as a whirlwind picks up. The storm lasts only a few seconds, leaving everything covered in a sheet of glistening ice.",
+  range: "Burst 5 within 20",
+  difficulty: "8",
+  cost: "3 Increments",
+  resistance: "Yes (Stamina 6)",
+)
+
 ==== Tier 4
+
+#power-description(
+  "Solar Flare", "Arcane Spell", 4,
+  "3",
+  "All creatures and objects within the line take 300% Thermal damage. Additionally, all targets must make a D9 Stamina resist; on failure, they lose 3/T armor/hardness. Flammable objects and living targets reduced to 0 Health by this power turn to ash.",
+  keywords: "Fire",
+  flavor: "You stretch out your hand and cast a wave of blazing plasma, bathing all before you in the fury of a burning star.",
+  range: "Line 15",
+  difficulty: "8",
+  cost: "3 Increments",
+  resistance: "Yes",
+)
 
 ==== Tier 5
 
+_No Tier 5 arcane spells are available in this playtest draft._
+
 ==== Tier 6
+
+_No Tier 6 arcane spells are available in this playtest draft._
 
 === Divine
 
@@ -1751,6 +1896,268 @@ Divine powers may have a _tap_ effect, which increases the strength of the power
     tap: "Allies also gain temporary HP equal to 3D6 and the immunity duration increases to 5 rounds.",
   )
 
+
+=== Psychic
+
+==== Tier 1
+
+#power-description(
+  "Twist of Fate", "Psychic Power", 1,
+  "2",
+  "On the target's next roll, you may modify the result by +1 or -1. Augment 2: You may use this power as a reaction.",
+  keywords: "Fate, Reaction",
+  range: "1 within 12",
+  difficulty: "5",
+  cost: "1 Increment",
+)
+
+#power-description(
+  "Slow", "Psychic Power", 1,
+  "2",
+  "The target must make a D4 Potential save. On failure: the target loses 1 AP while the spell lasts. They also gain a -2 penalty to their Movement Speed and a -10 penalty to their Initiative value. This effect cannot decrease Movement Speed below 2 or Initiative below 0. Augment 1: The duration changes to save ends. Augment 2: The resist difficulty is increased to D7.",
+  keywords: "Time",
+  range: "1 creature within 12",
+  difficulty: "4",
+  cost: "1 Increment",
+)
+
+#power-description(
+  "Piercing Silence", "Psychic Power", 1,
+  "2",
+  "The target area becomes a zone of magical silence. While the spell is active, no-one within the zone may cast a spell or manifest a power. It is possible to brute-force the silence; a casting check over a difficulty of 8 will break this spell.",
+  range: "Burst 3 within 10",
+  difficulty: "5",
+  cost: "2 Increments",
+)
+
+==== Tier 2
+
+#power-description(
+  "Reversal of Fortune", "Psychic Power", 2,
+  "2",
+  "On the target's next roll, all 6s count as 1 success. Augment 2: You may use this power as a reaction.",
+  keywords: "Fate",
+  range: "1 within 12",
+  difficulty: "6",
+  cost: "2 Increments",
+  resistance: "Yes (Potential 5)",
+)
+
+#power-description(
+  "Haste", "Psychic Power", 2,
+  "2",
+  "The target gains 1 additional AP while the spell lasts. They also gain a +2 bonus to their Movement Speed and a +10 bonus to their Initiative value. Duration: 2 rounds. Augment 2: The duration increases to 2+1d3 rounds. Augment 2: The bonuses to speed and initiative increase to +3 and +15, respectively.",
+  keywords: "Time",
+  range: "1 creature within 10",
+  difficulty: "5",
+  cost: "2 Increments",
+)
+
+#power-description(
+  "Banish", "Psychic Power", 2,
+  "2",
+  "The target must make a D4 Stamina save. On failure, it is banished to the Void and dies instantly. Augment 2: The resist difficulty increases to 6.",
+  keywords: "Void, Death",
+  range: "1 within 12",
+  difficulty: "6",
+  cost: "2 Increments",
+  resistance: "Yes (Stamina 4)",
+)
+
+==== Tier 3
+
+#power-description(
+  "Cursed Fate", "Psychic Power", 3,
+  "2",
+  "For the duration of the effect, all 1s count as -2 successes, rather than -1. Duration: save ends. Augment 2: Saving against this effect requires 3 successes.",
+  keywords: "Fate, Curse",
+  range: "1 within 12",
+  difficulty: "7",
+  cost: "2 Increments",
+  resistance: "Yes (Potential 6)",
+)
+
+#power-description(
+  "Mass Slow", "Psychic Power", 3,
+  "2",
+  "The target(s) must make a D6 Potential save. On failure: the target loses 1 AP while the spell lasts. They also gain a -2 penalty to their Movement Speed and a -10 penalty to their Initiative value. This effect cannot decrease Movement Speed below 2 or Initiative below 0. Duration: 2 rounds. Augment 1: The duration changes to save ends. Augment 2: The resist difficulty is increased to D9.",
+  keywords: "Time",
+  range: "Burst 3 within 16",
+  difficulty: "7",
+  cost: "2 Increments",
+)
+
+==== Tier 4
+
+#power-description(
+  "Mass Haste", "Psychic Power", 4,
+  "3",
+  "The target(s) gain 1 additional AP while the spell lasts. They also gain a +2 bonus to their Movement Speed and a +10 bonus to their Initiative value. Duration: 2 rounds. Augment 2: The duration increases to 2+1d3 rounds. Augment 2: The bonuses to speed and initiative increase to +3 and +15, respectively.",
+  keywords: "Time",
+  range: "Burst 3 within 16",
+  difficulty: "8",
+  cost: "3 Increments",
+)
+
+#power-description(
+  "Implosion", "Psychic Power", 4,
+  "3",
+  "All targets within the burst must make a D8 Stamina resist; on failure, they are moved up to 5 m toward the center of the burst. Secondary: All targets within 3 m of the center take 200% Untyped damage. Any target in the center square of the burst takes 300% Untyped damage. Tertiary: Any target in the center of the burst must make a D6 Stamina resist or be banished to the Void (death effect). Augment 3: The range increases to Burst 12 within 36. Augment 2: The resist difficulty for the banishment effect increases to D8.",
+  keywords: "Void",
+  flavor: "A tiny portal to the void opens where the caster directs it to, sucking in the surrounding air as it expands briefly before it collapses in on itself, blinking out of existence.",
+  range: "Burst 10 within 30",
+  difficulty: "7",
+  cost: "2 Increments",
+  resistance: "Yes (Stamina 8)",
+)
+
+==== Tier 5
+
+#power-description(
+  "Cursed Fate, Mass", "Psychic Power", 5,
+  "3",
+  "For the duration of the effect, all 1s count as -2 successes, rather than -1. Duration: save ends. Augment 2: Saving against this effect requires 3 successes.",
+  keywords: "Fate, Curse",
+  range: "Burst 5 within 20; all enemies in burst",
+  difficulty: "10",
+  cost: "3 Increments",
+  resistance: "Yes (Potential 8)",
+)
+
+#power-description(
+  "Wounds from Nowhere", "Psychic Power", 5,
+  "2",
+  "The target must make a D8 Potential save; on failure, it takes 300% damage, ignoring armor. On success: it takes 100% damage. Whether the check fails or succeeds, the Void Blade cannot be used until the end of your next turn after you attempt to manifest this power, when it returns to your hand.",
+  keywords: "Void",
+  prerequisites: "You must be wielding the Void Blade",
+  range: "1 within 15",
+  difficulty: "7",
+  cost: "2 Increments",
+  resistance: "No (Ward applies)",
+)
+
+==== Tier 6
+
+_No Tier 6 psychic powers are available in this playtest draft._
+
+=== Martial Exploits
+
+==== Tier 1
+
+#power-description(
+  "Lotus Art: Impenetrable", "Exploit", 1,
+  "1; sustain 1",
+  "While in Impenetrable stance, you gain a +2 bonus to your Evasion.",
+  keywords: "Lotus Art, Stance",
+  flavor: "\"The true sage does not seek to counter strength with strength, but redirects it. The blade runs off him like water off a lotus leaf.\"",
+  cost: "--",
+)
+
+==== Tier 2
+
+#power-description(
+  "Lotus Art: Pure Land Burial", "Exploit", 2,
+  "2",
+  "On hit: the target takes 200% damage. Secondary: The target must make a D6 Potential resist. On failure: the target loses 5 EP, if applicable. A target killed by this power must make a D8 Potential resist each round it is dead; on failure, it cannot revive or be revived that turn. This power does not prevent discorporation.",
+  keywords: "Lotus Art",
+  flavor: "Every soul yearns to return to the soil of the Pure Land from which it was born. This blade will show it the way.",
+  range: "Weapon",
+  difficulty: "+2",
+  cost: "1 Increment",
+)
+
+#power-description(
+  "Keep Your Distance", "Exploit", 2,
+  "Reaction",
+  "When a creature moves into your weapon reach, as a reaction: you may make an attack against it. On hit: it takes 100% damage and you push it up to one square away from you. This interrupts its movement.",
+  keywords: "Reaction, Immediate Interrupt",
+  prerequisites: "You are wielding a reach weapon",
+  difficulty: "+2",
+  cost: "1 Increment",
+)
+
+#power-description(
+  "Piercing Thrust", "Exploit", 2,
+  "2",
+  "You lunge forward, thrusting your weapon at a weak point in the enemy's armor. On hit: the target suffers 200% damage. The attack's Pen value is equal to the damage roll.",
+  keywords: "Piercing",
+  prerequisites: "You are wielding a weapon that deals piercing damage",
+  range: "Weapon + 1",
+  difficulty: "+3",
+  cost: "2 Increments",
+)
+
+==== Tier 3
+
+#power-description(
+  "Lotus Art: Pearl Scissor", "Exploit", 3,
+  "2",
+  "All targets on the line are hit once by each wielded weapon, halving armor. Secondary: The target must make a D8 Potential save; on failure: it is stilled (save ends).",
+  keywords: "Lotus Art, Dual Wield",
+  flavor: "The honed blade cuts the line of the soul.",
+  prerequisites: "You must be wielding two bladed weapons",
+  range: "Line, Movement Range",
+  difficulty: "5",
+  cost: "2 Increments",
+  resistance: "Yes (Dodge 6)",
+)
+
+#power-description(
+  "Crashing Wave", "Exploit", 3,
+  "3",
+  "On hit: the target takes 200% damage and must make a D6 Stamina resist; on failure: the target is vaulted into the air, pushing it up to 3 squares. Secondary: You may make a secondary attack against the target at the same difficulty; on hit: the target takes 100% damage ignoring armor, is knocked prone, and must make a D6 Stamina resist; on failure: the target is stunned for one round.",
+  keywords: "Spear",
+  prerequisites: "You are wielding a polearm",
+  range: "Weapon",
+  difficulty: "+3",
+  cost: "2 Increments",
+  resistance: "Yes (Stamina 6)",
+)
+
+==== Tier 4
+
+#power-description(
+  "Lotus Art: Thousand Petal", "Exploit", 4,
+  "3",
+  "On hit: the target takes 100% damage, halving armor. The target must also make a D7 Potential save; on failure: it loses 2 EP.",
+  keywords: "Lotus Art, Dual Wield",
+  flavor: "When the creator made the universe, it is said that he first made a lotus flower of a thousand petals, and when he scattered the petals, from each one there blossomed a world.",
+  prerequisites: "You must be wielding two bladed weapons",
+  range: "Close Burst 5",
+  difficulty: "7",
+  cost: "2 Increments",
+  resistance: "Yes (Dive; Dodge 8)",
+)
+
+==== Tier 5
+
+#power-description(
+  "Lotus Art: Noble Eightfold Blade", "Exploit", 5,
+  "3",
+  "When you perform this exploit, you may make four attacks against the same or different targets. The difficulty of the first attack is equal to the target's evasion, increasing by 2 on each subsequent attack, up to +6 on the fourth. Each attack deals 100% damage at half armor. Secondary: After performing all attacks, targets hit must make a D9 Potential check. On failure, they suffer the following effects depending on how many times they were hit (these effects stack): 1 hit: the target is stilled. 2 hits: the target loses 5 EP. 3 hits: the target is exposed. 4 hits: the target dies instantly and loses 5 more EP.",
+  keywords: "Lotus Art, Dual Wield",
+  flavor: "\"The master said: there are eight worlds in creation. To truly kill your enemy, you must cut him down in each of them.\"",
+  prerequisites: "You must be wielding two bladed weapons",
+  range: "Weapon",
+  difficulty: "Special",
+  cost: "3 Increments",
+  resistance: "Yes (Potential 9)",
+)
+
+==== Tier 6
+
+#power-description(
+  "Forest of Corpses", "Unique Power", 6,
+  "3",
+  "Every creature targeted by this power must take a Dive reaction to avoid the stake (Dodge DC equal to this power's attack roll). On failure, it takes 300% piercing damage and is immobilized; in addition, it must make a D8 Stamina check or be stunned for one round. On each of the target's turns, it must make a D6 Athletics check to vault off the stake or take 100% damage and remain immobilized. Special: If you fail the attack roll to invoke this power, Kazykly becomes stuck in the ground. Pulling it back out is a 1 AP action and requires a successful D7 Martial check.",
+  keywords: "Weapon",
+  flavor: "You thrust Kazykly deep into the earth. For a second, everything is still before sharpened stakes of solid shadow erupt beneath your enemies.",
+  prerequisites: "You must be wielding Kazykly",
+  range: "Close Burst 10",
+  difficulty: "7",
+  cost: "3 Increments",
+  resistance: "Yes (Stamina 8)",
+)
 
 == Spell Descriptions
 
@@ -1822,11 +2229,11 @@ To decide your initiative, you must roll it when you enter into combat. To roll 
 
 ==== Beginning and Joining Combat
 
-A combat begins when the first 
+A combat begins when the first hostile action is taken or declared.
 
-If a combat begins and some participants are not aware of their opponents, they are surprised. A surprised combatant is *exposed* until they take their first turn. 
+If a combat begins and some participants are not aware of their opponents, they are surprised. A surprised combatant is *exposed* until they take their first turn.
 
-If this happens, the aware combatants may act in a special round 
+If this happens, the aware combatants may act in a special surprise round before the combat proper begins. During the surprise round, only aware combatants may act; surprised combatants skip their turns.
 
 ==== Extreme Initiative
 
@@ -1839,8 +2246,6 @@ A combatant that already has surprise and rolls an initiative higher than 99 als
 In combat (or other structured game time), everytime you wish to do something, you must take an action to do it. Actions consume action points; every creature has a set number of *Action Points (AP)*, usually 4 of them. On every creature’s turn, that creature can take actions by spending action points; when a creature is out of action points, it can no longer take additional actions and must end its turn. On the start of its turn, a creature recovers all its spent action points. Unspent ones are lost \- they do not carry over between turns.
 
 === Reactions
-
-note to self: paste 4e rulebook here
 
 ==== Triggering Reactions
 
@@ -1917,11 +2322,11 @@ Minor actions cost 1 AP each to perform.
 
 ===== Brace
 
-You can brace a heavy weapon to stabilize it. This can mean propping it against a stable surface, or taking a more stable position to fire it from. Once you have braced a heavy weapon, you remain braced until you move it from the braced position. While you have your heavy weapon braced, you can fire it normally 
+You can brace a heavy weapon to stabilize it. This can mean propping it against a stable surface, or taking a more stable position to fire it from. Once you have braced a heavy weapon, you remain braced until you move it from the braced position. While you have your heavy weapon braced, you can fire it normally without the penalty that would otherwise apply to heavy weapons.
 
 ===== Command
 
-If you are controlling a summoned creature, you can command it to 
+If you are controlling a summoned creature, you can command it to take an action on your turn. The creature will follow your instructions to the best of its ability.
 
 ===== Disengage
 
@@ -1929,7 +2334,7 @@ When you are in melee combat, you can disengage to move one square in any direct
 
 ===== Draw/Stash
 
-As a minor action, you can draw a weapon or item you have equipped to wield it, or you can 
+As a minor action, you can draw a weapon or item you have equipped to wield it, or you can stash a weapon or item you are currently wielding.
 
 ===== Drop Prone
 
