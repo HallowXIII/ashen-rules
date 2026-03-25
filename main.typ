@@ -282,7 +282,7 @@ combat walker frames called Construct Bodies. You begin the game with a
 construct body available to you. If at any point you wish to switch to a new
 one, your core must be uninstalled from your current body and inserted into the
 new one. This is an operation that takes significant time -- the engineer
-conducting it must roll Engineering against the Equipment Rank of the construct
+conducting it must roll Shop against the Equipment Rank of the construct
 body, with every roll taking one day. 
 
 *Integrated Weapons*
@@ -555,7 +555,7 @@ fight in the heaviest armor for hours without needing to rest.
 
 Endurance helps a character resist harsh environments and the exertions of long
 travel under muscle power. It influences a character’s Grit and Stamina
-characteristics. It also assists their Athletics and Survival skills.
+characteristics. It also assists their Athletics skill.
 
 === Agility
 Agility represents a character’s ability to move their body quickly and
@@ -565,12 +565,12 @@ devastatingly fast blows.
 
 Agility assists a character in almost all spheres of physical exertion. It
 influences a character’s Martial, Speed and Dodge characteristics. It also
-assists their Acrobatics and Ride skills.
+assists their Acrobatics skill.
 
 === Dexterity
 Where Agility is about speed and explosivity, Dexterity represents a character’s capacity for subtlety and finesse. A character with high Dexterity is much more likely to be able to repair an extremely complicated micromechanism or wriggle out of rope bindings than one with low Dexterity.
 
-Dexterity assists characters both in the control of their own body as well as in the manipulation of various mechanisms. Dexterity adds to a character’s Marksmanship characteristic, as well as their Infiltration, Ride, Art, Machining, Mechanics and Piloting skills.
+Dexterity assists characters both in the control of their own body as well as in the manipulation of various mechanisms. Dexterity adds to a character’s Marksmanship characteristic, as well as their Access, Shop and Piloting skills.
 === Attunement
 Attunement represents a character’s capacity to sense and manipulate the flow of magical energies around them. It is an indispensable attribute for would-be practitioners of Arcane magic, and those who would make effective use of the many wonders they produce. A character with low Attunement will find themselves oblivious to the presence of all but the most obvious magic, and poorly suited to make use of magical items. A high-Attunement character, on the other hand, will find these pursuits easy.
 
@@ -578,15 +578,15 @@ Attunement adds to a character’s Arcane and Potential characteristics. It also
 === Sight
 Sight represents a character’s proverbial Sixth Sense: an uncanny talent to know things that by rights ought to be unknowable. A character with high Sight is difficult to surprise and uncannily resourceful; with the appropriate training, sufficient Sight allows a character to pierce the veil of reality and perceive what lies beyond, allowing them a modicum of clairvoyance and the ability to make use of psychic powers.
 
-Sight contributes to a character’s Psychic and Initiative ratings. It is also useful for the Eerie, Knack, Art and Occultism skills.
+Sight contributes to a character’s Psychic and Initiative ratings. It is also useful for the Eerie and Occultism skills.
 === Intelligence
 Intelligence represents a character’s capacity to absorb and process new information. High Intelligence marks a character as quick-witted and capable of finding novel solutions to problems.
 
-Intelligence is the foundational attribute for most technical skills. It adds to a character’s Initiative and Arcane characteristics as well as their Infiltration, Influence, Alchemy, Computers, Engineering, Leadership, Magitek and Medicine skills.
+Intelligence is the foundational attribute for most technical skills. It adds to a character’s Initiative and Arcane characteristics as well as their Access, Influence, Alchemy, Electronics and Magitek skills.
 === Perception
 The mundane counterpart to Sight, Perception measures how acute a character’s ordinary five senses are. A character with high Perception is more likely to notice fine details that another might have missed.
 
-Perception contributes to many different skills. It adds to a character’s Marksmanship and Dodge ratings as well as their Knack, Survival, Alchemy, Engineering and Piloting skills.
+Perception contributes to many different skills. It adds to a character’s Marksmanship and Dodge ratings as well as their Alchemy and Piloting skills.
 === Will
 Will represents a character’s capacity for taking decisions and seeing them
 through, come hell or high water. A character with high Will will be more able
@@ -594,8 +594,7 @@ to resist pain or attempts at controlling them, as well as be more able to
 follow through on their decisions.
 
 Will contributes to a character’s Grit, Potential, Psychic and Command ratings.
-It also adds to their Impose, Leadership, Medicine, Occultism and Ritual
-skills.
+It also adds to their Impose, Occultism and Ritual skills.
 
 === Presence
 Presence is a measure of the character’s ability to capture others’ attention.
@@ -867,7 +866,7 @@ Deal with sentient creatures’ worst mistake.
 *Magitek (T; INT + ATT)* \
 Figure out how that magical gizmo works.
 
-*Occultism (U; SGT + ATT)* \
+*Occultism (T; SGT + ATT)* \
 Commune with your Luigi Board and other things inhabited by a supernatural presence.
 
 *Piloting (T; DEX + PER)* \
@@ -1259,23 +1258,223 @@ _Traps_: A character trained in the Access skill can detect and disable traps. T
 
 The alchemy skill allows a character to study, analyze and perform chemical reactions in or outside of the presence of magical energies. Successfully using the Alchemy skill requires having access to the appropriate equipment for the job at hand; even the most experienced alchemist cannot work without a laboratory.
 
+Proficiency in Occultism and Eerie is helpful when working with magically charged substances, while Shop assists in crafting and modifying alchemical equipment and containers.
+
 ==== Checks
 
 _Analyzing Substances_: A character trained in Alchemy can use their skills to analyze substances and detect certain components or alchemical-magical properties within them. The difficulty of doing so depends on the number of distinct components making up the substance as well as the number and concentration of components to be detected.
 
-_Synthesizing Substances_: A character can use their Alchemy skill to perform various alchemical procedures.
+Sample Analyzing difficulties:
+
+- Identify whether a common substance has been tampered with: 2
+- Identify the active components of an unfamiliar compound: 4
+- Detect trace quantities of a rare reagent within a complex mixture: 6
+- Fully analyze an unknown substance of extraplanar or magical origin: 8
+
+_Synthesizing Substances_: A character can use their Alchemy skill to perform alchemical procedures --- combining, refining, and transforming materials to produce compounds with specific properties. This subsumes everything from distilling poisons to crafting alchemical reagents for use in rituals.
+
+When synthesizing a known recipe, the difficulty is set by the recipe itself. When working without a recipe --- improvising or experimenting --- the GM sets a difficulty appropriate to the desired effect and the character's available materials.
+
+Consumable reagents and equipment are spent whether or not the synthesis succeeds.
+
+Sample Synthesizing difficulties:
+
+- Brew a simple stimulant or sedative from common materials: 3
+- Prepare a ritual reagent of moderate power: 5
+- Synthesize a compound with precisely calibrated alchemical-magical properties: 7
+- Produce a substance of legendary potency or unprecedented effect: 10
+
+_Alchemical Rituals_: When performing an alchemical recipe, Alchemy is the only applicable skill --- Ritual and Occultism do not apply (see _Rituals and Recipes_).
 
 === Electronics (T; DEX + INT)
 
+The Electronics skill covers the hands-on diagnosis, repair, modification, and construction of electronic devices and systems --- from simple motors and locks to computing hardware and AI subsystems. It is the skill of the engineer and the scrapper alike.
+
+Access is the natural complement when the goal is bypassing or subverting a system rather than understanding it; Magitek applies where magical and electronic systems are intertwined; Investigate can assist when researching technical documentation or an unfamiliar device's design.
+
+==== Checks
+
+_Repair & Maintenance_: A character trained in Electronics can diagnose malfunctions and restore damaged or broken devices to working order. The difficulty depends on the complexity of the device and the severity of the damage.
+
+Sample Repair difficulties:
+
+- Fix a common appliance or simple motor: 2
+- Restore a damaged circuit board or control system: 4
+- Bring a sophisticated computing system back online after catastrophic failure: 6
+- Reconstruct a destroyed AI subsystem from salvaged components: 8
+
+_Modification & Construction_: A character can use Electronics to alter existing devices or build new ones from salvaged or raw parts. When building something with no reference design, the GM may require a prior Investigate or Magitek check to establish the specifications.
+
+Sample Modification & Construction difficulties:
+
+- Jury-rig a simple bypass or adapter: 2
+- Build a functional device from salvaged parts: 4
+- Modify military-grade hardware for unauthorized use: 6
+- Construct a novel electronic component with no reference design: 8
+
+_Assisted Hacking_: When using the Access skill to attack sophisticated computer systems, the GM may additionally call for an Electronics check to manipulate the underlying hardware --- particularly when physical access to the machine is available.
+
 === Magitek (T; INT + ATT)
 
-=== Occultism (U; SGT + ATT)
+The Magitek skill covers understanding, operating, and working with technology that incorporates magical components or principles --- the ancient relics, enchanted machinery, and hybrid devices that populate a world where magic and technology were once unified.
+
+Electronics handles the non-magical circuitry within a magitek device; Eerie can supplement Magitek when sensing a device's magical state or charge; Alchemy and Ritual are relevant when a magitek device's function overlaps with alchemical or ritual processes.
+
+==== Checks
+
+_Identifying Magitek_: A character trained in Magitek can examine an unknown device to determine its function, origin, and magical properties. The difficulty depends on the complexity of the device and how much information is being sought.
+
+Sample Identifying difficulties:
+
+- Identify the function of a simple magitek tool: 2
+- Determine the magical properties of an unfamiliar device: 4
+- Analyze a magitek device of ancient or unknown design: 6
+- Reverse-engineer a unique magitek artifact: 8
+
+_Operating Magitek_: Using a familiar magitek device does not require a check. Checks arise when the device is unfamiliar, damaged, unstable, or actively resisting the user --- or when the character is attempting to use it in a way it was not designed for.
+
+Sample Operating difficulties:
+
+- Operate an unfamiliar but standard magitek device: 2
+- Safely activate an unstable or partially damaged device: 4
+- Override a device's magical safeguards: 6
+- Operate a device fundamentally hostile or incompatible with the user: 8
+
+_Repair & Modification_: A character can use Magitek to restore damaged devices or alter their function, including re-seating magical cores and recalibrating enchantments. Electronics may be required alongside Magitek when the damage extends to non-magical components.
+
+Sample Repair & Modification difficulties:
+
+- Repair a lightly damaged magitek device: 3
+- Restore a device with a damaged magical core: 5
+- Modify a device to function outside its intended parameters: 7
+- Integrate two incompatible magical systems within a single device: 9
+
+_Crafting Magitek_: A character with sufficient expertise can attempt to create new magitek devices. Magitek provides the overall design and integration of magical and technical systems, but is rarely sufficient on its own: crafting the physical components typically requires Shop, the electronic elements require Electronics, and the magical workings require Ritual or Occultism. Substantial facilities are also required --- improvised or field-expedient construction raises difficulties significantly, and some projects may be impossible without a proper workshop.
+
+=== Occultism (T; SGT + ATT)
+
+Where Ritual treats magic as a natural force to be studied and reproduced, Occultism is the practice of engaging with forces that resist systematic understanding: spirits, divine powers, and the deeper currents of Fate and the Void. The effects it produces can be profound, but the forces involved are capricious --- failure is not merely a lack of result, and a catastrophic failure may invite consequences far beyond what the caster intended.
+
+Occultism is primarily the skill of Divine magic, and applies to Psychic magic of an esoteric or entropic nature, such as the Fate and Void domains. Eerie is a natural complement, helping a character sense and interpret the presences they are dealing with. Ritual, by contrast, is not interchangeable with Occultism --- the two approaches are fundamentally different in method.
+
+==== Checks
+
+_Identifying Supernatural Entities_: A character trained in Occultism can attempt to recognize the nature, origin, and intent of a spirit or divine presence. This typically precedes any attempt to commune with or bind it.
+
+Sample Identifying difficulties:
+
+- Identify the broad category of a supernatural presence (spirit, divine fragment, etc.): 2
+- Determine the domain or allegiance of a known type of entity: 4
+- Assess the disposition and intent of an unfamiliar entity: 5
+- Identify a rare, concealed, or actively deceptive supernatural presence: 8
+
+_Communing_: A character can use Occultism to contact or negotiate with a spirit or divine force. Unlike ritual casting, the outcome of a communion is not guaranteed even on a success --- the entity retains its own will. On a failure, the entity may ignore the character, respond with hostility, or extract a price of its own choosing.
+
+_Divination_: A character trained in Occultism can petition the forces of Fate or Void for glimpses of the past, present, or future. The specificity and reliability of the vision depends on the difficulty; Fate can be consulted but not commanded.
+
+Sample Divination difficulties:
+
+- Seek a broad impression of a past event: 3
+- Seek a clear image of a specific past event: 5
+- Request a vision of a probable future: 6
+- Seek precise knowledge of a hidden or deliberately obscured truth: 9
+
+_Warding & Binding_: A character can use Occultism to ward a location against supernatural intrusion or to bind a spirit, constraining its actions. The difficulty depends on the power of the entity and the scope of the constraint.
+
+Sample Warding & Binding difficulties:
+
+- Ward a small space against minor spirits: 3
+- Bind a willing or weakened entity: 4
+- Ward against a powerful or persistent supernatural presence: 6
+- Bind an unwilling and powerful entity: 9
+
+_Casting Rituals_: Occultism may be used in place of Ritual for the casting of rituals that draw on Divine or esoteric Psychic magic, such as those of the Fate and Void domains. All other rules for ritual casting apply (see _Rituals and Recipes_). Unlike ritual casting with the Ritual skill, a failed check using Occultism may produce unintended consequences beyond the loss of reagents.
 
 === Piloting (T; DEX + PER)
 
+The Piloting skill covers the operation of vehicles of all kinds --- ground vehicles, aircraft, and watercraft alike. A trained pilot can push a vehicle to its limits, navigate hostile conditions, and fight from behind the wheel or controls. Routine travel under safe conditions does not require a check; rolls arise when speed, hazards, or hostile action demand precise control.
+
+Electronics and Magitek are useful when diagnosing or improvising repairs to a vehicle's systems while in motion.
+
+==== Checks
+
+_Hazardous Navigation_: A character can use Piloting to traverse difficult terrain, severe weather, or complex environments at speed. The difficulty depends on the combination of speed, conditions, and the demands of the route.
+
+Sample Navigation difficulties:
+
+- Navigate a damaged road or choppy water at speed: 2
+- Pilot through dense terrain, storm conditions, or heavy traffic: 4
+- Thread through a collapsing structure or tight urban canyon at speed: 6
+- Pilot a badly damaged vehicle through extreme or rapidly changing conditions: 8
+
+_Pursuit & Evasion_: When one vehicle is chasing or fleeing another, both pilots make opposed Piloting checks. The victor gains or maintains positional advantage. The GM may call for multiple checks over the course of a prolonged chase, with environmental hazards adding to the difficulty.
+
+_Combat Maneuvers_: A character can use Piloting to perform aggressive or evasive maneuvers in a fight --- ramming a target, breaking away from a pursuer, or positioning to give allies a firing advantage. These are typically opposed checks or checks against a fixed difficulty set by the GM based on the target's speed and maneuverability.
+
+Sample Combat Maneuver difficulties:
+
+- Ram a stationary or slow-moving target: 2
+- Execute a precise intercept or blocking maneuver: 4
+- Perform a high-speed attack run through hostile fire: 6
+- Execute a maneuver against a vastly more agile vehicle: 8
+
 === Ritual (T; WIL + ATT)
 
+The Ritual skill represents a character's command of magic as a natural, learnable force. Ritual magic is systematic and reproducible --- its effects are well-scoped and knowable, and a sufficiently skilled practitioner can analyze an unfamiliar working and reverse-engineer it almost like a piece of technology. Ritual is primarily the skill of Arcane magic, and applies to Psychic magic of a structural or physical nature, such as the Space and Time domains.
+
+Where Ritual treats magic as a force to be understood and controlled, Occultism deals with the ineffable: spirits, divine powers, and forces that do not follow predictable rules. Characters trained in Eerie may find it easier to sense the presence and nature of active ritual effects.
+
+Note that alchemical recipes, while mechanically similar to rituals, use the Alchemy skill exclusively --- Ritual does not apply to them (see _Rituals and Recipes_).
+
+==== Checks
+
+_Casting Rituals_: The primary use of the Ritual skill is the casting of rituals, for which see the full rules in _Rituals and Recipes_. Ritual applies to any non-alchemical ritual that draws on Arcane or structurally-oriented Psychic magic.
+
+Because ritual magic is well-understood and bounded, a failed Ritual check typically results in nothing happening and the consumption of reagents --- not in uncontrolled or catastrophic effects.
+
+_Identifying & Reading Magic_: A character trained in Ritual can examine an active magical effect, a ritual circle, or an arcane inscription and attempt to understand what it does. The difficulty depends on the complexity of the working and how well it has been obscured.
+
+Sample Identifying difficulties:
+
+- Identify the school or broad domain of an active magical effect: 2
+- Determine the function and approximate power of a ritual circle: 4
+- Fully analyze a complex or layered arcane working: 6
+- Decode a deliberately obfuscated or alien magical inscription: 8
+
 === Shop (T; DEX + STR)
+
+The Shop skill covers the creation, repair, and modification of physical objects --- from welding and machining to woodworking, leatherworking, and general fabrication. DEX provides the precision for fine work; STR handles the heavy labour of raw construction. A character trained in Shop is equally at home in a forge or a field workshop, and can turn salvaged materials into functional equipment given enough time and tools.
+
+Electronics and Magitek are natural complements when working on devices with technical or magical components; Access benefits from Shop when physical bypass work --- cutting, breaking, or fabricating parts --- is required.
+
+==== Checks
+
+_Repair_: A character can use Shop to restore damaged or broken physical items to working order. The difficulty depends on the severity of the damage and the complexity of the object.
+
+Sample Repair difficulties:
+
+- Repair a simple tool or piece of equipment: 2
+- Restore a damaged weapon or piece of armour: 4
+- Rebuild a complex mechanical device from partial components: 6
+- Reconstruct a badly damaged or intricate item with missing parts: 8
+
+_Fabrication_: A character can use Shop to create new items from raw or salvaged materials. Working from known plans or patterns reduces the difficulty; improvising a design or working without proper tools increases it.
+
+Sample Fabrication difficulties:
+
+- Fabricate a simple tool or fitting: 2
+- Craft a functional weapon or piece of armour: 4
+- Construct a complex mechanical assembly: 6
+- Produce a masterwork item requiring exceptional skill and materials: 9
+
+_Appraisal_: A character trained in Shop can assess the quality, provenance, and condition of physical objects. This covers identifying fine craftsmanship, detecting structural flaws, and recognizing forgeries or unusual construction techniques.
+
+Sample Appraisal difficulties:
+
+- Assess the general quality of a common item: 2
+- Identify a notable flaw or point of weakness in a well-made object: 4
+- Determine the origin or maker of an unusual or deliberately disguised item: 6
+- Detect a masterfully executed forgery: 8
 
 == Rituals and Recipes
 
@@ -1710,7 +1909,7 @@ You can use a combat power or magic spell available to you, consuming action poi
 
 ===== Use Skill
 
-On occasion, you may wish to take an action in combat that requires a skill roll (such as using Acrobatics to run over a cable, using Mechanics to restart a stuck mechanism, etc.) The GM adjudicates the number of action points using a skill requires depending on the situation.
+On occasion, you may wish to take an action in combat that requires a skill roll (such as using Acrobatics to run over a cable, using Shop to restart a stuck mechanism, etc.) The GM adjudicates the number of action points using a skill requires depending on the situation.
 
 ==== Minor Actions
 
