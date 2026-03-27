@@ -2139,6 +2139,46 @@ detailed advice here.
     round. This AP can only be spent to perform a move action.],
 )
 
+#advance-block(
+  "Rallying Presence",
+  1,
+  200,
+  2,
+  0,
+  "Command 3",
+  [Allies within 5 squares of you gain +1d on saving throws against fear and morale effects. This bonus is lost if you are unconscious or Stunned.],
+)
+
+#advance-block(
+  "Tactical Coordination",
+  2,
+  350,
+  2,
+  2,
+  "Command 5, Rallying Presence",
+  [Once per round, when an ally within 10 squares hits with an attack, you may spend a reaction to grant a different ally within 10 squares a free shift of 2 squares.],
+)
+
+#advance-block(
+  "Iron Authority",
+  3,
+  550,
+  3,
+  3,
+  "Command 7",
+  [When you use a Command power that targets enemies, you may add +2d to the casting check. Additionally, enemies that fail a resistance check against your Command powers take a -1d penalty on their next saving throw against the effect.],
+)
+
+#advance-block(
+  "Warmaster",
+  4,
+  1000,
+  5,
+  4,
+  "Command 9, Tactical Coordination, Iron Authority",
+  [At the start of each round, choose one ally within 10 squares. That ally gains +1 AP this round. You may not choose the same ally in consecutive rounds.],
+)
+
 == Dodge
 
 #advance-block(
@@ -2446,6 +2486,16 @@ detailed advice here.
 == Potential
 
 #advance-block(
+  "Leyline Attunement",
+  1,
+  200,
+  0,
+  2,
+  "Potential 3",
+  [You can sense the presence and school of magical effects within 10 squares. Additionally, your catalyst's focus increment is reduced by 1 (minimum 1).],
+)
+
+#advance-block(
   "Arcane Smoothing",
   2,
   300,
@@ -2466,6 +2516,16 @@ detailed advice here.
   [You gain a resistance to enemy magic. When targeted by a spell or magical
     ability, you may roll a Potential resist with difficulty equal to the
     casting check. On success: you are unaffected by the spell.],
+)
+
+#advance-block(
+  "Wellspring",
+  4,
+  1000,
+  2,
+  6,
+  "Potential 9, Arcane Smoothing",
+  [Your connection to ambient magical energy deepens. Allies within 5 squares of you reduce the increment cost of their spells and powers by 1 (minimum 1). This does not stack with other sources of increment reduction.],
 )
 
 == Psychic
@@ -2572,6 +2632,46 @@ detailed advice here.
 
 == Speed
 
+#advance-block(
+  "Fleet of Foot",
+  1,
+  150,
+  1,
+  1,
+  "Speed 3",
+  [Your base Movement Speed increases by 2.],
+)
+
+#advance-block(
+  "Evasive Sprint",
+  2,
+  300,
+  2,
+  1,
+  "Speed 5, Fleet of Foot",
+  [When you use the Dash action, you do not provoke opportunity attacks for the rest of your turn.],
+)
+
+#advance-block(
+  "Lightning Dash",
+  3,
+  550,
+  3,
+  2,
+  "Speed 7, Evasive Sprint",
+  [Once per encounter, you may take a move action as a free action at the start of your turn.],
+)
+
+#advance-block(
+  "Impossible Swiftness",
+  4,
+  1000,
+  4,
+  3,
+  "Speed 9, Lightning Dash",
+  [Your base Movement Speed increases by an additional 3 (stacks with Fleet of Foot). You may move through difficult terrain at normal speed.],
+)
+
 == Stamina
 
 #advance-block(
@@ -2586,6 +2686,16 @@ detailed advice here.
 )
 
 #advance-block(
+  "Iron Constitution",
+  2,
+  300,
+  4,
+  0,
+  "Stamina 4, Conditioning",
+  [You gain +1d on all Endurance checks and saving throws against Poisoned, Diseased, and Exhausted conditions.],
+)
+
+#advance-block(
   "Powered Proficiency",
   3,
   550,
@@ -2595,6 +2705,16 @@ detailed advice here.
   [You gain the ability to use powered armor in powered mode. While wearing
     powered armor, you benefit from all your advances that improve your wearing
     of armor.],
+)
+
+#advance-block(
+  "Unstoppable",
+  4,
+  1000,
+  8,
+  0,
+  "Stamina 9, Iron Constitution",
+  [Once per encounter, when you would be reduced to 0 HP, you are instead reduced to 1 HP. Additionally, you are immune to the Stunned condition from non-magical sources.],
 )
 
 = Magic and Powers
@@ -2774,6 +2894,12 @@ Command powers represent the use of authority and force of will over other
 creatures. They include abilities to direct summoned creatures, rally allies,
 and break the morale of enemies.
 
+=== Marksmanship Powers
+
+Marksmanship powers, also known as _Marksmanship Exploits_, are ranged combat
+techniques practiced by sharpshooters, gunslingers, and archers. Like martial
+exploits, they do not require a catalyst; they require a ranged weapon to use.
+
 == Spell Lists
 
 === Arcane
@@ -2807,6 +2933,32 @@ and break the morale of enemies.
   resistance: "Yes (Stamina 3)",
 )
 
+#power-description(
+  "Frost Bolt",
+  "Arcane Spell",
+  1,
+  "2",
+  "On hit: 100% Cold damage. The target is Slowed (5) for 1 round.",
+  keywords: "Cold",
+  range: "one creature within 15",
+  difficulty: "2",
+  cost: "1 Increment",
+  resistance: "Yes (Stamina 3)",
+)
+
+#power-description(
+  "Corrosive Spray",
+  "Arcane Spell",
+  1,
+  "2",
+  "On hit: 100% Acid damage. The target's Armor value is reduced by 1 until the end of the encounter (stacks up to 3 times).",
+  keywords: "Acid",
+  range: "Cone 5",
+  difficulty: "3",
+  cost: "1 Increment",
+  resistance: "Yes (Dodge 3)",
+)
+
 ==== Tier 2
 
 #power-description(
@@ -2821,6 +2973,32 @@ and break the morale of enemies.
   difficulty: "4",
   cost: "2 Increments",
   resistance: "Yes (Dodge 4)",
+)
+
+#power-description(
+  "Shatterblast",
+  "Arcane Spell",
+  2,
+  "2",
+  "On hit: 200% Force damage. Objects and constructs take double damage. If the target is wearing armor, they must pass a resistance check or their armor's value is permanently reduced by 2 (until repaired).",
+  keywords: "Force",
+  range: "one creature or object within 20",
+  difficulty: "4",
+  cost: "2 Increments",
+  resistance: "Yes (Stamina 5; armor damage only)",
+)
+
+#power-description(
+  "Venomcloud",
+  "Arcane Spell",
+  2,
+  "2; sustain 1",
+  "On hit: All creatures in the area take 100% Acid damage and are Poisoned (save ends). The cloud persists as a zone of light obscurement as long as you sustain it; creatures that enter or start their turn in the zone take 100% Acid damage.",
+  keywords: "Acid, Zone",
+  range: "Burst 2 within 20",
+  difficulty: "4",
+  cost: "2 Increments; sustain 1",
+  resistance: "Yes (Stamina 4)",
 )
 
 ==== Tier 3
@@ -2870,13 +3048,118 @@ and break the morale of enemies.
   resistance: "Yes",
 )
 
+#power-description(
+  "Vitriolic Deluge",
+  "Arcane Spell",
+  4,
+  "3",
+  "A torrent of caustic liquid pours over the area. All creatures in the area take 200% Acid damage. Their armor and Hardness are permanently reduced by 3 (until repaired). On each subsequent turn for 3 rounds, affected creatures take ongoing 100% Acid damage (save ends the ongoing damage, but not the armor reduction).",
+  keywords: "Acid",
+  range: "Burst 3 within 20",
+  difficulty: "8",
+  cost: "3 Increments",
+  resistance: "Yes (Dodge 8)",
+  miss: "Half initial damage, ongoing 50% Acid for 1 round, no armor reduction.",
+)
+
 ==== Tier 5
 
-_No Tier 5 arcane spells are available in this playtest draft._
+#power-description(
+  "Chain Lightning",
+  "Spell",
+  5,
+  "3 AP",
+  "A bolt of electricity arcs from the primary target to up to three additional targets, each of which must be within 5 squares of the previous target. Make a separate attack roll against each target. Each target struck takes 200% electric damage. A target that fails their resistance check is stunned for 1 round.",
+  keywords: "Arcane, Electric",
+  difficulty: "9",
+  cost: "3 Increments",
+  range: "one creature within 20; chains to up to 3 additional creatures within 5 of the previous target",
+  resistance: "Stamina 8",
+  miss: "Half damage, no stun.",
+)
+
+#power-description(
+  "Petrification",
+  "Spell",
+  5,
+  "3 AP",
+  "You attempt to turn the target to stone. On a failed resistance check, the target is Stilled and Slowed (5) (save ends both). If the target fails three saving throws against this effect before succeeding one, they are permanently petrified (turned to stone and unconscious) until freed by a Tier 4+ ritual.",
+  keywords: "Arcane, Transmutation",
+  difficulty: "10",
+  cost: "3 Increments",
+  range: "one creature within 15",
+  resistance: "D8 Stamina",
+  miss: "The target is Slowed (5) for 1 round.",
+)
+
+#power-description(
+  "Wall of Force",
+  "Spell",
+  5,
+  "3 AP; sustain 1 AP",
+  "You create an impassable wall of translucent force up to 10 squares long and 5 squares high. The wall blocks all movement, projectiles, and line of effect for spells. The wall has HP equal to 300% of your catalyst's damage and Hardness 10. It lasts as long as you sustain it or until destroyed.",
+  keywords: "Arcane, Force",
+  difficulty: "9",
+  cost: "3 Increments; sustain 1",
+  range: "Wall 10 within 20",
+)
+
+#power-description(
+  "Inferno",
+  "Spell",
+  5,
+  "3 AP; sustain 1 AP",
+  "You create a zone of roaring flame. Any creature that enters the zone or starts its turn there takes 200% Thermal damage and is Burning (save ends). The zone provides total concealment and lasts as long as you sustain it.",
+  keywords: "Arcane, Thermal, Zone",
+  difficulty: "10",
+  cost: "4 Increments; sustain 1",
+  range: "Burst 3 within 20",
+  resistance: "Dodge 8 (halves damage, negates Burning)",
+)
 
 ==== Tier 6
 
-_No Tier 6 arcane spells are available in this playtest draft._
+#power-description(
+  "Disintegration",
+  "Spell",
+  6,
+  "3 AP",
+  "A thin green ray strikes the target. On a hit, the target takes 300% Force damage, ignoring all armor and Hardness. If this damage reduces the target to 0 HP, they and all equipment they carry are reduced to fine dust. Objects and structures targeted by this spell take double damage.",
+  keywords: "Arcane, Force",
+  difficulty: "12",
+  cost: "4 Increments",
+  range: "one creature or object within 20",
+  resistance: "D10 Stamina",
+  miss: "100% Force damage, ignoring armor.",
+)
+
+#power-description(
+  "Meteor Swarm",
+  "Spell",
+  6,
+  "3 AP",
+  "Four meteors slam into the battlefield. Each meteor targets a Burst 3 area and deals 200% Thermal damage. You may target the same or different areas; a creature caught in multiple blasts takes damage from each separately. Each impact leaves the area as difficult terrain covered in burning rubble (creatures starting their turn in the rubble take 100% Thermal ongoing damage).",
+  keywords: "Arcane, Thermal",
+  difficulty: "11",
+  cost: "4 Increments",
+  range: "four Burst 3 areas within 30",
+  resistance: "Dodge 10",
+  miss: "Half damage from each meteor, no ongoing.",
+)
+
+#power-description(
+  "Absolute Zero",
+  "Spell",
+  6,
+  "3 AP",
+  "You drain all heat from the area, flash-freezing everything in place. All creatures in the area take 300% Cold damage. Creatures that fail their resistance check are Stunned for 1 round, then Stilled and Slowed (5) (save ends both). The area becomes difficult terrain covered in ice for the rest of the encounter. Creatures that start their turn in the ice must pass a D6 Stamina check or fall Prone.",
+  keywords: "Arcane, Cold",
+  difficulty: "11",
+  cost: "4 Increments",
+  range: "Close Burst 5",
+  resistance: "D10 Stamina",
+  miss: "Half damage, Slowed (5) for 1 round.",
+)
 
 === Divine
 
@@ -2890,7 +3173,7 @@ _No Tier 6 arcane spells are available in this playtest draft._
   "The target recovers HP equal to 100% of your catalyst's damage.",
   domain: "Life",
   keywords: "Divine",
-  difficulty: "12",
+  difficulty: "3",
   cost: "1 Increment",
   range: "one creature within 15",
   tap: "The recovery increases to 200%.",
@@ -2901,10 +3184,10 @@ _No Tier 6 arcane spells are available in this playtest draft._
   "Prayer",
   2,
   "2 AP",
-  "The target gains temporary HP equal to 3D6 + twice your Will. These temporary HP last until the end of the encounter.",
+  "The target gains temporary HP equal to 100% of your catalyst's damage. These temporary HP last until the end of the encounter.",
   domain: "Life",
   keywords: "Divine",
-  difficulty: "Command 14",
+  difficulty: "4",
   cost: "2 Increments",
   range: "Close; one creature",
   tap: "The target also gains +2d to Endurance checks until the end of the encounter.",
@@ -2915,10 +3198,10 @@ _No Tier 6 arcane spells are available in this playtest draft._
   "Prayer",
   3,
   "2 AP",
-  "Remove one status condition from the target (Poisoned, Diseased, Bleeding, Burning, or Blinded). The target then recovers HP equal to 2D8 + your Will.",
+  "Remove one status condition from the target (Poisoned, Diseased, Bleeding, Burning, or Blinded). The target then recovers HP equal to 100% of your catalyst's damage.",
   domain: "Life",
   keywords: "Divine",
-  difficulty: "Command 16",
+  difficulty: "7",
   cost: "2 Increments",
   range: "Short; one creature",
   tap: "You may remove up to two status conditions instead of one.",
@@ -2929,10 +3212,10 @@ _No Tier 6 arcane spells are available in this playtest draft._
   "Prayer",
   4,
   "3 AP",
-  "A creature that has been dead for no more than one hour is restored to life with HP equal to twice your Will. The resurrected creature is Exhausted and Vulnerable until they complete a rest.",
+  "A creature that has been dead for no more than one hour is restored to life with HP equal to 100% of your catalyst's damage. The resurrected creature is Exhausted and Vulnerable until they complete a rest.",
   domain: "Life",
   keywords: "Divine, Ritual",
-  difficulty: "Command 18",
+  difficulty: "8",
   cost: "4 Increments",
   range: "Melee; one dead creature",
   tap: "The creature is restored with HP equal to half their maximum HP instead, and they are no longer Exhausted or Vulnerable.",
@@ -2943,13 +3226,13 @@ _No Tier 6 arcane spells are available in this playtest draft._
   "Prayer",
   5,
   "2 AP; sustain 1 AP",
-  "At the start of each of the target's turns, they recover HP equal to 2D6 + your Will.",
+  "At the start of each of the target's turns, they recover HP equal to 100% of your catalyst's damage.",
   domain: "Life",
   keywords: "Divine",
-  difficulty: "Command 20",
+  difficulty: "9",
   cost: "3 Increments; sustain 1",
   range: "Close; one creature",
-  tap: "The regeneration increases to 3D6 + your Will.",
+  tap: "The regeneration increases to 200%.",
 )
 
 #power-description(
@@ -2957,13 +3240,277 @@ _No Tier 6 arcane spells are available in this playtest draft._
   "Prayer",
   6,
   "3 AP",
-  "All allies in the area immediately recover HP equal to 4D8 + twice your Will. Additionally, all allies gain immunity to one status condition of your choice (chosen when you cast this prayer) for 3 rounds.",
+  "All allies in the area immediately recover HP equal to 300% of your catalyst's damage. Additionally, all allies gain immunity to one status condition of your choice (chosen when you cast this prayer) for 3 rounds.",
   domain: "Life",
   keywords: "Divine",
-  difficulty: "Command 22",
+  difficulty: "11",
   cost: "4 Increments",
   range: "Burst 4 centered on you; all allies in burst",
-  tap: "Allies also gain temporary HP equal to 3D6 and the immunity duration increases to 5 rounds.",
+  tap: "Allies also gain temporary HP equal to 100% of your catalyst's damage and the immunity duration increases to 5 rounds.",
+)
+
+==== War Domain
+
+#power-description(
+  "Battle Cry",
+  "Prayer",
+  1,
+  "2 AP",
+  "One ally within range gains +2d on their next attack roll and +2 to their Movement Speed until the end of their next turn.",
+  domain: "War",
+  keywords: "Divine",
+  difficulty: "3",
+  cost: "1 Increment",
+  range: "one ally within 10",
+  tap: "The bonus increases to +3d on the attack roll.",
+)
+
+#power-description(
+  "Smite the Faithless",
+  "Prayer",
+  2,
+  "2 AP",
+  "Your next weapon attack before the end of your turn deals an additional 100% damage as radiant. If the target is Undead or Fiend, the additional damage increases to 200%.",
+  domain: "War",
+  keywords: "Divine, Radiant",
+  difficulty: "4",
+  cost: "1 Increment",
+  tap: "The attack also ignores the target's Hardness.",
+)
+
+#power-description(
+  "Inspiring Charge",
+  "Prayer",
+  3,
+  "2 AP",
+  "You and up to three allies within range each gain +1 AP and +3 Movement Speed until the end of your next turn. Each affected creature may immediately shift 1 square.",
+  domain: "War",
+  keywords: "Divine",
+  difficulty: "7",
+  cost: "2 Increments",
+  range: "Burst 3 centered on you; up to 3 allies",
+  tap: "Affected allies also gain +2d on attack rolls until the end of their next turn.",
+)
+
+#power-description(
+  "Divine Wrath",
+  "Prayer",
+  4,
+  "3 AP",
+  "You call down a pillar of radiant fury on the battlefield. All enemies in the area take 300% radiant damage. Enemies that fail their resistance check are also Dazed (save ends).",
+  domain: "War",
+  keywords: "Divine, Radiant",
+  difficulty: "8",
+  cost: "3 Increments",
+  range: "Burst 3 within 20",
+  resistance: "D8 Stamina",
+  miss: "Half damage, no Dazed.",
+)
+
+#power-description(
+  "Avatar of War",
+  "Prayer",
+  5,
+  "3 AP; sustain 1 AP",
+  "You or one ally within range becomes an avatar of divine battle for the duration. The avatar gains +1 AP, +3d on all attack rolls, and their weapon attacks deal an additional 100% radiant damage. While the avatar is active, enemies within 3 squares of the avatar take a -2d penalty on attack rolls.",
+  domain: "War",
+  keywords: "Divine, Radiant",
+  difficulty: "10",
+  cost: "3 Increments; sustain 1",
+  range: "one creature within 10",
+  tap: "The avatar also gains Resistance 5 to all damage types for the duration.",
+)
+
+#power-description(
+  "Divine Storm of Blades",
+  "Prayer",
+  6,
+  "3 AP",
+  "Spectral weapons rain from the sky across the battlefield. All enemies in the area take 300% radiant damage. Each enemy hit must pass a resistance check or be Stunned for 1 round, then Exposed (save ends). Allies in the area are unaffected and recover HP equal to 100% of your catalyst's damage.",
+  domain: "War",
+  keywords: "Divine, Radiant",
+  difficulty: "11",
+  cost: "4 Increments",
+  range: "Burst 5 within 20",
+  resistance: "D10 Stamina",
+  miss: "Half damage, Exposed for 1 round.",
+)
+
+==== Nature Domain
+
+#power-description(
+  "Entangling Growth",
+  "Prayer",
+  1,
+  "2 AP",
+  "Grasping vines and roots erupt in the target area. The area becomes difficult terrain for the rest of the encounter. Each creature in the area when it appears must pass a resistance check or be Slowed (5) for 1 round.",
+  domain: "Nature",
+  keywords: "Divine",
+  difficulty: "3",
+  cost: "1 Increment",
+  range: "Burst 2 within 15",
+  resistance: "D3 Stamina",
+  tap: "Creatures that fail are also Immobilized until the end of their next turn.",
+)
+
+#power-description(
+  "Barkskin",
+  "Prayer",
+  2,
+  "2 AP",
+  "The target's skin hardens to the resilience of oak. The target gains +3 Armor and +2 Hardness until the end of the encounter. This bonus does not stack with worn armor.",
+  domain: "Nature",
+  keywords: "Divine",
+  difficulty: "4",
+  cost: "2 Increments",
+  range: "one creature within 10",
+  tap: "The target also gains Resistance 3 to Thermal and Cold damage.",
+)
+
+#power-description(
+  "Call Lightning",
+  "Prayer",
+  3,
+  "2 AP; sustain 1 AP",
+  "You summon a storm cloud in the area. When you cast this prayer and at the start of each of your subsequent turns while you sustain it, a bolt of lightning strikes a creature of your choice within the area, dealing 200% electric damage.",
+  domain: "Nature",
+  keywords: "Divine, Electric",
+  difficulty: "7",
+  cost: "2 Increments; sustain 1",
+  range: "Burst 5 within 20; one creature in area per turn",
+  resistance: "D6 Stamina",
+  miss: "Half damage.",
+  tap: "You may target two creatures per bolt instead of one.",
+)
+
+#power-description(
+  "Wrath of the Wild",
+  "Prayer",
+  4,
+  "3 AP",
+  "The terrain itself turns hostile. All enemies in the area take 200% damage as thorns, roots, and stone erupt beneath them. The area becomes heavily obscured difficult terrain for 3 rounds. Enemies that start their turn in the area take 100% ongoing damage.",
+  domain: "Nature",
+  keywords: "Divine",
+  difficulty: "8",
+  cost: "3 Increments",
+  range: "Burst 4 within 20",
+  resistance: "Dodge 8",
+  miss: "Half damage, ongoing damage still applies.",
+)
+
+#power-description(
+  "Verdant Resurrection",
+  "Prayer",
+  5,
+  "3 AP",
+  "You call upon the primal cycle of life and death. A dead creature that has been dead for no more than one day is restored to life encased in a cocoon of living wood. They return with HP equal to 200% of your catalyst's damage and are Slowed (5) for 1 round as the cocoon breaks apart. Unlike Breath of Resurrection, the target suffers no lingering conditions.",
+  domain: "Nature",
+  keywords: "Divine, Ritual",
+  difficulty: "10",
+  cost: "4 Increments",
+  range: "Melee; one dead creature",
+  tap: "The target is restored to full HP instead.",
+)
+
+#power-description(
+  "Primeval Cataclysm",
+  "Prayer",
+  6,
+  "3 AP",
+  "You unleash the full fury of the natural world. The terrain in the area is permanently transformed: trees erupt from stone, chasms split open, and rivers divert. All enemies in the area take 300% damage and must pass a resistance check or be Prone and Immobilized (save ends both). The transformed terrain is difficult terrain permanently and provides cover to your allies but not to your enemies.",
+  domain: "Nature",
+  keywords: "Divine",
+  difficulty: "12",
+  cost: "4 Increments",
+  range: "Burst 5 within 20",
+  resistance: "D10 Stamina",
+  miss: "Half damage, Prone for 1 round.",
+)
+
+==== Protection Domain
+
+#power-description(
+  "Shield of Faith",
+  "Prayer",
+  1,
+  "2 AP",
+  "The target gains +2 Evasion and +2 to all resistance checks until the end of the encounter.",
+  domain: "Protection",
+  keywords: "Divine",
+  difficulty: "3",
+  cost: "1 Increment",
+  range: "one creature within 10",
+  tap: "The bonuses increase to +3.",
+)
+
+#power-description(
+  "Warding Bond",
+  "Prayer",
+  2,
+  "2 AP",
+  "You create a divine link between yourself and the target. While the bond persists, the target gains Resistance 5 to all damage types, but you take damage equal to the amount resisted. The bond lasts until the end of the encounter or until you dismiss it (free action).",
+  domain: "Protection",
+  keywords: "Divine",
+  difficulty: "4",
+  cost: "2 Increments",
+  range: "one ally within 10",
+  tap: "You take only half of the redirected damage.",
+)
+
+#power-description(
+  "Dispelling Wave",
+  "Prayer",
+  3,
+  "2 AP",
+  "A wave of divine energy washes over the area, stripping away magical effects. Each ongoing spell, power, or magical effect in the area is immediately ended if its tier is equal to or less than 3. For effects of tier 4 or higher, make a Command check against the effect's original difficulty; on success, the effect is dispelled.",
+  domain: "Protection",
+  keywords: "Divine",
+  difficulty: "7",
+  cost: "2 Increments",
+  range: "Burst 3 within 15",
+  tap: "Automatically dispels effects up to tier 4 instead of 3.",
+)
+
+#power-description(
+  "Aegis of the Faithful",
+  "Prayer",
+  4,
+  "3 AP; sustain 1 AP",
+  "A dome of golden light surrounds you and your allies. All allies within the area gain Resistance 10 to all damage types. Projectiles and ranged spell attacks that cross the barrier take a -3d penalty to hit. The aegis lasts as long as you sustain it, but you cannot move while sustaining.",
+  domain: "Protection",
+  keywords: "Divine",
+  difficulty: "8",
+  cost: "3 Increments; sustain 1",
+  range: "Close Burst 3 centered on you",
+  tap: "You may move at half speed while sustaining the aegis.",
+)
+
+#power-description(
+  "Inviolable Sanctuary",
+  "Prayer",
+  5,
+  "3 AP",
+  "You designate one creature within range. For 3 rounds, that creature cannot be targeted by attacks or harmful effects. The creature cannot attack or use offensive powers while the sanctuary is active; if they do, the sanctuary ends immediately. At the end of the duration, the creature recovers HP equal to 200% of your catalyst's damage.",
+  domain: "Protection",
+  keywords: "Divine",
+  difficulty: "10",
+  cost: "3 Increments",
+  range: "one creature within 10",
+  tap: "The sanctuary duration increases to 5 rounds and the healing increases to 300%.",
+)
+
+#power-description(
+  "Divine Bulwark",
+  "Prayer",
+  6,
+  "3 AP",
+  "You invoke the full protective power of your deity. For 3 rounds, all allies within the area gain immunity to two status conditions of your choice, Resistance 10 to all damage types, and +3 Evasion. The first time each ally would be reduced to 0 HP during this effect, they are instead reduced to 1 HP. When the effect ends, all allies recover HP equal to 100% of your catalyst's damage.",
+  domain: "Protection",
+  keywords: "Divine",
+  difficulty: "12",
+  cost: "4 Increments",
+  range: "Burst 5 centered on you; all allies in burst",
+  tap: "The duration increases to 5 rounds and allies recover 200% instead.",
 )
 
 
@@ -3101,6 +3648,20 @@ _No Tier 6 arcane spells are available in this playtest draft._
   resistance: "Yes (Stamina 8)",
 )
 
+#power-description(
+  "Gravity Well",
+  "Psychic Power",
+  4,
+  "3",
+  "You create an intense gravitational singularity. All creatures in the area are pulled 3 squares toward the center. Creatures in the center square take 300% Force damage; creatures elsewhere in the area take 200% Force damage. Creatures that fail their resistance check are Prone and Slowed (5) (save ends). Augment 2: The pull increases to 5 squares and the area increases to Burst 6.",
+  keywords: "Space",
+  range: "Burst 4 within 20",
+  difficulty: "8",
+  cost: "3 Increments",
+  resistance: "Yes (Stamina 8)",
+  miss: "Half damage, Slowed (5) for 1 round.",
+)
+
 ==== Tier 5
 
 #power-description(
@@ -3132,7 +3693,43 @@ _No Tier 6 arcane spells are available in this playtest draft._
 
 ==== Tier 6
 
-_No Tier 6 psychic powers are available in this playtest draft._
+#power-description(
+  "Time Stop",
+  "Power",
+  6,
+  "3 AP",
+  "You freeze the flow of time for all creatures except yourself. You immediately take 2 additional turns. During these turns, you may move and take actions as normal, but you cannot deal damage to or directly target any other creature. Any area effect you create during the stopped time takes effect when time resumes. If you directly attack or target a creature, the spell ends immediately.",
+  keywords: "Psychic, Temporal",
+  difficulty: "12",
+  cost: "4 Increments",
+)
+
+#power-description(
+  "Mass Banishment",
+  "Power",
+  6,
+  "3 AP",
+  "You rip open the boundary between planes, pulling all enemies in the area toward oblivion. Each target that fails their resistance check is banished to a void between worlds for 1 round, then returns to an unoccupied space of your choice within the area. Banished creatures are removed from play during this time. Creatures that fail by 5 or more successes are permanently banished.",
+  keywords: "Psychic, Void",
+  difficulty: "11",
+  cost: "4 Increments",
+  range: "Burst 5 within 20",
+  resistance: "D10 Potential",
+  miss: "The target is Dazed for 1 round.",
+)
+
+#power-description(
+  "Rewrite Fate",
+  "Power",
+  6,
+  "3 AP",
+  "You seize the threads of destiny and rewrite them. Choose one: (1) force all enemies in the area to reroll every die roll and take the worse result for 3 rounds (save ends); or (2) grant all allies in the area the ability to reroll every die roll and take the better result for 2 rounds. This effect cannot be dispelled by non-Psychic means.",
+  keywords: "Psychic, Fate",
+  difficulty: "12",
+  cost: "4 Increments",
+  range: "Burst 5 within 20",
+  resistance: "D10 Potential (option 1 only)",
+)
 
 === Martial Exploits
 
@@ -3146,6 +3743,27 @@ _No Tier 6 psychic powers are available in this playtest draft._
   "While in Impenetrable stance, you gain a +2 bonus to your Evasion.",
   keywords: "Lotus Art, Stance",
   flavor: "\"The true sage does not seek to counter strength with strength, but redirects it. The blade runs off him like water off a lotus leaf.\"",
+  cost: "--",
+)
+
+#power-description(
+  "Measured Strike",
+  "Exploit",
+  1,
+  "2 AP",
+  "You make a careful, controlled attack. The attack deals 100% damage and you gain +2 Evasion until the start of your next turn.",
+  keywords: "Weapon",
+  difficulty: "+1",
+  range: "Weapon",
+)
+
+#power-description(
+  "Guardian Stance",
+  "Exploit",
+  1,
+  "1; sustain 1",
+  "While in Guardian stance, enemies that move out of a square adjacent to you provoke an opportunity attack from you, even if they use Disengage. You may make one such attack per round.",
+  keywords: "Stance",
   cost: "--",
 )
 
@@ -3237,6 +3855,32 @@ _No Tier 6 psychic powers are available in this playtest draft._
   resistance: "Yes (Dive; Dodge 8)",
 )
 
+#power-description(
+  "Sundering Blow",
+  "Exploit",
+  4,
+  "3 AP",
+  "You strike with such force that you damage the target's equipment. The target takes 300% damage. If the target fails their resistance check, one piece of their worn armor or wielded shield permanently loses 3 Armor value (until repaired). This reduction stacks with multiple uses.",
+  keywords: "Weapon",
+  difficulty: "+4",
+  cost: "2 Increments",
+  range: "Weapon",
+  resistance: "D7 Stamina (equipment damage only; HP damage always applies on hit)",
+)
+
+#power-description(
+  "Whirlwind Strike",
+  "Exploit",
+  4,
+  "3 AP",
+  "You spin in a devastating arc, striking all nearby enemies. Each enemy in range takes 200% damage. Enemies that fail their resistance check are also pushed 2 squares away from you.",
+  keywords: "Weapon",
+  difficulty: "7",
+  cost: "2 Increments",
+  range: "Close Burst 2; all enemies",
+  resistance: "D7 Stamina (push only; damage always applies on hit)",
+)
+
 ==== Tier 5
 
 #power-description(
@@ -3254,6 +3898,19 @@ _No Tier 6 psychic powers are available in this playtest draft._
   resistance: "Yes (Potential 9)",
 )
 
+#power-description(
+  "Deathblow",
+  "Exploit",
+  5,
+  "3 AP",
+  "You deliver a single, devastating strike aimed to kill. The target takes 300% damage. If this reduces the target to half HP or below, they must pass a resistance check or be reduced to 0 HP. This exploit can only be used once per encounter.",
+  keywords: "Weapon",
+  difficulty: "+4",
+  cost: "3 Increments",
+  range: "Weapon",
+  resistance: "D9 Stamina (instant-kill effect only)",
+)
+
 ==== Tier 6
 
 #power-description(
@@ -3269,6 +3926,265 @@ _No Tier 6 psychic powers are available in this playtest draft._
   difficulty: "7",
   cost: "3 Increments",
   resistance: "Yes (Stamina 8)",
+)
+
+=== Command Powers
+
+==== Tier 1
+
+#power-description(
+  "Rally",
+  "Command",
+  1,
+  "2 AP",
+  "One ally within range immediately gains +2d on their next attack roll or saving throw (their choice). If the ally is suffering from a fear effect, they may immediately make a saving throw against it with +2d.",
+  keywords: "Command, Morale",
+  difficulty: "3",
+  cost: "1 Increment",
+  range: "one ally within 10",
+)
+
+#power-description(
+  "Compel Obedience",
+  "Command",
+  1,
+  "2 AP",
+  "You issue a forceful command to a summoned or dominated creature. The target must immediately use its next turn to perform one specific action of your choice (move, attack a target, or use a specific power). If the creature is not under your control, it may resist.",
+  keywords: "Command",
+  difficulty: "3",
+  cost: "1 Increment",
+  range: "one creature within 10",
+  resistance: "D3 Potential (only if not already under your control)",
+)
+
+==== Tier 2
+
+#power-description(
+  "Coordinated Strike",
+  "Command",
+  2,
+  "2 AP",
+  "You direct two allies to strike in unison. Each ally within range may immediately make a basic attack as a free action against a target of your choice. If both allies hit the same target, that target is Dazed until the end of its next turn.",
+  keywords: "Command, Tactical",
+  difficulty: "5",
+  cost: "2 Increments",
+  range: "two allies within 10",
+)
+
+#power-description(
+  "Terrifying Shout",
+  "Command",
+  2,
+  "2 AP",
+  "You unleash a shout that breaks the morale of your enemies. All enemies in the area that fail their resistance check are Frightened of you (save ends). Frightened creatures take a -2d penalty on attack rolls and cannot willingly move closer to you.",
+  keywords: "Command, Morale, Fear",
+  difficulty: "5",
+  cost: "2 Increments",
+  range: "Close Burst 3",
+  resistance: "D5 Potential",
+)
+
+==== Tier 3
+
+#power-description(
+  "Hold the Line",
+  "Command",
+  3,
+  "2 AP",
+  "You command your allies to form a defensive formation. Up to four allies within range gain +3 Evasion and +2d on resistance checks until the end of your next turn. While this effect is active, enemies that move through or out of a square adjacent to an affected ally provoke an opportunity attack.",
+  keywords: "Command, Tactical",
+  difficulty: "7",
+  cost: "2 Increments",
+  range: "Burst 3 centered on you; up to 4 allies",
+)
+
+#power-description(
+  "Break Will",
+  "Command",
+  3,
+  "2 AP",
+  "You shatter an enemy's resolve with sheer authority. The target that fails their resistance check is Dominated (save ends). While Dominated, the target acts on your turn under your control, but can only take basic actions (move, basic attack). At the end of each of its turns, the target may attempt a saving throw.",
+  keywords: "Command, Domination",
+  difficulty: "7",
+  cost: "3 Increments",
+  range: "one creature within 10",
+  resistance: "D7 Potential",
+  miss: "The target is Dazed for 1 round.",
+)
+
+==== Tier 4
+
+#power-description(
+  "Overwhelming Presence",
+  "Command",
+  4,
+  "3 AP",
+  "Your authority is absolute. All enemies in the area must pass a resistance check or be Stunned for 1 round, then Frightened of you (save ends). Allies in the area are immune to fear effects and gain +2d on all checks for 2 rounds.",
+  keywords: "Command, Morale, Fear",
+  difficulty: "8",
+  cost: "3 Increments",
+  range: "Close Burst 5",
+  resistance: "D8 Potential",
+  miss: "Frightened for 1 round (no Stun).",
+)
+
+==== Tier 5
+
+#power-description(
+  "Grand Tactician",
+  "Command",
+  5,
+  "3 AP",
+  "You orchestrate a devastating coordinated assault. Up to five allies within range each immediately take a standard action of their choice as a free action. Each ally that attacks gains +3d on their attack roll. An ally may not be targeted by this power more than once per encounter.",
+  keywords: "Command, Tactical",
+  difficulty: "10",
+  cost: "3 Increments",
+  range: "Burst 5 centered on you; up to 5 allies",
+)
+
+==== Tier 6
+
+#power-description(
+  "Absolute Authority",
+  "Command",
+  6,
+  "3 AP",
+  "Your word becomes law on the battlefield. Choose one: (1) All enemies in the area are Dominated for 1 round (no save). During this round, dominated enemies cannot use powers above Tier 2 and must use their movement to move to a location you designate. (2) All allies in the area gain +1 AP, +3d on all attack rolls, and immunity to all status conditions for 2 rounds.",
+  keywords: "Command, Domination, Morale",
+  difficulty: "12",
+  cost: "4 Increments",
+  range: "Burst 5 centered on you",
+  resistance: "D10 Potential (option 1 only)",
+  miss: "Dazed for 1 round (option 1 only).",
+)
+
+=== Marksmanship Exploits
+
+==== Tier 1
+
+#power-description(
+  "Steady Shot",
+  "Exploit",
+  1,
+  "2 AP",
+  "You take careful aim and fire. Make a ranged attack with +2d. If you have not moved this turn, the attack deals an additional 50% damage.",
+  keywords: "Weapon, Ranged",
+  difficulty: "+2",
+  range: "Weapon range",
+)
+
+==== Tier 2
+
+#power-description(
+  "Pinning Shot",
+  "Exploit",
+  2,
+  "2 AP",
+  "Your shot pins the target in place. On a hit, the target takes 100% damage and is Immobilized (save ends). If the target is adjacent to a wall or solid surface, they are also Restrained (save ends) instead.",
+  keywords: "Weapon, Ranged",
+  difficulty: "+3",
+  cost: "1 Increment",
+  range: "Weapon range; one creature",
+  resistance: "D5 Stamina (negates Immobilized/Restrained, damage still applies)",
+)
+
+#power-description(
+  "Trick Shot",
+  "Exploit",
+  2,
+  "2 AP",
+  "You ricochet a shot off a surface to strike a target behind cover. This attack ignores cover and concealment. The target takes 200% damage.",
+  keywords: "Weapon, Ranged",
+  difficulty: "+3",
+  cost: "1 Increment",
+  range: "Weapon range; one creature",
+)
+
+==== Tier 3
+
+#power-description(
+  "Suppressing Fire",
+  "Exploit",
+  3,
+  "3 AP; sustain 1 AP",
+  "You lay down a hail of fire across an area. The zone becomes hazardous: any enemy that enters the zone or starts its turn there must pass a resistance check or take 100% damage and be Prone. Enemies in the zone take a -3d penalty on attack rolls. The zone lasts as long as you sustain it; you cannot move while sustaining.",
+  keywords: "Weapon, Ranged, Zone",
+  difficulty: "6",
+  cost: "2 Increments; sustain 1",
+  range: "Burst 3 within weapon range",
+  resistance: "Dodge 6",
+)
+
+#power-description(
+  "Called Shot: Vitals",
+  "Exploit",
+  3,
+  "2 AP",
+  "You aim for a critical point. On a hit, the target takes 200% damage and is Bleeding (save ends). If this attack scores 3 or more hits above the target's Evasion, the target is also Stunned for 1 round.",
+  keywords: "Weapon, Ranged",
+  difficulty: "+3",
+  cost: "2 Increments",
+  range: "Weapon range; one creature",
+)
+
+==== Tier 4
+
+#power-description(
+  "Killzone",
+  "Exploit",
+  4,
+  "3 AP; sustain 1 AP",
+  "You designate a Burst 3 area within weapon range as a killzone. Enemies that enter the zone or start their turn there provoke a free ranged attack from you that deals 200% damage. You may make one such attack per enemy per turn. You cannot move while sustaining the killzone.",
+  keywords: "Weapon, Ranged, Zone",
+  difficulty: "7",
+  cost: "3 Increments; sustain 1",
+  range: "Burst 3 within weapon range",
+)
+
+#power-description(
+  "Headshot",
+  "Exploit",
+  4,
+  "3 AP",
+  "You take a single, devastatingly precise shot. The target takes 300% damage. If the target fails their resistance check, they are also Dazed (save ends) as the impact rattles them.",
+  keywords: "Weapon, Ranged",
+  difficulty: "+4",
+  cost: "2 Increments",
+  range: "Weapon range; one creature",
+  resistance: "D8 Stamina (Dazed only; damage always applies on hit)",
+  prerequisites: "Must not have moved this turn",
+)
+
+==== Tier 5
+
+#power-description(
+  "Death from Afar",
+  "Exploit",
+  5,
+  "3 AP",
+  "You fire a single shot with lethal precision. The attack's range is doubled. The target takes 300% damage, ignoring Hardness. If this reduces the target to half HP or below, they must pass a resistance check or be reduced to 0 HP instead.",
+  keywords: "Weapon, Ranged",
+  difficulty: "+4",
+  cost: "3 Increments",
+  range: "Double weapon range; one creature",
+  resistance: "D9 Stamina (instant-kill effect only)",
+  prerequisites: "Must not have moved this turn",
+)
+
+==== Tier 6
+
+#power-description(
+  "Bullet Hell",
+  "Exploit",
+  6,
+  "3 AP",
+  "You unleash a storm of projectiles across the battlefield. Make a ranged attack against every enemy in the area. Each target hit takes 200% damage. Targets that fail their resistance check are also Prone and Dazed (save ends both). The area becomes difficult terrain littered with spent ammunition.",
+  keywords: "Weapon, Ranged",
+  difficulty: "8",
+  cost: "4 Increments",
+  range: "Cone 15 or Line 20",
+  resistance: "D9 Stamina",
+  miss: "Half damage, Prone for 1 round.",
 )
 
 == Spell Descriptions
