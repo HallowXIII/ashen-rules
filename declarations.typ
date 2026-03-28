@@ -18,6 +18,24 @@
   ]
 }
 
+#let item-description(
+  name,
+  item-type,
+  tier,
+  keywords: none,
+  flavor: none,
+  body,
+) = {
+  set par(hanging-indent: 1em, first-line-indent: 1em)
+  block[
+  *#name* \
+  _#if tier != none [Tier #tier] #item-type#if keywords != none [; #keywords]_ \
+  #if flavor != none [_#flavor _] \
+
+  #body
+]
+}
+
 #let power-description(
   name,
   power-type,
