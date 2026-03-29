@@ -18,6 +18,37 @@
   ]
 }
 
+#let ritual-description(
+  name,
+  tier,
+  skill,
+  difficulty,
+  magnitude,
+  sacrifice,
+  casting-time,
+  effect,
+  aspects: none,
+  failure: none,
+  modifiers: none,
+  flavor: none,
+) = {
+  set par(hanging-indent: 1em, first-line-indent: 1em)
+  block[
+  *#name* \
+  _Tier #tier Ritual_ \
+  #if flavor != none [_#flavor _] \
+  _Skill:_ #skill \
+  _Difficulty:_ #difficulty, _Magnitude:_ #magnitude \
+  #if aspects != none [_Aspects:_ #aspects \ ]
+  _Sacrifice:_ #sacrifice \
+  _Casting Time:_ #casting-time \
+
+  _Effect:_ #effect \
+  #if modifiers != none [_Difficulty Modifiers:_ #modifiers \ ]
+  #if failure != none [_Failure:_ #failure]
+]
+}
+
 #let item-description(
   name,
   item-type,

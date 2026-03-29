@@ -44,8 +44,8 @@ Fill gaps so that players can progress through all tier levels without hitting e
 ---
 
 ### Phase 4: Equipment
-- [ ] **Flesh out equipment section** — Review existing equipment tables and descriptions. Add missing item entries, clarify any mechanics (bulk, catalysts, magic items), and ensure the section is complete enough to equip characters at all tiers.
-- [ ] **Rituals and Recipes** — The framework for rituals/recipes exists but content is sparse. Write a usable set of rituals and recipes so that characters with those skills have something to actually do.
+- [x] **Flesh out equipment section** — Added equipment rules prose (weapons, armor, catalysts, bulk/charge), full T0-T6 tables (weapons, armor, catalysts, reliquaries, consumables, general gear), item descriptions with special effects for T4-T6 items. Renamed Magic Armor → Ward.
+- [x] **Rituals and Recipes** — Added `ritual-description` macro, `ritual-guidelines.md`, and 18 rituals/recipes: 7 Ritual skill (Rite of Opening, Ward of Alarm, Arcane Lock, Circle of Binding, Enchant Weapon, Planar Gate, Resurrection Rite), 4 Occultism (Augury, Scrying, Commune, Fate Unraveling), 7 Alchemy (Healing Potion, Antidote, Stimulant Draft, Weapon Oil, Paralytic Poison, Elixir of Fortitude, Philosopher's Reagent).
 
 ---
 

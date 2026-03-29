@@ -2000,6 +2000,235 @@ consumption of consumables, other consequences may unfold, varying based on the
 specific nature of the ritual. Players should be prepared for the unexpected in
 the arcane arts.
 
+=== Ritual List
+
+#ritual-description(
+  "Rite of Opening",
+  1,
+  "Ritual",
+  "3",
+  "3",
+  "Components (Ƒ 100)",
+  "5 minutes",
+  "The Rite of Opening creates a physical path between you and a location of your choosing whose approximate whereabouts are known to you. The Rite is potentially destructive but never creative: it can tear down barriers, but it cannot construct bridges. When opening artificial obstacles like locked doors, the rite may open simple obstacles non-destructively, but may simply unhinge a door equipped with a complex magical lock. It can burrow or blast through natural barriers that are sufficiently thin.",
+  modifiers: "Target guarded by magical barriers: +(tier of barrier) per barrier. Target behind rock or earth: +2 per meter. Target behind steel: +2 per 10 cm. Target known to within <10 m accuracy: +2. Target known to within <50 m: +5. Target >30 m away: +1 per 10 m.",
+  flavor: "With the final twist of your implement, you open a path to your destination.",
+)
+
+#ritual-description(
+  "Ward of Alarm",
+  1,
+  "Ritual",
+  "3",
+  "2",
+  "Components (Ƒ 50)",
+  "10 minutes",
+  "You inscribe a ward on a doorway, window, or area up to Burst 3. For the next 8 hours, if any creature of size 1 or larger crosses the ward, the caster is immediately alerted, even if asleep. The alert is mental and silent — only the caster perceives it. The ward is invisible but can be detected with Eerie (difficulty 4).",
+  failure: "The ward is created but is unstable — it triggers once randomly during the duration, then fails.",
+)
+
+#ritual-description(
+  "Arcane Lock",
+  2,
+  "Ritual",
+  "5",
+  "4",
+  "Components (Ƒ 300)",
+  "10 minutes",
+  "You seal a door, chest, window, or other closeable object with arcane energy. The lock can only be opened by the caster, by a creature they designate during casting, or by a successful Rite of Opening or Magitek check against a difficulty equal to the caster's casting check result. The lock persists until dispelled or broken.",
+  failure: "The lock is created but is brittle — its effective difficulty is halved.",
+)
+
+#ritual-description(
+  "Circle of Binding",
+  3,
+  "Ritual",
+  "7",
+  "6",
+  "Components (Ƒ 1000)",
+  "30 minutes",
+  "You inscribe a circle of binding on a surface up to 3 squares in diameter. Any summoned, extraplanar, or undead creature that enters or is summoned into the circle cannot leave it by any means (including teleportation) unless the circle is physically broken or the creature succeeds on a D8 Potential check at the start of each of its turns. The circle persists for 24 hours or until broken.",
+  failure: "The circle appears complete but has a hidden flaw. The first creature bound in it may attempt to escape with a D4 Potential check instead.",
+)
+
+#ritual-description(
+  "Enchant Weapon",
+  3,
+  "Ritual",
+  "8",
+  "7",
+  "Components (Ƒ 1500)",
+  "1 hour",
+  "You temporarily enhance a weapon, granting it one of the following benefits for 24 hours: (1) its damage increases by one tier (e.g., a T2 weapon deals T3 damage), (2) it gains a keyword of your choice (Burning, Poisonous (5), or Silvered), or (3) it gains +3 Penetration. Only one enchantment can be active on a weapon at a time.",
+  failure: "The enchantment takes hold but is unstable — it lasts only 1 hour instead of 24, and the weapon's damage die is reduced by one step for that hour.",
+)
+
+#ritual-description(
+  "Planar Gate",
+  5,
+  "Ritual",
+  "12",
+  "11",
+  "Components (Ƒ 8000) + Essence (5 Strain)",
+  "8 hours",
+  "You tear open a portal to another plane of existence. The portal is a circle up to 3 squares in diameter and remains open for 1 minute per success on the casting check. Creatures can pass through in both directions. The caster may close the portal early as a free action. The destination must be a plane the caster has visited or possesses a fragment of (a physical object originating from that plane).",
+  aspects: "Key, Mist",
+  failure: "The portal opens to an unintended location on the target plane, or to the wrong plane entirely. The caster takes an additional 5 Strain.",
+)
+
+#ritual-description(
+  "Resurrection Rite",
+  5,
+  "Ritual",
+  "11",
+  "10",
+  "Components (Ƒ 10000) + Essence (8 Strain)",
+  "12 hours",
+  "You restore a creature that has been dead for up to one month to life. The creature returns with HP equal to 1 and is Exhausted for one week. The creature's soul must be willing to return — if it is not, the ritual fails automatically (with no component cost). This ritual cannot restore creatures that were killed by effects that destroy the soul.",
+  aspects: "Scarab",
+  failure: "The ritual fails. The caster takes the full Strain cost. Components are consumed. If the check fails by 5 or more, a hostile spirit may be drawn to inhabit the body instead.",
+)
+
+=== Occultism Ritual List
+
+#ritual-description(
+  "Augury",
+  1,
+  "Occultism",
+  "4",
+  "2",
+  "Components (Ƒ 50)",
+  "10 minutes",
+  "You perform a divination to glimpse the near future. Ask the GM one question about a specific course of action you plan to take within the next hour. The GM answers with one of: Weal (good outcome), Woe (bad outcome), Weal and Woe (mixed), or Nothing (no significant consequence). The GM is not required to reveal details — only the general tenor of the outcome.",
+  failure: "The augury gives a misleading answer (GM's choice).",
+)
+
+#ritual-description(
+  "Scrying",
+  3,
+  "Occultism",
+  "7",
+  "6",
+  "Components (Ƒ 800)",
+  "30 minutes",
+  "You observe a creature or location remotely. You must have either met the target creature, visited the target location, or possess an object closely associated with either. On success, you perceive the target's immediate surroundings (sight and sound) for up to 10 minutes. The target may sense the scrying with a D6 Potential check — on success, they know they are being observed and by whom.",
+  modifiers: "Target possesses anti-scrying wards: +(tier of ward). Target is on another plane: +4. You possess a piece of the target (hair, belonging): -2.",
+  failure: "The scrying fails and the target is automatically alerted to the attempt.",
+)
+
+#ritual-description(
+  "Commune",
+  4,
+  "Occultism",
+  "10",
+  "9",
+  "Components (Ƒ 2000) + Essence (3 Strain)",
+  "2 hours",
+  "You open a channel of communication with an otherworldly entity — a god, a powerful spirit, or an echo of a dead deity. You may ask up to three questions, which the entity answers truthfully but not necessarily completely. The entity may demand a price for its knowledge (additional Essence, a future favor, or information in return). The nature of the entity contacted depends on the circumstances and location of the ritual.",
+  aspects: "Moon",
+  failure: "The channel opens but connects to an unintended entity. The entity may lie, demand payment, or be hostile.",
+)
+
+#ritual-description(
+  "Fate Unraveling",
+  6,
+  "Occultism",
+  "14",
+  "14",
+  "Components (Ƒ 20000) + Essence (10 Strain) + Influence (Skull 8, Moon 6)",
+  "1 day",
+  "You unravel the threads of fate surrounding one subject — a person, an object, an event, or a place. The GM reveals the complete truth about the subject: its history, its current state, its connections, and its most likely future. This information is absolute and cannot be obscured by any magic short of divine intervention. The caster experiences the revelation as a trance-vision lasting several hours.",
+  aspects: "Moon, Skull",
+  failure: "The revelation is partial and fragmented. The caster takes the full Strain and Influence cost. The caster is Dazed for 24 hours from the psychic backlash.",
+)
+
+=== Alchemical Recipe List
+
+#ritual-description(
+  "Healing Potion",
+  1,
+  "Alchemy",
+  "3",
+  "2",
+  "Components (Ƒ 150)",
+  "10 minutes",
+  "You brew a potion that restores HP equal to 100% of the catalyst used in its creation. The potion can be consumed as a 1 AP action. Potions expire after one week.",
+  failure: "The potion is inert — it has no effect but is otherwise harmless.",
+)
+
+#ritual-description(
+  "Antidote",
+  1,
+  "Alchemy",
+  "3",
+  "2",
+  "Components (Ƒ 100)",
+  "10 minutes",
+  "You brew a potion that removes the Poisoned condition from the drinker. If the poison is of a tier higher than this recipe's tier, the difficulty increases by 2 per tier difference. The antidote can be consumed as a 1 AP action.",
+  failure: "The antidote is ineffective.",
+)
+
+#ritual-description(
+  "Stimulant Draft",
+  2,
+  "Alchemy",
+  "5",
+  "4",
+  "Components (Ƒ 300)",
+  "20 minutes",
+  "You brew a stimulant that sharpens the drinker's abilities. When consumed (1 AP action), the drinker chooses one skill. They gain +2d on checks with that skill for 1 hour. A creature cannot benefit from more than one stimulant at a time; consuming a second replaces the first.",
+  failure: "The stimulant works but inflicts a -1d penalty on all other skills for its duration.",
+)
+
+#ritual-description(
+  "Weapon Oil",
+  2,
+  "Alchemy",
+  "5",
+  "4",
+  "Components (Ƒ 400)",
+  "15 minutes",
+  "You create an oil that can be applied to a weapon (1 AP action). The weapon gains a damage type of your choice (Thermal, Cold, Electric, or Acid) for 1 encounter. While active, the weapon's damage is treated as that type for the purposes of resistances and vulnerabilities. Only one oil can be active on a weapon at a time.",
+  failure: "The oil is unstable — it lasts only 3 rounds instead of 1 encounter.",
+)
+
+#ritual-description(
+  "Paralytic Poison",
+  3,
+  "Alchemy",
+  "7",
+  "6",
+  "Components (Ƒ 800)",
+  "30 minutes",
+  "You create a dose of paralytic poison (3 applications). The poison can be applied to a weapon (1 AP action) or slipped into food/drink. On the next hit (or when ingested), the target must pass a D6 Stamina check or be Stilled (save ends). Whether the save succeeds or fails, the application is consumed.",
+  failure: "The poison is weak — the resist DC is reduced to D4.",
+)
+
+#ritual-description(
+  "Elixir of Fortitude",
+  4,
+  "Alchemy",
+  "9",
+  "8",
+  "Components (Ƒ 2500)",
+  "1 hour",
+  "You brew a powerful protective elixir. When consumed (1 AP action), the drinker gains +3 Armor and +3 Ward for 1 encounter. Additionally, the drinker gains +2d on Stamina resistance checks for the duration. A creature cannot benefit from more than one elixir at a time.",
+  failure: "The elixir provides only +1 Armor and +1 Ward, and its duration is halved.",
+)
+
+#ritual-description(
+  "Philosopher's Reagent",
+  5,
+  "Alchemy",
+  "12",
+  "10",
+  "Components (Ƒ 6000) + Essence (5 Strain)",
+  "8 hours",
+  "You create a single universal reagent of extraordinary purity, worth 8 Magnitude for the purpose of any ritual. This exceeds the magnitude of any readily obtainable reagent (capped at 6 for standard materials). The Philosopher's Reagent does not expire and can provide any single aspect at up to magnitude 4 when used as Influence.",
+  aspects: "Mist, Forge",
+  failure: "The reagent is created but is flawed — it is worth only 5 Magnitude and cannot provide aspect Influence.",
+)
+
 = Advances
 == What is an advance?
 
@@ -3511,6 +3740,101 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   cost: "4 Increments",
   range: "Burst 5 centered on you; all allies in burst",
   tap: "The duration increases to 5 rounds and allies recover 200% instead.",
+)
+
+==== Poison Domain
+
+#power-description(
+  "Venomous Touch",
+  "Prayer",
+  1,
+  "2 AP",
+  "You channel a potent toxin through your hand or weapon. Your next melee attack or touch before the end of your turn deals an additional 100% of your catalyst's damage as Poison damage. If the target takes damage, it must pass a resistance check or become Poisoned (save ends).",
+  domain: "Poison",
+  keywords: "Divine, Poison",
+  difficulty: "3",
+  cost: "1 Increment",
+  resistance: "D3 Stamina",
+  tap: "The target also takes ongoing 3/T Poison damage (save ends) regardless of whether the Poisoned save succeeds.",
+)
+
+#power-description(
+  "Miasma",
+  "Prayer",
+  2,
+  "2 AP; sustain 1 AP",
+  "You exhale a cloud of noxious fumes that fills the area. The zone provides light obscurement. Any creature that enters or starts its turn in the zone takes 100% Poison damage and must pass a resistance check or be Poisoned and Weakened (-2d on attack rolls) for 1 round. The zone lasts as long as you sustain it.",
+  domain: "Poison",
+  keywords: "Divine, Poison, Zone",
+  difficulty: "4",
+  cost: "2 Increments; sustain 1",
+  range: "Burst 2 within 15",
+  resistance: "D4 Stamina",
+  tap: "The zone also imposes a -2 penalty to saving throws against Poisoned while creatures remain within it.",
+)
+
+#power-description(
+  "Wither",
+  "Prayer",
+  3,
+  "2 AP",
+  "You curse the target with a wasting toxin that saps their vitality. The target takes 200% Poison damage. On a failed resistance check, the target is Diseased (save ends): while Diseased, all healing received by the target is halved, and the target takes ongoing 5/T Poison damage at the start of each of its turns.",
+  domain: "Poison",
+  keywords: "Divine, Poison, Disease",
+  difficulty: "7",
+  cost: "2 Increments",
+  range: "one creature within 10",
+  resistance: "D6 Stamina",
+  miss: "Half damage, Poisoned for 1 round.",
+  tap: "The Disease also reduces the target's Stamina by 2 for the duration.",
+)
+
+#power-description(
+  "Plague Bearer",
+  "Prayer",
+  4,
+  "3 AP",
+  "You infect a target with a virulent plague that spreads to nearby enemies. The primary target takes 200% Poison damage and is automatically Diseased (save ends). At the end of each of the primary target's turns, all enemies within 2 squares of it must pass a resistance check or also become Diseased. The disease spreads in this manner up to 3 times. Diseased creatures have their healing halved and take ongoing 5/T Poison damage.",
+  domain: "Poison",
+  keywords: "Divine, Poison, Disease",
+  difficulty: "8",
+  cost: "3 Increments",
+  range: "one creature within 10",
+  resistance: "D7 Stamina (spread only; primary target auto-fails)",
+  miss: "Half damage, Poisoned (save ends) instead of Diseased.",
+  tap: "The spreading radius increases to 3 squares and the maximum number of spreads increases to 5.",
+)
+
+#power-description(
+  "Necrotic Venom",
+  "Prayer",
+  5,
+  "3 AP",
+  "You inject a target with a toxin that attacks the boundary between life and death. The target takes 300% Poison damage, ignoring Ward. On a failed resistance check, the target cannot be healed by any means (save ends). While this effect persists, any damage the target takes also reduces its maximum HP by the same amount. Maximum HP lost this way is restored when the effect ends.",
+  domain: "Poison",
+  keywords: "Divine, Poison, Necrotic",
+  difficulty: "10",
+  cost: "3 Increments",
+  range: "one creature within 10",
+  resistance: "D9 Stamina",
+  miss: "Half damage, healing halved for 1 round.",
+  tap: "The target's maximum HP reduction persists for 24 hours after the anti-healing effect ends.",
+)
+
+#power-description(
+  "World Serpent's Embrace",
+  "Prayer",
+  6,
+  "3 AP",
+  "You call upon the World Serpent to devour your enemies' vitality. All enemies in the area take 300% Poison damage and are Diseased and Poisoned (save ends both). Diseased creatures have their healing halved and take ongoing 100% Poison damage per turn. For each enemy affected, one ally of your choice within the area recovers HP equal to 100% of your catalyst's damage. Enemies reduced to 0 HP by this prayer cannot be resurrected for 1 week.",
+  domain: "Poison",
+  keywords: "Divine, Poison, Disease, Necrotic",
+  difficulty: "12",
+  cost: "4 Increments",
+  range: "Burst 4 within 20; all enemies in burst",
+  resistance: "D10 Stamina",
+  miss: "Half damage, Poisoned for 1 round.",
+  tap: "Allies in the area also gain immunity to Poison and Disease for 3 rounds.",
 )
 
 
