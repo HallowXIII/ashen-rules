@@ -5,7 +5,7 @@
   pfred: rgb("#4e1b0e"),
   pfmaroon: rgb("#5d0000"),
   lightgreen: rgb("#015d4e"),
-  pfwhite: rgb("#ede3c7"),
+  pfwhite: rgb("#efefe7"),
   pfnavy: rgb("#002b6f"),
   otherRow: rgb("#f4eee0"),
   pfyellow: rgb("#dac285"),
@@ -20,8 +20,8 @@
     margin: (left: 12mm, right: 12mm, top: 12mm, bottom: 12mm),
   )
   set text(
-    font: ("Roboto", "Liberation Sans"), // General font family
-    size: 10pt,
+    font: ("Sofia Sans", "Liberation Sans"), // General font family
+    size: 12pt,
     stretch: 80%,
   )
   set par(
@@ -46,7 +46,7 @@
     set par(first-line-indent: 0em)
     text(
       size: 1.4em,
-      fill: colors.pfred,
+      fill: colors.pfnavy,
       weight: "bold",
       it.body
     )

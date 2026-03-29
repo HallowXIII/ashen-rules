@@ -1,4 +1,4 @@
-#import "declarations.typ": item-description
+#import "declarations.typ": item-description, pftab, power-description
 = Equipment
 
 == Types of Equipment
@@ -109,150 +109,54 @@ these cases, those prayers are specially noted in the reliquary's stat block.
 )
 == Equipment Tables
 
-=== Tier 0 — Old War Relics
-
-==== Melee Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
-  [Old War Dagger], [0], [_Ƒ 0_], [2+D6], [0], [½ (L)], [1], [Melee], [—], [Sidearm],
-  [Old War Longsword], [0], [_Ƒ 0_], [4+D4], [0], [1 (M)], [1], [Melee], [—], [],
-  [Old War Greatsword], [0], [_Ƒ 0_], [4+D6], [0], [2 (H)], [2], [Melee], [—], [],
-  [Old War Greathammer], [0], [_Ƒ 0_], [6+D3], [0], [2 (H)], [2], [Melee], [—], [],
-  [Old War Spear], [0], [_Ƒ 0_], [5+D3], [0], [2 (M)], [2], [Reach 2], [—], [],
+#pftab(
+  "Melee Weapons",
+  columns: 8,
+  //align: (left, center, center, center, center, center, center, center, center, left),
+  [Name], [Tier], [Price], [Damage], [Pen], [Bulk], [Hands], [Special],
+  [Old War Dagger], [0], [_Ƒ 0_], [2+D6], [0], [½ (L)], [1], [Sidearm],
+  [Old War Longsword], [0], [_Ƒ 0_], [4+D4], [0], [1 (M)], [1], [],
+  [Old War Greatsword], [0], [_Ƒ 0_], [4+D6], [0], [2 (H)], [2], [],
+  [Old War Greathammer], [0], [_Ƒ 0_], [6+D3], [0], [2 (H)], [2], [],
+  [Old War Spear], [0], [_Ƒ 0_], [5+D3], [0], [2 (M)], [2], [Reach 2],
+  [Heat Knife], [1], [_Ƒ 150_], [6+D3], [0], [½ (L)], [1], [Sidearm, Burning],
+  [Lantern Impulse Gauntlet], [1], [_Ƒ 200_], [4+D6], [0], [¼ (L)], [1], [],
+  [Lantern Force Sword], [1], [_Ƒ 300_], [5+D8], [0], [½ (L)], [1], [],
+  [Dragon Guard Longsword], [1], [_Ƒ 350_], [6+D6], [0], [1 (M)], [1], [],
+  [Construct Chainsword], [1], [_Ƒ 500_], [6+D12], [0], [2 (H)], [1], [Powered],
+  [Silvered Force Sword], [2], [_Ƒ 600_], [6+D6], [4], [½ (L)], [1], [Silvered],
+  [Lacerator Shortsword], [2], [_Ƒ 700_], [9+D8], [0], [1 (M)], [1], [],
+  [Argent Disruptor], [2], [_Ƒ 800_], [9+D8], [0], [1½ (M)], [1], [Disrupting],
+  [Argent Keyblade], [2], [_Ƒ 1000_], [9+2D8], [0], [½ (L)], [1], [],
+  [Construct Power Sword], [2], [_Ƒ 1200_], [15+D4], [0], [2 (H)], [1], [Powered],
+  [Flaming Touch], [2], [_Ƒ 900_], [12+D10], [0], [0], [1], [Burning],
+  [Gathering Cloud Blade], [3], [_Ƒ 2500_], [11+2D8], [0], [2 (M)], [1], [],
+  [Parry Dagger, Power Field], [4], [_Ƒ 5000_], [7+D6 R], [15], [1 (L)], [1], [Parry +4d, Powered],
+  [Venom Fang, Unstable Edge], [4], [_Ƒ 5000_], [8+2D8 R], [10], [1 (L)], [1], [Poisonous (8)],
+  [Hoarfrost], [5], [_Unique_], [7+D12], [0], [2 (M)], [1], [Split damage (physical + magical)],
+  [Void Blade], [5], [_Unique_], [15+D10], [0], [1 (L)], [1], [Required for Wounds from Nowhere],
+  [Kazykly], [6], [_Unique_], [29+2D12], [0], [3 (H)], [1], [Required for Forest of Corpses],
+  [Moonlight Shortsword], [6], [_Unique_], [18+2D8], [0], [2 (M)], [1], [],
 )
 
-==== Ranged Weapons
-#table(
+#pftab(
+  "Ranged Weapons",
   columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
+  breakable: true,
+  //align: (left, center, center, center, center, center, center, center, center, left),
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
   [Old War Pistol], [0], [_Ƒ 0_], [1+D4], [0], [½ (L)], [1], [Short], [S], [Sidearm],
   [Old War Rifle], [0], [_Ƒ 0_], [3+D3], [0], [1 (M)], [2], [Medium], [S], [],
-)
-
-=== Tier 1 — Standard Issue
-
-==== Melee Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
-  [Heat Knife], [1], [_Ƒ 150_], [6+D3], [0], [½ (L)], [1], [Melee], [—], [Sidearm, Burning],
-  [Lantern Impulse Gauntlet], [1], [_Ƒ 200_], [4+D6], [0], [¼ (L)], [1], [Melee], [—], [],
-  [Lantern Force Sword], [1], [_Ƒ 300_], [5+D8], [0], [½ (L)], [1], [Melee], [—], [],
-  [Dragon Guard Longsword], [1], [_Ƒ 350_], [6+D6], [0], [1 (M)], [1], [Melee], [—], [],
-  [Construct Chainsword], [1], [_Ƒ 500_], [6+D12], [0], [2 (H)], [1], [Melee], [—], [Powered],
-)
-
-==== Ranged Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
   [Silent Killer], [1], [_Ƒ 200_], [8+D3], [0], [1 (M)], [1], [Medium], [S], [],
   [Lantern Autopulse Rifle], [1], [_Ƒ 350_], [5+D8], [0], [1 (M)], [2], [Long], [SA 3], [Rapid Fire],
   [Construct Chaingun], [1], [_Ƒ 500_], [8+D8], [0], [3 (H)], [1], [Medium], [FA 3], [Heavy],
   [Nightpiercer], [1], [_Ƒ 450_], [11+D3], [0], [2 (H)], [2], [Very Long], [S], [Heavy],
-)
-
-==== Armor
-#table(
-  columns: 8,
-  align: (left, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Armor*], [*Ward*], [*Evasion*], [*Bulk*], [*Charge*],
-  [Midnight Combat Suit], [1], [_Ƒ 200_], [3], [3], [+1], [1], [1],
-  [Hunter-Killer Combat Suit], [1], [_Ƒ 250_], [4], [3], [+1], [½], [0],
-  [Mistwalker Robes], [1], [_Ƒ 300_], [3], [6], [+1], [1], [2],
-  [Sudassi-Pattern Construct Frame], [1], [_Ƒ 500_], [7], [5], [-2], [5], [2],
-)
-
-==== Catalysts
-#table(
-  columns: 9,
-  align: (left, center, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Type*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Increment*],
-  [Soul Crystal], [1], [_Ƒ 200_], [Arcane], [Light], [0], [2], [4+D6], [5],
-  [Amber Rod], [1], [_Ƒ 350_], [Arcane], [Medium], [1], [2], [8+D3], [8],
-  [Angel Mask], [1], [_Ƒ 300_], [Psychic], [Medium], [0], [3], [5+D8], [8],
-  [Prana Crystal], [1], [_Ƒ 250_], [Psychic], [Light], [0], [2], [2+D6], [5],
-)
-
-==== Reliquaries
-#table(
-  columns: 9,
-  align: (left, center, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Increment*], [*Will*],
-  [The Princess' Locket], [1], [_Ƒ 300_], [Light], [0], [2], [4+D6], [5], [3],
-  [Battlefield Dust], [1], [_Ƒ 300_], [Light], [0], [2], [3+D8], [5], [3],
-  [Kharu's Ember], [1], [_Ƒ 250_], [Light], [0], [1], [4+D3], [5], [2],
-)
-
-=== Tier 2 — Professional Grade
-
-==== Melee Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
-  [Silvered Force Sword], [2], [_Ƒ 600_], [6+D6], [4], [½ (L)], [1], [Melee], [—], [Silvered],
-  [Lacerator Shortsword], [2], [_Ƒ 700_], [9+D8], [0], [1 (M)], [1], [Melee], [—], [],
-  [Argent Disruptor], [2], [_Ƒ 800_], [9+D8], [0], [1½ (M)], [1], [Melee], [—], [Disrupting],
-  [Argent Keyblade], [2], [_Ƒ 1000_], [9+2D8], [0], [½ (L)], [1], [Melee], [—], [],
-  [Construct Power Sword], [2], [_Ƒ 1200_], [15+D4], [0], [2 (H)], [1], [Melee], [—], [Powered],
-  [Flaming Touch], [2], [_Ƒ 900_], [12+D10], [0], [0], [1], [Melee], [—], [Burning],
-)
-
-==== Ranged Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
   [Alchymic Double Barrel], [2], [_Ƒ 800_], [15+D6], [0], [2 (M)], [1], [Short], [S], [],
   [Perfector Mk IV Suppressed Rifle], [2], [_Ƒ 1000_], [15+D6], [0], [1 (M)], [2], [Very Long], [S], [Reliable],
   [Sudassi Pattern Light Railgun], [2], [_Ƒ 1200_], [9+2D8], [0], [3 (H)], [2], [Long], [S], [Heavy],
   [Dragon Gun], [2], [_Ƒ 1500_], [20+D6], [0], [2½ (H)], [2], [Very Long], [S], [Heavy, Single-Shot],
   [Plasma Pistol], [2], [_Ƒ 800_], [5+D8 T], [8], [1 (L)], [1], [Short], [S], [Burning],
   [Plasma Rifle], [2], [_Ƒ 1200_], [5+D8 T], [8], [1 (M)], [2], [Medium], [SA 3], [Burning],
-)
-
-==== Armor
-#table(
-  columns: 8,
-  align: (left, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Armor*], [*Ward*], [*Evasion*], [*Bulk*], [*Charge*],
-  [Black Leather Combat Suit], [2], [_Ƒ 600_], [4], [4], [+2], [2], [0],
-  [Synweave Nightcamo Cloak], [2], [_Ƒ 800_], [0], [1], [+2], [½], [2],
-  [Warmage Robes], [2], [_Ƒ 1000_], [5], [8], [+1], [1], [3],
-  [Flak Vest], [2], [_Ƒ 500_], [6], [1], [-2], [2], [0],
-  [Zahak-Pattern Serpent Frame], [2], [_Ƒ 1200_], [8], [5], [0], [3], [3],
-  [Sudassi-Pattern Artillery Frame], [2], [_Ƒ 1500_], [8], [11], [-2], [5], [3],
-)
-
-==== Catalysts
-#table(
-  columns: 9,
-  align: (left, center, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Type*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Increment*],
-  [Blackbone Staff], [2], [_Ƒ 800_], [Arcane], [Medium], [½], [1½], [9+D8], [9],
-)
-
-=== Tier 3 — Elite
-
-==== Melee Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
-  [Gathering Cloud Blade], [3], [_Ƒ 2500_], [11+2D8], [0], [2 (M)], [1], [Melee], [—], [],
-)
-
-==== Ranged Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
   [Jet Black Pistol], [3], [_Ƒ 1800_], [11+D4], [0], [1 (L)], [1], [Long], [S], [Sidearm],
   [Magmatic Pistol], [3], [_Ƒ 2000_], [11+D4 T], [0], [1 (L)], [1], [Short], [S], [Burning],
   [Lantern Jetgun], [3], [_Ƒ 2200_], [7+D12], [0], [1 (L)], [1], [Long], [FA 3], [Jet],
@@ -261,42 +165,6 @@ these cases, those prayers are specially noted in the reliquary's stat block.
   [Dragon Guard Combo Jet], [3], [_Ƒ 3500_], [12+2D10], [0], [2½ (H)], [1], [Medium], [FA 3], [Jet, Explosive],
   [Plasma Caster], [3], [_Ƒ 3000_], [6+D10 T], [12], [2 (M)], [2], [Cone 6], [S], [Burning],
   [Plasma Lance], [3], [_Ƒ 3500_], [8+D12 T], [16], [3 (H)], [2], [Line 20], [S], [Burning, Heavy],
-)
-
-==== Armor
-#table(
-  columns: 8,
-  align: (left, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Armor*], [*Ward*], [*Evasion*], [*Bulk*], [*Charge*],
-  [Infiltrator Bodysuit], [3], [_Ƒ 2000_], [8], [5], [+1], [1], [1],
-  [Battlemage Vestments], [3], [_Ƒ 2500_], [8], [10], [0], [2], [3],
-  [Dragon Guard Power Armor], [3], [_Ƒ 3000_], [15], [10], [-4], [5], [1],
-)
-
-==== Catalysts
-#table(
-  columns: 9,
-  align: (left, center, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Type*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Increment*],
-  [Polybind Staff], [3], [_Ƒ 2500_], [Arcane], [Medium], [1], [2½], [12+D10], [11],
-)
-
-=== Tier 4 — Advanced
-
-==== Melee Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
-  [Parry Dagger, Power Field], [4], [_Ƒ 5000_], [7+D6 R], [15], [1 (L)], [1], [Melee], [—], [Parry +4d, Powered],
-  [Venom Fang, Unstable Edge], [4], [_Ƒ 5000_], [8+2D8 R], [10], [1 (L)], [1], [Melee], [—], [Poisonous (8)],
-)
-
-==== Ranged Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
   [Jet Pistol, Annihilator], [4], [_Ƒ 5400_], [8+2D8 R], [0], [½ (L)], [1], [Short], [FA 4], [Jet, Explosive],
   [Jetgun, Annihilator], [4], [_Ƒ 6000_], [12+2D10 R], [0], [2 (M)], [2], [Medium], [FA 3], [Jet, Explosive],
   [Magnetic Rifle, Gauss], [4], [_Ƒ 5400_], [15+D8 I], [5], [1 (M)], [2], [Long], [FA 3], [Reliable],
@@ -304,32 +172,109 @@ these cases, those prayers are specially noted in the reliquary's stat block.
   [Plasma Rifle, Sunfury], [4], [_Ƒ 7000_], [8+2D12 T], [15], [2 (M)], [2], [Short], [S], [Overload, Burning],
   [Plasma Cannon, Sunfury], [4], [_Ƒ 8000_], [9+3D10 T], [18], [4 (H)], [2], [Short], [S], [Overload, Burning, Heavy],
   [Plasma Pistol, Sunfury], [4], [_Ƒ 6000_], [7+D12 T], [14], [1 (L)], [1], [Short], [S], [Burning],
+  [Plasma Lance, Nova], [5], [_Ƒ 12000_], [9+3D10 T], [18], [4 (H)], [2], [Line 25], [S], [Burning, Heavy],
+  [Plasma Caster, Nova], [5], [_Ƒ 10000_], [7+2D12 T], [16], [3 (M)], [2], [Cone 8], [S], [Burning],
+  [Cœur d'Étoile], [6], [_Unique_], [17+3D10 T], [34], [5 (H)], [2], [Long], [S], [Burning, Heavy],
+  [Moonlight Railgun], [6], [_Unique_], [14+2D12], [0], [2 (M)], [2], [Medium], [S], [],
+  [Silence], [6], [_Unique_], [35+2D6], [0], [2 (M)], [2], [Medium], [S], [],
 )
 
-==== Armor
-#table(
+#pftab(
+  "Armor",
   columns: 8,
   align: (left, center, center, center, center, center, center, center),
   [*Name*], [*Tier*], [*Price*], [*Armor*], [*Ward*], [*Evasion*], [*Bulk*], [*Charge*],
+  [Midnight Combat Suit], [1], [_Ƒ 200_], [3], [3], [+1], [1], [1],
+  [Hunter-Killer Combat Suit], [1], [_Ƒ 250_], [4], [3], [+1], [½], [0],
+  [Mistwalker Robes], [1], [_Ƒ 300_], [3], [6], [+1], [1], [2],
+  [Sudassi-Pattern Construct Frame], [1], [_Ƒ 500_], [7], [5], [-2], [5], [2],
+  [Black Leather Combat Suit], [2], [_Ƒ 600_], [4], [4], [+2], [2], [0],
+  [Synweave Nightcamo Cloak], [2], [_Ƒ 800_], [0], [1], [+2], [½], [2],
+  [Warmage Robes], [2], [_Ƒ 1000_], [5], [8], [+1], [1], [3],
+  [Flak Vest], [2], [_Ƒ 500_], [6], [1], [-2], [2], [0],
+  [Zahak-Pattern Serpent Frame], [2], [_Ƒ 1200_], [8], [5], [0], [3], [3],
+  [Sudassi-Pattern Artillery Frame], [2], [_Ƒ 1500_], [8], [11], [-2], [5], [3],
+  [Infiltrator Bodysuit], [3], [_Ƒ 2000_], [8], [5], [+1], [1], [1],
+  [Battlemage Vestments], [3], [_Ƒ 2500_], [8], [10], [0], [2], [3],
+  [Dragon Guard Power Armor], [3], [_Ƒ 3000_], [15], [10], [-4], [5], [1],
   [Venerant Robes], [4], [_Ƒ 5000_], [9], [20], [0], [1], [4],
   [Midnight Suit, Thermal Camo], [4], [_Ƒ 5500_], [13], [9], [+2], [1], [1],
   [Carapace Suit, Perfector Mk V], [4], [_Ƒ 5000_], [19], [12], [-1], [3], [1],
   [Faerie Battleplate, Crystalline], [4], [_Ƒ 6500_], [25], [19], [-4], [5], [3],
+  [Shadowweave Mantle], [5], [_Ƒ 10000_], [11], [8], [+2], [2], [3],
+  [Perfector Mk VI Exosuit], [5], [_Ƒ 12000_], [15], [10], [-1], [4], [2],
+  [Titan Frame, Mk III], [5], [_Ƒ 15000_], [24], [16], [-3], [6], [1],
+  [Coldlight Robes], [6], [_Unique_], [10], [25], [+2], [1], [4],
+  [Moonlight Combat Suit], [6], [_Unique_], [18], [10], [+3], [2], [3],
+  [Vanth's Sypharion], [6], [_Unique_], [15], [15], [+3], [1], [3],
 )
 
-==== Catalysts
-#table(
+#pftab(
+  "Catalysts",
   columns: 9,
   align: (left, center, center, center, center, center, center, center, center),
   [*Name*], [*Tier*], [*Price*], [*Type*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Increment*],
+  [Soul Crystal], [1], [_Ƒ 200_], [Arcane], [Light], [0], [2], [4+D6], [5],
+  [Amber Rod], [1], [_Ƒ 350_], [Arcane], [Medium], [1], [2], [8+D3], [8],
+  [Angel Mask], [1], [_Ƒ 300_], [Psychic], [Medium], [0], [3], [5+D8], [8],
+  [Prana Crystal], [1], [_Ƒ 250_], [Psychic], [Light], [0], [2], [2+D6], [5],
+  [Blackbone Staff], [2], [_Ƒ 800_], [Arcane], [Medium], [½], [1½], [9+D8], [9],
+  [Polybind Staff], [3], [_Ƒ 2500_], [Arcane], [Medium], [1], [2½], [12+D10], [11],
   [Memento Mori], [4], [_Ƒ 5000_], [Psychic], [Light], [0], [2], [8+2D8], [11],
+  [Caesium Rod], [5], [_Unique_], [Psychic], [Medium], [2], [3], [23+D10], [16],
+  [Moonray], [6], [_Unique_], [Arcane], [Medium], [1], [4], [27+2D8], [18],
+  [Serpent Staff], [6], [_Unique_], [Psychic/Divine], [Medium], [2], [5], [18+3D10], [17],
+)
+
+#pftab(
+  "Reliquaries",
+  columns: 9,
+  align: (left, center, center, center, center, center, center, center, center),
+  [*Name*], [*Tier*], [*Price*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Increment*], [*Will*],
+  [The Princess' Locket], [1], [_Ƒ 300_], [Light], [0], [2], [4+D6], [5], [3],
+  [Battlefield Dust], [1], [_Ƒ 300_], [Light], [0], [2], [3+D8], [5], [3],
+  [Kharu's Ember], [1], [_Ƒ 250_], [Light], [0], [1], [4+D3], [5], [2],
+)
+
+#pftab(
+  "Consumables",
+  columns: 7,
+  align: (left, center, center, center, center, left, center),
+  [*Name*], [*Tier*], [*Type*], [*Bulk*], [*Range*], [*Effect*], [*Cost*],
+  [Frag Grenade], [1], [Grenade], [¼], [Burst 1/10], [6+D3 damage, DC 2], [_Ƒ 150_],
+  [AP Grenade], [1], [Grenade], [½], [5], [8+D3 damage, Pen 3], [_Ƒ 300_],
+  [Acid Grenade], [0], [Grenade], [¼], [Burst 1/10], [4+D10 Acid damage], [_Ƒ 100_],
+  [Flashbang Grenade], [2], [Grenade], [¼], [Burst 2/10], [Dazed + Blinded 1 round (D4 Stamina negates)], [_Ƒ 300_],
+  [Red Healing Potion], [1], [Potion], [¼], [Self/Touch], [Heal 2+D3 HP per round for 3 rounds], [_Ƒ 250_],
+  [Weak Mana Potion], [1], [Potion], [¼], [Self/Touch], [Recover 4+D4 focus per round for 3 rounds], [_Ƒ 250_],
+)
+
+#pftab(
+  "General Equipment",
+  columns: 4,
+  align: (left, center, center, left),
+  [*Name*], [*Bulk*], [*Cost*], [*Effect*],
+  [Rope (50 ft)], [1], [_Ƒ 10_], [+2d to Athletics checks for climbing when secured],
+  [Grappling Hook], [½], [_Ƒ 25_], [Allows rope to be thrown and anchored at range],
+  [Climbing Kit], [2], [_Ƒ 50_], [+2d to Athletics checks for climbing; prevents falls on 1 failed check],
+  [Camping Kit], [3], [_Ƒ 30_], [Tent, bedroll, fire starter. Required for comfortable rest in the field],
+  [Healer's Kit (10 uses)], [1], [_Ƒ 100_], [Required to perform Alchemy checks for healing. Each use expended per patient],
+  [Alchemy Kit], [3], [_Ƒ 200_], [Required to perform Alchemy checks and brew potions],
+  [Electronics Kit], [2], [_Ƒ 150_], [Required to perform Electronics checks],
+  [Magitek Kit], [2], [_Ƒ 200_], [Required to perform Magitek checks. Charge: 2],
+  [Lantern], [½], [_Ƒ 5_], [Bright light in 10 squares, dim light in 20],
+  [Rations (1 week)], [1], [_Ƒ 10_], [Sufficient food for one person for seven days],
+  [Binoculars], [½], [_Ƒ 50_], [+2d to Scrutiny checks at long range],
+  [Comm Unit], [¼], [_Ƒ 100_], [Encrypted short-range communication (range: ~5 km)],
+  [Lockpick Set], [¼], [_Ƒ 75_], [Required to pick mechanical locks. +2d to Infiltration checks for locks],
+  [Manacles], [½], [_Ƒ 30_], [D6 Athletics to break free],
 )
 
 #set page(
   columns: 2
 )
 
-==== Item Descriptions
+=== Item Descriptions
 
 #item-description(
   "Power Field Parry Dagger",
@@ -349,51 +294,6 @@ these cases, those prayers are specially noted in the reliquary's stat block.
 )[
   The Memento Mori grants its wielder a +2 equipment bonus to manifesting Psychic powers. The bonus increases to +5 for Time and Fate powers.
 ]
-
-
-#set page(
-  columns: 1
-)
-
-=== Tier 5 — Masterwork
-
-==== Melee Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
-  [Hoarfrost], [5], [_Unique_], [7+D12], [0], [2 (M)], [1], [Melee], [—], [Split damage (physical + magical)],
-  [Void Blade], [5], [_Unique_], [15+D10], [0], [1 (L)], [1], [Melee], [—], [Required for Wounds from Nowhere],
-)
-
-==== Ranged Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
-  [Plasma Lance, Nova], [5], [_Ƒ 12000_], [9+3D10 T], [18], [4 (H)], [2], [Line 25], [S], [Burning, Heavy],
-  [Plasma Caster, Nova], [5], [_Ƒ 10000_], [7+2D12 T], [16], [3 (M)], [2], [Cone 8], [S], [Burning],
-)
-
-==== Armor
-#table(
-  columns: 8,
-  align: (left, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Armor*], [*Ward*], [*Evasion*], [*Bulk*], [*Charge*],
-  [Shadowweave Mantle], [5], [_Ƒ 10000_], [11], [8], [+2], [2], [3],
-  [Perfector Mk VI Exosuit], [5], [_Ƒ 12000_], [15], [10], [-1], [4], [2],
-  [Titan Frame, Mk III], [5], [_Ƒ 15000_], [24], [16], [-3], [6], [1],
-)
-
-==== Catalysts
-#table(
-  columns: 9,
-  align: (left, center, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Type*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Increment*],
-  [Caesium Rod], [5], [_Unique_], [Psychic], [Medium], [2], [3], [23+D10], [16],
-)
-
-==== Item Descriptions
 
 #item-description(
   "Hoarfrost",
@@ -422,6 +322,21 @@ these cases, those prayers are specially noted in the reliquary's stat block.
   *Soul Drain:* A target hit by the Void Blade must make a D6 Potential save. On failure, the target loses 1 EP and 15+D10 Focus.
 ]
 
+#power-description(
+  "Wounds from Nowhere",
+  "Innate",
+  5,
+  "2",
+  "The target must make a D8 Potential save; on failure, it takes 300% damage, ignoring armor. On success: it takes 100% damage. Whether the check fails or succeeds, the Void Blade cannot be used until the end of your next turn after you attempt to manifest this power, when it returns to your hand.",
+  keywords: ("Void",),
+  prerequisites: ("You must be wielding the Void Blade.",),
+  range: "1 within 15",
+  difficulty: "7",
+  cost: "2 Increments",
+  resistance: "No (Ward applies)",
+)
+
+
 #item-description(
   "Caesium Rod",
   "Psychic Catalyst",
@@ -431,48 +346,6 @@ these cases, those prayers are specially noted in the reliquary's stat block.
 )[
   *Resonant Frequency:* This rod grants the wielder a +3 equipment bonus to manifesting Psychic powers, increasing to +6 for Time powers.
 ]
-
-=== Tier 6 — Legendary
-
-==== Melee Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
-  [Kazykly], [6], [_Unique_], [29+2D12], [0], [3 (H)], [1], [Melee], [—], [Required for Forest of Corpses],
-  [Moonlight Shortsword], [6], [_Unique_], [18+2D8], [0], [2 (M)], [1], [Melee], [—], [],
-  [Cœur d'Étoile], [6], [_Unique_], [17+3D10 T], [34], [5 (H)], [2], [Long], [S], [Burning, Heavy],
-)
-
-==== Ranged Weapons
-#table(
-  columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
-  [Moonlight Railgun], [6], [_Unique_], [14+2D12], [0], [2 (M)], [2], [Medium], [S], [],
-  [Silence], [6], [_Unique_], [35+2D6], [0], [2 (M)], [2], [Medium], [S], [],
-)
-
-==== Armor
-#table(
-  columns: 8,
-  align: (left, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Armor*], [*Ward*], [*Evasion*], [*Bulk*], [*Charge*],
-  [Coldlight Robes], [6], [_Unique_], [10], [25], [+2], [1], [4],
-  [Moonlight Combat Suit], [6], [_Unique_], [18], [10], [+3], [2], [3],
-  [Vanth's Sypharion], [6], [_Unique_], [15], [15], [+3], [1], [3],
-)
-
-==== Catalysts
-#table(
-  columns: 9,
-  align: (left, center, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Type*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Increment*],
-  [Moonray], [6], [_Unique_], [Arcane], [Medium], [1], [4], [27+2D8], [18],
-  [Serpent Staff], [6], [_Unique_], [Psychic/Divine], [Medium], [2], [5], [18+3D10], [17],
-)
-
-==== Item Descriptions
 
 #item-description(
   "Kazykly",
@@ -601,39 +474,3 @@ these cases, those prayers are specially noted in the reliquary's stat block.
 
   *Mana Toxin:* Powers manifested using this staff apply a -3 penalty to attempts to counterspell them. When a power is successfully manifested through this catalyst, the wielder gains an Aura 10 until the beginning of their next turn; attempts to cast Arcane spells in this aura suffer a -4 penalty.
 ]
-
-=== Consumables
-
-#table(
-  columns: 7,
-  align: (left, center, center, center, center, left, center),
-  [*Name*], [*Tier*], [*Type*], [*Bulk*], [*Range*], [*Effect*], [*Cost*],
-  [Frag Grenade], [1], [Grenade], [¼], [Burst 1/10], [6+D3 damage, DC 2], [_Ƒ 150_],
-  [AP Grenade], [1], [Grenade], [½], [5], [8+D3 damage, Pen 3], [_Ƒ 300_],
-  [Acid Grenade], [0], [Grenade], [¼], [Burst 1/10], [4+D10 Acid damage], [_Ƒ 100_],
-  [Flashbang Grenade], [2], [Grenade], [¼], [Burst 2/10], [Dazed + Blinded 1 round (D4 Stamina negates)], [_Ƒ 300_],
-  [Red Healing Potion], [1], [Potion], [¼], [Self/Touch], [Heal 2+D3 HP per round for 3 rounds], [_Ƒ 250_],
-  [Weak Mana Potion], [1], [Potion], [¼], [Self/Touch], [Recover 4+D4 focus per round for 3 rounds], [_Ƒ 250_],
-)
-
-=== General Equipment
-
-#table(
-  columns: 4,
-  align: (left, center, center, left),
-  [*Name*], [*Bulk*], [*Cost*], [*Effect*],
-  [Rope (50 ft)], [1], [_Ƒ 10_], [+2d to Athletics checks for climbing when secured],
-  [Grappling Hook], [½], [_Ƒ 25_], [Allows rope to be thrown and anchored at range],
-  [Climbing Kit], [2], [_Ƒ 50_], [+2d to Athletics checks for climbing; prevents falls on 1 failed check],
-  [Camping Kit], [3], [_Ƒ 30_], [Tent, bedroll, fire starter. Required for comfortable rest in the field],
-  [Healer's Kit (10 uses)], [1], [_Ƒ 100_], [Required to perform Alchemy checks for healing. Each use expended per patient],
-  [Alchemy Kit], [3], [_Ƒ 200_], [Required to perform Alchemy checks and brew potions],
-  [Electronics Kit], [2], [_Ƒ 150_], [Required to perform Electronics checks],
-  [Magitek Kit], [2], [_Ƒ 200_], [Required to perform Magitek checks. Charge: 2],
-  [Lantern], [½], [_Ƒ 5_], [Bright light in 10 squares, dim light in 20],
-  [Rations (1 week)], [1], [_Ƒ 10_], [Sufficient food for one person for seven days],
-  [Binoculars], [½], [_Ƒ 50_], [+2d to Scrutiny checks at long range],
-  [Comm Unit], [¼], [_Ƒ 100_], [Encrypted short-range communication (range: ~5 km)],
-  [Lockpick Set], [¼], [_Ƒ 75_], [Required to pick mechanical locks. +2d to Infiltration checks for locks],
-  [Manacles], [½], [_Ƒ 30_], [D6 Athletics to break free],
-)

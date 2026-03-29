@@ -1,8 +1,8 @@
 #import "formatting/style.typ": *
 #import "declarations.typ": *
 #set page(paper: "a4")
-#set document(title: "Ashen Rulebook")
 #show: pf-stylization 
+#set document(title: "Ashen Rulebook")
 
 #set document(
   title: "Ashen Rules",
@@ -479,7 +479,7 @@ You gain the following power:
   "Move Action, 2 AP",
   "Select one square within your move range. You teleport to it.",
   domain: "Warp",
-  keywords: "Innate",
+  keywords: ("Innate",),
   cost: "6 FP",
 )
 
@@ -513,7 +513,7 @@ to bewilder your foes. You gain the following power:
   "Reaction (Immediate Interrupt)",
   "You may immediately teleport to any free space within 2 meters. This power does not stop the triggering attack; apply the rules for a missing target.",
   domain: "Warp",
-  keywords: "Innate",
+  keywords: ("Innate",),
   cost: "6 FP",
   trigger: "You are targeted by an attack",
 )
@@ -540,7 +540,7 @@ You gain the following power:
   none,
   "2 AP",
   "Target one enemy within range that you or your allies can see. You place a mark upon it; while it is marked, your ranged attacks against the target ignore obscuration and partial cover. Additionally, whenever you use your Fey Jaunt power, you can choose to appear in a square adjacent to your enemy instead, even if the enemy would otherwise be out of range.",
-  keywords: "Innate, Unerring",
+  keywords: ("Innate", "Unerring"),
   cost: "6 FP per Tier",
   range: "15; one target",
 )
@@ -656,6 +656,7 @@ rewards with pride the efforts of his children. You gain the following power:
   none,
   "Spell Action, 1 AP",
   "You can lose half your Health; all allies within close range that have line of sight to you immediately recover a quarter of their Health.",
+  keywords: none,
   cost: "0 FP",
 )
 
@@ -1308,7 +1309,7 @@ transportation and the terrain they are crossing.
 
 === Base Travel Speeds
 
-#table(
+#pftab(
   columns: 3,
   align: (left, center, left),
   [*Mode*], [*Distance/Day*], [*Notes*],
@@ -1321,7 +1322,7 @@ transportation and the terrain they are crossing.
 
 === Terrain Modifiers
 
-#table(
+#pftab(
   columns: 3,
   align: (left, center, left),
   [*Terrain*], [*Speed Modifier*], [*Examples*],
@@ -1399,7 +1400,7 @@ Roll 2D6 and consult the appropriate climate table.
 
 === Temperate Climate
 
-#table(
+#pftab(
   columns: 2,
   align: (center, left),
   [*2D6*], [*Weather*],
@@ -1412,7 +1413,7 @@ Roll 2D6 and consult the appropriate climate table.
 
 === Mountain Climate
 
-#table(
+#pftab(
   columns: 2,
   align: (center, left),
   [*2D6*], [*Weather*],
@@ -1425,7 +1426,7 @@ Roll 2D6 and consult the appropriate climate table.
 
 === Tropical / Swamp Climate
 
-#table(
+#pftab(
   columns: 2,
   align: (center, left),
   [*2D6*], [*Weather*],
@@ -1588,7 +1589,7 @@ though remote settlements may prefer barter for everyday transactions.
 
 === Purchasing Power Guide
 
-#table(
+#pftab(
   columns: 2,
   align: (left, left),
   [*Item / Service*], [*Approximate Cost*],
@@ -1702,7 +1703,7 @@ using the standard combat rules adapted to the scale of airship engagements._
 
 == List of Factions
 
-#table(
+#pftab(
   columns: 4,
   align: center,
 

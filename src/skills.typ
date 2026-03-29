@@ -1,7 +1,6 @@
-#import "declarations.typ": ritual-description
+#import "declarations.typ": *
 
 = Skills
-
 Skills represent your character’s abilities and aptitudes that are not directly
 related to their performance in combat.
 
@@ -117,7 +116,8 @@ increases by one.
 For determining the chance of success at different dice pools, consider the
 following chart:
 
-#table(
+#pftab(
+  "Success Chances",  
   columns: 6,
   align: center,
 
@@ -232,7 +232,8 @@ trying to run across a narrow (0,75 m) walkway that is iced over and slopes
 slightly upward carries a total difficulty of 9 (D 1 base + D 3 icy + D 1
 slope + D 4 running speed).
 
-#table(
+#pftab(
+  "Balance Difficulties",
   columns: 2,
   align: (left, center),
 
@@ -251,7 +252,8 @@ slope + D 4 running speed).
 
 The base difficulties for narrow surfaces are given below.
 
-#table(
+#pftab(
+  "Narrow Surface Difficulties",
   columns: 2,
   align: (left, center),
 
@@ -266,7 +268,8 @@ The base difficulties for narrow surfaces are given below.
 _Jumping_: The acrobatics skill also allows you to make jumps and aerobatic
 maneuvers.
 
-#table(
+#pftab(
+  "Jump Difficulties",
   columns: 2,
   align: (left, center),
 
@@ -289,7 +292,8 @@ If you make an acrobatics check to bypass an obstacle while moving quickly, you
 lose some speed: an obstacle counts as difficult terrain. You can make your
 check with an additional +2 difficulty to keep moving at your original speed.
 
-#table(
+#pftab(
+  "Maneuver Difficulties",
   columns: 2,
   align: (left, center),
 
@@ -346,7 +350,8 @@ _Climb_: You can make an Athletics check to climb up or down surfaces that are
 too steep to traverse normally. You can also climb horizontally across walls or
 traverse a chasm or gap hanging off overhead handholds.
 
-#table(
+#pftab(
+  "Climbing Difficulties",
   columns: 2,
   align: (left, center),
 
@@ -358,7 +363,8 @@ traverse a chasm or gap hanging off overhead handholds.
 _Lift and Throw_: Your athletics checks also allow you to exert strength and
 move objects, whether by lifting, throwing, or even just pushing.
 
-#table(
+#pftab(
+  "Lifting and Throwing Difficulties",
   columns: 2,
   align: (left, center),
 
@@ -379,7 +385,8 @@ A character without an innate Swim speed moves half their land speed by default
 when swimming. They can exert themselves to swim twice as fast, but this always
 requires a check.
 
-#table(
+#pftab(
+  "Swimming Difficulties",
   columns: 2,
   align: (left, center),
 
