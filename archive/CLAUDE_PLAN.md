@@ -50,28 +50,30 @@ Fill gaps so that players can progress through all tier levels without hitting e
 ---
 
 ### Phase 5: Combat Rules
-- [ ] **Complete combat action descriptions** — Beyond the dangling sentences fixed in Phase 1, do a full pass on *all* combat actions and reactions to ensure each is fully described and unambiguous.
-- [ ] **Reactions section** — Currently has only a developer note. Write out the full reactions rules (what triggers a reaction, how many per round, list of available reactions).
-- [ ] **Combat flow clarity** — Fill in the incomplete "how combat begins" text (surprise, initiative, joining a fight mid-scene). The section currently cuts off mid-sentence.
-- [ ] **Damage, healing, and conditions cross-check** — Verify all status conditions referenced in combat are defined and consistent with the conditions list.
+- [x] **Complete combat action descriptions** — Added missing Dash action (2 AP, double speed, straight line).
+- [x] **Reactions section** — Rewrote intro with full rules (1 reaction/round, no AP cost, interrupts trigger, three trigger phases).
+- [x] **Saving throws** — Added new subsection defining the mechanic (3 dice, 2 successes = pass, end of turn). Clarified distinction between saving throws and resistance checks.
+- [x] **Status conditions cross-check** — Added 11 missing conditions: Prone, Immobilized, Restrained, Frightened, Weakened, Dominated, Exhausted, Poisoned, Diseased, Bleeding, Burning. Total now 23 conditions.
+- [x] **Airship combat** — Replaced empty stub with playtest placeholder note.
+- Note: Combat flow (initiative, surprise, how combat begins) was already complete from Phase 1 fixes.
 
 ---
 
 ### Phase 6: Exploration
-- [ ] **Write the Exploration section from scratch** — This section does not exist in main.typ at all. Based on the v2.md outline it should cover: overland movement, terrain types, vision/light, disease, currency & lodging, and death/dying mechanics. Draft a functional ruleset for each.
+- [x] **Write the Exploration section from scratch** — Added 8 subsections: Overland Movement (travel speeds, terrain modifiers, forced march, navigation), Terrain (7 terrain types + hazards), Weather (3 climate tables from dev notes), Vision/Light/Senses (light levels, 5 special senses, concealment, cover with saving throw mechanics), Types of Transportation (foot, mounted, vehicle, skimmer, airship), Disease/Hunger/Exhaustion (EP as survival resource), Currency (Feathers + purchasing power table), Lodging/Resting (short/long rest, EP recovery, blessed ground), Death/Revival (EP revival, soul anchors, mortal death).
 
 ---
 
 ### Phase 7: Airship Combat
-- [ ] **Stub or write airship combat** — Either write a functional basic system (initiative, actions, damage to systems) or replace the empty heading with a clear "Playtest Note: Airship combat rules are in development" placeholder.
+- [x] **Stub or write airship combat** — Placeholder note added (done in Phase 5).
 
 ---
 
 ### Phase 8: Final Review & Compile
-- [ ] **Compile to PDF** — Run `typst compile main.typ` and confirm it produces a clean PDF without layout errors
-- [ ] **Read-through check** — Scan the compiled PDF for any remaining placeholder text, orphaned headings, or layout issues
-- [ ] **Cross-reference check** — Verify that section references and links within the document are accurate
-- [ ] **Verify playability** — Confirm the document contains enough to: create a character, advance them through all levels, cast spells, use powers, and run combat
+- [x] **Compile to PDF** — Compiles clean (only expected font warning on systems without Libre Baskerville).
+- [x] **Read-through check** — Removed orphaned "Spell Descriptions" heading. Fixed "page xx" placeholder → section reference. Fixed "Insert more detailed advice here" stub in advancement section. Only remaining placeholder: Airship Combat (intentional).
+- [x] **Cross-reference check** — Fixed 2 references to removed "Medicine" skill → "Alchemy". Verified all section cross-references point to existing sections. Fixed "some amount of money" → "Ƒ 500" in character creation.
+- [x] **Verify playability** — Character creation (5 steps, all reference existing sections with starting money defined), advancement (XP explanation complete), spell/power learning (all 5 types documented), equipment (T0-T6 complete), combat (actions, reactions, 23 conditions, saving throws), exploration (8 subsections), death/revival (EP + soul anchors). Ready for playtest.
 
 ---
 
