@@ -1,7 +1,8 @@
+#import "formatting/style.typ": *
 #import "declarations.typ": *
 #set page(paper: "a4")
 #set document(title: "Ashen Rulebook")
-#set text(font: "Libre Baskerville")
+#show: pf-stylization 
 
 #set document(
   title: "Ashen Rules",

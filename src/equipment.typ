@@ -1,5 +1,4 @@
 #import "declarations.typ": item-description
-
 = Equipment
 
 == Types of Equipment
@@ -105,6 +104,9 @@ Some reliquaries may grant access to unique prayers not part of any domain, or
 specific prayers outside of the domains they ordinarily grant access to. In
 these cases, those prayers are specially noted in the reliquary's stat block.
 
+#set page(
+  columns: 1
+)
 == Equipment Tables
 
 === Tier 0 — Old War Relics
@@ -323,6 +325,10 @@ these cases, those prayers are specially noted in the reliquary's stat block.
   [Memento Mori], [4], [_Ƒ 5000_], [Psychic], [Light], [0], [2], [8+2D8], [11],
 )
 
+#set page(
+  columns: 2
+)
+
 ==== Item Descriptions
 
 #item-description(
@@ -343,6 +349,11 @@ these cases, those prayers are specially noted in the reliquary's stat block.
 )[
   The Memento Mori grants its wielder a +2 equipment bonus to manifesting Psychic powers. The bonus increases to +5 for Time and Fate powers.
 ]
+
+
+#set page(
+  columns: 1
+)
 
 === Tier 5 — Masterwork
 
