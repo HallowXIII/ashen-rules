@@ -1,7 +1,7 @@
 #import "formatting/style.typ": *
 #import "declarations.typ": *
 #set page(paper: "a4")
-#show: pf-stylization 
+#show: pf-stylization
 #set document(title: "Ashen Rulebook")
 
 #set document(
@@ -10,13 +10,13 @@
   description: "The Ashen Rulebook",
   keywords: (),
   date: datetime(
-    day: 29, 
-    hour: 15, 
-    minute: 8, 
-    month: 3, 
-    second: 0, 
-    year: 2026
-  )
+    day: 29,
+    hour: 15,
+    minute: 8,
+    month: 3,
+    second: 0,
+    year: 2026,
+  ),
 )
 
 #align(center, text(24pt)[*The Ashen Rulebook*])
@@ -474,7 +474,7 @@ You gain the following power:
 
 #power-description(
   "Fey Jaunt",
-  "Psionic Power",
+  "Psychic Power",
   none,
   "Move Action, 2 AP",
   "Select one square within your move range. You teleport to it.",
@@ -508,7 +508,7 @@ to bewilder your foes. You gain the following power:
 
 #power-description(
   "Dance of the Spring Court",
-  "Psionic Power",
+  "Psychic Power",
   none,
   "Reaction (Immediate Interrupt)",
   "You may immediately teleport to any free space within 2 meters. This power does not stop the triggering attack; apply the rules for a missing target.",
@@ -1336,12 +1336,24 @@ transportation and the terrain they are crossing.
 #pftab(
   columns: 3,
   align: (left, center, left),
-  [*Mode*], [*Distance/Day*], [*Notes*],
-  [On foot], [40 miles], [Standard marching pace],
-  [Mounted], [80 miles], [Horse or equivalent beast of burden],
-  [Vehicle (ground)], [100 miles], [Cart, carriage, or motorized ground vehicle],
-  [Skimmer], [250–500 miles], [Magical/mechanical hover vehicle; speed varies by model],
-  [Airship], [300–600 miles], [See Airship Combat section for details],
+  [*Mode*],
+  [*Distance/Day*],
+  [*Notes*],
+  [On foot],
+  [40 miles],
+  [Standard marching pace],
+  [Mounted],
+  [80 miles],
+  [Horse or equivalent beast of burden],
+  [Vehicle (ground)],
+  [100 miles],
+  [Cart, carriage, or motorized ground vehicle],
+  [Skimmer],
+  [250–500 miles],
+  [Magical/mechanical hover vehicle; speed varies by model],
+  [Airship],
+  [300–600 miles],
+  [See Airship Combat section for details],
 )
 
 === Terrain Modifiers
@@ -1349,11 +1361,21 @@ transportation and the terrain they are crossing.
 #pftab(
   columns: 3,
   align: (left, center, left),
-  [*Terrain*], [*Speed Modifier*], [*Examples*],
-  [Road/Easy], [Normal], [Paved roads, open plains, well-maintained paths],
-  [Medium (no roads)], [-25%], [Light forest, grassland without paths, gentle hills],
-  [Difficult], [-60%], [Swamps, mountain passes, dense jungle, rubble-choked ruins],
-  [Harsh], [-90%], [Vertical climbs, the Thorn Forest, active volcanic terrain],
+  [*Terrain*],
+  [*Speed Modifier*],
+  [*Examples*],
+  [Road/Easy],
+  [Normal],
+  [Paved roads, open plains, well-maintained paths],
+  [Medium (no roads)],
+  [-25%],
+  [Light forest, grassland without paths, gentle hills],
+  [Difficult],
+  [-60%],
+  [Swamps, mountain passes, dense jungle, rubble-choked ruins],
+  [Harsh],
+  [-90%],
+  [Vertical climbs, the Thorn Forest, active volcanic terrain],
 )
 
 === Forced March
@@ -1427,12 +1449,18 @@ Roll 2D6 and consult the appropriate climate table.
 #pftab(
   columns: 2,
   align: (center, left),
-  [*2D6*], [*Weather*],
-  [2], [Storm — heavy rain/snow, strong winds. Visibility reduced to short range. -40% travel speed. Ranged attacks at -2d.],
-  [3–5], [Precipitation — rain or light snow. Light concealment at long range.],
-  [6–8], [Normal — clear or partly cloudy. No effects.],
-  [9–11], [Overcast — cloudy, mild. No mechanical effects.],
-  [12], [Fog — heavy concealment beyond 5 squares. -25% travel speed.],
+  [*2D6*],
+  [*Weather*],
+  [2],
+  [Storm — heavy rain/snow, strong winds. Visibility reduced to short range. -40% travel speed. Ranged attacks at -2d.],
+  [3–5],
+  [Precipitation — rain or light snow. Light concealment at long range.],
+  [6–8],
+  [Normal — clear or partly cloudy. No effects.],
+  [9–11],
+  [Overcast — cloudy, mild. No mechanical effects.],
+  [12],
+  [Fog — heavy concealment beyond 5 squares. -25% travel speed.],
 )
 
 === Mountain Climate
@@ -1440,12 +1468,18 @@ Roll 2D6 and consult the appropriate climate table.
 #pftab(
   columns: 2,
   align: (center, left),
-  [*2D6*], [*Weather*],
-  [2–3], [Storm — blizzard or thunderstorm. Travel in harsh terrain becomes impossible. -60% in other terrain.],
-  [4–6], [Showers — intermittent rain or sleet.],
-  [7–8], [Normal — clear, cold.],
-  [9–10], [Fog — as temperate fog.],
-  [11–12], [Strong wind — ranged attacks at -2d. Flight-based travel at -25%.],
+  [*2D6*],
+  [*Weather*],
+  [2–3],
+  [Storm — blizzard or thunderstorm. Travel in harsh terrain becomes impossible. -60% in other terrain.],
+  [4–6],
+  [Showers — intermittent rain or sleet.],
+  [7–8],
+  [Normal — clear, cold.],
+  [9–10],
+  [Fog — as temperate fog.],
+  [11–12],
+  [Strong wind — ranged attacks at -2d. Flight-based travel at -25%.],
 )
 
 === Tropical / Swamp Climate
@@ -1453,11 +1487,16 @@ Roll 2D6 and consult the appropriate climate table.
 #pftab(
   columns: 2,
   align: (center, left),
-  [*2D6*], [*Weather*],
-  [2–3], [Thunderstorm — as storm, plus lightning hazard (GM-adjudicated).],
-  [4–6], [Sweltering heat — Endurance check (difficulty 3) per 4 hours of activity or gain Exhausted.],
-  [7–8], [Normal — hot and humid. No mechanical effects.],
-  [9–12], [Rain — light concealment at long range. Swamp terrain becomes harsh.],
+  [*2D6*],
+  [*Weather*],
+  [2–3],
+  [Thunderstorm — as storm, plus lightning hazard (GM-adjudicated).],
+  [4–6],
+  [Sweltering heat — Endurance check (difficulty 3) per 4 hours of activity or gain Exhausted.],
+  [7–8],
+  [Normal — hot and humid. No mechanical effects.],
+  [9–12],
+  [Rain — light concealment at long range. Swamp terrain becomes harsh.],
 )
 
 == Vision, Light, and Senses
@@ -1616,20 +1655,34 @@ though remote settlements may prefer barter for everyday transactions.
 #pftab(
   columns: 2,
   align: (left, left),
-  [*Item / Service*], [*Approximate Cost*],
-  [Simple meal at a tavern], [_Ƒ 2_],
-  [Comfortable lodging (1 night)], [_Ƒ 5_],
-  [Fuel cell recharge (standard vehicle)], [_Ƒ 20_],
-  [Vehicle rental (1 day)], [_Ƒ 50_],
-  [Passage on a skimmer (short journey)], [_Ƒ 100_],
-  [Passage on an airship (long journey)], [_Ƒ 500_],
-  [Horse (trained riding horse)], [_Ƒ 300_],
-  [Mechanical repair (minor)], [_Ƒ 30_],
-  [Mechanical repair (major)], [_Ƒ 200_],
-  [Medical treatment (professional)], [_Ƒ 50_],
-  [Information (street level)], [_Ƒ 10–50_],
-  [Mercenary hire (1 day)], [_Ƒ 100_],
-  [Skilled artisan labor (1 day)], [_Ƒ 30_],
+  [*Item / Service*],
+  [*Approximate Cost*],
+  [Simple meal at a tavern],
+  [_Ƒ 2_],
+  [Comfortable lodging (1 night)],
+  [_Ƒ 5_],
+  [Fuel cell recharge (standard vehicle)],
+  [_Ƒ 20_],
+  [Vehicle rental (1 day)],
+  [_Ƒ 50_],
+  [Passage on a skimmer (short journey)],
+  [_Ƒ 100_],
+  [Passage on an airship (long journey)],
+  [_Ƒ 500_],
+  [Horse (trained riding horse)],
+  [_Ƒ 300_],
+  [Mechanical repair (minor)],
+  [_Ƒ 30_],
+  [Mechanical repair (major)],
+  [_Ƒ 200_],
+  [Medical treatment (professional)],
+  [_Ƒ 50_],
+  [Information (street level)],
+  [_Ƒ 10–50_],
+  [Mercenary hire (1 day)],
+  [_Ƒ 100_],
+  [Skilled artisan labor (1 day)],
+  [_Ƒ 30_],
 )
 
 For equipment prices, see the _Equipment Tables_ section.
@@ -1731,7 +1784,10 @@ using the standard combat rules adapted to the scale of airship engagements._
   columns: 4,
   align: center,
 
-  [*Name*], [*Pin*], [*Stated Purpose*], [*Aligned Deities*],
+  [*Name*],
+  [*Pin*],
+  [*Stated Purpose*],
+  [*Aligned Deities*],
   [Black Guard],
   [A fortress gate superimposed on a balance],
   [Maintenance and policing of the Black Bazaar],
@@ -1808,7 +1864,10 @@ using the standard combat rules adapted to the scale of airship engagements._
   [Complete the ending of the world],
   [She who waits Beyond],
 
-  [Free Agents], [A sword crossed with a feather], [–-], [--],
+  [Free Agents],
+  [A sword crossed with a feather],
+  [–-],
+  [--],
 )
 
 #include "gmguide.typ"

@@ -1,4 +1,4 @@
-#import "declarations.typ": power-description, pfi
+#import "declarations.typ": pfi, power-description
 
 = Magic and Powers
 
@@ -1015,8 +1015,11 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   cost: "3 Increments",
   augments: (
     (cost: 2, effect: "The duration increases to 2+1d3 rounds."),
-    (cost: 2, effect: "The bonuses to speed and initiative increase to +3 and +15, respectively.")
-  )
+    (
+      cost: 2,
+      effect: "The bonuses to speed and initiative increase to +3 and +15, respectively.",
+    ),
+  ),
 )
 
 #power-description(
@@ -1032,9 +1035,12 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   cost: "2 Increments",
   resistance: "Yes (Stamina 8)",
   augments: (
-    (cost: 3, effect: [The range increases to Burst 12 within 36.]), 
-    (cost: 2, effect: [The resist difficulty for the banishment effect increases to D8.]),
-  )
+    (cost: 3, effect: [The range increases to Burst 12 within 36.]),
+    (
+      cost: 2,
+      effect: [The resist difficulty for the banishment effect increases to D8.],
+    ),
+  ),
 )
 
 #power-description(
@@ -1164,7 +1170,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Reaction",
   "When a creature moves into your weapon reach, as a reaction: you may make an attack against it. On hit: it takes 100% damage and you push it up to one square away from you. This interrupts its movement.",
   keywords: ("Reaction", "Immediate Interrupt"),
-  prerequisites: "You are wielding a reach weapon",
+  prerequisites: ("You are wielding a reach weapon",),
   difficulty: "+2",
   cost: "1 Increment",
 )
@@ -1176,7 +1182,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "2",
   "You lunge forward, thrusting your weapon at a weak point in the enemy's armor. On hit: the target suffers 200% damage. The attack's Pen value is equal to the damage roll.",
   keywords: ("Piercing",),
-  prerequisites: "You are wielding a weapon that deals piercing damage",
+  prerequisites: ("You are wielding a weapon that deals piercing damage",),
   range: "Weapon + 1",
   difficulty: "+3",
   cost: "2 Increments",
@@ -1192,7 +1198,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "All targets on the line are hit once by each wielded weapon, halving armor. Secondary: The target must make a D8 Potential save; on failure: it is stilled (save ends).",
   keywords: ("Lotus Art", "Dual Wield"),
   flavor: "The honed blade cuts the line of the soul.",
-  prerequisites: "You must be wielding two bladed weapons",
+  prerequisites: ("You must be wielding two bladed weapons",),
   range: "Line, Movement Range",
   difficulty: "5",
   cost: "2 Increments",
@@ -1206,7 +1212,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "3",
   "On hit: the target takes 200% damage and must make a D6 Stamina resist; on failure: the target is vaulted into the air, pushing it up to 3 squares. Secondary: You may make a secondary attack against the target at the same difficulty; on hit: the target takes 100% damage ignoring armor, is knocked prone, and must make a D6 Stamina resist; on failure: the target is stunned for one round.",
   keywords: ("Spear",),
-  prerequisites: "You are wielding a polearm",
+  prerequisites: ("You are wielding a polearm",),
   range: "Weapon",
   difficulty: "+3",
   cost: "2 Increments",
@@ -1223,7 +1229,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "On hit: the target takes 100% damage, halving armor. The target must also make a D7 Potential save; on failure: it loses 2 EP.",
   keywords: ("Lotus Art", "Dual Wield"),
   flavor: "When the creator made the universe, it is said that he first made a lotus flower of a thousand petals, and when he scattered the petals, from each one there blossomed a world.",
-  prerequisites: "You must be wielding two bladed weapons",
+  prerequisites: ("You must be wielding two bladed weapons",),
   range: "Close Burst 5",
   difficulty: "7",
   cost: "2 Increments",
@@ -1266,7 +1272,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "When you perform this exploit, you may make four attacks against the same or different targets. The difficulty of the first attack is equal to the target's evasion, increasing by 2 on each subsequent attack, up to +6 on the fourth. Each attack deals 100% damage at half armor. Secondary: After performing all attacks, targets hit must make a D9 Potential check. On failure, they suffer the following effects depending on how many times they were hit (these effects stack): 1 hit: the target is stilled. 2 hits: the target loses 5 EP. 3 hits: the target is exposed. 4 hits: the target dies instantly and loses 5 more EP.",
   keywords: ("Lotus Art", "Dual Wield"),
   flavor: "\"The master said: there are eight worlds in creation. To truly kill your enemy, you must cut him down in each of them.\"",
-  prerequisites: "You must be wielding two bladed weapons",
+  prerequisites: ("You must be wielding two bladed weapons",),
   range: "Weapon",
   difficulty: "Special",
   cost: "3 Increments",
@@ -1296,7 +1302,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Every creature targeted by this power must take a Dive reaction to avoid the stake (Dodge DC equal to this power's attack roll). On failure, it takes 300% piercing damage and is immobilized; in addition, it must make a D8 Stamina check or be stunned for one round. On each of the target's turns, it must make a D6 Athletics check to vault off the stake or take 100% damage and remain immobilized. Special: If you fail the attack roll to invoke this power, Kazykly becomes stuck in the ground. Pulling it back out is a 1 AP action and requires a successful D7 Martial check.",
   keywords: ("Weapon",),
   flavor: "You thrust Kazykly deep into the earth. For a second, everything is still before sharpened stakes of solid shadow erupt beneath your enemies.",
-  prerequisites: "You must be wielding Kazykly",
+  prerequisites: ("You must be wielding Kazykly",),
   range: "Close Burst 10",
   difficulty: "7",
   cost: "3 Increments",
@@ -1527,7 +1533,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   cost: "2 Increments",
   range: "Weapon range; one creature",
   resistance: "D8 Stamina (Dazed only; damage always applies on hit)",
-  prerequisites: "Must not have moved this turn",
+  prerequisites: ("Must not have moved this turn",),
 )
 
 ==== Tier 5
@@ -1543,7 +1549,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   cost: "3 Increments",
   range: "Double weapon range; one creature",
   resistance: "D9 Stamina (instant-kill effect only)",
-  prerequisites: "Must not have moved this turn",
+  prerequisites: ("Must not have moved this turn",),
 )
 
 ==== Tier 6
@@ -1560,5 +1566,5 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   range: "Cone 15 or Line 20",
   resistance: "D9 Stamina",
   miss: "Half damage, Prone for 1 round.",
-  prerequisites: "You are wielding an automatic weapon."
+  prerequisites: ("You are wielding an automatic weapon.",),
 )

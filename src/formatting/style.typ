@@ -39,7 +39,7 @@
       size: 1.6em,
       fill: colors.pfgreen,
       weight: "extrabold",
-      it.body
+      it.body,
     )
   }
   show heading.where(level: 2): it => {
@@ -48,7 +48,7 @@
       size: 1.4em,
       fill: colors.pfnavy,
       weight: "bold",
-      it.body
+      it.body,
     )
   }
   show heading.where(level: 3): it => {
@@ -57,13 +57,13 @@
       size: 1.3em,
       fill: colors.lightgreen,
       weight: "bold",
-      it.body
+      it.body,
     )
   }
   show heading.where(level: 4): it => block(
-    width: 100%, 
+    width: 100%,
     rect(
-      width: 100%, 
+      width: 100%,
       radius: (
         top-left: 10pt,
         top-right: 5pt,
@@ -71,19 +71,24 @@
       fill: colors.pfnavy,
       stroke: none,
       inset: 6pt,
-      align(left, text(
-        fill: white,
-        weight: "bold",
-        size: 1.3em,
-        it.body
-      )+ v(-9pt) + line(length: 100%, stroke: (white + 0.5pt)))
-    )
-  ) 
+      align(
+        left,
+        text(
+          fill: white,
+          weight: "bold",
+          size: 1.3em,
+          it.body,
+        )
+          + v(-9pt)
+          + line(length: 100%, stroke: (white + 0.5pt)),
+      ),
+    ),
+  )
   show heading.where(level: 5): it => {
     text(
       size: 1.3em,
       weight: "bold",
-      it.body
+      it.body,
     )
   }
 
