@@ -860,6 +860,30 @@ Attributes: END + WIL \
 This characteristic influences your character’s ability to resist pain,
 disturbing mental effects and similar noxious influences.
 
+== Derived Statistics
+
+The following statistics are derived from a character’s attributes, characteristics and advances. Unlike attributes and characteristics, they do not have ranks — they are calculated from other values.
+
+=== Hit Points (HP)
+
+Hit Points represent how much damage a character can sustain before falling. Every character begins with *10 HP*. Additional HP is gained from advances: each advance a character purchases grants a certain amount of HP as listed in its description. A character’s total HP is the sum of their base 10 plus all HP gained from advances.
+
+=== Focus Points (FP)
+
+Focus Points fuel a character’s extraordinary abilities, including spells, prayers and psychic powers. Every character begins with *10 FP*. Additional FP is gained from advances in the same way as HP. A character’s total FP is the sum of their base 10 plus all FP gained from advances.
+
+=== Movement Speed
+
+A character’s Movement Speed determines how many squares they can move with a single move action. Movement Speed is equal to *2 + the character’s Speed rating*. A starting character typically has a Movement Speed of 5 squares, while a character at the peak of their physical ability can reach 20 or more with advances.
+
+=== Evasion
+
+Evasion represents how difficult a character is to hit with attacks. A character’s base Evasion is equal to *half their Dodge rating, rounded down*. This base value is then modified by armor (light armor typically grants a bonus, heavy armor imposes a penalty) and other effects.
+
+=== Action Points (AP)
+
+Every character has *4 Action Points* per turn. AP is spent to take actions during combat; unspent AP is lost at the end of a character’s turn. Some advances and effects can modify the number of AP available.
+
 == Essence Points
 
 Each character has a number of *Essence Points (EP)* that control that
@@ -1786,6 +1810,8 @@ using the standard combat rules adapted to the scale of airship engagements._
 
   [Free Agents], [A sword crossed with a feather], [–-], [--],
 )
+
+#include "gmguide.typ"
 
 
 
