@@ -251,8 +251,8 @@ lost---they do not carry over between turns.
 
 When an act ends, the game enters an intermission. Intermissions are essentially
 downtime---during an intermission, every character's Essence, Health and Focus
-refresh, and the characters have the opportunity to spend XP and purchase new
-equipment.
+refresh, and the characters have the opportunity to spend XP, allocate skill
+points, and purchase new equipment.
 
 = Characters
 
@@ -284,17 +284,22 @@ and grants you access to race-specific powers – choose wisely!
 When you have picked your race, pick three of your attributes (see _Attributes
 and Characteristics_) to start at 2. The rest start at 1.
 
-=== 3. Buy Advances
+=== 3. Allocate Skill Points
+Every character begins with *10 skill points (SP)* to spend on their skills.
+You can use SP to learn trained skills (1 SP each) and improve any skill's rank.
+See the _Skills_ chapter for the full cost table.
+
+=== 4. Buy Advances
 Every character starts with some number of experience points (1000 at the
 beginning of the game) representing their previous combat experience and
 training. You can spend these points to improve your stats and learn combat
 powers.
 
-=== 4. Buy Equipment
+=== 5. Buy Equipment
 Each character begins the game with Ƒ 500 that can be used to buy gear and
 items for your character. Consult the _Equipment Tables_ section for prices.
 
-=== 5. Finishing Details
+=== 6. Finishing Details
 Once you have completed all the above steps, you can complete your character
 sheet by calculating your character’s statistics, which all depend on the
 choices made in previous sections.
@@ -340,7 +345,7 @@ attributes, listed below.
 The values of derived statistics usually also have ratings, but there is no
 uniform way of calculating them.
 
-=== Advances, Powers and Talents
+=== Advances and Powers
 
 Apart from a character’s numbers, the choices that most influence a character’s
 development have to do with the advances and powers they learn over the course
@@ -355,10 +360,6 @@ Powers are extraordinary actions you can perform during combat. Powers can span
 the gamut from magical spells to heroic feats of skill at your weapons. They can
 be learnt in a variety of ways: some can be purchased as advances, others must
 be obtained through instruction from a master.
-
-Talents, finally, are improvements to your skills. They are purchased using your
-aggregate skill experience, and allow you to perform better when using your
-skills or even to use your skills in novel ways.
 
 
 = Races

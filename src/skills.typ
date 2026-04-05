@@ -4,25 +4,44 @@
 Skills represent your character’s abilities and aptitudes that are not directly
 related to their performance in combat.
 
-== Gaining and Improving Skills
+== Trained and Untrained Skills
 
 Skills are divided into untrained and trained skills. Untrained skills are
 available to every character, and start at rank 1. Trained skills, as the name
-suggests, require special training. Characters trained in a trained skill begin
-the game with that skill at rank 1. Characters without such training have 0
-ranks in the trained skill and cannot make skill checks against that skill.
+suggests, require special training. Characters without training in a trained
+skill have 0 ranks in it and cannot make skill checks using that skill.
 
-Your character’s background determines their initial trained skills at the
-beginning of the game. Further trained skills can be gained over the course of
-the game by acquiring training in them from someone, usually an NPC, who is
-willing and able to teach you. After undergoing such training your character
-gains 1 rank in the skill.
+== Gaining and Improving Skills
 
-== Improving Skills
-Every skill you have has a number of ranks, representing your proficiency in
-that skill. You can have between 1 and 6 ranks in a skill, with 1 rank
-representing basic training or natural aptitude and 6 ranks representing mastery
-of the skill.
+Characters improve their skills by spending *skill points (SP)*. Every
+character begins the game with *11 SP* (10 base and 1 from their starting 1000 XP). 
+During play, characters earn 1 additional SP for every 1000 XP they accumulate.
+
+Skill points can be spent during character creation or during intermissions to
+improve your skills in the following ways:
+
+- *Learn a trained skill* (rank 0 $arrow$ 1): 1 SP. This represents acquiring
+  the basic training needed to use the skill, whether through instruction from a
+  mentor, self-study, or hard-won experience. Characters may choose 
+- *Improve a skill by one rank*: The cost to raise a skill from rank N to rank
+  N+1 is equal to N skill points.
+
+#pftab(
+  "Cost per skill rank",
+  columns: (1fr, 2fr, 3fr),
+  align: center,
+  [*Rank*], [*SP Cost*], [*Cumulative (from rank 1)*],
+  [2], [1], [1],
+  [3], [2], [3],
+  [4], [3], [6],
+  [5], [4], [10],
+  [6], [5], [15],
+)
+
+The maximum rank in any skill is 6, representing absolute mastery. A skill’s
+total *rating* --- the number of dice you roll for skill checks --- equals your
+ranks in the skill plus your ranks in its two linked attributes, for a maximum
+of 18.
 
 
 == Using skills
@@ -39,7 +58,7 @@ number of successes you roll beats the difficulty indicated by your GM, your
 skill check was successful.
 
 The modalities of your skill check depend on the circumstances and your
-character’s training. Some talents or items can grant you a bonus to your skill
+character’s training. Some advances or items can grant you a bonus to your skill
 check, while some external circumstances may increase the difficulty of your
 task. As an example, if you are making an athletics check to climb up a cliff
 face, you may benefit from a bonus to your check if you have taken along proper
@@ -64,7 +83,8 @@ challenges. At your GM’s discretion, you may also not be allowed to take the
 average on intrinsically dangerous or high-stakes skill checks, even if you have
 a high rating in the skill.
 
-If you complete a skill check this way, you do not earn any skill points for it.
+Taking the average is risk-free but also routine --- it does not represent a
+moment of growth or challenge for your character.
 
 === Taking the Maximum
 If you have plenty of time, and failing a skill check does not entail any
@@ -76,9 +96,9 @@ your character fails at, and retries, the task several times before arriving at
 a satisfactory outcome; that is, if you keep making skill checks, eventually you
 will roll your rating’s worth of successes or higher.
 
-If you attempt a skill check in this way, you gain 2 SP regardless of the
-outcome (provided the difficulty is appropriate to your skill level), since you
-have had ample time to reflect on and improve your technique.
+Taking the maximum assumes your character spends the time to get the job done
+right, failing and retrying as needed until they arrive at a satisfactory
+outcome.
 
 === Helping Another
 Some tasks are amenable to being performed in groups. If you decide to join
@@ -799,7 +819,7 @@ Sample Forgery difficulties:
 === Access (T; DEX + INT)
 
 The Access skill allows a character to circumvent security systems of various
-kinds, using more or less violent means. With the right talents, a character
+kinds, using more or less violent means. With sufficient training, a character
 trained in Access can pick locks, hack into computers, place breaching charges,
 disable traps, and generally go where they are not supposed to go.
 
