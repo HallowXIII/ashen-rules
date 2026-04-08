@@ -173,7 +173,7 @@ does. Diagonal movement in three dimensions follows the same rounding rules as
 on a flat grid.
 
 #note[
-  _Example:_ A swimming creature with Swim Speed 8 wants to dive diagonally ---
+  _Example:_ A swimming creature with Swim Speed 8 wants to dive diagonally:
   4 meters forward and 4 meters down. The diagonal distance is approximately 6
   meters, so the movement costs 6 squares of its swim speed.
 ]
@@ -211,17 +211,61 @@ points. Unspent ones are lost \- they do not carry over between turns.
 
 Reactions are special actions that can be taken when it is not your turn. Reactions do not cost AP. Each character can take one reaction per round; this reaction resets at the start of the character's turn. Some powers or advances may grant additional reactions.
 
-When a reaction is triggered, it interrupts the action that triggered it. The reaction is resolved before the triggering action continues.
-
 ==== Triggering Reactions
 
-Reactions may trigger during different phases of an attack or action:
+Each reaction specifies a *trigger* — the event that allows you to use it. Reactions may trigger during different phases of an attack or action:
 
 - *Target selection* — triggers when you are chosen as a target (e.g., Fire Overwatch triggers when you are targeted by a charge).
 - *Resolution* — triggers when the attack hits or misses (e.g., certain defensive abilities trigger on being hit).
 - *Damage* — triggers when you would take damage or be affected (e.g., Dive triggers when you would be damaged by an area effect).
 
-A reaction specifies which phase it triggers on. You may only use a reaction appropriate to the current phase.
+You may only use a reaction whose trigger matches the current phase.
+
+==== Reaction Chains
+
+A reaction can trigger further reactions from other creatures, forming a chain. However, a creature whose action started the chain cannot also react to something within it. In other words, each creature may only appear once in a reaction chain — either as the original actor or as a reactor, never both.
+
+For example: you move away from an enemy, provoking an opportunity attack. You cannot parry the opportunity attack, because your action started the chain. But if an ally uses an attack and an enemy uses a reaction to interfere, you _can_ yourself use another reaction in response to that reaction — your action did not start the chain.
+
+#note[
+  _Example:_ Kael and his ally Ârwân are fighting a dangerous Psychic. Kael attacks the psychic with him sword. In response, the psychic invokes _Twist of Fate_ as a reaction to make him miss. Ârwân, who is himself a psychic, counterspells the _Twist of Fate_, and Kael's attack lands normally.
+]
+
+
+==== Interrupts and Responses
+
+Reactions come in two types:
+
+- *Interrupt* — the reaction resolves _before_ the triggering action completes. If the interrupt removes the conditions that made the triggering action possible (for example, moving out of range), the triggering action is wasted without effect.
+- *Response* — the reaction resolves immediately, but does not inherently stop the triggering action. The triggering action continues after the response resolves, unless the response's outcome makes it impossible (for example, a creature killed by an opportunity attack does not continue moving).
+
+A reaction's type is noted in its description. If a reaction does not specify, it is a response.
+
+==== Universal Reactions
+
+Every character automatically has access to the following reactions.
+
+===== Counterspell
+
+When another creature within 20 squares uses a magic power of a type that you
+can currently cast (for example, an Arcane spell while you are wielding an
+Arcane catalyst), you can counterspell as an interrupt. To counterspell, roll the
+same check as the one used to cast the spell; if you score an equal number or
+more successes than the original caster, their spell fizzles without effect.
+
+===== Dive
+
+When you would be damaged by an area attack or magical effect, you can attempt to dive out of the affected area (response). Count the minimum number of squares you would need to move to exit the area. If that distance is more than 3 squares, you cannot Dive. Otherwise, roll your Dodge characteristic against a difficulty of 3 per square you must cross. If you succeed, you move to the nearest unoccupied square outside the area and are unaffected by the attack. This movement does not provoke opportunity attacks.
+
+===== Fire Overwatch
+
+If you are wielding a ranged weapon and are targeted for a charge, you can make a strike against the charging enemy (interrupt). If the strike kills or stuns the charger, the charge ends immediately.
+
+===== Opportunity Attack
+
+When you are wielding a melee weapon, and another creature takes a move action
+that passes through your weapon reach and does not end next to you, you can
+immediately make a strike against it (response).
 
 == Strikes and Attack Powers
 
@@ -323,6 +367,42 @@ Heavy ranged weapons (machine guns, cannons, sniper rifles) must be *braced* bef
 === Ammunition
 
 Characters are assumed to carry sufficient standard ammunition for their weapons; tracking individual rounds is not required. The exception is weapons that fire specialized ammunition — such as rocket launchers or grenade launchers — where the ammunition itself determines the weapon's damage and effects. For these weapons, each shot consumes one unit of ammunition, and reloading costs *1 AP*.
+
+== Area Targets
+
+Many powers and some weapons affect an area rather than a single target. An area is defined by its shape and size. All creatures and objects within the area are affected unless the power specifies otherwise (e.g., "all enemies in burst" excludes allies).
+
+=== Shapes
+
+==== Burst
+
+A burst is a circular area centered on a point. A *Burst N* affects every square that is within N squares of movement from the origin square, using the standard movement rules (including the diagonal movement rounding rule). For example, a Burst 1 affects the 4 orthogonally adjacent squares; a Burst 2 also reaches the diagonal neighbors and the squares two steps away orthogonally.
+
+A burst's range line reads *Burst N within R*, meaning the center point can be placed on any square within R squares of the caster. A *Close Burst N* is centered on the caster's own square and has no separate range.
+
+==== Cone
+
+A cone originates from the caster and expands outward. A *Cone N* extends N squares from the caster and widens by 1 square for every 2 squares of length (rounded down). The caster chooses the direction of the cone when using the power. The cone's width at its origin is 1 square.
+
+==== Line
+
+A line originates from the caster and extends in a straight path. A *Line N* is N squares long and 1 square wide. The caster chooses the direction.
+
+==== Wall
+
+A wall is a contiguous line of squares placed within range. A *Wall N* consists of up to N squares arranged in any connected shape (each square must share a side with at least one other square in the wall). Walls are typically 1 square wide and block movement and line of sight unless the power states otherwise.
+
+=== Resolving Area Attacks
+
+Area attacks do not roll against individual targets' Evasion. Instead, the caster rolls their characteristic check against the power's difficulty. If the check succeeds, the power takes effect on every valid target in the area. Targets may then resist individually if the power grants a resistance check (typically Dodge against a set difficulty, or Dodge opposed by the caster's check result).
+
+A creature that succeeds on its resistance check against an area attack either negates the effect entirely or reduces it, as specified by the power. The Dive reaction can also be used to escape an area attack entirely.
+
+Area attacks never score multiple hits. Each affected target takes the power's listed damage once.
+
+=== Line of Effect
+
+An area power must have *line of effect* from its origin point to each target — an unobstructed path that is not blocked by total cover. A creature behind total cover within an area is unaffected. Creatures behind partial cover are affected but may benefit from their cover save as normal.
 
 == Actions during Combat
 
@@ -455,36 +535,6 @@ provokes opportunity attacks as normal.
 To take a charge, declare a target you can see. You must move toward that target
 in a straight line, moving up to twice your speed and ending your charge
 directly adjacent to your target. At the end of the charge, you can use a melee attack power. You gain a \+4d power bonus to your Martial characteristic when you make attack rolls during a charge.
-
-==== Reactions
-
-Reactions are special actions that you can take when it is not your turn. In
-general, reactions do not consume AP, but you can only take one of them per
-round. Every character automatically has access to the following reactions.
-
-===== Counterspell
-
-When another creature within 20 squares uses a magic power of a type that you
-can currently cast (for example, an Arcane spell while you are wielding an
-Arcane catalyst), you can counterspell as a reaction. To counterspell, roll the
-same check as the one used to cast the spell; if you score an equal number or
-more successes than the original caster, their spell fizzles without effect.
-
-===== Dive
-
-When you would be damaged by an area attack or magical effect, you can roll your
-Dodge characteristic against the difficulty of the attack. If you beat the
-difficulty, you tumble out of the attack’s range and are unaffected by it.
-
-===== Fire Overwatch
-
-If you are wielding a ranged weapon and are targeted for a charge, you can make a strike against the charging enemy.
-
-===== Opportunity Attack
-
-When you are wielding a melee weapon, and another creature takes a move action
-that passes through your weapon reach and does not end next to you, you can
-immediately make a strike against it.
 
 === Saving Throws
 
