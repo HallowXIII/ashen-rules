@@ -15,7 +15,7 @@ This repository contains the Ashen RPG rulebook written in Typst, a modern types
 
 Compile the main rulebook to PDF:
 ```bash
-typst compile main.typ
+typst compile --font-path fonts src/main.typ ashen.pdf
 ```
 
 Compile the GM guide to PDF:
@@ -25,12 +25,12 @@ typst compile setting.typ
 
 Watch for changes and auto-recompile:
 ```bash
-typst watch main.typ
+typst watch --font-path fonts src/main.typ ashen.pdf
 ```
 
-Specify custom output path:
+Specify a different output path:
 ```bash
-typst compile main.typ output/rulebook.pdf
+typst compile --font-path fonts src/main.typ output/rulebook.pdf
 ```
 
 ## Architecture

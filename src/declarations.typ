@@ -66,6 +66,8 @@
 
 #let pfi(body) = par(first-line-indent: 0.5em, hanging-indent: 0.5em)[#body]
 
+#let feathers = text(font: ("Libre Baskerville",), size: 10pt, "ƒ")
+
 #let flavor(body) = {
   set text(font: ("Libre Baskerville",), style: "italic", size: 10pt)
   box[#body]

@@ -42,25 +42,7 @@
       it.body,
     )
   }
-  show heading.where(level: 2): it => {
-    set par(first-line-indent: 0em)
-    text(
-      size: 1.4em,
-      fill: colors.pfnavy,
-      weight: "bold",
-      it.body,
-    )
-  }
-  show heading.where(level: 3): it => {
-    set par(first-line-indent: 0em)
-    text(
-      size: 1.3em,
-      fill: colors.lightgreen,
-      weight: "bold",
-      it.body,
-    )
-  }
-  show heading.where(level: 4): it => block(
+  show heading.where(level: 2): it => block(
     width: 100%,
     rect(
       width: 100%,
@@ -84,6 +66,24 @@
       ),
     ),
   )
+  show heading.where(level: 3): it => {
+    set par(first-line-indent: 0em)
+    text(
+      size: 1.4em,
+      fill: colors.pfnavy,
+      weight: "bold",
+      it.body,
+    )
+  }
+  show heading.where(level: 4): it => {
+    set par(first-line-indent: 0em)
+    text(
+      size: 1.3em,
+      fill: colors.lightgreen,
+      weight: "bold",
+      it.body,
+    )
+  }
   show heading.where(level: 5): it => {
     text(
       size: 1.3em,

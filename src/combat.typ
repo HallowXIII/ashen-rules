@@ -1,0 +1,624 @@
+#import "declarations.typ": *
+
+= Combat
+
+Sometimes, characters’ conflicts cannot be resolved in a way other than coming
+to blows. These situations are handled by the combat rules.
+
+== How combat works
+
+When characters find themselves in combat, they enter into *structured time* \-
+because the action being described usually happens over the course of just a few
+seconds, it is important to track the time in detail. To do so, each combat
+scene is modeled as a cyclical sequence of rounds.
+
+=== The order of combat
+
+A combat scene is divided into *rounds*, fuzzy units of time representing a few
+seconds \-- enough for every participant in combat to take their *turn* acting.
+The order of turns within the round is determined by each participant’s
+initiative. During their turn, under normal circumstances a character can take
+several actions, given by the amount of action points they have.
+
+=== Initiative
+
+In the heat of combat, fractions of seconds can decide between life and untimely
+death. To model this, Ashen uses *initiative.*
+
+Every round is divided into 100 initiative *ticks*. The round begins at tick 99,
+and proceeds by every participant taking a turn at their initiative tick, with
+higher initiatives going first. When the count reaches initiative 0, the round
+ends and a new round begins at tick 99\.
+
+To decide your initiative, you must roll it when you enter into combat. To roll
+initiative, roll as many D6 as your character’s Initiative rating, and add up
+all the pips. This number is your initiative and determines your place in the
+initiative order.
+
+==== Beginning and Joining Combat
+
+A combat begins when the first hostile action is taken or declared.
+
+If a combat begins and some participants are not aware of their opponents, they
+are surprised. A surprised combatant is *exposed* until they take their first
+turn.
+
+If this happens, the aware combatants may act in a special surprise round before
+the combat proper begins. During the surprise round, only aware combatants may
+act; surprised combatants skip their turns.
+
+==== Extreme Initiative
+
+If a combatant rolls an initiative X greater than 99, their initiative “rolls
+over” and they act the first time in the surprise round at initiative X \- 100,
+which becomes their initiative count during all subsequent turns. If this
+happens, they may treat all other combatants as surprised during their first
+turn.
+
+A combatant that already has surprise and rolls an initiative higher than 99
+also receives this benefit, in effect obtaining two surprise turns.
+
+=== The Grid
+
+Combat in Ashen takes place on a square grid. Each square represents a 1-meter
+by 1-meter area. Miniatures, tokens, or other markers are used to track the
+positions of creatures and objects on the grid.
+
+==== Creature Size
+
+A creature's size determines how many squares it occupies. A creature of Size X
+occupies a space of X by X squares. Most player characters are Size 1. Larger
+creatures --- such as a warhorse (Size 2) or a dragon (Size 3) --- occupy
+correspondingly larger spaces.
+
+==== Facing
+
+Creatures do not have a facing. A creature can see and act in all directions
+equally unless an effect specifically limits its field of vision.
+
+=== Movement
+
+During combat, creatures move across the grid by spending movement from their
+Movement Speed. A creature's Movement Speed determines how many squares it can
+traverse with a single move action.
+
+==== Orthogonal and Diagonal Movement
+
+Moving one square in a cardinal direction (north, south, east, or west) costs 1
+square of movement. Moving one square diagonally costs 1.5 squares of movement,
+rounded down. In practice, this means that every second diagonal step in a
+single move costs 2 squares of movement instead of 1. The count of diagonal
+steps resets at the start of each move action.
+
+#note[
+  _Example:_ A character with Movement Speed 5 takes a move action. They step
+  diagonally (1 square spent), then diagonally again (2 squares spent --- the
+  second diagonal costs 2), then move north (1 square spent), then diagonally
+  (1 square spent). They have spent 5 squares total and their move ends.
+]
+
+==== Difficult and Treacherous Terrain
+
+Some squares contain terrain that impedes movement.
+
+- *Difficult terrain* costs 2 squares of movement per square entered. A creature
+  cannot charge through difficult terrain.
+- *Treacherous terrain* costs 2 squares of movement per square entered, as
+  difficult terrain. Additionally, a creature moving through treacherous terrain
+  must make an Acrobatics or Athletics check (difficulty 3) each round of
+  movement or fall prone.
+
+These costs stack with diagonal movement costs. A diagonal step into difficult
+terrain costs 3 squares of movement on an odd step and 4 on an even step.
+
+==== Moving Through Other Creatures
+
+You can move through a square occupied by an allied creature, but you cannot end
+your turn in that square. Moving through an ally's space does not cost extra
+movement.
+
+You cannot move through a square occupied by a hostile creature unless you have
+an ability that specifically allows it (such as the Vault advance). Creatures
+may always move through the space of a creature at least 2 sizes larger or
+smaller than them.
+
+==== Occupied Squares
+
+A creature cannot voluntarily end its movement in a square occupied by another
+creature. If an effect forces a creature into an occupied square, the displaced
+creature is shunted to the nearest unoccupied square of its choice.
+
+==== Prone Movement
+
+A prone creature can only crawl. Crawling uses the creature's land movement
+speed at half its normal rate (rounded down). Standing up from prone costs 1 AP.
+
+==== Movement Types
+
+A creature may have several different movement types, each with its own speed.
+When you take a move action, you choose one of your available movement types and
+move up to that speed. You cannot mix movement types within a single move
+action --- to switch from one type to another, you must take a separate move
+action (at the usual escalating AP cost).
+
+The following movement types exist:
+
+- *Land* is the default movement type. All creatures have a land speed unless
+  otherwise noted. A creature's Movement Speed refers to its land speed unless
+  a different type is specified.
+- *Climb* allows a creature to scale vertical surfaces without making skill
+  checks. A creature with a climb speed can move along walls and ceilings at
+  that speed.
+- *Swim* allows a creature to move through water without making skill checks. A
+  creature with a swim speed can move freely in any direction while submerged.
+- *Fly* allows a creature to move through the air. A flying creature can gain
+  and lose altitude freely during its movement.
+- *Burrow* allows a creature to tunnel through earth and loose rock. A burrowing
+  creature cannot normally pass through solid stone unless its description says
+  otherwise.
+- *Teleport* allows a creature to instantaneously relocate. Teleport movement
+  does not provoke opportunity attacks, ignores difficult and treacherous
+  terrain, and is not blocked by obstacles or creatures --- but requires line of
+  sight to the destination unless otherwise specified.
+
+A creature without a climb or swim speed can still attempt to climb or swim by
+making skill checks (see _Acrobatics_ and _Athletics_), using its land speed at
+half rate. A creature without a fly speed cannot fly.
+
+===== Elevation and Vertical Distance
+
+When moving vertically --- whether climbing, flying, swimming, or otherwise ---
+each meter of elevation costs 1 square of movement, just as horizontal distance
+does. Diagonal movement in three dimensions follows the same rounding rules as
+on a flat grid.
+
+#note[
+  _Example:_ A swimming creature with Swim Speed 8 wants to dive diagonally ---
+  4 meters forward and 4 meters down. The diagonal distance is approximately 6
+  meters, so the movement costs 6 squares of its swim speed.
+]
+
+==== Forced Movement
+
+Some powers and effects push, pull, or slide creatures involuntarily. Forced
+movement follows these rules:
+
+- *Push* moves the target in a straight line directly away from the source of
+  the effect.
+- *Pull* moves the target in a straight line directly toward the source of the
+  effect.
+- *Slide* moves the target in any direction.
+
+Forced movement is measured in squares. It does not consume the moved creature's
+movement speed, and it does not require the moved creature to spend AP. Forced
+movement *does* provoke opportunity attacks.
+
+Forced movement cannot move a creature through solid obstacles. If a creature is
+pushed or pulled into an obstacle, it stops in the last unoccupied square before
+the obstacle.
+
+=== Actions and Action Points
+
+In combat (or other structured game time), everytime you wish to do something,
+you must take an action to do it. Actions consume action points; every creature
+has a set number of *Action Points (AP)*, usually 4 of them. On every creature’s
+turn, that creature can take actions by spending action points; when a creature
+is out of action points, it can no longer take additional actions and must end
+its turn. On the start of its turn, a creature recovers all its spent action
+points. Unspent ones are lost \- they do not carry over between turns.
+
+=== Reactions
+
+Reactions are special actions that can be taken when it is not your turn. Reactions do not cost AP. Each character can take one reaction per round; this reaction resets at the start of the character's turn. Some powers or advances may grant additional reactions.
+
+When a reaction is triggered, it interrupts the action that triggered it. The reaction is resolved before the triggering action continues.
+
+==== Triggering Reactions
+
+Reactions may trigger during different phases of an attack or action:
+
+- *Target selection* — triggers when you are chosen as a target (e.g., Fire Overwatch triggers when you are targeted by a charge).
+- *Resolution* — triggers when the attack hits or misses (e.g., certain defensive abilities trigger on being hit).
+- *Damage* — triggers when you would take damage or be affected (e.g., Dive triggers when you would be damaged by an area effect).
+
+A reaction specifies which phase it triggers on. You may only use a reaction appropriate to the current phase.
+
+== Strikes and Attack Powers
+
+When a character attacks in combat, the basic unit is the *strike*. A strike is a single attack roll against a target: roll your attack characteristic (Martial for melee or thrown weapons, Marksmanship for ranged weapons) and count successes. If your successes equal or exceed the target’s Evasion, the strike hits and you roll damage.
+
+An *attack power* is any power that includes one or more strikes as part of its effect. Whether an attack power scores multiple hits depends on the power itself.
+
+Some effects allow a creature to "make a strike" rather than use an attack power. A strike always produces at most one hit, regardless of excess successes.
+
+Every character has access to the following attack power:
+
+#power-description(
+  "Basic Attack",
+  "Innate",
+  0,
+  2,
+  [Make a strike against a target within your weapon’s range. For every [hit rate] successes scored above the target’s Evasion, this attack scores one additional hit. Each hit deals the weapon’s damage separately.],
+  keywords: ("Attack", "Martial", "Weapon")
+)
+
+#note[
+  _Example:_ Kael attacks a Warboar (Evasion 5) with a dagger (hit rate 2). He rolls his Martial characteristic and scores 8 successes. The first hit lands because he met the Evasion of 5. He has 3 excess successes; at a hit rate of 2, that’s 1 additional hit (3 ÷ 2 = 1, rounded down). Kael hits twice and rolls damage for each hit separately.
+]
+
+== Resolving an Attack
+
+When you use an attack power or make a strike, follow these steps:
+
++ *Choose a target.* Select a target within your weapon's range. You must have line of sight to the target unless the power states otherwise.
+
++ *Roll the attack.* Roll your attack characteristic --- Martial for melee and thrown weapons, Marksmanship for ranged weapons. Apply any bonuses and penalties from powers, conditions, concealment, and other effects to determine your final dice pool.
+
++ *Determine if you hit.* Compare your total successes to the target's Evasion. If your successes equal or exceed the target's Evasion, the attack hits. If not, it misses. If the target has cover, a hit triggers a cover save before proceeding --- if the save succeeds, the attack misses.
+
++ *Determine the number of hits.* If the attack power scores multiple hits (such as Basic Attack), divide the excess successes by the weapon's hit rate, rounding down. Add 1 for the initial hit. A strike or an attack power that does not specify multiple hits always scores exactly one hit.
+
++ *Roll damage.* Roll the weapon's damage once for each hit. Each hit deals damage independently.
+
++ *Apply defenses.* For each hit, reduce the damage by the target's Armor (for physical damage) or Ward (for magical damage). The attacker's weapon Penetration reduces the target's effective Armor for that attack. Damage cannot be reduced below zero.
+
++ *Apply damage.* Subtract the remaining damage from the target's Hit Points.
+
+#note[
+  _Example:_ Kael charges a Warboar (Evasion 5, Armor 4) with a longsword (damage 9+D8, Penetration 2, hit rate 3). Charging grants him \+4d to his Martial characteristic of 7, so he rolls 11 dice and scores 9 successes. The attack hits (9 ≥ 5). He has 4 excess successes at hit rate 3: that's 1 additional hit, for 2 hits total. He rolls 9+D8 twice, getting 14 and 12. The Warboar's effective Armor is 4 − 2 Pen = 2, so the hits deal 12 and 10 damage respectively.
+]
+
+== Melee Attacks
+
+A melee attack uses the *Martial* characteristic (STR + AGI). Melee weapons can target creatures within their reach — typically adjacent squares (reach 1), though some weapons have greater reach.
+
+=== Melee Hit Rates
+
+A melee weapon's hit rate is determined by its weight class:
+
+- *Light* melee weapons (daggers, gauntlets): hit rate *2*
+- *Medium* melee weapons (longswords, maces, spears): hit rate *3*
+- *Heavy* melee weapons (greatswords, mauls, halberds): hit rate *4*
+
+=== Thrown Weapons
+
+Some melee weapons can be thrown, using the *Martial* characteristic at range. A thrown weapon follows the ranged attack rules for range and penalties, but uses Martial rather than Marksmanship. A thrown weapon always scores at most one hit, regardless of its melee hit rate.
+
+== Ranged Attacks
+
+A ranged attack uses the *Marksmanship* characteristic (DEX + PER). Ranged weapons have a listed range band that determines their effective range and the penalty for firing beyond it.
+
+=== Range Bands
+
+Each range band defines a *range increment* in squares:
+
+#pftab(
+  columns: 2,
+  "Range Bands",
+  [*Range Band*], [*Increment*],
+  [Short], [10 squares],
+  [Medium], [20 squares],
+  [Long], [40 squares],
+  [Very Long], [80 squares],
+)
+
+A weapon can fire at targets within its first increment with no penalty. For each additional increment of distance beyond the first, the attacker takes a *-2d penalty* to the attack roll. If the penalty reduces the attacker's dice pool to zero, the shot automatically fails.
+
+#note[
+  _Example:_ Lira fires a rifle (Medium range, increment 20) at a target 55 squares away. The first 20 squares are free. The target is 35 squares beyond that — two additional increments (21–40 and 41–60). Lira takes a -4d penalty to her Marksmanship roll.
+]
+
+=== Fire Modes and Ranged Hit Rates
+
+Ranged weapons have a *fire mode* that determines their hit rate:
+
+- *Single shot (S):* The weapon fires one powerful shot. It scores at most *one hit* per attack, regardless of excess successes.
+- *Semi-automatic (SA):* The weapon fires in controlled bursts. Hit rate is *3* (or *4* for heavy semi-automatic weapons).
+- *Full automatic (FA):* The weapon fires a sustained stream. Hit rate is *2* for light and medium weapons, *3* for heavy weapons.
+
+=== Heavy Ranged Weapons
+
+Heavy ranged weapons (machine guns, cannons, sniper rifles) must be *braced* before they can be fired accurately. Firing a heavy weapon without bracing is called *hip-firing* and incurs a *-2d penalty* to the attack roll. A heavy weapon can be braced using the Brace action (1 AP).
+
+=== Ammunition
+
+Characters are assumed to carry sufficient standard ammunition for their weapons; tracking individual rounds is not required. The exception is weapons that fire specialized ammunition — such as rocket launchers or grenade launchers — where the ammunition itself determines the weapon's damage and effects. For these weapons, each shot consumes one unit of ammunition, and reloading costs *1 AP*.
+
+== Actions during Combat
+
+Every character has a large and varying set of actions available to take during
+combat.
+
+==== Standard Actions (1 AP)
+
+*Brace* \
+*Disengage* \
+*Draw/Stash* \
+*Drop Prone* \
+*Stand Up* \
+*Take Aim*
+
+==== Standard Actions (2 AP)
+
+*Attack* \
+*Dash* \
+*Use Item*
+
+==== Standard Actions (3 AP)
+
+*Charge*
+
+==== Standard Actions (Special)
+
+*Move* \
+*Use Skill* \
+*Use Power* \
+*Cast Spell*
+
+==== Reactions
+
+*Counterspell* \
+*Dive* \
+*Fire Overwatch* \
+*Opportunity Attack*
+
+=== Explanation of Actions
+
+==== Special Actions
+
+===== Move
+
+When you take a move action, you can move up to your speed. Move actions cost
+progressively more action points as you take them; the first one costs 1, the
+second 2 and so on.
+
+===== Use Item
+
+You can use an action to make use of an item in your possession. The amount of
+action points required for this varies depending on the item; it is usually a
+standard action.
+
+===== Use Power
+
+You can use a combat power or magic spell available to you, consuming action
+points as specified in the power’s description. Most powers can be used as a
+standard action, but some may also require a full action.
+
+===== Use Skill
+
+On occasion, you may wish to take an action in combat that requires a skill roll
+(such as using Acrobatics to run over a cable, using Shop to restart a stuck
+mechanism, etc.) The GM adjudicates the number of action points using a skill
+requires depending on the situation.
+
+==== Minor Actions
+
+Minor actions cost 1 AP each to perform.
+
+===== Brace
+
+You can brace a heavy weapon to stabilize it. This can mean propping it against
+a stable surface, or taking a more stable position to fire it from. Once you
+have braced a heavy weapon, you remain braced until you move it from the braced
+position. While you have your heavy weapon braced, you can fire it normally
+without the penalty that would otherwise apply to heavy weapons.
+
+===== Command
+
+If you are controlling a summoned creature, you can command it to take an action
+on your turn. The creature will follow your instructions to the best of its
+ability.
+
+===== Disengage
+
+When you are in melee combat, you can disengage to move one square in any
+direction of your choosing. This movement does not provoke attacks of
+opportunity.
+
+===== Draw/Stash
+
+As a minor action, you can draw a weapon or item you have equipped to wield it,
+or you can stash a weapon or item you are currently wielding.
+
+===== Drop Prone
+
+You can drop prone as a minor action. Doing so increases your evasion by 1
+point. While you are prone, you can only crawl to move, reducing your land
+movement speed to half.
+
+===== Take Aim
+
+You can take aim at a target to increase your accuracy against it. When you do
+so, you can make your next ranged attack against the target with \+2 automatic
+successes.
+
+==== Standard Actions
+
+===== Attack
+
+You use an attack power. The default attack power available to every character is the Basic Attack described above. Other attack powers granted by advances or other abilities may be used instead.
+
+===== Stand Up
+
+If you are prone, you can stand up as a standard action.
+
+===== Dash
+
+You break into a sprint, moving up to double your movement speed. Unlike a
+normal move action, a Dash must be in a straight line. Movement during a Dash
+provokes opportunity attacks as normal.
+
+==== Full Actions
+
+===== Charge
+
+To take a charge, declare a target you can see. You must move toward that target
+in a straight line, moving up to twice your speed and ending your charge
+directly adjacent to your target. At the end of the charge, you can use a melee attack power. You gain a \+4d power bonus to your Martial characteristic when you make attack rolls during a charge.
+
+==== Reactions
+
+Reactions are special actions that you can take when it is not your turn. In
+general, reactions do not consume AP, but you can only take one of them per
+round. Every character automatically has access to the following reactions.
+
+===== Counterspell
+
+When another creature within 20 squares uses a magic power of a type that you
+can currently cast (for example, an Arcane spell while you are wielding an
+Arcane catalyst), you can counterspell as a reaction. To counterspell, roll the
+same check as the one used to cast the spell; if you score an equal number or
+more successes than the original caster, their spell fizzles without effect.
+
+===== Dive
+
+When you would be damaged by an area attack or magical effect, you can roll your
+Dodge characteristic against the difficulty of the attack. If you beat the
+difficulty, you tumble out of the attack’s range and are unaffected by it.
+
+===== Fire Overwatch
+
+If you are wielding a ranged weapon and are targeted for a charge, you can make a strike against the charging enemy.
+
+===== Opportunity Attack
+
+When you are wielding a melee weapon, and another creature takes a move action
+that passes through your weapon reach and does not end next to you, you can
+immediately make a strike against it.
+
+=== Saving Throws
+
+Many effects and status conditions last until the affected creature "saves" against them. A saving throw is a simple roll made at the end of the affected creature's turn: roll 3 dice. If 2 or more dice show successes, the saving throw passes and the effect ends. If fewer than 2 successes are rolled, the effect persists until the creature's next turn, when they may try again.
+
+This same mechanic is used for cover saves (when an attack targets a creature behind cover).
+
+Note that a saving throw is not the same as a *resistance check*. A resistance check uses a specific characteristic (such as Stamina or Potential) against a difficulty set by the power. Resistance checks are made when the effect is first applied, to determine whether it takes hold at all. Saving throws are made afterward, at the end of each turn, to end an ongoing effect.
+
+=== Status Conditions
+
+Battles are fought with vicious means, and in the course of a fight, characters
+can not only suffer damage, but may be afflicted with status conditions as well.
+A list of them follows:
+
+==== Blinded
+
+A blinded character cannot see. While they are blinded, they lose their
+perception bonus to their Evasion and make all attack rolls at a \-4 penalty.
+
+==== Disoriented
+
+A disoriented character does not know their position relative to their
+surroundings. Every time a disoriented character attempts to move, they must
+roll a scatter die. On a 10, they go in the direction of their choosing;
+otherwise, they move in the direction of the scatter die.
+
+==== Stunned
+
+A stunned character cannot take any actions. While Stunned, a creature is also
+Exposed.
+
+==== Vulnerable
+
+Attacks against a vulnerable creature deal their maximum damage.
+
+==== Dazed
+
+A dazed creature loses 1 AP and has their evasion halved.
+
+==== Exposed
+
+An exposed creature cannot take reactions and their dodge rating becomes 0\.
+
+==== Panicked
+
+A panicked creature is in thrall to its fight or flight reflex. On its turn, it
+must use all its AP either to attack the object of its fear (it may use powers
+to do so) or to run away from it; it cannot do both or take any other actions.
+
+==== Staggered
+
+A staggered creature is both vulnerable and exposed.
+
+==== Shred (x)
+
+A shredded creature loses x armor. Unless otherwise specified, this effect lasts
+indefinitely (or at least until repaired).
+
+==== Disrupt (x)
+
+A disrupted creature loses x ward.
+
+==== Slowed (x)
+
+A slowed creature’s movement speed is reduced by x.
+
+==== Still
+
+A still creature cannot expend focus. Any ability that would require focus
+cannot be used.
+
+==== Prone
+
+A prone creature has +1 Evasion against ranged attacks but -1 Evasion against
+melee attacks. A prone creature can only crawl, reducing its movement speed to
+half. Standing up from prone requires the Stand Up action (2 AP).
+
+==== Immobilized
+
+An immobilized creature cannot move by any means, including teleportation. It
+can still take all other actions normally.
+
+==== Restrained
+
+A restrained creature cannot move, takes a -2 penalty to Evasion, and makes all
+attack rolls at -2d.
+
+==== Frightened (of X)
+
+A frightened creature takes a -2d penalty on attack rolls and cannot willingly
+move closer to the source of its fear.
+
+==== Weakened
+
+A weakened creature makes all attack rolls at -2d.
+
+==== Dominated
+
+A dominated creature acts under the controller's direction on the controller's
+turn. It can only take basic actions (move, basic attack). At the end of each of
+the dominated creature's turns, it may attempt a saving throw to end the effect.
+
+==== Exhausted
+
+An exhausted creature takes a -2d penalty on all checks and has its movement
+speed halved.
+
+==== Poisoned
+
+A poisoned creature is suffering from a toxin. The specific effects of being
+Poisoned (ongoing damage, penalties, etc.) are defined by the power or effect
+that inflicted the condition. Poisoned can be removed by the Cleansing Light
+prayer, the Antidote recipe, or other effects that specifically remove the
+Poisoned condition.
+
+==== Diseased
+
+A diseased creature is afflicted by a magical or mundane illness. The specific
+effects of the Disease are defined by the power that inflicted it. Unless
+otherwise specified, healing received by a Diseased creature is halved. Disease
+can be removed by the Cleansing Light prayer or other effects that specifically
+remove Disease.
+
+==== Bleeding
+
+A bleeding creature has an open wound that continues to deal damage. The
+specific ongoing damage is defined by the power that inflicted the condition.
+Bleeding can be removed by any healing effect, by the Cleansing Light prayer, or
+by an Alchemy check (difficulty set by the GM).
+
+==== Burning
+
+A burning creature is on fire. The specific ongoing Thermal damage is defined by
+the power or effect that caused the condition. A burning creature or an adjacent
+ally can spend 1 AP to attempt to extinguish the flames (saving throw). Burning
+can also be removed by full immersion in water or similar effects.
