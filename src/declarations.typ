@@ -1,5 +1,36 @@
 #import "formatting/style.typ": *
 
+// Pulled from https://github.com/typst/typst/issues/2196
+#let to-string(it) = {
+  if type(it) == str {
+    it
+  } else if type(it) != content {
+    str(it)
+  } else if it.has("text") {
+    it.text
+  } else if it.has("children") {
+    it.children.map(to-string).join()
+  } else if it.has("body") {
+    to-string(it.body)
+  } else if it == [ ] {
+    " "
+  }
+}
+
+#let roll-result(it) = {
+  let output = false
+  if to-string(it).starts-with("Critical Success") {
+    output = true
+  } else if to-string(it).starts-with("Success") {
+    output = true
+  } else if to-string(it).starts-with("Failure") {
+    output = true
+  } else if to-string(it).starts-with("Critical Failure") {
+    output = true
+  } else if to-string(it).starts-with("Heightened (") { output = true }
+  return output
+}
+
 #let pftraits(traits) = {
   if traits != ([],) {
     for trait in traits [
@@ -39,20 +70,6 @@
   set text(font: ("Libre Baskerville",), style: "italic", size: 10pt)
   box[#body]
   v(0.5em)
-}
-
-#let advance-block(name, tier, xp, hp, fp, prerequisites, body) = {
-  set par(hanging-indent: 1em, first-line-indent: 1em)
-  set box(fill: eastern, stroke: 1pt, outset: 5pt, radius: 10%)
-  block[
-    *#name* #linebreak()
-    _Tier #tier Advance #linebreak()_
-    _Cost:_ #xp XP #linebreak()
-    _HP:_ #hp, _FP:_ #fp #linebreak()
-    _Prerequisites:_ #prerequisites
-
-    #body
-  ]
 }
 
 #let ritual-description(
@@ -211,24 +228,27 @@
   #v(1em)
   #set par(spacing: .6em, first-line-indent: 0em) // hanging-indent: 1em)
   #set text(size: 10pt)
-  #let creature_header(body) = {
+  #let maybe_format_header(is_header, text_content) = {
+    if is_header {
+      text(weight: "extrabold", size: 1.4em, stretch: 50%)[#text_content]
+    } else {
+      text(stretch: 50%)[#text_content]
+    }
+  }
+  #let split_format(left, right, is_header: false) = {
     box(
-      text(weight: "extrabold", size: 1.4em, stretch: 50%)[#upper(feat.name)],
+      maybe_format_header(is_header, left)
     )
     h(1fr)
     sym.wj
-    box(text(weight: "extrabold", size: 1.4em, stretch: 50%)[FEAT #body])
+    box(maybe_format_header(is_header, right))
   }
-  #creature_header[#feat.level]
+  #split_format(upper(feat.name), upper([Tier #feat.level (#feat.xp XP)]), is_header: true)
   #line(stroke: 1pt, length: 100%)
   #pftraits(feat.traits)
-
-  #for feat in feat.reqs {
-    par(hanging-indent: 1em)[#feat\ ]
-  }
-  #if feat.reqs != () {
-    line(stroke: 1pt, length: 100%)
-  }
+  
+  #split_format([Prerequisites: #feat.reqs], [#feat.hp HP, #feat.fp FP])
+  #line(stroke: 1pt, length: 100%)
   #for effect in feat.effect {
     if roll-result(effect) {
       par(hanging-indent: 1em)[#effect]
@@ -242,36 +262,31 @@
   }
 ]
 
-// Pulled from https://github.com/typst/typst/issues/2196
-#let to-string(it) = {
-  if type(it) == str {
-    it
-  } else if type(it) != content {
-    str(it)
-  } else if it.has("text") {
-    it.text
-  } else if it.has("children") {
-    it.children.map(to-string).join()
-  } else if it.has("body") {
-    to-string(it.body)
-  } else if it == [ ] {
-    " "
-  }
-}
+#let advance-block(name, tier, xp, hp, fp, prerequisites, body, traits: ()) = feat((
+  name: name,
+  reqs: prerequisites,
+  level: tier,
+  xp: xp,
+  hp: hp,
+  fp: fp,
+  traits: traits,
+  effect: (body,),
+  special: none,
+))
 
-#let roll-result(it) = {
-  let output = false
-  if to-string(it).starts-with("Critical Success") {
-    output = true
-  } else if to-string(it).starts-with("Success") {
-    output = true
-  } else if to-string(it).starts-with("Failure") {
-    output = true
-  } else if to-string(it).starts-with("Critical Failure") {
-    output = true
-  } else if to-string(it).starts-with("Heightened (") { output = true }
-  return output
-}
+// #let advance-block(name, tier, xp, hp, fp, prerequisites, body) = {
+//   set par(hanging-indent: 1em, first-line-indent: 1em)
+//   set box(fill: eastern, stroke: 1pt, outset: 5pt, radius: 10%)
+//   block[
+//     *#name* #linebreak()
+//     _Tier #tier Advance #linebreak()_
+//     _Cost:_ #xp XP #linebreak()
+//     _HP:_ #hp, _FP:_ #fp #linebreak()
+//     _Prerequisites:_ #prerequisites
+// 
+//     #body
+//   ]
+// }
 
 // Action Icons
 //#let A = (

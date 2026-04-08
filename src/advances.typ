@@ -31,6 +31,7 @@ achieving story milestones, as determined by the GM.
   [You gain the ability to cast Tier 1 spells. You can prepare up to one Tier 1
     spell each time you memorize spells for the day. You may take this advance
     multiple times, adding a new Tier 1 spell slot each time.],
+  traits: ("Arcane", "Power"),
 )
 
 #advance-block(
