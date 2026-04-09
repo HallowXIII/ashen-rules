@@ -400,9 +400,23 @@ A creature that succeeds on its resistance check against an area attack either n
 
 Area attacks never score multiple hits. Each affected target takes the power's listed damage once.
 
+=== Cover
+
+Terrain, structures, and even other creatures can provide cover when they stand between an attacker and its target.
+
+To determine whether a target has cover, draw a straight line from any corner of the attacker's square to any corner of the target's square (or squares, for a large creature). If at least one such line passes through an obstacle that could grant cover, the target has cover. Whether that cover is light or heavy depends on the nature of the obstacle.
+
+If all lines pass through the cover, and it is an obstacle that would grant heavy cover, such as a wall, then the cover is total.
+
+- *Light cover* — roughly half of the target is obscured (e.g., a low wall, a tree trunk, or an ally standing in the way). When a hit is scored against a target in light cover, the target makes a cover save before the hit is applied. A cover save is a saving throw (roll 3 dice; 2 or more successes passes). If the save succeeds, the attack misses.
+- *Heavy cover* — roughly two-thirds of the target is obscured (e.g., firing through an arrow slit, or a creature peeking around a corner). Heavy cover works like light cover, but the cover save requires only 1 success instead of 2.
+- *Total cover* — the target is entirely obscured; there is no line of effect. A creature behind total cover cannot be targeted or affected by attacks at all.
+
+Cover applies the same way regardless of whether the attack is single-target or an area effect.
+
 === Line of Effect
 
-An area power must have *line of effect* from its origin point to each target — an unobstructed path that is not blocked by total cover. A creature behind total cover within an area is unaffected. Creatures behind partial cover are affected but may benefit from their cover save as normal.
+An area power must have *line of effect* from its origin point to each target — an unobstructed path that is not blocked by total cover. A creature behind total cover within an area is unaffected. Creatures behind light or heavy cover are affected but may benefit from their cover save as normal.
 
 == Actions during Combat
 
@@ -540,7 +554,7 @@ directly adjacent to your target. At the end of the charge, you can use a melee 
 
 Many effects and status conditions last until the affected creature "saves" against them. A saving throw is a simple roll made at the end of the affected creature's turn: roll 3 dice. If 2 or more dice show successes, the saving throw passes and the effect ends. If fewer than 2 successes are rolled, the effect persists until the creature's next turn, when they may try again.
 
-This same mechanic is used for cover saves (when an attack targets a creature behind cover).
+Cover saves use the same mechanic but with a different success threshold depending on the type of cover (see Cover).
 
 Note that a saving throw is not the same as a *resistance check*. A resistance check uses a specific characteristic (such as Stamina or Potential) against a difficulty set by the power. Resistance checks are made when the effect is first applied, to determine whether it takes hold at all. Saving throws are made afterward, at the end of each turn, to end an ongoing effect.
 

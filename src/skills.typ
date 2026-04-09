@@ -1494,7 +1494,7 @@ the arcane arts.
   "Alchemy",
   "12",
   "10",
-  "Components (#feathers 6000) + Essence (5 Strain)",
+  "Components (#feathers 6000) + Essence (5 EP)",
   "8 hours",
   "You create a single universal reagent of extraordinary purity, worth 8 Magnitude for the purpose of any ritual. This exceeds the magnitude of any readily obtainable reagent (capped at 6 for standard materials). The Philosopher's Reagent does not expire and can provide any single aspect at up to magnitude 4 when used as Influence.",
   aspects: "Mist, Forge",
