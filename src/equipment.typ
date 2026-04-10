@@ -1,6 +1,16 @@
 #import "declarations.typ": feathers, item-description, pftab, power-description
 = Equipment
 
+== Equipment States
+
+Items a character possesses can be in one of three states:
+
+- *Carried:* The item is stowed in a pack, bag, or otherwise on the character's person, but is not ready for immediate use. Retrieving a carried item to equip or wield it takes significant effort (typically a full action). Carried items contribute to a character's encumbrance but do not count against their Bulk or Charge capacity (see _Bulk and Charge_ below).
+
+- *Equipped:* The item is worn on the body or stored in a readily accessible location (a belt, holster, or sheath). Armor must be equipped to provide its benefits. Equipped items can be drawn to be wielded as a minor action (see _Draw/Stash_ in the Combat chapter). Equipped items count against a character's Bulk and Charge capacity.
+
+- *Wielded:* The item is actively held in hand and ready to use. A character can wield items in as many hands as they have free (typically two). Weapons must be wielded to attack with them; catalysts and reliquaries must be wielded to channel powers through them. Some items — notably light catalysts such as pendants, circlets, and tiaras — can be wielded without occupying a hand, as they are worn on the body in a way that allows the user to channel through them. Wielded items count against a character's Bulk and Charge capacity.
+
 == Types of Equipment
 
 === Weapons
@@ -53,10 +63,23 @@ Armor protects the wearer from physical and magical damage. Like weapons, armor 
 - *Evasion:* Bonus or penalty to the wearer's Evasion score.
 - *Bulk:* Physical weight and encumbrance.
 - *Charge:* Magical encumbrance (see _Bulk and Charge_ below).
+- *Profile:* The armor's physical form factor, which determines how it layers with other armor (see _Armor Layering_ below).
+
+==== Armor Layering
+
+A character may wear up to one piece of armor in each of three *profile* slots. From innermost to outermost, these are:
+
+- *Close-fit (C):* Form-fitting garments worn directly against the body. Combat suits, bodysuits, and similar items.
+- *Plating (P):* Rigid or semi-rigid protective layers worn over close-fit garments. Flak vests, armor plates, and combat frames.
+- *Overgarment (O):* Large, flowing, or draped garments worn as the outermost layer. Robes and mantles.
+
+A character may wear one piece of armor in each slot. Full-body armor such as power armor and construct frames occupies both the Close-fit and Plating slots (marked *C+P* in the armor table), meaning nothing can be worn underneath them.
+
+When multiple pieces of armor are worn, their *Armor*, *Ward*, *Evasion*, *Bulk*, and *Charge* values are all added together. Special properties such as camouflage or stealth bonuses only apply if the piece with that property is the character's outermost worn layer.
 
 === Catalysts
 
-Catalysts are implements used to channel magical energy. They are required to cast arcane spells and psychic powers. Each catalyst has a *damage* value (used as the base for spell damage calculations — when a spell deals "100% catalyst damage," it deals damage equal to the catalyst's damage value) and a *focus increment* value that determines how quickly the catalyst accumulates magical stress during sustained casting.
+Catalysts are implements used to channel magical energy. They are required to cast arcane spells and psychic powers. Each catalyst has a *damage* value (used as the base for spell damage calculations — when a spell deals "100% catalyst damage," it deals damage equal to the catalyst's damage value) and a *focus increment* value that determines the Focus cost of spells channeled through it (see _Focus Increments_ above).
 
 Catalysts come in two types: *Arcane catalysts* (rods, staves, orbs) are used for arcane spells. *Psychic catalysts* (crystals, masks, circlets) are used for psychic powers. A character must wield a catalyst of the appropriate type to cast spells or powers of that school.
 
@@ -64,9 +87,25 @@ Catalysts come in two types: *Arcane catalysts* (rods, staves, orbs) are used fo
 
 Every piece of equipment has a *Bulk* value representing its physical weight and size, and a *Charge* value representing its magical resonance and encumbrance.
 
-Characters have a *Bulk capacity* derived from their physical attributes (Strength and Endurance) and a *Charge capacity* derived from their magical attunement. The total Bulk and Charge of all equipped and carried items must not exceed these capacities.
+A character's *Bulk capacity* is equal to their *Stamina rating*. A character's *Charge capacity* is equal to their *Potential rating*. The total Bulk and Charge of all _equipped and wielded_ items must not exceed these capacities. Carried items (stowed in a pack) do not count against Bulk or Charge capacity, but are subject to the character's carrying capacity instead (see below).
 
 Non-magical items (mundane weapons, basic armor) have Charge 0. Lightly magical items have Charge roughly half their Bulk. Heavily magical items (catalysts, reliquaries, enchanted robes) may have high Charge and low Bulk. This creates a meaningful equipment tradeoff: physical warriors invest in Bulk capacity, casters invest in Charge capacity, and hybrid characters must balance both.
+
+==== Carrying Capacity
+
+A character's *carrying capacity* represents the total Bulk of items they can carry on their person, including both equipped and carried items. A character's base carrying capacity is equal to *twice their Bulk capacity* (i.e., twice their Stamina rating). Some races have a different carrying capacity multiplier:
+
+- *Ironhands:* ×3 (their construct frames are built for heavy loads)
+- *Warboars:* ×3 (bred for endurance on long campaigns)
+- All other races: ×2
+
+A character whose total carried and equipped Bulk exceeds their carrying capacity is *encumbered*: their Movement Speed is halved and they suffer a -2d penalty on all physical checks.
+
+=== Focus Increments
+
+Weapons, catalysts, and reliquaries each have a *focus increment* value. This value determines how much Focus a character spends when using powers through that implement. When a power's cost is expressed in _increments_ (e.g., "Cost: 2 Increments"), the actual Focus Point cost is equal to the number of increments multiplied by the wielded implement's focus increment value. For example, a character using a power that costs 2 increments through a weapon with a focus increment of 5 would spend 10 FP.
+
+Higher-tier and heavier implements tend to have larger focus increments, reflecting their greater power output. This creates a tradeoff: more powerful implements deal more damage but are more expensive to fuel with Focus. A character choosing between two weapons of the same tier might opt for one with a lower increment if they rely heavily on exploits, or a higher increment if they prefer raw damage and use powers sparingly.
 
 === Reliquaries
 
@@ -111,102 +150,102 @@ these cases, those prayers are specially noted in the reliquary's stat block.
 
 #pftab(
   "Melee Weapons",
-  columns: 8,
+  columns: 9,
   //align: (left, center, center, center, center, center, center, center, center, left),
-  [Name], [Tier], [Price], [Damage], [Pen], [Bulk], [Hands], [Special],
-  [Old War Dagger], [0], [_#feathers 0_], [2+D6], [0], [½ (L)], [1], [Sidearm],
-  [Old War Longsword], [0], [_#feathers 0_], [4+D4], [0], [1 (M)], [1], [],
-  [Old War Greatsword], [0], [_#feathers 0_], [4+D6], [0], [2 (H)], [2], [],
-  [Old War Greathammer], [0], [_#feathers 0_], [6+D3], [0], [2 (H)], [2], [],
-  [Old War Spear], [0], [_#feathers 0_], [5+D3], [0], [2 (M)], [2], [Reach 2],
-  [Heat Knife], [1], [_#feathers 150_], [6+D3], [0], [½ (L)], [1], [Sidearm, Burning],
-  [Lantern Impulse Gauntlet], [1], [_#feathers 200_], [4+D6], [0], [¼ (L)], [1], [],
-  [Lantern Force Sword], [1], [_#feathers 300_], [5+D8], [0], [½ (L)], [1], [],
-  [Dragon Guard Longsword], [1], [_#feathers 350_], [6+D6], [0], [1 (M)], [1], [],
-  [Construct Chainsword], [1], [_#feathers 500_], [6+D12], [0], [2 (H)], [1], [Powered],
-  [Silvered Force Sword], [2], [_#feathers 600_], [6+D6], [4], [½ (L)], [1], [Silvered],
-  [Lacerator Shortsword], [2], [_#feathers 700_], [9+D8], [0], [1 (M)], [1], [],
-  [Argent Disruptor], [2], [_#feathers 800_], [9+D8], [0], [1½ (M)], [1], [Disrupting],
-  [Argent Keyblade], [2], [_#feathers 1000_], [9+2D8], [0], [½ (L)], [1], [],
-  [Construct Power Sword], [2], [_#feathers 1200_], [15+D4], [0], [2 (H)], [1], [Powered],
-  [Flaming Touch], [2], [_#feathers 900_], [12+D10], [0], [0], [1], [Burning],
-  [Gathering Cloud Blade], [3], [_#feathers 2500_], [11+2D8], [0], [2 (M)], [1], [],
-  [Parry Dagger, Power Field], [4], [_#feathers 5000_], [7+D6 R], [15], [1 (L)], [1], [Parry +4d, Powered],
-  [Venom Fang, Unstable Edge], [4], [_#feathers 5000_], [8+2D8 R], [10], [1 (L)], [1], [Poisonous (8)],
-  [Hoarfrost], [5], [_Unique_], [7+D12], [0], [2 (M)], [1], [Split damage (physical + magical)],
-  [Void Blade], [5], [_Unique_], [15+D10], [0], [1 (L)], [1], [Required for Wounds from Nowhere],
-  [Kazykly], [6], [_Unique_], [29+2D12], [0], [3 (H)], [1], [Required for Forest of Corpses],
-  [Moonlight Shortsword], [6], [_Unique_], [18+2D8], [0], [2 (M)], [1], [],
+  [Name], [Tier], [Price], [Damage], [Pen], [Bulk], [Hands], [Inc], [Special],
+  [Old War Dagger], [0], [_#feathers 0_], [2+D6], [0], [½ (L)], [1], [2], [Sidearm],
+  [Old War Longsword], [0], [_#feathers 0_], [4+D4], [0], [1 (M)], [1], [3], [],
+  [Old War Greatsword], [0], [_#feathers 0_], [4+D6], [0], [2 (H)], [2], [4], [],
+  [Old War Greathammer], [0], [_#feathers 0_], [6+D3], [0], [2 (H)], [2], [4], [],
+  [Old War Spear], [0], [_#feathers 0_], [5+D3], [0], [2 (M)], [2], [3], [Reach 2],
+  [Heat Knife], [1], [_#feathers 150_], [6+D3], [0], [½ (L)], [1], [3], [Sidearm, Burning],
+  [Lantern Impulse Gauntlet], [1], [_#feathers 200_], [4+D6], [0], [¼ (L)], [1], [3], [],
+  [Lantern Force Sword], [1], [_#feathers 300_], [5+D8], [0], [½ (L)], [1], [3], [],
+  [Dragon Guard Longsword], [1], [_#feathers 350_], [6+D6], [0], [1 (M)], [1], [4], [],
+  [Construct Chainsword], [1], [_#feathers 500_], [6+D12], [0], [2 (H)], [1], [5], [Powered],
+  [Silvered Force Sword], [2], [_#feathers 600_], [6+D6], [4], [½ (L)], [1], [4], [Silvered],
+  [Lacerator Shortsword], [2], [_#feathers 700_], [9+D8], [0], [1 (M)], [1], [5], [],
+  [Argent Disruptor], [2], [_#feathers 800_], [9+D8], [0], [1½ (M)], [1], [5], [Disrupting],
+  [Argent Keyblade], [2], [_#feathers 1000_], [9+2D8], [0], [½ (L)], [1], [5], [],
+  [Construct Power Sword], [2], [_#feathers 1200_], [15+D4], [0], [2 (H)], [1], [8], [Powered],
+  [Flaming Touch], [2], [_#feathers 900_], [12+D10], [0], [0], [1], [5], [Burning],
+  [Gathering Cloud Blade], [3], [_#feathers 2500_], [11+2D8], [0], [2 (M)], [1], [9], [],
+  [Parry Dagger, Power Field], [4], [_#feathers 5000_], [7+D6 R], [15], [1 (L)], [1], [11], [Parry +4d, Powered],
+  [Venom Fang, Unstable Edge], [4], [_#feathers 5000_], [8+2D8 R], [10], [1 (L)], [1], [11], [Poisonous (8)],
+  [Hoarfrost], [5], [_Unique_], [7+D12], [0], [2 (M)], [1], [14], [Split damage (physical + magical)],
+  [Void Blade], [5], [_Unique_], [15+D10], [0], [1 (L)], [1], [15], [Required for Wounds from Nowhere],
+  [Kazykly], [6], [_Unique_], [29+2D12], [0], [3 (H)], [1], [18], [Required for Forest of Corpses],
+  [Moonlight Shortsword], [6], [_Unique_], [18+2D8], [0], [2 (M)], [1], [16], [],
 )
 
 #pftab(
   "Ranged Weapons",
-  columns: 10,
+  columns: 11,
   breakable: true,
   //align: (left, center, center, center, center, center, center, center, center, left),
-  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Special*],
-  [Old War Pistol], [0], [_#feathers 0_], [1+D4], [0], [½ (L)], [1], [Short], [S], [Sidearm],
-  [Old War Rifle], [0], [_#feathers 0_], [3+D3], [0], [1 (M)], [2], [Medium], [S], [],
-  [Silent Killer], [1], [_#feathers 200_], [8+D3], [0], [1 (M)], [1], [Medium], [S], [],
-  [Lantern Autopulse Rifle], [1], [_#feathers 350_], [5+D8], [0], [1 (M)], [2], [Long], [SA 3], [Rapid Fire],
-  [Construct Chaingun], [1], [_#feathers 500_], [8+D8], [0], [3 (H)], [1], [Medium], [FA 3], [Heavy],
-  [Nightpiercer], [1], [_#feathers 450_], [11+D3], [0], [2 (H)], [2], [Very Long], [S], [Heavy],
-  [Alchymic Double Barrel], [2], [_#feathers 800_], [15+D6], [0], [2 (M)], [1], [Short], [S], [],
-  [Perfector Mk IV Suppressed Rifle], [2], [_#feathers 1000_], [15+D6], [0], [1 (M)], [2], [Very Long], [S], [Reliable],
-  [Sudassi Pattern Light Railgun], [2], [_#feathers 1200_], [9+2D8], [0], [3 (H)], [2], [Long], [S], [Heavy],
-  [Dragon Gun], [2], [_#feathers 1500_], [20+D6], [0], [2½ (H)], [2], [Very Long], [S], [Heavy, Single-Shot],
-  [Plasma Pistol], [2], [_#feathers 800_], [5+D8 T], [8], [1 (L)], [1], [Short], [S], [Burning],
-  [Plasma Rifle], [2], [_#feathers 1200_], [5+D8 T], [8], [1 (M)], [2], [Medium], [SA 3], [Burning],
-  [Jet Black Pistol], [3], [_#feathers 1800_], [11+D4], [0], [1 (L)], [1], [Long], [S], [Sidearm],
-  [Magmatic Pistol], [3], [_#feathers 2000_], [11+D4 T], [0], [1 (L)], [1], [Short], [S], [Burning],
-  [Lantern Jetgun], [3], [_#feathers 2200_], [7+D12], [0], [1 (L)], [1], [Long], [FA 3], [Jet],
-  [Dragon Guard Flamethrower], [3], [_#feathers 2500_], [9+2D8 T], [0], [1 (M)], [1], [Cone 8], [S], [Burning],
-  [Irradiated Battle Rifle], [3], [_#feathers 2800_], [12+D10], [0], [2 (M)], [2], [Long], [SA 3], [Irradiated],
-  [Dragon Guard Combo Jet], [3], [_#feathers 3500_], [12+2D10], [0], [2½ (H)], [1], [Medium], [FA 3], [Jet, Explosive],
-  [Plasma Caster], [3], [_#feathers 3000_], [6+D10 T], [12], [2 (M)], [2], [Cone 6], [S], [Burning],
-  [Plasma Lance], [3], [_#feathers 3500_], [8+D12 T], [16], [3 (H)], [2], [Line 20], [S], [Burning, Heavy],
-  [Jet Pistol, Annihilator], [4], [_#feathers 5400_], [8+2D8 R], [0], [½ (L)], [1], [Short], [FA 4], [Jet, Explosive],
-  [Jetgun, Annihilator], [4], [_#feathers 6000_], [12+2D10 R], [0], [2 (M)], [2], [Medium], [FA 3], [Jet, Explosive],
-  [Magnetic Rifle, Gauss], [4], [_#feathers 5400_], [15+D8 I], [5], [1 (M)], [2], [Long], [FA 3], [Reliable],
-  [Magnetic Sniper Rifle, Gauss], [4], [_#feathers 6000_], [25+D10 I], [5], [3 (H)], [2], [Very Long], [S], [Heavy, Reliable],
-  [Plasma Rifle, Sunfury], [4], [_#feathers 7000_], [8+2D12 T], [15], [2 (M)], [2], [Short], [S], [Overload, Burning],
-  [Plasma Cannon, Sunfury], [4], [_#feathers 8000_], [9+3D10 T], [18], [4 (H)], [2], [Short], [S], [Overload, Burning, Heavy],
-  [Plasma Pistol, Sunfury], [4], [_#feathers 6000_], [7+D12 T], [14], [1 (L)], [1], [Short], [S], [Burning],
-  [Plasma Lance, Nova], [5], [_#feathers 12000_], [9+3D10 T], [18], [4 (H)], [2], [Line 25], [S], [Burning, Heavy],
-  [Plasma Caster, Nova], [5], [_#feathers 10000_], [7+2D12 T], [16], [3 (M)], [2], [Cone 8], [S], [Burning],
-  [Cœur d'Étoile], [6], [_Unique_], [17+3D10 T], [34], [5 (H)], [2], [Long], [S], [Burning, Heavy],
-  [Moonlight Railgun], [6], [_Unique_], [14+2D12], [0], [2 (M)], [2], [Medium], [S], [],
-  [Silence], [6], [_Unique_], [35+2D6], [0], [2 (M)], [2], [Medium], [S], [],
+  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Inc*], [*Special*],
+  [Old War Pistol], [0], [_#feathers 0_], [1+D4], [0], [½ (L)], [1], [Short], [S], [2], [Sidearm],
+  [Old War Rifle], [0], [_#feathers 0_], [3+D3], [0], [1 (M)], [2], [Medium], [S], [3], [],
+  [Silent Killer], [1], [_#feathers 200_], [8+D3], [0], [1 (M)], [1], [Medium], [S], [4], [],
+  [Lantern Autopulse Rifle], [1], [_#feathers 350_], [5+D8], [0], [1 (M)], [2], [Long], [SA 3], [4], [Rapid Fire],
+  [Construct Chaingun], [1], [_#feathers 500_], [8+D8], [0], [3 (H)], [1], [Medium], [FA 3], [5], [Heavy],
+  [Nightpiercer], [1], [_#feathers 450_], [11+D3], [0], [2 (H)], [2], [Very Long], [S], [5], [Heavy],
+  [Alchymic Double Barrel], [2], [_#feathers 800_], [15+D6], [0], [2 (M)], [1], [Short], [S], [5], [],
+  [Perfector Mk IV Suppressed Rifle], [2], [_#feathers 1000_], [15+D6], [0], [1 (M)], [2], [Very Long], [S], [5], [Reliable],
+  [Sudassi Pattern Light Railgun], [2], [_#feathers 1200_], [9+2D8], [0], [3 (H)], [2], [Long], [S], [8], [Heavy],
+  [Dragon Gun], [2], [_#feathers 1500_], [20+D6], [0], [2½ (H)], [2], [Very Long], [S], [5], [Heavy, Single-Shot],
+  [Plasma Pistol], [2], [_#feathers 800_], [5+D8 T], [8], [1 (L)], [1], [Short], [S], [5], [Burning],
+  [Plasma Rifle], [2], [_#feathers 1200_], [5+D8 T], [8], [1 (M)], [2], [Medium], [SA 3], [5], [Burning],
+  [Jet Black Pistol], [3], [_#feathers 1800_], [11+D4], [0], [1 (L)], [1], [Long], [S], [6], [Sidearm],
+  [Magmatic Pistol], [3], [_#feathers 2000_], [11+D4 T], [0], [1 (L)], [1], [Short], [S], [6], [Burning],
+  [Lantern Jetgun], [3], [_#feathers 2200_], [7+D12], [0], [1 (L)], [1], [Long], [FA 3], [8], [Jet],
+  [Dragon Guard Flamethrower], [3], [_#feathers 2500_], [9+2D8 T], [0], [1 (M)], [1], [Cone 8], [S], [7], [Burning],
+  [Irradiated Battle Rifle], [3], [_#feathers 2800_], [12+D10], [0], [2 (M)], [2], [Long], [SA 3], [7], [Irradiated],
+  [Dragon Guard Combo Jet], [3], [_#feathers 3500_], [12+2D10], [0], [2½ (H)], [1], [Medium], [FA 3], [6], [Jet, Explosive],
+  [Plasma Caster], [3], [_#feathers 3000_], [6+D10 T], [12], [2 (M)], [2], [Cone 6], [S], [7], [Burning],
+  [Plasma Lance], [3], [_#feathers 3500_], [8+D12 T], [16], [3 (H)], [2], [Line 20], [S], [8], [Burning, Heavy],
+  [Jet Pistol, Annihilator], [4], [_#feathers 5400_], [8+2D8 R], [0], [½ (L)], [1], [Short], [FA 4], [9], [Jet, Explosive],
+  [Jetgun, Annihilator], [4], [_#feathers 6000_], [12+2D10 R], [0], [2 (M)], [2], [Medium], [FA 3], [10], [Jet, Explosive],
+  [Magnetic Rifle, Gauss], [4], [_#feathers 5400_], [15+D8 I], [5], [1 (M)], [2], [Long], [FA 3], [10], [Reliable],
+  [Magnetic Sniper Rifle, Gauss], [4], [_#feathers 6000_], [25+D10 I], [5], [3 (H)], [2], [Very Long], [S], [11], [Heavy, Reliable],
+  [Plasma Rifle, Sunfury], [4], [_#feathers 7000_], [8+2D12 T], [15], [2 (M)], [2], [Short], [S], [10], [Overload, Burning],
+  [Plasma Cannon, Sunfury], [4], [_#feathers 8000_], [9+3D10 T], [18], [4 (H)], [2], [Short], [S], [11], [Overload, Burning, Heavy],
+  [Plasma Pistol, Sunfury], [4], [_#feathers 6000_], [7+D12 T], [14], [1 (L)], [1], [Short], [S], [9], [Burning],
+  [Plasma Lance, Nova], [5], [_#feathers 12000_], [9+3D10 T], [18], [4 (H)], [2], [Line 25], [S], [14], [Burning, Heavy],
+  [Plasma Caster, Nova], [5], [_#feathers 10000_], [7+2D12 T], [16], [3 (M)], [2], [Cone 8], [S], [13], [Burning],
+  [Cœur d'Étoile], [6], [_Unique_], [17+3D10 T], [34], [5 (H)], [2], [Long], [S], [18], [Burning, Heavy],
+  [Moonlight Railgun], [6], [_Unique_], [14+2D12], [0], [2 (M)], [2], [Medium], [S], [18], [],
+  [Silence], [6], [_Unique_], [35+2D6], [0], [2 (M)], [2], [Medium], [S], [18], [],
 )
 
 #pftab(
   "Armor",
-  columns: 8,
-  align: (left, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Armor*], [*Ward*], [*Evasion*], [*Bulk*], [*Charge*],
-  [Midnight Combat Suit], [1], [_#feathers 200_], [3], [3], [+1], [1], [1],
-  [Hunter-Killer Combat Suit], [1], [_#feathers 250_], [4], [3], [+1], [½], [0],
-  [Mistwalker Robes], [1], [_#feathers 300_], [3], [6], [+1], [1], [2],
-  [Sudassi-Pattern Construct Frame], [1], [_#feathers 500_], [7], [5], [-2], [5], [2],
-  [Black Leather Combat Suit], [2], [_#feathers 600_], [4], [4], [+2], [2], [0],
-  [Synweave Nightcamo Cloak], [2], [_#feathers 800_], [0], [1], [+2], [½], [2],
-  [Warmage Robes], [2], [_#feathers 1000_], [5], [8], [+1], [1], [3],
-  [Flak Vest], [2], [_#feathers 500_], [6], [1], [-2], [2], [0],
-  [Zahak-Pattern Serpent Frame], [2], [_#feathers 1200_], [8], [5], [0], [3], [3],
-  [Sudassi-Pattern Artillery Frame], [2], [_#feathers 1500_], [8], [11], [-2], [5], [3],
-  [Infiltrator Bodysuit], [3], [_#feathers 2000_], [8], [5], [+1], [1], [1],
-  [Battlemage Vestments], [3], [_#feathers 2500_], [8], [10], [0], [2], [3],
-  [Dragon Guard Power Armor], [3], [_#feathers 3000_], [15], [10], [-4], [5], [1],
-  [Venerant Robes], [4], [_#feathers 5000_], [9], [20], [0], [1], [4],
-  [Midnight Suit, Thermal Camo], [4], [_#feathers 5500_], [13], [9], [+2], [1], [1],
-  [Carapace Suit, Perfector Mk V], [4], [_#feathers 5000_], [19], [12], [-1], [3], [1],
-  [Faerie Battleplate, Crystalline], [4], [_#feathers 6500_], [25], [19], [-4], [5], [3],
-  [Shadowweave Mantle], [5], [_#feathers 10000_], [11], [8], [+2], [2], [3],
-  [Perfector Mk VI Exosuit], [5], [_#feathers 12000_], [15], [10], [-1], [4], [2],
-  [Titan Frame, Mk III], [5], [_#feathers 15000_], [24], [16], [-3], [6], [1],
-  [Coldlight Robes], [6], [_Unique_], [10], [25], [+2], [1], [4],
-  [Moonlight Combat Suit], [6], [_Unique_], [18], [10], [+3], [2], [3],
-  [Vanth's Sypharion], [6], [_Unique_], [15], [15], [+3], [1], [3],
+  columns: 9,
+  align: (left, center, center, center, center, center, center, center, center),
+  [*Name*], [*Tier*], [*Price*], [*Armor*], [*Ward*], [*Evasion*], [*Bulk*], [*Charge*], [*Profile*],
+  [Midnight Combat Suit], [1], [_#feathers 200_], [3], [3], [+1], [1], [1], [C],
+  [Hunter-Killer Combat Suit], [1], [_#feathers 250_], [4], [3], [+1], [½], [0], [C],
+  [Mistwalker Robes], [1], [_#feathers 300_], [3], [6], [+1], [1], [2], [O],
+  [Sudassi-Pattern Construct Frame], [1], [_#feathers 500_], [7], [5], [-2], [5], [2], [C+P],
+  [Black Leather Combat Suit], [2], [_#feathers 600_], [4], [4], [+2], [2], [0], [C],
+  [Synweave Nightcamo Cloak], [2], [_#feathers 800_], [0], [1], [+2], [½], [2], [O],
+  [Warmage Robes], [2], [_#feathers 1000_], [5], [8], [+1], [1], [3], [O],
+  [Flak Vest], [2], [_#feathers 500_], [6], [1], [-2], [2], [0], [P],
+  [Zahak-Pattern Serpent Frame], [2], [_#feathers 1200_], [8], [5], [0], [3], [3], [C+P],
+  [Sudassi-Pattern Artillery Frame], [2], [_#feathers 1500_], [8], [11], [-2], [5], [3], [C+P],
+  [Infiltrator Bodysuit], [3], [_#feathers 2000_], [8], [5], [+1], [1], [1], [C],
+  [Battlemage Vestments], [3], [_#feathers 2500_], [8], [10], [0], [2], [3], [O],
+  [Dragon Guard Power Armor], [3], [_#feathers 3000_], [15], [10], [-4], [5], [1], [C+P],
+  [Venerant Robes], [4], [_#feathers 5000_], [9], [20], [0], [1], [4], [O],
+  [Midnight Suit, Thermal Camo], [4], [_#feathers 5500_], [13], [9], [+2], [1], [1], [C],
+  [Carapace Suit, Perfector Mk V], [4], [_#feathers 5000_], [19], [12], [-1], [3], [1], [P],
+  [Faerie Battleplate, Crystalline], [4], [_#feathers 6500_], [25], [19], [-4], [5], [3], [C+P],
+  [Shadowweave Mantle], [5], [_#feathers 10000_], [11], [8], [+2], [2], [3], [O],
+  [Perfector Mk VI Exosuit], [5], [_#feathers 12000_], [15], [10], [-1], [4], [2], [C+P],
+  [Titan Frame, Mk III], [5], [_#feathers 15000_], [24], [16], [-3], [6], [1], [C+P],
+  [Coldlight Robes], [6], [_Unique_], [10], [25], [+2], [1], [4], [O],
+  [Moonlight Combat Suit], [6], [_Unique_], [18], [10], [+3], [2], [3], [C],
+  [Vanth's Sypharion], [6], [_Unique_], [15], [15], [+3], [1], [3], [C],
 )
 
 #pftab(

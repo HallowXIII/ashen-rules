@@ -34,15 +34,16 @@
   Echayâyti yi thâlâ mêzesh i khanjhi\
   I shayâmbô hêk i tawpanj ipish tarti\
   Rhôndwâ hêk talamâ yupak râykêk\
-  Zawnjwô yi nhayâm.
-
-
+  Zangwô yi nhayâm.
+  #linebreak()
+  #linebreak()
   They prayed their due as they beheld\
   The heavens opening in fire, on the valkyries’ descent\
   The dead raised their rifles, held them against plate\
   Aloft they held their hammers, glory to await\
   At the end of days.
 ]
+--- The Song of the Deathless
 
 \
 
@@ -235,13 +236,10 @@ all the pips. This number is your initiative and determines your place in the
 initiative order.
 
 ==== Extreme Initiative
-If a combatant scores an initiative X greater than 99, their initiative “rolls
-over” and they act for the first time in an extra round (the _surprise round_)
-at initiative X - 100, which becomes their initiative count during all
-subsequent turns. If this circumstance obtains for the first time while the
-battle is already underway, the character can take a turn immediately; the
-normal initiative order then resumes, with the character's initiative adjusted
-as detailed above.
+If a participant scores an initiative X greater than 99, their initiative “rolls
+over”: X - 100 becomes their initiative count for all subsequent rounds. In
+combat, this grants special benefits related to surprise (see _Surprise_ in the
+Combat chapter).
 
 ==== Actions and Action Points
 In structured time, everytime you wish to do something, you must take an action
@@ -349,6 +347,10 @@ attributes, listed below.
 
 The values of derived statistics usually also have ratings, but there is no
 uniform way of calculating them.
+
+=== Equipment States
+
+Items a character owns can be in one of three states: *carried*, *equipped*, or *wielded*. Carried items are stowed in a pack or on a character's person but are not ready for immediate use. Equipped items are worn or readied on the body and available to be drawn quickly. Wielded items are actively held in hand and ready to use. For full definitions, see _Equipment States_ in the Equipment chapter.
 
 === Advances and Powers
 
@@ -828,16 +830,17 @@ when attempting to traverse ground within a certain amount of time.
 === Stamina
 Attributes: STR + END \
 This characteristic represents your character’s ability to keep fighting and
-exerting themselves under strain. It determines your character’s carrying
-capacity and the maximum bulk of their equipped items. Your character may need
-to make a stamina check to resist the effects of poison, disease or fatigue.
+exerting themselves under strain. Your character’s Stamina rating determines
+their *Bulk capacity* (see _Bulk and Charge_ in the Equipment chapter). Your
+character may need to make a Stamina check to resist the effects of poison,
+disease or fatigue.
 
 === Potential
 Attributes: ATT + WIL \
 This characteristic represents your character’s ability to control magical
-energy. It determines the maximum magic charge of the items your character can
-make use of at any given time. You may also need to make a Potential check to
-resist the effects of harmful magic.
+energy. Your character’s Potential rating determines their *Charge capacity*
+(see _Bulk and Charge_ in the Equipment chapter). You may also need to make a
+Potential check to resist the effects of harmful magic.
 
 === Arcane
 Attributes: ATT + INT \

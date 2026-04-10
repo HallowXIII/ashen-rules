@@ -14,28 +14,9 @@ scene is modeled as a cyclical sequence of rounds.
 
 === The order of combat
 
-A combat scene is divided into *rounds*, fuzzy units of time representing a few
-seconds \-- enough for every participant in combat to take their *turn* acting.
-The order of turns within the round is determined by each participant’s
-initiative. During their turn, under normal circumstances a character can take
-several actions, given by the amount of action points they have.
+Combat is structured time (see _Structured Time_ in the Core Rules chapter). Each combat scene is divided into rounds, and the order of turns within each round is determined by initiative. For the core rules on rounds, initiative ticks, and action points, refer to that section.
 
-=== Initiative
-
-In the heat of combat, fractions of seconds can decide between life and untimely
-death. To model this, Ashen uses *initiative.*
-
-Every round is divided into 100 initiative *ticks*. The round begins at tick 99,
-and proceeds by every participant taking a turn at their initiative tick, with
-higher initiatives going first. When the count reaches initiative 0, the round
-ends and a new round begins at tick 99\.
-
-To decide your initiative, you must roll it when you enter into combat. To roll
-initiative, roll as many D6 as your character’s Initiative rating, and add up
-all the pips. This number is your initiative and determines your place in the
-initiative order.
-
-==== Beginning and Joining Combat
+=== Surprise
 
 A combat begins when the first hostile action is taken or declared.
 
@@ -47,13 +28,11 @@ If this happens, the aware combatants may act in a special surprise round before
 the combat proper begins. During the surprise round, only aware combatants may
 act; surprised combatants skip their turns.
 
-==== Extreme Initiative
+==== Extreme Initiative and Surprise
 
-If a combatant rolls an initiative X greater than 99, their initiative “rolls
-over” and they act the first time in the surprise round at initiative X \- 100,
-which becomes their initiative count during all subsequent turns. If this
-happens, they may treat all other combatants as surprised during their first
-turn.
+A combatant that achieves Extreme Initiative takes their first turn during the
+surprise round. If this happens, they may treat all other combatants as surprised
+during their first turn, even if they would not otherwise be surprised.
 
 A combatant that already has surprise and rolls an initiative higher than 99
 also receives this benefit, in effect obtaining two surprise turns.

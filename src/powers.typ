@@ -62,12 +62,14 @@ to make a weapon attack. Such powers may lack a difficulty line altogether.
 
 Most powers also have a focus cost that a character must spend to use the power.
 Focus costs can be expressed in one of two ways: a power that depends on a
-weapon or catalyst to use will have its cost expressed in _increments_,
-referring to the base cost of using a power with that weapon or catalyst. Powers
-that do not require any implement to use, such as command powers, will instead
-have a fixed cost in focus points. A character who wishes to use a power that
-has a focus cost must have enough focus to use the power. The focus cost is paid
-upon resolution of the effect; that is, a power that has a difficulty does not
+weapon or catalyst to use will have its cost expressed in _increments_. Each
+increment costs an amount of Focus Points equal to the wielded implement's focus
+increment value. For example, a power costing 2 increments used through a
+catalyst with a focus increment of 8 would cost 16 FP. Powers that do not
+require any implement to use, such as command powers, will instead have a fixed
+cost in focus points. A character who wishes to use a power that has a focus
+cost must have enough focus to use the power. The focus cost is paid upon
+resolution of the effect; that is, a power that has a difficulty does not
 consume focus until after the relevant characteristic check has been passed.
 
 Some powers create permanent effects that last as long as the power is kept
