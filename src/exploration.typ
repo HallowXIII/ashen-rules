@@ -2,6 +2,21 @@
 
 = Exploration
 
+#flavor([
+Ših karimmi, amawai, amawai \
+Kuyāni yān za urviranzā mai \
+Ašatawhānt hižung-čissa fīryai \
+Narwiv yāwhīyav šiyawa kawhai \
+#linebreak() 
+We miss you, our homeland \
+How long we have not seen \
+Your cold snow-tipped mountain peaks \
+Shining silver against the blue expanse
+])
+
+--- The song of the lost \
+#linebreak()
+
 The world of Ashen is vast and dangerous. Between battles, characters must
 navigate hostile terrain, endure the elements, manage their resources, and
 contend with the consequences of their immortal nature. This section provides

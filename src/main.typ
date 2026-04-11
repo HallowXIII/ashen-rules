@@ -368,6 +368,15 @@ the gamut from magical spells to heroic feats of skill at your weapons. They can
 be learnt in a variety of ways: some can be purchased as advances, others must
 be obtained through instruction from a master.
 
+=== Legendary
+
+Some items, powers, and advances are marked as *legendary*. Legendary things share two properties: they are _quest-bound_ (they cannot simply be purchased or learned --- they must be earned, recovered, or unlocked through a significant quest or story event), and they are _extraordinary_ (they break or transcend the normal rules in some way).
+
+For items, legendary also implies _uniqueness_: only one copy of a legendary item exists in the world. For powers and advances, the meaning is looser --- legendary denotes rarity and distinction rather than strict uniqueness. A legendary power might be shared by a handful of powerful beings, or a legendary advance might be the birthright of a small group created for a specific purpose. What sets them apart is not that no one else can have them, but that they cannot be attained through ordinary means.
+
+A legendary item might be an ancient weapon with a power that cannot be replicated. A legendary power might represent a character's latent ability, forgotten across lifetimes, that resurfaces only when the right conditions are met. A legendary advance might unlock a capability that no amount of ordinary training could produce.
+
+The specific rules for legendary items, including enchantment slots, are detailed in the Equipment chapter. The key principle is universal: legendary things are not available at will. They are milestones, not purchases.
 
 = Races
 

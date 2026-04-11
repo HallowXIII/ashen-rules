@@ -1,6 +1,12 @@
 #import "declarations.typ": feathers, item-description, pftab, power-description
 = Equipment
 
+The Deathless carry the remnants of a lost age: weapons forged in factories that no longer run, armor plated with alloys whose formulas are half-remembered, catalysts housing fragments of power that predate the cataclysm. Equipment in Ashen is not simply purchased off a shelf --- it is scavenged, repaired, inherited, and occasionally crafted anew by artisans working from incomplete knowledge.
+
+A character's equipment defines their role in combat as much as their powers do. The weapon they wield determines their damage output and range; their armor shapes whether they stand in the open or fight from cover; their catalyst or reliquary channels the powers they have learned. Choosing equipment is choosing a style of play.
+
+This chapter covers the rules for acquiring, carrying, and using equipment, as well as the systems for masterwork craftsmanship and magical enchantments that allow items to grow alongside the characters who bear them.
+
 == Equipment States
 
 Items a character possesses can be in one of three states:
@@ -45,6 +51,31 @@ Weapons are divided into *melee weapons* and *ranged weapons*. Each weapon has a
 - *Rapid Fire:* When the target is within half the weapon's range, attack rolls gain +2 automatic successes.
 - *Reliable:* Reduced chance of malfunction.
 - *Sidearm:* Can be drawn or stowed as a free action once per turn, even while wielding a two-handed weapon.
+
+=== Masterwork Items
+
+Most equipment available to characters is *generic*: mass-produced or commonly available gear whose quality is determined by its materials and the technology used to manufacture it. Generic items exist at tiers 0 through 4.
+
+A *masterwork* item is one crafted with exceptional skill, superior materials, or both. Masterwork quality allows an item to exceed the tier 4 generic ceiling, and for weapons, grants an intrinsic bonus to attack rolls. Masterwork items come in two grades:
+
+- *Masterwork +1:* The item is one tier above its generic equivalent. Masterwork weapons grant +1d to attack rolls. Available at tier 3 and above; *required* at tier 5 and above.
+- *Masterwork +2:* The item is two tiers above its generic equivalent. Masterwork weapons grant +2d to attack rolls. Available at tier 5 and above only; *required* at tier 6.
+
+For armor and catalysts, masterwork quality is reflected in the item's stat line (higher Armor, Ward, Evasion, or casting bonuses) rather than granting a separate numerical bonus. Reliquaries, being remnants of the dead gods rather than crafted objects, are not subject to masterwork rules.
+
+Crafting a masterwork item requires a Shop check at difficulty 9 or higher, along with appropriate materials. Not every skilled artisan can produce masterwork items --- the combination of talent, tools, and materials needed is rare.
+
+=== Enchantments
+
+An *enchantment* is a magical effect layered onto an item. Enchantments grant special abilities --- they do not change the item's base stats or tier. A standard item can hold up to *two* enchantments.
+
+Enchantments are described by named traits such as Moontouched, Bloodthirst, or Rimebound. Each enchantment occupies one of the item's enchantment slots. Enchantments can be added, removed, or replaced through the appropriate ritual, skill check, or downtime activity. The specific process depends on the nature of the enchantment: magical effects typically require a ritual (using the Ritual or Occultism skill), while physical treatments like silvering a weapon are achieved through alchemy or craftsmanship (using Alchemy or Shop).
+
+Each enchantment has its own ritual or recipe describing the process, difficulty, cost, and skill required to apply it.
+
+==== Legendary Items
+
+Legendary items (see _Legendary_ in the Basic Rules chapter) are unique artifacts with an intrinsic trait that cannot be replicated or transferred. This legendary trait is part of the item's identity and *does not count against its enchantment slots*. A legendary item can therefore have up to three total effects: its intrinsic legendary trait plus up to two enchantments. Most tier 6 weapons and some tier 5 weapons are legendary.
 
 === Armor
 
@@ -354,11 +385,13 @@ these cases, those prayers are specially noted in the reliquary's stat block.
   5,
   keywords: "Void",
 )[
-  *Nowhere Edge:* The wielder of this katana gains access to the Wounds from Nowhere legendary power.
+  The Void Blade is a +1 Masterwork Spacerender Souldrinker Katana. It has the following traits:
 
   *Spacerender:* The Void Blade has a reach of 2.
 
   *Soul Drain:* A target hit by the Void Blade must make a D6 Potential save. On failure, the target loses 1 EP and 15+D10 Focus.
+
+  *Nowhere Edge:* _(Legendary.)_ The wielder of this katana gains access to the Wounds from Nowhere legendary power.
 ]
 
 #power-description(
@@ -392,7 +425,7 @@ these cases, those prayers are specially noted in the reliquary's stat block.
   6,
   keywords: "Blood, Shadow, Two-handed, Reach",
 )[
-  Kazykly is a +2 Cursebringer Bloodthirst Lance. It has the following traits:
+  Kazykly is a Legendary +2 Masterwork Cursebringer Bloodthirst Lance. It has the following traits:
 
   *Bloodthirst:* The weapon hungers for the blood of its foes. If Kazykly successfully deals damage to a living target, the wielder gains a +2 bonus to the next attack with the weapon.
 
@@ -400,7 +433,7 @@ these cases, those prayers are specially noted in the reliquary's stat block.
 
   *Reach:* This weapon has a range of 3, but it cannot strike directly adjacent targets.
 
-  *The Lord Impaler:* Kazykly grants its wielder the Forest of Corpses unique power.
+  *The Lord Impaler:* _(Legendary.)_ Kazykly grants its wielder the Forest of Corpses unique power.
 ]
 
 #item-description(
@@ -409,6 +442,8 @@ these cases, those prayers are specially noted in the reliquary's stat block.
   6,
   keywords: "Moonlight",
 )[
+  The Moonlight Shortsword is a +2 Masterwork Moontouched Bloodthirst Shortsword. It has the following traits:
+
   *Moontouched:* A target hit by this sword is surrounded by a halo of moonlight that makes it easier to hit. Any attacks against the afflicted target gain a +2 bonus until the end of the wielder's next turn; additionally, the halo cancels the effects of invisibility for this duration.
 
   *Bloodthirst:* The weapon hungers for the blood of its foes. If this sword successfully deals damage to a living target, the wielder gains a +2 bonus to the next attack with the weapon.
@@ -421,13 +456,13 @@ these cases, those prayers are specially noted in the reliquary's stat block.
   keywords: "Blood, Moonlight",
   flavor: "On the field where bloody battle had raged, there reigned a great silence.",
 )[
-  Silence is a Legendary +2 Moontouched Bloodthirst Sniper Rifle. It has the following powers:
+  Silence is a Legendary +2 Masterwork Moontouched Bloodthirst Sniper Rifle. It has the following traits:
 
   *Moontouched:* A target hit by a shot from Silence is surrounded by a halo of moonlight that makes it easier to hit. Any attacks against the afflicted target gain a +2 bonus until the end of the wielder's next turn; additionally, the halo cancels the effects of invisibility for this duration.
 
   *Bloodthirst:* If Silence successfully deals damage to a living target, the wielder gains a +2 bonus to the next attack with the weapon.
 
-  *Piercing Silence:* Shots from this weapon are magically silenced and cannot be detected by auditory means outside of a radius of 5 meters from the weapon itself. Additionally, a target struck by Silence must make a D6 Potential check or be silenced (save ends). A target killed by a shot from Silence fails this check automatically.
+  *Piercing Silence:* _(Legendary.)_ Shots from this weapon are magically silenced and cannot be detected by auditory means outside of a radius of 5 meters from the weapon itself. Additionally, a target struck by Silence must make a D6 Potential check or be silenced (save ends). A target killed by a shot from Silence fails this check automatically.
 ]
 
 #item-description(
@@ -436,7 +471,7 @@ these cases, those prayers are specially noted in the reliquary's stat block.
   6,
   keywords: "Blood, Moonlight",
 )[
-  The Moonlight Railgun is a +1 Moontouched Bloodthirst Sniper Rifle. It shares the Moontouched and Bloodthirst traits with its legendary counterpart Silence.
+  The Moonlight Railgun is a +2 Masterwork Moontouched Bloodthirst Sniper Rifle. It shares the Moontouched and Bloodthirst traits with its legendary counterpart Silence.
 ]
 
 #item-description(
@@ -481,7 +516,7 @@ these cases, those prayers are specially noted in the reliquary's stat block.
 
   *Keratin Point:* The scales are artfully arranged to present very few flat surfaces, deflecting a great proportion of incoming thrusts. The wearer gains cover against attacks dealing piercing damage.
 
-  *Slough Off:* When damaged, the armor can expel a thin layer of skin, like the moult of a snake. Once per round, when hit by an attack, a wearer possessing the Fey Jaunt ability can use it to escape the attack, leaving behind a husk of sloughed-off skin. The attack affects the husk instead.
+  *Slough Off:* _(Legendary.)_ When damaged, the armor can expel a thin layer of skin, like the moult of a snake. Once per round, when hit by an attack, a wearer possessing the Fey Jaunt ability can use it to escape the attack, leaving behind a husk of sloughed-off skin. The attack affects the husk instead.
 ]
 
 #item-description(
@@ -491,13 +526,13 @@ these cases, those prayers are specially noted in the reliquary's stat block.
   keywords: "Arcane, Cold, Moonlight",
   flavor: "Legendary staff of Iyalan, cast from millions of strands of solid moonlight. The staff is cold to the touch and smooth like glass, emanating a faint silver glow.",
 )[
-  Moonray is a +2 Resonating Manabind Staff.
-
-  *Solid Moonlight:* Moonray grants a +4 bonus to casting Arcane spells. This bonus increases to +7 for Ice and Moonlight spells.
+  Moonray is a Legendary +2 Masterwork Resonating Manabind Staff.
 
   *Resonating:* Moonray becomes more efficient at channeling magical energy with every spell it casts in quick succession. For every spell channeled through Moonray on a given turn, its casting bonuses increase by 1, up to a maximum of +6/+9.
 
   *Manabind:* Moonray grants a +6 bonus to counterspelling. If Moonray is used to perform a successful counterspell, the wielder recovers Focus equal to the cost of the countered spell.
+
+  *Solid Moonlight:* _(Legendary.)_ Moonray grants a +4 bonus to casting Arcane spells. This bonus increases to +7 for Ice and Moonlight spells.
 ]
 
 #item-description(
@@ -507,9 +542,11 @@ these cases, those prayers are specially noted in the reliquary's stat block.
   keywords: "Psychic, Divine",
   flavor: "A staff shaped like a winding snake, carved from green-lacquered wood and topped with a glowing green gemstone held between the serpent's teeth. An eerie power emanates from it.",
 )[
-  The Serpent Staff is both a Psychic catalyst and a Reliquary of the World Serpent (Domains: Life, Poison, Serpent; Will 8; Favor 3).
+  The Serpent Staff is a Legendary Masterwork Psychic catalyst.
 
   *Psychic:* Grants a +4 equipment bonus to manifesting Psychic powers, and a +7 bonus to manifesting Fate powers.
 
   *Mana Toxin:* Powers manifested using this staff apply a -3 penalty to attempts to counterspell them. When a power is successfully manifested through this catalyst, the wielder gains an Aura 10 until the beginning of their next turn; attempts to cast Arcane spells in this aura suffer a -4 penalty.
+
+  *Vessel of the World Serpent:* _(Legendary.)_ The Serpent Staff is also a Reliquary of the World Serpent (Domains: Life, Poison, Serpent; Will 8; Favor 3).
 ]

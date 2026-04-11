@@ -125,3 +125,41 @@ This gives the boss an action after _every_ other creature's turn --- potentiall
 - *Condition immunity:* Bosses should be immune to at least Dominated, and may be immune to Stunned as well. Being fully locked out of actions for even one round can be catastrophic for a solo creature. Consider granting resistance (automatic saves at the start of the boss's turn) to other disabling conditions rather than full immunity, so that the party's control abilities still feel impactful.
 - *Phased encounters:* A boss with 3x baseline HP can feel like a slog. Consider breaking the fight into phases --- at certain HP thresholds, the boss changes behavior, gains new powers, or the environment shifts. This keeps the encounter dynamic and gives the party a sense of progress.
 - *Minion support:* Even a boss designed for solo play benefits from 2--3 minions. Minions occupy the party's attention, provide targets for area powers (making the players choose between hitting the boss and clearing adds), and help the boss's action economy without requiring Greater Legendary Actions.
+
+== Awarding Legendary Rewards
+
+Legendary items, powers, and advances (see _Legendary_ in the Basic Rules chapter) are among the most significant rewards a GM can offer. Because they are quest-bound and extraordinary by definition, they require more thought than standard loot or level-up choices.
+
+=== When to Award Legendary Rewards
+
+Legendary rewards should mark turning points in the campaign --- moments that change who a character is or what they can do. Good occasions include:
+
+- *Completing a major story arc:* Defeating a campaign-defining threat, fulfilling a prophecy, or resolving a mystery that has driven the plot for multiple sessions.
+- *Character milestones:* A character confronting their past, unlocking a latent ability tied to their origin, or earning the trust of a powerful patron.
+- *Discovering something ancient:* Entering a ruin no one has breached in centuries, recovering a weapon from a fallen hero, or making contact with a forgotten power.
+
+The pacing of legendary rewards should follow the arc of the campaign:
+
+- *Tiers 1--2:* Legendary rewards should not feature at all. Characters at these tiers are still finding their footing, and the extraordinary nature of legendary rewards has no baseline to contrast against. Let the players discover what "normal" looks like before breaking the rules.
+- *Tiers 3--4:* Legendary rewards should be very rare --- at most one per character across both tiers, and many characters may receive none. At these tiers, legendary weapons and armor do not yet exist; the most powerful generic equipment reaches tier 4 without requiring masterwork or legendary status. Any legendary rewards at these tiers should be limited to advances, powers, or artifacts that do not directly affect a character's combat statistics --- a prophetic vision, a pact with a powerful entity, or a strange relic whose purpose is not yet clear.
+- *Tiers 5--6:* Legendary rewards become more frequent as the campaign reaches its climax. This is where legendary weapons and armor enter play (legendary items exist only at tiers 5 and 6), and where legendary powers and advances can represent the culmination of a character's arc. A character might receive two or even three legendary rewards across these tiers.
+
+=== Legendary Items
+
+A legendary item should feel like it has a history. Give it a name, a backstory, and at least one trait that makes it behave differently from anything the players could buy or craft. The item's legendary trait (which does not count against its enchantment slots) is the hook: it should do something no ordinary enchantment can replicate.
+
+When placing a legendary item in the world, consider:
+
+- *Foreshadowing:* Mention the item before the players find it --- in lore, in an NPC's story, or as a rumour. The discovery is more satisfying when the players recognise what they've found.
+- *Cost of acquisition:* The quest to obtain it is part of the reward. A legendary weapon found in a chest with no effort feels less legendary than one pried from the hands of a dying guardian.
+- *Enchantment slots:* A legendary item found early in its story may have empty enchantment slots. Letting a player fill those slots over time --- finding the right enchantments, seeking out the right artisans --- extends the reward across multiple sessions.
+
+=== Legendary Powers and Advances
+
+Unlike items, legendary powers and advances are intrinsic to a character. They represent something the character _becomes_, not something they _have_. This makes them deeply personal rewards, and they work best when tied to a character's arc.
+
+Some principles:
+
+- *Tie it to the character's story:* A legendary power is most compelling when it grows out of something the character has struggled with or worked toward. A psychic who has been haunted by visions of a past life might unlock a legendary Time power when they finally confront that memory.
+- *Rarity, not uniqueness:* Legendary powers and advances need not be strictly one-of-a-kind. A small group of beings might share a legendary trait --- the six constructs built by a goddess, the last three knights of a fallen order. What matters is that it cannot be learned from a book or purchased with experience points.
+- *Mechanical restraint:* A legendary power should be strong, but its strength should come from doing something _different_ rather than simply doing more damage. A power that ignores a fundamental rule (bypasses resistance, acts outside the normal turn order, affects a type of target that is normally immune) is more interesting than one that deals 400% damage.

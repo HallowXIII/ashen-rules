@@ -1324,18 +1324,6 @@ the arcane arts.
 )
 
 #ritual-description(
-  "Enchant Weapon",
-  3,
-  "Ritual",
-  "8",
-  "7",
-  "Components (#feathers 1500)",
-  "1 hour",
-  "You temporarily enhance a weapon, granting it one of the following benefits for 24 hours: (1) its damage increases by one tier (e.g., a T2 weapon deals T3 damage), (2) it gains a keyword of your choice (Burning, Poisonous (5), or Silvered), or (3) it gains +3 Penetration. Only one enchantment can be active on a weapon at a time.",
-  failure: "The enchantment takes hold but is unstable — it lasts only 1 hour instead of 24, and the weapon's damage die is reduced by one step for that hour.",
-)
-
-#ritual-description(
   "Planar Gate",
   5,
   "Ritual",
