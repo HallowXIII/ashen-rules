@@ -129,6 +129,114 @@ barricades, or hostile inhabitants.
 
 Difficult and treacherous terrain affect both tactical and overland movement. See _Difficult and Treacherous Terrain_ in the Combat chapter for the full rules.
 
+== The Fog
+
+The Fog is the defining feature of the world of Ashen. It is the raw power of
+creation, seeping from wounds torn in the fabric of the universe during the
+cataclysm. Devoid of the divine will that once guided it, the Fog is
+unpredictable and dangerous — spawning creatures, warping life, and saturating
+the land with ambient magical energy. It is called the Fog because in areas
+where it is dense, it clouds the air much like natural fog, reducing visibility
+— but the two are distinct phenomena and can coexist.
+
+The Fog varies in density across the world. Its density determines what
+creatures inhabit an area, what technology functions there, and how dangerous it
+is for mortals and Deathless alike.
+
+=== Fog Density
+
+*Clear:* A Clear is a region mostly free of the Fog, though it may see
+occasional episodes of elevated density, almost like weather. Ambient magical
+energy is low and everything functions normally. Magitek devices that depend on
+elevated Fog to operate will not function in a Clear. Magicsense and other means
+of detecting magic work exceptionally well here, as the Fog does not provide
+magical "background radiation" to obscure individual auras. Clears are where
+most mortal settlements are found.
+
+*Light Fog:* There is some constant ambient magical power, but settlement is
+still mostly safe. The Fog can occasionally become dense, at which point it may
+cause unpredictable magical effects or spawn monsters. This is the condition
+across most of the world outside the Clears. Magicsense functions normally.
+
+*Dense Fog:* The Fog is constantly roiling and produces magical effects. These
+areas are rife with monsters and supernatural phenomena. Visibility is reduced to
+short range at best, imposing heavy concealment beyond 5 squares. Only the
+Fogborn — humans mutated over generations of exposure, recognizable by their
+heterochromatic eyes (one always yellow) and various small deformities — can live
+here long-term without suffering ill health. Navigation is difficult; unshielded
+technological and magical navigation aids are subject to interference, and
+Eerie and Occultism checks take a -2d penalty due to the overwhelming ambient
+magic. The ambient magical power is so great that magitek devices equipped with
+the right harvesting technology can run without any external power source,
+drawing what they need from the environment. This includes magitek power plants,
+which is why the immortal orders frequently vie for control of such areas
+despite their dangers. Dense Fog can occasionally intensify to Extreme Fog for a
+time.
+
+Green plants cannot survive in areas of permanent Dense Fog, as the
+light-blocking effects make photosynthesis impossible. In their place,
+thaumatosynthetic flora — strange growths that feed on ambient magical energy
+rather than sunlight — dominate the landscape. The terrain itself is often
+warped: implausible weather, supernatural geological formations, and other
+phenomena that defy natural law are common.
+
+*Extreme Fog:* These regions are so saturated with magical power that entering
+them is hazardous without special warding spells and devices. Visibility is
+reduced to near zero — heavy concealment beyond 2 squares, and total concealment
+beyond 5 squares. Navigation without shielded instruments is virtually
+impossible, and even shielded devices are unreliable. Magitek devices and spells
+may become overloaded and malfunction. Only the most terrifying Mist Creatures
+roam these areas, and even the Deathless tread here only under duress.
+
+=== Fog Exposure
+
+Mortals and Deathless who spend prolonged periods in Dense or Extreme Fog
+without adequate protection suffer the effects of Fog exposure.
+
+- *Dense Fog — mortals:* After 1 week of continuous exposure, a mortal must make
+  an Endurance check (difficulty 6) each day or gain the Exhausted condition. After
+  1 month, the mortal becomes gravely ill (Diseased condition, difficulty 8 to
+  treat).
+- *Dense Fog — Deathless:* Deathless are more resilient but not immune. After 1
+  month of continuous exposure, a Deathless character takes a cumulative -1d
+  penalty to all checks (maximum -3d). Healing and regeneration are halved. After
+  prolonged exposure (3 months or more), the Deathless begins losing 1 EP per
+  week. These penalties persist until the character spends at least 1 week outside
+  Dense Fog.
+- *Extreme Fog:* Effects accumulate as Dense Fog, but on a timescale of hours
+  rather than weeks. Mortals must check against Exhaustion after 4 hours;
+  Deathless begin accumulating penalties after 1 day.
+
+Adequate protection — such as warding rituals, sealed magitek armor, or
+Fog-shielded vehicles — can delay or prevent these effects at the GM's
+discretion.
+
+=== Mist Creatures
+
+The Fog spontaneously generates creatures from raw magical energy. These Mist
+Creatures range from minor nuisances in Light Fog to apex predators in Extreme
+Fog — denser Fog draws on a greater reserve of energy and produces
+correspondingly more powerful beings. Mist Creatures are not part of the
+ordinary flow of souls; they do not reincarnate and behave in spiritually
+distinct ways from mortal life.
+
+Some Mist Creatures can survive in Clears, though most cannot long endure the
+absence of the Fog that sustains them. As a result, Clears are largely free of
+supernatural monstrosities — one of the chief reasons mortals cluster there.
+
+=== The Fogborn
+
+Humans who live in the Fog through generations are slowly changed by it,
+becoming the Fogborn. They are recognizable by their heterochromatic eyes — one
+of which is always yellow — and by various small physical deformities. Like Mist
+Creatures, the Fogborn exist outside the ordinary cycle of souls and are
+spiritually distinct from other mortals.
+
+The Fogborn are often looked down upon by the unmutated races, especially other
+mortals. The Deathless tend to treat them no differently from ordinary mortals,
+though some may be ideologically motivated to do otherwise. Fogborn cannot become
+Deathless and are not available as a player ancestry.
+
 == Weather
 
 Weather is determined by the GM or rolled randomly at the start of each day.

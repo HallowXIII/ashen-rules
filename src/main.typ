@@ -52,10 +52,18 @@ world reduced to cinders in the fires of the final cataclysm, that yet held on.
 Imagine a world walked by those cursed not to die until they lay their regrets
 to rest. This is the world of Ashen.
 
+The cataclysm that ended the old world left wounds in the fabric of creation
+itself. From these wounds seeps the Fog — the raw power of creation, unbound
+and without the divine reason that once shaped it. It blankets most of the
+world, spawning monsters, warping those who dwell in it, and saturating the land
+with ambient magical energy so intense it can power entire cities. Only in
+scattered Clears, places where the Fog has receded or been driven back, can
+mortals live in relative safety.
+
 In Ashen, you play an *Immortal*, an undying warrior, veteran of the Last War.
 Your curse is two-fold: you remember little of your mortal life, and you cannot
 die until you accomplish your purpose. It is only in the dangerous and
-fog-drowned wilderness that you might find release.
+Fog-drowned wilderness that you might find release.
 
 = Playing the Game
 
