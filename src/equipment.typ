@@ -456,17 +456,53 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
 )
 
 #pftab(
-  "Consumables",
+  "Consumables — Grenades",
   columns: 7,
   align: (left, center, center, center, center, left, center),
   [*Name*], [*Tier*], [*Type*], [*Bulk*], [*Range*], [*Effect*], [*Cost*],
+  [Acid Grenade], [0], [Grenade], [¼], [Burst 1/10], [4+D10 Acid damage], [_#feathers 100_],
   [Frag Grenade], [1], [Grenade], [¼], [Burst 1/10], [6+D3 damage, DC 2], [_#feathers 150_],
   [AP Grenade], [1], [Grenade], [½], [5], [8+D3 damage, Pen 3], [_#feathers 300_],
-  [Acid Grenade], [0], [Grenade], [¼], [Burst 1/10], [4+D10 Acid damage], [_#feathers 100_],
   [Flashbang Grenade], [2], [Grenade], [¼], [Burst 2/10], [Dazed + Blinded 1 round (D4 Stamina negates)], [_#feathers 300_],
-  [Red Healing Potion], [1], [Potion], [¼], [Self/Touch], [Heal 2+D3 HP per round for 3 rounds], [_#feathers 250_],
-  [Weak Mana Potion], [1], [Potion], [¼], [Self/Touch], [Recover 4+D4 focus per round for 3 rounds], [_#feathers 250_],
 )
+
+#pftab(
+  "Consumables — Potions & Draughts",
+  columns: 7,
+  align: (left, center, center, center, center, left, center),
+  [*Name*], [*Tier*], [*Type*], [*Bulk*], [*Range*], [*Effect*], [*Cost*],
+  [Red Healing Potion], [1], [Potion], [¼], [Self/Touch], [Recover 1D6+6 HP], [_#feathers 250_],
+  [Ether Flask], [1], [Potion], [¼], [Self/Touch], [Recover 2D4+10 Focus], [_#feathers 250_],
+  [Regeneration Draught], [2], [Potion], [¼], [Self/Touch], [Recover 2D4+4 HP per round for 3 rounds], [_#feathers 500_],
+  [Potent Regeneration Draught], [2], [Potion], [¼], [Self/Touch], [Recover 2D6+8 HP per round for 3 rounds], [_#feathers 650_],
+  [Potent Ether Flask], [2], [Potion], [¼], [Self/Touch], [Recover 2D6+18 Focus], [_#feathers 500_],
+  [Scarlet Healing Potion], [5], [Potion], [¼], [Self/Touch], [Recover 4D8+36 HP], [_#feathers 1200_],
+  [Ether Concentrate], [6], [Potion], [¼], [Self/Touch], [Recover 5D10+40 Focus], [_#feathers 1800_],
+)
+
+#pftab(
+  "Consumables — Special",
+  columns: 7,
+  align: (left, center, center, center, center, left, center),
+  [*Name*], [*Tier*], [*Type*], [*Bulk*], [*Range*], [*Effect*], [*Cost*],
+  [Revitalization Charge], [0], [Special], [¼], [5 squares], [Revive a dead Immortal at full HP and Focus], [_#feathers 5000_],
+  [Pure Land Water], [5], [Special], [¼], [Self/Touch], [Regain 5 EP], [_#feathers 12000_],
+)
+
+#pftab(
+  "Reagents & Materials",
+  columns: 5,
+  align: (left, center, center, left, center),
+  [*Name*], [*Tier*], [*Bulk*], [*Effect*], [*Cost*],
+  [Alchemical Reagents (Common)], [2], [¼], [1 Magnitude for Ritual or Alchemy checks], [_#feathers 600_],
+  [Alchemical Reagents (Rare)], [2], [¼], [3 Magnitude for Ritual or Alchemy checks], [_#feathers 2000_],
+  [Alchemical Reagents (Precious)], [4], [¼], [6 Magnitude for Ritual or Alchemy checks], [_#feathers 4500_],
+  [Prima Materia, Vial], [6], [¼], [Legendary crafting ingredient; glows with inner power], [—\*],
+  [Materia Nigra, Vial], [6], [¼], [Corrupted Prima Materia; ingredient for some Legendary Rituals. Corrupts lesser rituals], [—\*],
+  [Materia Rubrior, Vial], [6], [¼], [Realized Prima Materia; ingredient for some Legendary Rituals. Worth 20 Magnitude], [—\*],
+)
+
+_\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinarily be purchased. They must be found, won, or created through Legendary Rituals._
 
 #pftab(
   "General Equipment",
