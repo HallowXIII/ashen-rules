@@ -884,7 +884,7 @@ The following statistics are derived from a character’s attributes, characteri
 
 === Hit Points (HP)
 
-Hit Points represent how much damage a character can sustain before falling. Every character begins with *10 HP*. Additional HP is gained from advances: each advance a character purchases grants a certain amount of HP as listed in its description. A character’s total HP is the sum of their base 10 plus all HP gained from advances.
+Hit Points represent how much damage a character can sustain before falling. Every character begins with *10 HP*. Additional HP is gained from advances: each advance a character purchases grants a certain amount of HP as listed in its description. A character’s total HP is the sum of their base 10 plus all HP gained from advances. For rules on how damage is dealt and reduced, including damage types, Armor, Ward, and resistances, see _Damage_ in the Combat chapter.
 
 === Focus Points (FP)
 

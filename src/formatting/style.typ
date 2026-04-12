@@ -18,6 +18,7 @@
     paper: "a4",
     columns: 2,
     margin: (left: 12mm, right: 12mm, top: 12mm, bottom: 12mm),
+    numbering: "1"
   )
   set text(
     font: ("Sofia Sans", "Liberation Sans"), // General font family

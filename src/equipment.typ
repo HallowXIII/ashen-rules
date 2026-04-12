@@ -7,7 +7,11 @@ A character's equipment defines their role in combat as much as their powers do.
 
 This chapter covers the rules for acquiring, carrying, and using equipment, as well as the systems for masterwork craftsmanship and magical enchantments that allow items to grow alongside the characters who bear them.
 
-== Equipment States
+== General Rules
+
+This section covers the rules that apply to all equipment regardless of type: how items are carried and readied, how encumbrance works, how powers interact with implements, and how items can be improved through masterwork craftsmanship and enchantment.
+
+=== Equipment States
 
 Items a character possesses can be in one of three states:
 
@@ -16,6 +20,78 @@ Items a character possesses can be in one of three states:
 - *Equipped:* The item is worn on the body or stored in a readily accessible location (a belt, holster, or sheath). Armor must be equipped to provide its benefits. Equipped items can be drawn to be wielded as a minor action (see _Draw/Stash_ in the Combat chapter). Equipped items count against a character's Bulk and Charge capacity.
 
 - *Wielded:* The item is actively held in hand and ready to use. A character can wield items in as many hands as they have free (typically two). Weapons must be wielded to attack with them; catalysts and reliquaries must be wielded to channel powers through them. Some items — notably light catalysts such as pendants, circlets, and tiaras — can be wielded without occupying a hand, as they are worn on the body in a way that allows the user to channel through them. Wielded items count against a character's Bulk and Charge capacity.
+
+=== Bulk and Charge
+
+Every piece of equipment has a *Bulk* value representing its physical weight and size, and a *Charge* value representing its magical resonance and encumbrance.
+
+A character's *Bulk capacity* is equal to their *Stamina rating*. A character's *Charge capacity* is equal to their *Potential rating*. The total Bulk and Charge of all _equipped and wielded_ items must not exceed these capacities. Carried items (stowed in a pack) do not count against Bulk or Charge capacity, but are subject to the character's carrying capacity instead (see below).
+
+Non-magical items (mundane weapons, basic armor) have Charge 0. Lightly magical items have Charge roughly half their Bulk. Heavily magical items (catalysts, reliquaries, enchanted robes) may have high Charge and low Bulk. This creates a meaningful equipment tradeoff: physical warriors invest in Bulk capacity, casters invest in Charge capacity, and hybrid characters must balance both.
+
+==== Carrying Capacity
+
+A character's *carrying capacity* represents the total Bulk of items they can carry on their person, including both equipped and carried items. A character's base carrying capacity is equal to *twice their Bulk capacity* (i.e., twice their Stamina rating). Some races have a different carrying capacity multiplier:
+
+- *Ironhands:* ×3 (their construct frames are built for heavy loads)
+- *Warboars:* ×3 (bred for endurance on long campaigns)
+- All other races: ×2
+
+A character whose total carried and equipped Bulk exceeds their carrying capacity is *encumbered*: their Movement Speed is halved and they suffer a -2d penalty on all physical checks.
+
+=== Focus Increments
+
+Weapons, catalysts, and reliquaries each have a *focus increment* value. This value determines how much Focus a character spends when using powers through that implement. When a power's cost is expressed in _increments_ (e.g., "Cost: 2 Increments"), the actual Focus Point cost is equal to the number of increments multiplied by the wielded implement's focus increment value. For example, a character using a power that costs 2 increments through a weapon with a focus increment of 5 would spend 10 FP.
+
+Higher-tier and heavier implements tend to have larger focus increments, reflecting their greater power output. This creates a tradeoff: more powerful implements deal more damage but are more expensive to fuel with Focus. A character choosing between two weapons of the same tier might opt for one with a lower increment if they rely heavily on exploits, or a higher increment if they prefer raw damage and use powers sparingly.
+
+=== Masterwork Items
+
+Most equipment available to characters is *generic*: mass-produced or commonly available gear whose quality is determined by its materials and the technology used to manufacture it. Generic items exist at tiers 0 through 4.
+
+A *masterwork* item is one crafted with exceptional skill, superior materials, or both. Masterwork quality allows an item to exceed the tier 4 generic ceiling, and for weapons, grants an intrinsic bonus to attack rolls. Masterwork items come in two grades:
+
+- *Masterwork +1:* The item is one tier above its generic equivalent. Masterwork weapons grant +1d to attack rolls. Available at tier 3 and above; *required* at tier 5 and above.
+- *Masterwork +2:* The item is two tiers above its generic equivalent. Masterwork weapons grant +2d to attack rolls. Available at tier 5 and above only; *required* at tier 6.
+
+For armor and catalysts, masterwork quality is reflected in the item's stat line (higher Armor, Ward, Evasion, or casting bonuses) rather than granting a separate numerical bonus. Reliquaries, being remnants of the dead gods rather than crafted objects, are not subject to masterwork rules.
+
+Crafting a masterwork item requires a Shop check at difficulty 9 or higher, along with appropriate materials. Not every skilled artisan can produce masterwork items --- the combination of talent, tools, and materials needed is rare.
+
+=== Enchantments
+
+An *enchantment* is a magical effect layered onto an item. Enchantments grant special abilities --- they do not change the item's base stats or tier. A standard item can hold up to *two* enchantments.
+
+Enchantments are described by named traits such as Moontouched, Bloodthirst, or Rimebound. Each enchantment occupies one of the item's enchantment slots. Enchantments can be added, removed, or replaced through the appropriate ritual, skill check, or downtime activity. The specific process depends on the nature of the enchantment: magical effects typically require a ritual (using the Ritual or Occultism skill), while physical treatments like silvering a weapon are achieved through alchemy or craftsmanship (using Alchemy or Shop).
+
+Each enchantment has its own ritual or recipe describing the process, difficulty, cost, and skill required to apply it. The rituals and recipes for known enchantments are found in the Skills chapter under the relevant skill.
+
+==== Enchantment List
+
+The following enchantments are known to exist. Others may be discovered during play.
+
+*Weapon Enchantments:*
+
+- *Bloodthirst:* The weapon hungers for blood. If the weapon successfully deals damage to a living target, the wielder gains a +2 bonus to the next attack with the weapon. _(Occultism recipe.)_
+- *Cursebringer:* The weapon brings doom to anything it strikes. On a successful hit that deals damage, the target must make a Potential save (difficulty equals the weapon's tier + 2). On failure, the target takes a -2 curse penalty to all of its rolls (save ends). _(Occultism recipe.)_
+- *Manabind:* The implement grants a +6 bonus to counterspelling. If the implement is used to perform a successful counterspell, the wielder recovers Focus equal to the cost of the countered spell. _(Ritual.)_
+- *Moontouched:* A target hit by this weapon is surrounded by a halo of moonlight. Any attacks against the afflicted target gain a +2 bonus until the end of the wielder's next turn; additionally, the halo cancels the effects of invisibility for this duration. _(Ritual.)_
+- *Resonating:* The implement becomes more efficient at channeling magical energy with every spell cast in quick succession. For every spell channeled through the implement on a given turn, its casting bonuses increase by 1, up to a maximum of its base bonus + 3. _(Ritual.)_
+- *Souldrinker:* On a successful hit that deals damage, the target must make a Potential save (difficulty equals the weapon's tier + 2). On failure, the target loses 1 EP and Focus equal to 3 × the weapon's tier. _(Occultism recipe.)_
+- *Spacerender:* The weapon cuts through the fabric of space, extending its effective reach. The weapon gains Reach 2. _(Ritual.)_
+
+*Armor Enchantments:*
+
+- *Deflecting:* The armor's surface is magically treated to scatter incoming magical energy. When the wearer is targeted by an area-effect spell or magical ability, the armor grants the wearer light cover against that effect. _(Ritual.)_
+- *Lightbender:* The armor bends light around itself. When the wearer is fighting in bright light, the armor's Evasion bonus increases by 1. _(Ritual.)_
+
+*Material Treatments:*
+
+- *Silvered:* The weapon has been treated with alchemical silver. See the Silvered keyword under Weapon Keywords. _(Alchemy or Shop recipe.)_
+
+==== Legendary Items
+
+Legendary items (see _Legendary_ in the Basic Rules chapter) are unique artifacts with an intrinsic trait that cannot be replicated or transferred. This legendary trait is part of the item's identity and *does not count against its enchantment slots*. A legendary item can therefore have up to three total effects: its intrinsic legendary trait plus up to two enchantments. Most tier 6 weapons and some tier 5 weapons are legendary.
 
 == Types of Equipment
 
@@ -43,39 +119,22 @@ Weapons are divided into *melee weapons* and *ranged weapons*. Each weapon has a
 
 - *Assault:* Hip-fire penalty is halved (-1d instead of -2d).
 - *Burning:* Target catches fire on hit (ongoing Thermal damage, save ends).
+- *Chain:* The weapon uses mechanically driven teeth or a motorized cutting edge to tear through targets. Chain weapons require a power source (see Powered) and are heavier than conventional equivalents, but deal exceptionally high raw damage.
+- *Disrupting:* On hit, the target must make a Potential check at difficulty 2 + the weapon's tier. On failure, the target is Disrupted, losing Ward equal to the weapon's tier. This effect stacks with other sources of Disrupt.
 - *Explosive:* The weapon has a blast radius affecting adjacent squares.
+- *Force:* The weapon projects an energy edge or sheath that cuts through physical protection. Force weapons have inherent Penetration and deal Rending damage regardless of the weapon's form factor (even if it would otherwise deal Impact damage).
+- *Heavy:* The weapon must be *braced* before it can be fired accurately. Firing a heavy weapon without bracing is called *hip-firing* and incurs a -2d penalty to the attack roll (see also Assault).
+- *Irradiated:* The weapon fires radioactive or chemically toxic ammunition. On hit, the target must make a Stamina check at difficulty 2 + the weapon's tier. On failure, it is Weakened (3 + tier) and takes ongoing Chemical damage equal to 3 × the weapon's tier per round (save ends both).
 - *Overload:* The weapon risks overheating or malfunction on certain rolls.
 - *Parry +Nd:* Grants +N bonus dice on parry checks while wielded.
 - *Poisonous (N):* Target must pass a D(N) Stamina check or become Poisoned.
 - *Powered:* Requires a power source or charge to function.
 - *Rapid Fire:* When the target is within half the weapon's range, attack rolls gain +2 automatic successes.
+- *Reach N:* The weapon can strike targets up to N squares away, but cannot strike directly adjacent targets.
 - *Reliable:* Reduced chance of malfunction.
 - *Sidearm:* Can be drawn or stowed as a free action once per turn, even while wielding a two-handed weapon.
-
-=== Masterwork Items
-
-Most equipment available to characters is *generic*: mass-produced or commonly available gear whose quality is determined by its materials and the technology used to manufacture it. Generic items exist at tiers 0 through 4.
-
-A *masterwork* item is one crafted with exceptional skill, superior materials, or both. Masterwork quality allows an item to exceed the tier 4 generic ceiling, and for weapons, grants an intrinsic bonus to attack rolls. Masterwork items come in two grades:
-
-- *Masterwork +1:* The item is one tier above its generic equivalent. Masterwork weapons grant +1d to attack rolls. Available at tier 3 and above; *required* at tier 5 and above.
-- *Masterwork +2:* The item is two tiers above its generic equivalent. Masterwork weapons grant +2d to attack rolls. Available at tier 5 and above only; *required* at tier 6.
-
-For armor and catalysts, masterwork quality is reflected in the item's stat line (higher Armor, Ward, Evasion, or casting bonuses) rather than granting a separate numerical bonus. Reliquaries, being remnants of the dead gods rather than crafted objects, are not subject to masterwork rules.
-
-Crafting a masterwork item requires a Shop check at difficulty 9 or higher, along with appropriate materials. Not every skilled artisan can produce masterwork items --- the combination of talent, tools, and materials needed is rare.
-
-=== Enchantments
-
-An *enchantment* is a magical effect layered onto an item. Enchantments grant special abilities --- they do not change the item's base stats or tier. A standard item can hold up to *two* enchantments.
-
-Enchantments are described by named traits such as Moontouched, Bloodthirst, or Rimebound. Each enchantment occupies one of the item's enchantment slots. Enchantments can be added, removed, or replaced through the appropriate ritual, skill check, or downtime activity. The specific process depends on the nature of the enchantment: magical effects typically require a ritual (using the Ritual or Occultism skill), while physical treatments like silvering a weapon are achieved through alchemy or craftsmanship (using Alchemy or Shop).
-
-Each enchantment has its own ritual or recipe describing the process, difficulty, cost, and skill required to apply it.
-
-==== Legendary Items
-
-Legendary items (see _Legendary_ in the Basic Rules chapter) are unique artifacts with an intrinsic trait that cannot be replicated or transferred. This legendary trait is part of the item's identity and *does not count against its enchantment slots*. A legendary item can therefore have up to three total effects: its intrinsic legendary trait plus up to two enchantments. Most tier 6 weapons and some tier 5 weapons are legendary.
+- *Silvered:* The weapon has been treated with silver. Some creatures are immune or resistant to damage from non-silvered weapons; a silvered weapon bypasses this protection. Additionally, silvered weapons deal bonus damage to undead creatures equal to 50% of their base damage.
+- *Split damage:* The weapon's damage is split between two types, each reduced by its respective defense separately. The weapon's item description specifies the split.
 
 === Armor
 
@@ -93,7 +152,7 @@ Armor protects the wearer from physical and magical damage. Like weapons, armor 
 - *Ward:* Magical damage reduction. Incoming magical damage is reduced by this value.
 - *Evasion:* Bonus or penalty to the wearer's Evasion score.
 - *Bulk:* Physical weight and encumbrance.
-- *Charge:* Magical encumbrance (see _Bulk and Charge_ below).
+- *Charge:* Magical encumbrance (see _Bulk and Charge_ above).
 - *Profile:* The armor's physical form factor, which determines how it layers with other armor (see _Armor Layering_ below).
 
 ==== Armor Layering
@@ -113,30 +172,6 @@ When multiple pieces of armor are worn, their *Armor*, *Ward*, *Evasion*, *Bulk*
 Catalysts are implements used to channel magical energy. They are required to cast arcane spells and psychic powers. Each catalyst has a *damage* value (used as the base for spell damage calculations — when a spell deals "100% catalyst damage," it deals damage equal to the catalyst's damage value) and a *focus increment* value that determines the Focus cost of spells channeled through it (see _Focus Increments_ above).
 
 Catalysts come in two types: *Arcane catalysts* (rods, staves, orbs) are used for arcane spells. *Psychic catalysts* (crystals, masks, circlets) are used for psychic powers. A character must wield a catalyst of the appropriate type to cast spells or powers of that school.
-
-=== Bulk and Charge
-
-Every piece of equipment has a *Bulk* value representing its physical weight and size, and a *Charge* value representing its magical resonance and encumbrance.
-
-A character's *Bulk capacity* is equal to their *Stamina rating*. A character's *Charge capacity* is equal to their *Potential rating*. The total Bulk and Charge of all _equipped and wielded_ items must not exceed these capacities. Carried items (stowed in a pack) do not count against Bulk or Charge capacity, but are subject to the character's carrying capacity instead (see below).
-
-Non-magical items (mundane weapons, basic armor) have Charge 0. Lightly magical items have Charge roughly half their Bulk. Heavily magical items (catalysts, reliquaries, enchanted robes) may have high Charge and low Bulk. This creates a meaningful equipment tradeoff: physical warriors invest in Bulk capacity, casters invest in Charge capacity, and hybrid characters must balance both.
-
-==== Carrying Capacity
-
-A character's *carrying capacity* represents the total Bulk of items they can carry on their person, including both equipped and carried items. A character's base carrying capacity is equal to *twice their Bulk capacity* (i.e., twice their Stamina rating). Some races have a different carrying capacity multiplier:
-
-- *Ironhands:* ×3 (their construct frames are built for heavy loads)
-- *Warboars:* ×3 (bred for endurance on long campaigns)
-- All other races: ×2
-
-A character whose total carried and equipped Bulk exceeds their carrying capacity is *encumbered*: their Movement Speed is halved and they suffer a -2d penalty on all physical checks.
-
-=== Focus Increments
-
-Weapons, catalysts, and reliquaries each have a *focus increment* value. This value determines how much Focus a character spends when using powers through that implement. When a power's cost is expressed in _increments_ (e.g., "Cost: 2 Increments"), the actual Focus Point cost is equal to the number of increments multiplied by the wielded implement's focus increment value. For example, a character using a power that costs 2 increments through a weapon with a focus increment of 5 would spend 10 FP.
-
-Higher-tier and heavier implements tend to have larger focus increments, reflecting their greater power output. This creates a tradeoff: more powerful implements deal more damage but are more expensive to fuel with Focus. A character choosing between two weapons of the same tier might opt for one with a lower increment if they rely heavily on exploits, or a higher increment if they prefer raw damage and use powers sparingly.
 
 === Reliquaries
 
@@ -179,74 +214,188 @@ these cases, those prayers are specially noted in the reliquary's stat block.
 )
 == Equipment Tables
 
+=== Melee Weapons by Type
+
+All melee weapons deal *Rending* damage unless otherwise noted. Blunt weapons (hammers, maces) deal *Impact* damage instead.
+
+Several technologies appear across melee weapon forms:
+
+- *Force weapons* use an energy edge or sheath to enhance a conventional blade. They are lighter than their mundane equivalents and have inherent Penetration, as the energy field cuts through armor that would stop a physical edge. Force weapons deal Rending damage regardless of form factor.
+- *Chain weapons* use mechanically driven teeth to tear through targets. They deal exceptionally high raw damage but require a power source (Powered keyword) and are heavier than conventional equivalents.
+- *Power Field weapons* project a localized energy field that destabilizes matter on contact. They represent the pinnacle of melee Penetration, but are rare and expensive. Power Field weapons have the Powered keyword.
+
+==== Daggers and Knives
+
+Daggers and knives are Light weapons, easily concealed and quick to draw. Most have the Sidearm keyword, allowing them to be drawn or stowed as a free action. They deal less damage than larger weapons but excel as backup weapons, off-hand options, and tools for parrying.
+
 #pftab(
-  "Melee Weapons",
+  "Daggers and Knives",
   columns: 9,
-  //align: (left, center, center, center, center, center, center, center, center, left),
-  [Name], [Tier], [Price], [Damage], [Pen], [Bulk], [Hands], [Inc], [Special],
+  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
   [Old War Dagger], [0], [_#feathers 0_], [2+D6], [0], [½ (L)], [1], [2], [Sidearm],
-  [Old War Longsword], [0], [_#feathers 0_], [4+D4], [0], [1 (M)], [1], [3], [],
-  [Old War Greatsword], [0], [_#feathers 0_], [4+D6], [0], [2 (H)], [2], [4], [],
-  [Old War Greathammer], [0], [_#feathers 0_], [6+D3], [0], [2 (H)], [2], [4], [],
-  [Old War Spear], [0], [_#feathers 0_], [5+D3], [0], [2 (M)], [2], [3], [Reach 2],
   [Heat Knife], [1], [_#feathers 150_], [6+D3], [0], [½ (L)], [1], [3], [Sidearm, Burning],
-  [Lantern Impulse Gauntlet], [1], [_#feathers 200_], [4+D6], [0], [¼ (L)], [1], [3], [],
-  [Lantern Force Sword], [1], [_#feathers 300_], [5+D8], [0], [½ (L)], [1], [3], [],
+  [Parry Dagger, Power Field], [4], [_#feathers 5000_], [7+D6], [15], [1 (L)], [1], [11], [Parry +4d, Powered],
+  [Venom Fang, Unstable Edge], [4], [_#feathers 5000_], [8+2D8], [10], [1 (L)], [1], [11], [Poisonous (8)],
+)
+
+==== One-handed Swords
+
+The standard melee weapon for most combatants. One-handed swords leave a hand free for a catalyst, shield, pistol, or second weapon. They range from Light (force swords, shortswords) to Medium (longswords, sabres), balancing damage and versatility.
+
+#pftab(
+  "One-handed Swords",
+  columns: 9,
+  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
+  [Old War Longsword], [0], [_#feathers 0_], [4+D4], [0], [1 (M)], [1], [3], [],
+  [Lantern Force Sword], [1], [_#feathers 300_], [5+D8], [0], [½ (L)], [1], [3], [Force],
   [Dragon Guard Longsword], [1], [_#feathers 350_], [6+D6], [0], [1 (M)], [1], [4], [],
-  [Construct Chainsword], [1], [_#feathers 500_], [6+D12], [0], [2 (H)], [1], [5], [Powered],
-  [Silvered Force Sword], [2], [_#feathers 600_], [6+D6], [4], [½ (L)], [1], [4], [Silvered],
+  [Silvered Force Sword], [2], [_#feathers 600_], [6+D6], [4], [½ (L)], [1], [4], [Force, Silvered],
   [Lacerator Shortsword], [2], [_#feathers 700_], [9+D8], [0], [1 (M)], [1], [5], [],
-  [Argent Disruptor], [2], [_#feathers 800_], [9+D8], [0], [1½ (M)], [1], [5], [Disrupting],
-  [Argent Keyblade], [2], [_#feathers 1000_], [9+2D8], [0], [½ (L)], [1], [5], [],
-  [Construct Power Sword], [2], [_#feathers 1200_], [15+D4], [0], [2 (H)], [1], [8], [Powered],
-  [Flaming Touch], [2], [_#feathers 900_], [12+D10], [0], [0], [1], [5], [Burning],
+  [Argent Keyblade], [2], [_#feathers 1000_], [9+2D8], [0], [½ (L)], [1], [5], [Force],
   [Gathering Cloud Blade], [3], [_#feathers 2500_], [11+2D8], [0], [2 (M)], [1], [9], [],
-  [Parry Dagger, Power Field], [4], [_#feathers 5000_], [7+D6 R], [15], [1 (L)], [1], [11], [Parry +4d, Powered],
-  [Venom Fang, Unstable Edge], [4], [_#feathers 5000_], [8+2D8 R], [10], [1 (L)], [1], [11], [Poisonous (8)],
-  [Hoarfrost], [5], [_Unique_], [7+D12], [0], [2 (M)], [1], [14], [Split damage (physical + magical)],
-  [Void Blade], [5], [_Unique_], [15+D10], [0], [1 (L)], [1], [15], [Required for Wounds from Nowhere],
-  [Kazykly], [6], [_Unique_], [29+2D12], [0], [3 (H)], [1], [18], [Required for Forest of Corpses],
+  [Hoarfrost], [5], [_Unique_], [7+D12], [0], [2 (M)], [1], [14], [Split damage],
+  [Void Blade], [5], [_Unique_], [15+D10], [0], [1 (L)], [1], [15], [],
   [Moonlight Shortsword], [6], [_Unique_], [18+2D8], [0], [2 (M)], [1], [16], [],
 )
 
+==== Two-handed Blades
+
+Two-handed swords and similar large bladed weapons sacrifice versatility for raw damage. They are Heavy, requiring significant Bulk capacity, but their damage output exceeds anything a one-handed weapon can match at the same tier. Chain weapons fall into this category, trading precision for devastating cutting power.
+
 #pftab(
-  "Ranged Weapons",
+  "Two-handed Blades",
+  columns: 9,
+  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
+  [Old War Greatsword], [0], [_#feathers 0_], [4+D6], [0], [2 (H)], [2], [4], [],
+  [Construct Chainsword], [1], [_#feathers 500_], [6+D12], [0], [2 (H)], [1], [5], [Chain, Powered],
+  [Construct Power Sword], [2], [_#feathers 1200_], [15+D4], [0], [2 (H)], [1], [8], [Chain, Powered],
+)
+
+==== Blunt Weapons
+
+Hammers, maces, and similar bludgeoning weapons deal *Impact* damage rather than Rending. Impact damage is less affected by certain resistances and is particularly effective against constructs and heavily armored targets whose plating can absorb cuts but not concussive force.
+
+#pftab(
+  "Blunt Weapons",
+  columns: 9,
+  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
+  [Old War Greathammer], [0], [_#feathers 0_], [6+D3], [0], [2 (H)], [2], [4], [],
+  [Argent Disruptor], [2], [_#feathers 800_], [9+D8], [0], [1½ (M)], [1], [5], [Disrupting],
+)
+
+==== Polearms
+
+Polearms are long-hafted weapons --- spears, lances, halberds --- that grant the wielder *Reach*, allowing them to strike targets beyond adjacent squares. This makes them uniquely valuable for controlling space in combat. The tradeoff is that most polearms cannot strike directly adjacent targets, leaving the wielder vulnerable if an enemy closes the distance.
+
+#pftab(
+  "Polearms",
+  columns: 9,
+  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
+  [Old War Spear], [0], [_#feathers 0_], [5+D3], [0], [2 (M)], [2], [3], [Reach 2],
+  [Kazykly], [6], [_Unique_], [29+2D12], [0], [3 (H)], [1], [18], [],
+)
+
+==== Gauntlets
+
+Gauntlets are fist-mounted weapons --- powered gloves, cestus, and similar devices. They are the lightest melee weapons available, leaving the wielder's hands effectively free for other tasks. Their damage is modest, but their negligible Bulk makes them ideal for characters who need a melee option without dedicating significant carrying capacity to it.
+
+#pftab(
+  "Gauntlets",
+  columns: 9,
+  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
+  [Lantern Impulse Gauntlet], [1], [_#feathers 200_], [4+D6], [0], [¼ (L)], [1], [3], [],
+)
+
+=== Ranged Weapons by Type
+
+==== Conventional Firearms
+
+Conventional firearms propel solid projectiles using chemical propellants or compressed gas. They are the most common ranged weapons in the world, ranging from crude Old War relics to precision-engineered Perfector-pattern rifles. Conventional firearms deal *Rending* damage by default.
+
+#pftab(
+  "Conventional Firearms",
   columns: 11,
   breakable: true,
-  //align: (left, center, center, center, center, center, center, center, center, left),
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Inc*], [*Special*],
   [Old War Pistol], [0], [_#feathers 0_], [1+D4], [0], [½ (L)], [1], [Short], [S], [2], [Sidearm],
   [Old War Rifle], [0], [_#feathers 0_], [3+D3], [0], [1 (M)], [2], [Medium], [S], [3], [],
   [Silent Killer], [1], [_#feathers 200_], [8+D3], [0], [1 (M)], [1], [Medium], [S], [4], [],
   [Lantern Autopulse Rifle], [1], [_#feathers 350_], [5+D8], [0], [1 (M)], [2], [Long], [SA 3], [4], [Rapid Fire],
-  [Construct Chaingun], [1], [_#feathers 500_], [8+D8], [0], [3 (H)], [1], [Medium], [FA 3], [5], [Heavy],
   [Nightpiercer], [1], [_#feathers 450_], [11+D3], [0], [2 (H)], [2], [Very Long], [S], [5], [Heavy],
   [Alchymic Double Barrel], [2], [_#feathers 800_], [15+D6], [0], [2 (M)], [1], [Short], [S], [5], [],
   [Perfector Mk IV Suppressed Rifle], [2], [_#feathers 1000_], [15+D6], [0], [1 (M)], [2], [Very Long], [S], [5], [Reliable],
-  [Sudassi Pattern Light Railgun], [2], [_#feathers 1200_], [9+2D8], [0], [3 (H)], [2], [Long], [S], [8], [Heavy],
-  [Dragon Gun], [2], [_#feathers 1500_], [20+D6], [0], [2½ (H)], [2], [Very Long], [S], [5], [Heavy, Single-Shot],
-  [Plasma Pistol], [2], [_#feathers 800_], [5+D8 T], [8], [1 (L)], [1], [Short], [S], [5], [Burning],
-  [Plasma Rifle], [2], [_#feathers 1200_], [5+D8 T], [8], [1 (M)], [2], [Medium], [SA 3], [5], [Burning],
+  [Dragon Gun], [2], [_#feathers 1500_], [20+D6], [0], [2½ (H)], [2], [Very Long], [S], [5], [Heavy],
   [Jet Black Pistol], [3], [_#feathers 1800_], [11+D4], [0], [1 (L)], [1], [Long], [S], [6], [Sidearm],
-  [Magmatic Pistol], [3], [_#feathers 2000_], [11+D4 T], [0], [1 (L)], [1], [Short], [S], [6], [Burning],
-  [Lantern Jetgun], [3], [_#feathers 2200_], [7+D12], [0], [1 (L)], [1], [Long], [FA 3], [8], [Jet],
-  [Dragon Guard Flamethrower], [3], [_#feathers 2500_], [9+2D8 T], [0], [1 (M)], [1], [Cone 8], [S], [7], [Burning],
   [Irradiated Battle Rifle], [3], [_#feathers 2800_], [12+D10], [0], [2 (M)], [2], [Long], [SA 3], [7], [Irradiated],
-  [Dragon Guard Combo Jet], [3], [_#feathers 3500_], [12+2D10], [0], [2½ (H)], [1], [Medium], [FA 3], [6], [Jet, Explosive],
-  [Plasma Caster], [3], [_#feathers 3000_], [6+D10 T], [12], [2 (M)], [2], [Cone 6], [S], [7], [Burning],
-  [Plasma Lance], [3], [_#feathers 3500_], [8+D12 T], [16], [3 (H)], [2], [Line 20], [S], [8], [Burning, Heavy],
-  [Jet Pistol, Annihilator], [4], [_#feathers 5400_], [8+2D8 R], [0], [½ (L)], [1], [Short], [FA 4], [9], [Jet, Explosive],
-  [Jetgun, Annihilator], [4], [_#feathers 6000_], [12+2D10 R], [0], [2 (M)], [2], [Medium], [FA 3], [10], [Jet, Explosive],
-  [Magnetic Rifle, Gauss], [4], [_#feathers 5400_], [15+D8 I], [5], [1 (M)], [2], [Long], [FA 3], [10], [Reliable],
-  [Magnetic Sniper Rifle, Gauss], [4], [_#feathers 6000_], [25+D10 I], [5], [3 (H)], [2], [Very Long], [S], [11], [Heavy, Reliable],
-  [Plasma Rifle, Sunfury], [4], [_#feathers 7000_], [8+2D12 T], [15], [2 (M)], [2], [Short], [S], [10], [Overload, Burning],
-  [Plasma Cannon, Sunfury], [4], [_#feathers 8000_], [9+3D10 T], [18], [4 (H)], [2], [Short], [S], [11], [Overload, Burning, Heavy],
-  [Plasma Pistol, Sunfury], [4], [_#feathers 6000_], [7+D12 T], [14], [1 (L)], [1], [Short], [S], [9], [Burning],
-  [Plasma Lance, Nova], [5], [_#feathers 12000_], [9+3D10 T], [18], [4 (H)], [2], [Line 25], [S], [14], [Burning, Heavy],
-  [Plasma Caster, Nova], [5], [_#feathers 10000_], [7+2D12 T], [16], [3 (M)], [2], [Cone 8], [S], [13], [Burning],
-  [Cœur d'Étoile], [6], [_Unique_], [17+3D10 T], [34], [5 (H)], [2], [Long], [S], [18], [Burning, Heavy],
+  [Poynting Rad-Fleche], [5], [_#feathers 10000_], [5+2D10], [12], [2 (L)], [1], [Short], [SA 3], [13], [Sidearm, Irradiated],
+)
+
+==== Plasma Weapons
+
+Plasma weapons fire superheated bolts of ionized gas that burn through both flesh and armor. All plasma weapons deal *Thermal* damage and have the *Burning* keyword. Their high Penetration values represent the plasma's ability to melt through physical protection. The tradeoff is range: plasma disperses rapidly, limiting most plasma weapons to short engagements. Higher-tier plasma weapons from the Sunfury and Nova lines push the technology to its limits, risking catastrophic *Overload*.
+
+Plasma weapons come in several forms: *pistols* and *rifles* for direct fire, *casters* that project plasma in a wide cone, and *lances* that focus it into a penetrating beam.
+
+#pftab(
+  "Plasma Weapons",
+  columns: 11,
+  breakable: true,
+  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Inc*], [*Special*],
+  [Plasma Pistol], [2], [_#feathers 800_], [5+D8], [8], [1 (L)], [1], [Short], [S], [5], [],
+  [Plasma Rifle], [2], [_#feathers 1200_], [5+D8], [8], [1 (M)], [2], [Medium], [SA 3], [5], [],
+  [Plasma Caster], [3], [_#feathers 3000_], [6+D10], [12], [2 (M)], [2], [Cone 6], [S], [7], [],
+  [Plasma Lance], [3], [_#feathers 3500_], [8+D12], [16], [3 (H)], [2], [Line 20], [S], [8], [Heavy],
+  [Plasma Pistol, Sunfury], [4], [_#feathers 6000_], [7+D12], [14], [1 (L)], [1], [Short], [S], [9], [],
+  [Plasma Rifle, Sunfury], [4], [_#feathers 7000_], [8+2D12], [15], [2 (M)], [2], [Short], [S], [10], [Overload],
+  [Plasma Cannon, Sunfury], [4], [_#feathers 8000_], [9+3D10], [18], [4 (H)], [2], [Short], [S], [11], [Overload, Heavy],
+  [Plasma Caster, Nova], [5], [_#feathers 10000_], [7+2D12], [16], [3 (M)], [2], [Cone 8], [S], [13], [],
+  [Plasma Lance, Nova], [5], [_#feathers 12000_], [9+3D10], [18], [4 (H)], [2], [Line 25], [S], [14], [Heavy],
+  [Cœur d'Étoile], [6], [_Unique_], [17+3D10], [34], [5 (H)], [2], [Long], [S], [18], [Heavy],
+)
+
+==== Jet Weapons
+
+Jet weapons --- sometimes called gyrojets --- fire miniature self-propelled rockets. At lower tiers they are simple kinetic projectiles; at higher tiers the rockets carry explosive warheads. All jet weapons are fully automatic, laying down a devastating volume of fire. Jet weapons deal *Rending* damage. Higher-tier jet weapons with the Explosive keyword deal their damage in a small blast around the point of impact.
+
+#pftab(
+  "Jet Weapons",
+  columns: 11,
+  breakable: true,
+  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Inc*], [*Special*],
+  [Construct Chaingun], [1], [_#feathers 500_], [8+D8], [0], [3 (H)], [1], [Medium], [FA 3], [5], [Heavy],
+  [Lantern Jetgun], [3], [_#feathers 2200_], [7+D12], [0], [1 (L)], [1], [Long], [FA 3], [8], [],
+  [Dragon Guard Combo Jet], [3], [_#feathers 3500_], [12+2D10], [0], [2½ (H)], [1], [Medium], [FA 3], [6], [Explosive],
+  [Jet Pistol, Annihilator], [4], [_#feathers 5400_], [8+2D8], [0], [½ (L)], [1], [Short], [FA 4], [9], [Explosive],
+  [Jetgun, Annihilator], [4], [_#feathers 6000_], [12+2D10], [0], [2 (M)], [2], [Medium], [FA 3], [10], [Explosive],
+)
+
+==== Magnetic Weapons
+
+Magnetic weapons use electromagnetic coils to accelerate solid projectiles to extreme velocities. The resulting impact is devastating --- a raw transfer of kinetic energy that hits like a sledgehammer. All magnetic weapons deal *Impact* damage and have the *Reliable* keyword, as the firing mechanism has no chemical propellant to misfire. Their inherent Penetration comes from sheer velocity rather than heat.
+
+#pftab(
+  "Magnetic Weapons",
+  columns: 11,
+  breakable: true,
+  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Inc*], [*Special*],
+  [Sudassi Pattern Light Railgun], [2], [_#feathers 1200_], [9+2D8], [0], [3 (H)], [2], [Long], [S], [8], [Heavy],
+  [Magnetic Rifle, Gauss], [4], [_#feathers 5400_], [15+D8], [5], [1 (M)], [2], [Long], [FA 3], [10], [],
+  [Magnetic Sniper Rifle, Gauss], [4], [_#feathers 6000_], [25+D10], [5], [3 (H)], [2], [Very Long], [S], [11], [Heavy],
   [Moonlight Railgun], [6], [_Unique_], [14+2D12], [0], [2 (M)], [2], [Medium], [S], [18], [],
   [Silence], [6], [_Unique_], [35+2D6], [0], [2 (M)], [2], [Medium], [S], [18], [],
+)
+
+==== Flame Weapons
+
+Flame weapons project streams or bursts of burning material --- promethium gel, magmatic compound, or alchemical accelerant. Unlike plasma weapons, which fire discrete bolts, flame weapons produce continuous streams of fire that saturate an area. All flame weapons deal *Thermal* damage and have the *Burning* keyword. They lack the armor-piercing properties of plasma, but their area coverage makes them devastating against groups of lightly armored targets.
+
+#pftab(
+  "Flame Weapons",
+  columns: 11,
+  breakable: true,
+  [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Inc*], [*Special*],
+  [Magmatic Pistol], [3], [_#feathers 2000_], [11+D4], [0], [1 (L)], [1], [Short], [S], [6], [],
+  [Dragon Guard Flamethrower], [3], [_#feathers 2500_], [9+2D8], [0], [1 (M)], [1], [Cone 8], [S], [7], [],
 )
 
 #pftab(
@@ -408,6 +557,19 @@ these cases, those prayers are specially noted in the reliquary's stat block.
   resistance: "No (Ward applies)",
 )
 
+#item-description(
+  "Poynting Rad-Fleche",
+  "Masterwork Pistol",
+  5,
+  keywords: "Radiation, Poison, Sidearm",
+  flavor: "A heavy pistol chambered for depleted uranium flechettes. The weapon is warm to the touch and faintly hums when loaded.",
+)[
+  The Poynting Rad-Fleche is a +1 Masterwork conventional pistol. It has the following traits:
+
+  *DU Fleche-Rounds:* The heavy metal flechettes fired by this weapon have a tendency to burst into flame. When this weapon strikes a target whose Armor value exceeds the weapon's Penetration, the weapon deals an additional 5+2D10 Thermal damage.
+
+  *Toxic Rounds:* The flechettes fired by this gun are both radioactive and highly toxic. A target hit by this weapon must make a D7 Stamina save; on failure, it is Weakened (8) and takes 15 Chemical damage per round (save ends both).
+]
 
 #item-description(
   "Caesium Rod",

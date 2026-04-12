@@ -283,13 +283,46 @@ When you use an attack power or make a strike, follow these steps:
 
 + *Roll damage.* Roll the weapon's damage once for each hit. Each hit deals damage independently.
 
-+ *Apply defenses.* For each hit, reduce the damage by the target's Armor (for physical damage) or Ward (for magical damage). The attacker's weapon Penetration reduces the target's effective Armor for that attack. Damage cannot be reduced below zero.
++ *Apply defenses.* For each hit, reduce the damage by the target's defenses (see _Damage_ below). The attacker's weapon Penetration reduces the target's effective Armor for that attack. Damage cannot be reduced below zero.
 
 + *Apply damage.* Subtract the remaining damage from the target's Hit Points.
 
 #note[
   _Example:_ Kael charges a Warboar (Evasion 5, Armor 4) with a longsword (damage 9+D8, Penetration 2, hit rate 3). Charging grants him \+4d to his Martial characteristic of 7, so he rolls 11 dice and scores 9 successes. The attack hits (9 ≥ 5). He has 4 excess successes at hit rate 3: that's 1 additional hit, for 2 hits total. He rolls 9+D8 twice, getting 14 and 12. The Warboar's effective Armor is 4 − 2 Pen = 2, so the hits deal 12 and 10 damage respectively.
 ]
+
+== Damage
+
+When a character or creature takes damage, that damage has a *type* and a *source*. The type determines what kind of energy or force is involved; the source determines whether the damage is mundane or magical in origin. Together, these determine which defenses apply.
+
+=== Damage Types
+
+- *Ablative:* Damage inflicted by weapons or effects that strip material from the target in layers, from sand-blasters to disintegration rays.
+- *Chemical:* Damage inflicted by strong acids, poisons, and other corrosive or toxic substances.
+- *Cold:* Damage caused by freezing effects, whether from Ice magic, cold-gas cannons, or environmental exposure.
+- *Impact:* Blunt force damage. Clubs, falling rocks, concussive blasts, and magical force effects all deal Impact damage.
+- *Lightning:* Damage dealt by electricity, whether natural, technological, or magical. _Lightning damage bypasses Armor._
+- *Psychic:* Damage dealt by effects that attack the mind or soul. Almost all sources of Psychic damage are magical. _Psychic damage bypasses Armor._
+- *Radiant:* Damage dealt by ionizing radiation. X-rays, radioactive materials, and similar sources cause Radiant damage. _Radiant damage bypasses Armor._
+- *Rending:* Cutting, tearing, and piercing damage. Blades, bullets, claws, and shrapnel all deal Rending damage. This is the most common damage type for conventional weapons.
+- *Thermal:* Damage inflicted by extreme heat. Fire, plasma weapons, and heat lasers all cause Thermal damage.
+- *Untyped:* Damage that has no elemental or physical classification. Flesh-warping magic, organ damage, and severe bleeding are typical sources. _Untyped damage bypasses Armor. It is not possible to have resistance to Untyped damage._
+
+=== Defenses Against Damage
+
+Two statistics protect against incoming damage: *Armor* and *Ward*.
+
+*Armor* reduces damage from all sources unless the damage type specifically bypasses it (Lightning, Psychic, Radiant, and Untyped bypass Armor). Armor represents physical toughness --- worn protection, natural hide, or structural reinforcement. A weapon's *Penetration* value reduces the target's effective Armor against that weapon's attacks.
+
+*Ward* reduces damage from *magical sources only*. If a spell, magical ability, or enchanted effect deals damage, Ward applies in addition to any other applicable defenses. A technological weapon that deals Thermal damage is reduced only by Armor; a fire spell that deals Thermal damage is reduced by both Armor and Ward. Some spells deal damage types that bypass Armor (such as Lightning or Psychic) --- in these cases, Ward is the only defense.
+
+Spells and magical powers generally specify in their description whether Armor applies, to avoid ambiguity.
+
+=== Resistances
+
+A creature may have *resistance* to one or more specific damage types. Resistance provides a flat reduction to damage of that type, applied after Armor and Ward. For example, a creature with Cold Resistance 5 reduces all Cold damage it takes by 5, after any reduction from Armor or Ward.
+
+Resistances can come from racial traits, magical effects, enchanted equipment, or other sources. A creature cannot have resistance to Untyped damage.
 
 == Melee Attacks
 
@@ -529,7 +562,7 @@ To take a charge, declare a target you can see. You must move toward that target
 in a straight line, moving up to twice your speed and ending your charge
 directly adjacent to your target. At the end of the charge, you can use a melee attack power. You gain a \+4d power bonus to your Martial characteristic when you make attack rolls during a charge.
 
-=== Saving Throws
+== Saving Throws
 
 Many effects and status conditions last until the affected creature "saves" against them. A saving throw is a simple roll made at the end of the affected creature's turn: roll 3 dice. If 2 or more dice show successes, the saving throw passes and the effect ends. If fewer than 2 successes are rolled, the effect persists until the creature's next turn, when they may try again.
 
@@ -537,106 +570,106 @@ Cover saves use the same mechanic but with a different success threshold dependi
 
 Note that a saving throw is not the same as a *resistance check*. A resistance check uses a specific characteristic (such as Stamina or Potential) against a difficulty set by the power. Resistance checks are made when the effect is first applied, to determine whether it takes hold at all. Saving throws are made afterward, at the end of each turn, to end an ongoing effect.
 
-=== Status Conditions
+== Status Conditions
 
 Battles are fought with vicious means, and in the course of a fight, characters
 can not only suffer damage, but may be afflicted with status conditions as well.
 A list of them follows:
 
-==== Blinded
+=== Blinded
 
 A blinded character cannot see. While they are blinded, they lose their
 perception bonus to their Evasion and make all attack rolls at a \-4 penalty.
 
-==== Disoriented
+=== Disoriented
 
 A disoriented character does not know their position relative to their
 surroundings. Every time a disoriented character attempts to move, they must
 roll a scatter die. On a 10, they go in the direction of their choosing;
 otherwise, they move in the direction of the scatter die.
 
-==== Stunned
+=== Stunned
 
 A stunned character cannot take any actions. While Stunned, a creature is also
 Exposed.
 
-==== Vulnerable
+=== Vulnerable
 
 Attacks against a vulnerable creature deal their maximum damage.
 
-==== Dazed
+=== Dazed
 
 A dazed creature loses 1 AP and has their evasion halved.
 
-==== Exposed
+=== Exposed
 
 An exposed creature cannot take reactions and their dodge rating becomes 0\.
 
-==== Panicked
+=== Panicked
 
 A panicked creature is in thrall to its fight or flight reflex. On its turn, it
 must use all its AP either to attack the object of its fear (it may use powers
 to do so) or to run away from it; it cannot do both or take any other actions.
 
-==== Staggered
+=== Staggered
 
 A staggered creature is both vulnerable and exposed.
 
-==== Shred (x)
+=== Shred (x)
 
 A shredded creature loses x armor. Unless otherwise specified, this effect lasts
 indefinitely (or at least until repaired).
 
-==== Disrupt (x)
+=== Disrupt (x)
 
 A disrupted creature loses x ward.
 
-==== Slowed (x)
+=== Slowed (x)
 
 A slowed creature’s movement speed is reduced by x.
 
-==== Still
+=== Still
 
 A still creature cannot expend focus. Any ability that would require focus
 cannot be used.
 
-==== Prone
+=== Prone
 
 A prone creature has +1 Evasion against ranged attacks but -1 Evasion against
 melee attacks. A prone creature can only crawl, reducing its movement speed to
 half. Standing up from prone requires the Stand Up action (2 AP).
 
-==== Immobilized
+=== Immobilized
 
 An immobilized creature cannot move by any means, including teleportation. It
 can still take all other actions normally.
 
-==== Restrained
+=== Restrained
 
 A restrained creature cannot move, takes a -2 penalty to Evasion, and makes all
 attack rolls at -2d.
 
-==== Frightened (of X)
+=== Frightened (of X)
 
 A frightened creature takes a -2d penalty on attack rolls and cannot willingly
 move closer to the source of its fear.
 
-==== Weakened
+=== Weakened
 
 A weakened creature makes all attack rolls at -2d.
 
-==== Dominated
+=== Dominated
 
 A dominated creature acts under the controller's direction on the controller's
 turn. It can only take basic actions (move, basic attack). At the end of each of
 the dominated creature's turns, it may attempt a saving throw to end the effect.
 
-==== Exhausted
+=== Exhausted
 
 An exhausted creature takes a -2d penalty on all checks and has its movement
 speed halved.
 
-==== Poisoned
+=== Poisoned
 
 A poisoned creature is suffering from a toxin. The specific effects of being
 Poisoned (ongoing damage, penalties, etc.) are defined by the power or effect
@@ -644,7 +677,7 @@ that inflicted the condition. Poisoned can be removed by the Cleansing Light
 prayer, the Antidote recipe, or other effects that specifically remove the
 Poisoned condition.
 
-==== Diseased
+=== Diseased
 
 A diseased creature is afflicted by a magical or mundane illness. The specific
 effects of the Disease are defined by the power that inflicted it. Unless
@@ -652,14 +685,14 @@ otherwise specified, healing received by a Diseased creature is halved. Disease
 can be removed by the Cleansing Light prayer or other effects that specifically
 remove Disease.
 
-==== Bleeding
+=== Bleeding
 
 A bleeding creature has an open wound that continues to deal damage. The
 specific ongoing damage is defined by the power that inflicted the condition.
 Bleeding can be removed by any healing effect, by the Cleansing Light prayer, or
 by an Alchemy check (difficulty set by the GM).
 
-==== Burning
+=== Burning
 
 A burning creature is on fire. The specific ongoing Thermal damage is defined by
 the power or effect that caused the condition. A burning creature or an adjacent

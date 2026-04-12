@@ -1349,6 +1349,82 @@ the arcane arts.
   failure: "The ritual fails. Components are consumed. Creatures remain dead. If the check fails by 5 or more, a hostile entity may be drawn to the ritual site.",
 )
 
+==== Enchantment Rituals
+
+The following rituals apply enchantments to items (see _Enchantments_ in the Equipment chapter). In each case, the listed difficulty is the base; half the tier of the target item (rounded up) is added to the difficulty. For example, applying Moontouched (base difficulty 3) to a tier 5 weapon requires a difficulty 6 check. If the item already has an enchantment in the slot being used, replacing it increases the difficulty by 2.
+
+#ritual-description(
+  "Enchant Weapon — Moontouched",
+  2,
+  "Ritual",
+  "3 + half item tier",
+  "4",
+  "4 Magnitude (moonstone dust or similar lunar reagent)",
+  "4 hours",
+  "You imbue a weapon with captured moonlight. On a successful hit, the target is surrounded by a halo of moonlight: attacks against it gain a +2 bonus and it cannot benefit from invisibility until the end of the wielder's next turn.",
+  failure: "The enchantment is unstable — it functions normally but fades after 1d6 encounters.",
+)
+
+#ritual-description(
+  "Enchant Weapon — Spacerender",
+  3,
+  "Ritual",
+  "5 + half item tier",
+  "6",
+  "6 Magnitude (void essence or spatial reagent)",
+  "8 hours",
+  "You fold the space around a melee weapon, extending its effective reach. The weapon gains Reach 2.",
+  failure: "The spatial fold is unstable. The weapon gains Reach 2, but on any attack roll where no successes are scored, the enchantment collapses and must be reapplied.",
+)
+
+#ritual-description(
+  "Enchant Armor — Lightbender",
+  2,
+  "Ritual",
+  "3 + half item tier",
+  "4",
+  "4 Magnitude (prismatic glass or light-aspected reagent)",
+  "4 hours",
+  "You treat a piece of armor to bend light around its wearer. When the wearer is fighting in bright light, the armor's Evasion bonus increases by 1.",
+  failure: "The treatment is imprecise — the Evasion bonus applies, but the armor glows faintly, imposing a -2d penalty on Subterfuge checks in darkness.",
+)
+
+#ritual-description(
+  "Enchant Armor — Deflecting",
+  3,
+  "Ritual",
+  "5 + half item tier",
+  "6",
+  "6 Magnitude (warding sigils or abjuration reagent)",
+  "6 hours",
+  "You inscribe magical deflection patterns onto a piece of armor. When the wearer is targeted by an area-effect spell or magical ability, the armor grants light cover against that effect.",
+  failure: "The sigils are flawed — the deflection works, but each time it activates there is a 1-in-6 chance the sigils burn out permanently.",
+)
+
+#ritual-description(
+  "Enchant Implement — Resonating",
+  4,
+  "Ritual",
+  "7 + half item tier",
+  "8",
+  "8 Magnitude (harmonic crystal or resonance reagent)",
+  "12 hours",
+  "You attune a catalyst or weapon to resonate with the caster's magical frequency. For every spell channeled through the implement on a given turn, its casting bonuses increase by 1, up to a maximum of its base bonus + 3.",
+  failure: "The resonance is erratic — the bonus increases as normal but resets to 0 at the start of each round instead of persisting.",
+)
+
+#ritual-description(
+  "Enchant Implement — Manabind",
+  5,
+  "Ritual",
+  "9 + half item tier",
+  "10",
+  "10 Magnitude (essence of a counterspell or antimagic reagent)",
+  "1 day",
+  "You bind an implement with counter-magical properties. The implement grants a +6 bonus to counterspelling. If used to perform a successful counterspell, the wielder recovers Focus equal to the cost of the countered spell.",
+  failure: "The binding is incomplete — the counterspell bonus is only +3, and Focus recovery is halved (round down).",
+)
+
 === Occultism Ritual List
 
 #ritual-description(
@@ -1400,6 +1476,48 @@ the arcane arts.
   "You unravel the threads of fate surrounding one subject — a person, an object, an event, or a place. The GM reveals the complete truth about the subject: its history, its current state, its connections, and its most likely future. This information is absolute and cannot be obscured by any magic short of divine intervention. The caster experiences the revelation as a trance-vision lasting several hours.",
   aspects: "Moon, Skull",
   failure: "The revelation is partial and fragmented. The caster takes the full Strain and Influence cost. The caster is Dazed for 24 hours from the psychic backlash.",
+)
+
+==== Occultism Enchantment Rituals
+
+As with the Ritual enchantments above, half the tier of the target item (rounded up) is added to the base difficulty. Replacing an existing enchantment increases the difficulty by 2.
+
+#ritual-description(
+  "Enchant Weapon — Bloodthirst",
+  2,
+  "Occultism",
+  "3 + half item tier",
+  "4",
+  "4 Magnitude (fresh blood of a predatory creature)",
+  "4 hours",
+  "You awaken a hunger for blood in a weapon. If the weapon successfully deals damage to a living target, the wielder gains a +2 bonus to the next attack with the weapon.",
+  failure: "The hunger is indiscriminate — the bonus applies, but the wielder must also make a D4 Grit check after each combat or attack the nearest living creature (friend or foe) once.",
+)
+
+#ritual-description(
+  "Enchant Weapon — Cursebringer",
+  4,
+  "Occultism",
+  "7 + half item tier",
+  "8",
+  "8 Magnitude (cursed relic or hexed remains) + Essence (2 Strain)",
+  "12 hours",
+  "You bind a malevolent curse into a weapon. On a successful hit that deals damage, the target must make a Potential save at difficulty equal to the weapon's tier + 2. On failure, the target takes a -2 curse penalty to all of its rolls (save ends).",
+  aspects: "Skull",
+  failure: "The curse is bound but unstable — it functions normally, but each time it activates, the wielder takes 1 Strain.",
+)
+
+#ritual-description(
+  "Enchant Weapon — Souldrinker",
+  4,
+  "Occultism",
+  "7 + half item tier",
+  "8",
+  "8 Magnitude (soul gem or essence of the dying) + Essence (3 Strain)",
+  "12 hours",
+  "You bind the weapon with soul-draining properties. On a successful hit that deals damage, the target must make a Potential save at difficulty equal to the weapon's tier + 2. On failure, the target loses 1 EP and Focus equal to 3 × the weapon's tier.",
+  aspects: "Skull",
+  failure: "The drain is reversed — on a failed save, the target loses the EP and Focus as normal, but the wielder also loses Focus equal to the weapon's tier.",
 )
 
 === Alchemical Recipe List
@@ -1487,4 +1605,18 @@ the arcane arts.
   "You create a single universal reagent of extraordinary purity, worth 8 Magnitude for the purpose of any ritual. This exceeds the magnitude of any readily obtainable reagent (capped at 6 for standard materials). The Philosopher's Reagent does not expire and can provide any single aspect at up to magnitude 4 when used as Influence.",
   aspects: "Mist, Forge",
   failure: "The reagent is created but is flawed — it is worth only 5 Magnitude and cannot provide aspect Influence.",
+)
+
+==== Alchemical Enchantment Recipes
+
+#ritual-description(
+  "Silver a Weapon",
+  1,
+  "Alchemy",
+  "2 + half item tier",
+  "2",
+  "2 Magnitude (alchemical silver)",
+  "2 hours",
+  "You coat a weapon in alchemical silver through a chemical bonding process. The weapon gains the Silvered keyword: it bypasses immunity or resistance to non-silvered weapons, and deals bonus damage to undead creatures equal to 50% of its base damage. Silvering is permanent but can be stripped by re-treating the weapon with a different material. This recipe can alternatively be performed as a Shop check at the same difficulty.",
+  failure: "The silver coating is thin and uneven — it functions but wears off after 1d6 encounters.",
 )
