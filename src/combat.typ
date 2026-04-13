@@ -2,6 +2,25 @@
 
 = Combat
 
+#flavor([
+  Azal jalē vahttan \
+  Iryane niboltvānhē \ 
+  Nidaumave avorhōyō \
+  Narvim iluiyamgo vatauhanyō \
+  Aivašti arvahvamdō \
+  Avahmāš nyašbittī! \
+#linebreak() 
+As hero of the Azalmen \
+Truly thou art now remade \ 
+In thy hands, our hope we ken \
+Our silver-gleaming blade \
+With godly fire burn them then \
+Who sought to be our foes!
+])
+
+--- The Lay of Ingin \
+#linebreak()
+
 Sometimes, characters’ conflicts cannot be resolved in a way other than coming
 to blows. These situations are handled by the combat rules.
 

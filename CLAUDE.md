@@ -93,3 +93,16 @@ Both main documents set:
 - The main.typ file is very large (25K+ tokens) - when reading, use offset/limit parameters or search for specific sections
 - Custom functions in src/declarations.typ define the visual language of the rulebook - changes here affect all documents
 - Color palette is defined in `src/formatting/style.typ` via the `colors` dictionary - use `colors.pfnavy`, `colors.pfgreen`, etc.
+
+## Standard Equipment Table Formats
+
+When adding new equipment entries, follow these column conventions for consistency with existing tables:
+
+- **Weapon table:** Name, Tier, Price, Damage, Pen, Bulk, Hands, Range, FM, Special.
+  - **Pen:** Penetration value (ignores that much Armor on hit).
+  - **FM:** Fire mode — S (single), SA N/M (semi-auto, N shots at M penalty), FA N (full auto, N shots), or — for melee.
+  - **Range:** Melee, Short (5), Medium (10), Long (15–20), Very Long (25+), or a specific template (Cone N, Line N, Burst N).
+- **Armor table:** Name, Tier, Price, Armor, Ward, Evasion, Bulk, Charge.
+- **Catalyst table:** Name, Tier, Type (Arcane or Psychic), Class (Light or Medium), Bulk, Charge, Hands, Damage, Increment.
+- **Consumable table:** Name, Tier, Type, Bulk, Range, Effect, Cost.
+- **General gear table:** Name, Bulk, Cost, Effect (where relevant).

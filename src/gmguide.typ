@@ -1,3 +1,5 @@
+#import "declarations.typ": *
+
 = GM Guide
 
 == Designing Creatures
@@ -32,7 +34,8 @@ When the number of enemies differs from the number of players, the creatures mus
 
 The following table provides baseline statistics for a standard creature at each tier. These values represent a creature roughly equivalent to a player character of the same tier wearing medium-weight equipment.
 
-#table(
+#pftab(
+  "Creature Stat Guidelines",
   columns: 7,
   align: (left, center, center, center, center, center, center),
   stroke: 0.5pt,
@@ -163,3 +166,198 @@ Some principles:
 - *Tie it to the character's story:* A legendary power is most compelling when it grows out of something the character has struggled with or worked toward. A psychic who has been haunted by visions of a past life might unlock a legendary Time power when they finally confront that memory.
 - *Rarity, not uniqueness:* Legendary powers and advances need not be strictly one-of-a-kind. A small group of beings might share a legendary trait --- the six constructs built by a goddess, the last three knights of a fallen order. What matters is that it cannot be learned from a book or purchased with experience points.
 - *Mechanical restraint:* A legendary power should be strong, but its strength should come from doing something _different_ rather than simply doing more damage. A power that ignores a fundamental rule (bypasses resistance, acts outside the normal turn order, affects a type of target that is normally immune) is more interesting than one that deals 400% damage.
+
+== Designing Equipment
+
+This section provides guidelines for designing new weapons, armor, catalysts, and other gear, as well as for balancing existing equipment across tiers.
+
+=== Weapon Damage by Tier
+
+@weapon-damage gives canonical damage values by tier, weight class, and variance. Variance describes the shape of the damage distribution: *LV* (low variance) has a high floor and a low ceiling, suited to reliable and precise weapons; *MV* (medium variance) is the standard for most weapons; *HV* (high variance) has a low floor and a high ceiling, suited to brutal or unpredictable weapons.
+
+#float([#floating-table(
+  "Weapon Damage by Tier",
+  columns: 10,
+  align: (left, center, center, center, center, center, center, center, center, center),
+  stroke: 0.5pt,
+
+  [*Tier*], [*Light LV*], [*Light MV*], [*Light HV*], [*Medium LV*], [*Medium MV*], [*Medium HV*], [*Heavy LV*], [*Heavy MV*], [*Heavy HV*],
+  [0], [4+D3], [3+D4], [2+D6], [5+D3], [4+D4], [3+D6], [6+D3], [4+D6], [3+D8],
+  [1], [6+D3], [4+D6], [3+D8], [8+D3], [6+D6], [5+D8], [11+D3], [8+D8], [6+D12],
+  [2], [7+D4], [6+D6], [4+D10], [11+D4], [9+D8], [7+D12], [15+D4], [12+D10], [9+2D8],
+  [3], [11+D4], [9+D8], [7+D12], [15+D6], [12+D10], [9+2D8], [20+D6], [16+D12], [12+2D10],
+  [4], [14+D6], [12+D10], [8+2D8], [19+D8], [16+D12], [12+2D10], [25+D8], [20+2D8], [15+2D12],
+  [5], [17+D8], [14+D12], [11+2D10], [23+D10], [20+2D8], [15+2D12], [30+D10], [24+2D10], [18+3D10],
+  [6], [21+D10], [18+2D8], [14+2D12], [27+2D8], [24+2D10], [18+3D10], [35+2D6], [29+2D12], [22+4D10],
+) <weapon-damage>])
+
+This leads to the following average damage by tier (MV):
+
+#pftab(
+  "Damage Averages",
+  columns: (1fr,) * 4,
+  align: (left, center, center, center),
+  stroke: 0.5pt,
+
+  [*Tier*], [*Light*], [*Medium*], [*Heavy*],
+  [0], [5.5], [6.5], [7.5],
+  [1], [7.5], [9.5], [12.5],
+  [2], [9.5], [13.5], [17.5],
+  [3], [13.5], [18.0], [23.0],
+  [4], [17.5], [22.8], [28.8],
+  [5], [21.2], [28.5], [35.0],
+  [6], [26.8], [35.2], [41.5],
+)
+
+The die progression used across the table is D3, D4, D6, D8, D10, D12, 2D8, 2D10, 3D8, 3D10, 3D12, 4D10, 4D12, with average values of 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 9, 11, 13.5, 16.5, 19.5, 22, 26 respectively.
+
+==== Ranged Weapons
+
+Ranged weapons follow the same damage table as melee for their weight class, with a few adjustments:
+
+- *Single-shot weapons* deal damage at tier+1 (e.g., a T2 single-shot rifle uses T3 damage values). This compensates for the inability to make multiple attacks per round.
+- Weapons with very long range may have slightly lower damage.
+- Weapons with area effects (cone, blast) may have lower per-target damage.
+- *Anti-vehicle weapons* (e.g., rocket launchers) are a separate category --- they can only target size 3+ creatures and have extreme damage values outside the normal scaling.
+
+==== Special Weapon Patterns
+
+- *Split damage weapons* (e.g., Hoarfrost): the listed damage is dealt twice --- once reduced by Armor, once by Ward. The effective total is 2× the listed damage, but both defenses apply. These weapons appear weaker on paper but perform strongly against balanced targets.
+- *High-penetration weapons*: may have lower base damage as a tradeoff. Penetration bypasses Armor directly, so low damage + high Pen can outperform high damage + no Pen against armored targets.
+- *Silvered or special-material weapons*: may trade damage for keywords or penetration that bypass specific resistances.
+
+=== Armor Scaling by Tier
+
+#float([#floating-table(
+  "Armor Scaling",
+  columns: 10,
+  align: (left, center, center, center, center, center, center, center, center, center),
+  stroke: 0.5pt,
+
+  [*Tier*], [*Light Armor*], [*Light Ward*], [*Light Bulk*], [*Med Armor*], [*Med Ward*], [*Med Bulk*], [*Heavy Armor*], [*Heavy Ward*], [*Heavy Bulk*],
+  [0], [2], [2], [1], [3], [2], [2], [6], [4], [3],
+  [1], [3], [3], [1], [5], [4], [2], [8], [6], [4],
+  [2], [5], [4], [1], [8], [5], [3], [11], [8], [4],
+  [3], [8], [5], [2], [10], [7], [3], [15], [10], [5],
+  [4], [12], [9], [2], [19], [12], [3], [25], [20], [5],
+  [5], [11], [8], [2], [15], [10], [4], [24], [16], [6],
+  [6], [14], [11], [2], [19], [13], [4], [30], [20], [7],
+) <armor-scaling>])
+
+@armor-scaling gives the average values stats for armor by weight class and tier. Modifiers follow the armor's weight class: light armor grants +1 to +2 Evasion, medium armor grants 0 to +1, and heavy armor imposes --1 to --4. Higher-tier armor within a weight class may improve evasion slightly compared to lower-tier examples.
+
+=== Charge (Magical Encumbrance)
+
+Charge is the magical equivalent of Bulk. A character has both a Bulk capacity (derived from Strength and Endurance) and a Charge capacity (derived from Attunement). When designing items, assign Charge according to their magical intensity:
+
+- *Non-magical items* (mundane weapons, basic armor): Charge 0.
+- *Lightly magical items* (enchanted weapons, warded armor): Charge roughly half Bulk.
+- *Heavily magical items* (catalysts, reliquaries, magical robes): Charge equal to or greater than Bulk. Such items may have Bulk 0 but high Charge.
+
+The underlying design principle is that physical warriors invest in Bulk capacity, casters invest in Charge capacity, and hybrid builds need both. Equipment should reinforce that tradeoff rather than paper over it.
+
+=== Price Scaling by Tier
+
+Approximate price ranges in feathers (#feathers):
+
+#pftab(
+  "Price Scaling",
+  columns: 5,
+  align: (left, center, center, center, center),
+  stroke: 0.5pt,
+
+  [*Tier*], [*Weapons*], [*Armor*], [*Catalysts*], [*Consumables*],
+  [0], [0--50], [0--50], [---], [10--50],
+  [1], [100--500], [100--500], [200--600], [50--250],
+  [2], [500--1500], [500--1500], [600--1500], [150--500],
+  [3], [1500--3500], [1500--3000], [1500--3000], [300--1000],
+  [4], [5000--8000], [5000--6500], [3000--6000], [500--2000],
+  [5], [8000--15000], [8000--12000], [6000--10000], [1000--5000],
+  [6], [Unique], [Unique], [Unique], [2000--10000],
+)
+
+At T6, standard weapons, armor, and catalysts leave the commercial market entirely --- such items are unique or priceless, obtained through quests or legendary rewards rather than purchased.
+
+=== Weapon Keywords
+
+The following keywords appear on weapons throughout the rulebook. When designing a new weapon, prefer an existing keyword over a bespoke rule unless the mechanical effect is genuinely new.
+
+- *Heavy:* Must be braced before firing. Firing without bracing is hip-firing, which imposes a penalty.
+- *Rapid Fire:* +2 automatic successes when the target is within half the weapon's range.
+- *Assault:* Hip-fire penalty halved (--1 instead of --2 for single shots; --2 instead of --4 for auto).
+- *Sidearm:* Draw or stow as a free action once per turn. Can be drawn even when a hand is occupied by a two-handed weapon.
+- *Burning:* Target catches fire on hit, taking ongoing Thermal damage (save ends).
+- *Explosive:* Deals damage in a blast radius.
+- *Jet:* Propelled projectile.
+- *Overload:* Carries a risk of overheating or malfunctioning.
+- *Poisonous (N):* Target must pass a D(N) Stamina check or become Poisoned.
+- *Parry +Nd:* Adds +N dice to parry checks made with the weapon.
+- *Powered:* Requires a power source or charge.
+- *Reliable:* Reduced malfunction chance.
+
+== Designing Rituals and Recipes
+
+This section provides guidelines for designing new rituals and alchemical recipes. Rituals and recipes occupy a different design space from combat powers: they are slow, expensive, and often transformative, and their balance is driven by cost and narrative stakes rather than by the action economy.
+
+=== Tier Scaling
+
+#float([#floating-table(
+  "Ritual Tier Scaling",
+  columns: 7,
+  align: (left, center, center, center, center, center, left),
+  stroke: 0.5pt,
+
+  [*Tier*], [*Diff.*], [*Magn.*], [*Cost (#feathers)*], [*Casting Time*], [*Scope*], [*Identity*],
+  [1], [3--4], [2--3], [50--200], [5--10 min], [Single target], [Local effect],
+  [2], [5--6], [4--5], [200--500], [10--30 min], [Small area], [Moderate duration],
+  [3], [7--8], [6--7], [500--1500], [30 min--1 hr], [Large area], [Lasting effect],
+  [4], [9--10], [8--9], [1500--4000], [1--4 hours], [Transformation], [Permanent minor effects],
+  [5], [11--12], [10--12], [4000--10000], [4--12 hours], [Reality-altering], [Permanent major effects],
+  [6], [13+], [13+], [Priceless], [1+ days], [Legendary], [Campaign-defining],
+) <ritual-scaling>])
+
+Each point of power available to the ritual beyond its magnitude reduces the difficulty by 1, to a floor equal to the ritual's tier. This lets well-prepared casters perform rituals above their comfortable skill level, at the cost of accumulating reagents, influence, or assistants.
+
+=== Sacrifice Types
+
+A ritual's sacrifice is the resource it consumes. The appropriate type depends on tier and on the nature of the effect.
+
+- *Components* (T1--T4): money and materials. A standard cost with no lasting impact beyond the price. Components are consumed whether or not the ritual succeeds.
+- *Essence* (T3--T5): the caster takes strain or a long-lasting debuff. Used for rituals that channel dangerous forces. The debuff persists for days or weeks, representing a physical or spiritual cost paid by the caster personally.
+- *Influence* (T4--T6): requires a concentration of specific aspects, either in the environment or in sacrificed objects. A ritual requiring Mist influence of magnitude 5, for example, must be cast in a strongly magical environment (a leyline, an ancient temple) or the caster must sacrifice a magical object that provides that level of aspect resonance. Influence is consumed: the environmental attunement fades, or the object is destroyed.
+
+=== Aspect Requirements
+
+Not every ritual demands aspect resonance, and lower-tier rituals should avoid it entirely so that they remain accessible to anyone with the skill and materials.
+
+- *T1--T3:* no aspect requirements.
+- *T4:* may require one aspect as Influence. Without the required aspect, difficulty increases by +2.
+- *T5--T6:* require one or two specific aspects as Influence, provided by environment or sacrificed objects.
+
+The aspects are Ash (destruction, desolation), Crown (law, domination), Forge (crafting, heat, origin), Key (opening, summoning), Mist (magic, the sublime essence), Scarab (rebirth, cycles), Skull (death, the end of things), Moon (mind, matter), and Maiden (nature).
+
+=== Skills
+
+Three skills cover all rituals and recipes, and they are not interchangeable:
+
+- *Ritual* governs arcane magic and the structured traditions of Psychic practice. It is systematic and reproducible; a failed check wastes materials but carries predictable consequences.
+- *Occultism* governs divine magic and the esoteric Psychic domains (Fate, Void). It relies on communion with entities rather than formula, and failed checks may have unpredictable or dangerous consequences.
+- *Alchemy* covers every recipe --- potions, poisons, reagents, and explosives. Ritual and Occultism do not apply to alchemical work.
+
+=== Design Checklist
+
+When designing a new ritual or recipe, verify each of the following before placing it in play:
+
++ Difficulty and magnitude fall within the tier's band.
++ Sacrifice type is appropriate to the power level.
++ Casting time is proportional to the effect.
++ Effect description is clear and has measurable outcomes.
++ Failure consequence is defined (or the ritual uses the standard "components lost" failure).
++ Skill is specified (Ritual, Occultism, or Alchemy).
++ Aspects are required only at T4 or higher.
++ Difficulty modifiers are listed for rituals with variable scope.
++ The ritual fills a narrative or mechanical niche not already covered by a combat power.
+
+=== Universal Reagents
+
+Alchemical reagents are the raw material of most recipes. Readily obtainable universal reagents cap at magnitude 6, corresponding to T3. The *Philosopher's Reagent* recipe (T5, Alchemy) produces magnitude-8 reagents, and anything beyond that is unique or legendary and must be found or quested for. This cap is a hard balance lever: it prevents high-tier recipes from becoming routine, and gives the GM a natural hook for high-tier alchemy plots.

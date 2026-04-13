@@ -311,10 +311,10 @@
   #text(size: 1.3em, weight: "extrabold")[#align(center)[#info\ ]]
 ]
 
-#let pftab(name, columns: (1fr, 4fr), breakable: false, ..contents) = [
+#let pftab(name, columns: (1fr, 4fr), breakable: false, title: true, ..contents) = [
   #v(1em)
   #block(breakable: breakable)[
-    *#smallcaps(text(size: 1.3em)[#upper(name)])*
+    #if(title){[*#smallcaps(text(size: 1.3em)[#upper(name)])*]}
     #v(-.5em)
     #table(
       columns: columns,
@@ -330,6 +330,19 @@
     #v(1em)
   ]]
 
+#let float(content) = {
+  place(
+    top + center,
+    content,
+    float: true,
+    scope: "parent",
+  )
+}
+
+#let floating-table(name, columns: (1fr, 4fr), breakable: false, ..contents) = {
+    figure(pftab(name, ..contents, columns: columns, breakable: breakable, title: false), caption: name)
+}
+
 #let chap-header(num, title, desc) = place(
   center + top,
   // dx: 55%,
@@ -341,8 +354,8 @@
   #set text(fill: colors.pfgreen)
   #layout(size => {
     let content = text(weight: "extrabold")[
-      #text(1.5em, font: "Taroca")[#upper(num)] \
-      #text(2em, font: "Taroca")[#upper(title)] \
+      #text(1.5em, font: "Libre Baskerville")[#upper(num)] \
+      #text(2em, font: "Libre Baskerville")[#upper(title)] \
       #text(1.2em, style: "italic")[#desc]
     ]
 

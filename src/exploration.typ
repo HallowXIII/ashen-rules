@@ -14,7 +14,7 @@ Your cold snow-tipped mountain peaks \
 Shining silver against the blue expanse
 ])
 
---- The song of the lost \
+--- The Song of the Lost \
 #linebreak()
 
 The world of Ashen is vast and dangerous. Between battles, characters must
@@ -245,6 +245,7 @@ Roll 2D6 and consult the appropriate climate table.
 === Temperate Climate
 
 #pftab(
+  "Temperate Climate Rolls",
   columns: 2,
   align: (center, left),
   [*2D6*],
@@ -264,6 +265,7 @@ Roll 2D6 and consult the appropriate climate table.
 === Mountain Climate
 
 #pftab(
+  "Mountain Climate Rolls",
   columns: 2,
   align: (center, left),
   [*2D6*],
@@ -283,6 +285,7 @@ Roll 2D6 and consult the appropriate climate table.
 === Tropical / Swamp Climate
 
 #pftab(
+  "Tropical Climate Rolls",
   columns: 2,
   align: (center, left),
   [*2D6*],

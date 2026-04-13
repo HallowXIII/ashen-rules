@@ -951,7 +951,8 @@ using the standard combat rules adapted to the scale of airship engagements._
 
 = Setting
 
-#pftab(
+#float([
+#floating-table(
   "List of Factions",
   columns: (1fr, 1fr, 1fr, 1fr),
   align: center,
@@ -1041,7 +1042,7 @@ using the standard combat rules adapted to the scale of airship engagements._
   [A sword crossed with a feather],
   [–-],
   [--],
-)
+) <faction-list>])
 
 #include "gmguide.typ"
 
