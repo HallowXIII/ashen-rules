@@ -19,9 +19,7 @@
   ),
 )
 
-#align(center, text(24pt)[*The Ashen Rulebook*])
-
-#pagebreak()
+#titlepage("Ashen", subtitle: "Role-Playing Game", description: "Core Rulebook")
 
 #outline(title: [Table of Contents], depth: 2, indent: 2em)
 
@@ -43,7 +41,7 @@
   Aloft they held their hammers, glory to await\
   At the end of days.
 ]
---- The Song of the Deathless
+--- The Death of the World
 
 \
 
@@ -60,7 +58,7 @@ with ambient magical energy so intense it can power entire cities. Only in
 scattered Clears, places where the Fog has receded or been driven back, can
 mortals live in relative safety.
 
-In Ashen, you play an *Immortal*, an undying warrior, veteran of the Last War.
+In Ashen, you play a *Deathless*, an undying warrior, veteran of the Last War.
 Your curse is two-fold: you remember little of your mortal life, and you cannot
 die until you accomplish your purpose. It is only in the dangerous and
 Fog-drowned wilderness that you might find release.
@@ -151,7 +149,7 @@ In rare cases, checks can be modified by added automatic successes or failures.
 When they apply, add them directly to the result of the roll, without changing
 the size of your dice pool.
 
-*Example:* #text(style: "italic")[Alan’s character, the Magician Myrddin, is in
+#note([*Example:* #text(style: "italic")[Alan’s character, the Magician Myrddin, is in
   combat with a squad of ferocious Warboars. Heavily outnumbered and outgunned,
   the party has decided to flee. To buy time, Myrddin will attempt to cast the
   _Ice Storm_ spell on the front row of Warboars. _Ice Storm_ has a difficulty
@@ -159,7 +157,7 @@ the size of your dice pool.
   roll grant him an additional 4, so he rolls 12 dice -- they come up 5, 4, 3,
   1, 2, 3, 6, 4, 6, 2, 5 and 3. The 6s grant two successes, but the 1 counts as
   a negative success: he has barely managed to beat the target number, but he
-  has beaten it. The Warboars’ war cries are drowned out by the howling wind...]
+  has beaten it. The Warboars’ war cries are drowned out by the howling wind...]])
 
 === Rounding
 
@@ -176,8 +174,8 @@ goals before they can be thwarted.
 
 However, as characters engage in various activities to fulfill their goals, the
 time necessary for certain milestones can vary wildly. Outside of the
-predictable rhythm of quiet time---when measuring time in hours and days is more
-than adequate---action in more hectic phases of the game can take wildly
+predictable rhythm of quiet time, when measuring time in hours and days is more
+than adequate, action in more hectic phases of the game can take wildly
 differing amounts of time. Racing to fix an airship drive might still take days,
 a harrowing negotiation with a crime boss might take hours, but a fight to the
 death mere seconds. As events in such periods can follow each other in quick
@@ -204,7 +202,7 @@ resources they've already gathered and the skills they've already learned.
 Acts are divided into _Scenes_. A scene represents a discrete event in the act.
 In general, a scene plays out in a single location and deals with a single
 issue. The archetypal example of a scene is combat encounter, but other types of
-plot events can also constitute a scene---a ride over a collapsing bridge,
+plot events can also constitute a scene: a ride over a collapsing bridge,
 haggling with a shady merchant, or exploring a room in a ruined castle.
 
 There are thus almost no hard and fast rules as to what constitutes a scene,

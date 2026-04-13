@@ -74,6 +74,21 @@
   v(0.5em)
 }
 
+#let titlepage(pre-title: none, title, subtitle: none, description: none) = {
+  set page(columns: 1, numbering: none)
+  set align(center + horizon)
+  if pre-title != none { text(size: 28pt)[#pre-title] }
+  linebreak()
+  text(font: ("Libre Baskerville",), size: 48pt)[#title]
+  linebreak()
+  if subtitle != none { text(font: ("Libre Baskerville",) ,size: 32pt)[#subtitle] }
+  v(3em)
+  block[
+    #set align(center + horizon) 
+    #text(size: 28pt)[#description]
+  ]
+}
+
 #let ritual-description(
   name,
   tier,
