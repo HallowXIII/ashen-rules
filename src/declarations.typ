@@ -370,7 +370,7 @@
   #layout(size => {
     let content = text(weight: "extrabold")[
       #text(1.5em, font: "Libre Baskerville")[#upper(num)] \
-      #text(2em, font: "Libre Baskerville")[#upper(title)] \
+      #text(1.5em, font: "Libre Baskerville")[#upper(title)] \
       #text(1.2em, style: "italic")[#desc]
     ]
 

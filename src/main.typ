@@ -25,7 +25,7 @@
 
 #pagebreak()
 
-= Introduction
+#chap-header("1", [= Introduction], "The Basics of the Game")
 \
 #flavor[
   Pochfa sheshêp tarash nyôlwâ fêhêk\
