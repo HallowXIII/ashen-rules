@@ -138,7 +138,7 @@ following chart:
 
 #pftab(
   "Success Chances",
-  columns: 6,
+  columns: (2fr, 1fr, 1fr, 1fr, 1fr, 1fr),
   align: center,
 
   [*Pool Size*],
@@ -219,58 +219,58 @@ following chart:
 
 === Untrained Skills
 
-*Acrobatics (U; AGI + DEX)* \
+- *Acrobatics (U; AGI + DEX)* \
 Control your body, maintain your balance.
 
-*Athletics (U; STR + END)* \
+- *Athletics (U; STR + END)* \
 Perform feats of strength and speed.
 
-*Awareness (U; PER + SGT)* \
+- *Awareness (U; PER + SGT)* \
 Know your surroundings, detect and avoid threats.
 
-*Deceive (U; INT + PRS)* \
+- *Deceive (U; INT + PRS)* \
 They didn’t need to know that. Or maybe they did.
 
-*Eerie (U; SGT + ATT)* \
+- *Eerie (U; SGT + ATT)* \
 Use your sixth sense.
 
-*Impose (U; PRS + WIL)* \
+- *Impose (U; PRS + WIL)* \
 Leave a lasting impression.
 
-*Influence (U; PRS + INT)* \
+- *Influence (U; PRS + INT)* \
 Give people really good advice.
 
-*Investigate (U; INT + PER)* \
+- *Investigate (U; INT + PER)* \
 Perform research.
 
-*Subterfuge (U; DEX + INT)* \
+- *Subterfuge (U; DEX + INT)* \
 Steal, hide, cheat, and all other such sporting activities.
 
 === Trained Skills
-*Access (T; DEX + INT)* \
+- *Access (T; DEX + INT)* \
 Circumvent locks, access control systems and structurally unsound walls.
 
-*Alchemy (T; INT + PER)* \
+- *Alchemy (T; INT + PER)* \
 Straw to gold, lead to uranium, grapes into illegal booze.
 
-*Electronics (T; DEX + INT)* \
+- *Electronics (T; DEX + INT)* \
 Deal with sentient creatures’ worst mistake.
 
-*Magitek (T; INT + ATT)* \
+- *Magitek (T; INT + ATT)* \
 Figure out how that magical gizmo works.
 
-*Occultism (T; SGT + ATT)* \
+- *Occultism (T; SGT + ATT)* \
 Commune with your Luigi Board and other things inhabited by a supernatural
 presence.
 
-*Piloting (T; DEX + PER)* \
+- *Piloting (T; DEX + PER)* \
 Control high-speed vehicles of all kinds.
 
-*Ritual (T; WIL + ATT)* \
+- *Ritual (T; WIL + ATT)* \
 Perform pious and/or blasphemous invocations to the spirits and cast really
 fancy spells.
 
-*Shop (T; DEX + STR)* \
+- *Shop (T; DEX + STR)* \
 Welding, riveting, lathing… the works!
 
 
@@ -345,7 +345,7 @@ The base difficulties for narrow surfaces are given below.
 
 #pftab(
   "Narrow Surface Difficulties",
-  columns: 2,
+  columns: (2fr, 3fr),
   align: (left, center),
 
   [*Surface Width*],
@@ -367,7 +367,7 @@ maneuvers.
 
 #pftab(
   "Jump Difficulties",
-  columns: 2,
+  columns: (1fr, 1fr),
   align: (left, center),
 
   [*Attempted Jump*],
@@ -397,12 +397,12 @@ If you make an acrobatics check to bypass an obstacle while moving quickly, you
 lose some speed: an obstacle counts as difficult terrain. You can make your
 check with an additional +2 difficulty to keep moving at your original speed.
 
-#pftab(
+#float(floating-table(
   "Maneuver Difficulties",
   columns: 2,
   align: (left, center),
 
-  [*Maneuver*],
+  [*Acrobatic Maneuver*],
   [*Difficulty (Modifier)*],
   [Vault an Object],
   [Corresponding High Jump difficulty +2],
@@ -420,7 +420,7 @@ check with an additional +2 difficulty to keep moving at your original speed.
   [2],
   [Roll to absorb fall damage],
   [1 per meter fallen],
-)
+)) <maneuver-difficulties>
 
 ==== Action
 
@@ -553,13 +553,15 @@ The GM might call for an Awareness check when:
 - ... a character is attempting to spot a hidden individual or item
 - ... a character is attempting to evaluate whether a narrative is plausible
 
-Sample Awareness difficulties:
+#note[==== Sample Awareness difficulties:
 
 - Detecting the approach of a large vehicle: 2
 - Spotting an acquaintance in a crowded pub: 3
 - Finding your way around a maze: 4
 - Noticing a well-laid ambush: 5
 - Detecting that you are being followed by someone in thermal camo: 8
+]
+
 
 === Deceive (U; INT + PRS)
 
@@ -594,14 +596,14 @@ Awareness. In general, if the victim is well-disposed toward the Deceive user,
 the GM should use the lower of those two numbers. If the victim is already
 suspicious, the GM should use the higher of the two numbers.
 
-==== Sample Deceive Difficulties
+#note[==== Sample Deceive Difficulties
 
 - Lie to a suspicious mortal: 2
 - Successfully pass yourself off as a locally known figure: 4
 - Bluff a table of professional card-players: 6
 - Successfully pass yourself off as an intimate acquaintance of your
   interlocutor: 8
-- Lie to an extremely adept psychic: 11
+- Lie to an extremely adept psychic: 11]
 
 === Eerie (U; SGT + ATT)
 
