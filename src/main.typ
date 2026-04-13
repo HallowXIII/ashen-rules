@@ -920,10 +920,11 @@ experience.
 Characters can spend EP to recover from damage and even return from the dead.
 The costs are as follows:
 
-It costs 5 EP to prevent discorporation on death. A character may decide to
-spend 5 EP on this at the beginning of their turn when they are dead. If they do
-so, the normal death rules are suspended and they revive at full HP at the
-beginning of their next turn.
+A Deathless character who dies may spend 5 EP on their next turn to revive on
+the spot. See #link(<death-and-revival>)[_Death and Revival_] in the Combat
+chapter for the full rules, and #link(<death-and-reincorporation>)[_Death and
+Reincorporation_] in the Exploration chapter for what happens when spot-revival
+is not possible.
 
 When taking a rest, a character may spend 1 EP to recover either *half their
 health* or *their entire focus*. Characters suffering from magical effects that

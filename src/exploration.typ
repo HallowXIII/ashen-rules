@@ -524,49 +524,34 @@ provides only the benefits of a short rest, regardless of duration.
 When resting on blessed ground, a character recovers 1 additional EP. The GM
 determines which locations qualify.
 
-== Death and Revival
+== Death and Reincorporation <death-and-reincorporation>
 
-=== The Deathless
-
-Player characters in Ashen are Deathless --- immortal beings whose essence
-persists beyond the destruction of their physical form. For a Deathless
-character, death is not the end, but it carries real and significant costs.
-
-=== Revival with EP
-
-When a Deathless character dies, they may spend 5 EP to revive on the spot.
-If they choose to do so, they return to life at the start of the next round
-with 1 HP at the location where they fell. A character who revives this way is
-Dazed for 1 round as they reorient.
-
-Revival powers such as _Breath of Resurrection_ bypass this EP cost entirely,
-allowing allies to bring back fallen comrades without the dead character spending
-their own EP. This is the primary value of resurrection powers.
+The rules for dying and reviving in the moment of combat are covered under
+#link(<death-and-revival>)[_Death and Revival_] in the Combat chapter. This
+section covers what happens to a Deathless character when spot-revival is
+not an option --- when their EP is depleted, when they choose not to spend
+it, or when their body has been destroyed.
 
 === Soul Anchors
 
 Every Deathless character has a *soul anchor* --- a location their essence is
-bound to. A character can bind to a new soul anchor by resting at that location
-and performing a brief binding ritual (10 minutes, no check required). Each
+bound to. A character can bind to a new soul anchor by resting there and
+performing a brief binding ritual (10 minutes, no check required). Each
 character can have only one active soul anchor at a time. By default, a
-character's soul anchor is the last settlement where they completed a long rest.
+character's soul anchor is the last settlement where they completed a long
+rest.
 
-If a Deathless character dies and has no EP remaining (or chooses not to spend
-EP), their essence travels to their soul anchor, where they slowly
-reincorporate over the course of 3 to 7 days. While dead and reincorporating,
-a character recovers only 1 EP per day (instead of the usual 3). Once they
-accumulate enough EP to sustain a physical form (5 EP), they reincorporate at
-the anchor with 1 HP and no Focus.
+=== Reincorporation
 
-=== Mortal Death
-
-Non-Deathless creatures (mortal NPCs, animals, most enemies) die permanently
-when reduced to 0 HP. The _Resurrection Rite_ (a Tier 5 ritual) is the only
-known means of restoring a mortal creature to life.
+If a Deathless character dies without reviving on the spot, their essence
+travels to their soul anchor and slowly reincorporates there. The process
+takes 3 to 7 days, during which the character recovers only 1 EP per day
+(instead of the usual 3). Once they have accumulated 5 EP, they reincorporate
+at the anchor with 1 HP and no Focus.
 
 === Effects That Prevent Revival
 
-Certain powers and effects can delay or prevent revival. A creature affected by
-an effect that "prevents revival" cannot spend EP to revive and does not begin
-reincorporating until the effect ends. The _Noble Eightfold Blade_ and _World
-Serpent's Embrace_ are examples of such effects.
+Certain powers and effects can delay or prevent revival entirely. A creature
+affected by an effect that "prevents revival" cannot spend EP to revive, and
+does not begin reincorporating until the effect ends. The _Noble Eightfold
+Blade_ and _World Serpent's Embrace_ are examples of such effects.

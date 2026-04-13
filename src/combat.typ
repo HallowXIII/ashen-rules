@@ -343,6 +343,65 @@ A creature may have *resistance* to one or more specific damage types. Resistanc
 
 Resistances can come from racial traits, magical effects, enchanted equipment, or other sources. A creature cannot have resistance to Untyped damage.
 
+== Death and Revival <death-and-revival>
+
+When a creature is reduced to 0 HP, they die. For a Deathless
+character, death is a severe setback but not the end --- provided
+their body remains intact.
+
+=== Dying as a Deathless
+
+At the start of your next turn after dying, you may choose to spend
+5 EP to revive. If you do, on the first turn in the round after you 
+died, you return to life at full HP, standing
+in the square where you fell (or prone, if standing is not
+possible), and you immediately take a full turn with your normal AP.
+The regenerative surge is swift: a mangled corpse knits itself back
+together in moments, rising ready for vengeance. Mortals who witness
+this are often unnerved by the display.
+
+You pay the 5 EP only if revival actually manifests. If an ally's
+revival power or a _Revitalization Charge_ brings you back before
+your turn comes around, you revive without spending any EP of your
+own.
+
+If you choose not to spend EP, cannot spend EP, or your body has
+been destroyed (see _The Fallen Body_ below), your essence departs
+for your soul anchor and you begin reincorporating there. See
+#link(<death-and-reincorporation>)[_Death and Reincorporation_] in
+the Exploration chapter.
+
+#attention([Whether or not you choose to revive, both revival and
+discorporation occur on your turn in the round after you died. If
+your next turn after death is in the same round you died in, you
+skip that turn.])
+
+=== The Fallen Body
+
+A dead Deathless leaves a body behind, which is a targetable object
+in the square where they fell. Allies and enemies alike may interact
+with it.
+
+- *Healing has no effect.* HP-restoring effects do nothing to a
+  corpse. Only revival effects --- such as _Breath of Resurrection_
+  or a _Revitalization Charge_ --- can return a dead Deathless to
+  life without them spending EP.
+- *Ongoing effects on the character end on death.* Conditions,
+  sustained spells, concentration effects, and auras originating
+  from the dead character all cease. Effects emanating from worn or
+  carried items, however, remain active.
+- *The body can be dismembered.* A creature adjacent to the fallen
+  body may take the *Dismember* action (2 AP) to mutilate it. Each
+  use of this action delays the Deathless's next opportunity to
+  spot-revive by 1 round. After the body has been dismembered three
+  times, or if it is reduced to ash (for example by _Solar Flare_)
+  or banished from the world (for example by _Banish_), the body is
+  destroyed: the Deathless cannot spend EP to revive and must
+  reincorporate at their soul anchor.
+
+Dismembering a fallen Deathless is a valid tactic against hostile
+immortals --- and an equally valid threat against your own party.
+
 == Melee Attacks
 
 A melee attack uses the *Martial* characteristic (STR + AGI). Melee weapons can target creatures within their reach — typically adjacent squares (reach 1), though some weapons have greater reach.
@@ -368,8 +427,9 @@ A ranged attack uses the *Marksmanship* characteristic (DEX + PER). Ranged weapo
 Each range band defines a *range increment* in squares:
 
 #pftab(
-  columns: 2,
+  columns: (1fr, 1fr),
   "Range Bands",
+  title: false,
   [*Range Band*], [*Increment*],
   [Short], [10 squares],
   [Medium], [20 squares],
@@ -467,6 +527,7 @@ combat.
 
 *Attack* \
 *Dash* \
+*Dismember* \
 *Use Item*
 
 ==== Standard Actions (3 AP)
@@ -572,6 +633,12 @@ If you are prone, you can stand up as a standard action.
 You break into a sprint, moving up to double your movement speed. Unlike a
 normal move action, a Dash must be in a straight line. Movement during a Dash
 provokes opportunity attacks as normal.
+
+===== Dismember
+
+You mutilate the corpse of a fallen Deathless in an adjacent square,
+delaying their spot-revival. See #link(<death-and-revival>)[_Death and
+Revival_] for the full rules.
 
 ==== Full Actions
 
