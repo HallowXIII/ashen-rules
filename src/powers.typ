@@ -185,11 +185,11 @@ Marksmanship powers, also known as _Marksmanship Exploits_, are ranged combat
 techniques practiced by sharpshooters, gunslingers, and archers. Like martial
 exploits, they do not require a catalyst; they require a ranged weapon to use.
 
-== Spell Lists
+= List of Powers 
 
-=== Arcane
+== Arcane
 
-==== Tier 1
+=== Tier 1
 
 #power-description(
   "Flamethrower",
@@ -245,7 +245,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "Yes (Dodge 3)",
 )
 
-==== Tier 2
+=== Tier 2
 
 #power-description(
   "Fireball",
@@ -287,7 +287,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "Yes (Stamina 4)",
 )
 
-==== Tier 3
+=== Tier 3
 
 #power-description(
   "Fulmination",
@@ -318,7 +318,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "Yes (Stamina 6)",
 )
 
-==== Tier 4
+=== Tier 4
 
 #power-description(
   "Solar Flare",
@@ -348,7 +348,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   miss: "Half initial damage, ongoing 50% Acid for 1 round, no armor reduction.",
 )
 
-==== Tier 5
+=== Tier 5
 
 #power-description(
   "Chain Lightning",
@@ -403,7 +403,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "Dodge 8 (halves damage, negates Burning)",
 )
 
-==== Tier 6
+=== Tier 6
 
 #power-description(
   "Disintegration",
@@ -447,9 +447,9 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   miss: "Half damage, Slowed (5) for 1 round.",
 )
 
-=== Divine
+== Divine
 
-==== Life Domain
+=== Life Domain
 
 #power-description(
   "Mend Wounds",
@@ -535,7 +535,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   tap: "Allies also gain temporary HP equal to 100% of your catalyst's damage and the immunity duration increases to 5 rounds.",
 )
 
-==== War Domain
+=== War Domain
 
 #power-description(
   "Battle Cry",
@@ -622,7 +622,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   miss: "Half damage, Exposed for 1 round.",
 )
 
-==== Nature Domain
+=== Nature Domain
 
 #power-description(
   "Entangling Growth",
@@ -713,7 +713,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   miss: "Half damage, Prone for 1 round.",
 )
 
-==== Protection Domain
+=== Protection Domain
 
 #power-description(
   "Shield of Faith",
@@ -799,7 +799,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   tap: "The duration increases to 5 rounds and allies recover 200% instead.",
 )
 
-==== Poison Domain
+=== Poison Domain
 
 #power-description(
   "Venomous Touch",
@@ -895,9 +895,9 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
 )
 
 
-=== Psychic
+== Psychic
 
-==== Tier 1
+=== Tier 1
 
 #power-description(
   "Twist of Fate",
@@ -935,7 +935,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   cost: "2 Increments",
 )
 
-==== Tier 2
+=== Tier 2
 
 #power-description(
   "Reversal of Fortune",
@@ -975,7 +975,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "Yes (Stamina 4)",
 )
 
-==== Tier 3
+=== Tier 3
 
 #power-description(
   "Cursed Fate",
@@ -1002,7 +1002,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   cost: "2 Increments",
 )
 
-==== Tier 4
+=== Tier 4
 
 #power-description(
   "Mass Haste",
@@ -1059,7 +1059,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   miss: "Half damage, Slowed (5) for 1 round.",
 )
 
-==== Tier 5
+=== Tier 5
 
 #power-description(
   "Cursed Fate, Mass",
@@ -1074,7 +1074,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "Yes (Potential 8)",
 )
 
-==== Tier 6
+=== Tier 6
 
 #power-description(
   "Time Stop",
@@ -1114,9 +1114,9 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "D10 Potential (option 1 only)",
 )
 
-=== Martial Exploits
+== Martial Exploits
 
-==== Tier 1
+=== Tier 1
 
 #power-description(
   "Lotus Art: Impenetrable",
@@ -1150,7 +1150,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   cost: "--",
 )
 
-==== Tier 2
+=== Tier 2
 
 #power-description(
   "Lotus Art: Pure Land Burial",
@@ -1190,7 +1190,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   cost: "2 Increments",
 )
 
-==== Tier 3
+=== Tier 3
 
 #power-description(
   "Lotus Art: Pearl Scissor",
@@ -1221,7 +1221,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "Yes (Stamina 6)",
 )
 
-==== Tier 4
+=== Tier 4
 
 #power-description(
   "Lotus Art: Thousand Petal",
@@ -1264,7 +1264,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "D7 Stamina (push only; damage always applies on hit)",
 )
 
-==== Tier 5
+=== Tier 5
 
 #power-description(
   "Lotus Art: Noble Eightfold Blade",
@@ -1294,7 +1294,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "D9 Stamina (instant-kill effect only)",
 )
 
-==== Tier 6
+=== Tier 6
 
 #power-description(
   "Forest of Corpses",
@@ -1311,9 +1311,9 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "Yes (Stamina 8)",
 )
 
-=== Command Powers
+== Command Powers
 
-==== Tier 1
+=== Tier 1
 
 #power-description(
   "Rally",
@@ -1340,7 +1340,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "D3 Potential (only if not already under your control)",
 )
 
-==== Tier 2
+=== Tier 2
 
 #power-description(
   "Coordinated Strike",
@@ -1367,7 +1367,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "D5 Potential",
 )
 
-==== Tier 3
+=== Tier 3
 
 #power-description(
   "Hold the Line",
@@ -1395,7 +1395,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   miss: "The target is Dazed for 1 round.",
 )
 
-==== Tier 4
+=== Tier 4
 
 #power-description(
   "Overwhelming Presence",
@@ -1411,7 +1411,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   miss: "Frightened for 1 round (no Stun).",
 )
 
-==== Tier 5
+=== Tier 5
 
 #power-description(
   "Grand Tactician",
@@ -1425,7 +1425,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   range: "Burst 5 centered on you; up to 5 allies",
 )
 
-==== Tier 6
+=== Tier 6
 
 #power-description(
   "Absolute Authority",
@@ -1441,9 +1441,9 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   miss: "Dazed for 1 round (option 1 only).",
 )
 
-=== Marksmanship Exploits
+== Marksmanship Exploits
 
-==== Tier 1
+=== Tier 1
 
 #power-description(
   "Steady Shot",
@@ -1456,7 +1456,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   range: "Weapon range",
 )
 
-==== Tier 2
+=== Tier 2
 
 #power-description(
   "Pinning Shot",
@@ -1483,7 +1483,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   range: "Weapon range; one creature",
 )
 
-==== Tier 3
+=== Tier 3
 
 #power-description(
   "Suppressing Fire",
@@ -1510,7 +1510,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   range: "Weapon range; one creature",
 )
 
-==== Tier 4
+=== Tier 4
 
 #power-description(
   "Killzone",
@@ -1538,7 +1538,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   prerequisites: ("Must not have moved this turn",),
 )
 
-==== Tier 5
+=== Tier 5
 
 #power-description(
   "Death from Afar",
@@ -1554,7 +1554,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   prerequisites: ("Must not have moved this turn",),
 )
 
-==== Tier 6
+=== Tier 6
 
 #power-description(
   "Bullet Hell",

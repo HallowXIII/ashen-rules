@@ -110,8 +110,8 @@ is, by all accounts, the single most important unanswered question in the world.
 === The Age of Ash
 
 In the aftermath of the Last War, the world did not so much recover as
-stabilize. The Fog settled into patterns --- dense in some regions, thin in
-others --- and where it receded, the first Clears emerged: pockets of land where
+stabilize. The Fog settled into patterns: dense in some regions, thin in
+others, and where it receded, the first Clears emerged --- pockets of land where
 mortal life could take root again. The Deathless, waking on the banks of rivers
 or in the ruins of cities they no longer recognized, began to organize. Some
 sought answers. Others sought power. Most sought purpose.
@@ -148,11 +148,9 @@ survive from the Age of Gods. While the broad strokes are consistent across
 traditions, the details --- and especially the roles assigned to individual
 deities --- vary considerably depending on the source.
 
-#flavor(
-  "This text is a translation from the 'Âl i pHethkê yi Ndang', a religious work favored by the devotees of the Boar-Mother.",
-)
-
+#flavor[
 At the beginning, there was only the primordial chaos. In time, the chaos settled, and left at the bottom Vêr, the primordial sea, and Khanj, the dark sky. The sea and the sky resolved to each take on an aspect of the other, and from their strange union were born Khâru, the Falcon-Headed Sun, and Ndang, the primordial land. Khâru took the warmth from his mother's depths, but could not hold it in his lofty body; Ndang was great and profound, but took on her father's cold and stillness. Khâru's light and heat warmed the world, but made the sky to grow furious with wind, dried the sea and scorched the earth. When he saw what his unrestrained self had wrought, he resolved to sink beneath the waters for half his time, and thus did he establish order. From this union with his mother were born the sisters Night and Day, and the Third sister, known as Order.
+]
 
 === The Pantheon
 
@@ -253,9 +251,11 @@ deep forces of the earth. The western island chain is said to be its bones, and
 the island of Dragon's Head its skull. Prayers to the World Serpent invoke its
 power over vitality and venom.
 
-*The Lion-Head*, also called the Might-Be Queen of Summer. A figure associated
-with the vitality of the Faerie Realms and the power of summer. Patron of the
-Never-Still, who seek to restore the fey realm she once embodied.
+*The Lion-Head*, the short form of the Lion-Headed God of War. In addition to
+his ancient association with battle, the Lion-Head is co-patron (with the
+Might-Be Queen of Summer) of the Never-Still, who seek to restore the Faerie
+Realm. His martial temperament complements the Queen's vitality: where she
+dreams of renewal, he fights for it.
 
 === The Nine Aspects
 
@@ -820,7 +820,7 @@ echoes of divine power in wild places, and they maintain a strong presence in
 the forests of the northwest.
 
 *The Never-Still* are dedicated to restoring the vitality of the Faerie Realm.
-Aligned with the Lion-Head, the Might-Be Queen of Summer, they believe that the
+Aligned with both the Lion-Head and the Might-Be Queen of Summer, they believe that the
 fey domains can be rebuilt and that doing so is essential to healing the world.
 They are dreamers and idealists in a world that has little patience for either.
 
@@ -912,7 +912,7 @@ going it alone is either very brave or very foolish.
   [Never-Still, The],
   [A hand holding a heart],
   [Restoring the vitality of the Faerie Realm],
-  [The Lion-Head, Might-Be Queen of Summer],
+  [The Lion-Head & the Might-Be Queen of Summer],
 
   [Patients, Vatic Order of],
   [A hand with the index and middle finger extended, thumb, ring and pinky
