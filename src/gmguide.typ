@@ -295,6 +295,84 @@ The following keywords appear on weapons throughout the rulebook. When designing
 - *Powered:* Requires a power source or charge.
 - *Reliable:* Reduced malfunction chance.
 
+== Setting Secrets
+
+This section contains information about the world of Ashen that is intended for
+the Game Master's eyes only. Players who read this section risk spoiling
+mysteries that are meant to be discovered through play.
+
+=== The Last War: A Note on Design
+
+The conclusion of the Last War is deliberately left blank. The broad strokes ---
+the war itself, the death of the gods, the release of the Fog, the creation of
+the Deathless --- are fixed. But what happened in the final moments, what act or
+event or betrayal brought the war to its catastrophic close, is not defined. This
+is intentional.
+
+The gap exists so that each Game Master can establish their own truth. The
+players' Deathless characters remember nothing of the war's end, and the
+historical record is genuinely absent. This means that the answer to "what
+happened?" can be different in every campaign, tailored to the themes and
+conflicts that the GM wants to explore.
+
+Some example truths a GM might establish:
+
+- *The Betrayal:* One of the gods --- perhaps one still worshipped by a player's
+  faction --- deliberately sacrificed the others to end the war on their own
+  terms. The Fog and the Deathless curse are side effects of a divine murder.
+- *The Seal:* The war was fought to contain something --- an entity, a force, a
+  truth --- and the conclusion was not a victory but a sealing. The world is a
+  prison, but not for the Deathless: for whatever is locked beneath it.
+- *The Accident:* There was no grand plan. The combined power unleashed in the
+  war's final battle simply exceeded what creation could bear, and the world
+  broke. The gap in the record exists because there was no coherent "end" ---
+  just a collapse.
+
+The GM should decide which truth (or which variation) their campaign uses early,
+and plant clues accordingly. The factions' conflicting beliefs about the Last War
+provide natural vectors for revealing information gradually.
+
+=== The Heart of the World
+
+Deep beneath Dragon's Head, the largest of the Western Islands, lies the wounded
+Heart of the World. It is held in what were once the great jaws of the World
+Serpent --- the same being whose bones form the island chain itself.
+
+The Heart is the source of the Fog, or more precisely, it is the wound through
+which creation bleeds. The Last War damaged it, and the Fog is the result: raw
+creative power leaking from a break in the fundamental structure of reality. The
+Heart still beats, after a fashion, and the energy it releases sustains both the
+Fog and the ambient magical power that magitek devices draw upon.
+
+What happens if the players reach the Heart is up to the GM. Some possibilities:
+
+- It can be healed, ending the Fog but also ending the ambient magical energy
+  that powers civilization. The world becomes mundane --- and the Deathless curse
+  may or may not lift with it.
+- It can be destroyed, which would finish what the Last War started. She Who
+  Waits Beyond would approve.
+- It can be studied, revealing the truth about the Last War and the nature of the
+  Deathless curse --- but not necessarily providing a solution.
+- It is guarded, by something ancient and powerful, and reaching it is only the
+  beginning of the challenge.
+
+=== Vay Ngien and Old Ko Vihya
+
+The order of wizards that once occupied Old Ko Vihya was destroyed by a rare
+coalition of factions, and their records were deliberately suppressed. The GM
+should decide what Vay Ngien and his followers were actually doing, but some
+possibilities include:
+
+- They discovered how to permanently kill a Deathless and were using this
+  knowledge for purposes that horrified the other factions.
+- They were attempting to reopen the wounds in creation --- to widen the cracks
+  that produce the Fog --- in pursuit of unlimited magical power.
+- They found a way to restore the memories of the Deathless and learned
+  something so terrible that the other factions agreed it was better forgotten.
+
+Vay Ngien's tower still stands and could serve as a dungeon, a source of
+forbidden knowledge, or a warning about what happens when curiosity goes too far.
+
 == Designing Rituals and Recipes
 
 This section provides guidelines for designing new rituals and alchemical recipes. Rituals and recipes occupy a different design space from combat powers: they are slow, expensive, and often transformative, and their balance is driven by cost and narrative stakes rather than by the action economy.

@@ -441,8 +441,8 @@ achieving story milestones, as determined by the GM.
   300,
   2,
   1,
-  "Lotus Art: Sage's Stance, Martial 5, Dodge 5",
-  [While in _Sage's Stance_, you gain a +3 bonus to Parry checks.],
+  "Lotus Art: Impenetrable, Martial 5, Dodge 5",
+  [While _Impenetrable_ stance, you gain a +3 bonus to Parry checks.],
 )
 
 #advance-block(
