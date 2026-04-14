@@ -538,6 +538,99 @@ dangerous regions of the world also the most strategically valuable for those
 with the technology to exploit them --- and it means that the Fog, for all its
 horrors, is the engine that keeps what remains of civilization running.
 
+== Languages
+
+The world of Ashen is not linguistically unified. Several major language
+families are spoken across the continent, shaped by geography, the Fog, and the
+long isolation of communities from one another. What follows is a summary of the
+principal languages a traveller is likely to encounter.
+
+=== Sarkat
+
+The closest thing the world has to a common tongue is the Sarkat language ---
+though, like many widely spoken languages, it is better understood as a large
+family of closely related dialects than as a single uniform language. Sarkat
+varieties are spoken from the far southeast to the west-central regions of the
+continent, by Deathless, mortals, and Fogborn alike. Nearly all Deathless know
+at least one variety of Sarkat.
+
+The two prestige dialects are those of the *Seat of the Sun* (eastern Sarkat)
+and the *River Clear* (western Sarkat). Despite their shared status, the two
+belong to different dialect groups and are not immediately mutually intelligible
+--- a source of endless frustration for travellers moving between the continent's
+two great centres of civilization. Most names in this book are given in their
+River Clear Sarkat form.
+
+Some examples of Sarkat vocabulary: _Khanj_ is both the name of the primordial
+sky and the common word for "sky" in this language. The sacred text _Âl i
+pHethkê yi Ndang_ is titled in River Clear Sarkat --- though its original
+version is assumed to have been composed in some now long-lost language --- and
+translates simply to "Tale of the Creation of the Earth."
+
+The Fogborn who live around the Black Bazaar, separated from the River Clear by
+the Extreme Fog of the Kethû, have developed a fairly divergent variety of their
+own. Most Deathless visiting the Bazaar prefer to speak River Clear Sarkat with
+one another regardless.
+
+=== Inggiric
+
+The Inggiric languages are spoken in the southwest and parts of the central west.
+The eastern Inggiric dialects have significant contact with far western Sarkat
+varieties, resulting in shared grammar and loanwords, but the two families are
+fundamentally very different.
+
+The Sand Wastes in particular are home to nomadic peoples who speak a
+harsh-sounding, guttural variety they call *Leriel-e Inggir* --- "Speech of the
+Sand Country." Some Inggiric place names include *Xen Waryd* (the Long Dune)
+and *Yrr-a Xyndy* (Camp Khendi), a rare permanent settlement in an otherwise
+nomadic culture. The legendary spirit *Iew-e Haxt*, Father of Sand, is also
+named in this language.
+
+=== Ngoay
+
+In the northwest and along the frozen north coast, the Ngoay languages are
+spoken. The people of the north have a reputation for being gruff, and their
+languages --- built of short words and concise grammar --- only reinforce the
+impression.
+
+The name *Vay Ngien* is drawn from Ngoay. Rumour has it that the wizard used a
+different, Sarkat name in his dealings with other Deathless, but this name has
+been suppressed along with the rest of his order's legacy. The crumbling tower
+outside the Amkau Clear is called *Ik Choa Vay Ngien* by the locals.
+
+Those who have managed the perilous crossing to Dragon's Head report that the
+Fogborn who inhabit the island speak a highly divergent Ngoay variety. There are
+rumours of a hidden fortress in the island's interior, called *Yek Chô Thaw
+Thêny* in the local dialect. Whether it is a coincidence that they, too, call it
+a tower is anyone's guess.
+
+=== Echo Languages
+
+The Echoes, tight-knit and originally extraplanar as they are, speak their own
+family of languages. In Clears dominated by Deathless Echoes, even mortal humans
+have sometimes adopted these languages. While several smaller dialects exist, the
+two prestige varieties are *Azal*, spoken by the Mirrors, and *Wiyan*, spoken by
+the Shades.
+
+It is common enough for an Echo to speak both that one can frequently hear a
+Mirror address a Shade in Azal and receive a response in Wiyan --- a strange
+display of ancestral pride that would look like a breakdown in communication to
+an outsider but is, in practice, perfectly functional.
+
+Some Echo words have been borrowed or calqued into other languages. The epithets
+"Queen of Summer" and "Midnight Princess" for the goddesses of the Mirrors and
+Shades, respectively, are translations from their languages: Might-Be is known
+in Azal as _Yāndehten_, and Once-Was in Wiyan as _Innuwikšaya_.
+
+=== Other Languages
+
+Smaller language families and isolates are spoken in the northeast, the forests
+of the central west, and various coastal regions. The Forest of Night is home to
+its own linguistic traditions, though few outsiders have spent enough time there
+to document them. The Soot-Beasts, for their part, are said to have languages of
+their own that predate their contact with the other races, though most
+Soot-Beasts encountered in the Clears speak Sarkat fluently.
+
 == Factions
 
 The Deathless are immortal, but they are not united. In the centuries since the
