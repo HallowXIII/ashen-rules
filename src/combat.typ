@@ -526,6 +526,7 @@ combat.
 ==== Standard Actions (2 AP)
 
 *Attack* \
+*Combat Maneuver* \
 *Dash* \
 *Dismember* \
 *Use Item*
@@ -543,6 +544,7 @@ combat.
 
 ==== Reactions
 
+*Combat Maneuver (Reactive)* \
 *Counterspell* \
 *Dive* \
 *Fire Overwatch* \
@@ -647,6 +649,225 @@ Revival_] for the full rules.
 To take a charge, declare a target you can see. You must move toward that target
 in a straight line, moving up to twice your speed and ending your charge
 directly adjacent to your target. At the end of the charge, you can use a melee attack power. You gain a \+4d power bonus to your Martial characteristic when you make attack rolls during a charge.
+
+== Combat Maneuvers
+
+In the chaos of battle, a skilled combatant can attempt far more than simply
+striking to wound. Hooking an enemy's leg to bring them down, knocking a weapon
+from their hand, targeting a specific weak point, throwing sand in their eyes,
+deflecting a killing blow with the flat of a blade --- these are all *combat
+maneuvers*. A combat maneuver is any attempt to achieve a specific tactical
+effect beyond dealing normal damage, whether on your own turn or in reaction to
+an enemy's action.
+
+=== Performing a Maneuver
+
+To perform a combat maneuver on your turn, spend *2 AP* and declare what you are
+attempting _before_ you roll. You then make your attack roll (Martial for melee,
+Marksmanship for ranged) with a *penalty* determined by the GM based on the
+ambition and difficulty of what you are attempting. If the attack hits, the
+maneuver takes effect. The more successes you score above the target's Evasion,
+the more dramatic the result.
+
+A combat maneuver that involves striking the target with a weapon --- such as a
+called shot or a hamstringing slash --- deals damage as a single-hit strike,
+regardless of excess successes (excess successes improve the maneuver's effect,
+not the number of hits). A maneuver that does not involve actually striking the
+target --- such as a grapple, a shove, or throwing sand in someone's eyes ---
+does not deal damage at all.
+
+If the attack misses, the maneuver fails regardless of how good the idea was.
+
+The GM sets the penalty and adjudicates the outcome based on two considerations:
+
++ *How difficult is the maneuver?* A shove against a creature your own size might
+  warrant \-1d. Severing a specific tentacle might be \-3d. Shooting a small
+  object out of someone's hand at long range might be \-5d or more. The
+  creature's size relative to yours, the precision required, and the
+  plausibility of the attempt all factor in.
+
++ *How well did it work?* A maneuver that barely hits (0 excess successes)
+  produces a minimal version of the desired effect. Each additional excess
+  success makes the result more dramatic. A barely-successful disarm might knock
+  the weapon loose at the target's feet; a dramatically successful one sends it
+  flying out of reach or shatters it entirely.
+
+The GM may also require the target to make a resistance check (typically Stamina
+or Dodge) against maneuvers that impose ongoing effects, just as with any other
+combat effect.
+
+=== Reactive Maneuvers
+
+A combat maneuver can also be performed as a *reaction*. When an enemy takes an
+action that you could plausibly interfere with --- a charge you could try to
+trip, a strike you could try to parry, a grapple you could try to twist out of
+--- you may declare a reactive maneuver. This uses your reaction for the round.
+
+A reactive maneuver is an *interrupt*: it resolves before the triggering action
+completes. Make an opposed check --- typically your Martial against the
+attacker's Martial, though the GM may call for other characteristics depending
+on the nature of the maneuver (Athletics for brute-force resistance, Dodge for
+evasive maneuvers). If you succeed, the maneuver takes effect; the degree of
+success determines how completely you shut down the triggering action.
+
+Unlike an offensive maneuver, a reactive maneuver does not deal damage --- you
+are interrupting, not attacking.
+
+#note[
+  _Example:_ An Ashwalker charges Kael. Kael declares a reactive maneuver: he
+  braces his spear low and attempts to trip the charger as she closes. The GM
+  calls for opposed Martial. Kael rolls 7 successes against the Ashwalker's 5.
+  The trip succeeds --- the Ashwalker stumbles and falls Prone at Kael's feet,
+  and her charge ends without an attack. Had Kael only barely succeeded, the GM
+  might rule that the charge still carries her into melee but she arrives
+  off-balance, losing her charge bonus.
+]
+
+=== Common Types of Maneuver
+
+There is no fixed list of maneuvers a character can attempt. Any
+situation-appropriate tactic is valid, and creative thinking should be
+encouraged. The following categories are provided as *guidance* to help the GM
+calibrate penalties and outcomes. They are examples, not an exhaustive set.
+
+==== Precision Attacks
+
+A precision attack targets a specific object, body part, or weak point. The
+attacker must declare exactly what they are targeting: "I aim for the hand
+holding the staff," "I shoot the chain holding the chandelier," "I try to sever
+the grasping tentacle."
+
+The penalty depends on the size and accessibility of the target. Hitting a
+creature's weapon arm might be \-2d; hitting a specific finger, an eye, or a
+small held object might be \-4d or \-5d. Hitting a tiny or partially concealed
+target at range is harder still.
+
+On a successful hit, the targeted thing takes damage and suffers appropriate
+consequences. A hand struck hard enough might drop what it holds. A tentacle
+dealt enough damage might be severed. A rope, a hinge, or a mirror can simply
+be destroyed if the damage suffices.
+
+The degree of success matters. A barely-successful called shot to the hand deals
+damage but might not force the target to drop anything. A called shot that
+exceeds the target's Evasion by 3 or more could cripple the limb or destroy the
+held object outright.
+
+#note[
+  _Example:_ Lira is fighting an Ashen Priest who is channelling a ritual through
+  a glass focus. She declares a precision attack against the focus (\-4d, a small
+  object held in one hand) and rolls her Marksmanship. She hits with 2 excess
+  successes. The GM rules that the focus shatters and the ritual collapses.
+]
+
+==== Forced Movement
+
+Shoves, tackles, bull rushes, shield bashes, and any attempt to bodily move
+another creature by force. The penalty is based on relative size: no penalty
+against a creature your own size, \-2d per size category larger. Forced movement
+maneuvers are typically resisted by the target's Athletics or Stamina.
+
+On success, the target is pushed a number of squares based on the margin of
+success --- 1 square on a bare success, plus 1 for every 2 additional excess
+successes. Exceptional results might knock the target Prone as well, or send
+them through an obstacle. Context matters: shoving someone toward a cliff edge,
+into a fire, or through a railing all have natural consequences.
+
+==== Disabling Attacks
+
+Any maneuver that aims to impair a creature's ability to fight without
+necessarily dealing lethal damage: disarming a weapon, blinding with a handful
+of grit, hamstringing to reduce mobility, fouling a mechanism, or tangling an
+arm. The penalty is based on how debilitating the intended effect is and how
+protected the target is against it.
+
+On success, the target suffers an appropriate condition or penalty.
+A disarm might cause the target to drop a weapon; a blinding attack might impose
+penalties to attack rolls for a round. On a dramatic success, the effect is more
+severe or longer-lasting: the weapon is flung out of reach, the target is fully
+Blinded for several rounds, or the hamstrung leg reduces their movement speed
+for the rest of the encounter.
+
+Creatures that lack the targeted feature are immune to the corresponding
+maneuver --- you cannot blind an ooze or disarm a creature that fights with
+natural weapons (though you might be able to damage those natural weapons with a
+precision attack).
+
+==== Trips and Takedowns
+
+Leg sweeps, hooking a kneecap, tackling an opponent to the ground, knocking
+someone off-balance. These maneuvers work both offensively and as reactions
+against charges and other movement.
+
+The penalty depends on the target's stability: no penalty against a
+normally-balanced humanoid, \-2d against a quadruped or a creature bracing
+itself, more against very large or many-legged creatures. The target typically
+resists with Athletics or Martial (defender's choice).
+
+On success, the target is knocked Prone. On a dramatic success (3 or more excess
+successes), the target might also be Dazed or Stunned briefly from the impact,
+or be thrown rather than merely tripped.
+
+As a reactive maneuver, a trip is particularly effective against charges: if the
+trip succeeds, the charge ends immediately and the charger falls Prone.
+
+==== Defensive Maneuvers
+
+Parries, deflections, and interpositions --- any attempt to use combat skill to
+negate or reduce an incoming attack. These are almost always reactive maneuvers.
+
+When you are hit by an attack while wielding a weapon, you may attempt to parry
+as a reactive maneuver. Make an opposed Martial check against the attacker. On
+success, the hit is negated. On a dramatic success, you deflect the blow so
+decisively that the attacker is momentarily off-balance, granting you advantage
+on your next action against them.
+
+Weapons with the *Parry +Nd* keyword grant their bonus dice on defensive
+maneuver checks. A character fighting with a weapon in each hand, or with a
+weapon and a shield, is naturally better positioned for defensive maneuvers ---
+the GM may reduce the difficulty or grant bonus dice as appropriate.
+
+#note[
+  _Example:_ Kael is struck by a Fleshforged's massive claw. He declares a
+  defensive maneuver, attempting to parry with his longsword. The GM calls for
+  opposed Martial. The Fleshforged rolled 8 successes on its attack; Kael rolls
+  6 on his parry attempt. He fails --- the claw smashes through his guard and the
+  hit applies normally. Had he been wielding his parry dagger in his off-hand, the
+  additional \+4d from its Parry keyword might have made the difference.
+]
+
+==== Grappling
+
+Seizing and restraining an opponent. To initiate a grapple, you must have at
+least one free hand and be adjacent to the target. Make an opposed Athletics
+check against the target's Athletics or Martial (defender's choice).
+
+On success, the target is *Restrained*. However, grappling is a commitment: you
+cannot move or use weapons while maintaining a grapple, and you must spend 1 AP
+on each of your subsequent turns to maintain it. If you do not, the grapple
+ends. The grappled creature may spend 1 AP on its turn to attempt an opposed
+Athletics check to break free.
+
+On a dramatic success, you establish such a dominant hold that the target's
+attempts to escape are made at \-2d.
+
+A creature more than one size category larger than you cannot be grappled unless
+you have an ability that specifically allows it. A creature two or more sizes
+smaller can be grappled automatically without a check.
+
+=== Maneuvers and Advances
+
+Combat maneuvers represent what any competent fighter can attempt through skill,
+strength, and daring. *Powers* and *advances* represent superhuman feats that go
+beyond what a maneuver can achieve. An advance might reduce or remove the
+penalty for a particular type of maneuver, grant bonus dice, or add guaranteed
+effects on success. A Power like _Called Shot: Vitals_ does not merely let you
+aim for a weak point --- it guarantees devastating results that no ordinary
+fighter could reliably produce.
+
+When a character has both a maneuver and a Power that could apply to the same
+situation, the player chooses which to use. The maneuver is always available but
+uncertain; the Power is reliable but costs a power slot and may have
+prerequisites.
 
 == Saving Throws
 
