@@ -39,9 +39,9 @@ his innocence to the Boar-Mother for children of his own: thus were the
 Soot-Beasts born, creatures shaped for battle in body and temperament. The
 Goddess Third, who loved toys and tinkers, gave life to the Clockworks, machines
 of supreme elegance that walked and thought and fought. And far from the affairs
-of the others, the fey sisters Might-Be and Once-Was built their own realms and
-filled them with the Echoes, fey reflections of humanity seen through stranger
-lenses.
+of the others, Day and Night --- better known in their fey aspects as Might-Be
+and Once-Was --- built their own realms and filled them with the Echoes, fey
+reflections of humanity seen through stranger lenses.
 
 This was the Age of Gods: a time of direct divine rule, when the world was
 shaped by will rather than chance, and the races lived under the watchful eyes of
@@ -51,9 +51,9 @@ their makers.
 
 Of all the works of the gods, the Faerie Realms were perhaps the most wondrous
 and the most alien. The twin goddesses Might-Be and Once-Was --- known by many
-names, but perhaps most accurately as the Fateweaver and the Way-Knower --- each
-carved out a domain that existed alongside the material world, a reflection
-twisted by its creator's nature.
+names: Day and Night in the Boar-Mother's reckoning, the Fateweaver and the
+Way-Knower among their own followers --- each carved out a domain that existed
+alongside the material world, a reflection twisted by its creator's nature.
 
 Might-Be's realm was one of beauty and caprice. She was the goddess of Magic,
 Fate, and all things Resplendent, and her lands shifted with her moods: sunlit
@@ -182,7 +182,19 @@ Mother of humanity (with the God of Crafts) and of the Soot-Beasts (with the
 Lion-Headed God of War). She is remembered as generous and terrible in equal
 measure: one who gave freely, but who exacted obedience from those in her debt.
 Her sacred text, the _Âl i pHethkê yi Ndang_, is the source of the oldest
-surviving creation myth.
+surviving creation myth. 
+
+The Boar-Mother's domains are so vast that she is rarely venerated as a single
+being, but rather worshipped in her three aspects -- the most popular with
+mortals remains the *Spring Maiden*, goddess of youth and fertility, watching over
+the young couple equally as she does the farmer sowing his seeds. The second aspect
+is the *Winter Crone*, representing at once the uncaring cruelty of nature as well
+as the tenacity to overcome it. She is the patron of the old praying for good health,
+the farmer's storehouse, and the thrifty merchant. Finally, more feared than
+worshipped, comes the *Beast* -- nature red in tooth and claw. Icons of this
+boar-headed giant are few and far between, but his name is frequently invoked in
+oaths, and Soot-Beast warriors have been known to take a liking to this forceful
+deity.
 
 *The God of Crafts*, whose name is now lost. Father of humanity, lover of the
 Boar-Mother, slain by her in a jealous rage. Little survives of his worship,
@@ -192,24 +204,39 @@ sired and the brother who envied him.
 *The Lion-Headed God of War*, brother of the God of Crafts. A jealous god who
 pawned his innocence to the Boar-Mother in exchange for children of his own ---
 the Soot-Beasts. He is said to have been always itching for war, and his
-creations reflect his temperament.
+creations reflect his temperament. In addition to his ancient association with battle,
+the Lion-Head is co-patron (with Might-Be, the Queen of Summer)
+of the Never-Still, who seek to restore the Faerie Realm.
+His martial temperament complements the Queen's vitality: where she
+dreams of renewal, he fights for it.
 
-*The Goddess Third*, also called Order. Daughter of Khâru and Ndang, sister of
-Night and Day. A goddess of artifice, craft, and the imposition of order upon
-chaos. She loved toys and tinkers, and when the Last War came, her creations ---
-the Clockworks --- marched alongside her. The Perfectors worship her memory and
-seek to continue her work.
+*The Goddess Third*, also called Order. Daughter of Khâru and Ndang and
+youngest sister of Day and Night --- the goddesses better known in their fey
+aspects as Might-Be and Once-Was. A goddess of artifice, craft, and the
+imposition of order upon chaos, she is the patron of Arcane magic, the most
+regular and predictable of the three magical disciplines, fit to be codified
+and taught from books. She loved toys and tinkers, and when the Last War
+came, her creations --- the Clockworks --- marched alongside her. The
+Perfectors worship her memory and seek to continue her work.
 
-*Might-Be*, the Fateweaver, also called the Glory Resplendent. A fey goddess of
-magic, fate, and beauty. She ruled the sunlit courts of Faerie and created the
-Mirrors in her image. Capricious and dazzling, she is remembered as much for
-the wonders of her realm as for its cruelties.
+*Might-Be*, the Fateweaver, Queen of Summer, also called the Glory Resplendent and, in the
+Boar-Mother's sacred text, Day. Goddess of magic, fate, and beauty; twin to
+Once-Was and elder sister to Third. She ruled the sunlit courts of Faerie and
+created the Mirrors in her image. As the ultimate adjudicator of what might
+be, she is the patron of Divine magic, and her authority is said to hold even
+the other powers in check. Capricious and dazzling, she is remembered as much
+for the wonders of her realm as for its cruelties.
 
-*Once-Was*, the Way-Knower, goddess of what is Hidden and Forgotten. Formerly
-worshipped as *Came-To-Pass*, an unerring huntress, before some unknown event
-changed her nature. She ruled the underground palaces of Faerie and was
-companion to the Shades. Of all the gods, she is perhaps the most mysterious:
-even the accounts that survive of her seem to conceal more than they reveal.
+*Once-Was*, the Way-Knower, called Night in the Boar-Mother's
+reckoning, but known to her Shades as the *Midnight Princess*. 
+Goddess of what is Hidden and Forgotten; twin to Might-Be and elder
+sister to Third. Formerly worshipped as *Came-To-Pass*, an unerring huntress,
+before some unknown event changed her nature. She ruled the underground
+palaces of Faerie and was companion to the Shades. Her domain is what was and
+what might have been, and she is the patron of Psychic magic --- the
+strangest of the three disciplines, and the one most given to bending what is
+into what was not. Of all the gods, she is perhaps the most mysterious: even
+the accounts that survive of her seem to conceal more than they reveal.
 
 ==== The Lesser Powers
 
@@ -225,10 +252,11 @@ Ferryman is said to still ply the waters of the Kethû, fishing the essences of
 newly awakened Deathless from its fog-shrouded currents. The Mortefactors revere
 him.
 
-*The Watchman*, patron of the Order of the Lantern. Associated with vigilance,
+*The Unsleeping*, the Lone Vigil, also called the Last Lamp and the Warden of
+the Door. Patron of the Order of the Lantern, associated with vigilance,
 guardianship, and the concept of escape. His followers believe the world in its
-current state is a trap --- Purgatory --- and that the Watchman holds the key to
-liberation.
+current state is a trap --- Purgatory --- and that the Unsleeping holds the key
+to liberation.
 
 *The Crown Lawgiver*, a god of law, order, and rightful dominion. Patron of the
 Dragon Slayers, who interpret his doctrine as a mandate to make the world safe
@@ -250,12 +278,6 @@ was left incomplete and should be finished.
 deep forces of the earth. The western island chain is said to be its bones, and
 the island of Dragon's Head its skull. Prayers to the World Serpent invoke its
 power over vitality and venom.
-
-*The Lion-Head*, the short form of the Lion-Headed God of War. In addition to
-his ancient association with battle, the Lion-Head is co-patron (with the
-Might-Be Queen of Summer) of the Never-Still, who seek to restore the Faerie
-Realm. His martial temperament complements the Queen's vitality: where she
-dreams of renewal, he fights for it.
 
 === The Nine Aspects
 
@@ -649,14 +671,14 @@ What follows is a description of the major factions of the Age of Ash.
 
 === The Order of the Lantern
 
-#note[*Symbol:* A stylized lantern. *Patron:* The Watchman.]
+#note[*Symbol:* A stylized lantern. *Patron:* The Unsleeping.]
 
 The Order of the Lantern is built on a single, radical theological claim: the
 world as it currently exists is *Purgatory*. Not a metaphor, not a poetic
 description of suffering, but a literal state of spiritual imprisonment. The
-Watchman, their patron, is believed to be a divine guardian who remained behind
-when the other gods died --- not to rule, but to keep vigil, holding open the
-possibility of escape for those with the wisdom to find the way.
+Unsleeping, their patron, is believed to be a divine guardian who remained
+behind when the other gods died --- not to rule, but to keep vigil, holding
+open the possibility of escape for those with the wisdom to find the way.
 
 The Lanterns, as they are commonly called, are scholars, mystics, and explorers.
 They study the nature of the Fog, the mechanics of the Deathless curse, and the
@@ -672,7 +694,7 @@ normal rules of reality. They are generally well-regarded by other factions ---
 their goals are abstract enough not to threaten anyone directly --- but their
 willingness to probe the fundamental nature of the world makes some uneasy.
 
-=== The Mortefactors, Most Ancient and Noble Order of
+=== The Most Ancient and Noble Order of Mortefactors
 
 #note[*Symbol:* A crossed scythe and bird wing under a human skull. *Patron:* The Ferryman.]
 
@@ -700,7 +722,7 @@ The Mortefactors are widely respected but not widely loved. Their work requires
 a clinical detachment that many find unsettling, and their archives contain
 secrets that some Deathless would prefer to remain forgotten.
 
-=== The Dragon Slayers, Most Fraternal and Knightly Order of
+=== The Most Fraternal and Knightly Order of Dragon Slayers
 
 #note[*Symbol:* A dragon impaled upon a spear. *Patron:* The Crown Lawgiver.]
 
@@ -897,7 +919,7 @@ going it alone is either very brave or very foolish.
   [Lantern, Order of the],
   [A stylized lantern],
   [Escaping the trap of Purgatory],
-  [The Watchman],
+  [The Unsleeping],
 
   [Listeners, The],
   [A dream-catcher with antlers],

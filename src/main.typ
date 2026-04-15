@@ -216,16 +216,21 @@ time_ to _structured time_ or vice-versa.
 Most scenes in Ashen operate on open time---characters declare their actions in
 any order, and they take as long as they need to. The time tracking resolution
 does not usually drop below the level of minutes. However, for certain scenes,
-most notably combat encounters, because the action being described usually
-happens over the course of just a few seconds, keeping even more fine-grained
-track of time is necessary. These scenes operate on _structured time_.
+the action being described unfolds quickly enough, or under enough pressure,
+that finer-grained timekeeping becomes necessary. These scenes operate on
+_structured time_.
 
 === Structured Time
-A scene using structured time is divided into *rounds*, fuzzy units of time
-representing a few seconds---enough for every participant to take their turn
-acting. The order of turns within the round is determined by each participant’s
-initiative. During their turn, under normal circumstances a character can take
-several actions, given by the amount of action points they have.
+A scene using structured time is divided into *stretches* and *rounds*. A round
+is a fuzzy unit of time representing roughly thirty seconds---enough for every
+participant to take their *turn* acting. The order of turns within the round is
+determined by each participant's initiative, and during their turn a character
+can take several actions, given by the amount of action points they have. A
+stretch is a longer unit equal to ten rounds, or about five minutes of
+in-fiction time. Combat encounters are typically run round by round; other
+tense but slower-paced scenes---picking a stubborn lock with pursuers closing
+in, creeping past a patrol, or sustaining a short ritual---are run stretch by
+stretch.
 
 ==== Initiative
 In the heat of the moment, fractions of seconds can decide between life and
@@ -255,6 +260,25 @@ take actions by spending action points; when a creature is out of action points,
 it can no longer take additional actions and must end its turn. On the start of
 its turn, a creature recovers all its spent action points. Unspent ones are
 lost---they do not carry over between turns.
+
+==== Stretches
+Some scenes are too tense to resolve in open time, but the action does not
+unfold quickly enough to merit tracking initiative and action points round by
+round. Picking a lock with the city watch closing in, sneaking through a
+patrolled corridor, sustaining a short ritual, or searching a room before its
+occupant returns are all examples. In these situations, the GM may run the
+scene in *stretches*: each stretch represents about five minutes of in-fiction
+time, or ten rounds. On each stretch, every participating character declares
+one significant action---an attempt at the lock, a careful advance, a
+contribution to the ritual---and the GM resolves them together before
+checking whether the situation has changed: a guard arrives, the spell
+completes, the door bursts open, and so on.
+
+A scene running in stretches can drop into rounds at any point, and vice
+versa. If the city watch breaks down the door mid-stretch, roll initiative and
+proceed in rounds; once the fight ends, the surviving characters might shift
+back into stretches to pursue a fleeing enemy or stabilize a wounded ally
+before the scene loosens out into open time.
 
 === Intermissions
 

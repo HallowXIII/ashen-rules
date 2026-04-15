@@ -2,6 +2,149 @@
 
 = GM Guide
 
+== Pacing and Time
+
+The rulebook describes three resolutions at which Ashen tracks time: open
+time, where minutes and hours pass between meaningful actions; stretches,
+where roughly five minutes pass between each significant choice; and rounds,
+where every action is counted in seconds and action points. As the GM, you
+decide which resolution a scene runs at, and---more importantly---when to
+switch between them. The right choice is rarely about realism; it is about
+where the table's attention should sit. Open time gives the players narrative
+latitude; stretches put a clock on a tense situation without dragging it into
+turn-by-turn bookkeeping; rounds let every second matter when lives are on
+the line.
+
+The sections that follow offer guidance on each resolution and on the seams
+between them.
+
+=== Stretches: Keeping Pressure On
+
+Stretches shine in scenes where two sides are acting in parallel and neither
+side has yet noticed the other---or where they have noticed but the
+confrontation has not yet snapped into violence. Players moving through a
+guarded dungeon, breaking into a townhouse before the city watch comes around
+the corner, lifting a relic from a dragon's hoard while the dragon dozes: in
+all of these, the question is not "who hits whom first" but "do the players
+finish what they came to do before the other side reacts?"
+
+To run a scene in stretches, sketch the opposition as a parallel track to the
+players' actions. The watch patrol is six stretches away from the front door.
+The dragon stirs and lifts its head on a 1 in 6, rolled at the start of every
+stretch. The ritual the players are interrupting completes in four stretches
+unless they disrupt it. Then, on each stretch:
+
+- Each player declares a single significant action and rolls for it.
+- You advance every parallel clock by one stretch and resolve any triggered
+  events (the patrol turns the corner, the dragon opens an eye, the ritual
+  reaches its next phase).
+- You describe the new state of the scene, including any sensory cues the
+  players' characters would notice---torchlight bobbing closer down the
+  corridor, the dragon's breathing changing pitch.
+
+Stretches are particularly good at giving players agency over the costs of
+their plan. Sneaking past the patrol takes longer than sprinting past it, but
+sprinting risks being heard. Picking the lock carefully takes three
+stretches; forcing it takes one but leaves obvious damage. The stretch makes
+these trade-offs concrete without requiring you to adjudicate them in
+seconds.
+
+=== Rounds: When to Drop In, When to Skip
+
+A scene running in stretches can collapse into rounds at any point, and a
+scene that begins in rounds can dissolve back into stretches once the
+immediate threat is past. The transition is always the GM's call, and the
+trigger is almost always the same: the resolution of a single second now
+matters. The dragon's eye opens. The watch sergeant draws steel. The
+ritual's final syllable hangs in the air.
+
+When you cross that line, call for initiative. The default is to roll
+initiative once per encounter---each combat scene gets a fresh order, with
+fresh circumstances reflected in modifiers and surprise. This keeps the
+initiative roll meaningful: characters who have invested in Initiative are
+rewarded every time the dice come out, and the order at the table reshuffles
+with each new threat.
+
+For some scenes, especially small dungeons or fast-moving chases where
+encounters come quickly one after another, you may prefer to roll initiative
+once for an entire act and reuse it across every combat in that act. This
+keeps the table moving and avoids interrupting momentum with bookkeeping.
+The cost is real, though: characters built around initiative---scouts,
+duellists, gunslingers---lose most of their opportunity to shine, because
+their advantage is paid for once and amortized across every fight. A
+reasonable compromise is to roll once per act for routine encounters and
+re-roll for set-piece battles, signalling to the table that the next fight
+matters more than the last one.
+
+A combat scene need not end by snapping all the way back to open time. If
+the characters cut down the last cultist but the alarm bell is ringing in
+the next tower, drop back into stretches: each stretch, the surviving
+characters declare an action---bar the door, search the bodies, drag the
+wounded priestess to cover---while the reinforcements close in. Only when
+the last clock has run out, or the players have decisively escaped or won,
+should the scene dissolve into open time.
+
+=== The GM's Clock
+
+Whatever resolution a scene is running at, the GM is also tracking the world
+around the players. Torches burn down. Spells expire. Wandering threats
+roam. Weather turns. Ritual circles pulse and dim. The GM's clock is the set
+of regular checks you make to keep the world breathing, and the cadence of
+those checks should match the resolution of the scene.
+
+In stretches, a 1-in-6 check at the start of each stretch handles most
+short-term hazards: a guard happens by, the torch gutters in a draft, the
+fog thickens in the room. Use a d6 in plain view at the table when you want
+the players to feel the pressure; roll it behind the screen when you want
+the threat to be ambient rather than explicit.
+
+In rounds, the GM's clock is mostly handled by the duration fields on
+ongoing effects (the bleed lasts three rounds, the smoke clears after
+five), but you may still want a heartbeat---a chant from the next room
+growing louder each round, a structural beam groaning, a portal slowly
+closing. Announce these at the top of each round so the players can react
+to them.
+
+In open time, the clock runs slower and broader. A wandering monster check
+each in-fiction hour, a weather check each morning, a check for whether
+news of the players' last exploit has caught up to them each time they
+enter a new settlement. The principle is the same as in stretches: regular,
+predictable checks turn the world into a system the players can plan
+against, rather than a series of GM-fiat surprises.
+
+=== The Long View
+
+The same logic that makes stretches useful at the scale of minutes can be
+applied at the scale of hours, days, or hundreds of miles. If the party is
+crossing the high road by skimmer at thirty miles an hour, a stretch is
+absurd---five minutes of skimmer travel is a featureless straight line. But
+the underlying procedure still works: pick a unit of travel that contains
+about one meaningful decision, advance it one tick at a time, and roll your
+GM's clock against each tick.
+
+For wilderness travel by skimmer or mount, a tick of one to two hours, or
+fifty to a hundred miles, is usually about right. On each tick:
+
+- The party covers their travel distance and the GM describes anything they
+  pass that warrants attention.
+- The GM rolls for weather changes, vehicle malfunctions, and random
+  encounters appropriate to the terrain.
+- The party may declare an action that takes the full tick---scanning the
+  horizon for pursuit, attempting to repair a stressed engine, hunting for
+  game---and roll for it.
+
+For longer expeditions---a week-long march through the Sand Wastes, a
+month-long voyage across the Western Islands---the tick can stretch to a
+day or more. The same three steps still apply, only the scale of the events
+they trigger changes: instead of weather, it is supply attrition; instead
+of a random encounter, it is a sickness, a desertion, or a rumour
+overtaking the party from behind.
+
+The result, at every scale, is the same texture: the world acts on a clock
+the players can hear ticking, the players act with full knowledge of the
+trade-offs, and the GM never has to invent pressure on the fly because the
+pressure was always already in the schedule.
+
 == Designing Creatures
 
 This section provides guidelines for creating enemy creatures for use in combat encounters. Creatures in Ashen use the same mechanical framework as player characters: they have attributes, characteristics, derived statistics, equipment (or natural equivalents), and powers.

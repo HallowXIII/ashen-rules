@@ -390,7 +390,7 @@
 ]
 
 #let note(info) = [
-  #v(1em)
+  #v(0.5em)
   #box(
     fill: rgb("#e2d7d3"),
     inset: 7pt,

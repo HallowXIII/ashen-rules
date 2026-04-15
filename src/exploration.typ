@@ -161,8 +161,7 @@ across most of the world outside the Clears. Magicsense functions normally.
 *Dense Fog:* The Fog is constantly roiling and produces magical effects. These
 areas are rife with monsters and supernatural phenomena. Visibility is reduced to
 short range at best, imposing heavy concealment beyond 5 squares. Only the
-Fogborn — humans mutated over generations of exposure, recognizable by their
-heterochromatic eyes (one always yellow) and various small deformities — can live
+Fogborn — humans mutated over generations of exposure — can live
 here long-term without suffering ill health. Navigation is difficult; unshielded
 technological and magical navigation aids are subject to interference, and
 Eerie and Occultism checks take a -2d penalty due to the overwhelming ambient
@@ -211,6 +210,8 @@ Adequate protection — such as warding rituals, sealed magitek armor, or
 Fog-shielded vehicles — can delay or prevent these effects at the GM's
 discretion.
 
+#colbreak()
+
 === Mist Creatures
 
 The Fog spontaneously generates creatures from raw magical energy. These Mist
@@ -236,6 +237,104 @@ The Fogborn are often looked down upon by the unmutated races, especially other
 mortals. The Deathless tend to treat them no differently from ordinary mortals,
 though some may be ideologically motivated to do otherwise. Fogborn cannot become
 Deathless and are not available as a player ancestry.
+
+=== Fog Effects
+
+The Fog is restless even within a single density band. The following tables
+provide rollable events for areas of Light, Dense, and Extreme Fog. Roll 2D6
+on the table appropriate to the prevailing density --- once per day of
+overland travel, once per stretch in a particularly active area, or simply
+when the scene calls for an injection of strangeness. Many entries reference
+the exposure rules and the density definitions above; severe effects do not
+stack with the underlying density's standing penalties unless the entry says
+otherwise.
+
+#page(
+columns: 1,
+[==== Light Fog
+
+#pftab(
+  "Light Fog Effects",
+  columns: 2,
+  align: (center, left),
+  [*2D6*], [*Effect*],
+  [2], [A dense pocket coalesces. The area is treated as Dense Fog for the
+    next hour, including its visibility, navigation, and exposure rules.],
+  [3--5], [Wisps gather into a minor Mist Creature appropriate to the
+    region. A small encounter ensues.],
+  [6--8], [Ambient. A faint shimmer at the edge of vision and the taste of
+    iron in the air. No mechanical effect.],
+  [9--11], [A brief anomaly --- a sourceless chime, a gust of unfelt wind,
+    a momentary chill, a fleeting smell of something burning. Flavor only,
+    but the GM may have it foreshadow a later event.],
+  [12], [A Fog-touched curiosity surfaces in a character's path: a lost
+    trinket, a withered flower out of season, a scrap of paper in an
+    unknown script. The GM decides what it is and whether it persists once
+    carried out of the Fog.],
+)
+
+==== Dense Fog
+
+#pftab(
+  "Dense Fog Effects",
+  columns: 2,
+  align: (center, left),
+  [*2D6*], [*Effect*],
+  [2], [Extreme Fog spike. For the next hour, conditions worsen to Extreme
+    Fog --- visibility, navigation, malfunction risk, and exposure clock
+    all apply.],
+  [3--4], [A Mist Creature appropriate to the region attacks.],
+  [5--6], [Distorting currents. Distances shift and landmarks slip;
+    Investigate checks for navigation take a --2d penalty until the party
+    leaves the area, in addition to any standing modifiers.],
+  [7--8], [Sensory bleed. Whispers from no mouth, half-glimpsed figures at
+    the edge of sight, the smell of smoke or rot that no one can place.
+    Each character must succeed on a Grit check (difficulty 5) or become
+    Frightened of the Fog itself for one stretch.],
+  [9--10], [Time slip. An hour passes in what feels like minutes, or the
+    reverse. The GM decides which and adjusts overland travel, exposure
+    clocks, and any active ritual or spell durations accordingly.],
+  [11], [A momentary thinning. The Fog lifts to Light density for one
+    stretch, granting clear sight and a brief window of safe rest.],
+  [12], [Fog-mark. One character (GM's choice, or randomly determined) is
+    briefly attuned: until they leave the Dense Fog, they take +1d on
+    Eerie checks but accumulate Fog exposure at twice the usual rate.],
+)
+
+==== Extreme Fog
+
+#pftab(
+  "Extreme Fog Effects",
+  columns: 2,
+  align: (center, left),
+  [*2D6*], [*Effect*],
+  [2], [Reality breach. A section of terrain rewrites itself. The party
+    finds themselves somewhere they were not, with no memory of how they
+    arrived. The GM decides where, and whether anything has been left
+    behind or taken with them.],
+  [3--4], [An apex Mist Creature notices the party. It need not engage at
+    once, but it has marked them, and will pursue or set an ambush at the
+    GM's discretion.],
+  [5--6], [Magitek and ritual interference. Active magitek devices spark
+    and must be manually restarted; ongoing rituals and concentration
+    powers must succeed on a difficulty 6 check or end. For the next hour,
+    EP may not be spent to recover Focus.],
+  [7--8], [Wild magic surge. The next power or spell cast by any character
+    in the party triggers an additional, GM-improvised effect (a target
+    swapped, a colour changed, an unbidden answer to an unasked question,
+    a brief duplication of the caster).],
+  [9--10], [Vision. One character glimpses a fragment they cannot place: a
+    memory not their own, a place that may not exist, a face they will
+    meet later. The GM may use this to seed plot or simply leave it
+    unresolved.],
+  [11], [A pocket of Light Fog opens, briefly habitable. The party may rest
+    safely for one stretch before the Extreme Fog reasserts itself; this
+    counts as a short rest if they choose to take one.],
+  [12], [A Fog-marked artifact emerges from the mist, half-real and ready
+    to be claimed. It dissolves the moment its bearer leaves the Extreme
+    Fog, unless they succeed on a Ritual check (difficulty 9) to anchor it
+    to the world.],
+)])
 
 == Weather
 
@@ -430,6 +529,40 @@ Exhaustion can result from forced marches, sleep deprivation, environmental
 exposure, or running out of resources. The Exhausted condition (-2d on all
 checks, half movement speed) persists until the character completes a rest.
 
+=== Suffocation and Drowning
+
+A character with functioning lungs can hold their breath for a number of
+rounds equal to their Stamina rating. Strenuous activity --- combat,
+swimming, climbing, casting --- halves this duration. For longer-form scenes
+resolved in stretches, count each stretch as ten rounds for the purpose of
+this duration.
+
+When a character's held breath runs out, or when they are otherwise deprived
+of breathable air --- drowning, poison gas without protection, vacuum,
+magical asphyxiation, a cord around the throat --- they begin suffocating.
+At the start of each round they continue to lack air, they take damage equal
+to 25% of their maximum HP and gain the Exhausted condition. When their HP
+reaches 0 from suffocation damage, they die normally; a Deathless character
+may revive as usual, but a Deathless who revives while still without air
+takes another 25% damage on their next round.
+
+A character who is plunged into water or suffocating gas while Surprised,
+Stunned, or otherwise unable to consciously hold their breath begins
+suffocating immediately, with no breath-holding period. A character who
+inhales water --- typically the result of a failed swimming check or having
+a regulator forcibly removed --- skips directly to suffocation damage on
+their next round.
+
+A character who reaches breathable air before reaching 0 HP recovers their
+ability to breathe at once. After one round of normal breathing they may
+begin holding their breath again from the full duration. Damage taken from
+suffocation is healed by ordinary means.
+
+Clockworks ignore these rules entirely; see _Races and the Environment_,
+below. Characters under the effect of water-breathing or
+atmosphere-providing magic are likewise exempt for the duration of the
+effect.
+
 === Essence as a Survival Resource
 
 Essence Points (EP) are the fundamental resource that limits Deathless
@@ -440,6 +573,147 @@ and scarce consumable items are the only way to accelerate this recovery.
 Managing EP is the central survival challenge: a party that burns through EP in
 combat may lack the resources to revive fallen members or recover from injuries
 during travel.
+
+== Races and the Environment
+
+Each playable race interacts with the wilderness on different terms. The rules
+below override or supplement the standard exploration rules where the two
+conflict; in all other respects, the preceding sections apply normally. See
+each race's trait block in the Characters chapter for the combat- and
+skill-relevant features that complement these environmental quirks.
+
+=== Humans
+
+*Children of the Earth.* When taking a long rest in cultivated or living land
+--- fields, forests, orchards, gardens, healthy wilderness --- a human
+recovers at the standard rate. In barren waste, ash zones, ruined ground, or
+Dense or Extreme Fog, a human recovers from a long rest at half the usual
+rate. The Boar-Mother sustains those who rest in her domain.
+
+*Adapted Stock.* Fog Exposure thresholds (see _Fog Exposure_, above) are
+doubled for humans. A human in Dense Fog reaches the one-week exhaustion
+check at two weeks, the one-month disease threshold at two months, and so on;
+Extreme Fog timers double similarly. This is why the Fogborn are exclusively
+human: only human biology can endure the Fog long enough to be transformed by
+it.
+
+=== Clockworks
+
+Clockwork characters interact with the wilderness on terms quite different
+from those of flesh-and-blood adventurers. They sidestep the majority of the
+hazards covered in the preceding sections, but they have a parallel set of
+weaknesses that biological characters never face.
+
+==== What Clockworks Need Not Fear
+
+The *Construct* racial trait already establishes that clockworks do not eat,
+breathe, or sleep, and are immune to poison and disease. In wilderness terms:
+
+- *Hunger and thirst:* not tracked. A clockwork cannot be Exhausted by
+  deprivation, and the starvation rules do not apply.
+- *Sleep:* a clockwork can keep watch indefinitely, and may take an entire
+  night's watch alone without penalty. They still benefit from short and
+  long rests by entering a low-power maintenance mode for the appropriate
+  duration; the recovery rules apply normally.
+- *Atmosphere:* immune to poison gas, smoke inhalation, and the suffocation
+  rules. A clockwork does not drown, though a submerged one cannot
+  necessarily move freely and may need to be retrieved.
+- *Heat and cold:* unaffected by ambient temperature within the range that
+  biological characters can endure at all. The Tropical climate's
+  "Sweltering heat" does not impose its Exhaustion clock on them; freezing
+  weather does not slow them. Only direct contact with fire, lava,
+  supernatural cold, or sustained immersion in such environments deals
+  damage in the usual way.
+- *Disease:* immune to diseases of biological origin. Magical curses and
+  Fog-induced afflictions affect them normally unless the specific effect
+  says otherwise.
+
+==== What Clockworks Must Fear
+
+In exchange for these immunities, clockworks face hazards that biological
+characters either ignore entirely or shrug off without thought.
+
+*Magnetic Interference.* Strong magnetic fields disrupt the delicate
+circuitry that drives a clockwork's mechanism. Such fields are found near
+unshielded magitek power plants, in the shadow of certain ruined industrial
+sites, and during the magnetic storms that occasionally roll through Dense
+Fog regions.
+
+- *Moderate field:* --1d to all checks while in the field.
+- *Strong field:* --2d to all checks; at the start of each round of exposure,
+  the clockwork must succeed on a Grit check (difficulty 5) or be Stunned
+  until the end of its next turn.
+- *Severe field:* --3d to all checks; on a failed Grit check, the clockwork
+  shuts down for one stretch and must be carried clear. A successful Shop
+  check (difficulty 6) by an ally can stave off the next failure.
+
+*Particulate Hazards.* Sandstorms, ash fall, silt-laden air, and the interior
+of certain ruined factories deposit superfine particles that work their way
+into joints and gears. After 4 hours of exposure without adequate sealing, a
+clockwork takes --1d on physical checks; this penalty accumulates by another
+--1d every 4 hours, to a maximum of --3d. The penalty is removed by 1 hour of
+dedicated maintenance per --1d incurred (a Shop check, GM's discretion), or
+by a long rest in a clean environment. Sealed face plates, oiled joint
+covers, and similar gear extend the time before the first penalty applies.
+
+*Fog Sensitivity.* Clockworks are themselves a form of magitek, and they
+react to elevated Fog densities much more strongly than mortals or Deathless.
+Fog Exposure thresholds are halved for clockworks --- the inverse of humans.
+In addition, at the start of each stretch spent in Dense or Extreme Fog, the
+clockwork must succeed on a Grit check (difficulty 5 in Dense Fog, difficulty
+7 in Extreme Fog) or suffer a malfunction: the clockwork is Stunned until the
+end of its next turn, or, at the GM's option, suffers a randomly determined
+minor effect (a stuck servo, a spell capacitor misfire, a limb that briefly
+ceases to obey).
+
+=== Soot-Beasts
+
+*Hardier Stock.* Soot-Beasts take only half the usual penalty from heat or
+cold weather effects, forced marches, and sleep deprivation. Their
+bred-for-battle resilience carries them through the wilderness as it does
+through campaigns.
+
+*Reduced Supply Needs.* Hunger and thirst clocks tick at half the usual rate
+for a Soot-Beast; they need food and water roughly every other day, and can
+go on short rations for twice as long as other races before suffering
+penalties.
+
+*Tainted Flesh.* The Soot-Beasts' close ancestral link to the Boar-Mother
+makes them a natural breeding ground for disease and a poor host for poisons.
+Difficulty checks to resist disease are made at +2 difficulty against
+Soot-Beasts. Poison damage against a Soot-Beast is increased by 50%, and
+ongoing poison effects last one round longer than usual.
+
+=== Echoes
+
+*Sustained by Magic.* In areas of Light Fog or denser, Echoes need no food or
+water --- ambient magic suffices. In Clears, they eat and drink at the
+standard mortal-grade rates.
+
+*Cold Iron Sensitivity.* Cold-iron weapons deal 50% more damage to Echoes,
+and cold-iron restraints cannot be escaped via Fey Jaunt or any other
+short-range teleportation effect.
+
+#note[*Cold Iron* is iron worked entirely without forge fire --- cold-hammered
+into shape through ritual percussion, or drawn from meteoric sources that
+never melted in any human furnace. It is brittle, expensive to produce, and
+useless against modern armor. Its only practical
+application in the Age of Ash is as a fey-bane: shotgun slugs, restraints,
+ritual blades, and hunter's daggers specifically intended to harm or hold
+Echoes. Anti-fey orders, certain Mortefactors, and Echo-hunting bounty crews
+keep small caches; few others bother. A cold-iron weapon is typically a small
+backup item, drawn only when an Echo is the target, and using it typically
+requires aiming for an unarmored spot on the victim's body.]
+
+*Fog-Fragile.* Fog Exposure thresholds are halved for Echoes --- the inverse
+of humans. The raw, undirected Fog is hostile to fey beings whose realms it
+destroyed.
+
+*Children of Day.* (Mirrors only.) A Mirror gains +1d on Endurance checks
+while in direct sunlight.
+
+*Children of Night.* (Shades only.) A Shade gains +1d on Endurance checks
+while in dim light or darkness.
 
 == Currency and Economy
 
