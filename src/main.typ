@@ -323,40 +323,184 @@ terms. Character options are listed later in dedicated chapters.
 
 To get started playing Ashen, you must create your player character. As a first
 step, think about the general concept of your character: do you wish to play a
-sly rogue, a bookish scholar, or maybe a battle-hardened veteran?
+sly rogue, a bookish scholar, or maybe a battle-hardened veteran? Your concept
+will guide every choice that follows --- the race you pick, the attributes you
+prioritize, and the advances you buy should all serve a coherent idea of who
+your character is and how they fight.
+
+#attention[
+  A word of warning: the advance system gives you a great deal of flexibility,
+  but a character who spreads their resources too thinly will struggle compared
+  to one who commits to one or two strengths. Decide early what your character
+  is _good at_ and invest accordingly. You can always broaden later; you
+  cannot easily recover from a weak foundation.
+]
 
 Once you have made up your mind on what kind of character you wish to play, you
 can use the following sequence of steps to convert your concept into a
 fully-fledged Ashen character:
+
 === 1. Pick a Race
 
-The first step is to pick your character’s race. Your character’s race indicates
-a lot about their history and origin. It also sets your basic physical traits
-and grants you access to race-specific powers – choose wisely!
+The first step is to pick your character’s race. Your race determines your
+starting racial traits --- innate powers and abilities that define how your
+character interacts with the world. Some races are better suited to certain
+roles than others: Ironhand Clockworks make natural heavy fighters, Porcelains
+are gifted arcanists, Echoes are mobile and elusive, Soot-Beasts are
+resilient brawlers and commanders, and Humans have a unique relationship with
+magic and the divine. Read the _Races_ chapter for full descriptions of each
+race and subtype.
 
 === 2. Determine Attributes
-When you have picked your race, pick three of your attributes (see _Attributes
-and Characteristics_) to start at 2. The rest start at 1.
+
+Every character has ten attributes, each starting at rank 1. Choose *three*
+attributes to raise to rank 2. These initial choices shape your character’s
+strengths for the early game and influence which characteristics and skills
+you will excel at.
+
+When choosing attributes, consider which characteristics matter most for your
+concept. Each characteristic is derived from two attributes (see _Attributes
+and Characteristics_), so raising an attribute that feeds multiple
+characteristics you care about is more efficient than spreading your choices.
+Some examples:
+
+- A melee combatant might raise *Strength* (Martial, Stamina), *Endurance*
+  (Speed, Stamina, Grit), and *Agility* (Dodge, Speed).
+- An arcane caster might raise *Attunement* (Arcane, Potential),
+  *Intelligence* (Arcane, Initiative), and *Will* (Potential, Grit).
+- A divine caster or commander might raise *Presence* (Command),
+  *Will* (Potential, Grit), and *Endurance* (Stamina, Speed, Grit).
+- A marksman or scout might raise *Dexterity* (Marksmanship),
+  *Perception* (Marksmanship, Dodge), and *Agility* (Dodge, Speed).
 
 === 3. Allocate Skill Points
-Every character begins with *10 skill points (SP)* to spend on their skills.
-You can use SP to learn trained skills (1 SP each) and improve any skill's rank.
-See the _Skills_ chapter for the full cost table.
+
+Every character begins with *11 skill points (SP)* --- 10 base, plus 1 from
+your starting 1000 XP. Skill points are spent to learn trained skills (1 SP
+to learn, granting rank 1) and to improve any skill’s rank further (cost
+equal to the rank you are reaching: 1 SP for rank 2, 2 SP for rank 3, and
+so on). See the _Skills_ chapter for the full cost table and skill
+descriptions.
+
+At character creation, you will typically want to learn 3--5 trained skills
+and raise one or two of your most important skills to rank 2 or 3. A few
+guidelines:
+
+- Every character benefits from at least one social skill (Persuasion,
+  Deception, or Intimidation) and one awareness skill (Observation or
+  Investigation).
+- Combat characters should consider investing in Athletics or Acrobatics for
+  mobility.
+- Casters should invest in the skill that matches their casting tradition:
+  Ritual for arcane, Occultism for divine, and either for psychic.
+- The Piloting skill is useful if your campaign involves vehicles.
 
 === 4. Buy Advances
-Every character starts with some number of experience points (1000 at the
-beginning of the game) representing their previous combat experience and
-training. You can spend these points to improve your stats and learn combat
-powers.
+
+Every character starts with *1000 experience points (XP)* representing their
+previous combat experience and training. You spend XP during character
+creation (and later, during intermissions) to purchase *advances* --- permanent
+improvements to your statistics and abilities.
+
+Each advance costs a certain amount of XP and grants HP, FP, or both, in
+addition to its specific benefit. Advances are organized by tier; at character
+creation, you will be purchasing Tier 1 advances. Some advances have
+prerequisites --- other advances, minimum characteristic ratings, or both ---
+so plan your build with an eye toward what you want to unlock later.
+
+Your first advances should establish your character’s core role:
+
+- *Melee fighters* will want one or more Exploit advances to gain martial
+  powers, and may want advances that improve their Martial or Dodge
+  characteristics.
+- *Ranged fighters* similarly benefit from Exploit advances (for
+  marksmanship exploits) and characteristic improvements.
+- *Arcane casters* need Spell Memory I to prepare and cast Tier 1 spells.
+  Without this advance, you cannot cast arcane spells at all. You will
+  also need to acquire at least one spell to prepare (see _Arcane Spells_
+  under Basic Rules).
+- *Divine casters* need a reliquary (purchased in step 5) to access
+  prayers. Advances that improve Command help with favor checks and
+  prayer casting.
+- *Psychic characters* need one or more Discipline advances to gain
+  psychic powers.
+- *Commanders* benefit from Command advances that grant command powers
+  for supporting allies.
+
+You are unlikely to spend all 1000 XP during character creation --- and that
+is normal. Unspent XP carries forward and can be spent at the next
+intermission, when higher-tier advances and new powers become available.
 
 === 5. Buy Equipment
-Each character begins the game with #feathers 500 that can be used to buy gear and
-items for your character. Consult the _Equipment Tables_ section for prices.
 
-=== 6. Finishing Details
-Once you have completed all the above steps, you can complete your character
-sheet by calculating your character’s statistics, which all depend on the
-choices made in previous sections.
+Each character begins the game with *#feathers 500* to spend on starting
+equipment. At minimum, you will need:
+
+- A *weapon* appropriate to your fighting style (melee, ranged, or both).
+- *Armor* suitable to your build (light for mobile characters and casters,
+  medium for a balance of protection and mobility, heavy for frontline
+  fighters).
+- A *catalyst* (if you cast arcane or psychic powers) or a *reliquary*
+  (if you cast divine prayers). Without the appropriate implement, you
+  cannot cast.
+- Basic *gear*: a pack, rope, a light source, and any tools relevant to
+  your skills (a healer’s kit, a climbing kit, an alchemy kit, etc.).
+
+Consult the _Equipment Tables_ section for prices and statistics. At
+#feathers 500, you can afford a full Tier 1 kit with some feathers left
+over for consumables and sundries, or a partial Tier 2 kit if you are
+willing to skimp elsewhere. You will earn more feathers through missions and
+loot as the game progresses.
+
+#attention[
+  Arcane casters: remember that you need at least one *spell* to prepare.
+  Your starting budget can be used to purchase a spell from a local caster
+  or a spell scroll, if the GM makes one available. Discuss this with your
+  GM during character creation.
+]
+
+=== 6. Calculate Statistics
+
+Once you have completed all the above steps, calculate your character’s
+derived statistics. All of these follow directly from the choices you have
+already made:
+
+- *Hit Points (HP):* 10 + HP gained from advances.
+- *Focus Points (FP):* 10 + FP gained from advances.
+- *Movement Speed:* 2 + your Speed rating.
+- *Evasion:* Half your Dodge rating (rounded down), modified by armor.
+- *Action Points (AP):* 4 (for almost all characters).
+- *Essence Points (EP):* 10 + 1 per 1000 cumulative XP (11 at creation).
+- *Bulk Capacity:* Equal to your Stamina rating.
+- *Charge Capacity:* Equal to your Potential rating.
+
+Verify that your equipped items do not exceed your Bulk or Charge capacity.
+Record your weapon damage, armor values, and any other equipment-derived
+numbers on your character sheet.
+
+=== 7. Finishing Touches
+
+Finally, give your character a name, a brief history, and a reason to
+adventure. Every player character is a *Deathless* --- an immortal veteran
+of the Last War, cursed to walk the world until they lay their regrets to
+rest. Consider:
+
+- Which *faction* does your character belong to, or are they unaligned?
+  Factions provide patrons, mission opportunities, and social connections.
+- What does your character *remember* of the Last War? Most Deathless
+  remember little or nothing --- but fragments surface, and those
+  fragments shape who they are.
+- What drives your character *forward*? Deathless cannot truly die, so
+  survival alone is not enough. What goal, grudge, or unanswered question
+  keeps them moving?
+- What *keepsake* does your character carry? Most Deathless have at least
+  one object from their forgotten past --- a weathered medal, a key to an
+  unknown door, a faded portrait, a weapon with an unfamiliar name
+  engraved on the blade, a letter in a language they no longer read. The
+  character probably does not remember what it represents, or why they
+  cannot bring themselves to discard it. Work with your GM to choose a
+  keepsake; it may become a thread the GM can weave into the story, giving
+  the character clues to who they were before the War took their memories.
 
 
 == Basic Rules and Common Terms
