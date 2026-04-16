@@ -230,7 +230,8 @@ Daggers and knives are Light weapons, easily concealed and quick to draw. Most h
 
 #pftab(
   "Daggers and Knives",
-  columns: 9,
+  columns: (3fr,) + (1fr,) * 7 + (2fr,),
+  breakable: true,
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
   [Old War Dagger], [0], [_#feathers 0_], [2+D6], [0], [½ (L)], [1], [2], [Sidearm],
   [Heat Knife], [1], [_#feathers 150_], [6+D3], [0], [½ (L)], [1], [3], [Sidearm, Burning],
@@ -244,7 +245,8 @@ The standard melee weapon for most combatants. One-handed swords leave a hand fr
 
 #pftab(
   "One-handed Swords",
-  columns: 9,
+  columns: (3fr,) + (1fr,) * 7 + (2fr,),
+  breakable: true,
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
   [Old War Longsword], [0], [_#feathers 0_], [4+D4], [0], [1 (M)], [1], [3], [],
   [Lantern Force Sword], [1], [_#feathers 300_], [5+D8], [0], [½ (L)], [1], [3], [Force],
@@ -264,7 +266,8 @@ Two-handed swords and similar large bladed weapons sacrifice versatility for raw
 
 #pftab(
   "Two-handed Blades",
-  columns: 9,
+  columns: (3fr,) + (1fr,) * 7 + (2fr,),
+  breakable: true,
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
   [Old War Greatsword], [0], [_#feathers 0_], [4+D6], [0], [2 (H)], [2], [4], [],
   [Construct Chainsword], [1], [_#feathers 500_], [6+D12], [0], [2 (H)], [1], [5], [Chain, Powered],
@@ -277,7 +280,8 @@ Hammers, maces, and similar bludgeoning weapons deal *Impact* damage rather than
 
 #pftab(
   "Blunt Weapons",
-  columns: 9,
+  columns: (3fr,) + (1fr,) * 7 + (2fr,),
+  breakable: true,
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
   [Old War Greathammer], [0], [_#feathers 0_], [6+D3], [0], [2 (H)], [2], [4], [],
   [Argent Disruptor], [2], [_#feathers 800_], [9+D8], [0], [1½ (M)], [1], [5], [Disrupting],
@@ -289,7 +293,7 @@ Polearms are long-hafted weapons --- spears, lances, halberds --- that grant the
 
 #pftab(
   "Polearms",
-  columns: 9,
+  columns: (3fr,) + (1fr,) * 7 + (2fr,),
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
   [Old War Spear], [0], [_#feathers 0_], [5+D3], [0], [2 (M)], [2], [3], [Reach 2],
   [Kazykly], [6], [_Unique_], [29+2D12], [0], [3 (H)], [1], [18], [],
@@ -301,7 +305,8 @@ Gauntlets are fist-mounted weapons --- powered gloves, cestus, and similar devic
 
 #pftab(
   "Gauntlets",
-  columns: 9,
+  columns:  (3fr,) + (1fr,) * 7 + (2fr,),
+  breakable: true,
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
   [Lantern Impulse Gauntlet], [1], [_#feathers 200_], [4+D6], [0], [¼ (L)], [1], [3], [],
 )
@@ -314,20 +319,20 @@ Conventional firearms propel solid projectiles using chemical propellants or com
 
 #pftab(
   "Conventional Firearms",
-  columns: 11,
+  columns: (4fr,1fr,2fr,2fr,1fr,1fr,1fr,1fr,1fr,1fr,3fr),
   breakable: true,
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Inc*], [*Special*],
-  [Old War Pistol], [0], [_#feathers 0_], [1+D4], [0], [½ (L)], [1], [Short], [S], [2], [Sidearm],
-  [Old War Rifle], [0], [_#feathers 0_], [3+D3], [0], [1 (M)], [2], [Medium], [S], [3], [],
-  [Silent Killer], [1], [_#feathers 200_], [8+D3], [0], [1 (M)], [1], [Medium], [S], [4], [],
-  [Lantern Autopulse Rifle], [1], [_#feathers 350_], [5+D8], [0], [1 (M)], [2], [Long], [SA 3], [4], [Rapid Fire],
-  [Nightpiercer], [1], [_#feathers 450_], [11+D3], [0], [2 (H)], [2], [Very Long], [S], [5], [Heavy],
-  [Alchymic Double Barrel], [2], [_#feathers 800_], [15+D6], [0], [2 (M)], [1], [Short], [S], [5], [],
-  [Perfector Mk IV Suppressed Rifle], [2], [_#feathers 1000_], [15+D6], [0], [1 (M)], [2], [Very Long], [S], [5], [Reliable],
-  [Dragon Gun], [2], [_#feathers 1500_], [20+D6], [0], [2½ (H)], [2], [Very Long], [S], [5], [Heavy],
-  [Jet Black Pistol], [3], [_#feathers 1800_], [11+D4], [0], [1 (L)], [1], [Long], [S], [6], [Sidearm],
-  [Irradiated Battle Rifle], [3], [_#feathers 2800_], [12+D10], [0], [2 (M)], [2], [Long], [SA 3], [7], [Irradiated],
-  [Poynting Rad-Fleche], [5], [_#feathers 10000_], [5+2D10], [12], [2 (L)], [1], [Short], [SA 3], [13], [Sidearm, Irradiated],
+  [Old War Pistol], [0], [_#feathers 0_], [1+D4], [0], [½ (L)], [1], [S], [S], [2], [Sidearm],
+  [Old War Rifle], [0], [_#feathers 0_], [3+D3], [0], [1 (M)], [2], [M], [S], [3], [],
+  [Silent Killer], [1], [_#feathers 200_], [8+D3], [0], [1 (M)], [1], [M], [S], [4], [],
+  [Lantern Autopulse Rifle], [1], [_#feathers 350_], [5+D8], [0], [1 (M)], [2], [L], [SA 3], [4], [Rapid Fire],
+  [Nightpiercer], [1], [_#feathers 450_], [11+D3], [0], [2 (H)], [2], [VL], [S], [5], [Heavy],
+  [Alchymic Double Barrel], [2], [_#feathers 800_], [15+D6], [0], [2 (M)], [1], [S], [S], [5], [],
+  [Perfector Mk IV Suppressed Rifle], [2], [_#feathers 1000_], [15+D6], [0], [1 (M)], [2], [VL], [S], [5], [Reliable],
+  [Dragon Gun], [2], [_#feathers 1500_], [20+D6], [0], [3 (H)], [2], [VL], [S], [5], [Heavy],
+  [Jet Black Pistol], [3], [_#feathers 1800_], [11+D4], [0], [1 (L)], [1], [L], [S], [6], [Sidearm],
+  [Irradiated Battle Rifle], [3], [_#feathers 2800_], [12+D10], [0], [2 (M)], [2], [L], [SA 3], [7], [Irradiated],
+  [Poynting Rad-Fleche], [5], [_#feathers 10000_], [5+2D10], [12], [2 (L)], [1], [S], [SA 3], [13], [Sidearm, Irradiated],
 )
 
 ==== Plasma Weapons
@@ -338,7 +343,7 @@ Plasma weapons come in several forms: *pistols* and *rifles* for direct fire, *c
 
 #pftab(
   "Plasma Weapons",
-  columns: 11,
+  columns: (4fr,1fr,2fr,2fr,1fr,1fr,1fr,2fr,1fr,1fr,3fr),
   breakable: true,
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Inc*], [*Special*],
   [Plasma Pistol], [2], [_#feathers 800_], [5+D8], [8], [1 (L)], [1], [Short], [S], [5], [],
@@ -359,14 +364,14 @@ Jet weapons --- sometimes called gyrojets --- fire miniature self-propelled rock
 
 #pftab(
   "Jet Weapons",
-  columns: 11,
+  columns: (4fr,1fr,2fr,2fr,1fr,2fr,1fr,1fr,1fr,1fr,3fr),
   breakable: true,
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Inc*], [*Special*],
-  [Construct Chaingun], [1], [_#feathers 500_], [8+D8], [0], [3 (H)], [1], [Medium], [FA 3], [5], [Heavy],
-  [Lantern Jetgun], [3], [_#feathers 2200_], [7+D12], [0], [1 (L)], [1], [Long], [FA 3], [8], [],
-  [Dragon Guard Combo Jet], [3], [_#feathers 3500_], [12+2D10], [0], [2½ (H)], [1], [Medium], [FA 3], [6], [Explosive],
-  [Jet Pistol, Annihilator], [4], [_#feathers 5400_], [8+2D8], [0], [½ (L)], [1], [Short], [FA 4], [9], [Explosive],
-  [Jetgun, Annihilator], [4], [_#feathers 6000_], [12+2D10], [0], [2 (M)], [2], [Medium], [FA 3], [10], [Explosive],
+  [Construct Chaingun], [1], [_#feathers 500_], [8+D8], [0], [3 (H)], [1], [M], [FA 3], [5], [Heavy],
+  [Lantern Jetgun], [3], [_#feathers 2200_], [7+D12], [0], [1 (L)], [1], [L], [FA 3], [8], [],
+  [Dragon Guard Combo Jet], [3], [_#feathers 3500_], [12+2D10], [0], [2½ (H)], [2], [M], [FA 3], [6], [Explosive],
+  [Jet Pistol, Annihilator], [4], [_#feathers 5400_], [8+2D8], [0], [½ (L)], [1], [S], [FA 4], [9], [Explosive],
+  [Jetgun, Annihilator], [4], [_#feathers 6000_], [12+2D10], [0], [2 (M)], [2], [M], [FA 4], [10], [Explosive],
 )
 
 ==== Magnetic Weapons
@@ -375,14 +380,14 @@ Magnetic weapons use electromagnetic coils to accelerate solid projectiles to ex
 
 #pftab(
   "Magnetic Weapons",
-  columns: 11,
+  columns: (4fr,1fr,2fr,2fr,1fr,2fr,1fr,1fr,1fr,1fr,3fr),
   breakable: true,
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Inc*], [*Special*],
-  [Sudassi Pattern Light Railgun], [2], [_#feathers 1200_], [9+2D8], [0], [3 (H)], [2], [Long], [S], [8], [Heavy],
-  [Magnetic Rifle, Gauss], [4], [_#feathers 5400_], [15+D8], [5], [1 (M)], [2], [Long], [FA 3], [10], [],
-  [Magnetic Sniper Rifle, Gauss], [4], [_#feathers 6000_], [25+D10], [5], [3 (H)], [2], [Very Long], [S], [11], [Heavy],
-  [Moonlight Railgun], [6], [_Unique_], [14+2D12], [0], [2 (M)], [2], [Medium], [S], [18], [],
-  [Silence], [6], [_Unique_], [35+2D6], [0], [2 (M)], [2], [Medium], [S], [18], [],
+  [Sudassi Pattern Light Railgun], [2], [_#feathers 1200_], [9+2D8], [0], [3 (H)], [2], [L], [S], [8], [Heavy],
+  [Magnetic Rifle, Gauss], [4], [_#feathers 5400_], [15+D8], [5], [1 (M)], [2], [L], [FA 3], [10], [],
+  [Magnetic Sniper Rifle, Gauss], [4], [_#feathers 6000_], [25+D10], [5], [3 (H)], [2], [VL], [S], [11], [Heavy],
+  [Moonlight Railgun], [6], [_Unique_], [14+2D12], [0], [2 (M)], [2], [M], [S], [18], [],
+  [Silence], [6], [_Unique_], [35+2D6], [0], [2 (M)], [2], [M], [S], [18], [],
 )
 
 ==== Flame Weapons
@@ -391,7 +396,7 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
 
 #pftab(
   "Flame Weapons",
-  columns: 11,
+  columns: (4fr,1fr,2fr,2fr,1fr,1fr,1fr,2fr,1fr,1fr,3fr),
   breakable: true,
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Range*], [*FM*], [*Inc*], [*Special*],
   [Magmatic Pistol], [3], [_#feathers 2000_], [11+D4], [0], [1 (L)], [1], [Short], [S], [6], [],
@@ -400,7 +405,8 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
 
 #pftab(
   "Armor",
-  columns: 9,
+  columns: (3fr,) + (1fr,) * 8,
+  breakable: true,
   align: (left, center, center, center, center, center, center, center, center),
   [*Name*], [*Tier*], [*Price*], [*Armor*], [*Ward*], [*Evasion*], [*Bulk*], [*Charge*], [*Profile*],
   [Midnight Combat Suit], [1], [_#feathers 200_], [3], [3], [+1], [1], [1], [C],
@@ -430,9 +436,10 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
 
 #pftab(
   "Catalysts",
-  columns: 9,
+  columns: (2fr,1fr,1fr,2fr,1fr,1fr,1fr,1fr,1fr),
+  breakable: true,
   align: (left, center, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Type*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Increment*],
+  [*Name*], [*Tier*], [*Price*], [*Type*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Inc*],
   [Soul Crystal], [1], [_#feathers 200_], [Arcane], [Light], [0], [2], [4+D6], [5],
   [Amber Rod], [1], [_#feathers 350_], [Arcane], [Medium], [1], [2], [8+D3], [8],
   [Angel Mask], [1], [_#feathers 300_], [Psychic], [Medium], [0], [3], [5+D8], [8],
@@ -447,7 +454,8 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
 
 #pftab(
   "Reliquaries",
-  columns: 9,
+  columns: (2fr,1fr,1fr,1fr,1fr,1fr,1fr,2fr,1fr),
+  breakable: true,
   align: (left, center, center, center, center, center, center, center, center),
   [*Name*], [*Tier*], [*Price*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Increment*], [*Will*],
   [The Princess' Locket], [1], [_#feathers 300_], [Light], [0], [2], [4+D6], [5], [3],
@@ -457,7 +465,8 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
 
 #pftab(
   "Consumables — Grenades",
-  columns: 7,
+  columns: (2fr,) + (1fr,) * 4 + (3fr, 1fr),
+  breakable: true,
   align: (left, center, center, center, center, left, center),
   [*Name*], [*Tier*], [*Type*], [*Bulk*], [*Range*], [*Effect*], [*Cost*],
   [Acid Grenade], [0], [Grenade], [¼], [Burst 1/10], [4+D10 Acid damage], [_#feathers 100_],
@@ -468,7 +477,8 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
 
 #pftab(
   "Consumables — Potions & Draughts",
-  columns: 7,
+  columns: (2fr,) + (1fr,) * 4 + (3fr, 1fr),
+  breakable: true,
   align: (left, center, center, center, center, left, center),
   [*Name*], [*Tier*], [*Type*], [*Bulk*], [*Range*], [*Effect*], [*Cost*],
   [Red Healing Potion], [1], [Potion], [¼], [Self/Touch], [Recover 1D6+6 HP], [_#feathers 250_],
@@ -482,7 +492,8 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
 
 #pftab(
   "Consumables — Special",
-  columns: 7,
+  columns: (2fr,) + (1fr,) * 4 + (3fr, 1fr),
+  breakable: true,
   align: (left, center, center, center, center, left, center),
   [*Name*], [*Tier*], [*Type*], [*Bulk*], [*Range*], [*Effect*], [*Cost*],
   [Revitalization Charge], [0], [Special], [¼], [5 squares], [Revive a dead Immortal at full HP and Focus], [_#feathers 5000_],
@@ -491,7 +502,8 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
 
 #pftab(
   "Reagents & Materials",
-  columns: 5,
+  columns: (2fr,1fr,1fr,3fr,1fr),
+  breakable: true,
   align: (left, center, center, left, center),
   [*Name*], [*Tier*], [*Bulk*], [*Effect*], [*Cost*],
   [Alchemical Reagents (Common)], [2], [¼], [1 Magnitude for Ritual or Alchemy checks], [_#feathers 600_],
@@ -506,7 +518,8 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
 
 #pftab(
   "General Equipment",
-  columns: 4,
+  columns: (2fr,1fr,1fr,5fr),
+  breakable: true,
   align: (left, center, center, left),
   [*Name*], [*Bulk*], [*Cost*], [*Effect*],
   [Rope (50 ft)], [1], [_#feathers 10_], [+2d to Athletics checks for climbing when secured],

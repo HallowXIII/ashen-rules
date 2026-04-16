@@ -48,7 +48,7 @@ transportation and the terrain they are crossing.
   [Magical/mechanical hover vehicle; speed varies by model],
   [Airship],
   [300–600 miles],
-  [See Airship Combat section for details],
+  [See #link(<vehicle-combat>)[_Airship Combat_] section for details],
 )
 
 #pftab(

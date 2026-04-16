@@ -560,6 +560,75 @@ dangerous regions of the world also the most strategically valuable for those
 with the technology to exploit them --- and it means that the Fog, for all its
 horrors, is the engine that keeps what remains of civilization running.
 
+==== Skimmers <skimmers>
+
+The most common magitek vehicle is the *skimmer*: a craft that hovers on a
+field of arcane force, typically a meter or so above the ground. Skimmers
+range from single-seat racing frames to armored troop carriers the size of
+a small building. They are fast, maneuverable, and relatively simple to
+maintain --- a skimmer's lift array is one of the few pieces of old-world
+technology that current artificers can reliably repair and even, in some
+cases, build from scratch.
+
+Skimmers cannot fly. Their lift fields interact with the ground beneath
+them; take the ground away and the craft drops. A skimmer can clear
+obstacles, skim over water, and handle rough terrain that would stop a
+wheeled vehicle, but it cannot gain significant altitude. This makes them
+ideal for overland travel and ground combat, but useless for crossing the
+great chasms, mountain ranges, and ocean distances that divide the world's
+Clears.
+
+Military skimmers often mount weaponry: a pintle-mounted gun, a fixed
+forward cannon, or in the case of heavier models, a turret. Armed
+skimmers are the backbone of faction ground forces, filling the role that
+armored vehicles occupy in conventional warfare. For rules on using
+skimmers in combat, see #link(<vehicle-combat>)[_Vehicle Combat_] in the
+Combat chapter.
+
+==== Airships <airships>
+
+Where skimmers hug the ground, *airships* command the sky. An airship
+stays aloft through the same principle as a skimmer --- a reactor-powered
+lift array --- but at vastly greater scale. A *Mist reactor* draws power
+from ambient Fog to drive the lift array, feed the air-breathing turbine
+engines that provide forward thrust, and supply electrical energy to the
+vessel's onboard systems. The reactor is the heart of the vessel: without
+it, most airships have no lift at all and fall like rocks. Some smaller
+designs incorporate wings that reduce reactor fuel consumption during
+cruising flight and allow the ship to glide to a rough landing if lift
+is lost, but larger vessels have no such margin.
+
+Mist reactors are old-world technology, and no one alive knows how to
+build one from scratch. Every airship in the sky runs on a reactor
+salvaged, repaired, or cannibalized from the ruins of the Last War. This
+makes airships rare, irreplaceable, and strategically decisive. A faction
+that controls even a single airship can project power across distances
+that ground forces cannot hope to cover, and the loss of an airship is a
+catastrophe measured in decades --- the time it takes to find and restore
+a replacement reactor.
+
+The size and role of airships vary enormously. The smallest are
+single-reactor scout vessels, perhaps thirty meters long, crewed by a
+dozen people, fast and lightly armed. The largest --- the great
+dreadnoughts of the pre-war fleets --- are hundreds of meters long, carry
+crews of hundreds, and mount weapons that can level a city block. Most
+surviving airships fall somewhere in between: armed merchantmen, patrol
+frigates, or expedition vessels refitted for the needs of the current
+age.
+
+Because Mist reactors draw power from the Fog, an airship's operational
+range is effectively unlimited in Fog-covered regions. In Clears, where
+the ambient Fog is thin or absent, a reactor must run on stored reserves,
+limiting the vessel's endurance. This creates a strategic calculus:
+airships are most powerful in the most dangerous parts of the world, and
+most vulnerable in the safe ones. Long-range flights between distant
+Clears require careful route planning through Fog corridors, and an
+airship stranded in a Clear with depleted reserves is little more than a
+very expensive target.
+
+For the rules governing airship combat, see
+#link(<vehicle-combat>)[_Vehicle Combat_] in the Combat chapter.
+
 == Languages
 
 The world of Ashen is not linguistically unified. Several major language
@@ -587,7 +656,10 @@ Some examples of Sarkat vocabulary: _Khanj_ is both the name of the primordial
 sky and the common word for "sky" in this language. The sacred text _Âl i
 pHethkê yi Ndang_ is titled in River Clear Sarkat --- though its original
 version is assumed to have been composed in some now long-lost language --- and
-translates simply to "Tale of the Creation of the Earth."
+translates simply to "Tale of the Creation of the Earth." To illustrate the
+difference between the two Sarkat varieties, the word for sky in the Seat
+of the Sun is _Khaj_ --- similar enough --- but the title of the Boar-Mother's
+sacred text would be rendered as _Agalak Phethekanya Dag_.
 
 The Fogborn who live around the Black Bazaar, separated from the River Clear by
 the Extreme Fog of the Kethû, have developed a fairly divergent variety of their
@@ -618,13 +690,14 @@ impression.
 The name *Vay Ngien* is drawn from Ngoay. Rumour has it that the wizard used a
 different, Sarkat name in his dealings with other Deathless, but this name has
 been suppressed along with the rest of his order's legacy. The crumbling tower
-outside the Amkau Clear is called *Ik Choa Vay Ngien* by the locals.
+outside the Amkau Clear is called *Ik Choa Vay Ngien* by the locals; an appellation
+that combines the words for tower and fortress, and is used for no other structure.
 
 Those who have managed the perilous crossing to Dragon's Head report that the
 Fogborn who inhabit the island speak a highly divergent Ngoay variety. There are
-rumours of a hidden fortress in the island's interior, called *Yek Chô Thaw
-Thêny* in the local dialect. Whether it is a coincidence that they, too, call it
-a tower is anyone's guess.
+rumours of a hidden fortress in the island's interior, called *Yeak Chô Thaw
+Thêny*, or the Tower of Ridge Mountain, in the local dialect. Whether it is a
+coincidence that they, too, call something a tower-fortress is anyone's guess.
 
 === Echo Languages
 
@@ -642,7 +715,11 @@ an outsider but is, in practice, perfectly functional.
 Some Echo words have been borrowed or calqued into other languages. The epithets
 "Queen of Summer" and "Midnight Princess" for the goddesses of the Mirrors and
 Shades, respectively, are translations from their languages: Might-Be is known
-in Azal as _Yāndehten_, and Once-Was in Wiyan as _Innuwikšaya_.
+in Azal as _Yāndehten_, and Once-Was in Wiyan as _Innuwikšaya_ --- although the
+nouns _Queen_ and _Princess_ were supplied by speakers of languages that require
+the weight of nominals. The Echoes, for their part, are fond of using adjectives
+without any explicit referent, and the names of their goddesses most literally
+translate to _Summery_ and _Midnighty_.
 
 === Other Languages
 

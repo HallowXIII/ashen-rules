@@ -287,7 +287,28 @@ downtime---during an intermission, every character's Essence, Health and Focus
 refresh, and the characters have the opportunity to spend XP, allocate skill
 points, and purchase new equipment.
 
+#colbreak()
+
 = Characters
+
+#flavor([
+  Azal jalē vahttan \
+  Iryane niboltvānhē \ 
+  Nidaumave avorhōyō \
+  Narvim iluiyamgo vatauhanyō \
+  Aivašti arvahvamdō \
+  Avahmāš nyašbittī! \
+#linebreak() 
+As hero of the Azalmen \
+Truly thou art now remade \ 
+In thy hands, our hope we ken \
+Our silver-gleaming blade \
+With godly fire burn them then \
+Who sought to be our foes!
+])
+
+--- The Lay of Ingin \
+#linebreak()
 
 Characters are the lifeblood of Ashen. They are the roles the players take on
 when they play the game. Each character is unique: they may belong to one of
@@ -397,6 +418,69 @@ Powers are extraordinary actions you can perform during combat. Powers can span
 the gamut from magical spells to heroic feats of skill at your weapons. They can
 be learnt in a variety of ways: some can be purchased as advances, others must
 be obtained through instruction from a master.
+
+==== Arcane Spells
+
+Arcane spellcasters learn spells by studying written formulae --- copying them
+from spellbooks, scrolls, or the notes of other casters. A character can know
+any number of arcane spells, but knowing a spell is not enough to cast it. To
+use an arcane spell in the field, it must first be *prepared*.
+
+Preparation is a ritual process that requires several hours of undisturbed
+concentration, access to ritual materials (chalk, ink, and other minor
+components), and a quiet environment. Most casters prepare their spells during
+a long rest. Once preparation is complete, the spells remain available until
+the caster next prepares --- there is no time limit, but there is also no way
+to change the selection without performing the full ritual again.
+
+The number and tier of spells a character can prepare is determined by their
+*spell slots*, which are gained from the Spell Memory advances. Each spell
+slot holds one spell of its tier or lower. For example, a character with one
+Tier 1 slot and one Tier 2 slot can prepare two spells: one of Tier 1 or
+lower in the first slot, and one of Tier 2 or lower in the second. Each
+Spell Memory advance can be taken multiple times, adding an additional slot
+of that tier each time.
+
+Arcane spells are, in effect, a form of loot. Larger towns often have
+resident casters who can be persuaded --- or paid --- to share their
+knowledge, and the ruins of the old world frequently contain spellbooks
+among their treasures.
+
+==== Divine Prayers
+
+Divine prayers are not learned or prepared. They are granted by a character's
+wielded *reliquary* --- a remnant of a dead god that retains a portion of
+divine power. Each reliquary provides access to prayers from one or more
+domains, up to the tier of the reliquary itself. As long as the reliquary
+is wielded and the character has earned its favor, those prayers are available
+to cast. See _Reliquaries_ in the Equipment chapter for the full rules on
+favor, will, and tapping.
+
+A character who switches to a different reliquary immediately gains access to
+that reliquary's prayers (assuming favor has been earned) and loses access to
+the previous one's. This makes the choice of reliquary one of the most
+important decisions a divine caster can make.
+
+==== Psychic Powers
+
+Psychic powers are intrinsic to the character. Each Discipline advance grants
+the character a psychic power permanently --- once learned, a psychic power
+is always available and does not need to be prepared or equipped. Psychic
+powers can be taught by one practitioner to another, but the process is long
+--- days to months of intensive mental training --- and requires the student
+to commit XP through a Discipline advance. As with all advances, this can
+only be done during an intermission, unless extraordinary circumstances
+(a divine blessing, communion with a powerful artifact) allow it.
+
+==== Martial Exploits
+
+Martial exploits are combat techniques learned through training and battle
+experience. Each Exploit advance grants the character one exploit
+permanently. Like psychic powers, exploits are always available once learned
+and do not require preparation. Exploits are typically learned from a
+master-at-arms, a fighting school, or through the hard lessons of combat
+itself --- but always during an intermission, when the character has time to
+train.
 
 === Legendary
 
@@ -688,31 +772,26 @@ the Gods than any other race.
 *Golden Apple*
 
 Your nature makes you both beloved of the gods, and quick to incur their anger.
-When you tap a reliquary to boost your Divine spells, you can make your roll
-against their will with +1 die. However, if you fail, you automatically incur
-two points of disapproval.
+When you attune to a reliquary, you begin with 1 favor already earned --- the
+gods recognize their firstborn. In addition, the first time you tap a prayer
+each encounter, the tap costs 0 favor instead of 1. You also gain a +2 bonus
+to Occultism checks whenever you interact with divine essence, relics of the
+gods, or sacred sites.
 
 *Gift of the Sun*
 
-Falcon-Headed Kharu is a great and terrible father; he demands much, but he
-rewards with pride the efforts of his children. You gain the following power:
-
-#power-description(
-  "Gift of the Sun",
-  "Spell",
-  none,
-  "Spell Action, 1 AP",
-  "You can lose half your Health; all allies within close range that have line of sight to you immediately recover a quarter of their Health.",
-  keywords: none,
-  cost: "0 FP",
-)
+Falcon-Headed Khâru is a great and terrible father; he demands much, but he
+rewards with pride the efforts of his children. Once per round, you may spend
+2 Essence Points to add 2 automatic successes to any check you make. This
+decision is made after rolling but before the result is determined.
 
 *Gift of the Earth*
 
 The Boar-Mother gives freely of her gift; but those who sup too greedily
-discover that with debt comes obedience. All effects on you whose duration is
-measured in rounds last one round longer than usual, whether they be beneficial
-or harmful to you.
+discover that with debt comes obedience. Beneficial magical effects on you
+whose duration is measured in rounds last two rounds longer than usual. However,
+saving throws you make against hostile magical effects require 3 successes
+instead of the usual 2.
 
 = Attributes and Characteristics
 
@@ -965,12 +1044,6 @@ Whenever you take a *long rest*, you recover 3 EP.
 #include "combat.typ"
 
 #include "exploration.typ"
-
-= Airship Combat
-
-_Airship combat rules are in development and will be included in a future version
-of the rulebook. For the playtest, the GM may adjudicate airship encounters
-using the standard combat rules adapted to the scale of airship engagements._
 
 #include "setting.typ"
 

@@ -3,22 +3,12 @@
 = Combat
 
 #flavor([
-  Azal jalē vahttan \
-  Iryane niboltvānhē \ 
-  Nidaumave avorhōyō \
-  Narvim iluiyamgo vatauhanyō \
-  Aivašti arvahvamdō \
-  Avahmāš nyašbittī! \
-#linebreak() 
-As hero of the Azalmen \
-Truly thou art now remade \ 
-In thy hands, our hope we ken \
-Our silver-gleaming blade \
-With godly fire burn them then \
-Who sought to be our foes!
+  Zalahaiči ūyir čama mai yih kazna ayavurohu kawav ova zā. \
+  #linebreak()
+  All the treasure in the world is not worth the glory of a single battle.
 ])
 
---- The Lay of Ingin \
+--- Elth, Twin Swords of the Midnight Gates \
 #linebreak()
 
 Sometimes, characters’ conflicts cannot be resolved in a way other than coming
@@ -1005,3 +995,456 @@ A burning creature is on fire. The specific ongoing Thermal damage is defined by
 the power or effect that caused the condition. A burning creature or an adjacent
 ally can spend 1 AP to attempt to extinguish the flames (saving throw). Burning
 can also be removed by full immersion in water or similar effects.
+
+== Vehicle Combat <vehicle-combat>
+
+Ashen features two scales of vehicle combat. *Tactical vehicles* ---
+#link(<skimmers>)[skimmers], armored transports, and other craft small
+enough to share a battlefield with infantry --- use the standard combat
+grid. *Capital vessels* --- #link(<airships>)[airships] and other craft
+measured in tens or hundreds of meters --- use a separate strategic scale
+with its own movement and targeting rules. For background on how these
+vehicles work, see #link(<skimmers>)[_Skimmers_] and
+#link(<airships>)[_Airships_] in the Setting chapter. Both scales share a
+common stat block format and damage model.
+
+=== Vehicle Statistics
+
+Every vehicle has the following statistics:
+
+- *Hull Points (Hull):* The vehicle's structural integrity. When Hull
+  reaches 0, the vehicle is destroyed.
+- *Armor:* Physical damage reduction, as for creatures.
+- *Ward:* Magical damage reduction, as for creatures.
+- *Speed:* How fast the vehicle moves, measured in squares (tactical) or
+  bands (strategic).
+- *Maneuverability:* A category that describes how responsive the vehicle
+  is, which determines what maneuvers it can perform and modifies Piloting
+  checks:
+  - *Agile (+2):* Small, responsive craft --- interceptors, racing
+    skimmers, light scout ships. Can perform all maneuvers, including
+    Evasive Action and shake-off attempts.
+  - *Standard (0):* Most vehicles --- military skimmers, transports,
+    frigates, and mid-sized airships. Can perform all maneuvers.
+  - *Heavy (--2):* Large or cumbersome vessels --- armored transports,
+    heavy gunships, and most capital warships. Cannot perform Evasive
+    Action. Can attempt shake-off, but at +2 difficulty.
+  - *Sluggish (--4):* The largest vessels --- dreadnoughts, bulk haulers,
+    and anything over roughly 200 meters. Cannot perform Evasive Action
+    or shake-off maneuvers at all. These vessels rely on armor, point
+    defense, and escort craft for protection.
+- *Size:* The vehicle's size category, as for creatures. Tactical vehicles
+  are typically Size 2--4; capital vessels are Size 5 or larger.
+- *Crew:* The number of crew stations the vehicle supports and the minimum
+  crew needed to operate it.
+- *Weapons:* The vehicle's mounted armaments, listed with their own damage,
+  range, and fire mode statistics.
+
+=== Scale Conversion
+
+Tactical vehicles and characters share the same damage scale. A skimmer
+with 40 Hull is destroyed by the same amount of punishment that would kill a
+creature with 40 HP.
+
+Capital vessels operate at *strategic scale*, where one point of Hull
+damage is equivalent to *10 points of tactical damage*. A capital vessel
+with 80 Hull would take 800 points of tactical-scale damage to destroy ---
+an absurd amount of personal firepower, but a manageable number at
+strategic scale where ship weapons deal 10--30 damage per salvo.
+
+When converting between scales:
+
+- *Strategic → tactical:* Multiply by 10. A ship weapon dealing 15 Hull
+  damage at strategic scale deals 150 HP damage to a person-sized target.
+  This is invariably lethal and should be treated as such --- characters
+  caught in a ship-weapon strike do not roll saves; they find cover or they
+  die.
+- *Tactical → strategic:* Divide by 10 (round down, minimum 0). A
+  shoulder-fired anti-vehicle rocket dealing 25 tactical damage deals 2
+  Hull damage to a capital vessel. Personal weapons that deal less than 10
+  tactical damage per hit deal 0 Hull damage and cannot harm a capital
+  vessel at all.
+
+=== Damage Thresholds
+
+Vehicles do not suffer status conditions. Instead, they degrade through
+damage thresholds. When a vehicle's Hull drops below a threshold, it
+suffers the listed consequence. These apply at both scales.
+
+- *75% Hull --- Damaged:* One system is knocked offline (GM chooses: a
+  weapon, the engines, sensors, or shields). A Shop check
+  (difficulty 4) and 1 stretch of work can restore the system temporarily.
+- *50% Hull --- Heavily Damaged:* The vehicle's Speed is halved (round
+  down). All crew checks suffer --2 dice. A second system goes offline.
+- *25% Hull --- Critical:* A third system goes offline. The vehicle is on
+  fire, venting atmosphere, or otherwise in immediate danger. At the start
+  of each round, the vehicle takes additional Hull damage equal to 5% of
+  its maximum Hull (round up) unless a crew member spends their turn on
+  damage control (Shop check, difficulty 6, to stop the bleed for
+  one round).
+- *0% Hull --- Destroyed:* The vehicle is wrecked. How it dies depends on
+  the damage it sustained. A ground vehicle grinds to a halt or detonates
+  its fuel supply. For capital vessels, check which systems were knocked
+  offline during the fight:
+  - If the damage is mostly *external* (hull breaches, engines, helm,
+    sensors), the vessel loses lift and begins to fall. The crew has 3--5
+    rounds to evacuate before impact.
+  - If the damage is mostly *internal* (magazine, shields, drive on a
+    Mist-reactor vessel), the reactor containment fails. The vessel
+    explodes catastrophically, dealing Hull damage equal to half its
+    maximum Hull to everything within Close range and killing everyone
+    still aboard.
+  - If the damage is *mixed*, the GM chooses or rolls: on a 1--3 the
+    vessel falls; on a 4--6 the reactor goes.
+
+When a system goes offline, roll on the appropriate table. If the result
+has already been knocked offline, take the next entry down the table
+(wrapping to the top if necessary).
+
+#pftab(
+  "Tactical Vehicle System Damage (D6)",
+  columns: (1fr, 3fr),
+  align: (center, left),
+  stroke: 0.5pt,
+
+  [*Roll*], [*System Disabled*],
+  [1], [*Weapons:* One mounted weapon (chosen randomly) cannot fire.],
+  [2], [*Drive:* Speed halved (stacks with the Heavily Damaged penalty). If already halved, the vehicle is immobilized.],
+  [3], [*Steering:* Piloting checks suffer --4 dice. The vehicle cannot turn more than 45 degrees per Drive action.],
+  [4], [*Sensors:* Gunners suffer --2 dice to all attacks. The vehicle cannot detect threats beyond visual range.],
+  [5], [*Armor Breach:* The vehicle's Armor is reduced by a quarter (round down). Crew lose the benefit of cover from one facing (GM determines which).],
+  [6], [*Cargo:* Passenger compartment or cargo hold is compromised. Passengers take 2D8 damage from shrapnel and debris; loose cargo is destroyed or scattered.],
+)
+
+#pftab(
+  "Capital Vessel System Damage (D8)",
+  columns: (1fr, 3fr),
+  align: (center, left),
+  stroke: 0.5pt,
+
+  [*Roll*], [*System Disabled*],
+  [1], [*Main Battery:* One main weapon system cannot fire until repaired.],
+  [2], [*Point Defense:* Point-defense weapons go offline. The vessel cannot intercept missiles or engage tactical-scale targets.],
+  [3], [*Engines:* Speed reduced by 1 band per round (minimum 0). If already at 0, the vessel is adrift.],
+  [4], [*Helm:* Navigation controls unresponsive. The vessel cannot maneuver --- no Evasive Action, Present Broadside, or Ramming Speed until repaired. The vessel drifts in its current direction.],
+  [5], [*Shields:* Ward generators fail. The vessel's Ward drops to 0.],
+  [6], [*Sensors:* Long-range detection is lost. All attacks beyond Close range suffer an additional +2 difficulty. The vessel cannot detect threats at Extreme range.],
+  [7], [*Hull Breach:* Compartments near the impact are open to the elements. Crew in the affected section take 2D10 damage and must make an Athletics check (difficulty 4) or be swept out. In a Fog zone, the breach floods the section with Fog --- treat as Moderate Fog exposure.],
+  [8], [*Magazine:* Ammunition stores or power conduits are hit. An internal explosion deals Hull damage equal to 10% of the vessel's maximum Hull. If the magazine has already been hit, the second hit deals 25%.],
+)
+
+=== Crew Stations
+
+A vehicle's crew operate from *stations*. Each station allows one character
+to contribute to the vehicle's performance during their turn. A character
+occupying a station uses their own skills and characteristics to make
+checks, modified by the vehicle's statistics.
+
+The standard stations are:
+
+- *Helm:* The pilot. Controls movement and maneuvers. Uses the *Piloting*
+  skill for all checks. Only one character can occupy the helm.
+- *Weapons:* A gunner. Fires one of the vehicle's mounted weapons. Uses
+  *Marksmanship* as normal, but the weapon's profile replaces the gunner's
+  personal weapon. A vehicle may have multiple weapon stations.
+- *Engineering:* The mechanic. Repairs damage, boosts systems, and manages
+  emergencies. Uses the *Shop* or *Magitek* skill (whichever is more
+  appropriate to the system being worked on). An engineer can spend their turn
+  (4 AP) to attempt a repair: on a success, restore Hull equal to the
+  check's margin of success, or bring one offline system back for 1d6
+  rounds.
+- *Command:* The officer. Coordinates the crew. Uses the *Command*
+  characteristic. On a successful Command check (difficulty 3), choose one
+  crew member: that crew member gains +2 dice on their next check this
+  round. A vehicle can only benefit from one Command action per round.
+
+A character at a station can still use powers and abilities that do not
+require movement or a free hand, but they cannot leave their station and
+act in the same turn. Leaving a station costs 1 AP.
+
+== Tactical Vehicles
+
+Tactical vehicles --- skimmers, armored cars, walkers, and similar craft
+--- operate on the standard combat grid alongside characters.
+
+=== Vehicles on the Grid
+
+A tactical vehicle occupies a space determined by its Size, just like a
+creature. A Size 2 skimmer occupies a 2×2 space; a Size 3 APC occupies
+3×3. The vehicle's facing matters: it has a front, rear, and two flanks.
+Mounted weapons have a *fire arc* (front, rear, left, right, or turret)
+that determines which directions they can target.
+
+=== Vehicle Movement
+
+A vehicle moves during the pilot's turn. The pilot spends AP to move the
+vehicle, just as a character spends AP to move themselves:
+
+- *Drive (1 AP):* Move the vehicle up to its Speed in squares. The vehicle
+  must move in the direction it is facing; it cannot strafe.
+- *Turn (0 AP):* As part of a Drive action, the pilot may turn the vehicle
+  up to 90 degrees at any point during the movement. Turning more than 90
+  degrees in a single Drive action requires a Piloting check (difficulty
+  3). Failure means the vehicle skids: it completes the turn but moves 1d3
+  squares in its original direction of travel.
+- *Reverse (1 AP):* Move the vehicle up to half its Speed directly
+  backward.
+- *Ram (1 AP):* The pilot drives the vehicle into a creature or another
+  vehicle. See _Ramming_ below.
+
+==== Piloting Checks
+
+The pilot makes Piloting checks to perform difficult maneuvers: sharp
+turns, navigating obstacles, avoiding hazards, or maintaining control after
+taking damage. When a vehicle drops below a damage threshold, the pilot
+must immediately make a Piloting check (difficulty 3, or 5 for Critical) or
+the vehicle spins out, ending its movement immediately and becoming
+*exposed* until the pilot's next turn.
+
+=== Passengers
+
+Characters inside or on a vehicle who are not at a crew station are
+*passengers*. Passengers may act normally on their turns --- firing personal
+weapons, using powers, and so on --- but with the following restrictions:
+
+- *Unstable platform:* Ranged attacks made from a moving vehicle suffer --2
+  dice. This penalty is negated if the vehicle did not move this round.
+- *Limited arcs:* A passenger can only target enemies they can see from
+  their position on the vehicle. The GM adjudicates line of sight based on
+  the vehicle's shape and the passenger's location.
+- *Embarking and disembarking:* Boarding a vehicle or leaving it costs 2 AP
+  and provokes opportunity attacks if the character is adjacent to a
+  hostile creature.
+
+=== Targeting Vehicles
+
+Attacks against tactical vehicles follow the normal attack rules with the
+following modifications:
+
+- *No Evasion:* Vehicles do not have Evasion. Any attack that can reach the
+  vehicle hits automatically unless the pilot uses a reaction (see
+  _Evasive Maneuvers_ below).
+- *Cover:* Crew and passengers inside an enclosed vehicle have *total
+  cover* from attacks originating outside the vehicle. Crew and passengers
+  on an open vehicle (such as an open-topped skimmer) have *partial cover*
+  (+3 difficulty to target them directly).
+- *Targeting crew directly:* An attacker may choose to target a specific
+  crew member instead of the vehicle, but only if that crew member is
+  visible. The attack targets the crew member's defenses, not the
+  vehicle's, but must overcome any cover the vehicle provides.
+
+==== Evasive Maneuvers
+
+Once per round, when the vehicle is targeted by an attack, the pilot may
+spend 1 AP as a reaction to attempt evasive maneuvers. The pilot makes a
+Piloting check; each success adds +1 to the difficulty of the incoming
+attack. The vehicle moves 1 square in a direction of the pilot's choice as
+part of this reaction.
+
+=== Anti-Vehicle Weapons
+
+Most personal weapons are ineffective against armored vehicles. Only
+weapons with the *Anti-Vehicle* keyword or that deal *Explosive* damage
+can damage tactical vehicles at full effect. Other personal weapons have
+their damage halved (after armor) against vehicles.
+
+Powers that deal damage can affect vehicles normally, as magical force
+does not care about hull plating. However, conditions that target a
+creature's mind (Dominated, Stunned, Dazed) have no effect on a vehicle
+--- target the pilot instead.
+
+=== Ramming
+
+A vehicle that moves into a creature or another vehicle can ram it. The
+pilot makes a Piloting check against difficulty 3 (or the target pilot's
+Piloting check, if ramming another vehicle). On a hit:
+
+- *Ramming a creature:* The creature takes damage equal to the vehicle's
+  Armor value plus the number of squares the vehicle moved this action.
+  This damage is reduced by the creature's armor as normal. The creature is
+  also knocked prone and pushed to the nearest unoccupied square.
+- *Ramming a vehicle:* Both vehicles take damage equal to the other
+  vehicle's Armor value, plus the combined number of squares both vehicles
+  moved this round. Both pilots must make Piloting checks (difficulty 4) or
+  spin out.
+
+A vehicle that rams a creature or object more than two Sizes smaller than
+itself does not stop or take damage.
+
+== Capital Vessel Combat
+
+Capital vessels --- airships, dreadnoughts, and similar craft --- are too
+large for the tactical grid. Capital vessel combat uses range bands and
+crew actions at strategic scale.
+
+=== The Strategic Scale
+
+At strategic scale, distances are measured in *range bands* rather than
+squares:
+
+- *Contact* (boarding range, under 100m): Ships can board each other.
+  Personal weapons can target the opposing hull. Ramming is possible.
+- *Close* (100--500m): Light weapons and point-defense fire. Small craft
+  can cross this gap in one round.
+- *Medium* (500m--2km): Standard engagement range. Main batteries and
+  missile weapons are effective.
+- *Long* (2--5km): Heavy weapons and long-range ordnance only. Most fights
+  begin here.
+- *Extreme* (5km+): Beyond effective weapons range. Detection, pursuit, and
+  retreat happen here.
+
+Moving one range band costs 1 point of the vessel's Speed. A vessel with
+Speed 3 can close three bands in a single round.
+
+=== Rounds at Strategic Scale
+
+Capital vessel combat uses the same round structure as tactical combat. Each
+crew member acts on their own initiative, taking actions at their station.
+The vessel itself does not have a turn --- its actions are the sum of its
+crew's contributions.
+
+A round of strategic combat represents roughly the same amount of time as a
+round of tactical combat: a few seconds of frantic activity. The difference
+is purely one of scale, not of time.
+
+=== Ship Weapons
+
+Ship weapons use the same stat format as personal weapons (damage, range,
+fire mode, penetration) but at strategic scale. A ship weapon dealing
+20 Hull damage is equivalent to 200 points of tactical damage --- enough
+to obliterate anything smaller than a vehicle.
+
+Ship weapons have a *minimum range band* and a *maximum range band*. A
+weapon listed as "Medium--Long" can fire at targets in the Medium or Long
+bands but not at Close or Contact range. Point-defense weapons cover Close
+and Contact; main batteries typically cover Medium and Long; heavy ordnance
+covers Long and Extreme.
+
+A gunner at a weapon station fires a ship weapon using their Marksmanship
+check against a base difficulty of *3* (modified by range, conditions, and
+target maneuvers). On a hit, the weapon deals its listed Hull damage,
+reduced by the target's Armor.
+
+==== Range Modifiers
+
+- *Close:* No modifier.
+- *Medium:* No modifier.
+- *Long:* +2 difficulty.
+- *Extreme:* +4 difficulty. Only weapons with the Long-Range keyword can
+  fire at Extreme range.
+
+=== Ship Maneuvers
+
+The helm officer moves the ship and performs maneuvers. On their turn, the
+pilot may:
+
+- *Ahead (1 AP):* Move the vessel up to its Speed in range bands toward or
+  away from a target.
+- *Evasive Action (2 AP):* _Agile, Standard, or Heavy only._ Until the
+  pilot's next turn, all attacks against this vessel suffer +2 difficulty.
+  The vessel cannot fire main batteries while performing evasive action
+  (point-defense weapons are unaffected). Requires a Piloting check
+  (difficulty 3, modified by the vessel's Maneuverability). On failure,
+  the +2 difficulty is only +1.
+- *Ramming Speed (2 AP):* Commit to a ram. The vessel moves its full Speed
+  toward the target. If it reaches Contact range, both vessels take Hull
+  damage equal to the other's Armor. Both pilots make Piloting checks
+  (difficulty 5); failure means the ramming vessel's own damage is doubled.
+  Ramming is a desperate act --- the attacker always takes damage.
+- *Present Broadside (1 AP):* Position the vessel to bring maximum
+  firepower to bear. Until the pilot's next turn, all gunners on this
+  vessel gain +2 dice to their attacks against a single designated target.
+
+=== Boarding Actions
+
+Generally speaking, airships fight at long ranges by throwing missiles
+at each other, or firing batteries of suitably destructive direct-fire
+weaponry, like hypervelocity railguns or mist lances, whose short range and
+lack of terminal guidance is made up for in their ability to cripple or 
+destroy an enemy ship in a single hit. In such a climate, attempting to
+board a hostile craft may seem equal parts pointless and suicidal.
+However, Deathless involved in air-to-air fighting will often find themselves
+contemplating such actions --- for them, falling several miles or having 
+an all-too-close encounter with point defence cannons is unpleasant, but not
+the end; and furthermore, given the scarcity of airships, capturing one is
+usually much preferable to destroying it.
+
+
+Airships move in three dimensions at hundreds of kilometers per hour.
+Pulling alongside and lashing hulls together, as in naval tradition, is
+not practical. Boarding a capital vessel requires a *forced insertion*:
+the boarding party must cross the gap between vessels under their own
+power and breach the target's hull.
+
+Common insertion methods include:
+
+- *Fast attack craft:* A small tactical vehicle (an interceptor ship, a shuttle, or
+  even a drop pod) closes to Contact range with the target and delivers the
+  boarding party to the hull. The pilot makes a Piloting check (difficulty
+  4) to match speed and dock or crash-land on the target's deck. On
+  failure, the craft overshoots --- the boarding party must wait one round
+  and try again.
+- *Teleportation:* A character with access to a teleportation power or
+  ritual can transport the boarding party directly onto the target vessel.
+  The caster must be able to perceive the target (visually or through
+  sensors) and the vessel must be within the power's range. The target
+  vessel's Ward applies as additional difficulty to the teleportation
+  check, at the GM's discretion.
+- *Jump:* Characters with flight, jump packs, or sufficient magical
+  mobility can cross the gap individually. This requires the vessels to be
+  at Contact range. Each character must make an Athletics or Acrobatics
+  check (difficulty 4) to land safely; failure means a bad landing
+  (prone, 2D10 damage from impact) or a miss entirely (the character is
+  now falling and must save themselves).
+
+Once the boarding party is on the target vessel, combat transitions to the
+tactical grid. Represent the interior of the target vessel as a series of
+rooms and corridors. The boarding party must fight through defenders to
+reach critical stations --- the helm, the engine room, the magazine.
+
+While boarding is in progress, the vessel being boarded continues to move and
+may take fire from other combatants.
+
+A vessel with Agile, Standard, or Heavy maneuverability that is being
+boarded can attempt to *shake off* boarders while they remain on the
+outside of the ship. Sluggish vessels are simply too ponderous --- they
+must rely on point defense and their own security teams. The helm officer
+makes a Piloting check (difficulty 4, modified by Maneuverability) and
+performs a violent maneuver --- a barrel roll, a sudden dive, or a hard
+burn. Every creature on the vessel's exterior (including boarders who have
+not yet breached the hull) must make an Athletics check (difficulty 5) or
+be thrown clear. Boarders who have already entered the vessel's interior
+are unaffected, but all creatures aboard (including the vessel's own crew)
+suffer the effects of the unstable platform penalty (--2 dice) for the
+remainder of the round.
+
+=== Point Defense
+
+Capital vessels may mount *point-defense* weapons: rapid-fire light guns
+designed to engage small, fast targets. Point-defense weapons can target
+tactical-scale vehicles and characters at Close and Contact range. Their
+damage is dealt at tactical scale, not strategic scale --- they are
+anti-fighter and anti-boarding weapons, not ship-killers.
+
+A gunner at a point-defense station can also use a reaction (1 AP) to
+attempt to intercept incoming missiles or rockets. The gunner makes a
+Marksmanship check against the missile's attack roll; on success, the
+missile is destroyed before it hits.
+
+=== Capital Vessel Damage
+
+Capital vessels use the same damage threshold system described under
+_Damage Thresholds_, with the following additions:
+
+- When a system is knocked offline, the GM should choose a system that
+  creates immediate tactical consequences: losing the main battery forces
+  the crew to rely on point defense; losing engines leaves the vessel
+  adrift; losing helm control means no maneuvers until it is repaired.
+- At *Critical* threshold, the vessel may begin to lose altitude (if an
+  airship) or take on fog contamination (if the hull is breached in a Fog
+  zone). The GM should describe the deterioration vividly --- groaning
+  hull plates, alarms, listing decks --- to convey urgency.
+- A capital vessel at 0 Hull does not explode instantly. It is mortally
+  wounded and will go down within minutes, but the crew has time to
+  evacuate, perform last-ditch repairs, or make a final stand. The GM
+  should give the crew 3--5 rounds to act before the vessel is truly lost.

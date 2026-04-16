@@ -272,6 +272,254 @@ This gives the boss an action after _every_ other creature's turn --- potentiall
 - *Phased encounters:* A boss with 3x baseline HP can feel like a slog. Consider breaking the fight into phases --- at certain HP thresholds, the boss changes behavior, gains new powers, or the environment shifts. This keeps the encounter dynamic and gives the party a sense of progress.
 - *Minion support:* Even a boss designed for solo play benefits from 2--3 minions. Minions occupy the party's attention, provide targets for area powers (making the players choose between hitting the boss and clearing adds), and help the boss's action economy without requiring Greater Legendary Actions.
 
+== Progression and Rewards
+
+Character power in Ashen advances along three axes: experience (which buys
+advances, skill points and Essence Points), wealth (which buys equipment), and
+item access (which determines what equipment is available to buy at all). These
+three must advance roughly in step. A party that is rich in XP but poor in
+feathers has high HP and many powers but hits like a T0 recruit; a party
+swimming in feathers but low on XP dies easily despite carrying excellent gear.
+The guidelines below help the GM keep these axes in balance without reducing
+progression to a formula.
+
+@tier-thresholds shows the approximate cumulative XP at which a character
+is considered to be at each tier. These are not hard gates --- tier is
+emergent from the advances a character has purchased --- but they are a
+useful reference for the GM when planning mission difficulty, loot, and
+pacing. A character whose cumulative XP falls within a tier's band should
+have access to tier-appropriate advances and should be facing
+tier-appropriate challenges.
+
+#floating-table(
+  "Tier Thresholds",
+  columns: (2fr,) + (1fr,) * 7,
+  align: (left, center, center, center, center, center, center, center),
+  stroke: 0.5pt,
+
+  [*Category*], [*Start*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
+  [Cumulative XP], [1000], [1000--2500], [2500--5000], [5000--10000], [10000--18000], [18000--30000], [30000--48000],
+  [SP earned], [1], [1--2], [2--5], [5--10], [10--18], [18--30], [30--48],
+  [EP total], [11], [11--12], [12--15], [15--20], [20--28], [28--40], [40--58],
+) <tier-thresholds>
+
+=== Experience Points
+
+XP is awarded for concrete actions: defeating enemies, completing missions, and
+recovering valuables. The GM tallies XP at the end of each session.
+
+==== Combat XP
+
+Each creature defeated awards XP to every character who participated in the
+encounter. Use @creature-xp for baseline values, then apply the role modifier
+for the creature's combat role.
+
+#floating-table(
+  "Base Creature XP",
+  columns: (2fr,) + (1fr,) * 7,
+  align: (left, center, center, center, center, center, center, center),
+  stroke: 0.5pt,
+
+  [*Tier*], [*T0*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
+  [Base XP], [5], [15], [25], [40], [65], [100], [175],
+) <creature-xp>
+
+- *Minion:* ×0.5 (rounded down).
+- *Standard:* ×1.
+- *Elite:* ×2.
+- *Boss:* ×4.
+
+If a creature's tier differs from the party's, adjust its value: one tier
+above the party pays ×1.5, two or more tiers above pays ×2. One tier below
+pays ×0.75; two or more tiers below pays ×0.5. These multipliers stack with
+role multipliers.
+
+==== Mission XP
+
+Completing a mission objective --- returning with the target, escorting the
+convoy, killing or capturing the mark --- awards a flat XP bonus to each
+character. Use the mission's tier, not the party's.
+
+#pftab(
+  "Mission XP",
+  columns: (2fr,) + (1fr,) * 6,
+  align: (left, center, center, center, center, center, center),
+  stroke: 0.5pt,
+
+  [*Mission Tier*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
+  [Completion XP], [100], [150], [250], [400], [600], [1000],
+)
+
+A mission may have secondary objectives worth a fraction of the completion
+bonus --- typically half. Failing the primary objective but completing
+secondary objectives still awards secondary XP.
+
+==== Loot XP
+
+Characters earn *1 XP for every 10#feathers of value* obtained during the
+session, whether from recovered loot, salvaged materials, or payment received.
+This is assessed on market value, not personal utility: a caster who recovers
+a T3 greatsword earns XP for its value even if they will never swing it.
+
+Loot XP serves two purposes. It rewards exploration and thoroughness, and it
+creates a natural link between wealth and progression --- a party that invests
+time in looting earns both spending money and advancement.
+
+==== Pacing
+
+The numbers above are calibrated so that a typical session --- two significant
+combats, some loot, and progress toward or completion of a mission --- yields
+roughly the following total XP per character:
+
+#pftab(
+  "Expected Session XP",
+  columns: (2fr,) + (1fr,) * 6,
+  align: (left, center, center, center, center, center, center),
+  stroke: 0.5pt,
+
+  [*Party Tier*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
+  [XP / session], [150--250], [250--400], [400--650], [650--1000], [1000--1500], [1500--2200],
+)
+
+At this rate, a tier lasts roughly eight to twelve sessions. Characters
+cross SP and EP thresholds (every 1000 cumulative XP) naturally along the
+way, gaining skill points and Essence Points at a pace that tracks their
+growing power.
+
+If the campaign feels too slow or too fast, adjust the mission XP bonus ---
+it is the simplest dial to turn without disrupting the combat-to-reward
+relationship.
+
+=== Awarding Wealth
+
+Wealth enters the game through two channels: *mission pay* (reliable income
+from patrons and factions) and *loot* (variable income from salvage,
+treasure, and windfalls).
+
+==== Mission Pay
+
+Most Deathless work for a faction, a patron, or an employer. Mission pay is
+the primary source of income and should be announced before the party
+accepts the job, so that players can weigh the reward against the risk.
+
+#pftab(
+  "Mission Pay per Character",
+  columns: (2fr,) + (1fr,) * 6,
+  align: (left, center, center, center, center, center, center),
+  stroke: 0.5pt,
+
+  [*Mission Tier*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
+  [Pay (#feathers)], [100--300], [300--600], [600--1500], [1500--3000], [3000--6000], [Favors],
+)
+
+At Tier 6, feathers lose their meaning. The people who can commission T6
+work pay in political influence, territorial concessions, legendary
+materials, or debts of service. If a T6 patron offers coin, it is either a
+king's ransom or an insult.
+
+Patrons may also offer non-monetary compensation --- access to restricted
+facilities, introductions to artisans, or a claim on future salvage rights
+--- which may be worth more than the listed pay range.
+
+==== Loot and Salvage
+
+Loot supplements mission pay and provides the "treasure hunt" motivation
+that keeps exploration rewarding. As a guideline, loot found in the field
+should be worth roughly *half* to *equal* the mission pay for that tier.
+This means a party that explores thoroughly earns noticeably more than one
+that beelines for the objective, without making mission pay feel irrelevant.
+
+Not all loot is coin. Equipment found in ruins may be damaged, requiring
+repair costs (typically 20--30% of market value). Exotic materials may need
+a buyer. Salvaged magitek may have value only to a specific faction. These
+frictions are good --- they create side objectives, NPC relationships, and
+reasons to visit settlements.
+
+==== Wealth Benchmarks
+
+@wealth-benchmarks shows the approximate cumulative wealth a character
+should have earned (from all sources, including their starting #feathers
+500) by the time they are solidly established at each tier. These values
+assume the party can afford a full tier-appropriate kit --- one weapon, one
+set of armor, and one catalyst or reliquary if relevant.
+
+#floating-table(
+  "Cumulative Wealth Benchmarks",
+  columns: (2fr,) + (1fr,) * 6,
+  align: (left, center, center, center, center, center, center),
+  stroke: 0.5pt,
+
+  [*Tier*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
+  [Full Kit Cost], [500--1500], [1500--4000], [4500--10000], [13000--22000], [24000--37000], [Quest],
+  [Cumulative Earned], [500--1000], [2500--4500], [7000--14000], [22000--36000], [46000--73000], [---],
+) <wealth-benchmarks>
+
+The gap between cumulative earned and full kit cost represents savings,
+consumable spending, repairs, ritual components, and the general cost of
+living. Characters who spend frugally will have a comfortable buffer;
+characters who burn through consumables and ritual components will feel
+the pinch --- both are valid play experiences.
+
+If the party's wealth is significantly ahead of or behind these benchmarks,
+the easiest correction is to adjust mission pay for the next few sessions.
+Windfall loot (a vault, a bounty, a patron's bonus) can also close a gap
+quickly without disrupting the session-to-session economy.
+
+=== Item Availability
+
+Having feathers is not the same as having access. The commercial
+availability of equipment depends on its tier and on where the characters
+are.
+
+==== Tiers 0--2: Common Goods
+
+Old War salvage (T0) is everywhere. Tier 1 and 2 equipment is manufactured
+or restored by local smiths, armorers, and artificers and can be found in
+any settlement with a functioning market. Availability is not a concern ---
+if the characters have the feathers, they can buy it.
+
+==== Tier 3: Specialist Work
+
+Tier 3 equipment represents the upper end of what skilled artisans can
+produce. It is available in major settlements and trading hubs, but a
+frontier outpost or a small Clear may not stock it. Characters may need to
+commission a piece and wait days or weeks for delivery, or travel to a
+larger settlement. This is a soft gate, not a hard one: the equipment
+exists on the open market, it just is not always on the shelf.
+
+==== Tier 4: Master Craftsmanship
+
+Tier 4 is the ceiling of commercially available equipment. Only the great
+trading hubs --- Aurum, Ironhaven, the floating markets of the Western
+Islands --- reliably stock T4 gear, and even there the selection is limited.
+Most T4 purchases are commissions: the character specifies what they want,
+pays in advance, and waits. Lead times of one to four weeks are normal.
+
+Masterwork items (generic items enhanced beyond their base tier) follow the
+same pattern. A master artisan can produce them, but they are expensive,
+slow to make, and the artisan may have conditions --- rare materials, a
+favor, or simply a long queue.
+
+==== Tier 5 and Above: Beyond Commerce
+
+Tier 5 equipment is not commercially available in any meaningful sense. The
+materials are too rare, the techniques too specialized, and the makers too
+few. Characters who want T5 gear must find it --- in ancient ruins, in the
+hoards of powerful creatures, or in the vaults of factions willing to part
+with it for a price measured in service rather than feathers.
+
+This is by design. The transition from T4 to T5 is the point where
+character progression shifts from economic to narrative. The party cannot
+simply grind missions, accumulate feathers, and buy their way to the top.
+They must engage with the world: seek out legendary artisans, delve into
+dangerous places, negotiate with powerful factions, or earn the right to
+wield what they find. The feather values listed in the equipment tables for
+T5 items represent replacement cost or insurance value, not a price anyone
+will actually charge.
+
+Tier 6 equipment is unique by definition and is covered under _Awarding
+Legendary Rewards_ below.
+
 == Awarding Legendary Rewards
 
 Legendary items, powers, and advances (see _Legendary_ in the Basic Rules chapter) are among the most significant rewards a GM can offer. Because they are quest-bound and extraordinary by definition, they require more thought than standard loot or level-up choices.
