@@ -1,0 +1,3 @@
+- Dual wielding needs to be defined
+- Lists of powers, advances, items and rituals need to be revisited and completed, especially for tiers 1-3
+- layouting and design pass
