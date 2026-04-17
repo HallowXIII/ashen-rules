@@ -199,14 +199,14 @@ If a character fails a favor check, they have displeased the deity and suffer
 the consequences.
 
 Reliquaries also control the prayers that a wielder can make use of. Each
-reliquary typically gives access to prayers from between one to three domains.
+reliquary typically gives access to prayers from between one to three aspects.
 The maximum tier of prayer that a wielder receives from the reliquary is equal
 to the tier of the reliquary. For example, a tier three reliquary that grants
-access to the Life and Fire domains would grant access to prayers in those
-domains up to tier three, as long as it remained wielded.
+access to the Scarab and Ash aspects would grant access to prayers in those
+aspects up to tier three, as long as it remained wielded.
 
-Some reliquaries may grant access to unique prayers not part of any domain, or
-specific prayers outside of the domains they ordinarily grant access to. In
+Some reliquaries may grant access to unique prayers not part of any aspect, or
+specific prayers outside of the aspects they ordinarily grant access to. In
 these cases, those prayers are specially noted in the reliquary's stat block.
 
 #set page(
@@ -235,6 +235,8 @@ Daggers and knives are Light weapons, easily concealed and quick to draw. Most h
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
   [Old War Dagger], [0], [_#feathers 0_], [2+D6], [0], [½ (L)], [1], [2], [Sidearm],
   [Heat Knife], [1], [_#feathers 150_], [6+D3], [0], [½ (L)], [1], [3], [Sidearm, Burning],
+  [Stiletto, Silvered], [2], [_#feathers 500_], [7+D4], [4], [½ (L)], [1], [4], [Sidearm, Silvered],
+  [Mist-Edge Knife], [3], [_#feathers 1500_], [9+D6], [6], [½ (L)], [1], [7], [Sidearm, Parry +2d],
   [Parry Dagger, Power Field], [4], [_#feathers 5000_], [7+D6], [15], [1 (L)], [1], [11], [Parry +4d, Powered],
   [Venom Fang, Unstable Edge], [4], [_#feathers 5000_], [8+2D8], [10], [1 (L)], [1], [11], [Poisonous (8)],
 )
@@ -272,6 +274,7 @@ Two-handed swords and similar large bladed weapons sacrifice versatility for raw
   [Old War Greatsword], [0], [_#feathers 0_], [4+D6], [0], [2 (H)], [2], [4], [],
   [Construct Chainsword], [1], [_#feathers 500_], [6+D12], [0], [2 (H)], [1], [5], [Chain, Powered],
   [Construct Power Sword], [2], [_#feathers 1200_], [15+D4], [0], [2 (H)], [1], [8], [Chain, Powered],
+  [Power Field Greatsword], [3], [_#feathers 2500_], [13+2D8], [4], [3 (H)], [2], [9], [Powered],
 )
 
 ==== Blunt Weapons
@@ -284,7 +287,9 @@ Hammers, maces, and similar bludgeoning weapons deal *Impact* damage rather than
   breakable: true,
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
   [Old War Greathammer], [0], [_#feathers 0_], [6+D3], [0], [2 (H)], [2], [4], [],
+  [Dragon Guard Warhammer], [2], [_#feathers 700_], [10+D6], [0], [2 (H)], [2], [6], [],
   [Argent Disruptor], [2], [_#feathers 800_], [9+D8], [0], [1½ (M)], [1], [5], [Disrupting],
+  [Thundermaul], [3], [_#feathers 2000_], [14+D8], [0], [3 (H)], [2], [8], [Disrupting],
 )
 
 ==== Polearms
@@ -296,6 +301,8 @@ Polearms are long-hafted weapons --- spears, lances, halberds --- that grant the
   columns: (3fr,) + (1fr,) * 7 + (2fr,),
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
   [Old War Spear], [0], [_#feathers 0_], [5+D3], [0], [2 (M)], [2], [3], [Reach 2],
+  [Dragon Guard Halberd], [2], [_#feathers 900_], [10+D8], [0], [2½ (H)], [2], [6], [Reach 2],
+  [Powered Glaive], [3], [_#feathers 2200_], [13+D10], [0], [3 (H)], [2], [8], [Reach 2, Powered],
   [Kazykly], [6], [_Unique_], [29+2D12], [0], [3 (H)], [1], [18], [],
 )
 
@@ -309,6 +316,7 @@ Gauntlets are fist-mounted weapons --- powered gloves, cestus, and similar devic
   breakable: true,
   [*Name*], [*Tier*], [*Price*], [*Damage*], [*Pen*], [*Bulk*], [*Hands*], [*Inc*], [*Special*],
   [Lantern Impulse Gauntlet], [1], [_#feathers 200_], [4+D6], [0], [¼ (L)], [1], [3], [],
+  [Shock Gauntlet], [2], [_#feathers 600_], [7+D6], [0], [½ (L)], [1], [5], [Disrupting],
 )
 
 === Ranged Weapons by Type
@@ -434,6 +442,70 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
   [Vanth's Sypharion], [6], [_Unique_], [15], [15], [+3], [1], [3], [C],
 )
 
+=== Shields
+
+Shields provide additional protection beyond what armor alone offers. They
+come in two forms: *physical shields* made of metal, composite, or
+hardened material, and *shield generators* that project a localized arcane
+ward field.
+
+==== Physical Shields
+
+Physical shields are held or strapped to an arm. They absorb incoming
+damage directly, adding their Armor value to the wielder's total. A
+physical shield occupies one hand unless it has the *Arm-Strapped* keyword,
+in which case it is secured to the forearm and leaves the hand free (but
+at reduced effectiveness, as noted in the item description).
+
+Physical shields come in two sizes:
+
+- *Small shields* (bucklers and parrying shields) are light and
+  maneuverable. They grant *Parry +Nd* dice on defensive maneuver checks,
+  making them ideal for characters who rely on active defense.
+- *Large shields* (riot shields and tower shields) are too heavy and
+  unwieldy to parry with. Instead, the wielder can spend 1 AP to *Brace
+  Shield*: until the wielder moves, takes an action other than Command or
+  Brace Shield, or is knocked prone, the wielder benefits from *light
+  cover*. Large shields are the tool of choice for characters who need to
+  hold a position under fire.
+
+==== Shield Generators
+
+A shield generator is a compact magitek device, typically strapped to the
+forearm or mounted on armor, that projects a localized ward field. Shield
+generators provide Ward rather than Armor, protecting against both physical
+and magical damage. They consume Charge capacity and do not occupy a hand.
+
+Shield generators are small enough to grant *Parry +Nd* dice, as the ward
+field can be reflexively shaped to deflect incoming strikes. However, they
+provide no benefit when unpowered (if total Charge exceeds the character's
+capacity, the generator is dead weight).
+
+==== Shield Stats
+
+- *Armor* (physical) or *Ward* (generator): The defensive value provided.
+- *Parry +Nd:* Bonus dice on defensive maneuver checks (small shields and
+  generators only).
+- *Brace:* The shield can be braced for light cover (large shields only).
+- *Bulk:* Physical weight and encumbrance.
+- *Charge:* Magical encumbrance (generators only).
+- *Hands:* 1 if held, 0 if arm-strapped or a generator.
+
+#pftab(
+  "Shields",
+  columns: (3fr, 1fr, 2fr, 1fr, 1fr, 2fr, 1fr, 1fr, 1fr, 2fr),
+  breakable: true,
+  align: (left, center, center, center, center, left, center, center, center, left),
+  [*Name*], [*Tier*], [*Price*], [*Armor*], [*Ward*], [*Defense*], [*Bulk*], [*Charge*], [*Hands*], [*Special*],
+  [Old War Buckler], [0], [_#feathers 0_], [2], [0], [Parry +2d], [½], [0], [1], [],
+  [Lantern Riot Shield], [1], [_#feathers 250_], [4], [0], [Brace], [2], [0], [1], [],
+  [Light Shield Generator], [1], [_#feathers 300_], [0], [3], [Parry +1d], [¼], [1], [0], [Arm-Strapped],
+  [Dragon Guard Tower Shield], [2], [_#feathers 800_], [6], [0], [Brace], [3], [0], [1], [--1 Speed],
+  [Combat Shield Generator], [2], [_#feathers 700_], [0], [5], [Parry +2d], [½], [2], [0], [Arm-Strapped],
+  [Perfector Shield Generator], [3], [_#feathers 2000_], [0], [8], [Parry +3d], [½], [2], [0], [Arm-Strapped],
+  [Breacher Shield], [3], [_#feathers 1800_], [5], [0], [Brace], [2], [0], [1], [Ram: 10+D10 on charge],
+)
+
 #pftab(
   "Catalysts",
   columns: (2fr,1fr,1fr,2fr,1fr,1fr,1fr,1fr,1fr),
@@ -444,8 +516,13 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
   [Amber Rod], [1], [_#feathers 350_], [Arcane], [Medium], [1], [2], [8+D3], [8],
   [Angel Mask], [1], [_#feathers 300_], [Psychic], [Medium], [0], [3], [5+D8], [8],
   [Prana Crystal], [1], [_#feathers 250_], [Psychic], [Light], [0], [2], [2+D6], [5],
+  [Mist Shard], [2], [_#feathers 600_], [Arcane], [Light], [0], [2], [6+D6], [7],
   [Blackbone Staff], [2], [_#feathers 800_], [Arcane], [Medium], [½], [1½], [9+D8], [9],
+  [Mindstone Pendant], [2], [_#feathers 700_], [Psychic], [Light], [0], [2], [4+D8], [7],
+  [Resonance Mask], [2], [_#feathers 900_], [Psychic], [Medium], [½], [3], [8+D6], [9],
   [Polybind Staff], [3], [_#feathers 2500_], [Arcane], [Medium], [1], [2½], [12+D10], [11],
+  [Dream Catcher], [3], [_#feathers 2000_], [Psychic], [Light], [0], [2½], [7+D10], [10],
+  [Third Eye Crown], [3], [_#feathers 2800_], [Psychic], [Medium], [½], [3], [11+D8], [11],
   [Memento Mori], [4], [_#feathers 5000_], [Psychic], [Light], [0], [2], [8+2D8], [11],
   [Caesium Rod], [5], [_Unique_], [Psychic], [Medium], [2], [3], [23+D10], [16],
   [Moonray], [6], [_Unique_], [Arcane], [Medium], [1], [4], [27+2D8], [18],
@@ -454,13 +531,19 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
 
 #pftab(
   "Reliquaries",
-  columns: (2fr,1fr,1fr,1fr,1fr,1fr,1fr,2fr,1fr),
+  columns: (3fr,1fr,2fr,1fr,1fr,1fr,2fr,1fr,1fr,3fr),
   breakable: true,
-  align: (left, center, center, center, center, center, center, center, center),
-  [*Name*], [*Tier*], [*Price*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Increment*], [*Will*],
-  [The Princess' Locket], [1], [_#feathers 300_], [Light], [0], [2], [4+D6], [5], [3],
-  [Battlefield Dust], [1], [_#feathers 300_], [Light], [0], [2], [3+D8], [5], [3],
-  [Kharu's Ember], [1], [_#feathers 250_], [Light], [0], [1], [4+D3], [5], [2],
+  align: (left, center, center, center, center, center, center, center, center, left),
+  [*Name*], [*Tier*], [*Price*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Inc*], [*Will*], [*Aspects*],
+  [The Princess' Locket], [1], [_#feathers 300_], [Light], [0], [2], [4+D6], [5], [3], [Scarab, Crown],
+  [Battlefield Dust], [1], [_#feathers 300_], [Light], [0], [2], [3+D8], [5], [3], [Ash],
+  [Khâru's Ember], [1], [_#feathers 250_], [Light], [0], [1], [4+D3], [5], [2], [Sun, Scarab],
+  [Battlefield Relic], [2], [_#feathers 800_], [Light], [½], [2], [6+D8], [7], [4], [Ash, Crown],
+  [Heartwood Icon], [2], [_#feathers 700_], [Light], [0], [3], [5+D6], [7], [3], [Maiden, Scarab],
+  [Skull Fetish], [2], [_#feathers 900_], [Light], [0], [2], [7+D6], [7], [5], [Serpent],
+  [Warden's Seal], [3], [_#feathers 2000_], [Medium], [½], [3], [9+D10], [9], [5], [Crown, Ash],
+  [Void Lantern], [3], [_#feathers 2500_], [Medium], [½], [3], [8+D8], [9], [6], [Skull, Key],
+  [Chalice of Renewal], [3], [_#feathers 2200_], [Medium], [1], [3], [10+D6], [9], [4], [Scarab, Maiden],
 )
 
 #pftab(
@@ -473,6 +556,9 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
   [Frag Grenade], [1], [Grenade], [¼], [Burst 1/10], [6+D3 damage, DC 2], [_#feathers 150_],
   [AP Grenade], [1], [Grenade], [½], [5], [8+D3 damage, Pen 3], [_#feathers 300_],
   [Flashbang Grenade], [2], [Grenade], [¼], [Burst 2/10], [Dazed + Blinded 1 round (D4 Stamina negates)], [_#feathers 300_],
+  [Plasma Grenade], [3], [Grenade], [¼], [Burst 2/10], [12+D10 Thermal damage, Burning (save ends)], [_#feathers 600_],
+  [EMP Grenade], [3], [Grenade], [¼], [Burst 3/10], [No damage; all magitek and shield generators in area shut down for 2 rounds. D6 Stamina negates for worn items.], [_#feathers 800_],
+  [Mist Grenade], [4], [Grenade], [¼], [Burst 3/10], [Creates Dense Fog zone for 3 rounds. Creatures in zone at start of turn suffer Dense Fog exposure.], [_#feathers 1000_],
 )
 
 #pftab(
@@ -486,6 +572,9 @@ Flame weapons project streams or bursts of burning material --- promethium gel, 
   [Regeneration Draught], [2], [Potion], [¼], [Self/Touch], [Recover 2D4+4 HP per round for 3 rounds], [_#feathers 500_],
   [Potent Regeneration Draught], [2], [Potion], [¼], [Self/Touch], [Recover 2D6+8 HP per round for 3 rounds], [_#feathers 650_],
   [Potent Ether Flask], [2], [Potion], [¼], [Self/Touch], [Recover 2D6+18 Focus], [_#feathers 500_],
+  [Vermillion Healing Potion], [3], [Potion], [¼], [Self/Touch], [Recover 2D8+16 HP], [_#feathers 700_],
+  [Resistance Draught], [3], [Potion], [¼], [Self/Touch], [Gain resistance 5 to one damage type (chosen when brewed) for 1 encounter], [_#feathers 900_],
+  [Superior Ether Flask], [4], [Potion], [¼], [Self/Touch], [Recover 4D6+30 Focus], [_#feathers 1000_],
   [Scarlet Healing Potion], [5], [Potion], [¼], [Self/Touch], [Recover 4D8+36 HP], [_#feathers 1200_],
   [Ether Concentrate], [6], [Potion], [¼], [Self/Touch], [Recover 5D10+40 Focus], [_#feathers 1800_],
 )
@@ -532,10 +621,31 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   [Magitek Kit], [2], [_#feathers 200_], [Required to perform Magitek checks. Charge: 2],
   [Lantern], [½], [_#feathers 5_], [Bright light in 10 squares, dim light in 20],
   [Rations (1 week)], [1], [_#feathers 10_], [Sufficient food for one person for seven days],
-  [Binoculars], [½], [_#feathers 50_], [+2d to Scrutiny checks at long range],
+  [Binoculars], [½], [_#feathers 50_], [+2d to Awareness checks at long range],
   [Comm Unit], [¼], [_#feathers 100_], [Encrypted short-range communication (range: ~5 km)],
   [Lockpick Set], [¼], [_#feathers 75_], [Required to pick mechanical locks. +2d to Infiltration checks for locks],
   [Manacles], [½], [_#feathers 30_], [D6 Athletics to break free],
+)
+
+#pftab(
+  "Exploration & Field Equipment",
+  columns: (2fr,1fr,1fr,5fr),
+  breakable: true,
+  align: (left, center, center, left),
+  [*Name*], [*Bulk*], [*Cost*], [*Effect*],
+  [Tactical Flashlight], [¼], [_#feathers 30_], [Weapon-mountable. Bright light 10 squares. As 1 AP action, Dazzle an adjacent creature (D3 Stamina or Blinded 1 round)],
+  [Fog-Shielded Lantern], [½], [_#feathers 150_], [Bright light 10 squares, dim light 20. Shielded emission does not attract Fog creatures],
+  [IR Goggles], [¼], [_#feathers 300_], [See in darkness. Spot heat signatures. +2d to Awareness in low light or darkness. Charge: 1],
+  [Combat Visor], [¼], [_#feathers 500_], [Heads-up display. Negates concealment penalties from smoke and dim light. +1d Marksmanship. Charge: 1],
+  [Mist Filter], [¼], [_#feathers 200_], [Reduces Fog exposure severity by one step (Extreme → Dense, Dense → Light). Lasts 8 hours per filter cartridge],
+  [Rebreather], [½], [_#feathers 400_], [Full respiratory protection. Negates Fog exposure effects and airborne poisons for 4 hours per canister],
+  [Multi-Spectrum Sensor], [½], [_#feathers 350_], [Handheld scanner. Detects magical, thermal, and radiation signatures within 15 squares. +2d to Awareness for detection. Charge: 1],
+  [Motion Sensor], [¼], [_#feathers 250_], [Deployable. Alerts to movement within 15 squares for 8 hours. Can be linked to a comm unit],
+  [Signal Flare Kit (6)], [½], [_#feathers 50_], [Visible at extreme range. Can mark locations or signal allies. Burns for 1 minute],
+  [Grapnel Launcher], [1], [_#feathers 200_], [Fires a grappling hook up to 20 squares. 1 AP to fire. Includes 50 ft integrated line],
+  [Portable Fog Ward], [1], [_#feathers 800_], [Creates a 2-square safe zone where Fog exposure is suppressed for 8 hours. Charge: 3],
+  [Advanced Comm Unit], [¼], [_#feathers 500_], [Encrypted long-range communication (~50 km). Fog-resistant signal. Charge: 1],
+  [Breaching Charge], [½], [_#feathers 400_], [Destroys doors, walls, and barricades. 30+3D10 damage to structures; Burst 1 to creatures adjacent to the breach],
 )
 
 #set page(
@@ -759,5 +869,5 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
 
   *Mana Toxin:* Powers manifested using this staff apply a -3 penalty to attempts to counterspell them. When a power is successfully manifested through this catalyst, the wielder gains an Aura 10 until the beginning of their next turn; attempts to cast Arcane spells in this aura suffer a -4 penalty.
 
-  *Vessel of the World Serpent:* _(Legendary.)_ The Serpent Staff is also a Reliquary of the World Serpent (Domains: Life, Poison, Serpent; Will 8; Favor 3).
+  *Vessel of the World Serpent:* _(Legendary.)_ The Serpent Staff is also a Reliquary of the World Serpent (Aspects: Scarab, Serpent; Will 8; Favor 3).
 ]

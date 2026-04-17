@@ -595,7 +595,7 @@ among their treasures.
 Divine prayers are not learned or prepared. They are granted by a character's
 wielded *reliquary* --- a remnant of a dead god that retains a portion of
 divine power. Each reliquary provides access to prayers from one or more
-domains, up to the tier of the reliquary itself. As long as the reliquary
+aspects, up to the tier of the reliquary itself. As long as the reliquary
 is wielded and the character has earned its favor, those prayers are available
 to cast. See _Reliquaries_ in the Equipment chapter for the full rules on
 favor, will, and tapping.

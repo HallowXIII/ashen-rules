@@ -408,7 +408,7 @@ the radius of a strong light source. No penalties apply.
 
 *Dim light* includes twilight, candlelight, moonlight, or the edge of a light
 source's radius. Dim light provides light concealment (-2d to hit targets in dim
-light from bright light). Scrutiny checks at medium range or beyond take a -2d
+light from bright light). Awareness checks at medium range or beyond take a -2d
 penalty.
 
 *Darkness* is the absence of light — underground, sealed rooms, moonless

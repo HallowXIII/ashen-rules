@@ -18,6 +18,21 @@ formatted in a structured way.
 Every power starts with a header that lists the power's name, type and rank, as
 well as any keywords the power has.
 
+=== Keywords
+
+Keywords on a power's header serve three purposes: they identify *what type
+of effect the power is* (e.g., Weapon, Zone, Stance), they indicate
+*prerequisites or interactions* (e.g., Dual Wield powers require two
+weapons), and they tag the power's *thematic aspect*. Aspect keywords
+correspond to the nine aspects of the dead gods --- Ash, Crown, Sun, Key,
+Mist, Moon, Scarab, Skull, and Maiden --- as well as elemental and
+discipline tags like Fire, Cold, Fate, and Lotus Art. Aspect keywords
+determine which reliquaries grant access to which prayers, and may interact
+with equipment or abilities that reference specific aspects.
+
+The *Summon* keyword indicates that the power creates a summoned creature.
+Summoning powers follow the rules described in #link(<summoning>)[_Summoning and Binding_] in the Combat chapter.
+
 === Flavor Text
 
 The next line in the power describes what the power does from the perspective of
@@ -159,9 +174,9 @@ Instead, the divine power contained within a reliquary temporarily gives them
 access to a list of prayers specific to that reliquary as long as the reliquary
 remains equipped.
 
-Prayers are organized by _domain_, which represent an area of the world that a
-given deity has dominion over. Domains typically encompass one prayer per tier,
-but this may be more or fewer depending on the domain.
+Prayers are organized by _aspect_, which represent a facet of the divine power
+that a given deity has dominion over. Aspects typically encompass one prayer per
+tier, but this may be more or fewer depending on the aspect.
 
 Divine powers may have a _tap_ effect, which increases the strength of the
 power, but consumes favor (see _reliquaries_ for an explanation of favor).
@@ -245,6 +260,32 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "Yes (Dodge 3)",
 )
 
+#power-description(
+  "Conjure Elemental Servant",
+  "Arcane Spell",
+  1,
+  "3 AP; sustain 1 AP",
+  "You conjure a small elemental from raw magical energy. The elemental is a mindless summon (see _Summoning and Binding_) with the following baseline stats: 15 HP, 4 Armor, 2 Ward, 3 Evasion, 4 AP, Speed 4. It makes melee attacks at 5 dice dealing 6+D6 damage of a type matching its element (Thermal for fire, Cold for ice, Impact for earth, Electric for air). The elemental persists as long as you sustain this power.",
+  keywords: ("Summon", "Key"),
+  flavor: "A flickering shape coalesces from the air --- fire, frost, stone, or crackling lightning, bound to your will.",
+  difficulty: "3",
+  cost: "2 Increments; sustain 1",
+  range: "one unoccupied space within 5",
+)
+
+#power-description(
+  "Animate Dead",
+  "Arcane Spell",
+  1,
+  "3 AP; sustain 1 AP",
+  "You animate a corpse within range as a skeletal servant. The skeleton is a mindless summon with the following baseline stats: 12 HP, 3 Armor, 0 Ward, 2 Evasion, 4 AP, Speed 3. It wields whatever weapon was on the corpse (or makes unarmed attacks at 4 dice dealing 4+D4 Rending damage). The skeleton persists as long as you sustain this power. If there is no suitable corpse within range, this spell fails and the Focus cost is not paid.",
+  keywords: ("Summon", "Skull"),
+  flavor: "The dead rise at your command, hollow-eyed and obedient.",
+  difficulty: "3",
+  cost: "2 Increments; sustain 1",
+  range: "one corpse within 5",
+)
+
 === Tier 2
 
 #power-description(
@@ -266,7 +307,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Arcane Spell",
   2,
   "2",
-  "On hit: 200% Force damage. Objects and constructs take double damage. If the target is wearing armor, they must pass a resistance check or their armor's value is permanently reduced by 2 (until repaired).",
+  "On hit: 200% Impact damage. Objects and constructs take double damage. If the target is wearing armor, they must pass a resistance check or their armor's value is permanently reduced by 2 (until repaired).",
   keywords: ("Force",),
   range: "one creature or object within 20",
   difficulty: "4",
@@ -285,6 +326,30 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   difficulty: "4",
   cost: "2 Increments; sustain 1",
   resistance: "Yes (Stamina 4)",
+)
+
+#power-description(
+  "Conjure War Elemental",
+  "Arcane Spell",
+  2,
+  "3 AP; sustain 1 AP",
+  "You conjure a combat-ready elemental, larger and more aggressive than a servant. The elemental is a mindless summon with the following baseline stats: 25 HP, 6 Armor, 4 Ward, 3 Evasion, 4 AP, Speed 5. It makes melee attacks at 7 dice dealing 10+D8 damage of a type matching its element. The elemental persists as long as you sustain this power.",
+  keywords: ("Summon", "Key"),
+  difficulty: "5",
+  cost: "3 Increments; sustain 1",
+  range: "one unoccupied space within 5",
+)
+
+#power-description(
+  "Raise Skeletal Guard",
+  "Arcane Spell",
+  2,
+  "3 AP; sustain 1 AP",
+  "You raise an armored skeleton from a corpse, binding it with stronger magic than a simple animation. The skeleton is a mindless summon with the following baseline stats: 20 HP, 8 Armor, 0 Ward, 3 Evasion, 4 AP, Speed 3. It fights with a shield and weapon: 6 dice dealing 8+D6 Rending damage, and it has Parry +2d. The skeleton persists as long as you sustain this power. If there is no suitable corpse within range, this spell fails and the Focus cost is not paid.",
+  keywords: ("Summon", "Skull"),
+  difficulty: "5",
+  cost: "3 Increments; sustain 1",
+  range: "one corpse within 5",
 )
 
 === Tier 3
@@ -316,6 +381,18 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   difficulty: "8",
   cost: "3 Increments",
   resistance: "Yes (Stamina 6)",
+)
+
+#power-description(
+  "Conjure Greater Elemental",
+  "Arcane Spell",
+  3,
+  "3 AP; sustain 1 AP",
+  "You conjure a powerful elemental, a towering figure of raw elemental force. The elemental is a mindless summon (Size 2) with the following baseline stats: 40 HP, 30 FP, 8 Armor, 6 Ward, 4 Evasion, 4 AP, Speed 5. It makes melee attacks at 10 dice dealing 14+D10 damage of a type matching its element. It also has a ranged attack (range 10, 8 dice, 10+D8 damage of the same type). The elemental can cast an elemental burst (Burst 2 within 15, 8 dice, difficulty 5, cost 10 FP): fire elementals cast Fireball (100% Thermal damage, Burning on hit); cold elementals cast Frozen Burst (100% Cold damage, Slowed (4) on failed D6 Stamina save, save ends); lightning elementals cast Thunder Burst (100% Lightning damage, Dazed on failed D6 Stamina save, save ends); earth elementals cast Shatter (100% Impact damage, knocked prone on failed D6 Stamina save). The elemental's base damage of 14+D10 is used as its catalyst damage for percentage calculations. The elemental persists as long as you sustain this power.",
+  keywords: ("Summon", "Key"),
+  difficulty: "7",
+  cost: "3 Increments; sustain 2",
+  range: "one unoccupied space within 5",
 )
 
 === Tier 4
@@ -410,13 +487,13 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Arcane Spell",
   6,
   "3 AP",
-  "A thin green ray strikes the target. On a hit, the target takes 300% Force damage, ignoring all armor and Hardness. If this damage reduces the target to 0 HP, they and all equipment they carry are reduced to fine dust. Objects and structures targeted by this spell take double damage.",
+  "A thin green ray strikes the target. On a hit, the target takes 300% Impact damage, ignoring all armor and Hardness. If this damage reduces the target to 0 HP, they and all equipment they carry are reduced to fine dust. Objects and structures targeted by this spell take double damage.",
   keywords: ("Force",),
   difficulty: "12",
   cost: "4 Increments",
   range: "one creature or object within 20",
   resistance: "D10 Stamina",
-  miss: "100% Force damage, ignoring armor.",
+  miss: "100% Impact damage, ignoring armor.",
 )
 
 #power-description(
@@ -449,7 +526,23 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
 
 == Divine
 
-=== Life Domain
+Divine prayers are organized by *aspect* --- the nine fundamental facets
+of the dead gods' power. Each aspect represents a facet of divine power: Ash
+(destruction), Crown (law), Sun (crafting, light), Key (opening,
+summoning), Mist (magic), Moon (mind), Scarab (rebirth), Skull (death),
+and Maiden (nature). A reliquary grants access to prayers from the aspects
+listed in its aspect entry, up to the reliquary's tier.
+
+Some aspects have *minor aspects* --- narrower expressions of the parent
+aspect's power. A reliquary that grants access to a minor aspect also
+grants access to the parent major aspect. For example, Serpent is a minor
+aspect of Skull: a reliquary with the Serpent aspect grants access to both
+Serpent and Skull prayers, while a reliquary with only the Skull aspect
+does not grant access to Serpent prayers. This means minor-aspect
+reliquaries are broader in scope, combining their specialized prayers with
+the more general powers of their parent.
+
+=== Scarab --- Rebirth, Cycles
 
 #power-description(
   "Mend Wounds",
@@ -457,7 +550,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   1,
   "2 AP",
   "The target recovers HP equal to 100% of your catalyst's damage.",
-  domain: "Life",
+  domain: "Scarab",
   keywords: ("Divine",),
   difficulty: "3",
   cost: "1 Increment",
@@ -471,7 +564,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   2,
   "2 AP",
   "The target gains temporary HP equal to 100% of your catalyst's damage. These temporary HP last until the end of the encounter.",
-  domain: "Life",
+  domain: "Scarab",
   keywords: ("Divine",),
   difficulty: "4",
   cost: "2 Increments",
@@ -485,7 +578,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   3,
   "2 AP",
   "Remove one status condition from the target (Poisoned, Diseased, Bleeding, Burning, or Blinded). The target then recovers HP equal to 100% of your catalyst's damage.",
-  domain: "Life",
+  domain: "Scarab",
   keywords: ("Divine",),
   difficulty: "7",
   cost: "2 Increments",
@@ -499,7 +592,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   4,
   "3 AP",
   "All dead allies in the burst are restored to life with 1 HP and their current Focus total; then all allies in the burst heal 200% of your catalyst's damage.",
-  domain: "Life",
+  domain: "Scarab",
   keywords: ("Divine",),
   difficulty: "8",
   cost: "4 Increments + 2 EP",
@@ -513,7 +606,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   5,
   "2 AP; sustain 1 AP",
   "At the start of each of the target's turns, they recover HP equal to 100% of your catalyst's damage.",
-  domain: "Life",
+  domain: "Scarab",
   keywords: ("Divine",),
   difficulty: "9",
   cost: "3 Increments; sustain 1",
@@ -527,7 +620,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   6,
   "3 AP",
   "All allies in the area immediately recover HP equal to 300% of your catalyst's damage. Additionally, all allies gain immunity to one status condition of your choice (chosen when you cast this prayer) for 3 rounds.",
-  domain: "Life",
+  domain: "Scarab",
   keywords: ("Divine",),
   difficulty: "11",
   cost: "4 Increments",
@@ -535,7 +628,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   tap: "Allies also gain temporary HP equal to 100% of your catalyst's damage and the immunity duration increases to 5 rounds.",
 )
 
-=== War Domain
+=== Ash --- Destruction, Desolation
 
 #power-description(
   "Battle Cry",
@@ -543,7 +636,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   1,
   "2 AP",
   "One ally within range gains +2d on their next attack roll and +2 to their Movement Speed until the end of their next turn.",
-  domain: "War",
+  domain: "Ash",
   keywords: ("Divine",),
   difficulty: "3",
   cost: "1 Increment",
@@ -557,7 +650,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   2,
   "2 AP",
   "Your next weapon attack before the end of your turn deals an additional 100% damage as radiant. If the target is Undead or Fiend, the additional damage increases to 200%.",
-  domain: "War",
+  domain: "Ash",
   keywords: ("Divine", "Radiant"),
   difficulty: "4",
   cost: "1 Increment",
@@ -570,7 +663,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   3,
   "2 AP",
   "You and up to three allies within range each gain +1 AP and +3 Movement Speed until the end of your next turn. Each affected creature may immediately shift 1 square.",
-  domain: "War",
+  domain: "Ash",
   keywords: ("Divine",),
   difficulty: "7",
   cost: "2 Increments",
@@ -584,7 +677,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   4,
   "3 AP",
   "You call down a pillar of radiant fury on the battlefield. All enemies in the area take 300% radiant damage. Enemies that fail their resistance check are also Dazed (save ends).",
-  domain: "War",
+  domain: "Ash",
   keywords: ("Divine", "Radiant"),
   difficulty: "8",
   cost: "3 Increments",
@@ -599,7 +692,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   5,
   "3 AP; sustain 1 AP",
   "You or one ally within range becomes an avatar of divine battle for the duration. The avatar gains +1 AP, +3d on all attack rolls, and their weapon attacks deal an additional 100% radiant damage. While the avatar is active, enemies within 3 squares of the avatar take a -2d penalty on attack rolls.",
-  domain: "War",
+  domain: "Ash",
   keywords: ("Divine", "Radiant"),
   difficulty: "10",
   cost: "3 Increments; sustain 1",
@@ -613,7 +706,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   6,
   "3 AP",
   "Spectral weapons rain from the sky across the battlefield. All enemies in the area take 300% radiant damage. Each enemy hit must pass a resistance check or be Stunned for 1 round, then Exposed (save ends). Allies in the area are unaffected and recover HP equal to 100% of your catalyst's damage.",
-  domain: "War",
+  domain: "Ash",
   keywords: ("Divine", "Radiant"),
   difficulty: "11",
   cost: "4 Increments",
@@ -622,7 +715,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   miss: "Half damage, Exposed for 1 round.",
 )
 
-=== Nature Domain
+=== Maiden --- Nature
 
 #power-description(
   "Entangling Growth",
@@ -630,7 +723,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   1,
   "2 AP",
   "Grasping vines and roots erupt in the target area. The area becomes difficult terrain for the rest of the encounter. Each creature in the area when it appears must pass a resistance check or be Slowed (5) for 1 round.",
-  domain: "Nature",
+  domain: "Maiden",
   keywords: ("Divine",),
   difficulty: "3",
   cost: "1 Increment",
@@ -645,7 +738,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   2,
   "2 AP",
   "The target's skin hardens to the resilience of oak. The target gains +3 Armor and +2 Hardness until the end of the encounter. This bonus does not stack with worn armor.",
-  domain: "Nature",
+  domain: "Maiden",
   keywords: ("Divine",),
   difficulty: "4",
   cost: "2 Increments",
@@ -659,7 +752,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   3,
   "2 AP; sustain 1 AP",
   "You summon a storm cloud in the area. When you cast this prayer and at the start of each of your subsequent turns while you sustain it, a bolt of lightning strikes a creature of your choice within the area, dealing 200% electric damage.",
-  domain: "Nature",
+  domain: "Maiden",
   keywords: ("Divine", "Electric"),
   difficulty: "7",
   cost: "2 Increments; sustain 1",
@@ -675,7 +768,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   4,
   "3 AP",
   "The terrain itself turns hostile. All enemies in the area take 200% damage as thorns, roots, and stone erupt beneath them. The area becomes heavily obscured difficult terrain for 3 rounds. Enemies that start their turn in the area take 100% ongoing damage.",
-  domain: "Nature",
+  domain: "Maiden",
   keywords: ("Divine",),
   difficulty: "8",
   cost: "3 Increments",
@@ -690,7 +783,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   5,
   "3 AP",
   "You encase a dead ally in a cocoon of living wood that rapidly restores their body. The target revives with HP equal to 300% of your catalyst's damage and 100% Focus. Additionally, the cocoon removes all status conditions from the target upon revival. The cocoon takes 1 round to open — the target cannot act until the start of their next turn.",
-  domain: "Nature",
+  domain: "Maiden",
   keywords: ("Divine",),
   difficulty: "10",
   cost: "3 Increments + 3 EP",
@@ -704,7 +797,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   6,
   "3 AP",
   "You unleash the full fury of the natural world. The terrain in the area is permanently transformed: trees erupt from stone, chasms split open, and rivers divert. All enemies in the area take 300% damage and must pass a resistance check or be Prone and Immobilized (save ends both). The transformed terrain is difficult terrain permanently and provides cover to your allies but not to your enemies.",
-  domain: "Nature",
+  domain: "Maiden",
   keywords: ("Divine",),
   difficulty: "12",
   cost: "4 Increments",
@@ -713,7 +806,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   miss: "Half damage, Prone for 1 round.",
 )
 
-=== Protection Domain
+=== Crown --- Law, Order
 
 #power-description(
   "Shield of Faith",
@@ -721,7 +814,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   1,
   "2 AP",
   "The target gains +2 Evasion and +2 to all resistance checks until the end of the encounter.",
-  domain: "Protection",
+  domain: "Crown",
   keywords: ("Divine",),
   difficulty: "3",
   cost: "1 Increment",
@@ -735,7 +828,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   2,
   "2 AP",
   "You create a divine link between yourself and the target. While the bond persists, the target gains Resistance 5 to all damage types, but you take damage equal to the amount resisted. The bond lasts until the end of the encounter or until you dismiss it (free action).",
-  domain: "Protection",
+  domain: "Crown",
   keywords: ("Divine",),
   difficulty: "4",
   cost: "2 Increments",
@@ -749,7 +842,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   3,
   "2 AP",
   "A wave of divine energy washes over the area, stripping away magical effects. Each ongoing spell, power, or magical effect in the area is immediately ended if its tier is equal to or less than 3. For effects of tier 4 or higher, make a Command check against the effect's original difficulty; on success, the effect is dispelled.",
-  domain: "Protection",
+  domain: "Crown",
   keywords: ("Divine",),
   difficulty: "7",
   cost: "2 Increments",
@@ -763,7 +856,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   4,
   "3 AP; sustain 1 AP",
   "A dome of golden light surrounds you and your allies. All allies within the area gain Resistance 10 to all damage types. Projectiles and ranged spell attacks that cross the barrier take a -3d penalty to hit. The aegis lasts as long as you sustain it, but you cannot move while sustaining.",
-  domain: "Protection",
+  domain: "Crown",
   keywords: ("Divine",),
   difficulty: "8",
   cost: "3 Increments; sustain 1",
@@ -777,7 +870,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   5,
   "3 AP",
   "You designate one creature within range. For 3 rounds, that creature cannot be targeted by attacks or harmful effects. The creature cannot attack or use offensive powers while the sanctuary is active; if they do, the sanctuary ends immediately. At the end of the duration, the creature recovers HP equal to 200% of your catalyst's damage.",
-  domain: "Protection",
+  domain: "Crown",
   keywords: ("Divine",),
   difficulty: "10",
   cost: "3 Increments",
@@ -791,7 +884,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   6,
   "3 AP",
   "You invoke the full protective power of your deity. For 3 rounds, all allies within the area gain immunity to two status conditions of your choice, Resistance 10 to all damage types, and +3 Evasion. The first time each ally would be reduced to 0 HP during this effect, they are instead reduced to 1 HP. When the effect ends, all allies recover HP equal to 100% of your catalyst's damage.",
-  domain: "Protection",
+  domain: "Crown",
   keywords: ("Divine",),
   difficulty: "12",
   cost: "4 Increments",
@@ -799,7 +892,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   tap: "The duration increases to 5 rounds and allies recover 200% instead.",
 )
 
-=== Poison Domain
+=== Serpent --- Poison, Disease _(minor aspect of Skull)_
 
 #power-description(
   "Venomous Touch",
@@ -807,7 +900,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   1,
   "2 AP",
   "You channel a potent toxin through your hand or weapon. Your next melee attack or touch before the end of your turn deals an additional 100% of your catalyst's damage as Poison damage. If the target takes damage, it must pass a resistance check or become Poisoned (save ends).",
-  domain: "Poison",
+  domain: "Serpent",
   keywords: ("Divine", "Poison"),
   difficulty: "3",
   cost: "1 Increment",
@@ -821,7 +914,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   2,
   "2 AP; sustain 1 AP",
   "You exhale a cloud of noxious fumes that fills the area. The zone provides light obscurement. Any creature that enters or starts its turn in the zone takes 100% Poison damage and must pass a resistance check or be Poisoned and Weakened (-2d on attack rolls) for 1 round. The zone lasts as long as you sustain it.",
-  domain: "Poison",
+  domain: "Serpent",
   keywords: ("Divine", "Poison", "Zone"),
   difficulty: "4",
   cost: "2 Increments; sustain 1",
@@ -836,7 +929,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   3,
   "2 AP",
   "You curse the target with a wasting toxin that saps their vitality. The target takes 200% Poison damage. On a failed resistance check, the target is Diseased (save ends): while Diseased, all healing received by the target is halved, and the target takes ongoing 5/T Poison damage at the start of each of its turns.",
-  domain: "Poison",
+  domain: "Serpent",
   keywords: ("Divine", "Poison", "Disease"),
   difficulty: "7",
   cost: "2 Increments",
@@ -852,7 +945,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   4,
   "3 AP",
   "You infect a target with a virulent plague that spreads to nearby enemies. The primary target takes 200% Poison damage and is automatically Diseased (save ends). At the end of each of the primary target's turns, all enemies within 2 squares of it must pass a resistance check or also become Diseased. The disease spreads in this manner up to 3 times. Diseased creatures have their healing halved and take ongoing 5/T Poison damage.",
-  domain: "Poison",
+  domain: "Serpent",
   keywords: ("Divine", "Poison", "Disease"),
   difficulty: "8",
   cost: "3 Increments",
@@ -868,7 +961,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   5,
   "3 AP",
   "You inject a target with a toxin that attacks the boundary between life and death. The target takes 300% Poison damage, ignoring Ward. On a failed resistance check, the target cannot be healed by any means (save ends). While this effect persists, any damage the target takes also reduces its maximum HP by the same amount. Maximum HP lost this way is restored when the effect ends.",
-  domain: "Poison",
+  domain: "Serpent",
   keywords: ("Divine", "Poison", "Necrotic"),
   difficulty: "10",
   cost: "3 Increments",
@@ -884,7 +977,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   6,
   "3 AP",
   "You call upon the World Serpent to devour your enemies' vitality. All enemies in the area take 300% Poison damage and are Diseased and Poisoned (save ends both). Diseased creatures have their healing halved and take ongoing 100% Poison damage per turn. For each enemy affected, one ally of your choice within the area recovers HP equal to 100% of your catalyst's damage. Enemies reduced to 0 HP by this prayer cannot be resurrected for 1 week.",
-  domain: "Poison",
+  domain: "Serpent",
   keywords: ("Divine", "Poison", "Disease", "Necrotic"),
   difficulty: "12",
   cost: "4 Increments",
@@ -894,6 +987,65 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   tap: "Allies in the area also gain immunity to Poison and Disease for 3 rounds.",
 )
 
+=== Skull --- Death, the End of Things
+
+#power-description(
+  "Call Ancestor Spirit",
+  "Prayer",
+  1,
+  "3 AP; sustain 1 AP",
+  "You call forth the spirit of a fallen warrior from beyond the veil. The spirit is a willful summon (see _Summoning and Binding_) that requires a binding check (your Command vs the spirit's Potential of 4). The spirit has the following baseline stats: 15 HP, 2 Armor, 5 Ward, 3 Evasion, 4 AP, Speed 5 (hover). It is *incorporeal*: Rending and Impact damage from weapons without an enchantment or the Force keyword is halved (after Armor). It makes melee attacks at 6 dice dealing 6+D8 Cold damage and has Lifesense 10. The spirit acts autonomously in your interest. It persists as long as you sustain this prayer.",
+  domain: "Skull",
+  keywords: ("Divine", "Summon", "Skull"),
+  difficulty: "3",
+  cost: "2 Increments; sustain 1",
+  range: "one unoccupied space within 5",
+  tap: "The spirit's attacks also deal ongoing 3 Cold damage (save ends).",
+)
+
+#power-description(
+  "Call Revenant",
+  "Prayer",
+  3,
+  "3 AP; sustain 1 AP",
+  "You call forth a revenant --- a powerful undead with a remnant of its living will. The revenant is a willful summon that requires a binding check (your Command vs the revenant's Potential of 8). The revenant has the following baseline stats: 40 HP, 10 Armor, 6 Ward, 4 Evasion, 4 AP, Speed 4. It makes melee attacks at 10 dice dealing 14+D10 Rending damage and has Lifesense 15. On hit, the target must make a D6 Stamina save or be Weakened (save ends). The revenant acts autonomously in your interest. It persists as long as you sustain this prayer.",
+  domain: "Skull",
+  keywords: ("Divine", "Summon", "Skull"),
+  difficulty: "7",
+  cost: "3 Increments; sustain 2",
+  range: "one unoccupied space within 5",
+  tap: "The revenant gains +2d to all attacks and its Weakened effect no longer allows a save on the first hit.",
+)
+
+=== Sun --- Crafting, Light
+
+#power-description(
+  "Sunfire Blessing",
+  "Prayer",
+  1,
+  "2 AP",
+  "You kindle the light of Khâru in an ally's weapon. The target's weapon attacks deal additional Thermal damage equal to 25% of your reliquary's damage per hit and shed bright light in 5 squares for the duration. Lasts until the end of the encounter or until dismissed.",
+  domain: "Sun",
+  keywords: ("Divine", "Fire"),
+  difficulty: "3",
+  cost: "1 Increment",
+  range: "one ally within 10",
+  tap: "The bonus damage increases to 50% and the weapon's attacks gain Burning (save ends).",
+)
+
+#power-description(
+  "Solar Ward",
+  "Prayer",
+  1,
+  "2 AP",
+  "You wreath the target in a halo of warm light. The target gains Ward equal to the reliquary's tier + 2 and immunity to the Blinded condition for the duration. Undead and incorporeal creatures that start their turn adjacent to the warded target take Thermal damage equal to the reliquary's tier × 3. Lasts until the end of the encounter or until dismissed.",
+  domain: "Sun",
+  keywords: ("Divine", "Fire"),
+  difficulty: "3",
+  cost: "1 Increment",
+  range: "one creature within 10",
+  tap: "The Ward bonus doubles and the aura damage increases to tier × 5.",
+)
 
 == Psychic
 
@@ -975,6 +1127,19 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "Yes (Stamina 4)",
 )
 
+#power-description(
+  "Summon Void Shade",
+  "Psychic Power",
+  2,
+  "3 AP; sustain 1 AP",
+  "You tear a hole in reality and pull through a shade --- a fragment of the Void given semi-sentient form. The shade is a willful summon (see _Summoning and Binding_) that requires a binding check (your Command vs the shade's Potential of 5). The shade has the following baseline stats: 20 HP, 0 Armor, 8 Ward, 4 Evasion, 4 AP, Speed 6 (hover). It is *incorporeal*: Rending and Impact damage from weapons without an enchantment or the Force keyword is halved (after Armor). It makes melee attacks at 7 dice dealing 8+D8 Cold damage. On hit, the target must make a D4 Potential save or be Dazed (save ends). The shade acts autonomously in your interest. It persists as long as you sustain this power.",
+  keywords: ("Summon", "Void"),
+  flavor: "A dark shape peels itself from your shadow, its edges flickering like a candle flame in a draft.",
+  difficulty: "6",
+  cost: "3 Increments; sustain 1",
+  range: "one unoccupied space within 5",
+)
+
 === Tier 3
 
 #power-description(
@@ -1000,6 +1165,31 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   range: "Burst 3 within 16",
   difficulty: "7",
   cost: "2 Increments",
+)
+
+#power-description(
+  "Summon Fate Warden",
+  "Psychic Power",
+  3,
+  "3 AP; sustain 1 AP",
+  "You weave strands of fate into a semi-corporeal guardian --- a faceless figure wreathed in shimmering temporal distortion. The warden is a willful summon that requires a binding check (your Command vs the warden's Potential of 7). The warden has the following baseline stats: 35 HP, 5 Armor, 10 Ward, 5 Evasion, 4 AP, Speed 5 (hover). It makes melee attacks at 9 dice dealing 12+D8 Impact damage. As a reaction (1 AP), the warden can interpose itself between an ally within 3 squares and an incoming attack, redirecting the attack to itself. Once per round, the warden can impose Slow on a creature it hits (D6 Potential save, save ends). The warden acts autonomously in your interest. It persists as long as you sustain this power.",
+  keywords: ("Summon", "Fate", "Time"),
+  flavor: "It has no face, but you feel its attention --- the weight of something that has seen every possible version of this moment.",
+  difficulty: "7",
+  cost: "3 Increments; sustain 2",
+  range: "one unoccupied space within 5",
+)
+
+#power-description(
+  "Shared Senses",
+  "Psychic Power",
+  3,
+  "1 AP; sustain 0 AP",
+  "You link your senses to those of a summoned or allied creature. For the duration, you can perceive through the creature's senses (including any special senses such as Lifesense) as a free action, switching between your own and the creature's perspective at will. While perceiving through the creature, you can use it as the origin point for ranged attacks and powers. The sustain cost is 1 Focus increment per round (no AP required).",
+  keywords: ("Moon",),
+  difficulty: "5",
+  cost: "1 Increment; sustain 1 (Focus only)",
+  range: "one creature you control or an ally within 30",
 )
 
 === Tier 4
@@ -1050,7 +1240,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Psychic Power",
   4,
   "3",
-  "You create an intense gravitational singularity. All creatures in the area are pulled 3 squares toward the center. Creatures in the center square take 300% Force damage; creatures elsewhere in the area take 200% Force damage. Creatures that fail their resistance check are Prone and Slowed (5) (save ends). Augment 2: The pull increases to 5 squares and the area increases to Burst 6.",
+  "You create an intense gravitational singularity. All creatures in the area are pulled 3 squares toward the center. Creatures in the center square take 300% Impact damage; creatures elsewhere in the area take 200% Impact damage. Creatures that fail their resistance check are Prone and Slowed (5) (save ends). Augment 2: The pull increases to 5 squares and the area increases to Burst 6.",
   keywords: ("Space",),
   range: "Burst 4 within 20",
   difficulty: "8",
@@ -1150,6 +1340,19 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   cost: "--",
 )
 
+#power-description(
+  "Staggering Blow",
+  "Exploit",
+  1,
+  "2 AP",
+  "On hit: the target takes 100% Impact damage and must make a D4 Stamina save. On failure, the target is Staggered for 1 round; at the end of the Staggered duration, the target is Dazed until the end of its next turn. If the target is wearing heavy armor or is a construct, this power deals 150% damage instead.",
+  keywords: ("Weapon", "Impact"),
+  prerequisites: ("You are wielding a blunt weapon",),
+  range: "Weapon",
+  difficulty: "+1",
+  cost: "1 Increment",
+)
+
 === Tier 2
 
 #power-description(
@@ -1188,6 +1391,20 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   range: "Weapon + 1",
   difficulty: "+3",
   cost: "2 Increments",
+)
+
+#power-description(
+  "Sweeping Strike",
+  "Exploit",
+  2,
+  "2 AP",
+  "You sweep your weapon in a wide arc. All enemies within your weapon's reach take 100% damage. Targets that fail a D4 Stamina save are knocked prone.",
+  keywords: ("Weapon", "Polearm"),
+  prerequisites: ("You are wielding a reach weapon",),
+  range: "All enemies within weapon reach",
+  difficulty: "+2",
+  cost: "1 Increment",
+  resistance: "D4 Stamina (prone only)",
 )
 
 === Tier 3
@@ -1367,6 +1584,18 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   resistance: "D5 Potential",
 )
 
+#power-description(
+  "Strengthen Bond",
+  "Command",
+  2,
+  "2 AP",
+  "You reinforce your connection to a summoned creature you are sustaining. Until the end of the encounter, the sustain cost of the summoning power is reduced by 1 Focus increment (minimum 0). Additionally, the summoned creature gains +2d on all attack rolls and +5 temporary HP for the duration. You may only benefit from one Strengthen Bond at a time.",
+  keywords: ("Command", "Summon"),
+  difficulty: "5",
+  cost: "2 Increments",
+  range: "one summoned creature you control within 10",
+)
+
 === Tier 3
 
 #power-description(
@@ -1454,6 +1683,19 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   keywords: ("Weapon", "Ranged"),
   difficulty: "+2",
   range: "Weapon range",
+)
+
+#power-description(
+  "Gun and Run",
+  "Exploit",
+  1,
+  "2 AP",
+  "You fire while moving. As part of this action, you may move up to half your Speed before or after the attack (or split the movement). This movement does not provoke opportunity attacks. The attack deals 100% damage.",
+  keywords: ("Weapon", "Ranged"),
+  prerequisites: ("You are wielding a one-handed ranged weapon",),
+  difficulty: "+1",
+  range: "Weapon range; one creature",
+  cost: "1 Increment",
 )
 
 === Tier 2

@@ -449,6 +449,67 @@ Heavy ranged weapons (machine guns, cannons, sniper rifles) must be *braced* bef
 
 Characters are assumed to carry sufficient standard ammunition for their weapons; tracking individual rounds is not required. The exception is weapons that fire specialized ammunition — such as rocket launchers or grenade launchers — where the ammunition itself determines the weapon's damage and effects. For these weapons, each shot consumes one unit of ammunition, and reloading costs *1 AP*.
 
+== Dual Wielding <dual-wielding>
+
+A character wielding a one-handed weapon in each hand can attack with both
+as part of a single Attack action (2 AP). The character makes a separate
+attack roll for each weapon, resolving them independently: different targets,
+different damage, and different weapon effects.
+
+Dual wielding is not without cost. Fighting with two weapons divides the
+wielder's attention and coordination:
+
+- *Off-hand penalty:* The attack with the off-hand weapon (the wielder's
+  choice of which weapon is the off-hand) suffers a *--2d penalty*. If the
+  off-hand weapon is *Medium*, this penalty increases to *--3d*. Heavy
+  weapons cannot be used in the off-hand.
+- *Reduced hit rate:* While dual wielding, the hit rate of *both* weapons
+  increases by 1 (e.g., a Light weapon's hit rate rises from 2 to 3, a
+  Medium weapon's from 3 to 4). This reflects the difficulty of landing
+  precise follow-up strikes while managing two weapons.
+
+The primary value of dual wielding lies not in raw damage output but in
+*versatility*: wielding a longsword alongside a parry dagger gives you
+offensive reach and a strong defensive maneuver; pairing a force sword with
+a burning blade lets you stack debuffs; carrying a pistol in one hand and a
+melee weapon in the other lets you engage at any range. Characters who dual
+wield for the tactical flexibility will find it rewarding; characters
+looking for a simple damage increase will find the penalties eat into their
+gains.
+
+=== Attack Powers while Dual Wielding
+
+Any attack power with *Weapon* range --- not just the Basic Attack --- can
+be used with both weapons. The wielder makes a separate attack roll and
+damage roll for each weapon, applying the off-hand penalty and hit rate
+increase as normal. If the power has a damage multiplier (e.g., 200%
+damage), the multiplier applies to both weapons' damage rolls.
+
+However, *secondary effects* --- conditions, debuffs, forced movement, or
+any effect beyond raw damage --- apply only once, even if both weapons hit.
+The wielder chooses which weapon's hit triggers the secondary effect. This
+prevents dual wielding from doubling the impact of powerful riders while
+still rewarding the extra damage output.
+
+=== Restrictions
+
+- Both weapons must be one-handed (1 Hands value).
+- A character cannot dual wield while also wielding a catalyst, shield, or
+  reliquary --- there are only two hands to go around.
+- Dual wielding applies only to the Attack action and attack powers that
+  specify *Weapon* range. It does not grant extra uses of spells or
+  non-weapon powers.
+- Powers with the *Dual Wield* keyword are designed for dual wielding and
+  override the off-hand penalty and hit rate increase with their own
+  effects, as described in their power text.
+
+=== Dual Wielding with Ranged Weapons
+
+A character may dual wield ranged weapons (such as two pistols). The same
+rules apply: the off-hand weapon suffers --2d (--3d if Medium), and both
+weapons' hit rates increase by 1. Each weapon consumes its own ammunition
+or charge normally, if any.
+
 == Area Targets
 
 Many powers and some weapons affect an area rather than a single target. An area is defined by its shape and size. All creatures and objects within the area are affected unless the power specifies otherwise (e.g., "all enemies in burst" excludes allies).
@@ -575,17 +636,23 @@ Minor actions cost 1 AP each to perform.
 
 ===== Brace
 
-You can brace a heavy weapon to stabilize it. This can mean propping it against
-a stable surface, or taking a more stable position to fire it from. Once you
-have braced a heavy weapon, you remain braced until you move it from the braced
-position. While you have your heavy weapon braced, you can fire it normally
-without the penalty that would otherwise apply to heavy weapons.
+You can brace a heavy weapon or a large shield to stabilize or plant it.
+For a *heavy weapon*, bracing means propping it against a stable surface or
+taking a more stable firing position. Once braced, you remain braced until
+you move. While braced, you can fire the weapon without the hip-fire
+penalty. For a *large shield* (one with the Brace property), bracing means
+planting the shield and taking cover behind it. Until you move, take an
+action other than Command or Brace, or are knocked prone, you benefit from
+*light cover*.
 
 ===== Command
 
-If you are controlling a summoned creature, you can command it to take an action
-on your turn. The creature will follow your instructions to the best of its
-ability.
+You issue an order to a summoned or dominated creature. The creature
+carries out your instruction to the best of its ability on its next turn,
+using its full AP pool. Mindless summoned creatures *require* a Command
+each round to act at all; willful summons and dominated creatures act
+autonomously but can be given specific orders with this action. See
+#link(<summoning>)[_Summoning and Binding_] for full rules.
 
 ===== Disengage
 
@@ -996,6 +1063,183 @@ the power or effect that caused the condition. A burning creature or an adjacent
 ally can spend 1 AP to attempt to extinguish the flames (saving throw). Burning
 can also be removed by full immersion in water or similar effects.
 
+== Summoning and Binding <summoning>
+
+Some powers and rituals allow a character to bring creatures onto the
+battlefield --- whether conjured from raw magical energy, raised from the
+dead, or called from another plane. These summoned creatures are a
+powerful tool, but they come at a steep cost to the summoner's own
+effectiveness.
+
+=== Summoned Creature Basics
+
+A summoned creature is a separate entity on the battlefield. It has its own
+stat block, its own initiative count, its own pool of AP and Focus, and it
+takes its own turn. It is, for all intents and purposes, another combatant.
+
+This is what makes summoning so potent --- and what makes it so expensive.
+A summoning power that places a functional combatant on the field is worth
+far more than a power that deals damage once, so the cost must reflect
+that.
+
+A summoned creature uses the stat block specified by the power or ritual
+that created it. The GM guide provides guidelines for building summon stat
+blocks appropriate to each tier. As a general rule, a combat summon called
+by a power of tier N has a stat block roughly equivalent to a creature of
+tier N--1.
+
+When a summoned creature is reduced to 0 HP, it is destroyed (or
+banished, dispersed, etc. as appropriate to its nature). The summoning
+effect ends and the summoner no longer pays sustain costs. Summoned
+creatures cannot be revived, healed by EP, or resurrected --- they are
+expendable by nature.
+
+=== Mindless and Willful Summons
+
+Summoned creatures fall into two categories based on their nature, and the
+distinction fundamentally changes how they behave in combat.
+
+==== Mindless Summons
+
+Conjured elementals, animated constructs, and similar entities with no will
+of their own are *mindless*. They are perfectly obedient but entirely
+inert: a mindless summon does nothing on its turn unless the summoner
+issues a *Command* (1 AP) during the summoner's own turn. When commanded,
+the creature carries out the instruction to the best of its ability on its
+next turn, using its full AP pool.
+
+Without a Command, a mindless summon holds its position and takes no
+actions. It does not dodge, does not attack creatures that strike it, and
+does not move out of hazards. It is a tool, not an ally.
+
+Mindless summons do not roll initiative. When the summoner uses the Command
+action, the creature acts immediately after the summoner's turn ends,
+using its full AP pool to carry out the instruction. If the summoner does
+not Command the creature, it does not act that round.
+
+The total cost to the summoner each round is therefore: *sustain cost*
+(typically 1 AP + Focus) *plus* the *Command action* (1 AP). A summoner
+with 4 AP who sustains a mindless creature and commands it has only 2 AP
+remaining for their own actions. This is a heavy price, and the summoned
+creature's contribution must be worth it.
+
+Mindless summons are safe. They never rebel, never misinterpret orders, and
+never act against the summoner's interests. Their limitation is that they
+require constant direction.
+
+==== Willful Summons
+
+Undead, fiends, spirits, and other entities with their own minds and
+desires are *willful*. A willful summon does not need to be Commanded ---
+it acts autonomously on its turn, pursuing the summoner's goals as it
+understands them. This makes willful summons cheaper in AP: the summoner
+pays only the *sustain cost*, not the Command, leaving more AP for their
+own actions.
+
+The price is risk. When a willful creature is first summoned, the summoner
+must win a *binding check*: an opposed check of the summoner's Command
+characteristic against the creature's Potential. This check is made
+immediately when the summoning power resolves.
+
+- *Success:* The creature is bound and acts in the summoner's interest for
+  the duration of the effect. It interprets the summoner's intent
+  reasonably and fights effectively, though it may not employ optimal
+  tactics unless specifically directed (the summoner can still use the
+  Command action to issue specific orders if desired).
+- *Failure:* The creature is not bound. It appears, but it is not under the
+  summoner's control. What happens next depends on the creature's nature
+  and disposition: a lesser spirit may simply dissipate; a fiend may turn
+  hostile; a powerful undead may attack the summoner outright. The
+  summoner's power and sustain cost are wasted, and they now have an angry
+  entity on the field.
+- *Dramatic failure (zero successes):* As failure, but the creature is
+  enraged or empowered by the botched binding. The GM should make the
+  consequences memorable.
+
+A willful summon that is bound may still attempt to break free if the
+summoner is incapacitated, stunned, or otherwise unable to maintain
+concentration. If the summoner drops to 0 HP or is rendered unconscious,
+the creature immediately makes a Potential check against the summoner's
+Command. On success, it breaks free and acts according to its own nature.
+
+=== Combat Summoning
+
+Combat summoning is performed through *summoning powers* --- spells and
+prayers with the *Summon* keyword. These powers follow the standard
+sustained power rules:
+
+- *Initial cost:* The power's listed AP and Focus cost. Summoning powers
+  are expensive: typically 3 AP and 2--3 increments of Focus to cast,
+  reflecting the immense magical effort of pulling a creature into
+  existence or across planes.
+- *Sustain cost:* Paid each round to maintain the summon. Typically 1 AP
+  and 1 increment of Focus. If the summoner cannot or chooses not to pay
+  the sustain cost, the creature immediately vanishes.
+- *Duration:* As long as the summoner sustains the power, or until the
+  creature is destroyed.
+
+A summoner can sustain only *one* summoning power at a time, unless an
+advance or other effect specifically allows more. Sustaining a summoning
+power follows the same rules as sustaining any other power: the summoner
+cannot sustain two different sustained effects simultaneously without a
+specific ability that permits it.
+
+The summoned creature appears in an unoccupied space within the power's
+range at the end of the summoner's turn. Willful summons roll initiative
+normally and act on their own turn starting the following round. Mindless
+summons do not roll initiative --- they act immediately after the
+summoner's turn when Commanded.
+
+=== Ritual Summoning and Binding
+
+Not all summoning happens in the heat of battle. Rituals can call and bind
+creatures over longer durations, producing servants, guardians, and allies
+that persist without the constant drain of a sustained power.
+
+Ritual summoning follows the standard ritual rules (see the Skills chapter)
+with the following additions:
+
+- *Binding duration:* The ritual specifies how long the binding lasts:
+  hours, days, or in rare cases permanently. The summoner does not pay a
+  sustain cost during this time --- the binding holds on its own.
+- *Binding check:* Willful creatures summoned by ritual still require a
+  binding check, made as part of the ritual's casting check. The ritual
+  may specify a higher or lower difficulty for this check depending on the
+  creature's power. A Circle of Binding (if prepared in advance) grants
+  advantage on this check.
+- *Breaking free:* A willful creature bound by ritual may attempt to break
+  free periodically. The ritual specifies how often (typically once per
+  day, or when the summoner is asleep or vulnerable). Each attempt is an
+  opposed check of the creature's Potential against the summoner's Command.
+  If the creature succeeds, it is free and may act according to its nature.
+- *Mindless creatures* bound by ritual simply persist for the binding
+  duration. They follow the last standing order they were given and do not
+  require Command actions outside of combat. In combat, the normal Command
+  rules apply.
+
+Ritual summoning is how a sorcerer acquires a permanent elemental
+guardian, how a necromancer raises a retinue of undead, or how a warlock
+bargains with a fiend for long-term service. The upfront cost in time,
+materials, and risk replaces the round-by-round sustain cost of combat
+summoning.
+
+=== The Summoner's Dilemma
+
+Summoning is deliberately designed as a tradeoff, not an upgrade. A
+character who summons a mindless creature in combat is spending roughly
+half their AP each round on sustain and commands, plus a significant
+ongoing Focus cost. They are trading their own effectiveness for an
+additional body on the field. This is powerful when the summoner needs to
+be in two places at once, hold a chokepoint, or absorb hits --- but a
+character who simply wants to deal the most damage will usually be better
+served by spending those AP and Focus on their own attacks and powers.
+
+Willful summons are more AP-efficient but carry real risk. A failed binding
+check can turn a costly power into a disaster. Characters who specialize in
+summoning --- through advances that reduce sustain costs, improve binding
+checks, or allow multiple summons --- can tip this balance, but
+specialization is itself a cost.
+
 == Vehicle Combat <vehicle-combat>
 
 Ashen features two scales of vehicle combat. *Tactical vehicles* ---
@@ -1162,6 +1406,101 @@ A character at a station can still use powers and abilities that do not
 require movement or a free hand, but they cannot leave their station and
 act in the same turn. Leaving a station costs 1 AP.
 
+=== Vehicle Armaments <vehicle-armaments>
+
+Vehicles mount weapons, shields, and other systems in much the same way
+characters equip gear. Two constraints govern what a vehicle can carry:
+
+- *Weight (Wt):* The physical mass and volume of mounted systems. A
+  vehicle's *Weight capacity* represents how much hardware its frame can
+  structurally support. Analogous to a character's Bulk capacity.
+- *Reactor Draw (RD):* The power demand of active systems --- weapons that
+  need charging, shield generators, sensors, and similar equipment. A
+  vehicle's *Reactor capacity* represents how much energy its power plant
+  can supply simultaneously. Analogous to a character's Charge capacity.
+  Unpowered items (solid-slug guns, unenchanted armor plating) have
+  Reactor Draw 0.
+
+Every mountable system lists a Weight and Reactor Draw value. The total
+Weight and Reactor Draw of all mounted systems must not exceed the
+vehicle's capacities. Exceeding Weight is physically impossible --- the
+frame cannot support it. Exceeding Reactor capacity causes *brownouts*: at
+the start of each round, the crew must choose which powered systems to shut
+down until total Draw is within capacity. Unpowered weapons cannot fire;
+unpowered shield generators provide no Ward.
+
+Swapping mounted systems requires a workshop and a Shop check. For
+tactical vehicles, a refit takes one stretch of downtime per system
+changed. For capital vessels, refitting a single weapon system takes a day;
+a full refit takes a week or more.
+
+==== Tactical Vehicle Weapons
+
+Tactical vehicle weapons are mounted on skimmers, APCs, walkers, and
+similar craft. They use the same damage scale as personal weapons but are
+significantly more powerful --- a single burst from a turret autocannon
+hits harder than anything a soldier can carry. All tactical vehicle weapons
+have the *Mounted* keyword: they cannot be removed and wielded by hand, and
+they can only be fired from a weapon station.
+
+Weapons are categorized by their *mount type*, which determines fire arc
+and the gunner's exposure:
+
+- *Pintle:* A light weapon on a flexible mount, operated by a gunner who
+  is partially exposed. Pintle weapons have a *turret* fire arc (360
+  degrees) but the gunner has only *partial cover*. Cheap, light, and
+  ubiquitous --- most skimmers carry at least one.
+- *Fixed:* A weapon bolted to the hull, aimed by steering the vehicle
+  itself. Fixed weapons have a *front* fire arc only. They are lighter
+  than equivalent turret weapons, making them popular on fast craft that
+  can point their nose at the target.
+- *Turret:* A weapon in an enclosed rotating housing with a full *turret*
+  fire arc. The heaviest and most flexible mount type; the gunner has
+  *total cover*. Only vehicles with sufficient Weight capacity mount
+  turrets.
+
+#pftab(
+  "Tactical Vehicle Weapons",
+  columns: (3fr, 1fr, 2fr, 1fr, 1fr, 1fr, 1fr, 2fr, 1fr, 2fr),
+  breakable: true,
+  [*Name*], [*Tier*], [*Damage*], [*Pen*], [*Wt*], [*RD*], [*FM*], [*Range*], [*Mount*], [*Special*],
+  [Pintle Machine Gun], [1], [12+D10], [0], [1], [0], [FA 3], [M], [Pintle], [],
+  [Fixed Autocannon], [2], [20+D12], [4], [2], [0], [SA 3], [L], [Fixed], [Anti-Vehicle],
+  [Mist Repeater], [2], [18+D10], [10], [2], [1], [S], [M], [Fixed], [],
+  [Turret Autocannon], [2], [20+D12], [4], [3], [0], [SA 3], [L], [Turret], [Anti-Vehicle],
+  [Missile Pod], [3], [30+2D10], [0], [2], [1], [S], [VL], [Fixed], [Anti-Vehicle, Explosive],
+  [Heavy Mist Lance], [3], [28+2D8], [14], [3], [2], [S], [L], [Fixed], [Anti-Vehicle],
+  [Battle Cannon], [3], [35+2D10], [6], [4], [1], [S], [L], [Turret], [Anti-Vehicle, Explosive],
+  [Plasma Turret], [4], [30+2D12], [16], [4], [3], [S], [M], [Turret], [Anti-Vehicle, Burning],
+)
+
+==== Shield Generators
+
+A *shield generator* projects an arcane ward field around the vehicle,
+providing its Ward value. A vehicle without a shield generator has Ward 0.
+Shield generators are powered systems --- they consume Reactor capacity and
+can be knocked offline like any other system.
+
+When a single attack deals damage that exceeds twice the vehicle's current
+Ward (before Ward reduces the damage), the generator is *overloaded*: it
+shuts down and the vehicle's Ward drops to 0 until a crew member restores
+it. Restoring an overloaded generator requires an action at the Engineering
+station (1 AP, Shop check difficulty 4). Capital vessel shield arrays use
+the same overload rule at strategic scale.
+
+#pftab(
+  "Shield Generators",
+  columns: (3fr, 1fr, 1fr, 1fr, 1fr, 3fr),
+  breakable: true,
+  [*Name*], [*Tier*], [*Ward*], [*Wt*], [*RD*], [*Notes*],
+  [Light Shield Projector], [1], [4], [1], [1], [Tactical scale. Common on civilian skimmers.],
+  [Combat Shield Generator], [2], [8], [2], [2], [Tactical scale. Standard military issue.],
+  [Heavy Shield Generator], [3], [14], [3], [3], [Tactical scale. Heavy skimmers and APCs.],
+  [Ship Shield Array], [3], [5], [6], [4], [Strategic scale. Small to medium vessels.],
+  [Capital Shield Array], [4], [8], [8], [6], [Strategic scale. Large warships.],
+  [Dreadnought Shield Array], [5], [12], [12], [8], [Strategic scale. Only the largest vessels.],
+)
+
 == Tactical Vehicles
 
 Tactical vehicles --- skimmers, armored cars, walkers, and similar craft
@@ -1314,16 +1653,89 @@ fire mode, penetration) but at strategic scale. A ship weapon dealing
 20 Hull damage is equivalent to 200 points of tactical damage --- enough
 to obliterate anything smaller than a vehicle.
 
+The size of a vessel determines what it can mount. A small scout ship's
+main guns are the same caliber that a dreadnought relegates to point
+defense. The categories below describe weapons by role; a given vessel will
+only mount weapons appropriate to its size and Reactor capacity.
+
+==== Point Defense
+
+Rapid-fire light weapons --- rotary autocannons, flak batteries, light
+mist guns --- designed to engage fast, small targets at close range.
+Point-defense weapons deal damage at *tactical scale*, not strategic. On
+the smallest capital vessels (scouts and interceptors, roughly thirty
+meters long), these _are_ the main guns; on larger vessels they serve a
+purely defensive role, shooting down incoming missiles and strafing
+boarding craft.
+
+==== Gun Batteries
+
+Direct-fire weapons that form the main armament of small-to-medium vessels
+and the secondary armament of anything larger. Light mist guns, railgun
+turrets, and plasma projectors fall into this category. Gun batteries
+engage at Close to Medium range and deal moderate Hull damage. A frigate's
+broadside of mist guns is enough to cripple another frigate; against a
+dreadnought, the same guns can only chip away at the hull.
+
+==== Main Batteries
+
+The heaviest direct-fire weapons a vessel carries. On a frigate this might
+be a pair of mist lances; on a dreadnought it is an array of exawatt mist
+lances that can empty the sky for miles in front of the ship. Main
+batteries engage at Medium to Long range and represent the vessel's primary
+killing power in a direct engagement.
+
+==== Missiles
+
+Self-propelled guided munitions whose size, range, and destructive power
+scale dramatically with the vessel that launches them. Small ships carry
+*rocket pods* little different from ground-launched anti-vehicle missiles.
+Medium vessels mount *tactical missiles*: guided munitions with shaped
+warheads, effective at Medium to Long range. The largest warships carry
+*cruise missiles* and *aeroballistic missiles* --- half-ton warheads on
+self-guided airframes that can strike targets at distances of dozens to
+hundreds of kilometers, far beyond normal engagement range. These strategic
+munitions are typically fired during the approach phase before ships close
+to engagement range; once battle is joined, the ship relies on its
+batteries.
+
+All missiles have a *magazine* value: the number of shots carried. Once a
+magazine is empty, the weapon cannot fire until rearmed at a port or supply
+vessel. Weapons with the *Guided* keyword can be fired at targets beyond
+line of sight if another source (a spotter, allied vessel, or sensor lock)
+provides targeting data.
+
+==== Ship Weapon Stats
+
 Ship weapons have a *minimum range band* and a *maximum range band*. A
-weapon listed as "Medium--Long" can fire at targets in the Medium or Long
-bands but not at Close or Contact range. Point-defense weapons cover Close
-and Contact; main batteries typically cover Medium and Long; heavy ordnance
-covers Long and Extreme.
+weapon listed as "Md--Lg" can fire at targets in the Medium or Long bands
+but not at Close or Contact range. Point-defense weapons cover Contact and
+Close; gun batteries typically cover Close to Medium; main batteries cover
+Medium and Long; heavy ordnance covers Long and Extreme.
 
 A gunner at a weapon station fires a ship weapon using their Marksmanship
 check against a base difficulty of *3* (modified by range, conditions, and
 target maneuvers). On a hit, the weapon deals its listed Hull damage,
 reduced by the target's Armor.
+
+#pftab(
+  "Ship Weapons (Strategic Scale Unless Noted)",
+  columns: (3fr, 1fr, 2fr, 1fr, 1fr, 1fr, 2fr, 1fr, 3fr),
+  breakable: true,
+  [*Name*], [*Tier*], [*Damage*], [*Pen*], [*Wt*], [*RD*], [*Range*], [*FM*], [*Special*],
+  [Rotary Autocannon], [1], [15+2D10 \*], [2], [1], [1], [Ct--Cl], [FA 3], [Point Defense],
+  [Flak Battery], [2], [12+2D8 \*], [0], [2], [1], [Ct--Cl], [S], [Point Defense, Burst 3],
+  [Light Mist Gun Battery], [2], [8+D6], [3], [3], [2], [Cl--Md], [SA 3], [],
+  [Railgun Turret], [3], [12+D8], [6], [4], [3], [Cl--Md], [S], [],
+  [Mist Lance Battery], [3], [15+D10], [8], [6], [5], [Md--Lg], [S], [],
+  [Exawatt Mist Lance Array], [5], [20+3D10], [14], [10], [8], [Md--Lg], [S], [],
+  [Rocket Pod], [1], [10+D10], [8], [1], [0], [Cl--Md], [S], [Magazine 6],
+  [Tactical Missile Rack], [3], [18+D10], [10], [4], [2], [Md--Lg], [S], [Magazine 8, Guided],
+  [Cruise Missile Silo], [4], [25+2D10], [12], [6], [3], [Lg--Ex], [S], [Magazine 4, Guided, Long-Range],
+  [Aeroballistic Missile], [5], [35+2D12], [16], [10], [6], [Ex], [S], [Magazine 2, Guided, Long-Range],
+)
+
+_\* Point-defense weapons deal damage at tactical scale, not strategic._
 
 ==== Range Modifiers
 

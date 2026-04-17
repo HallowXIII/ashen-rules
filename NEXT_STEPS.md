@@ -1,3 +1,7 @@
-- Dual wielding needs to be defined
-- Lists of powers, advances, items and rituals need to be revisited and completed, especially for tiers 1-3
-- layouting and design pass
+- Revisit weapon and catalyst numbers/naming (user wants another pass)
+- Layouting and design pass
+- Vehicle stat blocks (format TBD) -- sample tactical vehicles and capital vessels
+- Dual wield advances
+- Summoner/warlock advances (reduce sustain cost, improve binding, multiple summons)
+- T4-6 content pass (powers, items, rituals -- T1-3 first pass complete)
+- Alchemy rituals/recipes for T2-4 (alchemist build support)
