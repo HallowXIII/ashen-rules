@@ -71,14 +71,10 @@
 
 #let skill-row(label, attrs, trained: false) = {
   grid(
-    columns: (if trained { (1fr, 4fr, 2fr, 2fr, 2fr) } else { (5fr, 2fr, 2fr, 2fr) }),
+    columns: (10pt, 4fr, 2fr, 2fr, 2fr),
     column-gutter: 3pt,
-    align: if trained {
-      (left + horizon, left + horizon, center + horizon, center + horizon, center + horizon) 
-    } else {
-      (left + horizon, center + horizon, center + horizon, center + horizon) 
-    },
-    ..if trained { (rect(width: 10pt, height: 10pt, stroke: 0.5pt + luma(120), radius: 2pt),) },
+    align: (center + horizon, left + horizon, center + horizon, center + horizon, center + horizon),
+    if trained { rect(width: 10pt, height: 10pt, stroke: 0.5pt + luma(120), radius: 2pt) } else { box(width: 10pt) },
     text(size: 7pt, weight: "bold", label + "  " + text(size: 5.5pt, fill: luma(120), weight: "regular", attrs)),
     rect(width: 100%, height: 16pt, stroke: 0.4pt + luma(140), radius: 2pt),
     rect(width: 100%, height: 16pt, stroke: 0.4pt + luma(140), radius: 2pt),
