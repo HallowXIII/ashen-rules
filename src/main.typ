@@ -374,8 +374,6 @@ Items that are not maintained risk degradation. For each unmaintained item, the 
 
 Tier 0 items (Old War surplus) have no maintenance cost --- they are already in the worst shape they can be in. Legendary items have unique maintenance requirements determined by the GM, usually involving rare materials or specific conditions rather than a flat currency cost.
 
-#colbreak()
-
 = Characters
 
 #flavor([

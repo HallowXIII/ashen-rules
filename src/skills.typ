@@ -1216,63 +1216,140 @@ Sample Appraisal difficulties:
 
 == Rituals and Recipes
 
-In the mystical realms of Ashen, the casting of rituals is an intricate and
-powerful art. To bring forth the desired magical effects, players must navigate
-the complexities of difficulty, magnitude, and available power. Alchemical
-recipes function as rituals do, so for the purposes of the following rules,
-"rituals" includes them.
+Rituals are extended magical workings that produce powerful effects beyond the
+scope of ordinary spells and prayers. They require time, materials, and often a
+concentration of magical resonance that combat casting cannot provide. Alchemical
+recipes function identically to rituals in all mechanical respects, so for the
+purposes of the following rules, "rituals" includes them.
 
-The rules for rituals are as follows:
+=== Difficulty and Magnitude
 
-=== 1. Difficulty and Magnitude
+Every ritual is defined by two numbers: its *difficulty* and its *magnitude*.
 
-A ritual is defined by two essential factors: difficulty and magnitude.
+*Difficulty* is the target number for the skill check to cast the ritual. It
+reflects the innate complexity of the working --- how precisely forces must be
+channeled and how narrow the margin for error is.
 
-*Difficulty:* This represents the base challenge level of the ritual, reflecting
-the innate complexity of the magical task at hand.
+*Magnitude* is the minimum amount of magical power that must be gathered and fed
+into the ritual before it can function at all. Think of it as the ritual's
+energy threshold: if the caster cannot supply enough power to meet the
+magnitude, the ritual simply cannot be attempted. Power is gathered from
+reagents, implements, locations, and other sources described below.
 
-*Magnitude:* The magnitude sets the minimum total power value required to
-successfully cast the ritual. Players can harness power from various sources,
-including reagents, implements, locations, or unique circumstances like magical
-terrain or alchemical laboratories.
+=== Power Sources
 
-=== 2. Power Management
+The caster must assemble enough power to meet or exceed the ritual's magnitude.
+Power can come from any combination of the following sources:
 
-Every point of available power beyond the ritual's magnitude is a boon to the
-caster. Surplus power can be derived from a variety of sources and contributes
-to making the ritual easier.
+*Reagents* are consumable alchemical or magical materials that are destroyed
+during the ritual. Common reagents provide 1 magnitude, rare reagents provide 3,
+and precious reagents provide 6 (see the Reagents & Materials table in the
+Equipment chapter). Reagents are always consumed, whether the ritual succeeds or
+fails.
 
-*Power Sources:* Reagents, implements, locations, and circumstantial factors all
-contribute to the available power pool.
+*Implements* are tools used to channel and focus magical energy --- catalysts,
+ritual circles, engraved instruments, and similar devices. An implement is not
+consumed by the ritual and can be reused. The power an implement contributes
+depends on its tier and type; a well-made catalyst or a permanent ritual circle
+inscribed at a workshop can provide significant magnitude.
 
-*Difficulty Reduction:* For each point of available power exceeding the ritual's
-magnitude, the difficulty of the ritual is reduced by 1, down to the tier of the
-ritual.
+*Influences* --- locations with strong magical resonance: leyline intersections, ancient
+temples, alchemical laboratories, places where the Fog runs thick --- provide
+ambient power that the caster can draw on. The GM determines the magnitude a
+location provides based on its nature and strength.
 
-=== 3. Skill Checks
+*Assistants* trained in the relevant skill can contribute power by participating
+in the ritual. Each assistant who succeeds on a skill check at the ritual's
+difficulty contributes 1 magnitude.
 
-Executing a ritual requires a careful balance of knowledge, skill, and finesse.
-Players can employ one of the following skills for the ritual's casting: Ritual,
-Occultism, or Alchemy. The appropriate skill depends on the nature of the
-ritual.
+=== Surplus Power
 
-=== 4. Casting and Success Conditions
+Every point of assembled power beyond the ritual's magnitude makes the casting
+easier. For each point of surplus power, the ritual's difficulty is reduced by
+1, to a minimum equal to the ritual's tier. A well-prepared caster who gathers
+far more reagents and resonance than strictly necessary can dramatically lower
+the chance of failure.
 
-Success hinges on the outcome of a skill check against the adjusted difficulty.
+=== Aspects and Influence
 
-*Success:* If the result of the check equals or exceeds the adjusted difficulty,
-the ritual is successful. The desired magical effects manifest as intended.
+Many rituals are associated with one or more *aspects* --- the fundamental
+magical resonances of the world: Ash (destruction, desolation), Crown (law,
+domination), Sun (crafting, heat, origin), Key (opening, summoning), Mist
+(magic, the sublime essence), Scarab (rebirth, cycles), Skull (death, the end
+of things), Moon (mind, matter), and Maiden (nature).
 
-*Failure:* Should the skill check fall short, the ritual fails. Despite the
-failure, consumable power sources like reagents are still expended. Depending on
-the ritual, there may be additional consequences.
+Some rituals may require the caster to provide *influence* ---
+a concentration of the relevant aspect fed into the working. Influence comes
+in three tiers, representing how saturated with a given aspect the source is:
 
-=== 5. Consequences of Failure
+- *Minor influence* (1--3 magnitude): faint resonance. A location with a
+  lingering connection to the aspect, a minor relic, or a small quantity of
+  aspected materials. Examples: a shrine to the Winter Crone (Scarab), a vial of Fog-touched
+  water (Mist), a blade that has taken many lives (Skull).
+- *Major influence* (4--8 magnitude): strong resonance. A site of significant
+  power, a potent artifact, or a large cache of aspected materials. Examples: a
+  leyline nexus (Mist), a consecrated cathedral (Crown), an active volcano
+  (Sun), an ancient battlefield (Ash).
+- *Overwhelming influence* (9+ magnitude): the aspect saturates the area or
+  object completely. These sources are rare and often dangerous. Examples: the
+  heart of the Fog itself (Mist), a throne from which an empire was ruled for
+  centuries (Crown), the caldera of a primordial forge-god (Sun).
 
-Failing a ritual doesn't come without repercussions. In addition to the
-consumption of consumables, other consequences may unfold, varying based on the
-specific nature of the ritual. Players should be prepared for the unexpected in
-the arcane arts.
+Influence is consumed by the ritual: environmental attunement fades, and
+sacrificed objects are destroyed. The caster chooses how to distribute available
+influence across the ritual's aspect requirements.
+
+=== Sacrifice
+
+A ritual's *sacrifice* field describes the cost the caster must pay. There are
+three types of sacrifice, appropriate to different tiers of power:
+
+- *Components*: money and materials. The most common sacrifice ---
+  reagents and supplies consumed during the working. Components are always
+  consumed, whether the ritual succeeds or fails. If a ritual does not specify
+  any particular sacrifice, its cost can be entirely paid in reagents. Some
+  rituals may require specific components.
+- *Essence*: the caster pays a personal cost: lost EP, a lasting
+  debuff, or a temporary reduction in capabilities. Essence sacrifices represent
+  rituals that channel dangerous forces through the caster's own body or spirit.
+  The cost persists for days or weeks.
+- *Influence*: the ritual requires aspect influence as described above.
+  The required aspects and their minimum magnitude are specified in the ritual's
+  description.
+
+Some high-tier rituals combine multiple sacrifice types --- for example,
+requiring both components and influence, or both essence and influence.
+Sacrifices explicitly listed by a ritual are _required_ for the ritual to function,
+but all power sources can be used to cast any ritual. The exception are influences ---
+a given influence can only provide power to a ritual of matching aspect. Even an
+overwhelming Ash influence is entirely useless to casting a ritual that is Scarab- and 
+Sun-aspected, for example.
+
+=== Skill Checks
+
+Three skills govern ritual casting, and they are not interchangeable:
+
+- *Ritual* governs arcane magic and structurally-oriented psychic workings. It
+  is systematic and reproducible.
+- *Occultism* governs divine magic and the esoteric psychic domains (Fate,
+  Void). It relies on communion with forces beyond mortal understanding.
+- *Alchemy* covers all recipes --- potions, poisons, reagents, and explosives.
+  Ritual and Occultism do not apply to alchemical work.
+
+Each ritual specifies which skill applies. The caster rolls the appropriate
+skill check against the ritual's adjusted difficulty (after surplus power
+reductions).
+
+=== Success and Failure
+
+*Success:* If the skill check meets or exceeds the adjusted difficulty, the
+ritual succeeds and the effect manifests as described.
+
+*Failure:* If the check falls short, the ritual fails. Consumable power sources
+(reagents, aspected materials) are still expended. Many rituals specify
+additional failure consequences --- uncontrolled effects, backlash, or
+attracting unwanted attention. If no specific failure consequence is listed,
+the default is that components are consumed and nothing else happens.
 
 === Ritual List
 
