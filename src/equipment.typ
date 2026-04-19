@@ -169,9 +169,23 @@ When multiple pieces of armor are worn, their *Armor*, *Ward*, *Evasion*, *Bulk*
 
 === Catalysts
 
-Catalysts are implements used to channel magical energy. They are required to cast arcane spells and psychic powers. Each catalyst has a *damage* value (used as the base for spell damage calculations — when a spell deals "100% catalyst damage," it deals damage equal to the catalyst's damage value) and a *focus increment* value that determines the Focus cost of spells channeled through it (see _Focus Increments_ above).
+Catalysts are implements used to channel magical energy. They are required to cast arcane spells and psychic powers. Each catalyst has a *damage* value (the base for spell damage calculations --- when a spell deals "100% catalyst damage," it deals damage equal to the catalyst's damage value), a *focus increment* value that determines the Focus cost of spells channeled through it (see _Focus Increments_ above), and a *casting bonus* that grants bonus dice on the skill check to cast spells through it.
 
-Catalysts come in two types: *Arcane catalysts* (rods, staves, orbs) are used for arcane spells. *Psychic catalysts* (crystals, masks, circlets) are used for psychic powers. A character must wield a catalyst of the appropriate type to cast spells or powers of that school.
+Catalysts come in two types: *Arcane catalysts* (rods, staves, orbs) are used for arcane spells. *Psychic catalysts* (crystals, masks, circlets) are used for psychic powers. A character must wield a catalyst of the appropriate type to cast spells or powers of that school. A catalyst's base stats are determined by its *tier* and *weight class*, not its type --- an Arcane staff and a Psychic crystal of the same tier and class have the same base stats.
+
+Catalysts come in three weight classes:
+
+*Light* catalysts --- pendants, circlets, amulets, crystals --- do not occupy a hand. They have the lowest damage, increments, and casting bonuses, but free the wielder's hands for weapons, shields, or other implements.
+
+*Medium* catalysts --- rods, wands, orbs, short staves --- occupy one hand. They balance damage, cost, and casting bonus, and are the standard choice for most casters.
+
+*Heavy* catalysts --- great staves, war-orbs, siege foci --- require two hands. They have the highest damage and casting bonuses, but also the largest focus increments, meaning each spell costs significantly more Focus to fuel. Their bulk and charge demands are substantial. Heavy catalysts are the choice of dedicated siege casters who trade versatility for raw channeling power.
+
+==== Casting Bonus
+
+A catalyst's casting bonus is added as bonus dice to the skill check made to cast spells through it (Arcane check for arcane spells, Psychic check for psychic powers). Higher-tier and heavier catalysts grant larger casting bonuses, reflecting their superior ability to focus and amplify magical energy.
+
+Some catalysts have the *Specialized* trait: their general casting bonus is reduced, but the bonus for spells of a specific school, element, or domain is significantly increased. For example, a catalyst specialized in Time magic might grant +2 to all Psychic powers but +5 to Time powers. Specialized catalysts are common among practitioners focused on a single discipline.
 
 === Reliquaries
 
