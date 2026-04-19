@@ -449,6 +449,31 @@ Heavy ranged weapons (machine guns, cannons, sniper rifles) must be *braced* bef
 
 Characters are assumed to carry sufficient standard ammunition for their weapons; tracking individual rounds is not required. The exception is weapons that fire specialized ammunition — such as rocket launchers or grenade launchers — where the ammunition itself determines the weapon's damage and effects. For these weapons, each shot consumes one unit of ammunition, and reloading costs *1 AP*.
 
+== Misfires and Fumbles
+
+When an attack roll results in a *critical failure* (zero or negative total successes), the weapon has malfunctioned or the wielder has made a serious error. The consequences depend on whether the attack was ranged or melee.
+
+=== Misfires (Ranged)
+
+A critical failure on a ranged attack roll is a *misfire*. The weapon jams, misfires, or overheats. The attack fails automatically, and the weapon cannot be used again until the wielder spends *1 AP* to clear the malfunction (unjam the mechanism, vent heat, cycle the action).
+
+Weapons with the *Reliable* keyword are resistant to misfires. A Reliable weapon only misfires if the total successes are *-2 or worse* (rather than 0 or below). On a result of exactly 0 or -1, the attack simply misses.
+
+Weapons with the *Overload* keyword are prone to dangerous malfunctions. When an Overload weapon misfires, it does not merely jam --- the containment fails or the mechanism detonates. The wielder takes damage equal to *200% of the weapon's base damage* (reduced by Armor and Ward as normal), and the weapon is *disabled* until it receives a field repair (1 minute outside of combat, or a Shop check at difficulty equal to the weapon's tier during combat as a 3 AP action).
+
+Weapons with the *Unreliable* keyword must roll a save on *every attack they make*; if the save dice come up 0, the weapon misfires regardless of the original attack roll. Unreliable and Reliable cancel each other out.
+
+=== Fumbles (Melee)
+
+A critical failure on a melee attack roll is a *fumble*. The wielder overextends, loses their grip, or strikes something they didn't intend to. The attack fails automatically, and the wielder suffers one of the following consequences (GM's choice or roll D6):
+
++ *Overextended:* The wielder is off-balance. They suffer -2d on all checks until the start of their next turn.
++ *Dropped weapon:* The weapon is knocked from the wielder's hand and lands in an adjacent square. Retrieving it requires a minor action (or a free action for Sidearm weapons).
++ *Opening:* The wielder has left themselves exposed. The target may immediately make a free strike against the wielder as a response (if the target is able to attack).
++ *Self-inflicted:* The weapon strikes the wielder or a nearby ally. The wielder (or an adjacent ally, if any) takes damage equal to the weapon's base damage, reduced by their own defenses.
++ *Weapon stress:* The weapon absorbs the force of the mishandled blow. It gains the *Dulling* negative keyword until the end of the encounter.
++ *Stumble:* The wielder stumbles into an adjacent square of the GM's choice. If that square is occupied by an enemy, the wielder provokes a free strike.
+
 == Dual Wielding <dual-wielding>
 
 A character wielding a one-handed weapon in each hand can attack with both

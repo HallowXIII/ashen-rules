@@ -214,6 +214,21 @@ the size of your dice pool.
 Whenever a rule requires you to divide a number and the result is not a whole
 number, round down unless the rule specifically says otherwise.
 
+=== Critical Failures
+
+If, after counting all successes and negative successes, your total is *zero or negative*, the check is a *critical failure*. A critical failure is worse than ordinary failure --- something has gone actively wrong.
+
+The consequences depend on the type of check:
+
+- *Attack rolls:* A critical failure on an attack is a *misfire* (ranged) or *fumble* (melee). See the Combat chapter for details.
+- *Skill checks:* The character not only fails but creates a new problem. A critical failure on a Subterfuge check might alert additional guards; a critical failure on a Shop check might damage the item being worked on. The GM determines the specific consequence.
+- *Arcane casting checks:* The spell misfires. The Focus cost is still spent, but the effect does not occur. The caster suffers *arcane backlash*: they take damage equal to the spell's Focus cost (reduced by Ward) and are Dazed until the end of their next turn. Arcane magic is formulaic and predictable --- its failures are painful but contained.
+- *Divine casting checks:* The prayer fails and the deity is displeased. The caster immediately loses 1 *favor* with the reliquary used. Additionally, the GM may impose a deity-specific consequence: a god of war might inflict a wound, a god of nature might cause the caster's equipment to corrode, a death god might drain Essence. The consequence should reflect the deity's domain and temperament.
+- *Psychic casting checks:* The power misfires catastrophically. The Focus cost is still spent, and the caster must roll for *Cosmic Backlash* (see the Powers chapter). Psychic power draws on raw willpower and the fabric of reality itself --- when it goes wrong, reality pushes back.
+- *Resistance checks:* The character suffers the worst possible version of the effect they were resisting. A critical failure on a Stamina check against poison means the poison takes full effect with no save-ends --- it lasts for the encounter or until treated.
+
+A critical failure occurs naturally when the dice come up badly --- many 1s and few successes. It is not the same as simply failing a check; a roll of 3 successes against a difficulty of 7 is an ordinary failure, not a critical failure.
+
 == Tracking Time
 
 In Ashen, as in many other role-playing games, keeping track of how much time
@@ -333,9 +348,31 @@ before the scene loosens out into open time.
 === Intermissions
 
 When an act ends, the game enters an intermission. Intermissions are essentially
-downtime---during an intermission, every character's Essence, Health and Focus
+downtime --- during an intermission, every character's Essence, Health and Focus
 refresh, and the characters have the opportunity to spend XP, allocate skill
 points, and purchase new equipment.
+
+==== Equipment Maintenance
+
+Equipment requires regular upkeep to remain in working order. During each intermission, every character must pay a *maintenance cost* equal to *10% of the total base price* of all equipment they own (carried, equipped, and wielded). This covers repairs, replacement parts, ammunition stockpiling, power cell recharging, enchantment stabilization, and general wear.
+
+Modifications increase the maintenance cost: add the modification's cost to the base price before calculating the 10%. A #feathers 3150 Silvered Moontouched Longsword costs #feathers 315 per intermission to maintain.
+
+Items that are not maintained risk degradation. For each unmaintained item, the GM rolls on the following table at the start of the next act:
+
+#pftab(
+  "Equipment Degradation",
+  columns: (1fr, 5fr),
+  breakable: true,
+  [*D10*], [*Result*],
+  [1--3], [*Cosmetic wear.* The item looks battered but functions normally. No mechanical effect --- this time.],
+  [4--5], [*Reduced stats.* One of the item's primary stats is reduced: --1/T damage (weapons), --2/T Armor or Ward (armor), or --1/2T Casting bonus (catalysts). This penalty is cumulative across intermissions and persists until the item is repaired (costs the skipped maintenance plus 25%).],
+  [6--7], [*Lost quality.* One of the item's special properties ceases to function: a treatment wears off, an enchantment goes dormant, or a material property degrades. The GM chooses which. Restoring it requires re-applying the modification at full cost.],
+  [8--9], [*Gained defect.* The item develops a negative quality: weapons gain Overload or (if already Overloaded) increase their malfunction chance; armor develops weak points (--1 Evasion); catalysts become erratic (--1d to casting checks). This defect persists until repaired.],
+  [10], [*Catastrophic failure.* The item breaks down entirely and cannot be used until repaired. Repair costs the full maintenance cost plus 50%, and requires a Shop or Ritual check at difficulty equal to the item's tier + 3.],
+)
+
+Tier 0 items (Old War surplus) have no maintenance cost --- they are already in the worst shape they can be in. Legendary items have unique maintenance requirements determined by the GM, usually involving rare materials or specific conditions rather than a flat currency cost.
 
 #colbreak()
 
