@@ -1280,6 +1280,8 @@ Whenever you take a *long rest*, you recover 3 EP.
 
 #include "gmguide.typ"
 
+#include "character-sheet.typ"
+
 
 
 
