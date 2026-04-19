@@ -95,28 +95,41 @@
   skill,
   difficulty,
   magnitude,
-  sacrifice,
   casting-time,
   effect,
+  sacrifice: none,
   aspects: none,
   failure: none,
   modifiers: none,
   flavor: none,
 ) = {
-  set par(hanging-indent: 1em, first-line-indent: 1em)
+  set par(spacing: .6em, first-line-indent: 0em) // hanging-indent: 1em)
+  let header(body) = {
+    box(
+      text(weight: "extrabold", size: 1.4em, stretch: 50%)[#upper(name)],
+    )
+    h(1fr)
+    sym.wj
+    box(text(weight: "extrabold", size: 1.4em, stretch: 50%)[
+      #upper(body) #tier
+    ])
+  }
   block[
-    *#name* \
-    _Tier #tier Ritual_ \
-    #if flavor != none [_#flavor _] \
-    _Skill:_ #skill \
-    _Difficulty:_ #difficulty, _Magnitude:_ #magnitude \
-    #if aspects != none [_Aspects:_ #aspects \ ]
-    _Sacrifice:_ #sacrifice \
-    _Casting Time:_ #casting-time \
+    #v(1em)
+    #header[Ritual]
+    #line(stroke: 1pt, length: 100%)
+    #if aspects != none [#pftraits(aspects) \ ]
+    #if flavor != none [_#flavor \ #v(0.5em)_]
+    #if aspects != none or flavor != none [#line(stroke: 1pt, length: 100%)]
+    _Skill_: #skill, _Difficulty_: #difficulty, _Magnitude_: #magnitude, _Casting Time_: #casting-time \
+    #if modifiers != none [_Modifiers_: #for mod in modifiers {
+      [- #mod]
+    }] 
+    #if sacrifice != none [_Sacrifice_: #sacrifice \ ]
+    #line(stroke: 1pt, length: 100%)
 
-    _Effect:_ #effect \
-    #if modifiers != none [_Difficulty Modifiers:_ #modifiers \ ]
-    #if failure != none [_Failure:_ #failure]
+    *Effect* #effect
+    #if failure != none [ \ *Failure* #failure]
   ]
 }
 
@@ -244,7 +257,6 @@
 #let feat(feat) = [
   #v(1em)
   #set par(spacing: .6em, first-line-indent: 0em) // hanging-indent: 1em)
-  #set text(size: 10pt)
   #let maybe_format_header(is_header, text_content) = {
     if is_header {
       text(weight: "extrabold", size: 1.4em, stretch: 50%)[#text_content]

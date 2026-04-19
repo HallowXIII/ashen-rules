@@ -764,6 +764,76 @@ possibilities include:
 Vay Ngien's tower still stands and could serve as a dungeon, a source of
 forbidden knowledge, or a warning about what happens when curiosity goes too far.
 
+=== Ending The Game
+
+The setting presented in this book, if you choose to use it, encourages a natural
+endgame: a faction --- ideally the player characters --- reaches the Heart of the
+World and performs one of two rituals that resolve the state of creation itself.
+Neither ritual is a secret; the factions know, in broad strokes, what is possible.
+What they lack is the means. Both rituals require materials of extraordinary
+rarity, a journey to the most dangerous place in the world, and a sacrifice that
+cannot be taken back.
+
+The two rituals represent the setting's fundamental question: is this broken world
+worth saving, or is it kinder to let it end? Neither answer is presented as
+correct. A campaign may treat one as the obvious goal and the other as the
+villain's plan, or it may leave the choice genuinely open until the final session.
+
+#ritual-description(
+  "Rite of Unmaking",
+  6,
+  "Occultism",
+  "15",
+  "35",
+  "7 days",
+  [The caster completes the work that the Last War began: the Heart of the World
+  stops beating, and creation unravels. The Fog dissipates --- not because it is
+  healed, but because the wound it bled from no longer exists. Over the hours and
+  days that follow, the world comes apart. Magic fails. The land fractures and
+  dissolves. The sky goes dark. What remains, if anything, is beyond mortal
+  knowledge.
+
+  The Deathless curse ends with the world. Every Deathless is granted a final,
+  true death. Whether this is mercy or annihilation depends on one's theology.
+
+  _This ritual cannot be reversed once completed._],
+  sacrifice: "1 vial of Materia Nigra (consumed) + the permanent death of a willing Deathless participant (the sacrifice's soul is annihilated; they do not reincorporate)",
+  aspects: ("Ash", "Skull"),
+  failure: "The Heart shudders but does not stop. The caster and all participants within Burst 10 suffer 300% Void damage (ignores Armor and Ward). The Materia Nigra is consumed. The sacrifice is still annihilated. The ritual may be attempted again with new materials and a new sacrifice.",
+  flavor: "She Who Waits Beyond has been patient. She will be patient a little longer, if she must.",
+)
+
+#ritual-description(
+  "Rite of the Second Birth",
+  6,
+  "Occultism",
+  "15",
+  "35",
+  "7 days",
+  [The caster heals the Heart of the World and, in doing so, channels the
+  accumulated divine essence of the sacrificed reliquary fragments into it. The
+  dead god whose fragments were offered is reborn --- not as they were, but shaped
+  by the state of the world and the intent of the caster. The reborn god assumes
+  dominion over the healed world.
+
+  The Fog ceases. The ambient magical energy that sustained magitek is replaced by
+  the reborn god's power --- different in character, but no less potent. The
+  Deathless curse is lifted: the cycle of death and rebirth resumes, and the
+  Deathless become mortal once more. Whether they retain their memories of the Age
+  of Ash is at the GM's discretion.
+
+  The identity of the reborn god shapes the new world profoundly. A world under
+  the Boar-Mother is not a world under the Falcon-Headed Sun. The GM should
+  consider what the god valued in life and how their character has been altered by
+  death, fragmentation, and rebirth.
+
+  _This ritual cannot be reversed once completed._],
+  sacrifice: "1 vial of Materia Rubrior (consumed) + reliquary fragments of a single dead god, totalling at least 20 tiers' worth of divine essence (consumed)",
+  aspects: ("Scarab", "Sun"),
+  failure: "The Heart flares with unstable divine energy. The reliquary fragments are consumed, but the god is not reborn --- instead, a fragmentary divine echo manifests, hostile and incoherent, with the statistics of a T6 Boss creature. The Materia Rubrior is consumed. The ritual may be attempted again with new materials and fragments of the same or a different god.",
+  flavor: "The world was made once. It can be made again.",
+)
+
 == Designing Rituals and Recipes
 
 This section provides guidelines for designing new rituals and alchemical recipes. Rituals and recipes occupy a different design space from combat powers: they are slow, expensive, and often transformative, and their balance is driven by cost and narrative stakes rather than by the action economy.

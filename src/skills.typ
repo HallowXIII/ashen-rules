@@ -1282,10 +1282,10 @@ the arcane arts.
   "Ritual",
   "3",
   "3",
-  "Components (#feathers 100)",
   "5 minutes",
   "The Rite of Opening creates a physical path between you and a location of your choosing whose approximate whereabouts are known to you. The Rite is potentially destructive but never creative: it can tear down barriers, but it cannot construct bridges. When opening artificial obstacles like locked doors, the rite may open simple obstacles non-destructively, but may simply unhinge a door equipped with a complex magical lock. It can burrow or blast through natural barriers that are sufficiently thin.",
-  modifiers: "Target guarded by magical barriers: +(tier of barrier) per barrier. Target behind rock or earth: +2 per meter. Target behind steel: +2 per 10 cm. Target known to within <10 m accuracy: +2. Target known to within <50 m: +5. Target >30 m away: +1 per 10 m.",
+  aspects: ("Key",),
+  modifiers: ("Target guarded by magical barriers: +(tier of barrier) per barrier.", "Target behind rock or earth: +2 per meter.", "Target behind steel: +2 per 10 cm.", "Target known to within <10 m accuracy: +2.", "Target known to within <50 m: +5.", "Target >30 m away: +1 per 10 m."),
   flavor: "With the final twist of your implement, you open a path to your destination.",
 )
 
@@ -1295,9 +1295,9 @@ the arcane arts.
   "Ritual",
   "3",
   "2",
-  "Components (#feathers 50)",
   "10 minutes",
   "You inscribe a ward on a doorway, window, or area up to Burst 3. For the next 8 hours, if any creature of size 1 or larger crosses the ward, the caster is immediately alerted, even if asleep. The alert is mental and silent — only the caster perceives it. The ward is invisible but can be detected with Eerie (difficulty 4).",
+  aspects: ("Crown",),
   failure: "The ward is created but is unstable — it triggers once randomly during the duration, then fails.",
 )
 
@@ -1307,9 +1307,9 @@ the arcane arts.
   "Ritual",
   "5",
   "4",
-  "Components (#feathers 300)",
   "10 minutes",
   "You seal a door, chest, window, or other closeable object with arcane energy. The lock can only be opened by the caster, by a creature they designate during casting, or by a successful Rite of Opening or Magitek check against a difficulty equal to the caster's casting check result. The lock persists until dispelled or broken.",
+  aspects: ("Crown",),
   failure: "The lock is created but is brittle — its effective difficulty is halved.",
 )
 
@@ -1319,9 +1319,9 @@ the arcane arts.
   "Ritual",
   "7",
   "6",
-  "Components (#feathers 1000)",
   "30 minutes",
   "You inscribe a circle of binding on a surface up to 3 squares in diameter. Any summoned, extraplanar, or undead creature that enters or is summoned into the circle cannot leave it by any means (including teleportation) unless the circle is physically broken or the creature succeeds on a D8 Potential check at the start of each of its turns. The circle persists for 24 hours or until broken.",
+  aspects: ("Crown","Mist"),
   failure: "The circle appears complete but has a hidden flaw. The first creature bound in it may attempt to escape with a D4 Potential check instead.",
 )
 
@@ -1331,10 +1331,9 @@ the arcane arts.
   "Ritual",
   "12",
   "11",
-  "Components (#feathers 8000) + Essence (5 Strain)",
   "8 hours",
   "You tear open a portal to another plane of existence. The portal is a circle up to 3 squares in diameter and remains open for 1 minute per success on the casting check. Creatures can pass through in both directions. The caster may close the portal early as a free action. The destination must be a plane the caster has visited or possesses a fragment of (a physical object originating from that plane).",
-  aspects: "Key, Mist",
+  aspects: ("Key", "Mist"),
   failure: "The portal opens to an unintended location on the target plane, or to the wrong plane entirely. The caster takes an additional 5 Strain.",
 )
 
@@ -1344,10 +1343,9 @@ the arcane arts.
   "Ritual",
   "11",
   "10",
-  "Components (#feathers 10000) + Essence (8 Strain)",
   "12 hours",
   "You perform a lengthy rite that revives all dead creatures within the ritual circle at no EP cost to them. Each revived creature returns with full HP and full Focus, with all status conditions removed. This ritual can revive creatures whose remains have been destroyed, as long as a personal belonging or fragment of the creature is available as a focus. Uniquely, this ritual can also restore mortal creatures to life — an effect not otherwise available through any power or prayer. The ritual cannot revive creatures affected by effects that prevent revival (such as Noble Eightfold Blade's death effect).",
-  aspects: "Scarab",
+  aspects: ("Scarab",),
   failure: "The ritual fails. Components are consumed. Creatures remain dead. If the check fails by 5 or more, a hostile entity may be drawn to the ritual site.",
 )
 
@@ -1361,9 +1359,10 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   "Ritual",
   "3 + half item tier",
   "4",
-  "4 Magnitude (moonstone dust or similar lunar reagent)",
   "4 hours",
   "You imbue a weapon with captured moonlight. On a successful hit, the target is surrounded by a halo of moonlight: attacks against it gain a +2 bonus and it cannot benefit from invisibility until the end of the wielder's next turn.",
+  sacrifice: "Components (moonstone dust or similar lunar reagent)",
+  aspects: ("Mist", "Moon"),
   failure: "The enchantment is unstable — it functions normally but fades after 1d6 encounters.",
 )
 
@@ -1373,9 +1372,10 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   "Ritual",
   "5 + half item tier",
   "6",
-  "6 Magnitude (void essence or spatial reagent)",
   "8 hours",
   "You fold the space around a melee weapon, extending its effective reach. The weapon gains Reach 2.",
+  sacrifice: "Components (void essence or spatial reagent)",
+  aspects: ("Mist", "Key"),
   failure: "The spatial fold is unstable. The weapon gains Reach 2, but on any attack roll where no successes are scored, the enchantment collapses and must be reapplied.",
 )
 
@@ -1385,9 +1385,10 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   "Ritual",
   "3 + half item tier",
   "4",
-  "4 Magnitude (prismatic glass or light-aspected reagent)",
   "4 hours",
   "You treat a piece of armor to bend light around its wearer. When the wearer is fighting in bright light, the armor's Evasion bonus increases by 1.",
+  sacrifice: "Components (prismatic glass or light-aspected reagent)",
+  aspects: ("Mist", "Moon"),
   failure: "The treatment is imprecise — the Evasion bonus applies, but the armor glows faintly, imposing a -2d penalty on Subterfuge checks in darkness.",
 )
 
@@ -1397,9 +1398,10 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   "Ritual",
   "5 + half item tier",
   "6",
-  "6 Magnitude (warding sigils or abjuration reagent)",
   "6 hours",
   "You inscribe magical deflection patterns onto a piece of armor. When the wearer is targeted by an area-effect spell or magical ability, the armor grants light cover against that effect.",
+  sacrifice: "Components (warding sigils or abjuration reagent)",
+  aspects: ("Mist", "Crown"),
   failure: "The sigils are flawed — the deflection works, but each time it activates there is a 1-in-6 chance the sigils burn out permanently.",
 )
 
@@ -1409,9 +1411,10 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   "Ritual",
   "7 + half item tier",
   "8",
-  "8 Magnitude (harmonic crystal or resonance reagent)",
   "12 hours",
   "You attune a catalyst or weapon to resonate with the caster's magical frequency. For every spell channeled through the implement on a given turn, its casting bonuses increase by 1, up to a maximum of its base bonus + 3.",
+  sacrifice: "Components (harmonic crystal or resonance reagent)",
+  aspects: ("Mist",),
   failure: "The resonance is erratic — the bonus increases as normal but resets to 0 at the start of each round instead of persisting.",
 )
 
@@ -1421,9 +1424,9 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   "Ritual",
   "9 + half item tier",
   "10",
-  "10 Magnitude (essence of a counterspell or antimagic reagent)",
   "1 day",
   "You bind an implement with counter-magical properties. The implement grants a +6 bonus to counterspelling. If used to perform a successful counterspell, the wielder recovers Focus equal to the cost of the countered spell.",
+  aspects: ("Mist",),
   failure: "The binding is incomplete — the counterspell bonus is only +3, and Focus recovery is halved (round down).",
 )
 
@@ -1435,9 +1438,9 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   "Occultism",
   "4",
   "2",
-  "Components (#feathers 50)",
   "10 minutes",
   "You perform a divination to glimpse the near future. Ask the GM one question about a specific course of action you plan to take within the next hour. The GM answers with one of: Weal (good outcome), Woe (bad outcome), Weal and Woe (mixed), or Nothing (no significant consequence). The GM is not required to reveal details — only the general tenor of the outcome.",
+  aspects: ("Moon",),
   failure: "The augury gives a misleading answer (GM's choice).",
 )
 
@@ -1447,10 +1450,10 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   "Occultism",
   "7",
   "6",
-  "Components (#feathers 800)",
   "30 minutes",
   "You observe a creature or location remotely. You must have either met the target creature, visited the target location, or possess an object closely associated with either. On success, you perceive the target's immediate surroundings (sight and sound) for up to 10 minutes. The target may sense the scrying with a D6 Potential check — on success, they know they are being observed and by whom.",
-  modifiers: "Target possesses anti-scrying wards: +(tier of ward). Target is on another plane: +4. You possess a piece of the target (hair, belonging): -2.",
+  aspects: ("Moon",),
+  modifiers: ("Target possesses anti-scrying wards: +(tier of ward).", "Target is on another plane: +4.", "You possess a piece of the target (hair, belonging): -2."),
   failure: "The scrying fails and the target is automatically alerted to the attempt.",
 )
 
@@ -1460,10 +1463,10 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   "Occultism",
   "10",
   "9",
-  "Components (#feathers 2000) + Essence (3 Strain)",
   "2 hours",
   "You open a channel of communication with an otherworldly entity — a god, a powerful spirit, or an echo of a dead deity. You may ask up to three questions, which the entity answers truthfully but not necessarily completely. The entity may demand a price for its knowledge (additional Essence, a future favor, or information in return). The nature of the entity contacted depends on the circumstances and location of the ritual.",
-  aspects: "Moon",
+  sacrifice: "Essence (3 EP)",
+  aspects: ("Moon",),
   failure: "The channel opens but connects to an unintended entity. The entity may lie, demand payment, or be hostile.",
 )
 
@@ -1473,10 +1476,10 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   "Occultism",
   "14",
   "14",
-  "Components (#feathers 20000) + Essence (10 Strain) + Influence (Skull 8, Moon 6)",
   "1 day",
   "You unravel the threads of fate surrounding one subject — a person, an object, an event, or a place. The GM reveals the complete truth about the subject: its history, its current state, its connections, and its most likely future. This information is absolute and cannot be obscured by any magic short of divine intervention. The caster experiences the revelation as a trance-vision lasting several hours.",
-  aspects: "Moon, Skull",
+  sacrifice: "Essence (10 EP) + Influence (major Skull, major Moon)",
+  aspects: ("Moon", "Skull"),
   failure: "The revelation is partial and fragmented. The caster takes the full Strain and Influence cost. The caster is Dazed for 24 hours from the psychic backlash.",
 )
 
@@ -1490,9 +1493,10 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   "Occultism",
   "3 + half item tier",
   "4",
-  "4 Magnitude (fresh blood of a predatory creature)",
   "4 hours",
   "You awaken a hunger for blood in a weapon. If the weapon successfully deals damage to a living target, the wielder gains a +2 bonus to the next attack with the weapon.",
+  sacrifice: "Components (fresh blood of a predatory creature)",
+  aspects: ("Mist", "Moon"),
   failure: "The hunger is indiscriminate — the bonus applies, but the wielder must also make a D4 Grit check after each combat or attack the nearest living creature (friend or foe) once.",
 )
 
@@ -1502,10 +1506,10 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   "Occultism",
   "7 + half item tier",
   "8",
-  "8 Magnitude (cursed relic or hexed remains) + Essence (2 Strain)",
   "12 hours",
   "You bind a malevolent curse into a weapon. On a successful hit that deals damage, the target must make a Potential save at difficulty equal to the weapon's tier + 2. On failure, the target takes a -2 curse penalty to all of its rolls (save ends).",
-  aspects: "Skull",
+  sacrifice: "Components (cursed relic or hexed remains) + Essence (2 EP)",
+  aspects: ("Mist", "Skull"),
   failure: "The curse is bound but unstable — it functions normally, but each time it activates, the wielder takes 1 Strain.",
 )
 
@@ -1515,10 +1519,10 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   "Occultism",
   "7 + half item tier",
   "8",
-  "8 Magnitude (soul gem or essence of the dying) + Essence (3 Strain)",
   "12 hours",
   "You bind the weapon with soul-draining properties. On a successful hit that deals damage, the target must make a Potential save at difficulty equal to the weapon's tier + 2. On failure, the target loses 1 EP and Focus equal to 3 × the weapon's tier.",
-  aspects: "Skull",
+  sacrifice: "Components (soul gem or essence of the dying) + Essence (3 EP)",
+  aspects: ("Skull",),
   failure: "The drain is reversed — on a failed save, the target loses the EP and Focus as normal, but the wielder also loses Focus equal to the weapon's tier.",
 )
 
@@ -1530,7 +1534,6 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   "Alchemy",
   "3",
   "2",
-  "Components (#feathers 150)",
   "10 minutes",
   "You brew a potion that restores HP equal to 100% of the catalyst used in its creation. The potion can be consumed as a 1 AP action. Potions expire after one week.",
   failure: "The potion is inert — it has no effect but is otherwise harmless.",
@@ -1542,7 +1545,6 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   "Alchemy",
   "3",
   "2",
-  "Components (#feathers 100)",
   "10 minutes",
   "You brew a potion that removes the Poisoned condition from the drinker. If the poison is of a tier higher than this recipe's tier, the difficulty increases by 2 per tier difference. The antidote can be consumed as a 1 AP action.",
   failure: "The antidote is ineffective.",
@@ -1554,7 +1556,6 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   "Alchemy",
   "5",
   "4",
-  "Components (#feathers 300)",
   "20 minutes",
   "You brew a stimulant that sharpens the drinker's abilities. When consumed (1 AP action), the drinker chooses one skill. They gain +2d on checks with that skill for 1 hour. A creature cannot benefit from more than one stimulant at a time; consuming a second replaces the first.",
   failure: "The stimulant works but inflicts a -1d penalty on all other skills for its duration.",
@@ -1566,7 +1567,6 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   "Alchemy",
   "5",
   "4",
-  "Components (#feathers 400)",
   "15 minutes",
   "You create an oil that can be applied to a weapon (1 AP action). The weapon gains a damage type of your choice (Thermal, Cold, Electric, or Acid) for 1 encounter. While active, the weapon's damage is treated as that type for the purposes of resistances and vulnerabilities. Only one oil can be active on a weapon at a time.",
   failure: "The oil is unstable — it lasts only 3 rounds instead of 1 encounter.",
@@ -1578,7 +1578,6 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   "Alchemy",
   "7",
   "6",
-  "Components (#feathers 800)",
   "30 minutes",
   "You create a dose of paralytic poison (3 applications). The poison can be applied to a weapon (1 AP action) or slipped into food/drink. On the next hit (or when ingested), the target must pass a D6 Stamina check or be Stilled (save ends). Whether the save succeeds or fails, the application is consumed.",
   failure: "The poison is weak — the resist DC is reduced to D4.",
@@ -1590,7 +1589,6 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   "Alchemy",
   "9",
   "8",
-  "Components (#feathers 2500)",
   "1 hour",
   "You brew a powerful protective elixir. When consumed (1 AP action), the drinker gains +3 Armor and +3 Ward for 1 encounter. Additionally, the drinker gains +2d on Stamina resistance checks for the duration. A creature cannot benefit from more than one elixir at a time.",
   failure: "The elixir provides only +1 Armor and +1 Ward, and its duration is halved.",
@@ -1602,10 +1600,10 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   "Alchemy",
   "12",
   "10",
-  "Components (#feathers 6000) + Essence (5 EP)",
   "8 hours",
   "You create a single universal reagent of extraordinary purity, worth 8 Magnitude for the purpose of any ritual. This exceeds the magnitude of any readily obtainable reagent (capped at 6 for standard materials). The Philosopher's Reagent does not expire and can provide any single aspect at up to magnitude 4 when used as Influence.",
-  aspects: "Mist, Forge",
+  sacrifice: "Essence (5 EP)",
+  aspects: ("Mist", "Sun"),
   failure: "The reagent is created but is flawed — it is worth only 5 Magnitude and cannot provide aspect Influence.",
 )
 
@@ -1617,8 +1615,8 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   "Alchemy",
   "2 + half item tier",
   "2",
-  "2 Magnitude (alchemical silver)",
   "2 hours",
   "You coat a weapon in alchemical silver through a chemical bonding process. The weapon gains the Silvered keyword: it bypasses immunity or resistance to non-silvered weapons, and deals bonus damage to undead creatures equal to 50% of its base damage. Silvering is permanent but can be stripped by re-treating the weapon with a different material. This recipe can alternatively be performed as a Shop check at the same difficulty.",
+  sacrifice: "Components (alchemical silver)",
   failure: "The silver coating is thin and uneven — it functions but wears off after 1d6 encounters.",
 )
