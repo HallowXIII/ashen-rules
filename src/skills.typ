@@ -1573,6 +1573,28 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
 )
 
 #ritual-description(
+  "Alchemical Grenade",
+  2,
+  "Alchemy",
+  "5",
+  "4",
+  "20 minutes",
+  "You create a single alchemical grenade of one type: acid (4+D10 Chemical, Burst 1), smoke (creates Dense Fog in Burst 2 for 3 rounds), or flash (targets in Burst 1 must pass D4 Stamina or be Blinded for 1 round). The grenade is thrown with a Marksmanship check (range 10, Burst as specified). Alchemical grenades expire after one week.",
+  failure: "The grenade is unstable — on a missed throw, it detonates in the thrower's square instead.",
+)
+
+#ritual-description(
+  "Resistance Tincture",
+  2,
+  "Alchemy",
+  "5",
+  "4",
+  "20 minutes",
+  "You brew a tincture that grants the drinker resistance 4 to one damage type of your choice (Thermal, Cold, Electric, Chemical, or Rending) for 1 encounter. The damage type is chosen during brewing. A creature can only benefit from one Resistance Tincture at a time; consuming a second replaces the first.",
+  failure: "The tincture works but the resistance is only 2.",
+)
+
+#ritual-description(
   "Paralytic Poison",
   3,
   "Alchemy",
@@ -1584,6 +1606,28 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
 )
 
 #ritual-description(
+  "Focus Tonic",
+  3,
+  "Alchemy",
+  "7",
+  "6",
+  "30 minutes",
+  "You brew a potent tonic that restores Focus. When consumed (1 AP action), the drinker recovers Focus equal to 3 × the tier of the catalyst used in its creation + D10. The tonic also clears the Dazed condition if present. A creature can benefit from a Focus Tonic only once per encounter. Tonics expire after three days.",
+  failure: "The tonic is weak — it restores only half the normal amount and does not clear Dazed.",
+)
+
+#ritual-description(
+  "Corrosive Agent",
+  3,
+  "Alchemy",
+  "7",
+  "6",
+  "30 minutes",
+  "You create a powerful acid (3 applications) that can be applied to a weapon (1 AP action) or thrown at a target (range 5, 1 AP). Applied to a weapon: for the next encounter, the weapon deals bonus Chemical damage equal to the weapon's tier × 3 per hit, and each hit reduces the target's Armor by 1 (cumulative, recovers at end of encounter). Thrown: the target takes 8+2D8 Chemical damage and must pass a D6 Stamina check or be Weakened (3) (save ends).",
+  failure: "The acid is dilute — bonus damage is halved and the Armor reduction does not apply.",
+)
+
+#ritual-description(
   "Elixir of Fortitude",
   4,
   "Alchemy",
@@ -1592,6 +1636,28 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   "1 hour",
   "You brew a powerful protective elixir. When consumed (1 AP action), the drinker gains +3 Armor and +3 Ward for 1 encounter. Additionally, the drinker gains +2d on Stamina resistance checks for the duration. A creature cannot benefit from more than one elixir at a time.",
   failure: "The elixir provides only +1 Armor and +1 Ward, and its duration is halved.",
+)
+
+#ritual-description(
+  "Draught of Prowess",
+  4,
+  "Alchemy",
+  "9",
+  "8",
+  "1 hour",
+  "You brew a draught that temporarily enhances the drinker's combat abilities. When consumed (1 AP action), the drinker gains +2d on attack rolls and +2 to damage for 1 encounter. Additionally, the drinker's Movement Speed increases by 2 for the duration. A creature can benefit from only one Draught at a time.",
+  failure: "The draught provides only +1d on attack rolls and no damage or speed bonus.",
+)
+
+#ritual-description(
+  "Transmutation Paste",
+  4,
+  "Alchemy",
+  "9",
+  "8",
+  "1 hour",
+  "You create a paste that can be applied to a piece of armor (10 minutes to apply) to temporarily change its material resistance. The paste replaces the armor's current material resistance (if any) with resistance to a damage type of your choice, at the normal rate for the armor's weight class and tier. The effect lasts for 1 day. This is an inexpensive alternative to re-forging the armor in a new material.",
+  failure: "The paste is unstable — the resistance works but degrades by 1 per encounter.",
 )
 
 #ritual-description(

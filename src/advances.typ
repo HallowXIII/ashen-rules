@@ -238,6 +238,56 @@ attained, as shown in the tables below.
   [At the start of each round, choose one ally within 10 squares. That ally gains +1 AP this round. You may not choose the same ally in consecutive rounds.],
 )
 
+#advance-block(
+  "Efficient Binding",
+  2,
+  350,
+  1,
+  3,
+  "Warlock Acolyte, Command 5",
+  [The Focus component of your summoning sustain cost is reduced by half the creature's tier (minimum 1 increment). This makes lower-tier summons much cheaper to maintain in prolonged fights.],
+)
+
+#advance-block(
+  "Iron Will of the Binder",
+  3,
+  600,
+  2,
+  4,
+  "Efficient Binding, Command 7",
+  [You gain +3d on binding checks against willful summons. Additionally, if a willful summon attempts to break free while you are conscious, the creature suffers a -2d penalty on its escape check.],
+)
+
+#advance-block(
+  "Dual Binding",
+  4,
+  1200,
+  4,
+  6,
+  "Iron Will of the Binder, Command 9",
+  [You may sustain two summoning powers simultaneously. You must pay the sustain cost for each summon separately. If you are commanding mindless summons, a single Command action (1 AP) can issue orders to both creatures at once, but they must receive the same instruction.],
+)
+
+#advance-block(
+  "Warlock's Dominion",
+  5,
+  2200,
+  6,
+  10,
+  "Dual Binding, Command 12",
+  [Your mastery of summoning reduces all sustain costs by 1 AP (minimum 0 AP; you still pay the Focus component). Mindless summons you control gain +2 to all their combat stats (Evasion, Armor, Ward, attack rolls, damage). Willful summons bound by you cannot attempt to break free while you are conscious.],
+)
+
+#advance-block(
+  "Legion Master",
+  6,
+  3500,
+  10,
+  15,
+  "Warlock's Dominion, Command 14",
+  [You may sustain up to three summoning powers simultaneously. Additionally, once per encounter, you may resummon a destroyed summon as a 2 AP action without paying the initial Focus cost (you still pay the sustain cost from that point on). The resummon appears in an unoccupied square within 10 squares of you at half its maximum HP.],
+)
+
 == Dodge
 
 #advance-block(
@@ -463,6 +513,46 @@ attained, as shown in the tables below.
   "Any Tier 1 Exploit",
   [This advance stands in for learning any Tier 2 Exploit. You learn one Tier 2
     Exploit of your choice.],
+)
+
+#advance-block(
+  "Ambidexterity",
+  2,
+  350,
+  2,
+  1,
+  "Martial 5",
+  [Your off-hand penalty while dual wielding is reduced by 1d (from -2d to -1d for Light weapons, from -3d to -2d for Medium weapons).],
+)
+
+#advance-block(
+  "Twin Fangs",
+  3,
+  600,
+  3,
+  2,
+  "Ambidexterity, Martial 7",
+  [While dual wielding, the hit rate increase to both weapons is removed --- you use the weapons' normal hit rates. Additionally, once per round when both weapons hit the same target, the second hit deals +50% bonus damage.],
+)
+
+#advance-block(
+  "Whirlwind of Steel",
+  4,
+  1200,
+  5,
+  4,
+  "Twin Fangs, Martial 9",
+  [You learn the _Whirlwind of Steel_ exploit (see Martial Exploits, Tier 4).],
+)
+
+#advance-block(
+  "Perfect Ambidexterity",
+  5,
+  2000,
+  8,
+  6,
+  "Whirlwind of Steel, Martial 12",
+  [Your off-hand penalty while dual wielding is eliminated entirely. Both weapons are treated as primary weapons. Additionally, you may use _Whirlwind of Steel_ twice per encounter instead of once.],
 )
 
 #advance-block(

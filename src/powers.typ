@@ -1475,6 +1475,21 @@ the more general powers of their parent.
 )
 
 #power-description(
+  "Whirlwind of Steel",
+  "Exploit",
+  4,
+  "3",
+  "You attack every enemy adjacent to you with both weapons simultaneously, making a separate attack roll for each weapon against each target. The off-hand penalty applies as normal. Each hit deals 100% damage. On a hit, the target must make a resistance check; on failure, it is Dazed until the end of your next turn. You may use this power once per encounter (twice with Perfect Ambidexterity).",
+  keywords: ("Dual Wield", "Weapon"),
+  prerequisites: ("You must be dual wielding.",),
+  range: "Close Burst 1; all enemies",
+  difficulty: "7",
+  cost: "2 Increments",
+  resistance: "D7 Stamina (Daze only; damage always applies on hit)",
+  miss: "Half damage, no Daze.",
+)
+
+#power-description(
   "Sundering Blow",
   "Exploit",
   4,
