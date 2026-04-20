@@ -122,6 +122,61 @@
   )
 }
 
+#let compact-field(label, width: 1fr) = {
+  box(width: width, inset: (x: 1pt, y: 0pt))[
+    #text(size: 5.5pt, fill: luma(100), weight: "bold", upper(label))
+    #h(2pt)
+    #box(width: 1fr, baseline: -1pt, line(length: 100%, stroke: 0.4pt + luma(160)))
+  ]
+}
+
+#let power-card(i) = {
+  rect(
+    width: 100%,
+    stroke: 0.4pt + luma(140),
+    radius: 2pt,
+    inset: 4pt,
+  )[
+    // Row 1: checkbox + name + type + tier
+    #grid(
+      columns: (8pt, 1fr, 3fr, 2fr, 1.2fr),
+      column-gutter: 2pt,
+      align: horizon,
+      rect(width: 7pt, height: 7pt, stroke: 0.5pt + luma(100), radius: 1pt),
+      h(0pt),
+      compact-field("Name"),
+      compact-field("Type"),
+      compact-field("T"),
+    )
+    #v(3pt)
+    // Row 2: AP + cost + difficulty + range
+    #grid(
+      columns: (1fr, 2fr, 1.2fr, 2fr),
+      column-gutter: 2pt,
+      compact-field("AP"),
+      compact-field("Cost"),
+      compact-field("Diff"),
+      compact-field("Range"),
+    )
+    #v(3pt)
+    // Row 3: keywords + resistance
+    #grid(
+      columns: (1fr, 1fr),
+      column-gutter: 2pt,
+      compact-field("Keywords"),
+      compact-field("Resist"),
+    )
+    #v(11pt)
+    // Rows 4-6: effect lines
+    #text(size: 5.5pt, smallcaps("Effect"))
+    #line(length: 100%, stroke: 0.3pt + luma(190))
+    #v(8pt)
+    #line(length: 100%, stroke: 0.3pt + luma(190))
+    #v(8pt)
+    #line(length: 100%, stroke: 0.3pt + luma(190))
+  ]
+}
+
 #let advance-row() = {
   grid(
     columns: (4fr, 1fr, 1fr, 1fr, 1fr),
@@ -603,62 +658,32 @@
   columns: (1fr, 1fr),
   column-gutter: 8pt,
 
-  // ── LEFT: Arcane + Psychic ──────────────────────────────────────
+  // ── LEFT: 10 combat power cards ─────────────────────────────────
   {
-    sheet-header("Arcane Spells (Memorized)")
-    v(1pt)
-    text(size: 6pt, fill: luma(120), style: "italic", "☐ = memorized  —  Name / Tier / AP / DC / Cost / Key Effect")
-    v(1pt)
-    for i in range(17) {
-      check-line()
-    }
-
-    v(8pt)
-
-    sheet-header("Psychic Powers")
-    v(1pt)
-    text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / AP / DC / Cost / Augment")
-    v(1pt)
-    for i in range(17) {
-      note-line()
-    }
-
-    v(8pt)
-
-    sheet-header("Divine Prayers (from Reliquary)")
-    v(1pt)
-    text(size: 6pt, fill: luma(120), style: "italic", "Aspects: _________________________________________  Prayers available by tier:")
-    v(1pt)
-    for i in range(17) {
-      note-line()
-    }
+    sheet-header("Powers")
+    v(2pt)
+    text(size: 5.5pt, fill: luma(120), style: "italic", "☐ doubles as arcane memorization marker. Use effect lines for domain, tap, miss, augments.")
+    v(3pt)
+    stack(
+      spacing: 4pt,
+      ..range(9).map(i => power-card(i)),
+    )
   },
 
-  // ── RIGHT: Martial + Command + Rituals ──────────────────────────
+  // ── RIGHT: 5 power cards + rituals as lines ─────────────────────
   {
-    sheet-header("Martial & Marksmanship Exploits")
-    v(1pt)
-    text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / AP / DC / Cost / Key Effect")
-    v(1pt)
-    for i in range(17) {
-      note-line()
-    }
+    sheet-header("Powers (cont.)")
+    v(11.5pt)
+    stack(
+      spacing: 4pt,
+      ..range(6).map(i => power-card(i)),
+    )
 
-    v(8pt)
-
-    sheet-header("Command Powers")
-    v(1pt)
-    text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / AP / DC / Cost / Key Effect")
-    v(1pt)
-    for i in range(17) {
-      note-line()
-    }
-
-    v(8pt)
+    v(6pt)
 
     sheet-header("Rituals Known")
     v(1pt)
-    text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / Skill / Difficulty / Casting Time")
+    text(size: 5.5pt, fill: luma(120), style: "italic", "Name / Tier / Skill / Difficulty / Magnitude / Casting Time / Sacrifice")
     v(1pt)
     for i in range(17) {
       note-line()
