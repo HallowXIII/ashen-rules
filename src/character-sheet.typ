@@ -111,6 +111,17 @@
   line(length: 100%, stroke: 0.3pt + luma(190))
 }
 
+#let check-line() = {
+  v(4pt)
+  grid(
+    columns: (6pt, 1fr),
+    column-gutter: 4pt,
+    align: horizon,
+    rect(width: 6pt, height: 6pt, stroke: 0.5pt + luma(100), radius: 2pt),
+    [#v(5pt) #line(length: 100%, stroke: 0.3pt + luma(190))],
+  )
+}
+
 #let advance-row() = {
   grid(
     columns: (4fr, 1fr, 1fr, 1fr, 1fr),
@@ -248,6 +259,14 @@
       char-row("Dodge", "AGI+PER"),
       char-row("Grit", "END+WIL"),
     )
+
+    v(8pt)
+
+    sheet-header("Languages")
+    v(1pt)
+    for i in range(6) {
+      note-line()
+    }
   },
 
   // ── COLUMN 2: Skills + Combat Values ────────────────────────────
@@ -263,7 +282,6 @@
       val-box("Ward"),
       val-box("Move Speed"),
       val-box("AP / Turn"),
-      val-box("Carry Cap"),
     )
     v(4pt)
     stack(
@@ -606,10 +624,10 @@
   {
     sheet-header("Arcane Spells (Memorized)")
     v(1pt)
-    text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / AP / DC / Cost / Key Effect")
+    text(size: 6pt, fill: luma(120), style: "italic", "☐ = memorized  —  Name / Tier / AP / DC / Cost / Key Effect")
     v(1pt)
-    for i in range(16) {
-      note-line()
+    for i in range(17) {
+      check-line()
     }
 
     v(8pt)
@@ -618,7 +636,7 @@
     v(1pt)
     text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / AP / DC / Cost / Augment")
     v(1pt)
-    for i in range(16) {
+    for i in range(17) {
       note-line()
     }
 
@@ -628,7 +646,7 @@
     v(1pt)
     text(size: 6pt, fill: luma(120), style: "italic", "Aspects: _________________________________________  Prayers available by tier:")
     v(1pt)
-    for i in range(16) {
+    for i in range(17) {
       note-line()
     }
   },
@@ -639,7 +657,7 @@
     v(1pt)
     text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / AP / DC / Cost / Key Effect")
     v(1pt)
-    for i in range(16) {
+    for i in range(17) {
       note-line()
     }
 
@@ -649,7 +667,7 @@
     v(1pt)
     text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / AP / DC / Cost / Key Effect")
     v(1pt)
-    for i in range(16) {
+    for i in range(17) {
       note-line()
     }
 
@@ -659,7 +677,7 @@
     v(1pt)
     text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / Skill / Difficulty / Casting Time")
     v(1pt)
-    for i in range(16) {
+    for i in range(17) {
       note-line()
     }
   },

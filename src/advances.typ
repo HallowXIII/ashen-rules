@@ -1,4 +1,4 @@
-#import "declarations.typ": advance-block
+#import "declarations.typ": advance-block, pftab
 
 = Advances
 == What is an advance?
@@ -16,6 +16,59 @@ it for the rest of the campaign.
 
 Characters gain XP from completing missions, overcoming challenges, and
 achieving story milestones, as determined by the GM.
+
+== Attribute & Characteristic Advances
+
+In addition to the talent advances listed below, characters can spend XP to
+increase the rank of an attribute or characteristic. Whenever you purchase an
+advance of any kind, you gain HP and/or FP as listed in the advance's
+description. For attribute and characteristic advances, the HP and FP gained
+depends on the specific attribute or characteristic being advanced and the rank
+attained, as shown in the tables below.
+
+#pftab(
+  "Attribute & Characteristic Advancement Costs",
+  columns: (1fr, 1fr, 1.5fr, 1fr, 1.5fr),
+  [*Rank*], [*Attr. Cost*], [*Attr. Prerequisites*], [*Char. Cost*], [*Char. Prerequisites*],
+  [2], [300 XP], [---], [150 XP], [---],
+  [3], [550 XP], [---], [275 XP], [---],
+  [4], [1000 XP], [Total XP 3500], [500 XP], [---],
+  [5], [1850 XP], [Total XP 7500], [925 XP], [Linked attrs total 4 ranks],
+  [6], [3400 XP], [Total XP 15000], [1700 XP], [Linked attrs total 6 ranks],
+)
+
+#pftab(
+  "Attribute Advance HP/FP Gain",
+  columns: (1.5fr, 1fr, 1fr, 1fr, 1fr, 1.5fr),
+  [], [*Rank 2*], [*Rank 3*], [*Rank 4*], [*Rank 5*], [*Rank 6*],
+  [*Strength*], [3 HP], [4 HP, 1 F], [6 HP, 2 F], [9 HP, 3 F], [12 HP, 4 F],
+  [*Agility*], [2 HP], [3 HP], [4 HP, 2 F], [6 HP, 2 F], [9 HP, 4 F],
+  [*Dexterity*], [3 HP], [4 HP, 1 F], [6 HP, 2 F], [9 HP, 3 F], [12 HP, 4 F],
+  [*Endurance*], [2 HP, 1 F], [3 HP, 2 F], [5 HP, 3 F], [8 HP, 4 F], [10 HP, 6 F],
+  [*Intelligence*], [3 F], [1 HP, 4 F], [2 HP, 6 F], [3 HP, 9 F], [4 HP, 12 F],
+  [*Perception*], [2 HP], [2 HP, 1 F], [3 HP, 3 F], [5 HP, 3 F], [7 HP, 5 F],
+  [*Attunement*], [3 F], [1 HP, 4 F], [2 HP, 6 F], [3 HP, 9 F], [4 HP, 12 F],
+  [*Sight*], [3 F], [1 HP, 4 F], [2 HP, 6 F], [3 HP, 9 F], [4 HP, 12 F],
+  [*Presence*], [1 HP, 2 F], [2 HP, 3 F], [3 HP, 5 F], [4 HP, 8 F], [6 HP, 10 F],
+  [*Will*], [1 HP, 2 F], [2 HP, 3 F], [3 HP, 5 F], [4 HP, 8 F], [6 HP, 10 F],
+)
+
+#pftab(
+  "Characteristic Advance HP/FP Gain",
+  columns: (2fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  [], [*Rank 2*], [*Rank 3*], [*Rank 4*], [*Rank 5*], [*Rank 6*],
+  [*Initiative*], [1 HP, 1 F], [2 HP, 1 F], [3 HP, 2 F], [4 HP, 3 F], [6 HP, 4 F],
+  [*Speed*], [1 HP, 1 F], [2 HP, 1 F], [3 HP, 2 F], [4 HP, 3 F], [6 HP, 4 F],
+  [*Stamina*], [1 HP], [2 HP], [3 HP, 2 F], [4 HP, 3 F], [6 HP, 4 F],
+  [*Potential*], [1 HP, 1 F], [1 HP, 2 F], [2 HP, 3 F], [3 HP, 4 F], [4 HP, 6 F],
+  [*Martial*], [2 HP], [3 HP], [4 HP, 1 F], [6 HP, 1 F], [8 HP, 2 F],
+  [*Marksmanship*], [1 HP], [2 HP], [3 HP, 2 F], [4 HP, 3 F], [6 HP, 4 F],
+  [*Arcane*], [2 F], [3 F], [1 HP, 4 F], [1 HP, 6 F], [2 HP, 8 F],
+  [*Psychic*], [2 F], [3 F], [1 HP, 4 F], [1 HP, 6 F], [2 HP, 8 F],
+  [*Command*], [1 HP, 1 F], [1 HP, 2 F], [2 HP, 3 F], [3 HP, 4 F], [4 HP, 6 F],
+  [*Dodge*], [0 HP, 0 F], [0 HP, 1 F], [1 HP, 2 F], [2 HP, 3 F], [3 HP, 4 F],
+  [*Grit*], [1 HP, 1 F], [2 HP, 1 F], [3 HP, 2 F], [4 HP, 3 F], [6 HP, 4 F],
+)
 
 = Advance Lists
 
