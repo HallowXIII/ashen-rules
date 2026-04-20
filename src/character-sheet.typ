@@ -44,7 +44,7 @@
     #align(center)[
       #rect(width: 28pt, height: 26pt, stroke: 0.6pt + luma(100), radius: 3pt)
       #v(-1pt)
-      #text(size: 6.5pt, fill: luma(80), weight: "bold", upper(label))
+      #text(size: 6.5pt, fill: luma(80), weight: "bold", smallcaps(label))
     ]
   ]
 }
@@ -147,11 +147,12 @@
     )
     v(2pt)
     grid(
-      columns: (2fr, 1fr, 1fr),
+      columns: (1fr, 1fr, 1fr, 1fr),
       column-gutter: 4pt,
-      field("Background"),
-      field("Tier"),
+      field("Total SP"),
+      field("Available SP"),
       field("Total XP"),
+      field("Available XP"),
     )
   },
   {
@@ -201,16 +202,16 @@
       columns: (1fr, 1fr),
       column-gutter: 4pt,
       row-gutter: 4pt,
-      score-box("STR"),
-      score-box("END"),
-      score-box("DEX"),
-      score-box("AGI"),
-      score-box("ATT"),
-      score-box("SGT"),
-      score-box("INT"),
-      score-box("PER"),
-      score-box("WIL"),
-      score-box("PRS"),
+      score-box("Strength (STR)"),
+      score-box("Endurance (END)"),
+      score-box("Dexterity (DEX)"),
+      score-box("Agility (AGI)"),
+      score-box("Attunement (ATT)"),
+      score-box("Sight (SGT)"),
+      score-box("Intelligence (INT)"),
+      score-box("Perception (PER)"),
+      score-box("Will (WIL)"),
+      score-box("Presence (PRS)"),
     )
     v(8pt)
 
@@ -298,20 +299,20 @@
       spacing: 2pt,
       skill-row("Acrobatics", "AGI+DEX"),
       skill-row("Athletics", "STR+END"),
-      skill-row("Awareness", "SGT+PER"),
+      skill-row("Awareness", "PER+SGT"),
       skill-row("Deceive", "INT+PRS"),
-      skill-row("Eerie", "ATT+WIL"),
-      skill-row("Impose", "STR+PRS"),
+      skill-row("Eerie", "ATT+SGT"),
+      skill-row("Impose", "PRS+WIL"),
       skill-row("Influence", "PRS+INT"),
       skill-row("Investigate", "INT+PER"),
-      skill-row("Subterfuge", "AGI+DEX"),
-      skill-row("Occultism", "ATT+INT"),
+      skill-row("Subterfuge", "DEX+INT"),
       v(3pt),
       skill-row("Access", "DEX+INT", trained: true),
-      skill-row("Alchemy", "ATT+INT", trained: true),
+      skill-row("Alchemy", "INT+PER", trained: true),
       skill-row("Electronics", "DEX+INT", trained: true),
       skill-row("Magitek", "ATT+INT", trained: true),
-      skill-row("Piloting", "AGI+PER", trained: true),
+      skill-row("Occultism", "SGT+ATT", trained: true),
+      skill-row("Piloting", "DEX+PER", trained: true),
       skill-row("Ritual", "ATT+WIL", trained: true),
       skill-row("Shop", "STR+DEX", trained: true),
     )
