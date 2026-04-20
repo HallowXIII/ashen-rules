@@ -262,11 +262,37 @@
 
     v(8pt)
 
-    sheet-header("Languages")
-    v(1pt)
-    for i in range(6) {
-      note-line()
-    }
+    sheet-header("Status Conditions")
+    v(4pt)
+    grid(
+      columns: (1fr, 1fr, 1fr),
+      column-gutter: 1pt,
+      row-gutter: 3pt,
+      condition-box("Blinded"),
+      condition-box("Dazed"),
+      condition-box("Disoriented"),
+      condition-box("Exposed"),
+      condition-box("Panicked"),
+      condition-box("Staggered"),
+      condition-box("Stunned"),
+      condition-box("Vulnerable"),
+      condition-box("Prone"),
+      condition-box("Immobilized"),
+      condition-box("Restrained"),
+      condition-box("Frozen"),
+      condition-box("Weakened"),
+      condition-box("Dominated"),
+      condition-box("Exhausted"),
+      condition-box("Poisoned"),
+      condition-box("Diseased"),
+      condition-box("Bleeding"),
+      condition-box("Burning"),
+      condition-box("Frightened"),
+      condition-box("Still"),
+      condition-box("Disrupt ×"),
+      condition-box("Shred ×"),
+      condition-box("Slowed ×"),
+    )
   },
 
   // ── COLUMN 2: Skills + Combat Values ────────────────────────────
@@ -285,10 +311,10 @@
     )
     v(4pt)
     stack(
-    field("Resistances", height: 16pt),
-    field("", height: 16pt),
-    field("", height: 16pt),
-    field("", height: 16pt)
+    field("Resistances / Weaknesses / Immunities", height: 10pt),
+    for i in range(5) {
+      note-line()
+    }
     )
     v(4pt)
     sheet-header("Skills")
@@ -327,58 +353,27 @@
       skill-row("Ritual", "ATT+WIL", trained: true),
       skill-row("Shop", "STR+DEX", trained: true),
     )
-
     v(8pt)
+
+
+    sheet-header("Languages")
+    v(1pt)
+    for i in range(6) {
+      note-line()
+    }
   },
 
-  // ── COLUMN 3: Status Conditions + Notes ─────────────────────────
+  // ── COLUMN 3: Active Effects + Notes (Permanent Effects) ─────────────────────────
   {
-    sheet-header("Status Conditions")
-    v(4pt)
-    grid(
-      columns: (1fr, 1fr, 1fr),
-      column-gutter: 1pt,
-      row-gutter: 3pt,
-      condition-box("Blinded"),
-      condition-box("Dazed"),
-      condition-box("Disoriented"),
-      condition-box("Exposed"),
-      condition-box("Panicked"),
-      condition-box("Staggered"),
-      condition-box("Stunned"),
-      condition-box("Vulnerable"),
-      condition-box("Prone"),
-      condition-box("Immobilized"),
-      condition-box("Restrained"),
-      condition-box("Frozen"),
-      condition-box("Weakened"),
-      condition-box("Dominated"),
-      condition-box("Exhausted"),
-      condition-box("Poisoned"),
-      condition-box("Diseased"),
-      condition-box("Bleeding"),
-      condition-box("Burning"),
-      condition-box("Frightened"),
-      condition-box("Still"),
-      condition-box("Disrupt ×"),
-      condition-box("Shred ×"),
-      condition-box("Slowed ×"),
-    )
-
-    v(8pt)
-
     sheet-header("Active Effects")
     v(4pt)
-    stack(
-    field("", height: 16pt),
-    field("", height: 16pt),
-    field("", height: 16pt),
-    field("", height: 16pt),
-    )
+    for i in range(6) {
+      note-line()
+    }
 
     sheet-header("Notes & Racial Traits")
-    v(1pt)
-    for i in range(24) {
+    v(8pt)
+    for i in range(42) {
       note-line()
     }
   },
@@ -457,23 +452,25 @@
     v(2pt)
     for i in range(3) {
       grid(
-        columns: (3fr, 1fr, 1fr),
+        columns: (3fr, 1fr, 1fr, 1fr),
         column-gutter: 3pt,
-        field("Name", height: 14pt),
-        field("Tier", height: 14pt),
-        field("Price", height: 14pt),
+        field("Name", height: 12pt),
+        field("Tier", height: 12pt),
+        field("Price", height: 12pt),
+        field("Hands", height: 12pt),
       )
       grid(
-        columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+        columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
         column-gutter: 3pt,
         field("Dmg", height: 12pt),
         field("Pen", height: 12pt),
         field("Bulk", height: 12pt),
+        field("Chg", height: 12pt),
         field("Inc", height: 12pt),
         field("Range", height: 12pt),
         field("FM", height: 12pt),
       )
-      field("Technology / Treatment / Enchantments / Keywords", height: 14pt)
+      field("Technology / Treatment / Enchantments / Keywords", height: 12pt)
       v(4pt)
     }
 
@@ -483,66 +480,52 @@
     v(2pt)
     for i in range(3) {
       grid(
-        columns: (3fr, 1fr, 1fr),
+        columns: (3fr, 1fr, 1fr, 1fr),
         column-gutter: 3pt,
         field("Name / Material", height: 14pt),
-        field("Tier", height: 14pt),
-        field("Profile", height: 14pt),
+        field("Tier", height: 12pt),
+        field("Profile", height: 12pt),
+        field("Price", height: 12pt),
       )
       grid(
-        columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+        columns: (1fr, 1fr, 1fr, 1fr, 1fr),
         column-gutter: 3pt,
         field("Armor", height: 12pt),
         field("Ward", height: 12pt),
         field("Eva", height: 12pt),
         field("Bulk", height: 12pt),
         field("Chg", height: 12pt),
-        field("Resist", height: 12pt),
       )
-      field("Enchantments / Special", height: 14pt)
+      field("Enchantments / Special", height: 12pt)
       v(4pt)
     }
 
     v(4pt)
 
-    sheet-header("Catalysts & Reliquaries")
+    sheet-header("Catalyst / Reliquary") 
+    for i in range(2) {
     v(2pt)
     grid(
-      columns: (3fr, 1fr, 1fr),
+      columns: (3fr, 1fr, 1fr, 1fr),
       column-gutter: 3pt,
-      field("Name / Type (Arcane / Psychic)", height: 14pt),
-      field("Tier", height: 14pt),
-      field("Class", height: 14pt),
-    )
-    grid(
-      columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
-      column-gutter: 3pt,
-      field("Dmg", height: 12pt),
-      field("Inc", height: 12pt),
-      field("Casting", height: 12pt),
-      field("Bulk", height: 12pt),
-      field("Chg", height: 12pt),
+      field("Name / Type", height: 12pt),
+      field("Tier", height: 12pt),
+      field("Price", height: 12pt),
       field("Hands", height: 12pt),
     )
-    field("Enchantments / Specialized", height: 14pt)
-
-    v(4pt)
-
     grid(
-      columns: (3fr, 2fr),
+      columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
       column-gutter: 3pt,
-      field("Reliquary Name", height: 14pt),
-      field("Aspects", height: 14pt),
-    )
-    grid(
-      columns: (1fr, 1fr, 1fr, 1fr, 1fr),
-      column-gutter: 3pt,
-      field("Tier", height: 12pt),
       field("Dmg", height: 12pt),
       field("Inc", height: 12pt),
+      field("Bulk", height: 12pt),
+      field("Chg", height: 12pt),
+      field("Class", height: 12pt),
       field("Will", height: 12pt),
       field("Favor", height: 12pt),
     )
+    field("Aspects / Enchantments / Specialized", height: 12pt)
+    }
   },
 
   // ── RIGHT: Carried Gear & Consumables ───────────────────────────
