@@ -107,7 +107,7 @@
 }
 
 #let note-line() = {
-  v(6pt)
+  v(10pt)
   line(length: 100%, stroke: 0.3pt + luma(190))
 }
 
@@ -124,7 +124,7 @@
 }
 
 // ══════════════════════════════════════════════════════════════════════
-// PAGE 1
+// PAGE 1 — Character
 // ══════════════════════════════════════════════════════════════════════
 
 #align(center, text(font: "Libre Baskerville", size: 18pt, fill: colors.pfgreen, weight: "bold", "Ashen — Character Sheet"))
@@ -168,7 +168,7 @@
     )
     v(2pt)
     grid(
-      columns: (1fr, 1fr),
+      columns: (1fr, 1fr, 1fr),
       column-gutter: 4pt,
       {
         align(center)[
@@ -180,6 +180,12 @@
         align(center)[
           #text(size: 6pt, fill: luma(120), "Current FP")
           #rect(width: 100%, height: 20pt, stroke: 0.5pt + colors.pfnavy, radius: 2pt)
+        ]
+      },
+      {
+        align(center)[
+          #text(size: 6pt, fill: luma(120), "Current EP")
+          #rect(width: 100%, height: 20pt, stroke: 0.5pt + colors.lightgreen, radius: 2pt)
         ]
       },
     )
@@ -242,44 +248,31 @@
       char-row("Dodge", "AGI+PER"),
       char-row("Grit", "END+WIL"),
     )
+  },
 
-    v(8pt)
-
-    sheet-header("Status Conditions")
+  // ── COLUMN 2: Skills + Combat Values ────────────────────────────
+  {
+    sheet-header("Combat Values")
     v(4pt)
     grid(
       columns: (1fr, 1fr, 1fr),
-      column-gutter: 1pt,
-      row-gutter: 3pt,
-      condition-box("Blinded"),
-      condition-box("Dazed"),
-      condition-box("Disoriented"),
-      condition-box("Exposed"),
-      condition-box("Panicked"),
-      condition-box("Staggered"),
-      condition-box("Stunned"),
-      condition-box("Vulnerable"),
-      condition-box("Prone"),
-      condition-box("Immobilized"),
-      condition-box("Restrained"),
-      condition-box("Frozen"),
-      condition-box("Weakened"),
-      condition-box("Dominated"),
-      condition-box("Exhausted"),
-      condition-box("Poisoned"),
-      condition-box("Diseased"),
-      condition-box("Bleeding"),
-      condition-box("Burning"),
-      condition-box("Frightened"),
-      condition-box("Still"),
-      condition-box("Disrupt ×"),
-      condition-box("Shred ×"),
-      condition-box("Slowed ×"),
+      column-gutter: 4pt,
+      row-gutter: 4pt,
+      val-box("Evasion"),
+      val-box("Armor"),
+      val-box("Ward"),
+      val-box("Move Speed"),
+      val-box("AP / Turn"),
+      val-box("Carry Cap"),
     )
-  },
-
-  // ── COLUMN 2: Skills + Conditions ───────────────────────────────
-  {
+    v(4pt)
+    stack(
+    field("Resistances", height: 16pt),
+    field("", height: 16pt),
+    field("", height: 16pt),
+    field("", height: 16pt)
+    )
+    v(4pt)
     sheet-header("Skills")
     v(2pt)
     text(size: 6pt, fill: luma(120), style: "italic", "Trained skills (☐) start at rank 0; untrained start at rank 1.")
@@ -318,40 +311,78 @@
     )
 
     v(8pt)
+  },
 
-    sheet-header("Combat Values")
+  // ── COLUMN 3: Status Conditions + Notes ─────────────────────────
+  {
+    sheet-header("Status Conditions")
     v(4pt)
     grid(
       columns: (1fr, 1fr, 1fr),
-      column-gutter: 4pt,
-      row-gutter: 4pt,
-      val-box("Evasion"),
-      val-box("Armor"),
-      val-box("Ward"),
-      val-box("Move Speed"),
-      val-box("AP / Turn"),
-      val-box("Carry Cap"),
+      column-gutter: 1pt,
+      row-gutter: 3pt,
+      condition-box("Blinded"),
+      condition-box("Dazed"),
+      condition-box("Disoriented"),
+      condition-box("Exposed"),
+      condition-box("Panicked"),
+      condition-box("Staggered"),
+      condition-box("Stunned"),
+      condition-box("Vulnerable"),
+      condition-box("Prone"),
+      condition-box("Immobilized"),
+      condition-box("Restrained"),
+      condition-box("Frozen"),
+      condition-box("Weakened"),
+      condition-box("Dominated"),
+      condition-box("Exhausted"),
+      condition-box("Poisoned"),
+      condition-box("Diseased"),
+      condition-box("Bleeding"),
+      condition-box("Burning"),
+      condition-box("Frightened"),
+      condition-box("Still"),
+      condition-box("Disrupt ×"),
+      condition-box("Shred ×"),
+      condition-box("Slowed ×"),
     )
-    v(4pt)
-    grid(
-      columns: (1fr, 1fr),
-      column-gutter: 4pt,
-      val-box("Bulk / Cap", height: 26pt),
-      val-box("Charge / Cap", height: 26pt),
-    )
+
+    v(8pt)
+
+    sheet-header("Active Effects")
     v(4pt)
     stack(
-    field("Resistances", height: 22pt),
-    field("", height: 22pt),
-    field("", height: 22pt)
+    field("", height: 16pt),
+    field("", height: 16pt),
+    field("", height: 16pt),
+    field("", height: 16pt),
     )
-  },
 
-  // ── COLUMN 3: Advances ──────────────────────────────────────────
+    sheet-header("Notes & Racial Traits")
+    v(1pt)
+    for i in range(24) {
+      note-line()
+    }
+  },
+)
+
+// ══════════════════════════════════════════════════════════════════════
+// PAGE 2 — Advances
+// ══════════════════════════════════════════════════════════════════════
+
+#pagebreak()
+
+#align(center, text(font: "Libre Baskerville", size: 18pt, fill: colors.pfgreen, weight: "bold", "Ashen — Advances"))
+
+#v(6pt)
+
+#grid(
+  columns: (1fr, 1fr),
+  column-gutter: 10pt,
+
   {
     sheet-header("Advances")
     v(2pt)
-    // Column headers
     grid(
       columns: (4fr, 1fr, 1fr, 1fr, 1fr),
       column-gutter: 2pt,
@@ -363,19 +394,38 @@
       text(size: 5.5pt, fill: luma(120), weight: "bold", "FP"),
     )
     v(1pt)
-    for i in range(35) {
+    for i in range(42) {
+      advance-row()
+    }
+  },
+
+  {
+    sheet-header("Advances (cont.)")
+    v(2pt)
+    grid(
+      columns: (4fr, 1fr, 1fr, 1fr, 1fr),
+      column-gutter: 2pt,
+      align: (left + bottom, center + bottom, center + bottom, center + bottom, center + bottom),
+      text(size: 5.5pt, fill: luma(120), weight: "bold", "NAME"),
+      text(size: 5.5pt, fill: luma(120), weight: "bold", "TIER"),
+      text(size: 5.5pt, fill: luma(120), weight: "bold", "XP"),
+      text(size: 5.5pt, fill: luma(120), weight: "bold", "HP"),
+      text(size: 5.5pt, fill: luma(120), weight: "bold", "FP"),
+    )
+    v(1pt)
+    for i in range(42) {
       advance-row()
     }
   },
 )
 
 // ══════════════════════════════════════════════════════════════════════
-// PAGE 2
+// PAGE 3 — Equipment & Inventory
 // ══════════════════════════════════════════════════════════════════════
 
 #pagebreak()
 
-#align(center, text(font: "Libre Baskerville", size: 18pt, fill: colors.pfgreen, weight: "bold", "Ashen — Equipment & Powers"))
+#align(center, text(font: "Libre Baskerville", size: 18pt, fill: colors.pfgreen, weight: "bold", "Ashen — Equipment & Inventory"))
 
 #v(6pt)
 
@@ -383,7 +433,7 @@
   columns: (1fr, 1fr),
   column-gutter: 8pt,
 
-  // ── LEFT: Equipment ─────────────────────────────────────────────
+  // ── LEFT: Weapons + Armor ──────────────────────────────────────
   {
     sheet-header("Weapons")
     v(2pt)
@@ -439,7 +489,6 @@
 
     sheet-header("Catalysts & Reliquaries")
     v(2pt)
-    // Catalyst slot
     grid(
       columns: (3fr, 1fr, 1fr),
       column-gutter: 3pt,
@@ -461,7 +510,6 @@
 
     v(4pt)
 
-    // Reliquary slot
     grid(
       columns: (3fr, 2fr),
       column-gutter: 3pt,
@@ -477,81 +525,142 @@
       field("Will", height: 12pt),
       field("Favor", height: 12pt),
     )
+  },
+
+  // ── RIGHT: Carried Gear & Consumables ───────────────────────────
+  {
+
+    sheet-header("Total Statistics")
+    v(4pt)
+    grid(
+      columns: (1fr, 1fr, 1fr, 1fr),
+      column-gutter: 4pt,
+      val-box("Bulk / Cap", height: 26pt),
+      val-box("Charge / Cap", height: 26pt),
+      val-box("Carry / Cap", height: 26pt),
+      val-box("Maint. (10%)", height: 26pt),
+    )
 
     v(6pt)
 
-  },
+    // Structured inventory lines with bulk
+    sheet-header("Carried Gear")
+    v(2pt)
+    grid(
+      columns: (4fr, 1fr),
+      column-gutter: 2pt,
+      align: (left + bottom, center + bottom),
+      text(size: 5.5pt, fill: luma(120), weight: "bold", "ITEM"),
+      text(size: 5.5pt, fill: luma(120), weight: "bold", "BULK"),
+    )
+    v(1pt)
+    for i in range(24) {
+      grid(
+        columns: (4fr, 1fr),
+        column-gutter: 2pt,
+        rect(width: 100%, height: 15pt, stroke: (bottom: 0.3pt + luma(190))),
+        rect(width: 100%, height: 15pt, stroke: (bottom: 0.3pt + luma(190))),
+      )
+    }
 
-  // ── RIGHT: Powers + Notes ────────────────────────────────────────
+    v(6pt)
+
+    sheet-header("Consumables")
+    v(2pt)
+    grid(
+      columns: (3fr, 1fr, 1fr),
+      column-gutter: 2pt,
+      align: (left + bottom, center + bottom, center + bottom),
+      text(size: 5.5pt, fill: luma(120), weight: "bold", "ITEM"),
+      text(size: 5.5pt, fill: luma(120), weight: "bold", "QTY"),
+      text(size: 5.5pt, fill: luma(120), weight: "bold", "BULK"),
+    )
+    v(1pt)
+    for i in range(12) {
+      grid(
+        columns: (3fr, 1fr, 1fr),
+        column-gutter: 2pt,
+        rect(width: 100%, height: 15pt, stroke: (bottom: 0.3pt + luma(190))),
+        rect(width: 100%, height: 15pt, stroke: (bottom: 0.3pt + luma(190))),
+        rect(width: 100%, height: 15pt, stroke: (bottom: 0.3pt + luma(190))),
+      )
+    }
+  },
+)
+
+// ══════════════════════════════════════════════════════════════════════
+// PAGE 4 — Powers
+// ══════════════════════════════════════════════════════════════════════
+
+#pagebreak()
+
+#align(center, text(font: "Libre Baskerville", size: 18pt, fill: colors.pfgreen, weight: "bold", "Ashen — Powers"))
+
+#v(6pt)
+
+#grid(
+  columns: (1fr, 1fr),
+  column-gutter: 8pt,
+
+  // ── LEFT: Arcane + Psychic ──────────────────────────────────────
   {
     sheet-header("Arcane Spells (Memorized)")
     v(1pt)
     text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / AP / DC / Cost / Key Effect")
     v(1pt)
-    for i in range(10) {
+    for i in range(16) {
       note-line()
     }
 
-    v(6pt)
+    v(8pt)
 
     sheet-header("Psychic Powers")
     v(1pt)
     text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / AP / DC / Cost / Augment")
     v(1pt)
-    for i in range(8) {
+    for i in range(16) {
       note-line()
     }
 
-    v(6pt)
-
-    sheet-header("Martial & Marksmanship Exploits")
-    v(1pt)
-    for i in range(8) {
-      note-line()
-    }
-
-    v(6pt)
-
-    sheet-header("Command Powers")
-    v(1pt)
-    for i in range(8) {
-      note-line()
-    }
-
-    v(6pt)
+    v(8pt)
 
     sheet-header("Divine Prayers (from Reliquary)")
     v(1pt)
     text(size: 6pt, fill: luma(120), style: "italic", "Aspects: _________________________________________  Prayers available by tier:")
     v(1pt)
-    for i in range(8) {
+    for i in range(16) {
       note-line()
     }
+  },
 
-    v(6pt)
-
-    sheet-header("Notes & Racial Traits")
+  // ── RIGHT: Martial + Command + Rituals ──────────────────────────
+  {
+    sheet-header("Martial & Marksmanship Exploits")
     v(1pt)
-    for i in range(10) {
-      note-line()
-    }
-    
-    v(6pt)
-
-    sheet-header("Carried Gear & Consumables")
-    v(2pt)
-    for i in range(8) {
+    text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / AP / DC / Cost / Key Effect")
+    v(1pt)
+    for i in range(16) {
       note-line()
     }
 
-    v(6pt)
+    v(8pt)
 
-    grid(
-      columns: (1fr, 1fr, 1fr),
-      column-gutter: 4pt,
-      val-box("Bulk / Cap", height: 26pt),
-      val-box("Charge / Cap", height: 26pt),
-      val-box("Maint. (10%)", height: 26pt),
-    )
+    sheet-header("Command Powers")
+    v(1pt)
+    text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / AP / DC / Cost / Key Effect")
+    v(1pt)
+    for i in range(16) {
+      note-line()
+    }
+
+    v(8pt)
+
+    sheet-header("Rituals Known")
+    v(1pt)
+    text(size: 6pt, fill: luma(120), style: "italic", "Name / Tier / Skill / Difficulty / Casting Time")
+    v(1pt)
+    for i in range(16) {
+      note-line()
+    }
   },
 )
