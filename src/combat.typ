@@ -1885,3 +1885,65 @@ _Damage Thresholds_, with the following additions:
   wounded and will go down within minutes, but the crew has time to
   evacuate, perform last-ditch repairs, or make a final stand. The GM
   should give the crew 3--5 rounds to act before the vessel is truly lost.
+
+=== Sample Vehicles
+
+The following stat blocks illustrate the format for tactical vehicles and capital vessels. GMs can use these as-is or as baselines for creating custom vehicles.
+
+#vehicle-stat-block(
+  "Vanguard Assault Skimmer",
+  "Tactical Vehicle",
+  2,
+  hull: "45",
+  armor: "10",
+  ward: "8",
+  speed: "7",
+  maneuverability: "Standard (0)",
+  size: "2",
+  weight-cap: "8",
+  reactor-cap: "4",
+  crew: "Pilot, Gunner; min 1",
+  traits: ("Hover", "Open-topped"),
+  flavor: "The ubiquitous Vanguard is the workhorse of militia forces and mercenary companies across the Ashlands. Cheap, fast, and easy to maintain, it carries a two-person crew at speeds no infantry can match. Its open cockpit leaves the crew exposed, but the Vanguard's speed is its best defense.",
+  weapons: [
+    _Pintle Machine Gun_ --- 12+D10, Pen 0, FM FA 3, Range M, Pintle mount. Wt 1, RD 0. \
+    _Fixed Autocannon_ --- 20+D12, Pen 4, FM SA 3, Range L, Fixed mount. Wt 2, RD 0. Anti-Vehicle. \
+    _Combat Shield Generator_ --- Ward 8. Wt 2, RD 2.
+  ],
+)[
+  *Open-topped:* The Vanguard has no roof. The pilot and gunner have partial cover from external attacks, not total cover. Passengers (up to 2) are similarly exposed.
+
+  *Fast Deployment:* Embarking or disembarking the Vanguard costs only 1 AP instead of the usual 2, as the crew can vault over the low sides.
+
+  *Damage Thresholds:* 34 Hull (Damaged), 23 Hull (Heavily Damaged), 12 Hull (Critical), 0 Hull (Destroyed). System damage uses the tactical vehicle table (D6).
+]
+
+#vehicle-stat-block(
+  "Stormwatch Patrol Frigate",
+  "Capital Vessel",
+  3,
+  hull: "65",
+  armor: "6",
+  ward: "5",
+  speed: "3",
+  maneuverability: "Standard (0)",
+  size: "7",
+  weight-cap: "24",
+  reactor-cap: "18",
+  crew: "35 (min 10); Helm, 3 Weapon stations, Engineering, Command",
+  traits: ("Airship",),
+  flavor: "A fifty-meter armed patrol vessel typical of the fleets that guard trade routes between the great Clears. The Stormwatch class is the backbone of any air force that can afford to field one: fast enough to chase down smugglers, armed enough to deter pirates, and tough enough to survive a skirmish with another frigate. It carries a small complement of marines for boarding actions and can deploy a single tactical vehicle from its ventral bay.",
+  weapons: [
+    _Flak Battery (×2)_ --- 12+2D8 damage (tactical scale), Pen 0, FM S, Range Ct--Cl. Burst 3. Point Defense. Wt 4, RD 2. \
+    _Light Mist Gun Battery_ --- 8+D6, Pen 3, FM SA 3, Range Cl--Md. Wt 3, RD 2. \
+    _Railgun Turret_ --- 12+D8, Pen 6, FM S, Range Cl--Md. Wt 4, RD 3. \
+    _Tactical Missile Rack_ --- 18+D10, Pen 10, FM S, Range Md--Lg. Magazine 8, Guided. Wt 4, RD 2. \
+    _Ship Shield Array_ --- Ward 5. Wt 6, RD 4.
+  ],
+)[
+  *Ventral Bay:* The frigate carries one Size 2 tactical vehicle (typically a skimmer) in a ventral launch bay. Deploying the vehicle takes one round and requires an Engineering station action.
+
+  *Marine Complement:* The vessel carries a squad of 8--12 marines trained for boarding actions and ground operations.
+
+  *Damage Thresholds:* 49 Hull (Damaged), 33 Hull (Heavily Damaged), 17 Hull (Critical), 0 Hull (Destroyed). System damage uses the capital vessel table (D8).
+]

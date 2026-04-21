@@ -1019,7 +1019,7 @@ Common catalysts include Soul Crystals and Prana Crystals (Light, T1), Amber Rod
   breakable: true,
   align: (left, center, center, center, center, center, center, center, center, left),
   [*Name*], [*Tier*], [*Price*], [*Class*], [*Bulk*], [*Charge*], [*Damage*], [*Inc*], [*Will*], [*Aspects*],
-  [The Princess' Locket], [1], [_#feathers 300_], [Light], [0], [2], [4+D6], [5], [3], [Scarab, Crown],
+  [The Princess' Locket], [1], [_#feathers 300_], [Light], [0], [2], [4+D6], [5], [3], [Mist, Key],
   [Battlefield Dust], [1], [_#feathers 300_], [Light], [0], [2], [3+D8], [5], [3], [Ash],
   [Khâru's Ember], [1], [_#feathers 250_], [Light], [0], [1], [4+D3], [5], [2], [Sun, Scarab],
   [Battlefield Relic], [2], [_#feathers 800_], [Light], [½], [2], [6+D8], [7], [4], [Ash, Crown],
@@ -1139,10 +1139,179 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
 === Item Descriptions
 
 #item-description(
+  "The Princess' Locket",
+  "Reliquary",
+  1,
+  keywords: "Mist, Key",
+  flavor: "A tarnished silver locket on a fine chain, engraved with the sigil of the Midnight Princess --- a crescent moon wreathed in mist. Inside is a faded portrait of a young woman with dark eyes. The locket is cold to the touch, and those who hold it sometimes hear the faint sound of a door opening in a distant room.",
+  price: "300",
+  damage: "4+D6",
+  bulk: "0",
+  charge: "2",
+  hands: "0",
+  inc: "5",
+  will: "3",
+  aspects: "Mist, Key",
+)[
+  The Princess' Locket is a Light reliquary granting access to the Mist and Key aspects. Its combination of raw magical power and summoning makes it favored by mystics and occultists. Its low Will makes it forgiving for novice divine casters.
+]
+
+#item-description(
+  "Battlefield Dust",
+  "Reliquary",
+  1,
+  keywords: "Ash",
+  flavor: "A small sealed vial of fine grey ash, collected from the site of a great battle of the Last War. The dust shifts restlessly inside its container, as though stirred by a wind that does not blow.",
+  price: "300",
+  damage: "3+D8",
+  bulk: "0",
+  charge: "2",
+  hands: "0",
+  inc: "5",
+  will: "3",
+  aspects: "Ash",
+)[
+  Battlefield Dust is a Light reliquary granting access to the Ash aspect. Battlefield Dust reliquaries are plentiful --- the Last War left no shortage of consecrated killing fields --- but their singular focus on destruction makes them the province of warrior-priests and zealots. The dust must be kept sealed; if the vial is broken, the reliquary loses its power.
+]
+
+#item-description(
+  "Khâru's Ember",
+  "Reliquary",
+  1,
+  keywords: "Sun, Scarab",
+  flavor: "A chip of volcanic glass shot through with veins of molten gold, perpetually warm and faintly luminous. It is said to be a fragment of the sun god's forge, scattered when the divine fires went dark.",
+  price: "250",
+  damage: "4+D3",
+  bulk: "0",
+  charge: "1",
+  hands: "0",
+  inc: "5",
+  will: "2",
+  aspects: "Sun, Scarab",
+)[
+  Khâru's Ember is a Light reliquary granting access to the Sun and Scarab aspects. Its low Will of 2 makes it one of the most approachable reliquaries available, though its low Charge capacity limits the amount of magical equipment that can be carried alongside it. Prized by Falcon-Headed priests as a connection to their patron deity.
+]
+
+#item-description(
+  "Battlefield Relic",
+  "Reliquary",
+  2,
+  keywords: "Ash, Crown",
+  flavor: "A battered officer's gorget pulled from the ruins of a Last War command post, still bearing the marks of the blast that killed its wearer. The metal hums faintly when gripped, carrying the echo of a final, defiant order.",
+  price: "800",
+  damage: "6+D8",
+  bulk: "½",
+  charge: "2",
+  hands: "0",
+  inc: "7",
+  will: "4",
+  aspects: "Ash, Crown",
+)[
+  The Battlefield Relic is a Light reliquary granting access to the Ash and Crown aspects. Its combination of destructive and protective divine power makes it well-suited to characters who serve as both warriors and defenders of their companions.
+]
+
+#item-description(
+  "Heartwood Icon",
+  "Reliquary",
+  2,
+  keywords: "Maiden, Scarab",
+  flavor: "A palm-sized carving of a woman's face wreathed in leaves, shaped from the heartwood of a tree that grew in a sacred grove. Green shoots still sprout from the icon in spring, despite the wood having been cut centuries ago.",
+  price: "700",
+  damage: "5+D6",
+  bulk: "0",
+  charge: "3",
+  hands: "0",
+  inc: "7",
+  will: "3",
+  aspects: "Maiden, Scarab",
+)[
+  The Heartwood Icon is a Light reliquary granting access to the Maiden and Scarab aspects, making it a powerful healing implement that also grants dominion over nature. Its high Charge of 3 for a Light reliquary can strain the capacity of characters who carry other magical equipment.
+]
+
+#item-description(
+  "Skull Fetish",
+  "Reliquary",
+  2,
+  keywords: "Serpent",
+  flavor: "A string of tiny animal skulls dipped in verdigris, each one carved with a coiling serpent. The fetish gives off a faint smell of venom and rot that never quite fades.",
+  price: "900",
+  damage: "7+D6",
+  bulk: "0",
+  charge: "2",
+  hands: "0",
+  inc: "7",
+  will: "5",
+  aspects: "Serpent",
+)[
+  The Skull Fetish is a Light reliquary granting access to the Serpent aspect. With a Will of 5 --- the highest of any Tier 2 reliquary --- it is difficult to attune and quick to punish those who displease it. Those who persevere gain access to prayers of poison and corruption. The Serpent aspect is a minor aspect of the Skull; wielders of the Skull Fetish also gain access to Skull prayers.
+]
+
+#item-description(
+  "Warden's Seal",
+  "Reliquary",
+  3,
+  keywords: "Crown, Ash",
+  flavor: "A heavy disc of dark iron stamped with the sigil of a forgotten penal legion --- a crown of thorns above crossed swords. The metal is cold and unyielding, and those who grasp it hear, faintly, the sound of marching boots.",
+  price: "2000",
+  damage: "9+D10",
+  bulk: "½",
+  charge: "3",
+  hands: "1",
+  inc: "9",
+  will: "5",
+  aspects: "Crown, Ash",
+)[
+  The Warden's Seal is a Medium reliquary granting access to the Crown and Ash aspects up to Tier 3. Its high Will of 5 and significant damage output make it a demanding but powerful implement for divine casters who balance protection with righteous violence.
+]
+
+#item-description(
+  "Void Lantern",
+  "Reliquary",
+  3,
+  keywords: "Skull, Key",
+  flavor: "A lantern of black iron and pale glass, inside which burns a flame that casts no light --- only a faint, unsettling warmth. Looking into the flame too long reveals shapes moving in the darkness: gates, keyholes, and the silhouettes of figures passing through.",
+  price: "2500",
+  damage: "8+D8",
+  bulk: "½",
+  charge: "3",
+  hands: "1",
+  inc: "9",
+  will: "6",
+  aspects: "Skull, Key",
+)[
+  The Void Lantern is a Medium reliquary granting access to the Skull and Key aspects up to Tier 3. With the highest Will of any non-legendary reliquary at 6, it is exceptionally difficult to attune. Its combination of death and summoning prayers makes it the preferred implement of spirit-binders and those who traffic with the dead.
+]
+
+#item-description(
+  "Chalice of Renewal",
+  "Reliquary",
+  3,
+  keywords: "Scarab, Maiden",
+  flavor: "A shallow bronze cup etched with spiraling vines and scarab beetles, perpetually beaded with moisture. Water poured into the chalice tastes faintly of honey and wildflowers, no matter its source.",
+  price: "2200",
+  damage: "10+D6",
+  bulk: "1",
+  charge: "3",
+  hands: "1",
+  inc: "9",
+  will: "4",
+  aspects: "Scarab, Maiden",
+)[
+  The Chalice of Renewal is a Medium reliquary granting access to the Scarab and Maiden aspects up to Tier 3. Its combination of healing and nature prayers makes it the premier support reliquary, though its Bulk of 1 and Charge of 3 demand investment in carrying capacity. Its comparatively low Will of 4 makes it more forgiving than other Tier 3 reliquaries.
+]
+
+#item-description(
   "Power Field Parry Dagger",
   "Dagger",
   4,
   keywords: "Powered",
+  price: "6500",
+  damage: "6+D10",
+  pen: "12",
+  bulk: "1",
+  charge: "1",
+  hands: "1",
+  inc: "11",
 )[
   This dagger grants a +4 equipment bonus to parry checks.
 ]
@@ -1153,6 +1322,13 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   4,
   keywords: "Time, Fate",
   flavor: "An amulet carved in the form of a miniature human skull. The Dark-Elven inscription reads 'Remember thou, o mage, that one day thou, too, shalt face oblivion'.",
+  price: "6000",
+  damage: "8+2D8",
+  bulk: "0",
+  charge: "2",
+  hands: "0",
+  inc: "11",
+  casting: "+2/+5",
 )[
   The Memento Mori grants its wielder a +2 equipment bonus to manifesting Psychic powers. The bonus increases to +5 for Time and Fate powers.
 ]
@@ -1163,6 +1339,13 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   5,
   keywords: "Cold",
   flavor: "A longsword of pale blue steel, rimed with frost that never melts.",
+  price: "15000",
+  damage: "7+D12",
+  pen: "0",
+  bulk: "2",
+  charge: "2",
+  hands: "1",
+  inc: "14",
 )[
   Hoarfrost is a +2 Masterwork Rimebound Longsword. It has the following traits:
 
@@ -1176,6 +1359,13 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   "Legendary Katana",
   5,
   keywords: "Void",
+  price: "18000",
+  damage: "15+D10",
+  pen: "15",
+  bulk: "1",
+  charge: "2",
+  hands: "1",
+  inc: "15",
 )[
   The Void Blade is a +1 Masterwork Spacerender Souldrinker Katana. It has the following traits:
 
@@ -1206,6 +1396,15 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   5,
   keywords: "Radiation, Poison, Sidearm",
   flavor: "A heavy pistol chambered for depleted uranium flechettes. The weapon is warm to the touch and faintly hums when loaded.",
+  price: "13000",
+  damage: "5+2D10",
+  pen: "12",
+  bulk: "1",
+  charge: "1",
+  hands: "1",
+  inc: "13",
+  range: "Short",
+  fm: "SA 3",
 )[
   The Poynting Rad-Fleche is a +1 Masterwork conventional pistol. It has the following traits:
 
@@ -1220,6 +1419,13 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   5,
   keywords: "Time",
   flavor: "A rod of radioactive caesium, encased in a protective sheet of rune-etched lead glass. The resonance of the metal core enhances this catalyst's power in manifesting Time powers.",
+  price: "14000",
+  damage: "23+D10",
+  bulk: "2",
+  charge: "3",
+  hands: "1",
+  inc: "16",
+  casting: "+3/+6",
 )[
   *Resonant Frequency:* This rod grants the wielder a +3 equipment bonus to manifesting Psychic powers, increasing to +6 for Time powers.
 ]
@@ -1229,6 +1435,13 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   "Legendary Spear",
   6,
   keywords: "Blood, Shadow, Two-handed, Reach",
+  price: "30000",
+  damage: "29+2D12",
+  pen: "0",
+  bulk: "3",
+  charge: "3",
+  hands: "2",
+  inc: "18",
 )[
   Kazykly is a Legendary +2 Masterwork Cursebringer Bloodthirst Lance. It has the following traits:
 
@@ -1246,6 +1459,13 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   "Masterwork Shortsword",
   6,
   keywords: "Moonlight",
+  price: "18000",
+  damage: "18+2D8",
+  pen: "9",
+  bulk: "2",
+  charge: "2",
+  hands: "1",
+  inc: "16",
 )[
   The Moonlight Shortsword is a +2 Masterwork Moontouched Bloodthirst Shortsword. It has the following traits:
 
@@ -1260,6 +1480,15 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   6,
   keywords: "Blood, Moonlight",
   flavor: "On the field where bloody battle had raged, there reigned a great silence.",
+  price: "35000",
+  damage: "35+2D6",
+  pen: "5",
+  bulk: "2",
+  charge: "4",
+  hands: "2",
+  inc: "18",
+  range: "Very Long",
+  fm: "S",
 )[
   Silence is a Legendary +2 Masterwork Moontouched Bloodthirst Sniper Rifle. It has the following traits:
 
@@ -1275,6 +1504,15 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   "Masterwork Sniper Rifle",
   6,
   keywords: "Blood, Moonlight",
+  price: "25000",
+  damage: "14+2D12",
+  pen: "28",
+  bulk: "2",
+  charge: "1",
+  hands: "2",
+  inc: "18",
+  range: "Very Long",
+  fm: "S",
 )[
   The Moonlight Railgun is a +2 Masterwork Moontouched Bloodthirst Sniper Rifle. It shares the Moontouched and Bloodthirst traits with its legendary counterpart Silence.
 ]
@@ -1285,6 +1523,12 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   6,
   keywords: "Robe, Ice, Light",
   flavor: "The priests of Iyalan specialized in spinning the silver light of the moon into magical threads, cold to the touch as silver, yet sheer as silk.",
+  price: "25000",
+  armor: "10",
+  ward: "25",
+  evasion: "+2",
+  bulk: "1",
+  charge: "4",
 )[
   *Moonsilver:* These robes grant the wearer a +3 bonus to casting Ice and Moonlight spells.
 
@@ -1299,6 +1543,12 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   6,
   keywords: "Moonlight",
   flavor: "Branded with the sigil of the Heirs, this masterwork combat suit was made for one of the Blood Moon's Oathpledged.",
+  price: "28000",
+  armor: "18",
+  ward: "10",
+  evasion: "+3",
+  bulk: "2",
+  charge: "3",
 )[
   This suit is a +2 Lightbender Deflecting Synscale combat suit.
 
@@ -1316,6 +1566,12 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   "Legendary Light Armor",
   6,
   flavor: "This set of armor was once owned by Vanth, shadow of the midnight gates. Seemingly composed of the actual black scales of some monstrous serpent, it does not provide the protection of heavier materias, but its magical powers more than make up for it.",
+  price: "30000",
+  armor: "15",
+  ward: "15",
+  evasion: "+3",
+  bulk: "1",
+  charge: "3",
 )[
   *Shadowscale:* The scales attenuate the presence of the wearer. The wearer gains a +5d bonus to subterfuge checks made to avoid detection by any senses, including supernatural ones. Its Evasion bonus increases to +5 in low light or darkness.
 
@@ -1330,6 +1586,13 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   6,
   keywords: "Arcane, Cold, Moonlight",
   flavor: "Legendary staff of Iyalan, cast from millions of strands of solid moonlight. The staff is cold to the touch and smooth like glass, emanating a faint silver glow.",
+  price: "32000",
+  damage: "27+2D8",
+  bulk: "1",
+  charge: "4",
+  hands: "1",
+  inc: "18",
+  casting: "+4/+7",
 )[
   Moonray is a Legendary +2 Masterwork Resonating Manabind Staff.
 
@@ -1346,6 +1609,13 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   6,
   keywords: "Psychic, Divine",
   flavor: "A staff shaped like a winding snake, carved from green-lacquered wood and topped with a glowing green gemstone held between the serpent's teeth. An eerie power emanates from it.",
+  price: "35000",
+  damage: "18+3D10",
+  bulk: "2",
+  charge: "5",
+  hands: "1",
+  inc: "17",
+  casting: "+4/+7",
 )[
   The Serpent Staff is a Legendary Masterwork Psychic catalyst.
 

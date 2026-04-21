@@ -139,6 +139,21 @@
   tier,
   keywords: none,
   flavor: none,
+  price: none,
+  damage: none,
+  pen: none,
+  armor: none,
+  ward: none,
+  evasion: none,
+  bulk: none,
+  charge: none,
+  hands: none,
+  range: none,
+  fm: none,
+  inc: none,
+  casting: none,
+  will: none,
+  aspects: none,
   body,
 ) = {
   set par(hanging-indent: 1em, first-line-indent: 1em)
@@ -146,6 +161,28 @@
     *#name* \
     _#if tier != none [Tier #tier] #item-type#if keywords != none [; #keywords]_ \
     #if flavor != none [_#flavor _] \
+    #{
+      let fields = ()
+      if price != none { fields.push([*Price* _#feathers #price _]) }
+      if damage != none { fields.push([*Damage* #damage]) }
+      if pen != none { fields.push([*Pen* #pen]) }
+      if armor != none { fields.push([*Armor* #armor]) }
+      if ward != none { fields.push([*Ward* #ward]) }
+      if evasion != none { fields.push([*Eva* #evasion]) }
+      if bulk != none { fields.push([*Bulk* #bulk]) }
+      if charge != none { fields.push([*Charge* #charge]) }
+      if hands != none { fields.push([*Hands* #hands]) }
+      if range != none { fields.push([*Range* #range]) }
+      if fm != none { fields.push([*FM* #fm]) }
+      if inc != none { fields.push([*Inc* #inc]) }
+      if casting != none { fields.push([*Casting* #casting]) }
+      if will != none { fields.push([*Will* #will]) }
+      if aspects != none { fields.push([*Aspects* #aspects]) }
+      if fields.len() > 0 {
+        fields.join[ | ]
+        linebreak()
+      }
+    }
 
     #body
   ]
@@ -477,3 +514,64 @@
   // #line(stroke: 1pt, length: 100%)
   // #comp.effect
 ]
+
+#let vehicle-stat-block(
+  name,
+  vehicle-type,
+  tier,
+  hull: none,
+  armor: none,
+  ward: none,
+  speed: none,
+  maneuverability: none,
+  size: none,
+  weight-cap: none,
+  reactor-cap: none,
+  crew: none,
+  traits: (),
+  flavor: none,
+  weapons: none,
+  body,
+) = {
+  set par(spacing: .6em, first-line-indent: 0em)
+  v(1em)
+  block[
+    #box(
+      text(weight: "extrabold", size: 1.3em, stretch: 50%)[#upper(name)],
+    )
+    #h(1fr)
+    #sym.wj
+    #box(text(weight: "extrabold", size: 1.3em, stretch: 50%)[#upper[Tier #tier #vehicle-type]])
+    #line(stroke: 1pt, length: 100%)
+    #if traits.len() > 0 { pftraits(traits); parbreak() }
+    #if flavor != none [_#flavor _ \ ]
+    #{
+      let stats = ()
+      if hull != none { stats.push([*Hull* #hull]) }
+      if armor != none { stats.push([*Armor* #armor]) }
+      if ward != none { stats.push([*Ward* #ward]) }
+      if speed != none { stats.push([*Speed* #speed]) }
+      if maneuverability != none { stats.push([*Maneuver* #maneuverability]) }
+      if size != none { stats.push([*Size* #size]) }
+      if stats.len() > 0 {
+        stats.join[ | ]
+        linebreak()
+      }
+      let caps = ()
+      if weight-cap != none { caps.push([*Wt Cap* #weight-cap]) }
+      if reactor-cap != none { caps.push([*Reactor Cap* #reactor-cap]) }
+      if crew != none { caps.push([*Crew* #crew]) }
+      if caps.len() > 0 {
+        caps.join[ | ]
+        linebreak()
+      }
+    }
+    #if weapons != none {
+      line(stroke: 0.5pt, length: 100%)
+      [*Weapons* \ ]
+      weapons
+    }
+    #line(stroke: 0.5pt, length: 100%)
+    #body
+  ]
+}

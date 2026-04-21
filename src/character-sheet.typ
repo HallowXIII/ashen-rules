@@ -426,7 +426,7 @@
       note-line()
     }
 
-    sheet-header("Notes & Racial Traits")
+    sheet-header("Notes & Permanent Effects (Items, Advances...)")
     v(8pt)
     for i in range(42) {
       note-line()
