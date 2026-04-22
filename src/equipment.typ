@@ -155,7 +155,7 @@ All cold weapons deal *Cold* damage and have the *Freezing* keyword. Their tacti
 
 Arc weapons discharge focused bolts of electrical energy --- artificial lightning contained and directed by electromagnetic focusing arrays. The discharge follows the path of least resistance, arcing between conductive surfaces and grounding itself through anything in its path.
 
-All arc weapons deal *Electric* damage and have the *Chaining* and *Disrupting* keywords. Their signature property is that the lightning doesn't stop at the primary target: it jumps to nearby conductors --- other enemies, their equipment, their shield generators. This makes arc weapons devastating against clustered formations and shielded targets. A single well-placed shot can cascade through an entire squad.
+All arc weapons deal *Lightning* damage and have the *Chaining* and *Disrupting* keywords. Their signature property is that the lightning doesn't stop at the primary target: it jumps to nearby conductors --- other enemies, their equipment, their shield generators. This makes arc weapons devastating against clustered formations and shielded targets. A single well-placed shot can cascade through an entire squad.
 
 The tradeoff is that electricity is stopped cold by insulated or non-conductive armor. Arc weapons have no innate Penetration; against a heavily armored solo target, a conventional rifle will outperform an arc rifle every time. Their power lies in disruption and area control, not single-target damage. Arc weapons are a relatively new technology, developed by adapting shield generator engineering into offensive applications. They become available at T2.
 
@@ -208,7 +208,7 @@ The following Synfiber variants are available. Each grants its bonus on top of t
 - *Carbon Weave:* Carbon fiber is spun into the base matrix, hardening the suit against cuts and slashes. Grants resistance to *Rending* damage (2 × tier).
 - *Nanoplate:* Nanoscale ceramic plates are layered into the weave, dispersing concussive force across the suit's surface. Grants resistance to *Impact* damage (2 × tier).
 - *Thermostatic:* The suit incorporates thermostatic fibers that regulate heat exchange, insulating the wearer against both extreme heat and cold. Grants resistance to *Thermal* and *Cold* damage (1 × tier each). Additionally, the suit suppresses the wearer's thermal signature, granting advantage on Subterfuge checks to avoid detection by infrared vision and thermal cameras.
-- *Insulated:* Rubberized layers and non-conductive polymers are woven into the suit, grounding electrical current before it reaches the wearer. Grants resistance to *Electric* damage (2 × tier).
+- *Insulated:* Rubberized layers and non-conductive polymers are woven into the suit, grounding electrical current before it reaches the wearer. Grants resistance to *Lightning* damage (2 × tier).
 
 Particularly rare suits of this kind may be made from more exotic materials --- magic weaves with supernatural properties.
 
@@ -231,7 +231,7 @@ The following plating materials are available:
 - *Cerafiber:* A hardened, fibrous material that frays on impact, catching and stopping all but the most high-velocity projectiles. Grants resistance to *Rending* damage (3 × tier), but its Armor value is reduced by 1 × tier compared to the base.
 - *Reactive:* Plates with shock-dampening gel or reactive explosive elements sandwiched between layers. When struck, the reactive layer detonates inward, cushioning the impact. Grants resistance to *Impact* damage (3 × tier), but its Armor value is reduced by 1 × tier compared to the base.
 - *Ablative:* Layered heat-sink material designed as a countermeasure to plasma weapons. Each layer chars and flakes off to dissipate thermal energy, protecting the layers beneath. Grants resistance to *Thermal* damage (3 × tier).
-- *Insulated:* Multi-layered insulation combining cryo-resistant polymers and non-conductive barriers. Grants resistance to *Cold* and *Electric* damage (1½ × tier each, rounded down).
+- *Insulated:* Multi-layered insulation combining cryo-resistant polymers and non-conductive barriers. Grants resistance to *Cold* and *Lightning* damage (1½ × tier each, rounded down).
 - *Crystplate:* Echo Crystplate --- a lost pre-cataclysm technology. The crystalline lattice resonates with incoming magical energy, dispersing it across the plate's structure. Crystplate is the only plating material that grants meaningful Ward: bonus Ward equal to *2 × tier* on top of normal plating stats. Crystplate cannot be manufactured; it must be salvaged, recovered, or reworked by an artisan with fragments of the old techniques. _(Rare.)_
 
 ===== Full-Body
@@ -1621,7 +1621,7 @@ Form factors:
 - *Arc Projector:* Heavy, 2 hands, Cone area, Single shot, Heavy keyword.
 
 #pftab(
-  "Base Arc Weapons — Electric damage, Chaining, Disrupting",
+  "Base Arc Weapons — Lightning damage, Chaining, Disrupting",
   columns: (1fr, 1fr, 1fr, 2fr, 1fr, 1fr, 1fr),
   breakable: true,
   [*Form*],
