@@ -1,6 +1,7 @@
 #import "declarations.typ": *
 
-= Skills
+#chap-header("3", [= Skills], "How your character interacts with the world")
+
 Skills represent your character’s abilities and aptitudes that are not directly
 related to their performance in combat.
 
@@ -314,7 +315,7 @@ slope + D 4 running speed).
 
 #pftab(
   "Balance Difficulties",
-  columns: 2,
+  columns: (3fr, 1fr),
   align: (left, center),
 
   [*Terrain Condition*],
@@ -553,7 +554,7 @@ The GM might call for an Awareness check when:
 - ... a character is attempting to spot a hidden individual or item
 - ... a character is attempting to evaluate whether a narrative is plausible
 
-#note[==== Sample Awareness difficulties:
+#note[==== Sample Awareness difficulties
 
 - Detecting the approach of a large vehicle: 2
 - Spotting an acquaintance in a crowded pub: 3
@@ -635,13 +636,13 @@ For significant threats, the GM may opt to compare the threat's level against
 characters' passive Eerie, even if the characters do not explicitly make a
 check.
 
-Sample Eerie difficulties:
+#note[==== Sample Eerie difficulties
 
 - Detect the presence of powerful magic: 2
 - Detect a malicious lie: 3
 - Detect the presence of subdued magic: 5
 - Detect the presence of very well-disguised magic: 8
-- Detect a lie from an extremely adept manipulator: 9
+- Detect a lie from an extremely adept manipulator: 9]
 
 === Impose (U; PRS + WIL)
 
@@ -657,12 +658,12 @@ The GM might call for an impose check when:
 - ... a character is interrogating another and pressures them to reveal
   information
 
-Sample Impose difficulties:
+#note[==== Sample Impose difficulties
 
 - Browbeating a hapless mortal: 2
 - Winning over a neutral crowd: 4
 - Winning over a hostile crowd: 7
-- Blackmailing a powerful immortal: 9
+- Blackmailing a powerful immortal: 9]
 
 === Influence (U; INT + PRS)
 
@@ -677,12 +678,12 @@ The GM might call for an Influence check when:
 - ... a character is attempting to establish friendly relations with an
   important figure
 
-Sample influence difficulties:
+#note[==== Sample Influence difficulties
 
 - Haggling down an inexperienced seller: 2
 - Securing a favor from an important figure: 4
 - Arguing an extremely difficult case in court: 7
-- Negotiating a ceasefire between two Immortal Orders: 9
+- Negotiating a ceasefire between two Immortal Orders: 9]
 
 === Investigate (U; INT + PER)
 
@@ -707,7 +708,7 @@ entries in an electronic database. The difficulty of doing so is generally
 related to how concretely the information the character is looking for is
 available within the documents, if at all.
 
-Sample Research difficulties:
+#note[==== Sample Research difficulties
 
 - Information is somewhat obscure: 2
 - Information is very obscure and requires specialist knowledge to understand
@@ -716,7 +717,7 @@ Sample Research difficulties:
 - Information has been deliberately suppressed and must be reconstructed from
   traces: 8
 - Character does not entirely know what they are looking for: +3
-- Information must be gathered from several different information stores: +2
+- Information must be gathered from several different information stores: +2]
 
 _Develop and Use Contacts_: A character can use the Investigate skill to
 research and identify useful people to know. Once they have built a relationship
@@ -725,13 +726,13 @@ attempt to use their network to obtain information. Such information can include
 dirt on a person of interest, information on the markets in a city or area, as
 well as, of course, introductions to people in other areas.
 
-Sample Contacts difficulties:
+#note[==== Sample Contacts difficulties
 
 - Obtain insight into the goings-on within a city: 2
 - Gain information on the schedule and whereabouts of a public figure: 4
 - Gain information on the schedule and whereabouts of a highly secretive person:
   6
-- Obtain insight into the secret agendas of Immortal factions: 8
+- Obtain insight into the secret agendas of Immortal factions: 8]
 
 The GM may, at their discretion, call for an Influence check alongside the
 Investigate check when the character attempts to call in favors. The results of
@@ -743,13 +744,15 @@ scene, looking for any traces and tracks left behind by others. They can also
 use this skill to track down a creature and attempt to follow it or surmise its
 whereabouts.
 
-Sample Tracks difficulties:
+#note[==== Sample Tracks difficulties
 
 - Tracking an animal in unfavorable conditions: 2
 - Tracking a Mist Creature in unfavorable conditions: 4
 - Tracking a human in a city: 6
 - Discovering the route taken by someone through a town a week before: 8
-- Tracking down a professional deploying countermeasures in a city: 11
+- Tracking down a professional deploying countermeasures in a city: 11]
+
+#colbreak()
 
 === Subterfuge (U; DEX + INT)
 
@@ -778,7 +781,7 @@ being pursued and wishes to evade their pursuers, they must find a hiding place.
 The sensory spectrum of the threat determines whether a character counts as
 having concealment; see *Senses* for more.
 
-Sample Sneak difficulties:
+#note[==== Sample Sneak difficulties
 
 - Evade a simple CCTV system: 2
 - Evade the attention of professional guards equipped with night vision or IR
@@ -786,19 +789,19 @@ Sample Sneak difficulties:
 - Slip through the cracks of a magical intrusion detection system: 6
 - Infiltrate a facility protected by multiple redundant high-power surveillance
   systems: 8
-- Lose a highly skilled pursuer equipped with multi-spectrum sensorics: 10
+- Lose a highly skilled pursuer equipped with multi-spectrum sensorics: 10]
 
 _Sleight of Hand_: A character may use the Subterfuge skill to perform a sleight
 of hand. This includes pickpocketing, planting an item on another, concealing
 the presence of an item (such as a weapon) on themselves under search, or
 cheating at card games.
 
-Sample Sleight of Hand difficulties:
+#note[==== Sample Sleight of Hand difficulties
 
 - Perform a simple magic trick: 2
 - Steal a small item from an observant victim: 4
 - Conceal an item on someone conversing with you without them noticing: 6
-- Smuggle a weapon past a high-security checkpoint: 8
+- Smuggle a weapon past a high-security checkpoint: 8]
 
 _Forgery_: A character may use the Subterfuge skill to alter, replace or falsify
 physical documents or evidence. Making such a check is a protracted affair, and
@@ -809,12 +812,12 @@ character might need to make an appropriate crafting check or, if they do not
 have the requisite training in the skill required, find someone who can help
 them.
 
-Sample Forgery difficulties:
+#note[==== Sample Forgery difficulties
 
 - Manipulate an invoice or other unsecured document: 2
 - Forge a watermarked or holo-secured document: 4
 - Duplicate a well-known piece of art: 6
-- Forge a cryptographic access token: 8
+- Forge a cryptographic access token: 8]
 
 == Trained Skills
 
@@ -839,12 +842,12 @@ this case, raise the difficulty of the job by 2.
 A character who has no tools whatsoever on them may be unable to bypass a lock
 regardless of how well they roll on their check, at the GM's discretion.
 
-Sample Lockpicking difficulties:
+#note[==== Sample Lockpicking difficulties
 
 - Picking a well-made lock with improvised tools: 4
 - Picking a high-security lock: 6
 - Bypassing a multi-modal access control system: 8
-- Bypassing a magically reinforced, mastercrafted multi-lock: 10
+- Bypassing a magically reinforced, mastercrafted multi-lock: 10]
 
 _Hotwiring and Hacking_: The Access skill can be used to manipulate electric and
 electronic systems of all kinds, whether by crude bypasses or more subtle
@@ -852,12 +855,12 @@ methods. When attempting more sophisticated attacks, especially against computer
 systems, the GM may rule that a successful Electronics check is also required to
 subdue the recalcitrant machine.
 
-Sample Hacking difficulties:
+#note[==== Sample Hacking difficulties
 
 - Hotwiring a simple motor or electronic lock: 2
 - Gaining unauthorized access to a simply secured computer system: 4
 - Performing a privilege escalation attack on a well-secured computer system: 6
-- Mechanically suborning an AI core: 10
+- Mechanically suborning an AI core: 10]
 
 _Traps_: A character trained in the Access skill can detect and disable traps.
 The difficulties for doing so are similar to lockpicking.
@@ -882,12 +885,12 @@ properties within them. The difficulty of doing so depends on the number of
 distinct components making up the substance as well as the number and
 concentration of components to be detected.
 
-Sample Analyzing difficulties:
+#note[==== Sample Analyzing difficulties
 
 - Identify whether a common substance has been tampered with: 2
 - Identify the active components of an unfamiliar compound: 4
 - Detect trace quantities of a rare reagent within a complex mixture: 6
-- Fully analyze an unknown substance of extraplanar or magical origin: 8
+- Fully analyze an unknown substance of extraplanar or magical origin: 8]
 
 _Synthesizing Substances_: A character can use their Alchemy skill to perform
 alchemical procedures --- combining, refining, and transforming materials to
@@ -902,13 +905,13 @@ materials.
 Consumable reagents and equipment are spent whether or not the synthesis
 succeeds.
 
-Sample Synthesizing difficulties:
+#note[==== Sample Synthesizing difficulties
 
 - Brew a simple stimulant or sedative from common materials: 3
 - Prepare a ritual reagent of moderate power: 5
 - Synthesize a compound with precisely calibrated alchemical-magical properties:
   7
-- Produce a substance of legendary potency or unprecedented effect: 10
+- Produce a substance of legendary potency or unprecedented effect: 10]
 
 _Alchemical Rituals_: When performing an alchemical recipe, Alchemy is the only
 applicable skill --- Ritual and Occultism do not apply (see _Rituals and
@@ -933,25 +936,25 @@ malfunctions and restore damaged or broken devices to working order. The
 difficulty depends on the complexity of the device and the severity of the
 damage.
 
-Sample Repair difficulties:
+#note[==== Sample Repair difficulties
 
 - Fix a common appliance or simple motor: 2
 - Restore a damaged circuit board or control system: 4
 - Bring a sophisticated computing system back online after catastrophic failure:
   6
-- Reconstruct a destroyed AI subsystem from salvaged components: 8
+- Reconstruct a destroyed AI subsystem from salvaged components: 8]
 
 _Modification & Construction_: A character can use Electronics to alter existing
 devices or build new ones from salvaged or raw parts. When building something
 with no reference design, the GM may require a prior Investigate or Magitek
 check to establish the specifications.
 
-Sample Modification & Construction difficulties:
+#note[==== Sample Modification & Construction difficulties
 
 - Jury-rig a simple bypass or adapter: 2
 - Build a functional device from salvaged parts: 4
 - Modify military-grade hardware for unauthorized use: 6
-- Construct a novel electronic component with no reference design: 8
+- Construct a novel electronic component with no reference design: 8]
 
 _Assisted Hacking_: When using the Access skill to attack sophisticated computer
 systems, the GM may additionally call for an Electronics check to manipulate the
@@ -977,36 +980,36 @@ device to determine its function, origin, and magical properties. The difficulty
 depends on the complexity of the device and how much information is being
 sought.
 
-Sample Identifying difficulties:
+#note[==== Sample Identifying difficulties
 
 - Identify the function of a simple magitek tool: 2
 - Determine the magical properties of an unfamiliar device: 4
 - Analyze a magitek device of ancient or unknown design: 6
-- Reverse-engineer a unique magitek artifact: 8
+- Reverse-engineer a unique magitek artifact: 8]
 
 _Operating Magitek_: Using a familiar magitek device does not require a check.
 Checks arise when the device is unfamiliar, damaged, unstable, or actively
 resisting the user --- or when the character is attempting to use it in a way it
 was not designed for.
 
-Sample Operating difficulties:
+#note[==== Sample Operating difficulties
 
 - Operate an unfamiliar but standard magitek device: 2
 - Safely activate an unstable or partially damaged device: 4
 - Override a device's magical safeguards: 6
-- Operate a device fundamentally hostile or incompatible with the user: 8
+- Operate a device fundamentally hostile or incompatible with the user: 8]
 
 _Repair & Modification_: A character can use Magitek to restore damaged devices
 or alter their function, including re-seating magical cores and recalibrating
 enchantments. Electronics may be required alongside Magitek when the damage
 extends to non-magical components.
 
-Sample Repair & Modification difficulties:
+#note[==== Sample Repair & Modification difficulties
 
 - Repair a lightly damaged magitek device: 3
 - Restore a device with a damaged magical core: 5
 - Modify a device to function outside its intended parameters: 7
-- Integrate two incompatible magical systems within a single device: 9
+- Integrate two incompatible magical systems within a single device: 9]
 
 _Crafting Magitek_: A character with sufficient expertise can attempt to create
 new magitek devices. Magitek provides the overall design and integration of
@@ -1038,13 +1041,13 @@ _Identifying Supernatural Entities_: A character trained in Occultism can
 attempt to recognize the nature, origin, and intent of a spirit or divine
 presence. This typically precedes any attempt to commune with or bind it.
 
-Sample Identifying difficulties:
+#note[==== Sample Identifying difficulties
 
 - Identify the broad category of a supernatural presence (spirit, divine
   fragment, etc.): 2
 - Determine the domain or allegiance of a known type of entity: 4
 - Assess the disposition and intent of an unfamiliar entity: 5
-- Identify a rare, concealed, or actively deceptive supernatural presence: 8
+- Identify a rare, concealed, or actively deceptive supernatural presence: 8]
 
 _Communing_: A character can use Occultism to contact or negotiate with a spirit
 or divine force. Unlike ritual casting, the outcome of a communion is not
@@ -1057,23 +1060,23 @@ or Void for glimpses of the past, present, or future. The specificity and
 reliability of the vision depends on the difficulty; Fate can be consulted but
 not commanded.
 
-Sample Divination difficulties:
+#note[==== Sample Divination difficulties
 
 - Seek a broad impression of a past event: 3
 - Seek a clear image of a specific past event: 5
 - Request a vision of a probable future: 6
-- Seek precise knowledge of a hidden or deliberately obscured truth: 9
+- Seek precise knowledge of a hidden or deliberately obscured truth: 9]
 
 _Warding & Binding_: A character can use Occultism to ward a location against
 supernatural intrusion or to bind a spirit, constraining its actions. The
 difficulty depends on the power of the entity and the scope of the constraint.
 
-Sample Warding & Binding difficulties:
+#note[==== Sample Warding & Binding difficulties
 
 - Ward a small space against minor spirits: 3
 - Bind a willing or weakened entity: 4
 - Ward against a powerful or persistent supernatural presence: 6
-- Bind an unwilling and powerful entity: 9
+- Bind an unwilling and powerful entity: 9]
 
 _Casting Rituals_: Occultism may be used in place of Ritual for the casting of
 rituals that draw on Divine or esoteric Psychic magic, such as those of the Fate
@@ -1098,13 +1101,13 @@ _Hazardous Navigation_: A character can use Piloting to traverse difficult
 terrain, severe weather, or complex environments at speed. The difficulty
 depends on the combination of speed, conditions, and the demands of the route.
 
-Sample Navigation difficulties:
+#note[==== Sample Navigation difficulties
 
 - Navigate a damaged road or choppy water at speed: 2
 - Pilot through dense terrain, storm conditions, or heavy traffic: 4
 - Thread through a collapsing structure or tight urban canyon at speed: 6
 - Pilot a badly damaged vehicle through extreme or rapidly changing conditions:
-  8
+  8]
 
 _Pursuit & Evasion_: When one vehicle is chasing or fleeing another, both pilots
 make opposed Piloting checks. The victor gains or maintains positional
@@ -1117,12 +1120,12 @@ or positioning to give allies a firing advantage. These are typically opposed
 checks or checks against a fixed difficulty set by the GM based on the target's
 speed and maneuverability.
 
-Sample Combat Maneuver difficulties:
+#note[==== Sample Combat Maneuver difficulties
 
 - Ram a stationary or slow-moving target: 2
 - Execute a precise intercept or blocking maneuver: 4
 - Perform a high-speed attack run through hostile fire: 6
-- Execute a maneuver against a vastly more agile vehicle: 8
+- Execute a maneuver against a vastly more agile vehicle: 8]
 
 === Ritual (T; WIL + ATT)
 
@@ -1158,12 +1161,12 @@ active magical effect, a ritual circle, or an arcane inscription and attempt to
 understand what it does. The difficulty depends on the complexity of the working
 and how well it has been obscured.
 
-Sample Identifying difficulties:
+#note[==== Sample Identifying difficulties
 
 - Identify the school or broad domain of an active magical effect: 2
 - Determine the function and approximate power of a ritual circle: 4
 - Fully analyze a complex or layered arcane working: 6
-- Decode a deliberately obfuscated or alien magical inscription: 8
+- Decode a deliberately obfuscated or alien magical inscription: 8]
 
 === Shop (T; DEX + STR)
 
@@ -1184,35 +1187,35 @@ _Repair_: A character can use Shop to restore damaged or broken physical items
 to working order. The difficulty depends on the severity of the damage and the
 complexity of the object.
 
-Sample Repair difficulties:
+#note[==== Sample Repair difficulties
 
 - Repair a simple tool or piece of equipment: 2
 - Restore a damaged weapon or piece of armour: 4
 - Rebuild a complex mechanical device from partial components: 6
-- Reconstruct a badly damaged or intricate item with missing parts: 8
+- Reconstruct a badly damaged or intricate item with missing parts: 8]
 
 _Fabrication_: A character can use Shop to create new items from raw or salvaged
 materials. Working from known plans or patterns reduces the difficulty;
 improvising a design or working without proper tools increases it.
 
-Sample Fabrication difficulties:
+#note[==== Sample Fabrication difficulties
 
 - Fabricate a simple tool or fitting: 2
 - Craft a functional weapon or piece of armour: 4
 - Construct a complex mechanical assembly: 6
-- Produce a masterwork item requiring exceptional skill and materials: 9
+- Produce a masterwork item requiring exceptional skill and materials: 9]
 
 _Appraisal_: A character trained in Shop can assess the quality, provenance, and
 condition of physical objects. This covers identifying fine craftsmanship,
 detecting structural flaws, and recognizing forgeries or unusual construction
 techniques.
 
-Sample Appraisal difficulties:
+#note[==== Sample Appraisal difficulties
 
 - Assess the general quality of a common item: 2
 - Identify a notable flaw or point of weakness in a well-made object: 4
 - Determine the origin or maker of an unusual or deliberately disguised item: 6
-- Detect a masterfully executed forgery: 8
+- Detect a masterfully executed forgery: 8]
 
 == Rituals and Recipes
 
@@ -1351,7 +1354,13 @@ additional failure consequences --- uncontrolled effects, backlash, or
 attracting unwanted attention. If no specific failure consequence is listed,
 the default is that components are consumed and nothing else happens.
 
-=== Ritual List
+= Ritual List
+
+The following list describes a set of default rituals that are commonly
+encountered in the Age of Ash. You may discover more of them as you play,
+or your character may come up with one on their own.
+
+== Ritual rituals
 
 #ritual-description(
   "Rite of Opening",
@@ -1426,7 +1435,7 @@ the default is that components are consumed and nothing else happens.
   failure: "The ritual fails. Components are consumed. Creatures remain dead. If the check fails by 5 or more, a hostile entity may be drawn to the ritual site.",
 )
 
-==== Enchantment Rituals
+=== Enchantment Rituals
 
 The following rituals apply enchantments to items (see _Enchantments_ in the Equipment chapter). In each case, the listed difficulty is the base; half the tier of the target item (rounded up) is added to the difficulty. For example, applying Moontouched (base difficulty 3) to a tier 5 weapon requires a difficulty 6 check. If the item already has an enchantment in the slot being used, replacing it increases the difficulty by 2.
 
@@ -1507,7 +1516,7 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   failure: "The binding is incomplete — the counterspell bonus is only +3, and Focus recovery is halved (round down).",
 )
 
-=== Occultism Ritual List
+== Occultism Ritual List
 
 #ritual-description(
   "Augury",
@@ -1560,7 +1569,7 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   failure: "The revelation is partial and fragmented. The caster takes the full Strain and Influence cost. The caster is Dazed for 24 hours from the psychic backlash.",
 )
 
-==== Occultism Enchantment Rituals
+=== Occultism Enchantment Rituals
 
 As with the Ritual enchantments above, half the tier of the target item (rounded up) is added to the base difficulty. Replacing an existing enchantment increases the difficulty by 2.
 
@@ -1603,7 +1612,7 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   failure: "The drain is reversed — on a failed save, the target loses the EP and Focus as normal, but the wielder also loses Focus equal to the weapon's tier.",
 )
 
-=== Alchemical Recipe List
+== Alchemical Recipe List
 
 #ritual-description(
   "Healing Potion",
@@ -1737,6 +1746,8 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   failure: "The paste is unstable — the resistance works but degrades by 1 per encounter.",
 )
 
+#colbreak()
+
 #ritual-description(
   "Philosopher's Reagent",
   5,
@@ -1750,7 +1761,7 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   failure: "The reagent is created but is flawed — it is worth only 5 Magnitude and cannot provide aspect Influence.",
 )
 
-==== Alchemical Enchantment Recipes
+=== Alchemical Enchantment Recipes
 
 #ritual-description(
   "Silver a Weapon",

@@ -6,23 +6,23 @@ Equipment:
 [x] Vehicle stat blocks (format TBD) -- sample tactical vehicles and capital vessels
 
 GM Guide:
-[ ] Insert basic GMing guidance into GM guide
-[ ] Insert guidance on creating and running adventures
-[ ] Insert guidance on creating campaigns
+[x] Insert basic GMing guidance into GM guide
+[x] Insert guidance on creating and running adventures
+[x] Insert guidance on creating campaigns
 
 Advances:
 [x] Dual wield advances
 [x] Summoner/warlock advances (reduce sustain cost, improve binding, multiple summons)
 
 Skills:
-[ ] Clean up examples, use note blocks to format them
-[ ] Alchemy rituals/recipes for T2-4 (alchemist build support)
+[x] Clean up examples, use note blocks to format them
+[x] Alchemy rituals/recipes for T2-4 (alchemist build support)
 
 Layouting:
 [ ] Layouting and design pass
 [x] Design a character sheet
 Copy-editing:
-[ ] Consolidate duplicated sections
+[x] Consolidate duplicated sections
 [ ] Make sure rules occur in a sensible order (definition before reference, where not sensible, forward references with #link)
 
 TBD after the first rounds of playtesting:

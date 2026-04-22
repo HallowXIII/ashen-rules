@@ -1,6 +1,294 @@
 #import "declarations.typ": *
 
-= GM Guide
+#chap-header("10", [= GM Guide], "How to run the game")
+
+The preceding chapters describe the rules from the player's perspective: how
+checks work, how combat flows, what powers and equipment do. This section
+addresses the other side of the table. It covers what you are expected to do as
+the Game Master, where Ashen's assumptions diverge from those of other systems,
+and which parts of the rules are structural and which are adjustable.
+
+=== The GM's Role
+
+Your role has three parts. First, you control the world: you describe what the
+characters see, voice the people they meet, and determine the consequences of
+their actions. The players' choices drive the narrative; your job is to present
+situations and let the outcomes follow.
+
+Second, you are the arbiter of checks. The core principle is simple: if both
+success and failure would lead somewhere interesting, call for a roll. If only
+one outcome matters---the door is obviously unlocked, the cliff is obviously
+fatal---skip the roll and let it happen. A check exists to introduce uncertainty
+where uncertainty matters, not to gate routine actions behind randomness.
+
+Third, you track the clocks. Ashen's tension comes from parallel timelines: the
+players are working toward their objective while the world advances its own
+agenda. Patrols continue their routes. Rituals approach completion. The Fog
+rolls in. When you advance these clocks faithfully, the players can feel the
+pressure of time and make their best decisions without you having to manufacture
+urgency on the fly.
+
+=== What Ashen Does Differently
+
+If you have run other tabletop RPGs, some of Ashen's core assumptions will feel
+unfamiliar. The following points describe how the system is built and where it
+differs from common conventions. Understanding them early will save you from
+surprises at the table.
+
+*Death is not a stake.* Player characters are Deathless. When they are killed,
+they can spend 5 Essence Points to revive on their next turn, or their essence
+travels to their soul anchor and they reincorporate over three to seven days.
+This means that "you might die" is not the threat that keeps a scene tense. The
+real threats are mission failure, Essence depletion, the death of mortal allies,
+territory lost while the party is absent, and---most importantly---the
+advancement of your clocks. A party that dies in a ruin forty miles from their
+objective does not lose their characters. They lose days of travel while the
+opposition completes its plan unopposed. The most effective tension in Ashen
+comes from consequences---mission failure, resource depletion, the world
+changing while the party is absent---rather than from the threat of death
+itself.
+
+#attention[Essence Points are the true survival resource. Every death costs 5 EP
+from a pool that recovers only 3 per long rest, so two deaths in a single act
+is a serious resource drain that will shape the rest of the adventure. This is
+what gives death its weight in Ashen: not the loss of a character, but the
+steady erosion of a party's ability to keep going.]
+
+*Action economy is the balance lever.* Every creature in Ashen---player
+characters and enemies alike---receives 4 AP per turn. A party of four
+characters generates 16 AP per round. A solo enemy with 4 AP will be
+overwhelmed regardless of its raw statistics. This is the single most important
+principle of encounter design: if the players outnumber the opposition in total
+AP, the opposition must compensate with Legendary Actions, area effects, or
+expendable allies. The Designing Creatures section covers this in detail.
+
+*Tier is not level.* There is no moment where the GM announces "you are now Tier
+3." Tier is an emergent property of cumulative XP spent on advances. Characters
+within the same party may sit at different tiers if they have spent their XP
+differently. As the GM, track approximate party power by comparing cumulative XP
+against the tier threshold table in the Progression and Rewards section, and use
+that to calibrate encounters and rewards.
+
+*Item-based progression matters.* A character's effectiveness in combat is
+roughly half statistics and advances, half equipment. A party whose gear lags
+behind their tier will underperform noticeably---a party that is Tier 3 by XP
+but still carrying Tier 1 weapons will struggle against standard Tier 3
+opposition. Keeping
+equipment in step with character advancement is one of the GM's ongoing
+responsibilities, managed through mission pay and loot placement. The
+Progression and Rewards section provides benchmarks to help with this.
+
+*The three magic traditions work differently.* Arcane casters learn spells from
+external sources: scrolls, spellbooks, and other casters. If your party includes
+an Arcane caster and you never place spell loot, that character's power stalls.
+Divine casters draw prayers from reliquaries, which you control: the reliquaries
+you place in the world determine which prayers are available and when. Psychic
+casters are self-contained---they learn powers through advances and need no
+external support. This asymmetry is intentional, and it means the GM plays a
+direct role in those characters' progression: placing spell loot for the Arcane
+caster and designing reliquaries thoughtfully for the Divine caster are part of
+adventure preparation.
+
+*Stretches are load-bearing.* The stretch system---five-minute ticks of parallel
+action---is Ashen's primary tool for non-combat tension. Infiltration,
+exploration, chases, heists, and social pressure all run in stretches. They
+provide a mechanical backbone for scenes that in other systems would be
+freeform narration or would collapse directly into combat rounds. The Pacing
+and Time section that follows covers stretches in detail.
+
+=== Difficulty and the Dice
+
+The Ashen dice pool produces an average of one-half success per die. A character
+rolling 8 dice expects about 4 successes; a character rolling 12 dice expects
+about 6. This average is exact---each d6 contributes an expected value of 0.5
+successes (a one-in-six chance of --1, two-in-six of 0, two-in-six of +1, and
+one-in-six of +2).
+
+The key rule for setting difficulties is that *one level of difficulty equals two
+dice*. A character with a pool of 7 will pass a difficulty 4 check about half
+the time. Add two dice to the pool and the 50% mark moves up by one. The Skills
+chapter includes a full probability table; the following is a condensed
+reference for use at the table.
+
+#pftab(
+  "Success Chances by Pool Size",
+  columns: (2fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  align: center,
+  stroke: 0.5pt,
+
+  [*Pool Size*], [< 10%], [\~25%], [50%], [\~75%], [> 90%],
+  [3d],  [5], [3], [2], [1], [---],
+  [5d],  [6], [5], [3], [1], [0],
+  [7d],  [8], [6], [4], [2], [0],
+  [9d],  [9], [7], [5], [3], [1],
+  [11d], [11], [8], [6], [4], [1],
+  [13d], [12], [9], [7], [5], [2],
+  [15d], [13], [10], [8], [6], [3],
+  [17d], [15], [12], [9], [6], [3],
+  [19d], [16], [13], [10], [7], [4],
+)
+
+Read the table by finding the column closest to the pass rate you want and
+the row matching the character's pool. The cell gives the difficulty. For
+example, if a skilled character (pool 9) should succeed about three-quarters of
+the time, set the difficulty to 3. If you want the same task to be a true test,
+set it to 5 (50%) or 7 (roughly one in four).
+
+Notice how narrow the margins are. The difference between a 50% and a 25% chance
+of success is often only one or two points of difficulty---and even a character
+rolling well above the target has a real chance of failure, because the variance
+on Ashen dice is high. This is by design, but it has a practical consequence:
+any check where failure ends the adventure is a gamble you will eventually lose.
+A "pass this check or the mission fails" gate has a substantial chance of
+blowing up your session regardless of how skilled the character is. Design your
+adventures with margin for recovery. Failure on a check should make the
+situation harder, costlier, or more dangerous---not terminal. If the party
+absolutely must cross the chasm, the question is not whether they cross it but
+what it costs them to do so.
+
+Bonuses and penalties modify the pool, not the difficulty. A --2d penalty is
+devastating for a 4d character but barely noticeable for a 12d specialist. When
+you set a difficulty, you are defining how hard the task is in absolute terms.
+The character's pool, including all bonuses and penalties from equipment,
+conditions, and circumstances, defines how well-suited they are to attempt it.
+
+#note[A check should only be called when both success and failure lead somewhere
+interesting. "You fall to your death" is not an interesting failure for
+Deathless characters---they revive and climb again, and you have wasted
+everyone's time on a roll that changed nothing. "The bridge collapses behind you
+and you cannot retreat" is an interesting failure: the party is now committed to
+whatever lies ahead, and the tactical landscape has changed.]
+
+=== Flexible and Load-Bearing Rules
+
+Not every rule in Ashen carries the same structural weight. Some are calibrated
+to interlock with other systems and will produce cascading problems if changed.
+Others are designed to be adjusted. This section provides a map.
+
+==== Load-Bearing
+
+These interlock tightly with other systems. Changing them is possible, but expect
+to adjust downstream mechanics as well.
+
+- *4 AP per turn.* The entire action economy---power costs, multi-attack
+  structures, Legendary Actions, and creature design guidelines---is calibrated
+  to 4 AP. Increasing or decreasing it changes the relative value of every
+  action in the game.
+- *The dice mechanic.* The d6 pool with its 4+/6/1 probability distribution is
+  baked into every difficulty number, every creature stat line, and every power
+  design. Changing it invalidates all published numbers.
+- *Essence Point economy.* The 5 EP revival cost, the 3 EP per long rest
+  recovery rate, and the 1 EP per 1000 XP progression are what make death
+  meaningful despite Deathless immortality. Lowering the revival cost makes
+  death trivial; raising the recovery rate does the same more slowly.
+- *Tier thresholds and equipment availability.* The transition at Tier 5 from
+  "commercially available" to "quest for it" is an intentional design gate. It
+  forces the campaign's tone to shift at high tiers and prevents characters from
+  simply buying their way to peak power.
+- *Equipment maintenance during intermissions.* The 10% cost-of-ownership rule
+  is the wealth treadmill that prevents hoarding. Without it, the party
+  accumulates wealth faster than intended and tier-appropriate gear loses its
+  significance as a reward.
+
+==== Adjustable with Care
+
+These are explicitly designed as dials. Each one changes the feel of the game in
+a predictable way.
+
+- *Mission XP.* This is the easiest pacing lever. Raise it to accelerate tier
+  progression, lower it to slow things down. The expected session XP table in
+  Progression and Rewards gives you the baseline; deviate from it deliberately,
+  not accidentally.
+- *Combats per session.* The default assumption is two to three fights per act.
+  Fewer combats means slower XP gain from kills; compensate by raising mission
+  XP if you do not want tier progression to stall.
+- *Fog density and encounter rates.* A campaign set mostly in the Clears plays
+  as civilized politics and intrigue. A campaign deep in the Dense Fog plays as
+  desperate survival. Both are valid, but they produce very different games.
+  Choose deliberately.
+- *Initiative frequency.* Rolling initiative once per encounter versus once per
+  act is already presented as a dial in the Pacing and Time section. The former
+  gives more variety; the latter gives faster play.
+- *Reincorporation timer.* Three to seven days is the default. A shorter timer
+  reduces the cost of death; a longer one increases it. Adjust this if the
+  campaign's geography makes the default trivial or punishing.
+
+==== Fully Flexible
+
+These can be changed freely without mechanical consequence.
+
+- Which factions exist and how they interact.
+- The truth of the Last War---it is deliberately left blank.
+- Which reliquaries exist and which prayers they grant.
+- Specific geography, settlement names, and NPC identities.
+- The number and identity of active deities.
+
+=== Using a Different Setting
+
+Ashen's rules do not require its default setting, but they assume that certain
+things exist in whatever world you use. If you are bringing your own setting to
+the table, the following is what the mechanics need you to provide.
+
+*An immortality mechanic and its cost.* The Essence Point economy is deeply
+embedded. EP spending drives rest pacing, determines how punishing death is, and
+gates long-term resource management. Your setting needs a reason characters come
+back from death and a finite resource they spend to do it. The names are
+cosmetic---call it soul energy, anima, life force---but the 5-point revival
+cost, the 3-per-long-rest recovery rate, and the soul-anchor reincorporation
+mechanic are all load-bearing math. Without them, the death and rest systems
+lose their shape.
+
+*A pervasive environmental hazard.* The Fog is not flavour. Navigation rules,
+equipment reliability, creature spawning, and the entire Exploration chapter are
+built on four density bands (Clear, Light, Dense, Extreme) with escalating
+mechanical consequences. Your setting needs an equivalent: a graduated,
+world-spanning threat that makes travel dangerous, gates where advanced
+technology functions reliably, and provides a source of ambient energy. It could
+be radiation, a magical plague, an unstable ley-line network, or a literal
+cursed weather system---but the four-band model and its downstream effects on
+equipment, creatures, and exploration need analogs.
+
+*Advanced technology powered by the hazard.* The equipment chapter assumes
+ranged weapons, vehicles, and certain armour materials are produced using a
+technology base that draws power from the environmental hazard. If your
+hazard-equivalent is radiation, your technology-equivalent might be atomic-age
+devices. The structural dependency is twofold: equipment tiers assume some gear
+is manufactured at a technological level above medieval craftsmanship, and that
+technology's reliability is gated by the environmental hazard's intensity.
+
+*Divine conduits with a trust economy.* Divine casting is built around
+reliquaries---physical objects that mediate between the caster and a divine
+source, with a Will and Favor economy. Your setting needs something equivalent,
+even if you call them holy symbols, spirit bonds, or divine contracts. The
+mechanical core---earn trust through use, spend trust to enhance prayers, lose
+trust on critical failure---is structural to the balance of divine casting.
+
+*Nine thematic domains.* Prayers and high-tier rituals are organized into nine
+aspects. You can rename them freely (Ash becomes Destruction, Crown becomes
+Order, Scarab becomes Rebirth), but you need nine thematic categories, because
+reliquaries grant access by category, prayers are sorted by category, and ritual
+influence requirements at Tier 4 and above reference categories by name.
+Reducing the number collapses prayer variety; increasing it dilutes reliquary
+identity.
+
+*Three distinct magic traditions.* Arcane magic (prepared from external sources,
+catalyst-dependent), Divine magic (reliquary-granted, aspect-gated), and Psychic
+magic (innate, with Cosmic Backlash on critical failure) have different
+acquisition paths, different casting implements, and different failure modes. You
+cannot collapse them into two traditions or a single unified system without
+redesigning the critical failure table, the advance tree, and the equipment
+chapter.
+
+*Hazard-spawned creatures.* The Fog Effects tables and exploration encounter
+system assume creatures that emerge from the environmental hazard. Your
+equivalent hazard needs its own creature ecology---things that live in the
+hazard, grow more dangerous as the hazard intensifies, and give the party a
+reason to fear the wilderness.
+
+What you can reskin freely, with no mechanical consequences: the name of the
+currency, faction names and allegiances, geographic names and settlement
+details, deity names in prayer flavour text, and the specific names of the nine
+aspects so long as the nine-category structure is preserved.
 
 == Pacing and Time
 
@@ -144,6 +432,416 @@ The result, at every scale, is the same texture: the world acts on a clock
 the players can hear ticking, the players act with full knowledge of the
 trade-offs, and the GM never has to invent pressure on the fly because the
 pressure was always already in the schedule.
+
+== Running Adventures
+
+An adventure in Ashen is one or more acts connected by a shared objective. A
+short adventure is a single act---one to three sessions of play. A standard
+adventure spans two or three acts with intermissions between them. A long
+adventure runs four or more acts and begins to shade into a campaign arc. Most
+of the time, one adventure is one mission: a patron hires the party, or the
+party identifies a goal and pursues it.
+
+The distinction matters because the act is the unit of pacing. Each act has its
+own internal rhythm of scenes---some tense, some quiet, some violent---and each
+intermission is a pause for maintenance, advancement, and worldbuilding. When
+you plan an adventure, you are deciding how many of these cycles the story
+needs.
+
+Not all intermissions carry the same weight. An intermission between acts of the
+same adventure is usually brief: the party knows what comes next, so the
+intermission is a chance to spend XP, maintain equipment, and resupply before
+pressing on. An intermission between adventures is something larger. The current
+objective is resolved, the next one has not yet been given, and the characters
+have genuine free time. This is the natural moment for a break in real life as
+well---a week or two between sessions gives the GM time to prepare the next
+adventure while the players handle their characters' personal business
+asynchronously. A character who belongs to a faction might report in, pursue
+private leads, or attend to obligations that do not involve the rest of the
+party. If the party makes port at the Black Bazaar after completing a mission,
+one character might seek out a Mortefactor contact while another commissions new
+equipment and a third spends a few days in the archives. These solo threads can
+be resolved through brief exchanges between sessions---a few messages or a short
+one-on-one conversation---and they give the world texture that group play
+alone cannot provide.
+
+=== Building an Adventure
+
+The following steps produce a playable adventure. They are presented in order,
+but in practice you will iterate: stocking encounters will suggest changes to
+the clock, placing rewards will suggest changes to the encounters, and so on.
+
+==== Start with the Opposition
+
+Every adventure begins with something that wants to happen. A cult is performing
+a ritual. A warlord is marching on a settlement. A Mist Creature is migrating
+into inhabited territory. A rival faction is excavating a ruin.
+
+Define the opposition in one or two sentences: what it is, what it wants, and
+what happens if the players do nothing. That last point is the most important.
+If the players sit in a tavern for a week, what changes in the world? Write that
+down. This is your doom clock---the event the adventure is racing toward.
+
+The opposition does not need to be a villain. It can be a natural disaster, a
+political crisis, or a ticking magical effect. What matters is that it has a
+timeline and that the players can interact with that timeline through their
+choices.
+
+==== Define the Objective
+
+What does success look like for the players? "Stop the ritual." "Escort the
+convoy to River Clear." "Retrieve the relic before the Mortefactors do." "Find
+out what happened to the survey team." The objective should be concrete enough
+that the players can plan toward it and you can judge when it has been achieved
+or lost.
+
+If the adventure has secondary objectives---rescue the hostages _and_ stop the
+ritual, or retrieve the relic _and_ map the ruin---note them separately. They
+provide fallback successes if the primary objective fails and give the party
+reasons to take risks beyond the minimum.
+
+==== Build the Clock
+
+Decide how much time the party has. Express it in whatever unit fits the
+adventure's scale: stretches for a single-scene infiltration, hours for a
+dungeon, days for an overland race, weeks for a political intrigue. The Pacing
+and Time section covers how to operate clocks at each scale.
+
+The clock should be visible to the players, at least in broad terms. "The ritual
+completes at the next full moon" is a clock the players can plan around. "The
+warlord's army arrives in three days" gives them a budget of actions. Invisible
+clocks---where only you know the deadline---rob the players of agency and reduce
+decision-making to guesswork.
+
+==== Design the Environment
+
+Where does the adventure take place? Determine the Fog density, terrain type,
+travel distances, and any environmental hazards. The Exploration chapter
+provides tables for all of these: terrain modifiers, weather effects, Fog
+density consequences, and exposure mechanics.
+
+The environment is not a backdrop. It is a constraint that shapes every decision
+the party makes. A Dense Fog forest imposes navigation difficulty, limits
+visibility, triggers Fog effects each day, and spawns Mist Creatures. A Clear
+settlement offers safety but may have political complications. Choose the
+environment to reinforce the adventure's tone.
+
+A worked example: the party must cross 80 miles of Dense Fog forest to reach a
+ruin before a rival faction. The rival is two days ahead. Dense Fog means daily
+Fog effects (roll on the Dense Fog table), navigation difficulty of 6 or higher,
+and travel speed reduced to roughly 25 miles per day on foot. The party has
+about three and a half days of travel---the rival has two days of head start
+plus whatever time they spend in the ruin. The adventure's tension comes from
+the arithmetic: do the players push through the Fog, accept the exposure and
+encounter risks, and try to close the gap? Or do they find a faster route,
+perhaps by skimmer, and accept the Fog effects on their vehicle?
+
+==== Stock the Encounters
+
+Decide which scenes will involve combat, which will run in stretches, and which
+will be primarily social or investigative. A typical act contains two to three
+combat encounters and one or two stretch-based tension scenes. More than this
+and the session drags; fewer and the act feels hollow.
+
+#note[The number of combats per act is adjustable. If your group prefers social
+and investigative play, reduce combat encounters to one or two per act without
+breaking anything---but lower the expected combat XP accordingly and raise
+mission XP to compensate, so that tier progression does not stall.]
+
+Not every encounter needs to be a fight the party wins. Some encounters are
+obstacles to be avoided, traps to be disarmed, or negotiations to be survived.
+Variety in encounter type keeps acts from becoming a sequence of identical
+combats separated by narration.
+
+Use the Designing Creatures section to build combat encounters. Use the Pacing
+and Time section to structure stretch scenes. For social encounters, the skill
+system---Persuasion, Deception, Intimidation, Insight---provides the mechanical
+backbone; you supply the NPC's motivation and the stakes of the conversation.
+
+Keep the EP economy in mind when calibrating encounter pressure, because it
+shifts dramatically across tiers. At Tier 1, characters have only 11 EP---two
+deaths and they are on the edge of discorporation. Encounters at these tiers
+barely need to threaten death for the stakes to feel real; the EP cost does the
+work for you. By Tier 5 and beyond, characters have 40 or more EP, advances
+that reduce revival costs, and powers that mitigate the action-economy penalty
+of dying. A party at this level can absorb several deaths per act without
+meaningful pressure. High-tier adventures need to apply that pressure
+deliberately: longer stretches between rests, more encounters per act, or
+opposition that forces repeated EP expenditure. If Tier 5 characters never feel
+the pinch of their EP pool, something the adventure is designed to test has gone
+slack.
+
+==== Place the Rewards
+
+Consult the Progression and Rewards section for the numbers. Match the
+adventure's total XP output to the expected session XP table so that tier
+progression stays on track. Place mission pay appropriate to the tier and
+distribute loot worth roughly half to equal the mission pay across the
+adventure's encounters and exploration scenes.
+
+Place gear deliberately. If the party's Arcane caster is looking for a
+particular spell, put a scroll in the ruin. If the group's fighter needs a Tier
+3 weapon, make one available as loot or as a commission from a smith they rescue
+during the adventure. Loot that serves the party's actual needs is more
+satisfying than random treasure, and it lets you steer equipment progression
+without relying entirely on the economy.
+
+==== Prepare the NPCs
+
+An adventure needs, at minimum, one patron or hook (the reason the party is
+involved), one adversary (the opposition's face), and one or two encounter NPCs
+(people the party interacts with along the way). For each NPC, write one
+sentence on what they want and one sentence on how they speak or carry
+themselves. That is enough to improvise any conversation.
+
+Do not write stat blocks for NPCs unless they will appear in combat. If an NPC
+might fight, use the creature design guidelines. If an NPC is purely social,
+their personality and motivation are their stat block.
+
+#note[You do not need to prepare every possible outcome. Prepare the _situation_:
+who wants what, where the resources are, and what the clocks are. The players
+will decide what to do, and you will adjudicate the consequences. If you find
+yourself scripting dialogue trees or mapping every branch of a decision, you are
+over-preparing. The stretch and scene structure will carry the session once you
+know the moving parts.]
+
+=== Running a Session
+
+==== Opening
+
+Begin each session with a brief recap: where the party is, what they know, and
+what the current state of the clocks is. If this is the first session of an
+adventure, present the hook---the patron's briefing, the distress call, the
+rumour in the market, the direct observation of something wrong. The hook should
+make the objective and the time pressure clear enough that the players can begin
+planning immediately.
+
+==== Scene Transitions
+
+A scene ends when one of three things happens: the party moves to a new
+location, a clock advances to a new state that demands a response, or the
+party's current action is fully resolved and they must decide what to do next.
+Between scenes, narrate the transition briefly and check whether any clocks have
+advanced. A sentence or two is enough: "You leave the warehouse as the rain
+picks up. By the time you reach the east gate, the second watch has started its
+rounds." Then open the next scene.
+
+Do not linger between scenes. The transition is a seam, not a scene of its own.
+If nothing interesting happens during transit, skip it.
+
+==== When to Call for Checks
+
+In combat and stretch scenes, the resolution system drives the action---every
+turn or tick produces checks naturally. In open time, checks are rarer and more
+consequential. Call for a check in open time when a character is attempting
+something with a meaningful chance of failure _and_ a meaningful consequence for
+failing. Buying supplies in a well-stocked market is not a check. Buying
+restricted military equipment from a black-market dealer who might report you to
+the city watch is a check.
+
+==== Switching Resolution
+
+The transitions between time resolutions follow a consistent pattern. Open time
+collapses into stretches when a clock starts ticking---the party enters a
+guarded area, a deadline begins to press, or parallel action tracks emerge.
+Stretches collapse into rounds when violence erupts or when second-by-second
+resolution becomes necessary. Rounds dissolve back into stretches when the
+immediate threat is resolved but the situation remains tense. Stretches dissolve
+back into open time when all clocks have stopped or the party has clearly
+succeeded or failed.
+
+You control these transitions. The trigger is always the same question: does the
+current resolution give the players enough granularity to make meaningful
+choices? If open time is too loose for the tension at hand, switch to stretches.
+If stretches are too loose, switch to rounds. If the current resolution is finer
+than the situation requires, zoom out.
+
+==== Ending the Session
+
+End the session at a natural pause: after an act concludes (triggering an
+intermission), after a major scene resolves, or at a cliffhanger just before a
+known confrontation. Avoid stopping mid-combat or mid-stretch---the mechanical
+state is difficult to reconstruct next session and the momentum is lost.
+
+If an intermission falls at the end of a session, run it at the start of the
+next session rather than skipping it. For a mid-adventure intermission this is
+quick---mostly bookkeeping. For a between-adventure intermission, it is a chance
+to give the players room to breathe and handle solo threads before the next
+mission begins.
+
+=== Pitfalls Worth Knowing About
+
+The following are easy traps to fall into when running Ashen for the first time,
+especially if you are coming from a system with different assumptions.
+
+*Letting the clocks slip.* The GM's clock is the primary tension mechanism in
+Ashen, and it is easy to forget in the flow of a scene. If Fog effects, patrol
+timers, and doom clocks are not advancing, the world feels static and the
+players lose their sense of urgency. A useful habit: before each new scene, ask
+yourself what the opposition has done since the last one, and advance the clock
+accordingly.
+
+*Over-scaling early encounters because "they cannot die."* At Tiers 1 and 2,
+characters have only 11 to 15 EP. Revival costs 5, so a single death leaves a
+character badly depleted and a second may force discorporation. It is tempting
+to ratchet up difficulty to compensate for Deathless immortality, but at these
+tiers the EP economy already makes death punishing. The standard encounter
+balance in the Designing Creatures section accounts for this. (At higher tiers,
+the calculus shifts---see the note on EP pressure in the Running Adventures
+section.)
+
+*Forgetting to place spell loot.* Arcane casters advance by finding new spells.
+If you do not place spell scrolls, spellbooks, or NPC casters willing to teach,
+the Arcane caster's power plateaus while other characters continue to grow.
+At the start of adventure preparation, check: does the party include an Arcane
+caster? If yes, does this adventure offer at least one spell acquisition
+opportunity?
+
+*Ignoring maintenance costs.* Equipment maintenance during intermissions is a
+deliberate wealth drain. It prevents hoarding, keeps the party hungry for
+mission pay, and ensures that upgrading equipment remains a meaningful decision
+throughout the campaign. If you waive maintenance, the economy inflates and
+tier-appropriate gear loses its weight as a reward.
+
+*Defaulting to combat.* If every scene of tension ends in a fight, the stretch
+system atrophies and the game becomes a series of combats connected by
+narration. Stretches are mechanically supported and provide a different kind of
+tension---one built on trade-offs, parallel clocks, and imperfect information
+rather than hit points and damage. Use them for infiltration, chases, heists,
+exploration, and any scene where the question is "do you finish before something
+bad happens?" rather than "do you survive?"
+
+== Running Campaigns
+
+A campaign is a sequence of adventures connected by continuity of characters,
+setting, and themes. Where an adventure answers a single question---stop the
+ritual, retrieve the relic---a campaign answers a larger one: what kind of world
+do the characters leave behind?
+
+=== Campaign Structure
+
+The tier system provides a natural backbone for campaign arcs. Each tier lasts
+roughly eight to twelve sessions at standard XP pacing, which gives the
+following shape:
+
+*Tiers 1--2: Establishment* (roughly 16 to 24 sessions). Adventures are local.
+The party is learning the world: who the factions are, how the economy works,
+what the Fog is like at the edges of the Clears. Threats are immediate and
+personal---clear a ruin, protect a settlement, investigate a disappearance.
+Equipment is commercially available and the party is building its first full
+kit. The tone is grounded. Let the players feel what "normal" is before you
+begin to subvert it.
+
+*Tiers 3--4: Expansion* (roughly 16 to 24 sessions). Adventures span regions.
+The party has a reputation and faction politics become personal---patrons make
+demands, rivals take notice, and the party's choices begin to have consequences
+beyond the immediate mission. The setting's mysteries surface: the nature of the
+Fog, the truth of the Last War, the existence of the Heart of the World.
+Equipment transitions from commercial to commissioned, requiring relationships
+with specific artisans and access to major settlements.
+
+*Tiers 5--6: Endgame* (roughly 16 to 24 sessions). Adventures are
+world-shaping. The party is among the most powerful beings in the setting, and
+the problems they face are proportional: threats to the Clears, faction wars,
+the corruption or healing of the Heart of the World. Equipment is quest-bound---
+the party must find or create its highest-tier gear. The endgame rituals (the
+Rite of Unmaking and the Rite of the Second Birth) become mechanically
+reachable. The campaign is heading toward a conclusion, and the players'
+choices determine its shape.
+
+A full campaign at this pacing runs roughly 48 to 72 sessions---one to two years
+of weekly play. This is not a prescription. Some campaigns will compress tiers,
+skip entire bands, or run indefinitely at a single tier. The numbers exist to
+help you plan, not to constrain you.
+
+=== The Faction Web
+
+Choose three to five factions that will feature in the campaign. At minimum, you
+need the party's faction (if they have one), one or two factions that provide
+missions and support, and one or two factions whose goals oppose the party's.
+
+For each faction, write one sentence: what does this faction want, and what is
+it willing to do to get it? That sentence is the faction's engine. Everything
+the faction does in the campaign---the missions it offers, the obstacles it
+creates, the alliances it seeks---follows from that sentence.
+
+#note[You do not need all the factions from the setting chapter. Three factions
+with clear motivations will generate more interesting play than twelve that the
+players cannot keep straight. Start small. Add a new faction only when the
+campaign's events demand it.]
+
+Faction relationships are not static. A patron at Tier 1 may become an opponent
+at Tier 4 when its interests diverge from the party's. An enemy at Tier 2 may
+become an uneasy ally at Tier 5 when a greater threat emerges. Let the
+relationships evolve in response to the party's actions and the campaign's
+events.
+
+Introduce factions through people, not exposition. The party meets a Lantern
+Knight who needs their help, not "the Order of the Lantern." The party
+encounters a Mortefactor field researcher whose work has gone wrong, not "the
+Mortefactors." Let the faction's personality, values, and methods emerge through
+the NPCs who represent it. The players will form opinions about factions based
+on the people they meet---use that.
+
+=== Seeding Mysteries
+
+Most campaigns have at least one large-scale mystery that the players will
+uncover over the course of play. Before the campaign begins---or at least before
+a mystery becomes relevant---decide its answer. A mystery without an answer is a
+mystery without satisfying clues, and the clues are what make the journey worth
+it.
+
+Plant clues early. Starting at Tier 1, fragments of the larger truth should
+appear in the margins of ordinary adventures: a journal entry in a looted ruin,
+a mural that contradicts an official history, an NPC who mentions something they
+should not know, a strange environmental effect that nobody can explain. The
+players will not recognize these as clues immediately, and that is the point.
+They are building a library of details that will start to connect in the Tier
+3--4 range.
+
+The key is to introduce the campaign's endgame question early enough that the
+players have time to care about the answer. By Tier 3, they should know the
+central mystery exists. By Tier 4, they should understand that resolving it is
+the campaign's ultimate challenge. The tension of the endgame comes from the
+choice of what to do---not from the revelation that there is something to do.
+Waiting until Tier 5 to introduce the campaign's central question risks
+compressing the endgame into a reveal-and-rush rather than a deliberate choice.
+
+For example, the default setting provides several mysteries suited to this
+structure: the ending of the Last War, the origin of the Deathless curse, the
+nature of the Heart of the World, and the suppressed history of Vay Ngien and
+Old Ko Vihya. The Setting Secrets section provides frameworks for each.
+
+=== Managing Long-Term Progression
+
+The wealth and XP benchmarks in the Progression and Rewards section are your
+campaign health check. At each intermission, compare the party's cumulative XP
+and total wealth to the tables. If the party is significantly ahead---more than
+20% above the expected range---reduce mission pay or loot density for a few
+adventures. If they are behind, offer a windfall: a vault in a ruin, a patron's
+bonus for exceptional work, a particularly lucrative salvage haul.
+
+The item availability gates create natural campaign beats. The Tier 3 transition
+---equipment must be commissioned from specialists---gives the party a reason to
+visit a major settlement and build relationships with artisans. The Tier 4
+transition---only master craftsmen in great trading hubs---gives them a reason to
+travel to the campaign's largest cities. The Tier 5 transition---nothing is
+commercially available---generates adventures by itself, as the party must quest
+for materials, seek out legendary smiths, or recover pre-cataclysm relics.
+
+Plan legendary rewards as campaign milestones. Decide early which characters
+will receive legendary items, powers, or advances, and what narrative arcs will
+unlock them. A legendary item should arrive with a name, a history, and at least
+one session's worth of effort behind it. The Awarding Legendary Rewards section
+provides the mechanical guidance; your job is to make the acquisition
+memorable.
+
+Do not rush intermissions. Thirty to forty-five minutes of real time spent on
+shopping, crafting, spending XP, and interacting with the world between
+adventures is normal and healthy. Intermissions are where the players engage
+with the campaign as a living place rather than a sequence of missions. If you
+skip them or compress them to bookkeeping, the campaign loses the texture that
+makes long-term play rewarding.
 
 == Designing Creatures
 

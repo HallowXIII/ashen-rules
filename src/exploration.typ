@@ -1,6 +1,6 @@
 #import "declarations.typ": *
 
-= Exploration
+#chap-header("8", [= Exploration], "Moving around the world")
 
 #flavor([
 Ših karimmi, amawai, amawai \
@@ -212,6 +212,10 @@ discretion.
 
 #colbreak()
 
+#page(
+columns: 1,
+[
+  #box(columns(2, [
 === Mist Creatures
 
 The Fog spontaneously generates creatures from raw magical energy. These Mist
@@ -233,6 +237,8 @@ of which is always yellow — and by various small physical deformities. Like Mi
 Creatures, the Fogborn exist outside the ordinary cycle of souls and are
 spiritually distinct from other mortals.
 
+#colbreak()
+
 The Fogborn are often looked down upon by the unmutated races, especially other
 mortals. The Deathless tend to treat them no differently from ordinary mortals,
 though some may be ideologically motivated to do otherwise. Fogborn cannot become
@@ -248,10 +254,11 @@ when the scene calls for an injection of strangeness. Many entries reference
 the exposure rules and the density definitions above; severe effects do not
 stack with the underlying density's standing penalties unless the entry says
 otherwise.
+  ]))
 
-#page(
-columns: 1,
-[==== Light Fog
+#v(2em)
+
+==== Light Fog
 
 #pftab(
   "Light Fog Effects",
@@ -334,8 +341,12 @@ columns: 1,
     to be claimed. It dissolves the moment its bearer leaves the Extreme
     Fog, unless they succeed on a Ritual check (difficulty 9) to anchor it
     to the world.],
-)])
+)
 
+#box(
+  columns(
+    2,
+    [
 == Weather
 
 Weather is determined by the GM or rolled randomly at the start of each day.
@@ -381,6 +392,9 @@ Roll 2D6 and consult the appropriate climate table.
   [Strong wind — ranged attacks at -2d. Flight-based travel at -25%.],
 )
 
+
+#colbreak()
+
 === Tropical / Swamp Climate
 
 #pftab(
@@ -414,6 +428,13 @@ penalty.
 *Darkness* is the absence of light — underground, sealed rooms, moonless
 nights. Darkness provides heavy concealment (-4d to hit). Creatures without
 darkvision or another sense capable of replacing sight are effectively Blinded.
+
+
+    ]
+  )
+)
+
+])
 
 === Special Senses
 
@@ -470,23 +491,21 @@ before the attack is resolved. If the save succeeds, the attack misses.
 
 == Types of Transportation
 
+Base travel speeds for each mode are listed in the Overland Movement table
+above. The following notes cover practical considerations beyond raw speed.
+
 *On foot* is the default mode of travel. Characters on foot can navigate any
 terrain passable to a humanoid and carry their own equipment.
 
-*Mounted travel* uses horses or other beasts of burden. Mounted characters
-double their base travel speed on roads and open terrain. Mounts can carry
-approximately 200–300 lbs depending on size and breed. Mounts require food and
-water and may panic in combat without training.
+*Mounts* can carry approximately 200--300 lbs depending on size and breed.
+Mounts require food and water and may panic in combat without training.
 
 *Ground vehicles* include carts, motorized carriages, and armored transports.
-They offer higher capacity and speed on roads but are restricted to terrain the
-vehicle can physically traverse. Fuel-cell-powered vehicles require regular
-refueling.
+They offer higher capacity than mounts but are restricted to terrain the vehicle
+can physically traverse. Fuel-cell-powered vehicles require regular refueling.
 
-*Skimmers* are magical or magitek hover vehicles that travel at high speed
-above the ground. They can cross most terrain types but are affected by severe
-weather and cannot operate in enclosed spaces. Skimmer speed varies by model
-(250–500 miles/day).
+*Skimmers* can cross most terrain types but are affected by severe weather and
+cannot operate in enclosed spaces.
 
 *Airships* are large flying vessels capable of long-distance travel above most
 hazards. See the _Airship Combat_ section for rules regarding airship
@@ -576,144 +595,33 @@ during travel.
 
 == Races and the Environment
 
-Each playable race interacts with the wilderness on different terms. The rules
-below override or supplement the standard exploration rules where the two
-conflict; in all other respects, the preceding sections apply normally. See
-each race's trait block in the Characters chapter for the combat- and
-skill-relevant features that complement these environmental quirks.
+Each playable race has traits (described in full in the Characters chapter) that modify the exploration rules above. This section summarizes how those traits interact with environmental hazards during travel and wilderness survival.
 
 === Humans
 
-*Children of the Earth.* When taking a long rest in cultivated or living land
---- fields, forests, orchards, gardens, healthy wilderness --- a human
-recovers at the standard rate. In barren waste, ash zones, ruined ground, or
-Dense or Extreme Fog, a human recovers from a long rest at half the usual
-rate. The Boar-Mother sustains those who rest in her domain.
+*Children of the Earth* modifies long rest recovery: humans recover at the standard rate in cultivated or living land, but at half rate in barren waste, ash zones, or Dense and Extreme Fog. When planning routes, note that a human party resting in the Fog heals more slowly --- factor this into supply calculations.
 
-*Adapted Stock.* Fog Exposure thresholds (see _Fog Exposure_, above) are
-doubled for humans. A human in Dense Fog reaches the one-week exhaustion
-check at two weeks, the one-month disease threshold at two months, and so on;
-Extreme Fog timers double similarly. This is why the Fogborn are exclusively
-human: only human biology can endure the Fog long enough to be transformed by
-it.
+*Adapted Stock* doubles all Fog Exposure thresholds. When tracking exposure during extended Fog travel, use twice the standard timers for human characters. A mixed party may have members on very different exposure clocks.
+
+#colbreak()
 
 === Clockworks
 
-Clockwork characters interact with the wilderness on terms quite different
-from those of flesh-and-blood adventurers. They sidestep the majority of the
-hazards covered in the preceding sections, but they have a parallel set of
-weaknesses that biological characters never face.
+The *Construct* trait exempts clockworks from hunger, thirst, sleep deprivation, suffocation, and ambient temperature effects. In practice, this means a clockwork can keep watch indefinitely, does not consume supplies, and ignores the weather hazards described above. A submerged clockwork does not drown, though it may not be able to move freely and may need to be retrieved.
 
-==== What Clockworks Need Not Fear
-
-The *Construct* racial trait already establishes that clockworks do not eat,
-breathe, or sleep, and are immune to poison and disease. In wilderness terms:
-
-- *Hunger and thirst:* not tracked. A clockwork cannot be Exhausted by
-  deprivation, and the starvation rules do not apply.
-- *Sleep:* a clockwork can keep watch indefinitely, and may take an entire
-  night's watch alone without penalty. They still benefit from short and
-  long rests by entering a low-power maintenance mode for the appropriate
-  duration; the recovery rules apply normally.
-- *Atmosphere:* immune to poison gas, smoke inhalation, and the suffocation
-  rules. A clockwork does not drown, though a submerged one cannot
-  necessarily move freely and may need to be retrieved.
-- *Heat and cold:* unaffected by ambient temperature within the range that
-  biological characters can endure at all. The Tropical climate's
-  "Sweltering heat" does not impose its Exhaustion clock on them; freezing
-  weather does not slow them. Only direct contact with fire, lava,
-  supernatural cold, or sustained immersion in such environments deals
-  damage in the usual way.
-- *Disease:* immune to diseases of biological origin. Magical curses and
-  Fog-induced afflictions affect them normally unless the specific effect
-  says otherwise.
-
-==== What Clockworks Must Fear
-
-In exchange for these immunities, clockworks face hazards that biological
-characters either ignore entirely or shrug off without thought.
-
-*Magnetic Interference.* Strong magnetic fields disrupt the delicate
-circuitry that drives a clockwork's mechanism. Such fields are found near
-unshielded magitek power plants, in the shadow of certain ruined industrial
-sites, and during the magnetic storms that occasionally roll through Dense
-Fog regions.
-
-- *Moderate field:* --1d to all checks while in the field.
-- *Strong field:* --2d to all checks; at the start of each round of exposure,
-  the clockwork must succeed on a Grit check (difficulty 5) or be Stunned
-  until the end of its next turn.
-- *Severe field:* --3d to all checks; on a failed Grit check, the clockwork
-  shuts down for one stretch and must be carried clear. A successful Shop
-  check (difficulty 6) by an ally can stave off the next failure.
-
-*Particulate Hazards.* Sandstorms, ash fall, silt-laden air, and the interior
-of certain ruined factories deposit superfine particles that work their way
-into joints and gears. After 4 hours of exposure without adequate sealing, a
-clockwork takes --1d on physical checks; this penalty accumulates by another
---1d every 4 hours, to a maximum of --3d. The penalty is removed by 1 hour of
-dedicated maintenance per --1d incurred (a Shop check, GM's discretion), or
-by a long rest in a clean environment. Sealed face plates, oiled joint
-covers, and similar gear extend the time before the first penalty applies.
-
-*Fog Sensitivity.* Clockworks are themselves a form of magitek, and they
-react to elevated Fog densities much more strongly than mortals or Deathless.
-Fog Exposure thresholds are halved for clockworks --- the inverse of humans.
-In addition, at the start of each stretch spent in Dense or Extreme Fog, the
-clockwork must succeed on a Grit check (difficulty 5 in Dense Fog, difficulty
-7 in Extreme Fog) or suffer a malfunction: the clockwork is Stunned until the
-end of its next turn, or, at the GM's option, suffers a randomly determined
-minor effect (a stuck servo, a spell capacitor misfire, a limb that briefly
-ceases to obey).
+However, clockworks face three unique environmental hazards described in their trait block: *Magnetic Vulnerability* (near unshielded magitek, ruined industrial sites, and Dense Fog magnetic storms), *Particulate Vulnerability* (sandstorms, ash fall, and fine-particle environments), and *Fog Sensitivity* (halved Fog Exposure thresholds plus per-stretch malfunction checks in Dense or Extreme Fog). When planning expeditions with clockwork party members, note that environments safe for biological characters may be dangerous for them, and vice versa.
 
 === Soot-Beasts
 
-*Hardier Stock.* Soot-Beasts take only half the usual penalty from heat or
-cold weather effects, forced marches, and sleep deprivation. Their
-bred-for-battle resilience carries them through the wilderness as it does
-through campaigns.
-
-*Reduced Supply Needs.* Hunger and thirst clocks tick at half the usual rate
-for a Soot-Beast; they need food and water roughly every other day, and can
-go on short rations for twice as long as other races before suffering
-penalties.
-
-*Tainted Flesh.* The Soot-Beasts' close ancestral link to the Boar-Mother
-makes them a natural breeding ground for disease and a poor host for poisons.
-Difficulty checks to resist disease are made at +2 difficulty against
-Soot-Beasts. Poison damage against a Soot-Beast is increased by 50%, and
-ongoing poison effects last one round longer than usual.
+*Hardier Stock* halves penalties from weather effects, forced marches, and sleep deprivation --- Soot-Beasts can push through conditions that would exhaust other races. *Reduced Supply Needs* halves the rate at which hunger and thirst clocks tick, effectively doubling their range on a given supply load. These traits make Soot-Beasts excellent wilderness travelers, but *Tainted Flesh* means disease checks are made at +2 difficulty against them --- a meaningful risk in swamps, ruins, and other contaminated environments.
 
 === Echoes
 
-*Sustained by Magic.* In areas of Light Fog or denser, Echoes need no food or
-water --- ambient magic suffices. In Clears, they eat and drink at the
-standard mortal-grade rates.
+*Sustained by Magic* means Echoes need no food or water in Light Fog or denser areas. In Clears, they eat and drink at standard rates. This can significantly reduce supply requirements when traveling through Fog-touched territory.
 
-*Cold Iron Sensitivity.* Cold-iron weapons deal 50% more damage to Echoes,
-and cold-iron restraints cannot be escaped via Fey Jaunt or any other
-short-range teleportation effect.
+*Fog-Fragile* halves Fog Exposure thresholds for Echoes --- the inverse of humans. Combined with their food independence in Fog, this creates a distinctive trade-off: Echoes travel cheaply through the Fog but accumulate exposure faster.
 
-#note[*Cold Iron* is iron worked entirely without forge fire --- cold-hammered
-into shape through ritual percussion, or drawn from meteoric sources that
-never melted in any human furnace. It is brittle, expensive to produce, and
-useless against modern armor. Its only practical
-application in the Age of Ash is as a fey-bane: shotgun slugs, restraints,
-ritual blades, and hunter's daggers specifically intended to harm or hold
-Echoes. Anti-fey orders, certain Mortefactors, and Echo-hunting bounty crews
-keep small caches; few others bother. A cold-iron weapon is typically a small
-backup item, drawn only when an Echo is the target, and using it typically
-requires aiming for an unarmored spot on the victim's body.]
-
-*Fog-Fragile.* Fog Exposure thresholds are halved for Echoes --- the inverse
-of humans. The raw, undirected Fog is hostile to fey beings whose realms it
-destroyed.
-
-*Children of Day.* (Mirrors only.) A Mirror gains +1d on Endurance checks
-while in direct sunlight.
-
-*Children of Night.* (Shades only.) A Shade gains +1d on Endurance checks
-while in dim light or darkness.
+*Children of Day* (Mirrors) and *Children of Night* (Shades) grant +1d on Endurance checks in direct sunlight or dim light/darkness, respectively. This can matter for forced marches and weather endurance depending on the time of day.
 
 == Currency and Economy
 
@@ -724,6 +632,8 @@ literal metallic angel feathers that are occasionally found in the ruins of the
 old world. Their scarcity, durability, and the impossibility of forging
 counterfeits make them an ideal currency. Feathers are accepted everywhere,
 though remote settlements may prefer barter for everyday transactions.
+
+#colbreak()
 
 === Purchasing Power Guide
 
@@ -769,11 +679,11 @@ For equipment prices, see the _Equipment Tables_ section.
 A short rest takes approximately 1 hour and requires a reasonably safe location.
 During a short rest, a character may spend EP to recover:
 
-- *1 EP:* Recover HP equal to 25% of maximum HP.
-- *1 EP:* Recover Focus equal to 50% of maximum Focus.
+- *1 EP:* Recover HP equal to half of maximum HP.
+- *1 EP:* Recover all Focus.
+- *1 EP:* End a magical effect that does not require special measures to remove.
 
-A character may spend multiple EP during a single short rest. This is the only
-way to spend EP for recovery outside of powers or items.
+A character may spend multiple EP during a single short rest.
 
 === Long Rest
 
@@ -783,6 +693,8 @@ light activity such as keeping watch). At the end of a long rest:
 - The character recovers all HP and Focus (this costs EP as with a short rest,
   but the full recovery is automatic).
 - The character recovers 3 EP naturally.
+
+#colbreak()
 
 === Resting Conditions
 

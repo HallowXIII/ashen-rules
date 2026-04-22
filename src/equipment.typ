@@ -1,5 +1,6 @@
-#import "declarations.typ": feathers, item-description, pftab, power-description
-= Equipment
+#import "declarations.typ": *
+
+#chap-header("6", [= Equipment], "Your Material Companions")
 
 The Deathless carry the remnants of a lost age: weapons forged in factories that no longer run, armor plated with alloys whose formulas are half-remembered, catalysts housing fragments of power that predate the cataclysm. Equipment in Ashen is not simply purchased off a shelf --- it is scavenged, repaired, inherited, and occasionally crafted anew by artisans working from incomplete knowledge.
 
@@ -1136,7 +1137,7 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   columns: 2
 )
 
-=== Item Descriptions
+== Item Descriptions
 
 #item-description(
   "The Princess' Locket",
@@ -1602,6 +1603,8 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
 
   *Solid Moonlight:* _(Legendary.)_ Moonray grants a +4 bonus to casting Arcane spells. This bonus increases to +7 for Ice and Moonlight spells.
 ]
+
+#colbreak()
 
 #item-description(
   "Serpent Staff",

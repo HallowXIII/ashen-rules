@@ -1,8 +1,6 @@
 #import "declarations.typ": *
 
-= Setting
-
-== The World of Ash
+#chap-header("9", [= Setting], "The World of Ash")
 
 The world of Ashen is a ruin, but it is not dead. The cataclysm that the
 histories call the Last War shattered the old order: it killed the gods, tore
@@ -917,6 +915,8 @@ a mixture of wariness and pragmatic tolerance.
 the natural world. They are animists and spiritualists, attuned to the lingering
 echoes of divine power in wild places, and they maintain a strong presence in
 the forests of the northwest.
+
+#colbreak()
 
 *The Never-Still* are dedicated to restoring the vitality of the Faerie Realm.
 Aligned with both the Lion-Head and the Might-Be Queen of Summer, they believe that the

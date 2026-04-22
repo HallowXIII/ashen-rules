@@ -394,9 +394,9 @@
     #v(1em)
   ]]
 
-#let float(content) = {
+#let float(content, plc: top + center) = {
   place(
-    top + center,
+    plc,
     content,
     float: true,
     scope: "parent",
@@ -441,6 +441,7 @@
 #let note(info) = [
   #v(0.5em)
   #box(
+    width: 100%,
     fill: rgb("#e2d7d3"),
     inset: 7pt,
     // outset: 2pt,

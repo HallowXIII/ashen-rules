@@ -1,6 +1,7 @@
-#import "declarations.typ": advance-block, pftab
+#import "declarations.typ": *
 
-= Advances
+#chap-header("4", [= Advances], "Progressing your Character")
+
 == What is an advance?
 
 Advances represent unique skills and talents your character gains or remembers
@@ -69,6 +70,8 @@ attained, as shown in the tables below.
   [*Dodge*], [0 HP, 0 F], [0 HP, 1 F], [1 HP, 2 F], [2 HP, 3 F], [3 HP, 4 F],
   [*Grit*], [1 HP, 1 F], [2 HP, 1 F], [3 HP, 2 F], [4 HP, 3 F], [6 HP, 4 F],
 )
+
+#colbreak()
 
 = Advance Lists
 
@@ -810,6 +813,8 @@ attained, as shown in the tables below.
   "Speed 7, Evasive Sprint",
   [Once per encounter, you may take a move action as a free action at the start of your turn.],
 )
+
+#colbreak()
 
 #advance-block(
   "Impossible Swiftness",

@@ -1,6 +1,6 @@
 #import "declarations.typ": *
 
-= Combat
+#chap-header("7", [= Combat], "When only force may prevail")
 
 #flavor([
   Zalahaiči ūyir čama mai yih kazna ayavurohu kawav ova zā. \
@@ -187,13 +187,10 @@ the obstacle.
 
 === Actions and Action Points
 
-In combat (or other structured game time), everytime you wish to do something,
-you must take an action to do it. Actions consume action points; every creature
-has a set number of *Action Points (AP)*, usually 4 of them. On every creature’s
-turn, that creature can take actions by spending action points; when a creature
-is out of action points, it can no longer take additional actions and must end
-its turn. On the start of its turn, a creature recovers all its spent action
-points. Unspent ones are lost \- they do not carry over between turns.
+The core rules for actions and Action Points are described under _Structured
+Time_ in the Core Rules chapter. In brief: each creature has a set number of AP
+per turn (usually 4), spent to take actions. Unspent AP is lost at the end of
+the turn and fully recovers at the start of the next.
 
 === Reactions
 
@@ -1484,9 +1481,9 @@ and the gunner's exposure:
   *total cover*. Only vehicles with sufficient Weight capacity mount
   turrets.
 
-#pftab(
+#float(floating-table(
   "Tactical Vehicle Weapons",
-  columns: (3fr, 1fr, 2fr, 1fr, 1fr, 1fr, 1fr, 2fr, 1fr, 2fr),
+  columns: (3fr, 1fr, 2fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 3fr),
   breakable: true,
   [*Name*], [*Tier*], [*Damage*], [*Pen*], [*Wt*], [*RD*], [*FM*], [*Range*], [*Mount*], [*Special*],
   [Pintle Machine Gun], [1], [12+D10], [0], [1], [0], [FA 3], [M], [Pintle], [],
@@ -1497,7 +1494,7 @@ and the gunner's exposure:
   [Heavy Mist Lance], [3], [28+2D8], [14], [3], [2], [S], [L], [Fixed], [Anti-Vehicle],
   [Battle Cannon], [3], [35+2D10], [6], [4], [1], [S], [L], [Turret], [Anti-Vehicle, Explosive],
   [Plasma Turret], [4], [30+2D12], [16], [4], [3], [S], [M], [Turret], [Anti-Vehicle, Burning],
-)
+))
 
 ==== Shield Generators
 
@@ -1513,17 +1510,19 @@ it. Restoring an overloaded generator requires an action at the Engineering
 station (1 AP, Shop check difficulty 4). Capital vessel shield arrays use
 the same overload rule at strategic scale.
 
-#pftab(
-  "Shield Generators",
-  columns: (3fr, 1fr, 1fr, 1fr, 1fr, 3fr),
-  breakable: true,
-  [*Name*], [*Tier*], [*Ward*], [*Wt*], [*RD*], [*Notes*],
-  [Light Shield Projector], [1], [4], [1], [1], [Tactical scale. Common on civilian skimmers.],
-  [Combat Shield Generator], [2], [8], [2], [2], [Tactical scale. Standard military issue.],
-  [Heavy Shield Generator], [3], [14], [3], [3], [Tactical scale. Heavy skimmers and APCs.],
-  [Ship Shield Array], [3], [5], [6], [4], [Strategic scale. Small to medium vessels.],
-  [Capital Shield Array], [4], [8], [8], [6], [Strategic scale. Large warships.],
-  [Dreadnought Shield Array], [5], [12], [12], [8], [Strategic scale. Only the largest vessels.],
+#float(
+  floating-table(
+    "Shield Generators",
+    columns: (3fr, 1fr, 1fr, 1fr, 1fr, 3fr),
+    breakable: true,
+    [*Name*], [*Tier*], [*Ward*], [*Wt*], [*RD*], [*Notes*],
+    [Light Shield Projector], [1], [4], [1], [1], [Tactical scale. Common on civilian skimmers.],
+    [Combat Shield Generator], [2], [8], [2], [2], [Tactical scale. Standard military issue.],
+    [Heavy Shield Generator], [3], [14], [3], [3], [Tactical scale. Heavy skimmers and APCs.],
+    [Ship Shield Array], [3], [5], [6], [4], [Strategic scale. Small to medium vessels.],
+    [Capital Shield Array], [4], [8], [8], [6], [Strategic scale. Large warships.],
+    [Dreadnought Shield Array], [5], [12], [12], [8], [Strategic scale. Only the largest vessels.],
+  ),
 )
 
 == Tactical Vehicles
@@ -1743,24 +1742,27 @@ check against a base difficulty of *3* (modified by range, conditions, and
 target maneuvers). On a hit, the weapon deals its listed Hull damage,
 reduced by the target's Armor.
 
-#pftab(
-  "Ship Weapons (Strategic Scale Unless Noted)",
-  columns: (3fr, 1fr, 2fr, 1fr, 1fr, 1fr, 2fr, 1fr, 3fr),
-  breakable: true,
-  [*Name*], [*Tier*], [*Damage*], [*Pen*], [*Wt*], [*RD*], [*Range*], [*FM*], [*Special*],
-  [Rotary Autocannon], [1], [15+2D10 \*], [2], [1], [1], [Ct--Cl], [FA 3], [Point Defense],
-  [Flak Battery], [2], [12+2D8 \*], [0], [2], [1], [Ct--Cl], [S], [Point Defense, Burst 3],
-  [Light Mist Gun Battery], [2], [8+D6], [3], [3], [2], [Cl--Md], [SA 3], [],
-  [Railgun Turret], [3], [12+D8], [6], [4], [3], [Cl--Md], [S], [],
-  [Mist Lance Battery], [3], [15+D10], [8], [6], [5], [Md--Lg], [S], [],
-  [Exawatt Mist Lance Array], [5], [20+3D10], [14], [10], [8], [Md--Lg], [S], [],
-  [Rocket Pod], [1], [10+D10], [8], [1], [0], [Cl--Md], [S], [Magazine 6],
-  [Tactical Missile Rack], [3], [18+D10], [10], [4], [2], [Md--Lg], [S], [Magazine 8, Guided],
-  [Cruise Missile Silo], [4], [25+2D10], [12], [6], [3], [Lg--Ex], [S], [Magazine 4, Guided, Long-Range],
-  [Aeroballistic Missile], [5], [35+2D12], [16], [10], [6], [Ex], [S], [Magazine 2, Guided, Long-Range],
-)
+Some ship weapons have the _Point Defense_ keyword: these deal damage at
+tactical scale, not strategic scale.
 
-_\* Point-defense weapons deal damage at tactical scale, not strategic._
+#float(
+  floating-table(
+    "Ship Weapons (Strategic Scale Unless Noted)",
+    columns: (3fr, 1fr, 2fr, 1fr, 1fr, 1fr, 2fr, 1fr, 3fr),
+    breakable: true,
+    [*Name*], [*Tier*], [*Damage*], [*Pen*], [*Wt*], [*RD*], [*Range*], [*FM*], [*Special*],
+    [Rotary Autocannon], [1], [15+2D10 \*], [2], [1], [1], [Ct--Cl], [FA 3], [Point Defense],
+    [Flak Battery], [2], [12+2D8 \*], [0], [2], [1], [Ct--Cl], [S], [Point Defense, Burst 3],
+    [Light Mist Gun Battery], [2], [8+D6], [3], [3], [2], [Cl--Md], [SA 3], [],
+    [Railgun Turret], [3], [12+D8], [6], [4], [3], [Cl--Md], [S], [],
+    [Mist Lance Battery], [3], [15+D10], [8], [6], [5], [Md--Lg], [S], [],
+    [Exawatt Mist Lance Array], [5], [20+3D10], [14], [10], [8], [Md--Lg], [S], [],
+    [Rocket Pod], [1], [10+D10], [8], [1], [0], [Cl--Md], [S], [Magazine 6],
+    [Tactical Missile Rack], [3], [18+D10], [10], [4], [2], [Md--Lg], [S], [Magazine 8, Guided],
+    [Cruise Missile Silo], [4], [25+2D10], [12], [6], [3], [Lg--Ex], [S], [Magazine 4, Guided, Long-Range],
+    [Aeroballistic Missile], [5], [35+2D12], [16], [10], [6], [Ex], [S], [Magazine 2, Guided, Long-Range],
+  )
+)
 
 ==== Range Modifiers
 
@@ -1917,6 +1919,8 @@ The following stat blocks illustrate the format for tactical vehicles and capita
 
   *Damage Thresholds:* 34 Hull (Damaged), 23 Hull (Heavily Damaged), 12 Hull (Critical), 0 Hull (Destroyed). System damage uses the tactical vehicle table (D6).
 ]
+
+#colbreak()
 
 #vehicle-stat-block(
   "Stormwatch Patrol Frigate",
