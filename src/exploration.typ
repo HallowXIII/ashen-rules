@@ -661,6 +661,7 @@ though remote settlements may prefer barter for everyday transactions.
 === Purchasing Power Guide
 
 #pftab(
+  "Sample costs for common goods",
   columns: 2,
   align: (left, left),
   [*Item / Service*],
