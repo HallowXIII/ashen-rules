@@ -81,10 +81,12 @@
   linebreak()
   text(font: ("Libre Baskerville",), size: 48pt)[#title]
   linebreak()
-  if subtitle != none { text(font: ("Libre Baskerville",) ,size: 32pt)[#subtitle] }
+  if subtitle != none {
+    text(font: ("Libre Baskerville",), size: 32pt)[#subtitle]
+  }
   v(3em)
   block[
-    #set align(center + horizon) 
+    #set align(center + horizon)
     #text(size: 28pt)[#description]
   ]
 }
@@ -122,9 +124,7 @@
     #if flavor != none [_#flavor \ #v(0.5em)_]
     #if aspects != none or flavor != none [#line(stroke: 1pt, length: 100%)]
     _Skill_: #skill, _Difficulty_: #difficulty, _Magnitude_: #magnitude, _Casting Time_: #casting-time \
-    #if modifiers != none [_Modifiers_: #for mod in modifiers {
-      [- #mod]
-    }] 
+    #if modifiers != none [_Modifiers_: #for mod in modifiers { [- #mod] }]
     #if sacrifice != none [_Sacrifice_: #sacrifice \ ]
     #line(stroke: 1pt, length: 100%)
 
@@ -235,7 +235,7 @@
     #pftraits(final-traits) \
     #if flavor != none [_#flavor \ #v(0.5em)_]
     #if prerequisites != () {
-      "Prerequisites:" 
+      "Prerequisites:"
       list(for req in prerequisites {
         par(first-line-indent: 1em)[#req\ ]
       })
@@ -303,16 +303,20 @@
   }
   #let split_format(left, right, is_header: false) = {
     box(
-      maybe_format_header(is_header, left)
+      maybe_format_header(is_header, left),
     )
     h(1fr)
     sym.wj
     box(maybe_format_header(is_header, right))
   }
-  #split_format(upper(feat.name), upper([Tier #feat.level (#feat.xp XP)]), is_header: true)
+  #split_format(
+    upper(feat.name),
+    upper([Tier #feat.level (#feat.xp XP)]),
+    is_header: true,
+  )
   #line(stroke: 1pt, length: 100%)
   #pftraits(feat.traits)
-  
+
   #split_format([Prerequisites: #feat.reqs], [#feat.hp HP, #feat.fp FP])
   #line(stroke: 1pt, length: 100%)
   #for effect in feat.effect {
@@ -328,7 +332,16 @@
   }
 ]
 
-#let advance-block(name, tier, xp, hp, fp, prerequisites, body, traits: ()) = feat((
+#let advance-block(
+  name,
+  tier,
+  xp,
+  hp,
+  fp,
+  prerequisites,
+  body,
+  traits: (),
+) = feat((
   name: name,
   reqs: prerequisites,
   level: tier,
@@ -349,7 +362,7 @@
 //     _Cost:_ #xp XP #linebreak()
 //     _HP:_ #hp, _FP:_ #fp #linebreak()
 //     _Prerequisites:_ #prerequisites
-// 
+//
 //     #body
 //   ]
 // }
@@ -375,10 +388,16 @@
   #text(size: 1.3em, weight: "extrabold")[#align(center)[#info\ ]]
 ]
 
-#let pftab(name, columns: (1fr, 4fr), breakable: false, title: true, ..contents) = [
+#let pftab(
+  name,
+  columns: (1fr, 4fr),
+  breakable: false,
+  title: true,
+  ..contents,
+) = [
   #v(1em)
   #block(breakable: breakable)[
-    #if(title){[*#smallcaps(text(size: 1.3em)[#upper(name)])*]}
+    #if (title) { [*#smallcaps(text(size: 1.3em)[#upper(name)])*] }
     #v(-.5em)
     #table(
       columns: columns,
@@ -404,7 +423,16 @@
 }
 
 #let floating-table(name, columns: (1fr, 4fr), breakable: false, ..contents) = {
-    figure(pftab(name, ..contents, columns: columns, breakable: breakable, title: false), caption: name)
+  figure(
+    pftab(
+      name,
+      ..contents,
+      columns: columns,
+      breakable: breakable,
+      title: false,
+    ),
+    caption: name,
+  )
 }
 
 #let chap-header(num, title, desc) = place(
@@ -542,9 +570,16 @@
     )
     #h(1fr)
     #sym.wj
-    #box(text(weight: "extrabold", size: 1.3em, stretch: 50%)[#upper[Tier #tier #vehicle-type]])
+    #box(text(
+      weight: "extrabold",
+      size: 1.3em,
+      stretch: 50%,
+    )[#upper[Tier #tier #vehicle-type]])
     #line(stroke: 1pt, length: 100%)
-    #if traits.len() > 0 { pftraits(traits); parbreak() }
+    #if traits.len() > 0 {
+      pftraits(traits)
+      parbreak()
+    }
     #if flavor != none [_#flavor _ \ ]
     #{
       let stats = ()

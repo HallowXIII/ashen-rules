@@ -49,10 +49,10 @@ changing while the party is absent---rather than from the threat of death
 itself.
 
 #attention[Essence Points are the true survival resource. Every death costs 5 EP
-from a pool that recovers only 3 per long rest, so two deaths in a single act
-is a serious resource drain that will shape the rest of the adventure. This is
-what gives death its weight in Ashen: not the loss of a character, but the
-steady erosion of a party's ability to keep going.]
+  from a pool that recovers only 3 per long rest, so two deaths in a single act
+  is a serious resource drain that will shape the rest of the adventure. This is
+  what gives death its weight in Ashen: not the loss of a character, but the
+  steady erosion of a party's ability to keep going.]
 
 *Action economy is the balance lever.* Every creature in Ashen---player
 characters and enemies alike---receives 4 AP per turn. A party of four
@@ -116,16 +116,66 @@ reference for use at the table.
   align: center,
   stroke: 0.5pt,
 
-  [*Pool Size*], [< 10%], [\~25%], [50%], [\~75%], [> 90%],
-  [3d],  [5], [3], [2], [1], [---],
-  [5d],  [6], [5], [3], [1], [0],
-  [7d],  [8], [6], [4], [2], [0],
-  [9d],  [9], [7], [5], [3], [1],
-  [11d], [11], [8], [6], [4], [1],
-  [13d], [12], [9], [7], [5], [2],
-  [15d], [13], [10], [8], [6], [3],
-  [17d], [15], [12], [9], [6], [3],
-  [19d], [16], [13], [10], [7], [4],
+  [*Pool Size*],
+  [< 10%],
+  [\~25%],
+  [50%],
+  [\~75%],
+  [> 90%],
+  [3d],
+  [5],
+  [3],
+  [2],
+  [1],
+  [---],
+  [5d],
+  [6],
+  [5],
+  [3],
+  [1],
+  [0],
+  [7d],
+  [8],
+  [6],
+  [4],
+  [2],
+  [0],
+  [9d],
+  [9],
+  [7],
+  [5],
+  [3],
+  [1],
+  [11d],
+  [11],
+  [8],
+  [6],
+  [4],
+  [1],
+  [13d],
+  [12],
+  [9],
+  [7],
+  [5],
+  [2],
+  [15d],
+  [13],
+  [10],
+  [8],
+  [6],
+  [3],
+  [17d],
+  [15],
+  [12],
+  [9],
+  [6],
+  [3],
+  [19d],
+  [16],
+  [13],
+  [10],
+  [7],
+  [4],
 )
 
 Read the table by finding the column closest to the pass rate you want and
@@ -153,11 +203,11 @@ The character's pool, including all bonuses and penalties from equipment,
 conditions, and circumstances, defines how well-suited they are to attempt it.
 
 #note[A check should only be called when both success and failure lead somewhere
-interesting. "You fall to your death" is not an interesting failure for
-Deathless characters---they revive and climb again, and you have wasted
-everyone's time on a roll that changed nothing. "The bridge collapses behind you
-and you cannot retreat" is an interesting failure: the party is now committed to
-whatever lies ahead, and the tactical landscape has changed.]
+  interesting. "You fall to your death" is not an interesting failure for
+  Deathless characters---they revive and climb again, and you have wasted
+  everyone's time on a roll that changed nothing. "The bridge collapses behind you
+  and you cannot retreat" is an interesting failure: the party is now committed to
+  whatever lies ahead, and the tactical landscape has changed.]
 
 === Flexible and Load-Bearing Rules
 
@@ -544,9 +594,9 @@ combat encounters and one or two stretch-based tension scenes. More than this
 and the session drags; fewer and the act feels hollow.
 
 #note[The number of combats per act is adjustable. If your group prefers social
-and investigative play, reduce combat encounters to one or two per act without
-breaking anything---but lower the expected combat XP accordingly and raise
-mission XP to compensate, so that tier progression does not stall.]
+  and investigative play, reduce combat encounters to one or two per act without
+  breaking anything---but lower the expected combat XP accordingly and raise
+  mission XP to compensate, so that tier progression does not stall.]
 
 Not every encounter needs to be a fight the party wins. Some encounters are
 obstacles to be avoided, traps to be disarmed, or negotiations to be survived.
@@ -599,11 +649,11 @@ might fight, use the creature design guidelines. If an NPC is purely social,
 their personality and motivation are their stat block.
 
 #note[You do not need to prepare every possible outcome. Prepare the _situation_:
-who wants what, where the resources are, and what the clocks are. The players
-will decide what to do, and you will adjudicate the consequences. If you find
-yourself scripting dialogue trees or mapping every branch of a decision, you are
-over-preparing. The stretch and scene structure will carry the session once you
-know the moving parts.]
+  who wants what, where the resources are, and what the clocks are. The players
+  will decide what to do, and you will adjudicate the consequences. If you find
+  yourself scripting dialogue trees or mapping every branch of a decision, you are
+  over-preparing. The stretch and scene structure will carry the session once you
+  know the moving parts.]
 
 === Running a Session
 
@@ -766,9 +816,9 @@ the faction does in the campaign---the missions it offers, the obstacles it
 creates, the alliances it seeks---follows from that sentence.
 
 #note[You do not need all the factions from the setting chapter. Three factions
-with clear motivations will generate more interesting play than twelve that the
-players cannot keep straight. Start small. Add a new faction only when the
-campaign's events demand it.]
+  with clear motivations will generate more interesting play than twelve that the
+  players cannot keep straight. Start small. Add a new faction only when the
+  campaign's events demand it.]
 
 Faction relationships are not static. A patron at Tier 1 may become an opponent
 at Tier 4 when its interests diverge from the party's. An enemy at Tier 2 may
@@ -881,15 +931,69 @@ The following table provides baseline statistics for a standard creature at each
   align: (left, center, center, center, center, center, center),
   stroke: 0.5pt,
 
-  [*Stat*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
-  [HP], [20--25], [30--40], [45--60], [65--85], [90--120], [120--160],
-  [FP], [13--18], [20--30], [30--45], [45--65], [65--90], [90--130],
-  [Armor], [5], [8], [10], [13], [17], [22],
-  [Ward], [4], [5], [8], [10], [13], [17],
-  [Evasion], [2--3], [3--4], [4--5], [5--7], [7--8], [8--9],
-  [Main Attack], [5--7], [7--9], [10--12], [13--15], [15--17], [16--18],
-  [Primary Resistance], [4--6], [6--8], [8--11], [11--14], [14--16], [16--18],
-  [Damage (per hit)], [7--10], [10--14], [14--18], [18--23], [22--29], [27--35],
+  [*Stat*],
+  [*T1*],
+  [*T2*],
+  [*T3*],
+  [*T4*],
+  [*T5*],
+  [*T6*],
+  [HP],
+  [20--25],
+  [30--40],
+  [45--60],
+  [65--85],
+  [90--120],
+  [120--160],
+  [FP],
+  [13--18],
+  [20--30],
+  [30--45],
+  [45--65],
+  [65--90],
+  [90--130],
+  [Armor],
+  [5],
+  [8],
+  [10],
+  [13],
+  [17],
+  [22],
+  [Ward],
+  [4],
+  [5],
+  [8],
+  [10],
+  [13],
+  [17],
+  [Evasion],
+  [2--3],
+  [3--4],
+  [4--5],
+  [5--7],
+  [7--8],
+  [8--9],
+  [Main Attack],
+  [5--7],
+  [7--9],
+  [10--12],
+  [13--15],
+  [15--17],
+  [16--18],
+  [Primary Resistance],
+  [4--6],
+  [6--8],
+  [8--11],
+  [11--14],
+  [14--16],
+  [16--18],
+  [Damage (per hit)],
+  [7--10],
+  [10--14],
+  [14--18],
+  [18--23],
+  [22--29],
+  [27--35],
 )
 
 Use the lower end of each range for more fragile or evasion-oriented creatures (rogues, casters, skirmishers) and the higher end for tougher brutes and tanks.
@@ -995,10 +1099,38 @@ tier-appropriate challenges.
   align: (left, center, center, center, center, center, center, center),
   stroke: 0.5pt,
 
-  [*Category*], [*Start*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
-  [Cumulative XP], [1000], [1000--2500], [2500--5000], [5000--10000], [10000--18000], [18000--30000], [30000--48000],
-  [SP earned], [1], [1--2], [2--5], [5--10], [10--18], [18--30], [30--48],
-  [EP total], [11], [11--12], [12--15], [15--20], [20--28], [28--40], [40--58],
+  [*Category*],
+  [*Start*],
+  [*T1*],
+  [*T2*],
+  [*T3*],
+  [*T4*],
+  [*T5*],
+  [*T6*],
+  [Cumulative XP],
+  [1000],
+  [1000--2500],
+  [2500--5000],
+  [5000--10000],
+  [10000--18000],
+  [18000--30000],
+  [30000--48000],
+  [SP earned],
+  [1],
+  [1--2],
+  [2--5],
+  [5--10],
+  [10--18],
+  [18--30],
+  [30--48],
+  [EP total],
+  [11],
+  [11--12],
+  [12--15],
+  [15--20],
+  [20--28],
+  [28--40],
+  [40--58],
 ) <tier-thresholds>
 
 === Experience Points
@@ -1018,8 +1150,22 @@ for the creature's combat role.
   align: (left, center, center, center, center, center, center, center),
   stroke: 0.5pt,
 
-  [*Tier*], [*T0*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
-  [Base XP], [5], [15], [25], [40], [65], [100], [175],
+  [*Tier*],
+  [*T0*],
+  [*T1*],
+  [*T2*],
+  [*T3*],
+  [*T4*],
+  [*T5*],
+  [*T6*],
+  [Base XP],
+  [5],
+  [15],
+  [25],
+  [40],
+  [65],
+  [100],
+  [175],
 ) <creature-xp>
 
 - *Minion:* ×0.5 (rounded down).
@@ -1044,8 +1190,20 @@ character. Use the mission's tier, not the party's.
   align: (left, center, center, center, center, center, center),
   stroke: 0.5pt,
 
-  [*Mission Tier*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
-  [Completion XP], [100], [150], [250], [400], [600], [1000],
+  [*Mission Tier*],
+  [*T1*],
+  [*T2*],
+  [*T3*],
+  [*T4*],
+  [*T5*],
+  [*T6*],
+  [Completion XP],
+  [100],
+  [150],
+  [250],
+  [400],
+  [600],
+  [1000],
 )
 
 A mission may have secondary objectives worth a fraction of the completion
@@ -1075,8 +1233,20 @@ roughly the following total XP per character:
   align: (left, center, center, center, center, center, center),
   stroke: 0.5pt,
 
-  [*Party Tier*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
-  [XP / session], [150--250], [250--400], [400--650], [650--1000], [1000--1500], [1500--2200],
+  [*Party Tier*],
+  [*T1*],
+  [*T2*],
+  [*T3*],
+  [*T4*],
+  [*T5*],
+  [*T6*],
+  [XP / session],
+  [150--250],
+  [250--400],
+  [400--650],
+  [650--1000],
+  [1000--1500],
+  [1500--2200],
 )
 
 At this rate, a tier lasts roughly eight to twelve sessions. Characters
@@ -1106,8 +1276,20 @@ accepts the job, so that players can weigh the reward against the risk.
   align: (left, center, center, center, center, center, center),
   stroke: 0.5pt,
 
-  [*Mission Tier*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
-  [Pay (#feathers)], [100--300], [300--600], [600--1500], [1500--3000], [3000--6000], [Favors],
+  [*Mission Tier*],
+  [*T1*],
+  [*T2*],
+  [*T3*],
+  [*T4*],
+  [*T5*],
+  [*T6*],
+  [Pay (#feathers)],
+  [100--300],
+  [300--600],
+  [600--1500],
+  [1500--3000],
+  [3000--6000],
+  [Favors],
 )
 
 At Tier 6, feathers lose their meaning. The people who can commission T6
@@ -1147,9 +1329,27 @@ set of armor, and one catalyst or reliquary if relevant.
   align: (left, center, center, center, center, center, center),
   stroke: 0.5pt,
 
-  [*Tier*], [*T1*], [*T2*], [*T3*], [*T4*], [*T5*], [*T6*],
-  [Full Kit Cost], [500--1500], [1500--4000], [4500--10000], [13000--22000], [24000--37000], [Quest],
-  [Cumulative Earned], [500--1000], [2500--4500], [7000--14000], [22000--36000], [46000--73000], [---],
+  [*Tier*],
+  [*T1*],
+  [*T2*],
+  [*T3*],
+  [*T4*],
+  [*T5*],
+  [*T6*],
+  [Full Kit Cost],
+  [500--1500],
+  [1500--4000],
+  [4500--10000],
+  [13000--22000],
+  [24000--37000],
+  [Quest],
+  [Cumulative Earned],
+  [500--1000],
+  [2500--4500],
+  [7000--14000],
+  [22000--36000],
+  [46000--73000],
+  [---],
 ) <wealth-benchmarks>
 
 The gap between cumulative earned and full kit cost represents savings,
@@ -1267,17 +1467,100 @@ This section provides guidelines for designing new weapons, armor, catalysts, an
 #float([#floating-table(
   "Weapon Damage by Tier",
   columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, center),
+  align: (
+    left,
+    center,
+    center,
+    center,
+    center,
+    center,
+    center,
+    center,
+    center,
+    center,
+  ),
   stroke: 0.5pt,
 
-  [*Tier*], [*Light LV*], [*Light MV*], [*Light HV*], [*Medium LV*], [*Medium MV*], [*Medium HV*], [*Heavy LV*], [*Heavy MV*], [*Heavy HV*],
-  [0], [4+D3], [3+D4], [2+D6], [5+D3], [4+D4], [3+D6], [6+D3], [4+D6], [3+D8],
-  [1], [6+D3], [4+D6], [3+D8], [8+D3], [6+D6], [5+D8], [11+D3], [8+D8], [6+D12],
-  [2], [7+D4], [6+D6], [4+D10], [11+D4], [9+D8], [7+D12], [15+D4], [12+D10], [9+2D8],
-  [3], [11+D4], [9+D8], [7+D12], [15+D6], [12+D10], [9+2D8], [20+D6], [16+D12], [12+2D10],
-  [4], [14+D6], [12+D10], [8+2D8], [19+D8], [16+D12], [12+2D10], [25+D8], [20+2D8], [15+2D12],
-  [5], [17+D8], [14+D12], [11+2D10], [23+D10], [20+2D8], [15+2D12], [30+D10], [24+2D10], [18+3D10],
-  [6], [21+D10], [18+2D8], [14+2D12], [27+2D8], [24+2D10], [18+3D10], [35+2D6], [29+2D12], [22+4D10],
+  [*Tier*],
+  [*Light LV*],
+  [*Light MV*],
+  [*Light HV*],
+  [*Medium LV*],
+  [*Medium MV*],
+  [*Medium HV*],
+  [*Heavy LV*],
+  [*Heavy MV*],
+  [*Heavy HV*],
+  [0],
+  [4+D3],
+  [3+D4],
+  [2+D6],
+  [5+D3],
+  [4+D4],
+  [3+D6],
+  [6+D3],
+  [4+D6],
+  [3+D8],
+  [1],
+  [6+D3],
+  [4+D6],
+  [3+D8],
+  [8+D3],
+  [6+D6],
+  [5+D8],
+  [11+D3],
+  [8+D8],
+  [6+D12],
+  [2],
+  [7+D4],
+  [6+D6],
+  [4+D10],
+  [11+D4],
+  [9+D8],
+  [7+D12],
+  [15+D4],
+  [12+D10],
+  [9+2D8],
+  [3],
+  [11+D4],
+  [9+D8],
+  [7+D12],
+  [15+D6],
+  [12+D10],
+  [9+2D8],
+  [20+D6],
+  [16+D12],
+  [12+2D10],
+  [4],
+  [14+D6],
+  [12+D10],
+  [8+2D8],
+  [19+D8],
+  [16+D12],
+  [12+2D10],
+  [25+D8],
+  [20+2D8],
+  [15+2D12],
+  [5],
+  [17+D8],
+  [14+D12],
+  [11+2D10],
+  [23+D10],
+  [20+2D8],
+  [15+2D12],
+  [30+D10],
+  [24+2D10],
+  [18+3D10],
+  [6],
+  [21+D10],
+  [18+2D8],
+  [14+2D12],
+  [27+2D8],
+  [24+2D10],
+  [18+3D10],
+  [35+2D6],
+  [29+2D12],
+  [22+4D10],
 ) <weapon-damage>])
 
 This leads to the following average damage by tier (MV):
@@ -1288,14 +1571,38 @@ This leads to the following average damage by tier (MV):
   align: (left, center, center, center),
   stroke: 0.5pt,
 
-  [*Tier*], [*Light*], [*Medium*], [*Heavy*],
-  [0], [5.5], [6.5], [7.5],
-  [1], [7.5], [9.5], [12.5],
-  [2], [9.5], [13.5], [17.5],
-  [3], [13.5], [18.0], [23.0],
-  [4], [17.5], [22.8], [28.8],
-  [5], [21.2], [28.5], [35.0],
-  [6], [26.8], [35.2], [41.5],
+  [*Tier*],
+  [*Light*],
+  [*Medium*],
+  [*Heavy*],
+  [0],
+  [5.5],
+  [6.5],
+  [7.5],
+  [1],
+  [7.5],
+  [9.5],
+  [12.5],
+  [2],
+  [9.5],
+  [13.5],
+  [17.5],
+  [3],
+  [13.5],
+  [18.0],
+  [23.0],
+  [4],
+  [17.5],
+  [22.8],
+  [28.8],
+  [5],
+  [21.2],
+  [28.5],
+  [35.0],
+  [6],
+  [26.8],
+  [35.2],
+  [41.5],
 )
 
 The die progression used across the table is D3, D4, D6, D8, D10, D12, 2D8, 2D10, 3D8, 3D10, 3D12, 4D10, 4D12, with average values of 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 9, 11, 13.5, 16.5, 19.5, 22, 26 respectively.
@@ -1320,17 +1627,100 @@ Ranged weapons follow the same damage table as melee for their weight class, wit
 #float([#floating-table(
   "Armor Scaling",
   columns: 10,
-  align: (left, center, center, center, center, center, center, center, center, center),
+  align: (
+    left,
+    center,
+    center,
+    center,
+    center,
+    center,
+    center,
+    center,
+    center,
+    center,
+  ),
   stroke: 0.5pt,
 
-  [*Tier*], [*Light Armor*], [*Light Ward*], [*Light Bulk*], [*Med Armor*], [*Med Ward*], [*Med Bulk*], [*Heavy Armor*], [*Heavy Ward*], [*Heavy Bulk*],
-  [0], [2], [2], [1], [3], [2], [2], [6], [4], [3],
-  [1], [3], [3], [1], [5], [4], [2], [8], [6], [4],
-  [2], [5], [4], [1], [8], [5], [3], [11], [8], [4],
-  [3], [8], [5], [2], [10], [7], [3], [15], [10], [5],
-  [4], [12], [9], [2], [19], [12], [3], [25], [20], [5],
-  [5], [11], [8], [2], [15], [10], [4], [24], [16], [6],
-  [6], [14], [11], [2], [19], [13], [4], [30], [20], [7],
+  [*Tier*],
+  [*Light Armor*],
+  [*Light Ward*],
+  [*Light Bulk*],
+  [*Med Armor*],
+  [*Med Ward*],
+  [*Med Bulk*],
+  [*Heavy Armor*],
+  [*Heavy Ward*],
+  [*Heavy Bulk*],
+  [0],
+  [2],
+  [2],
+  [1],
+  [3],
+  [2],
+  [2],
+  [6],
+  [4],
+  [3],
+  [1],
+  [3],
+  [3],
+  [1],
+  [5],
+  [4],
+  [2],
+  [8],
+  [6],
+  [4],
+  [2],
+  [5],
+  [4],
+  [1],
+  [8],
+  [5],
+  [3],
+  [11],
+  [8],
+  [4],
+  [3],
+  [8],
+  [5],
+  [2],
+  [10],
+  [7],
+  [3],
+  [15],
+  [10],
+  [5],
+  [4],
+  [12],
+  [9],
+  [2],
+  [19],
+  [12],
+  [3],
+  [25],
+  [20],
+  [5],
+  [5],
+  [11],
+  [8],
+  [2],
+  [15],
+  [10],
+  [4],
+  [24],
+  [16],
+  [6],
+  [6],
+  [14],
+  [11],
+  [2],
+  [19],
+  [13],
+  [4],
+  [30],
+  [20],
+  [7],
 ) <armor-scaling>])
 
 @armor-scaling gives the average values stats for armor by weight class and tier. Modifiers follow the armor's weight class: light armor grants +1 to +2 Evasion, medium armor grants 0 to +1, and heavy armor imposes --1 to --4. Higher-tier armor within a weight class may improve evasion slightly compared to lower-tier examples.
@@ -1355,14 +1745,46 @@ Approximate price ranges in feathers (#feathers):
   align: (left, center, center, center, center),
   stroke: 0.5pt,
 
-  [*Tier*], [*Weapons*], [*Armor*], [*Catalysts*], [*Consumables*],
-  [0], [0--50], [0--50], [---], [10--50],
-  [1], [100--500], [100--500], [200--600], [50--250],
-  [2], [500--1500], [500--1500], [600--1500], [150--500],
-  [3], [1500--3500], [1500--3000], [1500--3000], [300--1000],
-  [4], [5000--8000], [5000--6500], [3000--6000], [500--2000],
-  [5], [8000--15000], [8000--12000], [6000--10000], [1000--5000],
-  [6], [Unique], [Unique], [Unique], [2000--10000],
+  [*Tier*],
+  [*Weapons*],
+  [*Armor*],
+  [*Catalysts*],
+  [*Consumables*],
+  [0],
+  [0--50],
+  [0--50],
+  [---],
+  [10--50],
+  [1],
+  [100--500],
+  [100--500],
+  [200--600],
+  [50--250],
+  [2],
+  [500--1500],
+  [500--1500],
+  [600--1500],
+  [150--500],
+  [3],
+  [1500--3500],
+  [1500--3000],
+  [1500--3000],
+  [300--1000],
+  [4],
+  [5000--8000],
+  [5000--6500],
+  [3000--6000],
+  [500--2000],
+  [5],
+  [8000--15000],
+  [8000--12000],
+  [6000--10000],
+  [1000--5000],
+  [6],
+  [Unique],
+  [Unique],
+  [Unique],
+  [2000--10000],
 )
 
 At T6, standard weapons, armor, and catalysts leave the commercial market entirely --- such items are unique or priceless, obtained through quests or legendary rewards rather than purchased.
@@ -1485,16 +1907,16 @@ villain's plan, or it may leave the choice genuinely open until the final sessio
   "35",
   "7 days",
   [The caster completes the work that the Last War began: the Heart of the World
-  stops beating, and creation unravels. The Fog dissipates --- not because it is
-  healed, but because the wound it bled from no longer exists. Over the hours and
-  days that follow, the world comes apart. Magic fails. The land fractures and
-  dissolves. The sky goes dark. What remains, if anything, is beyond mortal
-  knowledge.
+    stops beating, and creation unravels. The Fog dissipates --- not because it is
+    healed, but because the wound it bled from no longer exists. Over the hours and
+    days that follow, the world comes apart. Magic fails. The land fractures and
+    dissolves. The sky goes dark. What remains, if anything, is beyond mortal
+    knowledge.
 
-  The Deathless curse ends with the world. Every Deathless is granted a final,
-  true death. Whether this is mercy or annihilation depends on one's theology.
+    The Deathless curse ends with the world. Every Deathless is granted a final,
+    true death. Whether this is mercy or annihilation depends on one's theology.
 
-  _This ritual cannot be reversed once completed._],
+    _This ritual cannot be reversed once completed._],
   sacrifice: "1 vial of Materia Nigra (consumed) + the permanent death of a willing Deathless participant (the sacrifice's soul is annihilated; they do not reincorporate)",
   aspects: ("Ash", "Skull"),
   failure: "The Heart shudders but does not stop. The caster and all participants within Burst 10 suffer 300% Void damage (ignores Armor and Ward). The Materia Nigra is consumed. The sacrifice is still annihilated. The ritual may be attempted again with new materials and a new sacrifice.",
@@ -1509,23 +1931,23 @@ villain's plan, or it may leave the choice genuinely open until the final sessio
   "35",
   "7 days",
   [The caster heals the Heart of the World and, in doing so, channels the
-  accumulated divine essence of the sacrificed reliquary fragments into it. The
-  dead god whose fragments were offered is reborn --- not as they were, but shaped
-  by the state of the world and the intent of the caster. The reborn god assumes
-  dominion over the healed world.
+    accumulated divine essence of the sacrificed reliquary fragments into it. The
+    dead god whose fragments were offered is reborn --- not as they were, but shaped
+    by the state of the world and the intent of the caster. The reborn god assumes
+    dominion over the healed world.
 
-  The Fog ceases. The ambient magical energy that sustained magitek is replaced by
-  the reborn god's power --- different in character, but no less potent. The
-  Deathless curse is lifted: the cycle of death and rebirth resumes, and the
-  Deathless become mortal once more. Whether they retain their memories of the Age
-  of Ash is at the GM's discretion.
+    The Fog ceases. The ambient magical energy that sustained magitek is replaced by
+    the reborn god's power --- different in character, but no less potent. The
+    Deathless curse is lifted: the cycle of death and rebirth resumes, and the
+    Deathless become mortal once more. Whether they retain their memories of the Age
+    of Ash is at the GM's discretion.
 
-  The identity of the reborn god shapes the new world profoundly. A world under
-  the Boar-Mother is not a world under the Falcon-Headed Sun. The GM should
-  consider what the god valued in life and how their character has been altered by
-  death, fragmentation, and rebirth.
+    The identity of the reborn god shapes the new world profoundly. A world under
+    the Boar-Mother is not a world under the Falcon-Headed Sun. The GM should
+    consider what the god valued in life and how their character has been altered by
+    death, fragmentation, and rebirth.
 
-  _This ritual cannot be reversed once completed._],
+    _This ritual cannot be reversed once completed._],
   sacrifice: "1 vial of Materia Rubrior (consumed) + reliquary fragments of a single dead god, totalling at least 20 tiers' worth of divine essence (consumed)",
   aspects: ("Scarab", "Sun"),
   failure: "The Heart flares with unstable divine energy. The reliquary fragments are consumed, but the god is not reborn --- instead, a fragmentary divine echo manifests, hostile and incoherent, with the statistics of a T6 Boss creature. The Materia Rubrior is consumed. The ritual may be attempted again with new materials and fragments of the same or a different god.",
@@ -1544,13 +1966,55 @@ This section provides guidelines for designing new rituals and alchemical recipe
   align: (left, center, center, center, center, center, left),
   stroke: 0.5pt,
 
-  [*Tier*], [*Diff.*], [*Magn.*], [*Cost (#feathers)*], [*Casting Time*], [*Scope*], [*Identity*],
-  [1], [3--4], [2--3], [50--200], [5--10 min], [Single target], [Local effect],
-  [2], [5--6], [4--5], [200--500], [10--30 min], [Small area], [Moderate duration],
-  [3], [7--8], [6--7], [500--1500], [30 min--1 hr], [Large area], [Lasting effect],
-  [4], [9--10], [8--9], [1500--4000], [1--4 hours], [Transformation], [Permanent minor effects],
-  [5], [11--12], [10--12], [4000--10000], [4--12 hours], [Reality-altering], [Permanent major effects],
-  [6], [13+], [13+], [Priceless], [1+ days], [Legendary], [Campaign-defining],
+  [*Tier*],
+  [*Diff.*],
+  [*Magn.*],
+  [*Cost (#feathers)*],
+  [*Casting Time*],
+  [*Scope*],
+  [*Identity*],
+  [1],
+  [3--4],
+  [2--3],
+  [50--200],
+  [5--10 min],
+  [Single target],
+  [Local effect],
+  [2],
+  [5--6],
+  [4--5],
+  [200--500],
+  [10--30 min],
+  [Small area],
+  [Moderate duration],
+  [3],
+  [7--8],
+  [6--7],
+  [500--1500],
+  [30 min--1 hr],
+  [Large area],
+  [Lasting effect],
+  [4],
+  [9--10],
+  [8--9],
+  [1500--4000],
+  [1--4 hours],
+  [Transformation],
+  [Permanent minor effects],
+  [5],
+  [11--12],
+  [10--12],
+  [4000--10000],
+  [4--12 hours],
+  [Reality-altering],
+  [Permanent major effects],
+  [6],
+  [13+],
+  [13+],
+  [Priceless],
+  [1+ days],
+  [Legendary],
+  [Campaign-defining],
 ) <ritual-scaling>])
 
 Each point of power available to the ritual beyond its magnitude reduces the difficulty by 1, to a floor equal to the ritual's tier. This lets well-prepared casters perform rituals above their comfortable skill level, at the cost of accumulating reagents, influence, or assistants.

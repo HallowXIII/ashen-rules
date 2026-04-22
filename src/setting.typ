@@ -147,7 +147,7 @@ traditions, the details --- and especially the roles assigned to individual
 deities --- vary considerably depending on the source.
 
 #flavor[
-At the beginning, there was only the primordial chaos. In time, the chaos settled, and left at the bottom Vêr, the primordial sea, and Khanj, the dark sky. The sea and the sky resolved to each take on an aspect of the other, and from their strange union were born Khâru, the Falcon-Headed Sun, and Ndang, the primordial land. Khâru took the warmth from his mother's depths, but could not hold it in his lofty body; Ndang was great and profound, but took on her father's cold and stillness. Khâru's light and heat warmed the world, but made the sky to grow furious with wind, dried the sea and scorched the earth. When he saw what his unrestrained self had wrought, he resolved to sink beneath the waters for half his time, and thus did he establish order. From this union with his mother were born the sisters Night and Day, and the Third sister, known as Order.
+  At the beginning, there was only the primordial chaos. In time, the chaos settled, and left at the bottom Vêr, the primordial sea, and Khanj, the dark sky. The sea and the sky resolved to each take on an aspect of the other, and from their strange union were born Khâru, the Falcon-Headed Sun, and Ndang, the primordial land. Khâru took the warmth from his mother's depths, but could not hold it in his lofty body; Ndang was great and profound, but took on her father's cold and stillness. Khâru's light and heat warmed the world, but made the sky to grow furious with wind, dried the sea and scorched the earth. When he saw what his unrestrained self had wrought, he resolved to sink beneath the waters for half his time, and thus did he establish order. From this union with his mother were born the sisters Night and Day, and the Third sister, known as Order.
 ]
 
 === The Pantheon
@@ -180,7 +180,7 @@ Mother of humanity (with the God of Crafts) and of the Soot-Beasts (with the
 Lion-Headed God of War). She is remembered as generous and terrible in equal
 measure: one who gave freely, but who exacted obedience from those in her debt.
 Her sacred text, the _Âl i pHethkê yi Ndang_, is the source of the oldest
-surviving creation myth. 
+surviving creation myth.
 
 The Boar-Mother's domains are so vast that she is rarely venerated as a single
 being, but rather worshipped in her three aspects -- the most popular with
@@ -226,7 +226,7 @@ the other powers in check. Capricious and dazzling, she is remembered as much
 for the wonders of her realm as for its cruelties.
 
 *Once-Was*, the Way-Knower, called Night in the Boar-Mother's
-reckoning, but known to her Shades as the *Midnight Princess*. 
+reckoning, but known to her Shades as the *Midnight Princess*.
 Goddess of what is Hidden and Forgotten; twin to Might-Be and elder
 sister to Third. Formerly worshipped as *Came-To-Pass*, an unerring huntress,
 before some unknown event changed her nature. She ruled the underground
@@ -953,94 +953,94 @@ world where purpose is the only thing standing between an immortal and madness,
 going it alone is either very brave or very foolish.
 
 #float([
-#floating-table(
-  "List of Factions",
-  columns: (1fr, 1fr, 1fr, 1fr),
-  align: center,
-  breakable: true,
+  #floating-table(
+    "List of Factions",
+    columns: (1fr, 1fr, 1fr, 1fr),
+    align: center,
+    breakable: true,
 
-  [*Name*],
-  [*Pin*],
-  [*Stated Purpose*],
-  [*Aligned Deities*],
-  [Black Guard],
-  [A fortress gate superimposed on a balance],
-  [Maintenance and policing of the Black Bazaar],
-  [---],
+    [*Name*],
+    [*Pin*],
+    [*Stated Purpose*],
+    [*Aligned Deities*],
+    [Black Guard],
+    [A fortress gate superimposed on a balance],
+    [Maintenance and policing of the Black Bazaar],
+    [---],
 
-  [Children of the Flame],
-  [An eternal flame],
-  [Maintaining and expanding the Clears],
-  [The Sun Life-Giver],
+    [Children of the Flame],
+    [An eternal flame],
+    [Maintaining and expanding the Clears],
+    [The Sun Life-Giver],
 
-  [Dragon Guard],
-  [A shield bearing the silhouette of a dragon's head],
-  [Restoring a world fit for dragons],
-  [Vrtra Dragon-Father],
+    [Dragon Guard],
+    [A shield bearing the silhouette of a dragon's head],
+    [Restoring a world fit for dragons],
+    [Vrtra Dragon-Father],
 
-  [Dragon Slayers, Most Fraternal and Knightly Order of],
-  [A dragon impaled upon a spear],
-  [Making the world safe for humans],
-  [The Crown Lawgiver],
+    [Dragon Slayers, Most Fraternal and Knightly Order of],
+    [A dragon impaled upon a spear],
+    [Making the world safe for humans],
+    [The Crown Lawgiver],
 
-  [Heirs of the Night],
-  [A sword with bat wings],
-  [Make the world a paradise for creatures of the night],
-  [The Moon Who-Reflects-In-Blood],
+    [Heirs of the Night],
+    [A sword with bat wings],
+    [Make the world a paradise for creatures of the night],
+    [The Moon Who-Reflects-In-Blood],
 
-  [Keepers of the Door],
-  [Two keys crossed over a gate],
-  [Discovering and safeguarding secrets],
-  [Once-Was Way-Knower],
+    [Keepers of the Door],
+    [Two keys crossed over a gate],
+    [Discovering and safeguarding secrets],
+    [Once-Was Way-Knower],
 
-  [Lantern, Order of the],
-  [A stylized lantern],
-  [Escaping the trap of Purgatory],
-  [The Unsleeping],
+    [Lantern, Order of the],
+    [A stylized lantern],
+    [Escaping the trap of Purgatory],
+    [The Unsleeping],
 
-  [Listeners, The],
-  [A dream-catcher with antlers],
-  [Restoring the Boar-Mother and the primal spirits],
-  [The Boar-Mother],
+    [Listeners, The],
+    [A dream-catcher with antlers],
+    [Restoring the Boar-Mother and the primal spirits],
+    [The Boar-Mother],
 
-  [Mortefactors, Most Ancient and Noble Order of],
-  [A crossed scythe and bird wing under a human skull],
-  [Studying the curse of the undying and helping those afflicted by it],
-  [The Ferryman],
+    [Mortefactors, Most Ancient and Noble Order of],
+    [A crossed scythe and bird wing under a human skull],
+    [Studying the curse of the undying and helping those afflicted by it],
+    [The Ferryman],
 
-  [Never-Still, The],
-  [A hand holding a heart],
-  [Restoring the vitality of the Faerie Realm],
-  [The Lion-Head & the Might-Be Queen of Summer],
+    [Never-Still, The],
+    [A hand holding a heart],
+    [Restoring the vitality of the Faerie Realm],
+    [The Lion-Head & the Might-Be Queen of Summer],
 
-  [Patients, Vatic Order of],
-  [A hand with the index and middle finger extended, thumb, ring and pinky
-    folded, and an eye in the middle of the palm],
-  [Cultivating the art of clairvoyance],
-  [The Glory Resplendent, Might-Be Fateweaver],
+    [Patients, Vatic Order of],
+    [A hand with the index and middle finger extended, thumb, ring and pinky
+      folded, and an eye in the middle of the palm],
+    [Cultivating the art of clairvoyance],
+    [The Glory Resplendent, Might-Be Fateweaver],
 
-  [Perfectors, The],
-  [A bridge built of gears],
-  [Fashioning an orderly, mechanical world],
-  [Third],
+    [Perfectors, The],
+    [A bridge built of gears],
+    [Fashioning an orderly, mechanical world],
+    [Third],
 
-  [Silent Crow, Brotherhood of the],
-  [The skull of a crow],
-  [Restoring the cycle of death and rebirth],
-  [The Queen of Silence],
+    [Silent Crow, Brotherhood of the],
+    [The skull of a crow],
+    [Restoring the cycle of death and rebirth],
+    [The Queen of Silence],
 
-  [Waiting Fangs, The],
-  [A dagger piercing the skull of a snake],
-  [Self-defence],
-  [---],
+    [Waiting Fangs, The],
+    [A dagger piercing the skull of a snake],
+    [Self-defence],
+    [---],
 
-  [Witnesses of the End],
-  [An hourglass],
-  [Complete the ending of the world],
-  [She Who Waits Beyond],
+    [Witnesses of the End],
+    [An hourglass],
+    [Complete the ending of the world],
+    [She Who Waits Beyond],
 
-  [Free Agents],
-  [A sword crossed with a feather],
-  [---],
-  [---],
-) <faction-list>])
+    [Free Agents],
+    [A sword crossed with a feather],
+    [---],
+    [---],
+  ) <faction-list>])

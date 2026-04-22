@@ -3,15 +3,15 @@
 #chap-header("8", [= Exploration], "Moving around the world")
 
 #flavor([
-Ših karimmi, amawai, amawai \
-Kuyāni yān za urviranzā mai \
-Ašatawhānt hižung-čissa fīryai \
-Narwiv yāwhīyav šiyawa kawhai \
-#linebreak() 
-We miss you, our homeland \
-How long we have not seen \
-Your cold snow-tipped mountain peaks \
-Shining silver against the blue expanse
+  Ših karimmi, amawai, amawai \
+  Kuyāni yān za urviranzā mai \
+  Ašatawhānt hižung-čissa fīryai \
+  Narwiv yāwhīyav šiyawa kawhai \
+  #linebreak()
+  We miss you, our homeland \
+  How long we have not seen \
+  Your cold snow-tipped mountain peaks \
+  Shining silver against the blue expanse
 ])
 
 --- The Song of the Lost \
@@ -213,228 +213,251 @@ discretion.
 #colbreak()
 
 #page(
-columns: 1,
-[
-  #box(columns(2, [
-=== Mist Creatures
+  columns: 1,
+  [
+    #box(columns(2, [
+      === Mist Creatures
 
-The Fog spontaneously generates creatures from raw magical energy. These Mist
-Creatures range from minor nuisances in Light Fog to apex predators in Extreme
-Fog — denser Fog draws on a greater reserve of energy and produces
-correspondingly more powerful beings. Mist Creatures are not part of the
-ordinary flow of souls; they do not reincarnate and behave in spiritually
-distinct ways from mortal life.
+      The Fog spontaneously generates creatures from raw magical energy. These Mist
+      Creatures range from minor nuisances in Light Fog to apex predators in Extreme
+      Fog — denser Fog draws on a greater reserve of energy and produces
+      correspondingly more powerful beings. Mist Creatures are not part of the
+      ordinary flow of souls; they do not reincarnate and behave in spiritually
+      distinct ways from mortal life.
 
-Some Mist Creatures can survive in Clears, though most cannot long endure the
-absence of the Fog that sustains them. As a result, Clears are largely free of
-supernatural monstrosities — one of the chief reasons mortals cluster there.
+      Some Mist Creatures can survive in Clears, though most cannot long endure the
+      absence of the Fog that sustains them. As a result, Clears are largely free of
+      supernatural monstrosities — one of the chief reasons mortals cluster there.
 
-=== The Fogborn
+      === The Fogborn
 
-Humans who live in the Fog through generations are slowly changed by it,
-becoming the Fogborn. They are recognizable by their heterochromatic eyes — one
-of which is always yellow — and by various small physical deformities. Like Mist
-Creatures, the Fogborn exist outside the ordinary cycle of souls and are
-spiritually distinct from other mortals.
+      Humans who live in the Fog through generations are slowly changed by it,
+      becoming the Fogborn. They are recognizable by their heterochromatic eyes — one
+      of which is always yellow — and by various small physical deformities. Like Mist
+      Creatures, the Fogborn exist outside the ordinary cycle of souls and are
+      spiritually distinct from other mortals.
 
-#colbreak()
+      #colbreak()
 
-The Fogborn are often looked down upon by the unmutated races, especially other
-mortals. The Deathless tend to treat them no differently from ordinary mortals,
-though some may be ideologically motivated to do otherwise. Fogborn cannot become
-Deathless and are not available as a player ancestry.
+      The Fogborn are often looked down upon by the unmutated races, especially other
+      mortals. The Deathless tend to treat them no differently from ordinary mortals,
+      though some may be ideologically motivated to do otherwise. Fogborn cannot become
+      Deathless and are not available as a player ancestry.
 
-=== Fog Effects
+      === Fog Effects
 
-The Fog is restless even within a single density band. The following tables
-provide rollable events for areas of Light, Dense, and Extreme Fog. Roll 2D6
-on the table appropriate to the prevailing density --- once per day of
-overland travel, once per stretch in a particularly active area, or simply
-when the scene calls for an injection of strangeness. Many entries reference
-the exposure rules and the density definitions above; severe effects do not
-stack with the underlying density's standing penalties unless the entry says
-otherwise.
-  ]))
+      The Fog is restless even within a single density band. The following tables
+      provide rollable events for areas of Light, Dense, and Extreme Fog. Roll 2D6
+      on the table appropriate to the prevailing density --- once per day of
+      overland travel, once per stretch in a particularly active area, or simply
+      when the scene calls for an injection of strangeness. Many entries reference
+      the exposure rules and the density definitions above; severe effects do not
+      stack with the underlying density's standing penalties unless the entry says
+      otherwise.
+    ]))
 
-#v(2em)
+    #v(2em)
 
-==== Light Fog
+    ==== Light Fog
 
-#pftab(
-  "Light Fog Effects",
-  columns: 2,
-  align: (center, left),
-  [*2D6*], [*Effect*],
-  [2], [A dense pocket coalesces. The area is treated as Dense Fog for the
-    next hour, including its visibility, navigation, and exposure rules.],
-  [3--5], [Wisps gather into a minor Mist Creature appropriate to the
-    region. A small encounter ensues.],
-  [6--8], [Ambient. A faint shimmer at the edge of vision and the taste of
-    iron in the air. No mechanical effect.],
-  [9--11], [A brief anomaly --- a sourceless chime, a gust of unfelt wind,
-    a momentary chill, a fleeting smell of something burning. Flavor only,
-    but the GM may have it foreshadow a later event.],
-  [12], [A Fog-touched curiosity surfaces in a character's path: a lost
-    trinket, a withered flower out of season, a scrap of paper in an
-    unknown script. The GM decides what it is and whether it persists once
-    carried out of the Fog.],
+    #pftab(
+      "Light Fog Effects",
+      columns: 2,
+      align: (center, left),
+      [*2D6*],
+      [*Effect*],
+      [2],
+      [A dense pocket coalesces. The area is treated as Dense Fog for the
+        next hour, including its visibility, navigation, and exposure rules.],
+      [3--5],
+      [Wisps gather into a minor Mist Creature appropriate to the
+        region. A small encounter ensues.],
+      [6--8],
+      [Ambient. A faint shimmer at the edge of vision and the taste of
+        iron in the air. No mechanical effect.],
+      [9--11],
+      [A brief anomaly --- a sourceless chime, a gust of unfelt wind,
+        a momentary chill, a fleeting smell of something burning. Flavor only,
+        but the GM may have it foreshadow a later event.],
+      [12],
+      [A Fog-touched curiosity surfaces in a character's path: a lost
+        trinket, a withered flower out of season, a scrap of paper in an
+        unknown script. The GM decides what it is and whether it persists once
+        carried out of the Fog.],
+    )
+
+    ==== Dense Fog
+
+    #pftab(
+      "Dense Fog Effects",
+      columns: 2,
+      align: (center, left),
+      [*2D6*],
+      [*Effect*],
+      [2],
+      [Extreme Fog spike. For the next hour, conditions worsen to Extreme
+        Fog --- visibility, navigation, malfunction risk, and exposure clock
+        all apply.],
+      [3--4],
+      [A Mist Creature appropriate to the region attacks.],
+      [5--6],
+      [Distorting currents. Distances shift and landmarks slip;
+        Investigate checks for navigation take a --2d penalty until the party
+        leaves the area, in addition to any standing modifiers.],
+      [7--8],
+      [Sensory bleed. Whispers from no mouth, half-glimpsed figures at
+        the edge of sight, the smell of smoke or rot that no one can place.
+        Each character must succeed on a Grit check (difficulty 5) or become
+        Frightened of the Fog itself for one stretch.],
+      [9--10],
+      [Time slip. An hour passes in what feels like minutes, or the
+        reverse. The GM decides which and adjusts overland travel, exposure
+        clocks, and any active ritual or spell durations accordingly.],
+      [11],
+      [A momentary thinning. The Fog lifts to Light density for one
+        stretch, granting clear sight and a brief window of safe rest.],
+      [12],
+      [Fog-mark. One character (GM's choice, or randomly determined) is
+        briefly attuned: until they leave the Dense Fog, they take +1d on
+        Eerie checks but accumulate Fog exposure at twice the usual rate.],
+    )
+
+    ==== Extreme Fog
+
+    #pftab(
+      "Extreme Fog Effects",
+      columns: 2,
+      align: (center, left),
+      [*2D6*],
+      [*Effect*],
+      [2],
+      [Reality breach. A section of terrain rewrites itself. The party
+        finds themselves somewhere they were not, with no memory of how they
+        arrived. The GM decides where, and whether anything has been left
+        behind or taken with them.],
+      [3--4],
+      [An apex Mist Creature notices the party. It need not engage at
+        once, but it has marked them, and will pursue or set an ambush at the
+        GM's discretion.],
+      [5--6],
+      [Magitek and ritual interference. Active magitek devices spark
+        and must be manually restarted; ongoing rituals and concentration
+        powers must succeed on a difficulty 6 check or end. For the next hour,
+        EP may not be spent to recover Focus.],
+      [7--8],
+      [Wild magic surge. The next power or spell cast by any character
+        in the party triggers an additional, GM-improvised effect (a target
+        swapped, a colour changed, an unbidden answer to an unasked question,
+        a brief duplication of the caster).],
+      [9--10],
+      [Vision. One character glimpses a fragment they cannot place: a
+        memory not their own, a place that may not exist, a face they will
+        meet later. The GM may use this to seed plot or simply leave it
+        unresolved.],
+      [11],
+      [A pocket of Light Fog opens, briefly habitable. The party may rest
+        safely for one stretch before the Extreme Fog reasserts itself; this
+        counts as a short rest if they choose to take one.],
+      [12],
+      [A Fog-marked artifact emerges from the mist, half-real and ready
+        to be claimed. It dissolves the moment its bearer leaves the Extreme
+        Fog, unless they succeed on a Ritual check (difficulty 9) to anchor it
+        to the world.],
+    )
+
+    #box(
+      columns(
+        2,
+        [
+          == Weather
+
+          Weather is determined by the GM or rolled randomly at the start of each day.
+          Roll 2D6 and consult the appropriate climate table.
+
+          === Temperate Climate
+
+          #pftab(
+            "Temperate Climate Rolls",
+            columns: 2,
+            align: (center, left),
+            [*2D6*],
+            [*Weather*],
+            [2],
+            [Storm — heavy rain/snow, strong winds. Visibility reduced to short range. -40% travel speed. Ranged attacks at -2d.],
+            [3–5],
+            [Precipitation — rain or light snow. Light concealment at long range.],
+            [6–8],
+            [Normal — clear or partly cloudy. No effects.],
+            [9–11],
+            [Overcast — cloudy, mild. No mechanical effects.],
+            [12],
+            [Fog — heavy concealment beyond 5 squares. -25% travel speed.],
+          )
+
+          === Mountain Climate
+
+          #pftab(
+            "Mountain Climate Rolls",
+            columns: 2,
+            align: (center, left),
+            [*2D6*],
+            [*Weather*],
+            [2–3],
+            [Storm — blizzard or thunderstorm. Travel in harsh terrain becomes impossible. -60% in other terrain.],
+            [4–6],
+            [Showers — intermittent rain or sleet.],
+            [7–8],
+            [Normal — clear, cold.],
+            [9–10],
+            [Fog — as temperate fog.],
+            [11–12],
+            [Strong wind — ranged attacks at -2d. Flight-based travel at -25%.],
+          )
+
+
+          #colbreak()
+
+          === Tropical / Swamp Climate
+
+          #pftab(
+            "Tropical Climate Rolls",
+            columns: 2,
+            align: (center, left),
+            [*2D6*],
+            [*Weather*],
+            [2–3],
+            [Thunderstorm — as storm, plus lightning hazard (GM-adjudicated).],
+            [4–6],
+            [Sweltering heat — Endurance check (difficulty 3) per 4 hours of activity or gain Exhausted.],
+            [7–8],
+            [Normal — hot and humid. No mechanical effects.],
+            [9–12],
+            [Rain — light concealment at long range. Swamp terrain becomes harsh.],
+          )
+
+          == Vision, Light, and Senses
+
+          === Light Levels
+
+          *Bright light* is the default in open daylight, well-lit interiors, or within
+          the radius of a strong light source. No penalties apply.
+
+          *Dim light* includes twilight, candlelight, moonlight, or the edge of a light
+          source's radius. Dim light provides light concealment (-2d to hit targets in dim
+          light from bright light). Awareness checks at medium range or beyond take a -2d
+          penalty.
+
+          *Darkness* is the absence of light — underground, sealed rooms, moonless
+          nights. Darkness provides heavy concealment (-4d to hit). Creatures without
+          darkvision or another sense capable of replacing sight are effectively Blinded.
+
+
+        ],
+      ),
+    )
+
+  ],
 )
-
-==== Dense Fog
-
-#pftab(
-  "Dense Fog Effects",
-  columns: 2,
-  align: (center, left),
-  [*2D6*], [*Effect*],
-  [2], [Extreme Fog spike. For the next hour, conditions worsen to Extreme
-    Fog --- visibility, navigation, malfunction risk, and exposure clock
-    all apply.],
-  [3--4], [A Mist Creature appropriate to the region attacks.],
-  [5--6], [Distorting currents. Distances shift and landmarks slip;
-    Investigate checks for navigation take a --2d penalty until the party
-    leaves the area, in addition to any standing modifiers.],
-  [7--8], [Sensory bleed. Whispers from no mouth, half-glimpsed figures at
-    the edge of sight, the smell of smoke or rot that no one can place.
-    Each character must succeed on a Grit check (difficulty 5) or become
-    Frightened of the Fog itself for one stretch.],
-  [9--10], [Time slip. An hour passes in what feels like minutes, or the
-    reverse. The GM decides which and adjusts overland travel, exposure
-    clocks, and any active ritual or spell durations accordingly.],
-  [11], [A momentary thinning. The Fog lifts to Light density for one
-    stretch, granting clear sight and a brief window of safe rest.],
-  [12], [Fog-mark. One character (GM's choice, or randomly determined) is
-    briefly attuned: until they leave the Dense Fog, they take +1d on
-    Eerie checks but accumulate Fog exposure at twice the usual rate.],
-)
-
-==== Extreme Fog
-
-#pftab(
-  "Extreme Fog Effects",
-  columns: 2,
-  align: (center, left),
-  [*2D6*], [*Effect*],
-  [2], [Reality breach. A section of terrain rewrites itself. The party
-    finds themselves somewhere they were not, with no memory of how they
-    arrived. The GM decides where, and whether anything has been left
-    behind or taken with them.],
-  [3--4], [An apex Mist Creature notices the party. It need not engage at
-    once, but it has marked them, and will pursue or set an ambush at the
-    GM's discretion.],
-  [5--6], [Magitek and ritual interference. Active magitek devices spark
-    and must be manually restarted; ongoing rituals and concentration
-    powers must succeed on a difficulty 6 check or end. For the next hour,
-    EP may not be spent to recover Focus.],
-  [7--8], [Wild magic surge. The next power or spell cast by any character
-    in the party triggers an additional, GM-improvised effect (a target
-    swapped, a colour changed, an unbidden answer to an unasked question,
-    a brief duplication of the caster).],
-  [9--10], [Vision. One character glimpses a fragment they cannot place: a
-    memory not their own, a place that may not exist, a face they will
-    meet later. The GM may use this to seed plot or simply leave it
-    unresolved.],
-  [11], [A pocket of Light Fog opens, briefly habitable. The party may rest
-    safely for one stretch before the Extreme Fog reasserts itself; this
-    counts as a short rest if they choose to take one.],
-  [12], [A Fog-marked artifact emerges from the mist, half-real and ready
-    to be claimed. It dissolves the moment its bearer leaves the Extreme
-    Fog, unless they succeed on a Ritual check (difficulty 9) to anchor it
-    to the world.],
-)
-
-#box(
-  columns(
-    2,
-    [
-== Weather
-
-Weather is determined by the GM or rolled randomly at the start of each day.
-Roll 2D6 and consult the appropriate climate table.
-
-=== Temperate Climate
-
-#pftab(
-  "Temperate Climate Rolls",
-  columns: 2,
-  align: (center, left),
-  [*2D6*],
-  [*Weather*],
-  [2],
-  [Storm — heavy rain/snow, strong winds. Visibility reduced to short range. -40% travel speed. Ranged attacks at -2d.],
-  [3–5],
-  [Precipitation — rain or light snow. Light concealment at long range.],
-  [6–8],
-  [Normal — clear or partly cloudy. No effects.],
-  [9–11],
-  [Overcast — cloudy, mild. No mechanical effects.],
-  [12],
-  [Fog — heavy concealment beyond 5 squares. -25% travel speed.],
-)
-
-=== Mountain Climate
-
-#pftab(
-  "Mountain Climate Rolls",
-  columns: 2,
-  align: (center, left),
-  [*2D6*],
-  [*Weather*],
-  [2–3],
-  [Storm — blizzard or thunderstorm. Travel in harsh terrain becomes impossible. -60% in other terrain.],
-  [4–6],
-  [Showers — intermittent rain or sleet.],
-  [7–8],
-  [Normal — clear, cold.],
-  [9–10],
-  [Fog — as temperate fog.],
-  [11–12],
-  [Strong wind — ranged attacks at -2d. Flight-based travel at -25%.],
-)
-
-
-#colbreak()
-
-=== Tropical / Swamp Climate
-
-#pftab(
-  "Tropical Climate Rolls",
-  columns: 2,
-  align: (center, left),
-  [*2D6*],
-  [*Weather*],
-  [2–3],
-  [Thunderstorm — as storm, plus lightning hazard (GM-adjudicated).],
-  [4–6],
-  [Sweltering heat — Endurance check (difficulty 3) per 4 hours of activity or gain Exhausted.],
-  [7–8],
-  [Normal — hot and humid. No mechanical effects.],
-  [9–12],
-  [Rain — light concealment at long range. Swamp terrain becomes harsh.],
-)
-
-== Vision, Light, and Senses
-
-=== Light Levels
-
-*Bright light* is the default in open daylight, well-lit interiors, or within
-the radius of a strong light source. No penalties apply.
-
-*Dim light* includes twilight, candlelight, moonlight, or the edge of a light
-source's radius. Dim light provides light concealment (-2d to hit targets in dim
-light from bright light). Awareness checks at medium range or beyond take a -2d
-penalty.
-
-*Darkness* is the absence of light — underground, sealed rooms, moonless
-nights. Darkness provides heavy concealment (-4d to hit). Creatures without
-darkvision or another sense capable of replacing sight are effectively Blinded.
-
-
-    ]
-  )
-)
-
-])
 
 === Special Senses
 

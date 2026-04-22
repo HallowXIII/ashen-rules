@@ -15,7 +15,7 @@ skill have 0 ranks in it and cannot make skill checks using that skill.
 == Gaining and Improving Skills
 
 Characters improve their skills by spending *skill points (SP)*. Every
-character begins the game with *11 SP* (10 base and 1 from their starting 1000 XP). 
+character begins the game with *11 SP* (10 base and 1 from their starting 1000 XP).
 During play, characters earn 1 additional SP for every 1000 XP they accumulate.
 
 Skill points can be spent during character creation or during intermissions to
@@ -23,7 +23,7 @@ improve your skills in the following ways:
 
 - *Learn a trained skill* (rank 0 $arrow$ 1): 1 SP. This represents acquiring
   the basic training needed to use the skill, whether through instruction from a
-  mentor, self-study, or hard-won experience. Characters may choose 
+  mentor, self-study, or hard-won experience. Characters may choose
 - *Improve a skill by one rank*: The cost to raise a skill from rank N to rank
   N+1 is equal to N skill points.
 
@@ -31,12 +31,24 @@ improve your skills in the following ways:
   "Cost per skill rank",
   columns: (1fr, 2fr, 3fr),
   align: center,
-  [*Rank*], [*SP Cost*], [*Cumulative (from rank 1)*],
-  [2], [1], [1],
-  [3], [2], [3],
-  [4], [3], [6],
-  [5], [4], [10],
-  [6], [5], [15],
+  [*Rank*],
+  [*SP Cost*],
+  [*Cumulative (from rank 1)*],
+  [2],
+  [1],
+  [1],
+  [3],
+  [2],
+  [3],
+  [4],
+  [3],
+  [6],
+  [5],
+  [4],
+  [10],
+  [6],
+  [5],
+  [15],
 )
 
 The maximum rank in any skill is 6, representing absolute mastery. A skill’s
@@ -556,11 +568,11 @@ The GM might call for an Awareness check when:
 
 #note[==== Sample Awareness difficulties
 
-- Detecting the approach of a large vehicle: 2
-- Spotting an acquaintance in a crowded pub: 3
-- Finding your way around a maze: 4
-- Noticing a well-laid ambush: 5
-- Detecting that you are being followed by someone in thermal camo: 8
+  - Detecting the approach of a large vehicle: 2
+  - Spotting an acquaintance in a crowded pub: 3
+  - Finding your way around a maze: 4
+  - Noticing a well-laid ambush: 5
+  - Detecting that you are being followed by someone in thermal camo: 8
 ]
 
 
@@ -599,12 +611,13 @@ suspicious, the GM should use the higher of the two numbers.
 
 #note[==== Sample Deceive Difficulties
 
-- Lie to a suspicious mortal: 2
-- Successfully pass yourself off as a locally known figure: 4
-- Bluff a table of professional card-players: 6
-- Successfully pass yourself off as an intimate acquaintance of your
-  interlocutor: 8
-- Lie to an extremely adept psychic: 11]
+  - Lie to a suspicious mortal: 2
+  - Successfully pass yourself off as a locally known figure: 4
+  - Bluff a table of professional card-players: 6
+  - Successfully pass yourself off as an intimate acquaintance of your
+    interlocutor: 8
+  - Lie to an extremely adept psychic: 11
+]
 
 === Eerie (U; SGT + ATT)
 
@@ -638,11 +651,12 @@ check.
 
 #note[==== Sample Eerie difficulties
 
-- Detect the presence of powerful magic: 2
-- Detect a malicious lie: 3
-- Detect the presence of subdued magic: 5
-- Detect the presence of very well-disguised magic: 8
-- Detect a lie from an extremely adept manipulator: 9]
+  - Detect the presence of powerful magic: 2
+  - Detect a malicious lie: 3
+  - Detect the presence of subdued magic: 5
+  - Detect the presence of very well-disguised magic: 8
+  - Detect a lie from an extremely adept manipulator: 9
+]
 
 === Impose (U; PRS + WIL)
 
@@ -660,10 +674,11 @@ The GM might call for an impose check when:
 
 #note[==== Sample Impose difficulties
 
-- Browbeating a hapless mortal: 2
-- Winning over a neutral crowd: 4
-- Winning over a hostile crowd: 7
-- Blackmailing a powerful immortal: 9]
+  - Browbeating a hapless mortal: 2
+  - Winning over a neutral crowd: 4
+  - Winning over a hostile crowd: 7
+  - Blackmailing a powerful immortal: 9
+]
 
 === Influence (U; INT + PRS)
 
@@ -680,10 +695,11 @@ The GM might call for an Influence check when:
 
 #note[==== Sample Influence difficulties
 
-- Haggling down an inexperienced seller: 2
-- Securing a favor from an important figure: 4
-- Arguing an extremely difficult case in court: 7
-- Negotiating a ceasefire between two Immortal Orders: 9]
+  - Haggling down an inexperienced seller: 2
+  - Securing a favor from an important figure: 4
+  - Arguing an extremely difficult case in court: 7
+  - Negotiating a ceasefire between two Immortal Orders: 9
+]
 
 === Investigate (U; INT + PER)
 
@@ -710,14 +726,15 @@ available within the documents, if at all.
 
 #note[==== Sample Research difficulties
 
-- Information is somewhat obscure: 2
-- Information is very obscure and requires specialist knowledge to understand
-  and extract: 4
-- Information is highly arcane and requires intricate knowledge to extract: 6
-- Information has been deliberately suppressed and must be reconstructed from
-  traces: 8
-- Character does not entirely know what they are looking for: +3
-- Information must be gathered from several different information stores: +2]
+  - Information is somewhat obscure: 2
+  - Information is very obscure and requires specialist knowledge to understand
+    and extract: 4
+  - Information is highly arcane and requires intricate knowledge to extract: 6
+  - Information has been deliberately suppressed and must be reconstructed from
+    traces: 8
+  - Character does not entirely know what they are looking for: +3
+  - Information must be gathered from several different information stores: +2
+]
 
 _Develop and Use Contacts_: A character can use the Investigate skill to
 research and identify useful people to know. Once they have built a relationship
@@ -728,11 +745,12 @@ well as, of course, introductions to people in other areas.
 
 #note[==== Sample Contacts difficulties
 
-- Obtain insight into the goings-on within a city: 2
-- Gain information on the schedule and whereabouts of a public figure: 4
-- Gain information on the schedule and whereabouts of a highly secretive person:
-  6
-- Obtain insight into the secret agendas of Immortal factions: 8]
+  - Obtain insight into the goings-on within a city: 2
+  - Gain information on the schedule and whereabouts of a public figure: 4
+  - Gain information on the schedule and whereabouts of a highly secretive person:
+    6
+  - Obtain insight into the secret agendas of Immortal factions: 8
+]
 
 The GM may, at their discretion, call for an Influence check alongside the
 Investigate check when the character attempts to call in favors. The results of
@@ -746,11 +764,12 @@ whereabouts.
 
 #note[==== Sample Tracks difficulties
 
-- Tracking an animal in unfavorable conditions: 2
-- Tracking a Mist Creature in unfavorable conditions: 4
-- Tracking a human in a city: 6
-- Discovering the route taken by someone through a town a week before: 8
-- Tracking down a professional deploying countermeasures in a city: 11]
+  - Tracking an animal in unfavorable conditions: 2
+  - Tracking a Mist Creature in unfavorable conditions: 4
+  - Tracking a human in a city: 6
+  - Discovering the route taken by someone through a town a week before: 8
+  - Tracking down a professional deploying countermeasures in a city: 11
+]
 
 #colbreak()
 
@@ -783,13 +802,14 @@ having concealment; see *Senses* for more.
 
 #note[==== Sample Sneak difficulties
 
-- Evade a simple CCTV system: 2
-- Evade the attention of professional guards equipped with night vision or IR
-  goggles: 4
-- Slip through the cracks of a magical intrusion detection system: 6
-- Infiltrate a facility protected by multiple redundant high-power surveillance
-  systems: 8
-- Lose a highly skilled pursuer equipped with multi-spectrum sensorics: 10]
+  - Evade a simple CCTV system: 2
+  - Evade the attention of professional guards equipped with night vision or IR
+    goggles: 4
+  - Slip through the cracks of a magical intrusion detection system: 6
+  - Infiltrate a facility protected by multiple redundant high-power surveillance
+    systems: 8
+  - Lose a highly skilled pursuer equipped with multi-spectrum sensorics: 10
+]
 
 _Sleight of Hand_: A character may use the Subterfuge skill to perform a sleight
 of hand. This includes pickpocketing, planting an item on another, concealing
@@ -798,10 +818,11 @@ cheating at card games.
 
 #note[==== Sample Sleight of Hand difficulties
 
-- Perform a simple magic trick: 2
-- Steal a small item from an observant victim: 4
-- Conceal an item on someone conversing with you without them noticing: 6
-- Smuggle a weapon past a high-security checkpoint: 8]
+  - Perform a simple magic trick: 2
+  - Steal a small item from an observant victim: 4
+  - Conceal an item on someone conversing with you without them noticing: 6
+  - Smuggle a weapon past a high-security checkpoint: 8
+]
 
 _Forgery_: A character may use the Subterfuge skill to alter, replace or falsify
 physical documents or evidence. Making such a check is a protracted affair, and
@@ -814,10 +835,11 @@ them.
 
 #note[==== Sample Forgery difficulties
 
-- Manipulate an invoice or other unsecured document: 2
-- Forge a watermarked or holo-secured document: 4
-- Duplicate a well-known piece of art: 6
-- Forge a cryptographic access token: 8]
+  - Manipulate an invoice or other unsecured document: 2
+  - Forge a watermarked or holo-secured document: 4
+  - Duplicate a well-known piece of art: 6
+  - Forge a cryptographic access token: 8
+]
 
 == Trained Skills
 
@@ -844,10 +866,11 @@ regardless of how well they roll on their check, at the GM's discretion.
 
 #note[==== Sample Lockpicking difficulties
 
-- Picking a well-made lock with improvised tools: 4
-- Picking a high-security lock: 6
-- Bypassing a multi-modal access control system: 8
-- Bypassing a magically reinforced, mastercrafted multi-lock: 10]
+  - Picking a well-made lock with improvised tools: 4
+  - Picking a high-security lock: 6
+  - Bypassing a multi-modal access control system: 8
+  - Bypassing a magically reinforced, mastercrafted multi-lock: 10
+]
 
 _Hotwiring and Hacking_: The Access skill can be used to manipulate electric and
 electronic systems of all kinds, whether by crude bypasses or more subtle
@@ -857,10 +880,11 @@ subdue the recalcitrant machine.
 
 #note[==== Sample Hacking difficulties
 
-- Hotwiring a simple motor or electronic lock: 2
-- Gaining unauthorized access to a simply secured computer system: 4
-- Performing a privilege escalation attack on a well-secured computer system: 6
-- Mechanically suborning an AI core: 10]
+  - Hotwiring a simple motor or electronic lock: 2
+  - Gaining unauthorized access to a simply secured computer system: 4
+  - Performing a privilege escalation attack on a well-secured computer system: 6
+  - Mechanically suborning an AI core: 10
+]
 
 _Traps_: A character trained in the Access skill can detect and disable traps.
 The difficulties for doing so are similar to lockpicking.
@@ -887,10 +911,11 @@ concentration of components to be detected.
 
 #note[==== Sample Analyzing difficulties
 
-- Identify whether a common substance has been tampered with: 2
-- Identify the active components of an unfamiliar compound: 4
-- Detect trace quantities of a rare reagent within a complex mixture: 6
-- Fully analyze an unknown substance of extraplanar or magical origin: 8]
+  - Identify whether a common substance has been tampered with: 2
+  - Identify the active components of an unfamiliar compound: 4
+  - Detect trace quantities of a rare reagent within a complex mixture: 6
+  - Fully analyze an unknown substance of extraplanar or magical origin: 8
+]
 
 _Synthesizing Substances_: A character can use their Alchemy skill to perform
 alchemical procedures --- combining, refining, and transforming materials to
@@ -907,11 +932,12 @@ succeeds.
 
 #note[==== Sample Synthesizing difficulties
 
-- Brew a simple stimulant or sedative from common materials: 3
-- Prepare a ritual reagent of moderate power: 5
-- Synthesize a compound with precisely calibrated alchemical-magical properties:
-  7
-- Produce a substance of legendary potency or unprecedented effect: 10]
+  - Brew a simple stimulant or sedative from common materials: 3
+  - Prepare a ritual reagent of moderate power: 5
+  - Synthesize a compound with precisely calibrated alchemical-magical properties:
+    7
+  - Produce a substance of legendary potency or unprecedented effect: 10
+]
 
 _Alchemical Rituals_: When performing an alchemical recipe, Alchemy is the only
 applicable skill --- Ritual and Occultism do not apply (see _Rituals and
@@ -938,11 +964,12 @@ damage.
 
 #note[==== Sample Repair difficulties
 
-- Fix a common appliance or simple motor: 2
-- Restore a damaged circuit board or control system: 4
-- Bring a sophisticated computing system back online after catastrophic failure:
-  6
-- Reconstruct a destroyed AI subsystem from salvaged components: 8]
+  - Fix a common appliance or simple motor: 2
+  - Restore a damaged circuit board or control system: 4
+  - Bring a sophisticated computing system back online after catastrophic failure:
+    6
+  - Reconstruct a destroyed AI subsystem from salvaged components: 8
+]
 
 _Modification & Construction_: A character can use Electronics to alter existing
 devices or build new ones from salvaged or raw parts. When building something
@@ -951,10 +978,11 @@ check to establish the specifications.
 
 #note[==== Sample Modification & Construction difficulties
 
-- Jury-rig a simple bypass or adapter: 2
-- Build a functional device from salvaged parts: 4
-- Modify military-grade hardware for unauthorized use: 6
-- Construct a novel electronic component with no reference design: 8]
+  - Jury-rig a simple bypass or adapter: 2
+  - Build a functional device from salvaged parts: 4
+  - Modify military-grade hardware for unauthorized use: 6
+  - Construct a novel electronic component with no reference design: 8
+]
 
 _Assisted Hacking_: When using the Access skill to attack sophisticated computer
 systems, the GM may additionally call for an Electronics check to manipulate the
@@ -982,10 +1010,11 @@ sought.
 
 #note[==== Sample Identifying difficulties
 
-- Identify the function of a simple magitek tool: 2
-- Determine the magical properties of an unfamiliar device: 4
-- Analyze a magitek device of ancient or unknown design: 6
-- Reverse-engineer a unique magitek artifact: 8]
+  - Identify the function of a simple magitek tool: 2
+  - Determine the magical properties of an unfamiliar device: 4
+  - Analyze a magitek device of ancient or unknown design: 6
+  - Reverse-engineer a unique magitek artifact: 8
+]
 
 _Operating Magitek_: Using a familiar magitek device does not require a check.
 Checks arise when the device is unfamiliar, damaged, unstable, or actively
@@ -994,10 +1023,11 @@ was not designed for.
 
 #note[==== Sample Operating difficulties
 
-- Operate an unfamiliar but standard magitek device: 2
-- Safely activate an unstable or partially damaged device: 4
-- Override a device's magical safeguards: 6
-- Operate a device fundamentally hostile or incompatible with the user: 8]
+  - Operate an unfamiliar but standard magitek device: 2
+  - Safely activate an unstable or partially damaged device: 4
+  - Override a device's magical safeguards: 6
+  - Operate a device fundamentally hostile or incompatible with the user: 8
+]
 
 _Repair & Modification_: A character can use Magitek to restore damaged devices
 or alter their function, including re-seating magical cores and recalibrating
@@ -1006,10 +1036,11 @@ extends to non-magical components.
 
 #note[==== Sample Repair & Modification difficulties
 
-- Repair a lightly damaged magitek device: 3
-- Restore a device with a damaged magical core: 5
-- Modify a device to function outside its intended parameters: 7
-- Integrate two incompatible magical systems within a single device: 9]
+  - Repair a lightly damaged magitek device: 3
+  - Restore a device with a damaged magical core: 5
+  - Modify a device to function outside its intended parameters: 7
+  - Integrate two incompatible magical systems within a single device: 9
+]
 
 _Crafting Magitek_: A character with sufficient expertise can attempt to create
 new magitek devices. Magitek provides the overall design and integration of
@@ -1043,11 +1074,12 @@ presence. This typically precedes any attempt to commune with or bind it.
 
 #note[==== Sample Identifying difficulties
 
-- Identify the broad category of a supernatural presence (spirit, divine
-  fragment, etc.): 2
-- Determine the domain or allegiance of a known type of entity: 4
-- Assess the disposition and intent of an unfamiliar entity: 5
-- Identify a rare, concealed, or actively deceptive supernatural presence: 8]
+  - Identify the broad category of a supernatural presence (spirit, divine
+    fragment, etc.): 2
+  - Determine the domain or allegiance of a known type of entity: 4
+  - Assess the disposition and intent of an unfamiliar entity: 5
+  - Identify a rare, concealed, or actively deceptive supernatural presence: 8
+]
 
 _Communing_: A character can use Occultism to contact or negotiate with a spirit
 or divine force. Unlike ritual casting, the outcome of a communion is not
@@ -1062,10 +1094,11 @@ not commanded.
 
 #note[==== Sample Divination difficulties
 
-- Seek a broad impression of a past event: 3
-- Seek a clear image of a specific past event: 5
-- Request a vision of a probable future: 6
-- Seek precise knowledge of a hidden or deliberately obscured truth: 9]
+  - Seek a broad impression of a past event: 3
+  - Seek a clear image of a specific past event: 5
+  - Request a vision of a probable future: 6
+  - Seek precise knowledge of a hidden or deliberately obscured truth: 9
+]
 
 _Warding & Binding_: A character can use Occultism to ward a location against
 supernatural intrusion or to bind a spirit, constraining its actions. The
@@ -1073,10 +1106,11 @@ difficulty depends on the power of the entity and the scope of the constraint.
 
 #note[==== Sample Warding & Binding difficulties
 
-- Ward a small space against minor spirits: 3
-- Bind a willing or weakened entity: 4
-- Ward against a powerful or persistent supernatural presence: 6
-- Bind an unwilling and powerful entity: 9]
+  - Ward a small space against minor spirits: 3
+  - Bind a willing or weakened entity: 4
+  - Ward against a powerful or persistent supernatural presence: 6
+  - Bind an unwilling and powerful entity: 9
+]
 
 _Casting Rituals_: Occultism may be used in place of Ritual for the casting of
 rituals that draw on Divine or esoteric Psychic magic, such as those of the Fate
@@ -1103,11 +1137,12 @@ depends on the combination of speed, conditions, and the demands of the route.
 
 #note[==== Sample Navigation difficulties
 
-- Navigate a damaged road or choppy water at speed: 2
-- Pilot through dense terrain, storm conditions, or heavy traffic: 4
-- Thread through a collapsing structure or tight urban canyon at speed: 6
-- Pilot a badly damaged vehicle through extreme or rapidly changing conditions:
-  8]
+  - Navigate a damaged road or choppy water at speed: 2
+  - Pilot through dense terrain, storm conditions, or heavy traffic: 4
+  - Thread through a collapsing structure or tight urban canyon at speed: 6
+  - Pilot a badly damaged vehicle through extreme or rapidly changing conditions:
+    8
+]
 
 _Pursuit & Evasion_: When one vehicle is chasing or fleeing another, both pilots
 make opposed Piloting checks. The victor gains or maintains positional
@@ -1122,10 +1157,11 @@ speed and maneuverability.
 
 #note[==== Sample Combat Maneuver difficulties
 
-- Ram a stationary or slow-moving target: 2
-- Execute a precise intercept or blocking maneuver: 4
-- Perform a high-speed attack run through hostile fire: 6
-- Execute a maneuver against a vastly more agile vehicle: 8]
+  - Ram a stationary or slow-moving target: 2
+  - Execute a precise intercept or blocking maneuver: 4
+  - Perform a high-speed attack run through hostile fire: 6
+  - Execute a maneuver against a vastly more agile vehicle: 8
+]
 
 === Ritual (T; WIL + ATT)
 
@@ -1163,10 +1199,11 @@ and how well it has been obscured.
 
 #note[==== Sample Identifying difficulties
 
-- Identify the school or broad domain of an active magical effect: 2
-- Determine the function and approximate power of a ritual circle: 4
-- Fully analyze a complex or layered arcane working: 6
-- Decode a deliberately obfuscated or alien magical inscription: 8]
+  - Identify the school or broad domain of an active magical effect: 2
+  - Determine the function and approximate power of a ritual circle: 4
+  - Fully analyze a complex or layered arcane working: 6
+  - Decode a deliberately obfuscated or alien magical inscription: 8
+]
 
 === Shop (T; DEX + STR)
 
@@ -1189,10 +1226,11 @@ complexity of the object.
 
 #note[==== Sample Repair difficulties
 
-- Repair a simple tool or piece of equipment: 2
-- Restore a damaged weapon or piece of armour: 4
-- Rebuild a complex mechanical device from partial components: 6
-- Reconstruct a badly damaged or intricate item with missing parts: 8]
+  - Repair a simple tool or piece of equipment: 2
+  - Restore a damaged weapon or piece of armour: 4
+  - Rebuild a complex mechanical device from partial components: 6
+  - Reconstruct a badly damaged or intricate item with missing parts: 8
+]
 
 _Fabrication_: A character can use Shop to create new items from raw or salvaged
 materials. Working from known plans or patterns reduces the difficulty;
@@ -1200,10 +1238,11 @@ improvising a design or working without proper tools increases it.
 
 #note[==== Sample Fabrication difficulties
 
-- Fabricate a simple tool or fitting: 2
-- Craft a functional weapon or piece of armour: 4
-- Construct a complex mechanical assembly: 6
-- Produce a masterwork item requiring exceptional skill and materials: 9]
+  - Fabricate a simple tool or fitting: 2
+  - Craft a functional weapon or piece of armour: 4
+  - Construct a complex mechanical assembly: 6
+  - Produce a masterwork item requiring exceptional skill and materials: 9
+]
 
 _Appraisal_: A character trained in Shop can assess the quality, provenance, and
 condition of physical objects. This covers identifying fine craftsmanship,
@@ -1212,10 +1251,11 @@ techniques.
 
 #note[==== Sample Appraisal difficulties
 
-- Assess the general quality of a common item: 2
-- Identify a notable flaw or point of weakness in a well-made object: 4
-- Determine the origin or maker of an unusual or deliberately disguised item: 6
-- Detect a masterfully executed forgery: 8]
+  - Assess the general quality of a common item: 2
+  - Identify a notable flaw or point of weakness in a well-made object: 4
+  - Determine the origin or maker of an unusual or deliberately disguised item: 6
+  - Detect a masterfully executed forgery: 8
+]
 
 == Rituals and Recipes
 
@@ -1325,7 +1365,7 @@ requiring both components and influence, or both essence and influence.
 Sacrifices explicitly listed by a ritual are _required_ for the ritual to function,
 but all power sources can be used to cast any ritual. The exception are influences ---
 a given influence can only provide power to a ritual of matching aspect. Even an
-overwhelming Ash influence is entirely useless to casting a ritual that is Scarab- and 
+overwhelming Ash influence is entirely useless to casting a ritual that is Scarab- and
 Sun-aspected, for example.
 
 === Skill Checks
@@ -1371,7 +1411,14 @@ or your character may come up with one on their own.
   "5 minutes",
   "The Rite of Opening creates a physical path between you and a location of your choosing whose approximate whereabouts are known to you. The Rite is potentially destructive but never creative: it can tear down barriers, but it cannot construct bridges. When opening artificial obstacles like locked doors, the rite may open simple obstacles non-destructively, but may simply unhinge a door equipped with a complex magical lock. It can burrow or blast through natural barriers that are sufficiently thin.",
   aspects: ("Key",),
-  modifiers: ("Target guarded by magical barriers: +(tier of barrier) per barrier.", "Target behind rock or earth: +2 per meter.", "Target behind steel: +2 per 10 cm.", "Target known to within <10 m accuracy: +2.", "Target known to within <50 m: +5.", "Target >30 m away: +1 per 10 m."),
+  modifiers: (
+    "Target guarded by magical barriers: +(tier of barrier) per barrier.",
+    "Target behind rock or earth: +2 per meter.",
+    "Target behind steel: +2 per 10 cm.",
+    "Target known to within <10 m accuracy: +2.",
+    "Target known to within <50 m: +5.",
+    "Target >30 m away: +1 per 10 m.",
+  ),
   flavor: "With the final twist of your implement, you open a path to your destination.",
 )
 
@@ -1407,7 +1454,7 @@ or your character may come up with one on their own.
   "6",
   "30 minutes",
   "You inscribe a circle of binding on a surface up to 3 squares in diameter. Any summoned, extraplanar, or undead creature that enters or is summoned into the circle cannot leave it by any means (including teleportation) unless the circle is physically broken or the creature succeeds on a D8 Potential check at the start of each of its turns. The circle persists for 24 hours or until broken.",
-  aspects: ("Crown","Mist"),
+  aspects: ("Crown", "Mist"),
   failure: "The circle appears complete but has a hidden flaw. The first creature bound in it may attempt to escape with a D4 Potential check instead.",
 )
 
@@ -1539,7 +1586,11 @@ The following rituals apply enchantments to items (see _Enchantments_ in the Equ
   "30 minutes",
   "You observe a creature or location remotely. You must have either met the target creature, visited the target location, or possess an object closely associated with either. On success, you perceive the target's immediate surroundings (sight and sound) for up to 10 minutes. The target may sense the scrying with a D6 Potential check — on success, they know they are being observed and by whom.",
   aspects: ("Moon",),
-  modifiers: ("Target possesses anti-scrying wards: +(tier of ward).", "Target is on another plane: +4.", "You possess a piece of the target (hair, belonging): -2."),
+  modifiers: (
+    "Target possesses anti-scrying wards: +(tier of ward).",
+    "Target is on another plane: +4.",
+    "You possess a piece of the target (hair, belonging): -2.",
+  ),
   failure: "The scrying fails and the target is automatically alerted to the attempt.",
 )
 

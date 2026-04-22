@@ -35,7 +35,12 @@
   box(width: width, inset: 2pt)[
     #text(size: 6.5pt, fill: luma(100), weight: "bold", upper(label))
     #v(2pt)
-    #rect(width: 100%, height: height, stroke: (bottom: 0.5pt + luma(160)), fill: none)
+    #rect(
+      width: 100%,
+      height: height,
+      stroke: (bottom: 0.5pt + luma(160)),
+      fill: none,
+    )
   ]
 }
 
@@ -61,11 +66,26 @@
   grid(
     columns: (5fr, 2fr, 2fr, 2fr),
     column-gutter: 3pt,
-    align: (left + horizon, center + horizon, center + horizon, center + horizon),
-    text(size: 7.5pt, weight: "bold", label + "  " + text(size: 6pt, fill: luma(110), weight: "regular", attrs)),
+    align: (
+      left + horizon,
+      center + horizon,
+      center + horizon,
+      center + horizon,
+    ),
+    text(
+      size: 7.5pt,
+      weight: "bold",
+      label + "  " + text(size: 6pt, fill: luma(110), weight: "regular", attrs),
+    ),
     rect(width: 100%, height: 18pt, stroke: 0.4pt + luma(140), radius: 2pt),
     rect(width: 100%, height: 18pt, stroke: 0.4pt + luma(140), radius: 2pt),
-    rect(width: 100%, height: 18pt, stroke: 0.6pt + luma(80), radius: 2pt, fill: colors.otherRow),
+    rect(
+      width: 100%,
+      height: 18pt,
+      stroke: 0.6pt + luma(80),
+      radius: 2pt,
+      fill: colors.otherRow,
+    ),
   )
 }
 
@@ -73,12 +93,32 @@
   grid(
     columns: (10pt, 4fr, 2fr, 2fr, 2fr),
     column-gutter: 3pt,
-    align: (center + horizon, left + horizon, center + horizon, center + horizon, center + horizon),
-    if trained { rect(width: 10pt, height: 10pt, stroke: 0.5pt + luma(120), radius: 2pt) } else { box(width: 10pt) },
-    text(size: 7pt, weight: "bold", label + "  " + text(size: 5.5pt, fill: luma(120), weight: "regular", attrs)),
+    align: (
+      center + horizon,
+      left + horizon,
+      center + horizon,
+      center + horizon,
+      center + horizon,
+    ),
+    if trained {
+      rect(width: 10pt, height: 10pt, stroke: 0.5pt + luma(120), radius: 2pt)
+    } else { box(width: 10pt) },
+    text(
+      size: 7pt,
+      weight: "bold",
+      label
+        + "  "
+        + text(size: 5.5pt, fill: luma(120), weight: "regular", attrs),
+    ),
     rect(width: 100%, height: 16pt, stroke: 0.4pt + luma(140), radius: 2pt),
     rect(width: 100%, height: 16pt, stroke: 0.4pt + luma(140), radius: 2pt),
-    rect(width: 100%, height: 16pt, stroke: 0.6pt + luma(80), radius: 2pt, fill: colors.otherRow),
+    rect(
+      width: 100%,
+      height: 16pt,
+      stroke: 0.6pt + luma(80),
+      radius: 2pt,
+      fill: colors.otherRow,
+    ),
   )
 }
 
@@ -126,7 +166,10 @@
   box(width: width, inset: (x: 1pt, y: 0pt))[
     #text(size: 5.5pt, fill: luma(100), weight: "bold", upper(label))
     #h(2pt)
-    #box(width: 1fr, baseline: -1pt, line(length: 100%, stroke: 0.4pt + luma(160)))
+    #box(width: 1fr, baseline: -1pt, line(
+      length: 100%,
+      stroke: 0.4pt + luma(160),
+    ))
   ]
 }
 
@@ -163,8 +206,7 @@
     #grid(
       columns: (1fr, 1fr),
       column-gutter: 2pt,
-      compact-field("Keywords"),
-      compact-field("Resist"),
+      compact-field("Keywords"), compact-field("Resist"),
     )
     #v(11pt)
     // Rows 4-6: effect lines
@@ -193,7 +235,13 @@
 // PAGE 1 — Character
 // ══════════════════════════════════════════════════════════════════════
 
-#align(center, text(font: "Libre Baskerville", size: 18pt, fill: colors.pfgreen, weight: "bold", "Ashen — Character Sheet"))
+#align(center, text(
+  font: "Libre Baskerville",
+  size: 18pt,
+  fill: colors.pfgreen,
+  weight: "bold",
+  "Ashen — Character Sheet",
+))
 
 #v(6pt)
 
@@ -208,8 +256,7 @@
     grid(
       columns: (3fr, 2fr),
       column-gutter: 4pt,
-      field("Character Name"),
-      field("Race / Subtype"),
+      field("Character Name"), field("Race / Subtype"),
     )
     v(2pt)
     grid(
@@ -230,7 +277,11 @@
       val-box("HP", accent: colors.pfred, height: 36pt),
       val-box("FP", accent: colors.pfnavy, height: 36pt),
       val-box("EP", accent: colors.lightgreen, height: 36pt),
-      val-box([#text(font: ("Sofia Sans",), size: 8pt, "ƒ")], accent: colors.pfbrown, height: 36pt),
+      val-box(
+        [#text(font: ("Sofia Sans",), size: 8pt, "ƒ")],
+        accent: colors.pfbrown,
+        height: 36pt,
+      ),
     )
     v(2pt)
     grid(
@@ -239,19 +290,34 @@
       {
         align(center)[
           #text(size: 6pt, fill: luma(120), "Current HP")
-          #rect(width: 100%, height: 20pt, stroke: 0.5pt + colors.pfred, radius: 2pt)
+          #rect(
+            width: 100%,
+            height: 20pt,
+            stroke: 0.5pt + colors.pfred,
+            radius: 2pt,
+          )
         ]
       },
       {
         align(center)[
           #text(size: 6pt, fill: luma(120), "Current FP")
-          #rect(width: 100%, height: 20pt, stroke: 0.5pt + colors.pfnavy, radius: 2pt)
+          #rect(
+            width: 100%,
+            height: 20pt,
+            stroke: 0.5pt + colors.pfnavy,
+            radius: 2pt,
+          )
         ]
       },
       {
         align(center)[
           #text(size: 6pt, fill: luma(120), "Current EP")
-          #rect(width: 100%, height: 20pt, stroke: 0.5pt + colors.lightgreen, radius: 2pt)
+          #rect(
+            width: 100%,
+            height: 20pt,
+            stroke: 0.5pt + colors.lightgreen,
+            radius: 2pt,
+          )
         ]
       },
     )
@@ -274,16 +340,11 @@
       columns: (1fr, 1fr),
       column-gutter: 4pt,
       row-gutter: 4pt,
-      score-box("Strength (STR)"),
-      score-box("Endurance (END)"),
-      score-box("Dexterity (DEX)"),
-      score-box("Agility (AGI)"),
-      score-box("Attunement (ATT)"),
-      score-box("Sight (SGT)"),
-      score-box("Intelligence (INT)"),
-      score-box("Perception (PER)"),
-      score-box("Will (WIL)"),
-      score-box("Presence (PRS)"),
+      score-box("Strength (STR)"), score-box("Endurance (END)"),
+      score-box("Dexterity (DEX)"), score-box("Agility (AGI)"),
+      score-box("Attunement (ATT)"), score-box("Sight (SGT)"),
+      score-box("Intelligence (INT)"), score-box("Perception (PER)"),
+      score-box("Will (WIL)"), score-box("Presence (PRS)"),
     )
     v(8pt)
 
@@ -326,24 +387,31 @@
       condition-box("Blinded"),
       condition-box("Dazed"),
       condition-box("Disoriented"),
+
       condition-box("Exposed"),
       condition-box("Panicked"),
       condition-box("Staggered"),
+
       condition-box("Stunned"),
       condition-box("Vulnerable"),
       condition-box("Prone"),
+
       condition-box("Immobilized"),
       condition-box("Restrained"),
       condition-box("Frozen"),
+
       condition-box("Weakened"),
       condition-box("Dominated"),
       condition-box("Exhausted"),
+
       condition-box("Poisoned"),
       condition-box("Diseased"),
       condition-box("Bleeding"),
+
       condition-box("Burning"),
       condition-box("Frightened"),
       condition-box("Still"),
+
       condition-box("Disrupt ×"),
       condition-box("Shred ×"),
       condition-box("Slowed ×"),
@@ -358,23 +426,25 @@
       columns: (1fr, 1fr, 1fr),
       column-gutter: 4pt,
       row-gutter: 4pt,
-      val-box("Evasion"),
-      val-box("Armor"),
-      val-box("Ward"),
-      val-box("Move Speed"),
-      val-box("AP / Turn"),
+      val-box("Evasion"), val-box("Armor"), val-box("Ward"),
+      val-box("Move Speed"), val-box("AP / Turn"),
     )
     v(4pt)
     stack(
-    field("Resistances / Weaknesses / Immunities", height: 10pt),
-    for i in range(5) {
-      note-line()
-    }
+      field("Resistances / Weaknesses / Immunities", height: 10pt),
+      for i in range(5) {
+        note-line()
+      },
     )
     v(4pt)
     sheet-header("Skills")
     v(2pt)
-    text(size: 6pt, fill: luma(120), style: "italic", "Trained skills (☐) start at rank 0; untrained start at rank 1.")
+    text(
+      size: 6pt,
+      fill: luma(120),
+      style: "italic",
+      "Trained skills (☐) start at rank 0; untrained start at rank 1.",
+    )
     v(2pt)
     // Column headers
     grid(
@@ -440,7 +510,13 @@
 
 #pagebreak()
 
-#align(center, text(font: "Libre Baskerville", size: 18pt, fill: colors.pfgreen, weight: "bold", "Ashen — Advances"))
+#align(center, text(
+  font: "Libre Baskerville",
+  size: 18pt,
+  fill: colors.pfgreen,
+  weight: "bold",
+  "Ashen — Advances",
+))
 
 #v(6pt)
 
@@ -454,7 +530,13 @@
     grid(
       columns: (4fr, 1fr, 1fr, 1fr, 1fr),
       column-gutter: 2pt,
-      align: (left + bottom, center + bottom, center + bottom, center + bottom, center + bottom),
+      align: (
+        left + bottom,
+        center + bottom,
+        center + bottom,
+        center + bottom,
+        center + bottom,
+      ),
       text(size: 5.5pt, fill: luma(120), weight: "bold", "NAME"),
       text(size: 5.5pt, fill: luma(120), weight: "bold", "TIER"),
       text(size: 5.5pt, fill: luma(120), weight: "bold", "XP"),
@@ -473,7 +555,13 @@
     grid(
       columns: (4fr, 1fr, 1fr, 1fr, 1fr),
       column-gutter: 2pt,
-      align: (left + bottom, center + bottom, center + bottom, center + bottom, center + bottom),
+      align: (
+        left + bottom,
+        center + bottom,
+        center + bottom,
+        center + bottom,
+        center + bottom,
+      ),
       text(size: 5.5pt, fill: luma(120), weight: "bold", "NAME"),
       text(size: 5.5pt, fill: luma(120), weight: "bold", "TIER"),
       text(size: 5.5pt, fill: luma(120), weight: "bold", "XP"),
@@ -493,7 +581,13 @@
 
 #pagebreak()
 
-#align(center, text(font: "Libre Baskerville", size: 18pt, fill: colors.pfgreen, weight: "bold", "Ashen — Equipment & Inventory"))
+#align(center, text(
+  font: "Libre Baskerville",
+  size: 18pt,
+  fill: colors.pfgreen,
+  weight: "bold",
+  "Ashen — Equipment & Inventory",
+))
 
 #v(6pt)
 
@@ -557,35 +651,34 @@
 
     v(4pt)
 
-    sheet-header("Catalyst / Reliquary") 
+    sheet-header("Catalyst / Reliquary")
     for i in range(2) {
-    v(2pt)
-    grid(
-      columns: (3fr, 1fr, 1fr, 1fr),
-      column-gutter: 3pt,
-      field("Name / Type", height: 12pt),
-      field("Tier", height: 12pt),
-      field("Price", height: 12pt),
-      field("Hands", height: 12pt),
-    )
-    grid(
-      columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
-      column-gutter: 3pt,
-      field("Dmg", height: 12pt),
-      field("Inc", height: 12pt),
-      field("Bulk", height: 12pt),
-      field("Chg", height: 12pt),
-      field("Class", height: 12pt),
-      field("Will", height: 12pt),
-      field("Favor", height: 12pt),
-    )
-    field("Aspects / Enchantments / Specialized", height: 12pt)
+      v(2pt)
+      grid(
+        columns: (3fr, 1fr, 1fr, 1fr),
+        column-gutter: 3pt,
+        field("Name / Type", height: 12pt),
+        field("Tier", height: 12pt),
+        field("Price", height: 12pt),
+        field("Hands", height: 12pt),
+      )
+      grid(
+        columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+        column-gutter: 3pt,
+        field("Dmg", height: 12pt),
+        field("Inc", height: 12pt),
+        field("Bulk", height: 12pt),
+        field("Chg", height: 12pt),
+        field("Class", height: 12pt),
+        field("Will", height: 12pt),
+        field("Favor", height: 12pt),
+      )
+      field("Aspects / Enchantments / Specialized", height: 12pt)
     }
   },
 
   // ── RIGHT: Carried Gear & Consumables ───────────────────────────
   {
-
     sheet-header("Total Statistics")
     v(4pt)
     grid(
@@ -650,7 +743,13 @@
 
 #pagebreak()
 
-#align(center, text(font: "Libre Baskerville", size: 18pt, fill: colors.pfgreen, weight: "bold", "Ashen — Powers"))
+#align(center, text(
+  font: "Libre Baskerville",
+  size: 18pt,
+  fill: colors.pfgreen,
+  weight: "bold",
+  "Ashen — Powers",
+))
 
 #v(6pt)
 
@@ -662,7 +761,12 @@
   {
     sheet-header("Powers")
     v(2pt)
-    text(size: 5.5pt, fill: luma(120), style: "italic", "☐ doubles as arcane memorization marker. Use effect lines for domain, tap, miss, augments.")
+    text(
+      size: 5.5pt,
+      fill: luma(120),
+      style: "italic",
+      "☐ doubles as arcane memorization marker. Use effect lines for domain, tap, miss, augments.",
+    )
     v(3pt)
     stack(
       spacing: 4pt,
@@ -683,7 +787,12 @@
 
     sheet-header("Rituals Known")
     v(1pt)
-    text(size: 5.5pt, fill: luma(120), style: "italic", "Name / Tier / Skill / Difficulty / Magnitude / Casting Time / Sacrifice")
+    text(
+      size: 5.5pt,
+      fill: luma(120),
+      style: "italic",
+      "Name / Tier / Skill / Difficulty / Magnitude / Casting Time / Sacrifice",
+    )
     v(1pt)
     for i in range(17) {
       note-line()

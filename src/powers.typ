@@ -171,13 +171,20 @@ When a psychic casting check results in a *critical failure* (zero or negative t
   "Cosmic Backlash",
   columns: (1fr, 5fr),
   breakable: true,
-  [*D10*], [*Result*],
-  [1--2], [*Psychic Feedback.* The caster takes Psychic damage equal to the power's Focus cost, reduced by Ward. The caster is Dazed until the end of their next turn. _(The mildest outcome --- similar to arcane backlash.)_],
-  [3--4], [*Sensory Overload.* The caster's senses are overwhelmed by a flood of unfiltered perception. The caster is *Blinded* and *Deafened* (save ends both). While this effect lasts, the caster perceives fragments of nearby creatures' thoughts and emotions --- disorienting but occasionally informative, at the GM's discretion.],
-  [5--6], [*Reality Fracture.* The fabric of space distorts in a Burst 2 centered on the caster. All creatures in the area (including the caster) are teleported to random unoccupied squares within 10 squares of their current position. The GM determines the destinations. Additionally, the affected area becomes *difficult terrain* for the remainder of the encounter as space knits itself back together.],
-  [7--8], [*Ego Dissolution.* The caster's psychic identity partially unravels. The caster loses *Focus* equal to 3 × the attempted power's tier and is *Stunned* for 1 round (no save). At the GM's discretion, a fragment of the caster's thoughts may be broadcast to all psychically sensitive creatures within 30 squares --- allies and enemies alike.],
-  [9], [*Warp Manifestation.* The power manifests --- but not as intended. The GM chooses a different valid target for the power (possibly the caster or their allies), or the power's effect is inverted (healing becomes damage, a buff becomes a debuff, a teleport sends the target in the wrong direction). The power uses its normal stats but strikes where reality, not the caster, directs it.],
-  [10], [*Cosmic Breach.* The failed power rips a momentary hole in the veil between the physical world and the Fog. All creatures within Burst 3 of the caster take Psychic damage equal to 200% of the caster's catalyst damage, reduced by Ward. The caster loses *1 EP* as the Fog drinks from their essence. The breach lingers for 1D4 rounds as a zone of *Dense Fog* (see Exploration chapter). Creatures that start their turn in the zone must make a D6 Potential check or be *Frightened* (save ends).],
+  [*D10*],
+  [*Result*],
+  [1--2],
+  [*Psychic Feedback.* The caster takes Psychic damage equal to the power's Focus cost, reduced by Ward. The caster is Dazed until the end of their next turn. _(The mildest outcome --- similar to arcane backlash.)_],
+  [3--4],
+  [*Sensory Overload.* The caster's senses are overwhelmed by a flood of unfiltered perception. The caster is *Blinded* and *Deafened* (save ends both). While this effect lasts, the caster perceives fragments of nearby creatures' thoughts and emotions --- disorienting but occasionally informative, at the GM's discretion.],
+  [5--6],
+  [*Reality Fracture.* The fabric of space distorts in a Burst 2 centered on the caster. All creatures in the area (including the caster) are teleported to random unoccupied squares within 10 squares of their current position. The GM determines the destinations. Additionally, the affected area becomes *difficult terrain* for the remainder of the encounter as space knits itself back together.],
+  [7--8],
+  [*Ego Dissolution.* The caster's psychic identity partially unravels. The caster loses *Focus* equal to 3 × the attempted power's tier and is *Stunned* for 1 round (no save). At the GM's discretion, a fragment of the caster's thoughts may be broadcast to all psychically sensitive creatures within 30 squares --- allies and enemies alike.],
+  [9],
+  [*Warp Manifestation.* The power manifests --- but not as intended. The GM chooses a different valid target for the power (possibly the caster or their allies), or the power's effect is inverted (healing becomes damage, a buff becomes a debuff, a teleport sends the target in the wrong direction). The power uses its normal stats but strikes where reality, not the caster, directs it.],
+  [10],
+  [*Cosmic Breach.* The failed power rips a momentary hole in the veil between the physical world and the Fog. All creatures within Burst 3 of the caster take Psychic damage equal to 200% of the caster's catalyst damage, reduced by Ward. The caster loses *1 EP* as the Fog drinks from their essence. The breach lingers for 1D4 rounds as a zone of *Dense Fog* (see Exploration chapter). Creatures that start their turn in the zone must make a D6 Potential check or be *Frightened* (save ends).],
 )
 
 Add the power's tier to the D10 roll if the attempted power was T4 or higher. A caster who rolls a natural 10 on a T5 power, for example, rolls 10 + 5 = 15 --- the Cosmic Breach result, with appropriately devastating consequences.
@@ -219,7 +226,7 @@ Marksmanship powers, also known as _Marksmanship Exploits_, are ranged combat
 techniques practiced by sharpshooters, gunslingers, and archers. Like martial
 exploits, they do not require a catalyst; they require a ranged weapon to use.
 
-= List of Powers 
+= List of Powers
 
 == Arcane
 
