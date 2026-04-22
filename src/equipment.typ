@@ -2464,7 +2464,7 @@ Common catalysts include Soul Crystals and Prana Crystals (Light, T1), Amber Rod
   [Grenade],
   [¼],
   [Burst 1/10],
-  [4+D10 Acid damage],
+  [4+D10 Chemical damage],
   [_#feathers 100_],
   [Frag Grenade],
   [1],
