@@ -1,5 +1,4 @@
-#import "formatting/style.typ": *
-#import "declarations.typ": *
+#import "../formatting/declarations.typ": *
 #set page(paper: "a4")
 #show: pf-stylization
 #set document(title: "Ashen Rulebook")

@@ -1,4 +1,4 @@
-#import "declarations.typ": *
+#import "../formatting/declarations.typ": *
 
 #chap-header("9", [= Setting], "The World of Ash")
 

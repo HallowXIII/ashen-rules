@@ -1,4 +1,4 @@
-#import "declarations.typ": *
+#import "../formatting/declarations.typ": *
 
 #chap-header("10", [= GM Guide], "How to run the game")
 

@@ -1,4 +1,4 @@
-#import "declarations.typ": *
+#import "../formatting/declarations.typ": *
 
 #chap-header("3", [= Skills], "How your character interacts with the world")
 

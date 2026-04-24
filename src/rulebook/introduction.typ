@@ -1,4 +1,4 @@
-#import "declarations.typ": *
+#import "../formatting/declarations.typ": *
 
 #chap-header("1", [= Introduction], "The Basics of the Game")
 \

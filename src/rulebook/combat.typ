@@ -1,4 +1,4 @@
-#import "declarations.typ": *
+#import "../formatting/declarations.typ": *
 
 #chap-header("7", [= Combat], "When only force may prevail")
 

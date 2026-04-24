@@ -1,5 +1,5 @@
-#import "declarations.typ": feathers
-#import "formatting/style.typ": colors
+#import "../formatting/declarations.typ": feathers
+#import "../formatting/style.typ": colors
 
 // Character sheet — designed as a printable appendix
 

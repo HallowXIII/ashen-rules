@@ -1,4 +1,4 @@
-#import "declarations.typ": *
+#import "../formatting/declarations.typ": *
 
 #chap-header("5", [= Magic and Powers], "Extraordinary Abilities")
 
@@ -165,9 +165,9 @@ require XP to be spent for each power learned.
 
 ==== Cosmic Backlash
 
-When a psychic casting check results in a *critical failure* (zero or negative total successes), the power tears loose from the caster's control. The Focus cost is still spent, and the intended effect does not occur. Instead, the caster must roll on the Cosmic Backlash table. The severity of the backlash depends on the tier of the power that was attempted.
+When a psychic casting check results in a *critical failure* (zero or negative total successes), the power tears loose from the caster's control. The Focus cost is still spent, and the intended effect does not occur. Instead, the caster must roll on @cosmic-backlash. The severity of the backlash depends on the tier of the power that was attempted.
 
-#pftab(
+#float[#floating-table(
   "Cosmic Backlash",
   columns: (1fr, 5fr),
   breakable: true,
@@ -185,7 +185,7 @@ When a psychic casting check results in a *critical failure* (zero or negative t
   [*Warp Manifestation.* The power manifests --- but not as intended. The GM chooses a different valid target for the power (possibly the caster or their allies), or the power's effect is inverted (healing becomes damage, a buff becomes a debuff, a teleport sends the target in the wrong direction). The power uses its normal stats but strikes where reality, not the caster, directs it.],
   [10],
   [*Cosmic Breach.* The failed power rips a momentary hole in the veil between the physical world and the Fog. All creatures within Burst 3 of the caster take Psychic damage equal to 200% of the caster's catalyst damage, reduced by Ward. The caster loses *1 EP* as the Fog drinks from their essence. The breach lingers for 1D4 rounds as a zone of *Dense Fog* (see Exploration chapter). Creatures that start their turn in the zone must make a D6 Potential check or be *Frightened* (save ends).],
-)
+) <cosmic-backlash>]
 
 Add the power's tier to the D10 roll if the attempted power was T4 or higher. A caster who rolls a natural 10 on a T5 power, for example, rolls 10 + 5 = 15 --- the Cosmic Breach result, with appropriately devastating consequences.
 
@@ -244,6 +244,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   difficulty: "2",
   cost: "1 Increment",
   resistance: "Yes (Dodge vs Arcane Check)",
+  armor: true,
 )
 
 #power-description(
@@ -251,13 +252,14 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Arcane Spell",
   1,
   "2",
-  "On hit: 100% Lightning damage, and the target is stunned for one round.",
+  "The target takes 100% Lightning damage and must make a D3 Stamina resist. On failure: the target is stunned for one round.",
   keywords: ("Lightning",),
   flavor: "You raise your catalyst, and with a deafening peal of thunder, a bolt of lightning erupts from it to smite your enemies.",
   range: "Line 10",
   difficulty: "3",
   cost: "1 Increment",
   resistance: "Yes (Stamina 3)",
+  armor: false,
 )
 
 #power-description(
@@ -265,12 +267,13 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Arcane Spell",
   1,
   "2",
-  "On hit: 100% Cold damage. The target is Slowed (5) for 1 round.",
+  "On hit: 100% Cold damage and the target must make a D3 Stamina resist. On failure: The target is Slowed (5) for 1 round.",
   keywords: ("Cold",),
   range: "one creature within 15",
   difficulty: "2",
   cost: "1 Increment",
-  resistance: "Yes (Stamina 3)",
+  resistance: "Yes (Dodge 3; Stamina 3)",
+  armor: true,
 )
 
 #power-description(
@@ -284,6 +287,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   difficulty: "3",
   cost: "1 Increment",
   resistance: "Yes (Dodge 3)",
+  armor: true,
 )
 
 #power-description(
@@ -291,7 +295,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Arcane Spell",
   1,
   "3 AP; sustain 1 AP",
-  "You conjure a small elemental from raw magical energy. The elemental is a mindless summon (see _Summoning and Binding_) with the following baseline stats: 15 HP, 4 Armor, 2 Ward, 3 Evasion, 4 AP, Speed 4. It makes melee attacks at 5 dice dealing 6+D6 damage of a type matching its element (Thermal for fire, Cold for ice, Impact for earth, Electric for air). The elemental persists as long as you sustain this power.",
+  "You conjure a small elemental from raw magical energy. The elemental is a mindless summon (see _Summoning and Binding_) with the following baseline stats: 15 HP/T, 2+2/T Armor, 2/T Ward, 2+T Evasion, 4 AP, Speed 3+T. It makes melee attacks at 3+2/T dice dealing 100% Catalyst damage of a type matching its element (Thermal for fire, Cold for ice, Impact for earth, Lightning for air). The elemental persists as long as you sustain this power.",
   keywords: ("Summon", "Key"),
   flavor: "A flickering shape coalesces from the air --- fire, frost, stone, or crackling lightning, bound to your will.",
   difficulty: "3",
@@ -325,7 +329,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   range: "Burst 3 within 30",
   difficulty: "4",
   cost: "2 Increments",
-  resistance: "Yes (Dodge 4)",
+  resistance: "No (Dive)",
 )
 
 #power-description(
@@ -359,7 +363,12 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Arcane Spell",
   2,
   "3 AP; sustain 1 AP",
-  "You conjure a combat-ready elemental, larger and more aggressive than a servant. The elemental is a mindless summon with the following baseline stats: 25 HP, 6 Armor, 4 Ward, 3 Evasion, 4 AP, Speed 5. It makes melee attacks at 7 dice dealing 10+D8 damage of a type matching its element. The elemental persists as long as you sustain this power.",
+  [You conjure a combat-ready elemental, larger and more aggressive than a
+          servant. The elemental is a mindless summon with the following baseline
+          stats: 20/T HP, 4+2/T Armor, 2+2/T Ward, 2+T Evasion, 4 AP, Speed 4+T.
+
+          It makes melee attacks at 3+2/T dice dealing 100% damage of a type matching
+          its element. The elemental persists as long as you sustain this power.],
   keywords: ("Summon", "Key"),
   difficulty: "5",
   cost: "3 Increments; sustain 1",
@@ -371,7 +380,13 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Arcane Spell",
   2,
   "3 AP; sustain 1 AP",
-  "You raise an armored skeleton from a corpse, binding it with stronger magic than a simple animation. The skeleton is a mindless summon with the following baseline stats: 20 HP, 8 Armor, 0 Ward, 3 Evasion, 4 AP, Speed 3. It fights with a shield and weapon: 6 dice dealing 8+D6 Rending damage, and it has Parry +2d. The skeleton persists as long as you sustain this power. If there is no suitable corpse within range, this spell fails and the Focus cost is not paid.",
+  [You raise an armored skeleton from a corpse, binding it with stronger 
+   magic than a simple animation. The skeleton is a mindless summon with the
+   following baseline stats: 20/T HP, 4/T Armor, 0 Ward, 3+T Evasion, 4 AP, Speed 1+T.
+   It fights with a shield and weapon: 3/T dice dealing 100% Rending damage,
+   and it has Parry +2d. The skeleton persists as long as you sustain this power.
+   If there is no suitable corpse within range, this spell fails and the 
+   Focus cost is not paid.],
   keywords: ("Summon", "Skull"),
   difficulty: "5",
   cost: "3 Increments; sustain 1",

@@ -1,4 +1,4 @@
-#import "declarations.typ": *
+#import "../formatting/declarations.typ": *
 
 #chap-header("2", [= Characters], "Your avatar in the Age of Ash")
 

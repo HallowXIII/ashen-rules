@@ -1,4 +1,4 @@
-#import "formatting/style.typ": *
+#import "style.typ": *
 
 // Pulled from https://github.com/typst/typst/issues/2196
 #let to-string(it) = {
@@ -204,6 +204,8 @@
   difficulty: none,
   cost: none,
   resistance: none,
+  evasion: none,
+  armor: none,
   on-hit: none,
   miss: none,
   catalyst: none,
@@ -247,6 +249,14 @@
     #if cost != none [_Cost:_ #cost \ ]
     _AP:_ #ap \
     #if resistance != none [_Resistance:_ #resistance \ ]
+    #if evasion != none {
+      let evasionYN = if evasion { "Yes" } else { "No" }
+      [_Evasion_: #evasionYN \ ]
+    }
+    #if armor != none {
+      let armorYN = if armor { "Yes" } else { "No" }
+      [_Armor_: #armorYN \ ]
+    }
 
     _Effect:_ #effect \
     #if on-hit != none [_On Hit:_ #on-hit \ ]
