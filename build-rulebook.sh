@@ -1,3 +1,3 @@
 #!/bin/env bash
 
-typst compile --font-path fonts src/rulebook/main.typ ashen.pdf
+typst compile --font-path fontd --root src src/rulebook/main.typ ashen.pdf

@@ -554,6 +554,78 @@
   // #comp.effect
 ]
 
+#let creature(
+  name,
+  role,
+  traits: (),
+  hp: none,
+  fp: none,
+  armor: none,
+  ward: none,
+  evasion: none,
+  ap: 4,
+  speed: none,
+  characteristics: (:),
+  immunities: none,
+  resistances: none,
+  special: none,
+  abilities: (),
+  xp: none,
+) = {
+  let details = ()
+
+  // Core stat lines
+  let stat-line = ()
+  if hp != none { stat-line.push([*HP* #hp]) }
+  if fp != none { stat-line.push([*FP* #fp]) }
+  if armor != none { stat-line.push([*Armor* #armor]) }
+  if ward != none { stat-line.push([*Ward* #ward]) }
+  if evasion != none { stat-line.push([*Evasion* #evasion]) }
+  stat-line.push([*AP* #ap])
+  if speed != none { stat-line.push([*Speed* #speed]) }
+  if stat-line.len() > 0 {
+    details.push(stat-line.join([ #sym.bar.v ]))
+  }
+
+  // Characteristics
+  if characteristics.len() > 0 {
+    details.push([---])
+    let char-line = characteristics.pairs().map(((k, v)) => {
+      [*#upper(k.first())#k.slice(1)* #v]
+    })
+    details.push(char-line.join([ #sym.bar.v ]))
+  }
+
+  // Immunities, resistances, special
+  if immunities != none or resistances != none or special != none {
+    details.push([---])
+    if immunities != none { details.push([*Immunities:* #immunities]) }
+    if resistances != none { details.push([*Resistances:* #resistances]) }
+    if special != none { details.push(special) }
+  }
+
+  // Abilities
+  if abilities.len() > 0 {
+    details.push([---])
+    for ability in abilities {
+      details.push(ability)
+    }
+  }
+
+  // XP
+  if xp != none {
+    details.push([---])
+    details.push([*XP:* #xp])
+  }
+
+  encounter((
+    name: name,
+    type: role,
+    traits: traits,
+    details: details,
+  ))
+}
+
 #let vehicle-stat-block(
   name,
   vehicle-type,

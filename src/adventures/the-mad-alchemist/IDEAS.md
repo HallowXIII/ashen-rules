@@ -15,7 +15,7 @@ The adventure should:
 
 - Assumption: the adventure is the first adventure run for a group
 - Situation: the adventure plays in a location on the outskirts of Venna Weald clear,
-  quite far from the settlement of Venna itself. Mysterious goings on have been 
+  near the settlement of Keshto Village. Mysterious goings on have been 
   reported here recently. After the death of several peacekeepers and civilians under
   suspicious circumstances, the leadership of the Never-Still has decided to put out
   a contract under the auspices of the Black Guard for interested Deathless to
@@ -111,7 +111,7 @@ The investigation has four threads, each building toward the finale:
 4. **The where:** the laboratory's location, hidden beneath an old Faerie site
    the party may have already visited.
 
-### Phase 1: Investigation in Venna Weald (Social / Skills)
+### Phase 1: Investigation in Keshto Village (Social / Skills)
 
 The party arrives and gathers information. This phase teaches social interaction
 and skill checks.
@@ -171,13 +171,13 @@ in an ugly place; the refined alchemy happens elsewhere.
   location is where the alchemist *lives*. He comes, works, and leaves. The
   trail from the ritual site leads in a third direction, but goes cold (Fog,
   deliberate obscuring). Something at the ritual site identifies the technique
-  as Mortefactor-derived — this sends the party back to Venna Weald.
+  as Mortefactor-derived — this sends the party back to Keshto Village.
 - **System lesson:** exploration in hazardous terrain, Fog exposure,
   environmental awareness.
 
 ### Phase 3: The Mortefactor Connection (Social / Faction)
 
-The party returns to Venna Weald with specific questions. This is a different
+The party returns to Keshto Village with specific questions. This is a different
 kind of social encounter — they are pulling on a faction thread, talking to
 people who may have reasons to be evasive.
 
@@ -334,6 +334,100 @@ were clever and quick, they catch him mid-work.
   alchemical supplies, specific materials), which direction he traveled. These
   details fill in the picture and may help narrow down the laboratory's
   location (supply routes, frequency of visits, what he was buying in bulk).
+
+## Pacing (~8 Sessions)
+
+The adventure is designed to take approximately 8 sessions, which should
+yield enough XP (~1500–2000 earned) to bring characters from their starting
+1000 XP to roughly 2500–3000 cumulative — solidly through Tier 1 and ready
+to begin purchasing Tier 2 advances.
+
+- **Sessions 1–2: Phase 1** — Investigation in Keshto Village. Social
+  interaction, skill checks, gathering leads. Ends when the party has a
+  location to explore in the field.
+- **Sessions 3–4: Phase 2** — Field exploration. The dump site and ritual
+  site, in either order. Hazardous terrain, Fog exposure, investigation
+  skills. First combat likely here (wildlife, Fog creatures, or a trap).
+- **Session 5: Phase 3** — Return to Keshto Village with evidence. The
+  Mortefactor connection, faction politics, putting the pieces together.
+  Ends when the party knows who, what, and where.
+- **Sessions 6–8: Phase 4** — The laboratory. Layered dungeon with combat,
+  puzzles, and the climactic confrontation with Šauhahten. The bulk of
+  combat XP comes from this phase.
+
+### XP Budget
+
+- **Mission XP:** 100 XP for the primary mission (destroying the lab),
+  plus optionally 100 XP for a secondary objective (e.g. recovering the
+  Mortefactor research intact, or confirming the patron's existence).
+  Mission XP is deliberately modest — the bulk comes from combat and loot.
+- **Combat XP:** From undead sentries, the alchemical monstrosity (if
+  fought), Šauhahten himself, and any field encounters. Varies by party
+  approach.
+- **Loot XP:** 1 XP per 10 feathers of value recovered — salvaged
+  alchemical equipment, Mortefactor research fragments, general dungeon
+  loot. The laboratory should contain meaningful salvage.
+
+### Wealth Budget
+
+Feathers need to be plentiful enough to cover equipment maintenance costs
+across intermissions. With T1 gear, a character might owe 100–200 feathers
+per intermission (10% of total equipment base price), and the adventure
+should have 2–3 intermissions. Between the Black Guard contract payout,
+loot from the field sites, and laboratory salvage, each character should
+come out ahead — but not so far ahead that T2 gear is trivially affordable
+by the end. The adventure should feel like working for a living, not a
+windfall.
+
+## Rewards and Outcomes
+
+- **Black Guard contract payout:** The party's primary payment for
+  completing the mission. Amount should be appropriate for T1 (somewhere
+  in the 500–1500 feather range depending on perceived difficulty).
+- **Laboratory salvage:** Alchemical equipment, rare reagents, fragments
+  of Mortefactor research. What the party can keep depends on the
+  negotiation with the Mortefactor tracker — he wants the research back.
+- **Faction reputation:** Completing the contract builds standing with
+  the Never-Still. How the party handles the tracker determines their
+  relationship with the Mortefactors (cooperative, antagonistic, or
+  indebted).
+- **Open threads for future adventures:**
+  - Šauhahten will reincorporate and may seek revenge or resume his work
+    elsewhere.
+  - The patron in the Fog is still out there, its nature undefined —
+    ready for the GM to develop.
+  - The Mortefactors may come calling if the party owes them a favor, or
+    if the recovered research reveals something dangerous.
+
+## Failure States
+
+The adventure should be resilient to partial failure — the party can
+stumble at individual steps without the whole thing collapsing. The GM
+guide should include these fallbacks:
+
+- **Can't find both field sites:** The accelerating disappearances produce
+  more evidence over time. The surviving peacekeeper or Merzaghaal can
+  provide a nudge toward the missing location if the party is stuck.
+- **Party alerts Šauhahten early:** If the party is loud or slow through
+  the laboratory's outer layers, Šauhahten begins destroying his most
+  sensitive research. The party arrives to a partially emptied lab —
+  reduced loot and incomplete answers, but the mission is still
+  completable. He cannot move the heavy equipment.
+- **Party agrees with Šauhahten:** He asks them to bring him more
+  subjects. This is a moral trap — the adventure should flag this moment
+  for the GM and make it viscerally clear what the process does to souls
+  (the souls are aware, they suffer). If the party still agrees, the
+  Mortefactor tracker or Merzaghaal intervenes, and the party has made
+  enemies.
+- **Can't solve the cipher/entrance:** The Mortefactor tracker can provide
+  a partial solution as a fallback, at the cost of the party owing the
+  Mortefactors a faction favor — a concrete hook for future adventures.
+- **TPK in the laboratory:** The party is Deathless — they reincorporate
+  at their soul anchors after a few days. When they return, Šauhahten has
+  relocated, taking what he could carry. The mission is a failure in the
+  immediate sense, but the laboratory is disrupted (he lost the heavy
+  equipment and the site itself), and the party has all the information
+  they need to track him again. This sets up a sequel rather than a retry.
 
 ## Inspiration
 
