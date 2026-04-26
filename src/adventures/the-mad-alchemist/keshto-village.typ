@@ -222,8 +222,6 @@ A civilian in Keshto --- a shopkeeper, a supplier --- who interacted with
   just give it to them --- no roll required.
 ]
 
-#pagebreak()
-
 = Return to Keshto — The Mortefactor Connection
 
 The party returns to Keshto Village after exploring the dump site and

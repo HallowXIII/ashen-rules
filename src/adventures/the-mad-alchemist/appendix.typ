@@ -27,6 +27,16 @@ They do not speak, do not retreat, and do not respond to pain.
 
 #soulless-husk()
 
+=== Derelict Obliterator Drone
+
+This Perfector war machine has been rotting in its current location for 
+untold decades. Its armor cladding is covered in grime, steel components are rusted,
+and the targeting lenses are cracked. The mist reactor produces a sickly hum,
+and its lift arrays have long failed. Unfortunately, its cannon still works, and
+it still treats unknown humanoids as threats.
+
+#derelict-obliterator()
+
 == Skill Check Reference
 
 #pftab(
@@ -51,7 +61,15 @@ They do not speak, do not retreat, and do not respond to pain.
   [Keshto (Phase 1)], [Investigate], [3],
     [Find the local who remembers Šauhahten],
 
-  // Dump Site
+  // Dump Site — Tracking Challenge
+  [Dump Site], [Awareness], [3],
+    [Read disturbed vegetation and repeated passage (tracking)],
+  [Dump Site], [Investigate], [3],
+    [Reason out disposal logic to narrow search area (tracking)],
+  [Dump Site], [Stamina], [4],
+    [Push through rough terrain and Fog discomfort (tracking)],
+
+  // Dump Site — Investigation
   [Dump Site], [Occultism], [3],
     [Souls have been extracted from the bodies],
   [Dump Site], [Medicine/Alchemy], [4],
@@ -60,6 +78,10 @@ They do not speak, do not retreat, and do not respond to pain.
     [Methodical disposal; bodies brought post-mortem],
   [Dump Site], [Awareness], [4],
     [Trail leading to the ritual site],
+
+  // Dump Site — Hazard
+  [Dump Site], [Grit], [3],
+    [Resist soul residue discharge (4 psychic, Dazed on fail)],
 
   // Ritual Site
   [Ritual Site], [Alchemy], [4],
@@ -155,15 +177,16 @@ see fit.
   columns: (2fr, 1fr, 2fr),
   [*Source*], [*XP*], [*Notes*],
 
-  [Fog-Touched Beasts (×2)], [30], [Field encounter, 15 each],
-  [Soulless Husks (×4)], [28], [Laboratory Layer 2, 7 each],
+  [Fog-Touched Beast (×1, dump site)], [15], [Field encounter],
+  [Soulless Husks (×2, dump site)], [14], [Risen dead at dump site, 7 each],
+  [Soulless Husks (×4, laboratory)], [28], [Laboratory Layer 2, 7 each],
   [Alchemical Monstrosity], [25], [Fought or bypassed],
   [Šauhahten], [60], [Laboratory Layer 5],
   [Mission: destroy laboratory], [100], [Primary objective],
   [Mission: secondary (optional)], [100],
     [E.g. recover research, confirm patron's existence],
   [Loot XP], [20--90], [1 XP per 10#feathers recovered],
-  [*Total from adventure*], [*363--433*], [*Per character*],
+  [*Total from adventure*], [*362--432*], [*Per character*],
 )
 
 #note[

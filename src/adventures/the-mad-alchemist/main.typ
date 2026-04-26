@@ -16,12 +16,22 @@
 
 #include "introduction.typ"
 
+#pagebreak()
+
 #include "keshto-village.typ"
+
+#pagebreak()
 
 #include "dump-site.typ"
 
+#pagebreak()
+
 #include "ritual-site.typ"
 
+#pagebreak()
+
 #include "faerie-ruin.typ"
+
+#pagebreak()
 
 #include "appendix.typ"

@@ -42,6 +42,7 @@
   ward: 3,
   evasion: 2,
   speed: 2,
+  ap: 3,
   characteristics: (
     martial: 5,
     stamina: 4,
@@ -56,6 +57,39 @@
      does not need to spend AP to maintain the grab.],
   ),
   xp: 7,
+)
+
+// Derelict Obliterator Drone -- T6 stats, but defective and immobile
+// More of a puzzle encounter than a fight
+#let derelict-obliterator() = creature(
+  "Derelict Obliterator Drone",
+  "T5 Elite",
+  traits: ("Construct", "Derelict", "Size 3"),
+  hp: 200,
+  fp: 80,
+  armor: 25,
+  ward: 22,
+  evasion: 0,
+  speed: 0,
+  characteristics: (
+    marksmanship: 8,
+    potential: 16,
+    grit: 12,
+    stamina: 17,
+    dodge: 0,
+    initiative: 9,
+  ),
+  special: [*Immobile*: The Drone's lift array is shot. It is embedded in the ground and cannot move.],
+  abilities: (
+    [*Obliterator Cannon --- 2 AP* \ 
+     _Ranged, Burst 3, range increment 80 squares_ \
+     *Damage:* 20+2D12 Thermal; *Pen* 18 \
+     *Special:* The magnetic coils on this cannon are damaged. On every shot, the drone must make a 
+     save; on 0 successes or fewer, the plasma loses containment and the cannon explodes violently,
+     destroying the drone instantly and dealing 60+6D12 damage to everything within 10 squares of it.
+    ],
+  ),
+  xp: 25,
 )
 
 // Alchemical Monstrosity — T2 Standard (overtuned for T1)
