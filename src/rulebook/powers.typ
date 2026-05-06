@@ -1,6 +1,6 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("5", [= Magic and Powers], "Extraordinary Abilities")
+#chap-header("5", "Magic and Powers", "Extraordinary Abilities")
 
 Apart from their wits, their skill and their weapons, Ashen characters also have
 at their disposal mystical abilities to defend against a hostile world. Whether

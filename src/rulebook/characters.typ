@@ -1,8 +1,8 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("2", [= Characters], "Your avatar in the Age of Ash")
+#chap-header("2", "Characters", "Your avatar in the Age of Ash")
 
-#flavor([
+#flavor(citation: [The Lay of Ingin])[
   Azal jalē vahttan \
   Iryane niboltvānhē \
   Nidaumave avorhōyō \
@@ -16,10 +16,7 @@
   Our silver-gleaming blade \
   With godly fire burn them then \
   Who sought to be our foes!
-])
-
---- The Lay of Ingin \
-#linebreak()
+]
 
 Characters are the lifeblood of Ashen. They are the roles the players take on
 when they play the game. Each character is unique: they may belong to one of
@@ -40,7 +37,8 @@ prioritize, and the advances you buy should all serve a coherent idea of who
 your character is and how they fight.
 
 #attention[
-  A word of warning: the advance system gives you a great deal of flexibility,
+  ===== A word of warning
+  The advance system gives you a great deal of flexibility,
   but a character who spreads their resources too thinly will struggle compared
   to one who commits to one or two strengths. Decide early what your character
   is _good at_ and invest accordingly. You can always broaden later; you
@@ -213,7 +211,7 @@ rest. Consider:
   keepsake; it may become a thread the GM can weave into the story, giving
   the character clues to who they were before the War took their memories.
 
-= Races
+== Races
 
 The world of ashen is a wild place. Inhabited by magical and monstrous
 creatures, shaped by technology whose secrets of construction have long been
@@ -233,7 +231,7 @@ modify your statistics, it does provide you with different physical and magical
 attributes that may make particular races better or worse suited to the type of
 character you want to play.
 
-== Clockwork
+=== Clockwork
 
 #flavor[“The Goddess Third loved toys and tinkers, and when she took up arms,
   her toys marched alongside her.”]
@@ -247,7 +245,7 @@ fight.
 There are two kinds of clockworks: Ironhands and Porcelains. All clockworks have
 the following traits:
 
-*Construct*
+==== Construct
 
 You are a machine, and thus do not need to eat, breathe, or sleep. You are
 immune to poison and disease. In practical terms: hunger, thirst, and sleep
@@ -257,7 +255,7 @@ has no effect on you. You still benefit from short and long rests by entering
 a low-power maintenance mode. However, you are treated as a machine and are
 subject to all effects that target machines.
 
-*Wind-Up*
+==== Wind-Up
 You are powered by the soul-anchor you carry within your body, which drives the
 mechanism that moves you. When the connection to the soul-anchor is interrupted,
 you become an inanimate object after three rounds until the connection is
@@ -265,8 +263,7 @@ restored. This effect can be staved off for up to one hour by winding up your
 mechanism manually from the outside. After this time, you lose consciousness and
 winding up has no further effect until the underlying problem is fixed.
 
-*Magnetic Vulnerability*
-
+==== Magnetic Vulnerability
 Strong magnetic fields disrupt the delicate circuitry that drives your
 mechanism. Such fields are found near unshielded magitek power plants, in the
 shadow of certain ruined industrial sites, and during the magnetic storms that
@@ -280,8 +277,7 @@ occasionally roll through Dense Fog regions.
   for one stretch and must be carried clear. A successful Shop check
   (difficulty 6) by an ally can stave off the next failure.
 
-*Particulate Vulnerability*
-
+==== Particulate Vulnerability
 Sandstorms, ash fall, silt-laden air, and the interior of certain ruined
 factories deposit superfine particles that work their way into your joints
 and gears. After 4 hours of exposure without adequate sealing, you take --1d
@@ -291,8 +287,7 @@ maintenance per --1d incurred (a Shop check, GM's discretion), or by a long
 rest in a clean environment. Sealed face plates, oiled joint covers, and
 similar gear extend the time before the first penalty applies.
 
-*Fog Sensitivity*
-
+==== Fog Sensitivity
 Clockworks are themselves a form of magitek, and react to elevated Fog
 densities much more strongly than biological creatures. Your Fog Exposure
 thresholds (see _Fog Exposure_ in the Exploration chapter) are halved ---
@@ -305,15 +300,14 @@ that briefly ceases to obey).
 
 In addition, every clockwork must choose one of the following two subtypes:
 
-=== Ironhands
-
+==== Ironhands
 You are a walking suit of armor, made to wield heavy weapons and crush your foes
 in melee. Your actual body is a magi-mechanic core that powers the limbs and
 weapons of your iron form.
 
 You gain the following racial traits:
 
-*Walking Armor*
+===== Walking Armor
 You cannot normally wear armor. Instead, your core is built to be fit into
 combat walker frames called Construct Bodies. You begin the game with a
 construct body available to you. If at any point you wish to switch to a new
@@ -322,33 +316,31 @@ new one. This is an operation that takes significant time -- the engineer
 conducting it must roll Shop against the Equipment Rank of the construct body,
 with every roll taking one day.
 
-*Integrated Weapons*
-
+===== Integrated Weapons
 You can mount weaponry and gear to your construct body up to its total bulk
 rating. When you do this, you ignore the bulk rating on the mounted equipment.
 Your charge use is calculated as normal.
 
-=== Porcelain
+==== Porcelain
 Where the Ironhands are brute force, the Porcelains are effortless grace. Lithe,
 youthful figures, they were originally crafted as companions for the reclusive
 Just-So. When the war came, she remade them as conduits for raw magical might.
 
 You gain the following racial traits:
 
-*Graceful Form*
+===== Graceful Form
 You move with supernatural grace. While you are animated, the magic within you
 disguises your nature as a clockwork until someone touches your cold skin. You
 are immune to effects that would trip you and you ignore movement penalties from
 Difficult and Treacherous terrain.
 
-*Spell Capacitor*
-
+===== Spell Capacitor
 Your inner workings are optimized to focus arcane energy into destructive force.
 Whenever you expend Focus, roll a D6. On a 5 or 6, you immediately regain the
 lost Focus.
 
 
-== Echoes
+=== Echoes
 #flavor[“High and Just-As-High were different from their sister. They were not
   content to play in silence by themselves, but made wonderful playgrounds for﻿
   themselves, and filled them with playmates.”]
@@ -362,8 +354,7 @@ within themselves.
 
 All Echoes gain the following racial traits:
 
-*Fey Jaunt*
-
+==== Fey Jaunt
 You gain the following power:
 
 #power-description(
@@ -377,22 +368,19 @@ You gain the following power:
   cost: "6 FP",
 )
 
-*Vindictive*
-
+==== Vindictive
 It was said that those who made enemies of the Fairies would never escape their
 pursuers. When an enemy damages you, you can choose to hold a grudge against
 that enemy. When you next attack or use a spell power against that enemy, you
 gain 1 automatic success on your attack or spell check against him. You can only
 hold a grudge against one creature at a time.
 
-*Sustained by Magic*
-
+==== Sustained by Magic
 In areas of Light Fog or denser, Echoes need no food or water --- ambient
 magic suffices. In Clears, they eat and drink at the standard mortal-grade
 rates.
 
-*Cold Iron Sensitivity*
-
+==== Cold Iron Sensitivity
 Cold-iron weapons deal 50% more damage to Echoes, and cold-iron restraints
 cannot be escaped via Fey Jaunt or any other short-range teleportation
 effect.
@@ -408,23 +396,21 @@ effect.
   backup item, drawn only when an Echo is the target, and using it typically
   requires aiming for an unarmored spot on the victim's body.]
 
-*Fog-Fragile*
-
+==== Fog-Fragile
 Fog Exposure thresholds are halved for Echoes --- the inverse of humans. The
 raw, undirected Fog is hostile to fey beings whose realms it destroyed.
 
 There are two kinds of Echoes: Mirrors and Shades. Every Echo character must
 choose one of the following subtypes:
 
-=== Mirrors
+==== Mirrors
 The Mirrors, children of Might-Be, the Fateweaver, are the fairest of the
 humanoid races. They lived in the beautiful lands of Faerie, once, and like many
 of its denizens, they are adept at misleading their foes.
 
 Mirrors gain the following racial trait:
 
-*Dance of the Spring Court*
-
+===== Dance of the Spring Court
 The old, hidden world of the fey is dead, but you can still call up its echoes
 to bewilder your foes. You gain the following power:
 
@@ -440,20 +426,18 @@ to bewilder your foes. You gain the following power:
   trigger: "You are targeted by an attack",
 )
 
-*Children of Day*
-
+===== Children of Day
 A Mirror gains +1d on Endurance checks while in direct sunlight.
 
-=== Shades
+==== Shades
 Shades were the favored companion of Once-Was, the Knower of Ways, Goddess of
 what is Hidden and Forgotten. They are said to have dwelt deep underground, in
 glorious palaces, until they rode out to hunt in the long winter nights of
 Faerie.
 
-
 As a Shade, you gain the following racial trait:
 
-*Hunt of the Autumn Court*
+===== Hunt of the Autumn Court
 In days of old, the goddess Came-To-Pass was worshipped as an unerring huntress.
 You retain some of her essence.
 
@@ -470,11 +454,10 @@ You gain the following power:
   range: "15; one target",
 )
 
-*Children of Night*
-
+===== Children of Night
 A Shade gains +1d on Endurance checks while in dim light or darkness.
 
-== Humans
+=== Humans
 #flavor[“And thus it was that the first-born of the gods were doomed to spend
   their lives torn between themselves, for both the Boar-Mother and the
   Falcon-Headed Sun had laid their claims to them, and neither would relinquish
@@ -487,8 +470,7 @@ God Kharu who adopted the young race to shield them from her wrath. Their
 natures have been divided ever since, but they are closer to the fading glory of
 the Gods than any other race.
 
-*Golden Apple*
-
+==== Golden Apple
 Your nature makes you both beloved of the gods, and quick to incur their anger.
 When you attune to a reliquary, you begin with 1 favor already earned --- the
 gods recognize their firstborn. In addition, the first time you tap a prayer
@@ -496,30 +478,26 @@ each encounter, the tap costs 0 favor instead of 1. You also gain a +2 bonus
 to Occultism checks whenever you interact with divine essence, relics of the
 gods, or sacred sites.
 
-*Gift of the Sun*
-
+==== Gift of the Sun
 Falcon-Headed Khâru is a great and terrible father; he demands much, but he
 rewards with pride the efforts of his children. Once per round, you may spend
 2 Essence Points to add 2 automatic successes to any check you make. This
 decision is made after rolling but before the result is determined.
 
-*Gift of the Earth*
-
+==== Gift of the Earth
 The Boar-Mother gives freely of her gift; but those who sup too greedily
 discover that with debt comes obedience. Beneficial magical effects on you
 whose duration is measured in rounds last two rounds longer than usual. However,
 saving throws you make against hostile magical effects require 3 successes
 instead of the usual 2.
 
-*Children of the Earth*
-
+==== Children of the Earth
 Your mortal ancestry ties you to the living earth. When you take a long rest in cultivated or living land --- fields, forests, orchards, gardens, healthy wilderness --- you recover at the standard rate. In barren waste, ash zones, ruined ground, or Dense or Extreme Fog, you recover at half the usual rate.
 
-*Adapted Stock*
-
+==== Adapted Stock
 Human biology is uniquely resistant to Fog exposure. Your Fog Exposure thresholds (see _Fog Exposure_ in the Exploration chapter) are doubled. A human in Dense Fog reaches the one-week exhaustion check at two weeks, the one-month disease threshold at two months, and so on; Extreme Fog timers double similarly. This is why the Fogborn are exclusively human: only human biology can endure the Fog long enough to be transformed by it.
 
-== Soot-Beasts
+=== Soot-Beasts
 #flavor[“The Lion-Headed God of War, jealous of his brother, pawned his
   innocence to the Boar-Mother for creations of his own. Always itching for war,
   her work had the aspect of their mother, but the temperament of their
@@ -533,43 +511,35 @@ not all forms of them tend to display these traits, the ones presented here do.
 There are two kinds of Sootbeasts: Warboars and Goldenbristles. All Sootbeasts
 have the following traits:
 
-
-*Asexual*
-
+==== Asexual
 Sootbeasts reproduce in idiosyncratic ways and therefore do not have the
 capacity to feel attraction to others, even (or perhaps especially) other
 Sootbeasts. You are immune to being seduced, even by magical effects.
 
-*Born for Battle*
-
+==== Born for Battle
 Bred to last in grueling campaigns that would wear down an army of any other
 race, you can find reserves of energy within yourself no matter how bloodied you
 are. Once per encounter, you can spend an action point to give yourself a second
 wind. You immediately heal up to your healing rate and end all ongoing damage
 effects affecting you.
 
-*Indomitable*
-
+==== Indomitable
 You are the pride of your hive, a son of battle. You were born to the sound of
 shields cracking under axes and the drum of gun-volleys in the air. You are
 immune to fear effects of any kind and cannot be compelled to run away from
 battle.
 
-
-*Hardier Stock*
-
+==== Hardier Stock
 Soot-Beasts take only half the usual penalty from heat or cold weather
 effects, forced marches, and sleep deprivation. Their bred-for-battle
 resilience carries them through the wilderness as it does through campaigns.
 
-*Reduced Supply Needs*
-
+==== Reduced Supply Needs
 Hunger and thirst clocks tick at half the usual rate for a Soot-Beast; they
 need food and water roughly every other day, and can go on short rations for
 twice as long as other races before suffering penalties.
 
-*Tainted Flesh*
-
+==== Tainted Flesh
 The Soot-Beasts’ close ancestral link to the Boar-Mother makes them a
 natural breeding ground for disease and a poor host for poisons. Difficulty
 checks to resist disease are made at +2 difficulty against Soot-Beasts.
@@ -578,27 +548,24 @@ effects last one round longer than usual.
 
 In addition, every Sootbeast must choose one of the following two subtypes:
 
-=== Warboar
+==== Warboar
 
 You are the epitome of what people picture when they hear the word “Sootbeast”
 spoken. Tough, strong, bristling with claw and tusk, you make your enemies
 tremble with your coming and your allies glad to have you by their side. As a
 Warboar, you gain the following racial traits:
 
-*Unstoppable, Immovable*
-
+===== Unstoppable, Immovable
 You gain a +2 resistance bonus against effects that would move you against your
 will. When you make an attack or activate an effect that would move your target,
 gain a +2 bonus to any roll made to activate that effect.
 
-*Tide of Iron*
-
+===== Tide of Iron
 To see your enemies falter before you invigorates you. When you kill another
 creature with an action, you immediately regain up to 2 AP for this turn. You
 cannot regain more AP than you spent on the action that triggered this ability.
 
-=== Goldenbristle
-
+==== Goldenbristle
 Where there is brawn, there must be brain, or else the army will falter. While
 nothing compels an Warboar to be stupid, and nothing compels a Goldenbristle to
 weakness, their temperaments are by and large very different. Where a Warboar
@@ -608,20 +575,18 @@ Goldenbristle is charismatic and imperious, reflecting their designated role as
 field commanders of Sootbeast armies. As a Goldenbristle, you gain the following
 racial traits:
 
-*Born Leader*
-
+===== Born Leader
 You have a natural talent at winning others’ respect, if not loyalty, and your
 orders tend to be followed. You gain a +2 bonus on Command rolls to activate
 Command Powers.
 
-*Time to strike!*
-
+===== Time to strike!
 You gain a +2 bonus to your Initiative roll. In addition, once per round, you
 can swap places in the initiative order with one ally you can see.
 
-= Attributes and Characteristics
+== Attributes and Characteristics
 
-== Attributes
+=== Attributes
 Attributes describe a creature’s core traits in the game. Most creatures have
 ten attributes: *Strength*, *Endurance*, *Dexterity*, *Agility*, *Attunement*,
 *Sight*, *Intelligence*, *Perception*, *Will* and *Presence*. Each attribute is
@@ -635,7 +600,7 @@ skills section of the rules.
 Attributes also influence a character’s combat statistics, which are described
 below:
 
-=== Strength
+==== Strength
 
 Strength is a measure of a character’s capacity to exert physical force. A
 character with low strength will be not far beyond his race’s baseline; a
@@ -646,7 +611,7 @@ Strength contributes to a character’s capacity for Athletics and Manual Labor.
 It influences the Martial and Stamina characteristics of a character. It also
 adds to their Athletics skill.
 
-=== Endurance
+==== Endurance
 
 Endurance measures a character’s capacity to keep exerting themselves without
 needing to rest. A low-Endurance character has to be careful not to overburden
@@ -657,7 +622,7 @@ Endurance helps a character resist harsh environments and the exertions of long
 travel under muscle power. It influences a character’s Grit and Stamina
 characteristics. It also assists their Athletics skill.
 
-=== Agility
+==== Agility
 Agility represents a character’s ability to move their body quickly and
 explosively. A low-Agility character might seem almost sluggish, while a very
 high Agility score allows a character to run at superhuman speeds and deliver
@@ -667,7 +632,7 @@ Agility assists a character in almost all spheres of physical exertion. It
 influences a character’s Martial, Speed and Dodge characteristics. It also
 assists their Acrobatics skill.
 
-=== Dexterity
+==== Dexterity
 Where Agility is about speed and explosivity, Dexterity represents a character’s
 capacity for subtlety and finesse. A character with high Dexterity is much more
 likely to be able to repair an extremely complicated micromechanism or wriggle
@@ -676,7 +641,7 @@ out of rope bindings than one with low Dexterity.
 Dexterity assists characters both in the control of their own body as well as in
 the manipulation of various mechanisms. Dexterity adds to a character’s
 Marksmanship characteristic, as well as their Access, Shop and Piloting skills.
-=== Attunement
+==== Attunement
 Attunement represents a character’s capacity to sense and manipulate the flow of
 magical energies around them. It is an indispensable attribute for would-be
 practitioners of Arcane magic, and those who would make effective use of the
@@ -687,7 +652,7 @@ will find these pursuits easy.
 
 Attunement adds to a character’s Arcane and Potential characteristics. It also
 aids in the Eerie, Magitek and Ritual skills.
-=== Sight
+==== Sight
 Sight represents a character’s proverbial Sixth Sense: an uncanny talent to know
 things that by rights ought to be unknowable. A character with high Sight is
 difficult to surprise and uncannily resourceful; with the appropriate training,
@@ -697,7 +662,7 @@ make use of psychic powers.
 
 Sight contributes to a character’s Psychic and Initiative ratings. It is also
 useful for the Eerie and Occultism skills.
-=== Intelligence
+==== Intelligence
 Intelligence represents a character’s capacity to absorb and process new
 information. High Intelligence marks a character as quick-witted and capable of
 finding novel solutions to problems.
@@ -705,7 +670,7 @@ finding novel solutions to problems.
 Intelligence is the foundational attribute for most technical skills. It adds to
 a character’s Initiative and Arcane characteristics as well as their Access,
 Influence, Alchemy, Electronics and Magitek skills.
-=== Perception
+==== Perception
 The mundane counterpart to Sight, Perception measures how acute a character’s
 ordinary five senses are. A character with high Perception is more likely to
 notice fine details that another might have missed.
@@ -713,7 +678,7 @@ notice fine details that another might have missed.
 Perception contributes to many different skills. It adds to a character’s
 Marksmanship and Dodge ratings as well as their Alchemy and Piloting skills.
 
-=== Will
+==== Will
 Will represents a character’s capacity for taking decisions and seeing them
 through, come hell or high water. A character with high Will will be more able
 to resist pain or attempts at controlling them, as well as be more able to
@@ -722,7 +687,7 @@ follow through on their decisions.
 Will contributes to a character’s Grit, Potential, Psychic and Command ratings.
 It also adds to their Impose, Occultism and Ritual skills.
 
-=== Presence
+==== Presence
 Presence is a measure of the character’s ability to capture others’ attention. A
 character with high Presence cannot walk into a room unnoticed -- they are sure
 to turn all the heads that can be turned. A low-Presence character is much more
@@ -731,7 +696,7 @@ forgettable, which has social disadvantages, but also lets one be more stealthy.
 The Presence attribute contributes to a character’s Command rating. It also adds
 to the Impose and Influence skills.
 
-== Characteristics
+=== Characteristics
 Apart from their attributes, each character also has several characteristics
 that are derived from them. These statistics principally influence the success
 and failure of a character in combat, but occasionally may also be rolled
@@ -747,31 +712,31 @@ ranks in the course of play. See the sections on character creation and
 advancement for details.
 
 
-=== Martial
+==== Martial
 Attributes: STR + AGI \
 This characteristic describes a character’s effectiveness in melee combat. It is
 used to make attack rolls with melee or thrown weapons. You need to make an
 opposed Martial check to resist being overpowered.
 
-=== Marksmanship
+==== Marksmanship
 Attributes: DEX + PER \
 This characteristic describes a character’s skill with ranged weapons of all
 kinds. It is used to make attack rolls with ranged and thrown weapons.
 
-=== Initiative
+==== Initiative
 Attributes: SGT + INT \
 This characteristic represents a character’s alertness and quickness to act. It
 determines how quickly your character gets a chance to act in combat (or in
 structured time). Initiative checks are also rolled to avoid surprises and
 sudden dangers, such as trap doors.
 
-=== Speed
+==== Speed
 Attributes: AGI + END \
 This characteristic represents how quick a character is on their feet. It
 determines a character’s movement range. You may also need to make a speed check
 when attempting to traverse ground within a certain amount of time.
 
-=== Stamina
+==== Stamina
 Attributes: STR + END \
 This characteristic represents your character’s ability to keep fighting and
 exerting themselves under strain. Your character’s Stamina rating determines
@@ -779,75 +744,75 @@ their *Bulk capacity* (see _Bulk and Charge_ in the Equipment chapter). Your
 character may need to make a Stamina check to resist the effects of poison,
 disease or fatigue.
 
-=== Potential
+==== Potential
 Attributes: ATT + WIL \
 This characteristic represents your character’s ability to control magical
 energy. Your character’s Potential rating determines their *Charge capacity*
 (see _Bulk and Charge_ in the Equipment chapter). You may also need to make a
 Potential check to resist the effects of harmful magic.
 
-=== Arcane
+==== Arcane
 Attributes: ATT + INT \
 This characteristic determines your character’s skill at casting Arcane magic.
 It is used when making casting rolls for Arcane spells.
 
-=== Psychic
+==== Psychic
 Attributes: SGT + WIL \
 This characteristic determines your character’s skill at using Psychic powers.
 
-=== Command
+==== Command
 Attributes: PRS + WIL \
 This characteristic represents your character’s ability to persuade both allies
 and enemies. It is used to make casting rolls for charm abilities. Since it is
 also necessary to convince Reliquaries, this characteristic additionally
 determines your character’s skill at casting Divine magic.
 
-=== Dodge
+==== Dodge
 Attributes: AGI + PER \
 This characteristic influences how easy your character is to hit with weapon
 attacks, and can allow them to avoid larger attacks as well. Dodge checks are
 usually made to avoid area attacks and effects.
 
-=== Grit
+==== Grit
 Attributes: END + WIL \
 This characteristic influences your character’s ability to resist pain,
 disturbing mental effects and similar noxious influences.
 
-== Derived Statistics
+=== Derived Statistics
 
 The following statistics are derived from a character’s attributes, characteristics and advances. Unlike attributes and characteristics, they do not have ranks — they are calculated from other values.
 
-=== Hit Points (HP)
+==== Hit Points (HP)
 
 Hit Points represent how much damage a character can sustain before falling. Every character begins with *10 HP*. Additional HP is gained from advances: each advance a character purchases grants a certain amount of HP as listed in its description. A character’s total HP is the sum of their base 10 plus all HP gained from advances. For rules on how damage is dealt and reduced, including damage types, Armor, Ward, and resistances, see _Damage_ in the Combat chapter.
 
-=== Focus Points (FP)
+==== Focus Points (FP)
 
 Focus Points fuel a character’s extraordinary abilities, including spells, prayers and psychic powers. Every character begins with *10 FP*. Additional FP is gained from advances in the same way as HP. A character’s total FP is the sum of their base 10 plus all FP gained from advances.
 
-=== Movement Speed
+==== Movement Speed
 
 A character’s Movement Speed determines how many squares they can move with a single move action. Movement Speed is equal to *2 + the character’s Speed rating*. A starting character typically has a Movement Speed of 5 squares, while a character at the peak of their physical ability can reach 20 or more with advances.
 
 #colbreak()
 
-=== Evasion
+==== Evasion
 
 Evasion represents how difficult a character is to hit with attacks. A character’s base Evasion is equal to *half their Dodge rating, rounded down*. This base value is then modified by armor (light armor typically grants a bonus, heavy armor imposes a penalty) and other effects.
 
-=== Armor
+==== Armor
 
 Armor reduces incoming damage from most sources. It represents physical protection --- worn armor, natural hide, or structural reinforcement. A character’s Armor value comes primarily from their equipped armor, though some advances and effects also contribute. Certain damage types (Lightning, Psychic, Radiant, and Untyped) bypass Armor entirely. See _Defenses Against Damage_ in the Combat chapter for the full rules.
 
-=== Ward
+==== Ward
 
 Ward reduces incoming damage from *magical sources only*. When a spell, prayer, psychic power, or other magical effect deals damage, the target’s Ward reduces it in addition to any applicable Armor. Ward comes from equipped items (particularly enchanted armor) and some advances. See _Defenses Against Damage_ in the Combat chapter for the full rules.
 
-=== Action Points (AP)
+==== Action Points (AP)
 
 Every character has *4 Action Points* per turn. AP is spent to take actions during combat; unspent AP is lost at the end of a character’s turn. Some advances and effects can modify the number of AP available.
 
-=== Essence Points
+==== Essence Points
 
 Each character has a number of *Essence Points (EP)* that control that
 character’s ability to recover from damage and exhaustion. A character starts

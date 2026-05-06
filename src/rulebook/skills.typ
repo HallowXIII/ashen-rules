@@ -1,6 +1,6 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("3", [= Skills], "How your character interacts with the world")
+#chap-header("3", "Skills", "How your character interacts with the world")
 
 Skills represent your character’s abilities and aptitudes that are not directly
 related to their performance in combat.
@@ -31,9 +31,9 @@ improve your skills in the following ways:
   "Cost per skill rank",
   columns: (1fr, 2fr, 3fr),
   align: center,
-  [*Rank*],
-  [*SP Cost*],
-  [*Cumulative (from rank 1)*],
+  [Rank],
+  [SP Cost],
+  [Cumulative (from rank 1)],
   [2],
   [1],
   [1],
@@ -154,7 +154,7 @@ following chart:
   columns: (2fr, 1fr, 1fr, 1fr, 1fr, 1fr),
   align: center,
 
-  [*Pool Size*],
+  [Pool Size],
   [< 10%],
   [~25%],
   [50%],
@@ -330,8 +330,8 @@ slope + D 4 running speed).
   columns: (3fr, 1fr),
   align: (left, center),
 
-  [*Terrain Condition*],
-  [*Difficulty Modifier*],
+  [Terrain Condition],
+  [Difficulty Modifier],
   [Severely Obstructed (cavern, rubble)],
   [+1],
   [Slightly Slippery (wet)],
@@ -361,8 +361,8 @@ The base difficulties for narrow surfaces are given below.
   columns: (2fr, 3fr),
   align: (left, center),
 
-  [*Surface Width*],
-  [*Base Acrobatics Difficulty*],
+  [Surface Width],
+  [Base Acrobatics Difficulty],
   [Greater than 1 m wide],
   [0],
   [0,4-1 meters wide],
@@ -383,8 +383,8 @@ maneuvers.
   columns: (1fr, 1fr),
   align: (left, center),
 
-  [*Attempted Jump*],
-  [*Difficulty (Modifier)*],
+  [Attempted Jump],
+  [Difficulty (Modifier)],
   [High Jump (2 m)],
   [2],
   [High Jump (per additional meter)],
@@ -415,8 +415,8 @@ check with an additional +2 difficulty to keep moving at your original speed.
   columns: 2,
   align: (left, center),
 
-  [*Acrobatic Maneuver*],
-  [*Difficulty (Modifier)*],
+  [Acrobatic Maneuver],
+  [Difficulty (Modifier)],
   [Vault an Object],
   [Corresponding High Jump difficulty +2],
   [Slide under an obstacle while moving (0.5-1m of space)],
@@ -479,8 +479,8 @@ traverse a chasm or gap hanging off overhead handholds.
   columns: 2,
   align: (left, center),
 
-  [*Example Surface or Activity*],
-  [*Check Difficulty*],
+  [Example Surface or Activity],
+  [Check Difficulty],
   [... on very wet or otherwise slippery surfaces],
   [+2],
   [... in strong wind],
@@ -495,8 +495,8 @@ move objects, whether by lifting, throwing, or even just pushing.
   columns: 2,
   align: (left, center),
 
-  [*Example activity*],
-  [*Check Difficulty*],
+  [Example activity],
+  [Check Difficulty],
   [Push your body weight],
   [2],
   [... per additional times your weight],
@@ -523,8 +523,8 @@ requires a check.
   columns: 2,
   align: (left, center),
 
-  [*Water Condition*],
-  [*Check Difficulty*],
+  [Water Condition],
+  [Check Difficulty],
   [Calm],
   [0],
   [Rough],

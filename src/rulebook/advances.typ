@@ -1,6 +1,6 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("4", [= Advances], "Progressing your Character")
+#chap-header("4", "Advances", "Progressing your Character")
 
 == What is an advance?
 
@@ -212,9 +212,9 @@ attained, as shown in the tables below.
 
 #colbreak()
 
-= Advance Lists
+== Advance Lists
 
-== Arcane
+=== Arcane
 
 #advance-block(
   "Spell Memory I",
@@ -327,7 +327,7 @@ attained, as shown in the tables below.
     reduced by 1, to a minimum of 1.],
 )
 
-== Command
+=== Command
 
 #advance-block(
   "Warlock Acolyte",
@@ -430,7 +430,7 @@ attained, as shown in the tables below.
   [You may sustain up to three summoning powers simultaneously. Additionally, once per encounter, you may resummon a destroyed summon as a 2 AP action without paying the initial Focus cost (you still pay the sustain cost from that point on). The resummon appears in an unoccupied square within 10 squares of you at half its maximum HP.],
 )
 
-== Dodge
+=== Dodge
 
 #advance-block(
   "Action Roll",
@@ -489,7 +489,7 @@ attained, as shown in the tables below.
     of calculating hits for this attack only.],
 )
 
-== Grit
+=== Grit
 
 #advance-block(
   "Dauntless",
@@ -546,7 +546,7 @@ attained, as shown in the tables below.
   [Reviving costs you 4 instead of 5 EP.],
 )
 
-== Initiative
+=== Initiative
 
 #advance-block(
   "Swift as Lightning",
@@ -607,7 +607,7 @@ attained, as shown in the tables below.
   [You may take up to two reactions per round.],
 )
 
-== Marksmanship
+=== Marksmanship
 
 #advance-block(
   "Heavy Gunner",
@@ -620,7 +620,7 @@ attained, as shown in the tables below.
     a free action.],
 )
 
-== Martial
+=== Martial
 
 #advance-block(
   "Exploit (Tier 1)",
@@ -774,7 +774,7 @@ attained, as shown in the tables below.
     Exploit of your choice.],
 )
 
-== Potential
+=== Potential
 
 #advance-block(
   "Leyline Attunement",
@@ -819,7 +819,7 @@ attained, as shown in the tables below.
   [Your connection to ambient magical energy deepens. Allies within 5 squares of you reduce the increment cost of their spells and powers by 1 (minimum 1). This does not stack with other sources of increment reduction.],
 )
 
-== Psychic
+=== Psychic
 
 #advance-block(
   "Quicken Magic",
@@ -921,7 +921,7 @@ attained, as shown in the tables below.
     Tier 6 Psychic power of your choice.],
 )
 
-== Speed
+=== Speed
 
 #advance-block(
   "Fleet of Foot",
@@ -965,7 +965,7 @@ attained, as shown in the tables below.
   [Your base Movement Speed increases by an additional 3 (stacks with Fleet of Foot). You may move through difficult terrain at normal speed.],
 )
 
-== Stamina
+=== Stamina
 
 #advance-block(
   "Conditioning",

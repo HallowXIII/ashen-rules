@@ -66,28 +66,42 @@
 
 #let pfi(body) = par(first-line-indent: 0.5em, hanging-indent: 0.5em)[#body]
 
-#let feathers = text(font: ("Libre Baskerville",), size: 10pt, "ƒ")
+#let feathers = text(font: fonts.sans, size: 10pt, "ƒ")
 
-#let flavor(body) = {
-  set text(font: ("Libre Baskerville",), style: "italic", size: 10pt)
-  box[#body]
+#let flavor(body, width: 80%, citation: none) = {
+  set text(font: fonts.special, style: "italic", size: 12pt)
   v(0.5em)
+  align(center, box(width: width, body))
+  v(1em)
+  if(citation != none){
+    let l = box(image(height: 0.5em, "../../graphics/citation-ornament-left.svg"))
+    let r = box(image(height: 0.5em, "../../graphics/citation-ornament-right.svg"))
+    align(center)[#text(font: fonts.sans, style: "normal")[
+      #l
+      #h(0.25em)
+      #citation
+      #h(0.25em)
+      #r
+    ]]
+    v(1.5em)
+  }
 }
 
 #let titlepage(pre-title: none, title, subtitle: none, description: none) = {
   set page(columns: 1, numbering: none)
   set align(center + horizon)
   if pre-title != none { text(size: 28pt)[#pre-title] }
-  linebreak()
-  text(font: ("Libre Baskerville",), size: 48pt)[#title]
-  linebreak()
+  text(font: fonts.special, size: 8em)[#title]
+  line(length: 80%)
+  v(1em)
   if subtitle != none {
-    text(font: ("Libre Baskerville",), size: 32pt)[#subtitle]
+    v(2em)
+    text(font: fonts.sans, size: 24pt)[#subtitle]
   }
-  v(3em)
+  v(24em)
   block[
     #set align(center + horizon)
-    #text(size: 28pt)[#description]
+    #text(size: 2em, weight: "semibold")[#description]
   ]
 }
 
@@ -106,13 +120,14 @@
   flavor: none,
 ) = {
   set par(spacing: .6em, first-line-indent: 0em) // hanging-indent: 1em)
+  set text(font: fonts.sans)
   let header(body) = {
     box(
-      text(weight: "extrabold", size: 1.4em, stretch: 50%)[#upper(name)],
+      text(weight: "semibold", size: 1.4em, stretch: 50%)[#upper(name)],
     )
     h(1fr)
     sym.wj
-    box(text(weight: "extrabold", size: 1.4em, stretch: 50%)[
+    box(text(weight: "semibold", size: 1.4em, stretch: 50%)[
       #upper(body) #tier
     ])
   }
@@ -157,6 +172,7 @@
   body,
 ) = {
   set par(hanging-indent: 1em, first-line-indent: 1em)
+  set text(font: fonts.sans)
   block[
     *#name* \
     _#if tier != none [Tier #tier] #item-type#if keywords != none [; #keywords]_ \
@@ -212,6 +228,7 @@
   tap: none,
   augments: (),
 ) = {
+  set text(font: fonts.sans)
   set par(spacing: .6em, first-line-indent: 0em) // hanging-indent: 1em)
   let final-traits = if keywords == none {
     if domain == none { () } else { (domain,) }
@@ -222,15 +239,15 @@
   }
   let header(body) = {
     box(
-      text(weight: "extrabold", size: 1.4em, stretch: 50%)[#upper(name)],
+      text(weight: "semibold", size: 1.4em, stretch: 50%)[#upper(name)],
     )
     h(1fr)
     sym.wj
-    box(text(weight: "extrabold", size: 1.4em, stretch: 50%)[
+    box(text(weight: "semibold", size: 1.4em, stretch: 50%)[
       #upper(body) #tier
     ])
   }
-  block[
+  block(breakable: false)[
     #v(1em)
     #header[#power-type]
     #line(stroke: 1pt, length: 100%)
@@ -269,18 +286,20 @@
       }
     }
   ]
+  v(1em)
 }
 
 #let spell(spl) = [
+  #set text(font: fonts.sans)
   #v(1em)
   #set par(spacing: .6em, first-line-indent: 0em) // hanging-indent: 1em)
   #let creature_header(body) = {
     box(
-      text(weight: "extrabold", size: 1.4em, stretch: 50%)[#upper(spl.name)],
+      text(weight: "semibold", size: 1.4em, stretch: 50%)[#upper(spl.name)],
     )
     h(1fr)
     sym.wj
-    box(text(weight: "extrabold", size: 1.4em, stretch: 50%)[#upper(body)])
+    box(text(weight: "semibold", size: 1.4em, stretch: 50%)[#upper(body)])
   }
   #creature_header[#spl.type]
   #line(stroke: 1pt, length: 100%)
@@ -302,11 +321,12 @@
 ]
 
 #let feat(feat) = [
+  #set text(font: fonts.sans)
   #v(1em)
   #set par(spacing: .6em, first-line-indent: 0em) // hanging-indent: 1em)
   #let maybe_format_header(is_header, text_content) = {
     if is_header {
-      text(weight: "extrabold", size: 1.4em, stretch: 50%)[#text_content]
+      text(weight: "semibold", size: 1.4em, stretch: 50%)[#text_content]
     } else {
       text(stretch: 50%)[#text_content]
     }
@@ -363,41 +383,6 @@
   special: none,
 ))
 
-// #let advance-block(name, tier, xp, hp, fp, prerequisites, body) = {
-//   set par(hanging-indent: 1em, first-line-indent: 1em)
-//   set box(fill: eastern, stroke: 1pt, outset: 5pt, radius: 10%)
-//   block[
-//     *#name* #linebreak()
-//     _Tier #tier Advance #linebreak()_
-//     _Cost:_ #xp XP #linebreak()
-//     _HP:_ #hp, _FP:_ #fp #linebreak()
-//     _Prerequisites:_ #prerequisites
-//
-//     #body
-//   ]
-// }
-
-// Action Icons
-//#let A = (
-//  box(image("style/action-icons/single.svg", height: 1em))
-//)
-//#let AA = (
-//  box(image("style/action-icons/double.svg", height: 1em))
-//)
-//#let AAA = (
-//  box(image("style/action-icons/triple.svg", height: 1em))
-//)
-//#let R = (
-//  box(image("style/action-icons/reaction.svg", height: 1em))
-//)
-//#let F = (
-//  box(image("style/action-icons/free.svg", height: 1em))
-//)
-
-#let box-top(info) = [
-  #text(size: 1.3em, weight: "extrabold")[#align(center)[#info\ ]]
-]
-
 #let pftab(
   name,
   columns: (1fr, 4fr),
@@ -405,9 +390,10 @@
   title: true,
   ..contents,
 ) = [
+  #set text(font: fonts.sans)
   #v(1em)
   #block(breakable: breakable)[
-    #if (title) { [*#smallcaps(text(size: 1.3em)[#upper(name)])*] }
+    #if (title) { [#upper(text(size: 1.3em, weight: 600)[#name])] }
     #v(-.5em)
     #table(
       columns: columns,
@@ -445,35 +431,30 @@
   )
 }
 
-#let chap-header(num, title, desc) = place(
+#let toc-header = place(
   center + top,
-  // dx: 55%,
-  dy: -5%,
   scope: "parent",
   float: true,
-  clearance: -0.5em,
+  clearance: 1em,
 )[
   #set text(fill: colors.pfgreen)
   #layout(size => {
-    let content = text(weight: "extrabold")[
-      #text(1.5em, font: "Libre Baskerville")[#upper(num)] \
-      #text(1.5em, font: "Libre Baskerville")[#upper(title)] \
-      #text(1.2em, style: "italic")[#desc]
+    text(weight: "bold")[
+      #text(1.2em)[Table of contents]
     ]
-
-    block(
-      fill: rgb("#f4eee0"),
-      stroke: (
-        bottom: 3pt + rgb("#664200"),
-        rest: none,
-      ),
-      width: 115%,
-      inset: 1em,
-      outset: 1em,
-      align(center, content),
-      // outset: (x: 200%, y: (m.height / 2)),
-    )
   })
+]
+
+#let chap-header(num, title, desc) = place(
+  center + top,
+  scope: "parent",
+  float: true,
+  clearance: 2em,
+)[
+  #text(1.5em, font: fonts.sans, weight: "medium")[#upper(num)]
+  #v(0.5em)
+  #heading(title)
+  #image("../../graphics/header-ornament.svg")
 ]
 
 #let note(info) = [
@@ -492,11 +473,10 @@
 #let attention(content) = [
   #v(1em)
   #box(
-    fill: rgb("#eadcb7"),
-    stroke: (1pt + black),
-    inset: 4pt,
+    fill: rgb("#dbcba6"),
+    inset: 8pt,
   )[
-    #show heading: it => align(center)[#it]
+    #show heading: it => align(center, it)
     #content
   ]
 ]
@@ -644,16 +624,17 @@
   weapons: none,
   body,
 ) = {
+  set text(font: fonts.sans)
   set par(spacing: .6em, first-line-indent: 0em)
   v(1em)
   block[
     #box(
-      text(weight: "extrabold", size: 1.3em, stretch: 50%)[#upper(name)],
+      text(weight: "semibold", size: 1.3em, stretch: 50%)[#upper(name)],
     )
     #h(1fr)
     #sym.wj
     #box(text(
-      weight: "extrabold",
+      weight: "semibold",
       size: 1.3em,
       stretch: 50%,
     )[#upper[Tier #tier #vehicle-type]])
@@ -665,20 +646,20 @@
     #if flavor != none [_#flavor _ \ ]
     #{
       let stats = ()
-      if hull != none { stats.push([*Hull* #hull]) }
-      if armor != none { stats.push([*Armor* #armor]) }
-      if ward != none { stats.push([*Ward* #ward]) }
-      if speed != none { stats.push([*Speed* #speed]) }
-      if maneuverability != none { stats.push([*Maneuver* #maneuverability]) }
-      if size != none { stats.push([*Size* #size]) }
+      if hull != none { stats.push([#text(weight: "semibold")[Hull] #hull]) }
+      if armor != none { stats.push([#text(weight: "semibold")[Armor] #armor]) }
+      if ward != none { stats.push([#text(weight: "semibold")[Ward] #ward]) }
+      if speed != none { stats.push([#text(weight: "semibold")[Speed] #speed]) }
+      if maneuverability != none { stats.push([#text(weight: "semibold")[Maneuver] #maneuverability]) }
+      if size != none { stats.push([#text(weight: "semibold")[Size] #size]) }
       if stats.len() > 0 {
         stats.join[ | ]
         linebreak()
       }
       let caps = ()
-      if weight-cap != none { caps.push([*Wt Cap* #weight-cap]) }
-      if reactor-cap != none { caps.push([*Reactor Cap* #reactor-cap]) }
-      if crew != none { caps.push([*Crew* #crew]) }
+      if weight-cap != none { caps.push([#text(weight: "semibold")[Wt Cap] #weight-cap]) }
+      if reactor-cap != none { caps.push([#text(weight: "semibold")[Reactor Cap] #reactor-cap]) }
+      if crew != none { caps.push([#text(weight: "semibold")[Crew] #crew]) }
       if caps.len() > 0 {
         caps.join[ | ]
         linebreak()
@@ -686,7 +667,7 @@
     }
     #if weapons != none {
       line(stroke: 0.5pt, length: 100%)
-      [*Weapons* \ ]
+      [#text(weight: "semibold")[Weapons] \ ]
       weapons
     }
     #line(stroke: 0.5pt, length: 100%)

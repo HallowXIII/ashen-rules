@@ -1,6 +1,6 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("9", [= Setting], "The World of Ash")
+#chap-header("9", "Setting", "The World of Ash")
 
 The world of Ashen is a ruin, but it is not dead. The cataclysm that the
 histories call the Last War shattered the old order: it killed the gods, tore
