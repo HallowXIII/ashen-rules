@@ -1,8 +1,8 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("1", [= Introduction], "The Basics of the Game")
-\
-#flavor[
+#chap-header("1", "Introduction", "The Basics of the Game")
+
+#flavor(width: 100%, citation: [The Death of the World])[
   Pochfa sheshêp tarash nyôlwâ fêhêk\
   Echayâyti yi thâlâ mêzesh i khanjhi\
   I shayâmbô hêk i tawpanj ipish tarti\
@@ -16,9 +16,6 @@
   Aloft they held their hammers, glory to await\
   At the end of days.
 ]
---- The Death of the World
-
-\
 
 Imagine a world shattered and broken, a shell of its former self. Imagine a
 world reduced to cinders in the fires of the final cataclysm, that yet held on.
@@ -38,7 +35,7 @@ Your curse is two-fold: you remember little of your mortal life, and you cannot
 die until you accomplish your purpose. It is only in the dangerous and
 Fog-drowned wilderness that you might find release.
 
-= Playing the Game
+== Playing the Game
 
 Ashen is a role-playing game in which the players take on the role of immortal
 heroes who form a group (the Party) to go on dangerous adventures in an
@@ -291,8 +288,8 @@ Items that are not maintained risk degradation. For each unmaintained item, the 
   "Equipment Degradation",
   columns: (1fr, 5fr),
   breakable: true,
-  [*D10*],
-  [*Result*],
+  [D10],
+  [Result],
   [1--3],
   [*Cosmetic wear.* The item looks battered but functions normally. No mechanical effect --- this time.],
   [4--5],
@@ -307,11 +304,11 @@ Items that are not maintained risk degradation. For each unmaintained item, the 
 
 Tier 0 items (Old War surplus) have no maintenance cost --- they are already in the worst shape they can be in. Legendary items have unique maintenance requirements determined by the GM, usually involving rare materials or specific conditions rather than a flat currency cost.
 
-= Basic Rules and Common Terms
+== Basic Rules and Common Terms
 Many of the following rules make reference to some common concepts that bear
 explanation.
 
-== Character Statistics
+=== Character Statistics
 
 Every character is largely defined in game terms by several sets of numbers.
 Fundamentally, a character is said to have *Attributes*, *Characteristics*,
@@ -347,11 +344,11 @@ attributes, listed below.
 The values of derived statistics usually also have ratings, but there is no
 uniform way of calculating them.
 
-== Equipment States
+=== Equipment States
 
 Items a character owns can be in one of three states: *carried*, *equipped*, or *wielded*. Carried items are stowed in a pack or on a character's person but are not ready for immediate use. Equipped items are worn or readied on the body and available to be drawn quickly. Wielded items are actively held in hand and ready to use. For full definitions, see _Equipment States_ in the Equipment chapter.
 
-== Advances and Powers
+=== Advances and Powers
 
 Apart from a character's numbers, the choices that most influence a character's
 development have to do with the advances and powers they learn over the course
@@ -367,7 +364,7 @@ the gamut from magical spells to heroic feats of skill at your weapons. They can
 be learnt in a variety of ways: some can be purchased as advances, others must
 be obtained through instruction from a master.
 
-=== Arcane Spells
+==== Arcane Spells
 
 Arcane spellcasters learn spells by studying written formulae --- copying them
 from spellbooks, scrolls, or the notes of other casters. A character can know
@@ -394,7 +391,7 @@ resident casters who can be persuaded --- or paid --- to share their
 knowledge, and the ruins of the old world frequently contain spellbooks
 among their treasures.
 
-=== Divine Prayers
+==== Divine Prayers
 
 Divine prayers are not learned or prepared. They are granted by a character's
 wielded *reliquary* --- a remnant of a dead god that retains a portion of
@@ -409,7 +406,7 @@ that reliquary's prayers (assuming favor has been earned) and loses access to
 the previous one's. This makes the choice of reliquary one of the most
 important decisions a divine caster can make.
 
-=== Psychic Powers
+==== Psychic Powers
 
 Psychic powers are intrinsic to the character. Each Discipline advance grants
 the character a psychic power permanently --- once learned, a psychic power
@@ -420,7 +417,7 @@ to commit XP through a Discipline advance. As with all advances, this can
 only be done during an intermission, unless extraordinary circumstances
 (a divine blessing, communion with a powerful artifact) allow it.
 
-=== Martial Exploits
+==== Martial Exploits
 
 Martial exploits are combat techniques learned through training and battle
 experience. Each Exploit advance grants the character one exploit
@@ -432,7 +429,7 @@ train.
 
 #colbreak()
 
-== Legendary
+=== Legendary
 
 Some items, powers, and advances are marked as *legendary*. Legendary things share two properties: they are _quest-bound_ (they cannot simply be purchased or learned --- they must be earned, recovered, or unlocked through a significant quest or story event), and they are _extraordinary_ (they break or transcend the normal rules in some way).
 

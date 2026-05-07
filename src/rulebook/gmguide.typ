@@ -1,6 +1,6 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("10", [= GM Guide], "How to run the game")
+#chap-header("10", "GM Guide", "How to run the game")
 
 The preceding chapters describe the rules from the player's perspective: how
 checks work, how combat flows, what powers and equipment do. This section

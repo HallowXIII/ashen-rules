@@ -1,15 +1,12 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("7", [= Combat], "When only force may prevail")
+#chap-header("7", "Combat", "When only force may prevail")
 
-#flavor([
+#flavor(citation: [Elth, Twin Swords of the Midnight Gates])[
   Zalahaiči ūyir čama mai yih kazna ayavurohu kawav ova zā. \
   #linebreak()
   All the treasure in the world is not worth the glory of a single battle.
-])
-
---- Elth, Twin Swords of the Midnight Gates \
-#linebreak()
+]
 
 Sometimes, characters’ conflicts cannot be resolved in a way other than coming
 to blows. These situations are handled by the combat rules.

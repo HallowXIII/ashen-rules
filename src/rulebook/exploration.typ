@@ -1,8 +1,8 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("8", [= Exploration], "Moving around the world")
+#chap-header("8", "Exploration", "Moving around the world")
 
-#flavor([
+#flavor(citation: [The Song of the Lost])[
   Ših karimmi, amawai, amawai \
   Kuyāni yān za urviranzā mai \
   Ašatawhānt hižung-čissa fīryai \
@@ -12,10 +12,7 @@
   How long we have not seen \
   Your cold snow-tipped mountain peaks \
   Shining silver against the blue expanse
-])
-
---- The Song of the Lost \
-#linebreak()
+]
 
 The world of Ashen is vast and dangerous. Between battles, characters must
 navigate hostile terrain, endure the elements, manage their resources, and

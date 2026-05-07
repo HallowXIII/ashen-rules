@@ -1,5 +1,5 @@
 #import "../formatting/declarations.typ": feathers
-#import "../formatting/style.typ": colors
+#import "../formatting/style.typ": colors, fonts
 
 // Character sheet — designed as a printable appendix
 
@@ -8,10 +8,11 @@
   columns: 1,
   margin: (left: 10mm, right: 10mm, top: 10mm, bottom: 10mm),
   numbering: none,
+  fill: none,
 )
 
 #set text(
-  font: ("Sofia Sans", "Liberation Sans"),
+  font: fonts.sans,
   size: 8pt,
   stretch: 80%,
 )
@@ -27,13 +28,13 @@
     fill: colors.pfnavy,
     stroke: none,
     inset: 5pt,
-    text(fill: white, weight: "bold", size: 9pt, title),
+    text(fill: white, weight: "semibold", size: 9pt, title),
   )
 }
 
 #let field(label, width: 1fr, height: 18pt) = {
   box(width: width, inset: 2pt)[
-    #text(size: 6.5pt, fill: luma(100), weight: "bold", upper(label))
+    #text(size: 6.5pt, fill: luma(100), weight: "semibold", upper(label))
     #v(2pt)
     #rect(
       width: 100%,
@@ -49,7 +50,7 @@
     #align(center)[
       #rect(width: 28pt, height: 26pt, stroke: 0.6pt + luma(100), radius: 3pt)
       #v(-1pt)
-      #text(size: 6.5pt, fill: luma(80), weight: "bold", smallcaps(label))
+      #text(size: 6.5pt, fill: luma(80), weight: "semibold", smallcaps(label))
     ]
   ]
 }
@@ -58,7 +59,7 @@
   align(center)[
     #rect(width: width, height: height, stroke: 0.7pt + accent, radius: 3pt)
     #v(-1pt)
-    #text(size: 6.5pt, weight: "bold", fill: accent, label)
+    #text(size: 6.5pt, weight: "semibold", fill: accent, label)
   ]
 }
 
@@ -74,7 +75,7 @@
     ),
     text(
       size: 7.5pt,
-      weight: "bold",
+      weight: "semibold",
       label + "  " + text(size: 6pt, fill: luma(110), weight: "regular", attrs),
     ),
     rect(width: 100%, height: 18pt, stroke: 0.4pt + luma(140), radius: 2pt),
@@ -105,7 +106,7 @@
     } else { box(width: 10pt) },
     text(
       size: 7pt,
-      weight: "bold",
+      weight: "semibold",
       label
         + "  "
         + text(size: 5.5pt, fill: luma(120), weight: "regular", attrs),
@@ -140,7 +141,7 @@
       columns: (1fr, 3fr),
       column-gutter: 3pt,
       align: horizon,
-      text(size: 7pt, weight: "bold", label),
+      text(size: 7pt, weight: "semibold", label),
       rect(width: 100%, height: 14pt, stroke: 0.5pt + luma(120), radius: 2pt),
     )
   ]
@@ -164,7 +165,7 @@
 
 #let compact-field(label, width: 1fr) = {
   box(width: width, inset: (x: 1pt, y: 0pt))[
-    #text(size: 5.5pt, fill: luma(100), weight: "bold", upper(label))
+    #text(size: 5.5pt, fill: luma(100), weight: "semibold", upper(label))
     #h(2pt)
     #box(width: 1fr, baseline: -1pt, line(
       length: 100%,
@@ -236,10 +237,10 @@
 // ══════════════════════════════════════════════════════════════════════
 
 #align(center, text(
-  font: "Libre Baskerville",
+  font: fonts.special,
   size: 18pt,
   fill: colors.pfgreen,
-  weight: "bold",
+  weight: "semibold",
   "Ashen — Character Sheet",
 ))
 
@@ -278,7 +279,7 @@
       val-box("FP", accent: colors.pfnavy, height: 36pt),
       val-box("EP", accent: colors.lightgreen, height: 36pt),
       val-box(
-        [#text(font: ("Sofia Sans",), size: 8pt, "ƒ")],
+        [#text(font: fonts.sans, size: 8pt, "ƒ")],
         accent: colors.pfbrown,
         height: 36pt,
       ),
@@ -356,9 +357,9 @@
       column-gutter: 3pt,
       align: (left + bottom, center + bottom, center + bottom, center + bottom),
       [],
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "RANK"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "BONUS"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "RATING"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "RANK"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "BONUS"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "RATING"),
     )
     v(2pt)
     stack(
@@ -452,9 +453,9 @@
       column-gutter: 3pt,
       align: (left + bottom, center + bottom, center + bottom, center + bottom),
       [],
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "RANK"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "BONUS"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "RATING"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "RANK"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "BONUS"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "RATING"),
     )
     v(2pt)
     stack(
@@ -511,10 +512,10 @@
 #pagebreak()
 
 #align(center, text(
-  font: "Libre Baskerville",
+  font: fonts.special,
   size: 18pt,
   fill: colors.pfgreen,
-  weight: "bold",
+  weight: "semibold",
   "Ashen — Advances",
 ))
 
@@ -537,11 +538,11 @@
         center + bottom,
         center + bottom,
       ),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "NAME"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "TIER"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "XP"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "HP"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "FP"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "NAME"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "TIER"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "XP"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "HP"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "FP"),
     )
     v(1pt)
     for i in range(42) {
@@ -562,11 +563,11 @@
         center + bottom,
         center + bottom,
       ),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "NAME"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "TIER"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "XP"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "HP"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "FP"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "NAME"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "TIER"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "XP"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "HP"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "FP"),
     )
     v(1pt)
     for i in range(42) {
@@ -582,10 +583,10 @@
 #pagebreak()
 
 #align(center, text(
-  font: "Libre Baskerville",
+  font: fonts.special,
   size: 18pt,
   fill: colors.pfgreen,
-  weight: "bold",
+  weight: "semibold",
   "Ashen — Equipment & Inventory",
 ))
 
@@ -699,8 +700,8 @@
       columns: (4fr, 1fr),
       column-gutter: 2pt,
       align: (left + bottom, center + bottom),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "ITEM"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "BULK"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "ITEM"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "BULK"),
     )
     v(1pt)
     for i in range(24) {
@@ -720,9 +721,9 @@
       columns: (3fr, 1fr, 1fr),
       column-gutter: 2pt,
       align: (left + bottom, center + bottom, center + bottom),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "ITEM"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "QTY"),
-      text(size: 5.5pt, fill: luma(120), weight: "bold", "BULK"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "ITEM"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "QTY"),
+      text(size: 5.5pt, fill: luma(120), weight: "semibold", "BULK"),
     )
     v(1pt)
     for i in range(12) {
@@ -744,10 +745,10 @@
 #pagebreak()
 
 #align(center, text(
-  font: "Libre Baskerville",
+  font: fonts.special,
   size: 18pt,
   fill: colors.pfgreen,
-  weight: "bold",
+  weight: "semibold",
   "Ashen — Powers",
 ))
 
