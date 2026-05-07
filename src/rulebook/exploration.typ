@@ -528,7 +528,7 @@ can physically traverse. Fuel-cell-powered vehicles require regular refueling.
 cannot operate in enclosed spaces.
 
 *Airships* are large flying vessels capable of long-distance travel above most
-hazards. See the _Airship Combat_ section for rules regarding airship
+hazards. See the #link(<vehicle-combat>)[_Airship Combat_] section for rules regarding airship
 encounters.
 
 == Disease, Hunger, and Exhaustion
