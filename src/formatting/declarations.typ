@@ -397,13 +397,10 @@
     #v(-.5em)
     #table(
       columns: columns,
-      align: (col, row) => if col == 0 { center } else { center },
-      fill: (col, row) => if row == 0 { colors.pfnavy } else if calc.odd(
-        row + 1,
-      ) { colors.pfwhite } else { colors.otherRow },
+      align: center,
+      fill: none,
       inset: 5pt,
-      stroke: none,
-      // align: horizon,
+      stroke: (x: none, y: 0.5pt + colors.pfnavy),
       ..contents
     )
     #v(1em)

@@ -476,12 +476,12 @@ traverse a chasm or gap hanging off overhead handholds.
 
 #pftab(
   "Climbing Difficulties",
-  columns: 2,
+  columns: (2fr, 1fr),
   align: (left, center),
 
   [Example Surface or Activity],
   [Check Difficulty],
-  [... on very wet or otherwise slippery surfaces],
+  [... on very wet or slippery surfaces],
   [+2],
   [... in strong wind],
   [+2],
@@ -492,7 +492,7 @@ move objects, whether by lifting, throwing, or even just pushing.
 
 #pftab(
   "Lifting and Throwing Difficulties",
-  columns: 2,
+  columns: (2fr, 1fr),
   align: (left, center),
 
   [Example activity],
@@ -520,7 +520,7 @@ requires a check.
 
 #pftab(
   "Swimming Difficulties",
-  columns: 2,
+  columns: (3fr, 1fr),
   align: (left, center),
 
   [Water Condition],

@@ -98,7 +98,7 @@
 
   // Struggled to get this. Work around found here -> https://github.com/typst/typst/issues/3640
   show table.cell.where(y: 0): it => (
-    text(fill: white, weight: "semibold")[#it]
+    text(fill: colors.pfnavy, weight: "semibold")[#it]
   )
   doc
 }
