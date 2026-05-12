@@ -14,56 +14,56 @@
 
   container(align: left, width: 50%)
   container(align: right, width: 50%)
-
-content[=== Clockwork
-
-#flavor[“The Goddess Third loved toys and tinkers, and when she took up arms,
-  her toys marched alongside her.”]
-
-You are a construct, a machine of supreme elegance, the watchmaker’s art united
-with that of the wizard. Powered by the energy of your soul-anchor and the
-arcane workings of your mechanism, you were once created for love of art and
-science, and once reforged in your maker’s tears to fight like no creature could
-fight.
-
-There are two kinds of clockworks: Ironhands and Porcelains. All clockworks have
-the following traits:
-
-==== Construct
-
-You are a machine, and thus do not need to eat, breathe, or sleep. You are
-immune to poison and disease. In practical terms: hunger, thirst, and sleep
-deprivation are not tracked for you; you are unaffected by poison gas, smoke
-inhalation, and suffocation; and ambient temperature within survivable ranges
-has no effect on you. You still benefit from short and long rests by entering
-a low-power maintenance mode. However, you are treated as a machine and are
-subject to all effects that target machines.
-
-==== Wind-Up
-You are powered by the soul-anchor you carry within your body, which drives the
-mechanism that moves you. When the connection to the soul-anchor is interrupted,
-you become an inanimate object after three rounds until the connection is
-restored. This effect can be staved off for up to one hour by winding up your
-mechanism manually from the outside. After this time, you lose consciousness and
-winding up has no further effect until the underlying problem is fixed.
-
-==== Magnetic Vulnerability
-Strong magnetic fields disrupt the delicate circuitry that drives your
-mechanism. Such fields are found near unshielded magitek power plants, in the
-shadow of certain ruined industrial sites, and during the magnetic storms that
-occasionally roll through Dense Fog regions.
-- *Moderate field:* --1d to all checks while in the field.
-- *Strong field:* --2d to all checks; at the start of each round of exposure,
-  you must succeed on a Grit check (difficulty 5) or be Stunned until the end
-  of your next turn.
-- *Severe field:* --3d to all checks; on a failed Grit check, you shut down
-  for one stretch and must be carried clear. A successful Shop check
-  (difficulty 6) by an ally can stave off the next failure.
-
-==== Particulate Vulnerability
-Sandstorms, ash fall, silt-laden air, and the interior of certain ruined
-factories deposit superfine particles that
-
+  
+  content[=== Clockwork
+  
+  #flavor[“The Goddess Third loved toys and tinkers, and when she took up arms,
+    her toys marched alongside her.”]
+  
+  You are a construct, a machine of supreme elegance, the watchmaker’s art united
+  with that of the wizard. Powered by the energy of your soul-anchor and the
+  arcane workings of your mechanism, you were once created for love of art and
+  science, and once reforged in your maker’s tears to fight like no creature could
+  fight.
+  
+  There are two kinds of clockworks: Ironhands and Porcelains. All clockworks have
+  the following traits:
+  
+  ==== Construct
+  
+  You are a machine, and thus do not need to eat, breathe, or sleep. You are
+  immune to poison and disease. In practical terms: hunger, thirst, and sleep
+  deprivation are not tracked for you; you are unaffected by poison gas, smoke
+  inhalation, and suffocation; and ambient temperature within survivable ranges
+  has no effect on you. You still benefit from short and long rests by entering
+  a low-power maintenance mode. However, you are treated as a machine and are
+  subject to all effects that target machines.
+  
+  ==== Wind-Up
+  You are powered by the soul-anchor you carry within your body, which drives the
+  mechanism that moves you. When the connection to the soul-anchor is interrupted,
+  you become an inanimate object after three rounds until the connection is
+  restored. This effect can be staved off for up to one hour by winding up your
+  mechanism manually from the outside. After this time, you lose consciousness and
+  winding up has no further effect until the underlying problem is fixed.
+  
+  ==== Magnetic Vulnerability
+  Strong magnetic fields disrupt the delicate circuitry that drives your
+  mechanism. Such fields are found near unshielded magitek power plants, in the
+  shadow of certain ruined industrial sites, and during the magnetic storms that
+  occasionally roll through Dense Fog regions.
+  - *Moderate field:* --1d to all checks while in the field.
+  - *Strong field:* --2d to all checks; at the start of each round of exposure,
+    you must succeed on a Grit check (difficulty 5) or be Stunned until the end
+    of your next turn.
+  - *Severe field:* --3d to all checks; on a failed Grit check, you shut down
+    for one stretch and must be carried clear. A successful Shop check
+    (difficulty 6) by an ally can stave off the next failure.
+  
+  ==== Particulate Vulnerability
+  Sandstorms, ash fall, silt-laden air, and the interior of certain ruined
+  factories deposit superfine particles that
+  
 ]})
 
 #meander.reflow({

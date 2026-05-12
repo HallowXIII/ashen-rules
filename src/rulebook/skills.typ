@@ -61,7 +61,9 @@ of 18.
 
 Skills are usually called upon in situations where unusual danger must be
 confronted or special knowledge is required. As such, using a skill requires
-making a skill check.
+making a skill check. Remember that a check should only be called for when
+failure carries a meaningful consequence (see _When to Call for a Check_ in the
+Introduction).
 
 To roll a skill check, first determine your total *rating* for that skill. Every
 skill is associated with two attributes; add up your skill ranks with your ranks

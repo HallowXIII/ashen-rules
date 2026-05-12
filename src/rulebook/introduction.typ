@@ -92,6 +92,25 @@ difficulty number of the roll, the check is considered successful and your
 character accomplishes his or her goal. If not, you suffer the consequences of
 failure.
 
+=== When to Call for a Check
+
+A check should only be called for when failure carries a meaningful 
+consequence. A helpful mnemonic is: _or else_. Before asking a player to roll,
+the GM should know what happens if they fail, and should generally communicate
+it. "Make an Athletics check _or else_ you lose your grip and fall." "Make an 
+Influence check _or else_ the official grows suspicious of your motives." 
+
+If there is no consequence for failure, there is no check --- the character 
+simply succeeds. Conversely, if success is impossible regardless of the 
+character's abilities, no check should be called for either.
+
+In cases where the character attempting a check does not know what dangers
+might await them, the GM can choose not to communicate the consequences of a
+roll in advance. From the GM's perspective, the check might be phrased as
+"make an Access check _or else_ you will trigger a poison needle trap", but
+unless the PC has determined the presence of the trap beforehand, they would
+only find out about it if they fail their check.
+
 === Bonuses and Penalties
 Many abilities, items and circumstances grant a bonus or a penalty to a check.
 These bonuses and penalties are expressed as numbers of Ashen dice, or ±Xd for

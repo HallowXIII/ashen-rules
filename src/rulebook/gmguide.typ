@@ -209,6 +209,22 @@ conditions, and circumstances, defines how well-suited they are to attempt it.
   and you cannot retreat" is an interesting failure: the party is now committed to
   whatever lies ahead, and the tactical landscape has changed.]
 
+Every check must have an _or else_: a consequence the GM can name before the
+dice hit the table. "Make an Athletics check _or else_ you lose your grip and
+fall into the river below." "Make an Influence check _or else_ the magistrate
+grows suspicious." If you cannot articulate the consequence, there is no check
+--- the character simply succeeds. This keeps the game moving and ensures that
+every roll matters.
+
+Err on the side of allowing a check rather than denying one. The Ashen dice
+pool has a theoretical ceiling of 36 successes --- an 18d pool where every die
+lands on 6. Even without bonuses, a sufficiently skilled character can, on a
+spectacular roll, accomplish feats far beyond what the difficulty table would
+suggest is routine for their pool. This is a feature of the system, not a flaw:
+the dice leave room for the extraordinary. When a player proposes something
+audacious, set a high difficulty and let them roll. The worst case is an
+interesting failure; the best case is a story the table will remember.
+
 === Flexible and Load-Bearing Rules
 
 Not every rule in Ashen carries the same structural weight. Some are calibrated
