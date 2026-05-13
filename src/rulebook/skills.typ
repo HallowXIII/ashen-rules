@@ -116,15 +116,26 @@ right, failing and retrying as needed until they arrive at a satisfactory
 outcome.
 
 === Helping Another
-Some tasks are amenable to being performed in groups. If you decide to join
-another in making such a skill check, then you can grant them a bonus to their
-check. The first helper adds a +2 bonus, every helper after that a +1 bonus. In
-order to qualify to help another in their skill check, your skill rating must be
-at least equal to the difficulty of the task. For example, to help somebody in a
-ritual with difficulty 6, your Ritual rating must be 6 or higher.
+Some tasks are amenable to being performed in groups. If you decide to help
+another character with a skill check, you make your own check using the same
+skill and difficulty. Half of your successes (rounded down) are added as bonus
+dice to the aided character's check. Multiple helpers can assist the same check,
+each contributing their bonus separately.
 
-You cannot help another with a task requiring a trained skill if you are not
-yourself trained in that skill.
+To help, you must be trained in the skill if the task requires training. Not
+every task admits assistance --- the GM determines whether a given check can
+benefit from help based on the following guidelines:
+
+- *Collaborative tasks* readily admit help: lifting a heavy gate, searching a
+  room, repairing a vehicle, treating a patient, or performing a ritual together.
+- *Knowledge and recall checks* admit help when the group can pool their
+  expertise --- each helper's successes represent their own contributions to the
+  collective effort.
+- *Personal and reflexive checks* cannot be aided: resisting a poison, keeping
+  your balance, or steeling yourself against fear.
+- *Social checks* can be aided only if the helper contributes meaningfully to the
+  conversation, such as presenting corroborating evidence or backing up an
+  argument. Simply being present does not help.
 
 
 == Difficulty
