@@ -84,7 +84,7 @@ In addition, every Sootbeast must choose one of the following two subtypes:
 
 You are the epitome of what people picture when they hear the word “Sootbeast” spoken. Tough, strong, bristling with claw and tusk, you make your enemies tremble with your coming and your allies glad to have you by their side.
 
-Warboars stand between 175 and 220 cm tall and weigh between 90 and 140 kg. Their skin is shades of green from Olive to Forest; their hairis often itself green, but can also come in shades of red, brown or black.
+Warboars stand between 175 and 220 cm tall and weigh between 90 and 140 kg. Their skin is shades of green from Olive to Forest; their hair is often itself green, but can also come in shades of red, brown or black.
 
 As a Warboar, you gain the following racial traits:
 

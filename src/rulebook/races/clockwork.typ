@@ -2,7 +2,7 @@
 #import "@preview/meander:0.4.2"
 
 #let ironhands = image("../../../graphics/illustrations/Ironhands.png", height: 50%)
-#let porcelain = image("../../../graphics/illustrations/porcelain.png", height: 50%)
+#let porcelain = image("../../../graphics/illustrations/porcelain.png", height: 60%)
 
 #set page(columns: 1)
 
@@ -10,7 +10,7 @@
 
   import meander: *
 
-  placed(left + bottom, ironhands)
+  placed(right + bottom, boundary: contour.ascii-art(read("../../../graphics/illustrations/Ironhands.png.contour")), ironhands)
 
   container(align: left, width: 50%)
   container(align: right, width: 50%)
@@ -29,40 +29,43 @@
   There are two kinds of clockworks: Ironhands and Porcelains. All clockworks have
   the following traits:
   
-  ==== Construct
-  
-  You are a machine, and thus do not need to eat, breathe, or sleep. You are
-  immune to poison and disease. In practical terms: hunger, thirst, and sleep
-  deprivation are not tracked for you; you are unaffected by poison gas, smoke
-  inhalation, and suffocation; and ambient temperature within survivable ranges
-  has no effect on you. You still benefit from short and long rests by entering
-  a low-power maintenance mode. However, you are treated as a machine and are
-  subject to all effects that target machines.
-  
-  ==== Wind-Up
-  You are powered by the soul-anchor you carry within your body, which drives the
-  mechanism that moves you. When the connection to the soul-anchor is interrupted,
-  you become an inanimate object after three rounds until the connection is
-  restored. This effect can be staved off for up to one hour by winding up your
-  mechanism manually from the outside. After this time, you lose consciousness and
-  winding up has no further effect until the underlying problem is fixed.
-  
-  ==== Magnetic Vulnerability
-  Strong magnetic fields disrupt the delicate circuitry that drives your
-  mechanism. Such fields are found near unshielded magitek power plants, in the
-  shadow of certain ruined industrial sites, and during the magnetic storms that
-  occasionally roll through Dense Fog regions.
-  - *Moderate field:* --1d to all checks while in the field.
-  - *Strong field:* --2d to all checks; at the start of each round of exposure,
-    you must succeed on a Grit check (difficulty 5) or be Stunned until the end
-    of your next turn.
-  - *Severe field:* --3d to all checks; on a failed Grit check, you shut down
-    for one stretch and must be carried clear. A successful Shop check
-    (difficulty 6) by an ally can stave off the next failure.
-  
-  ==== Particulate Vulnerability
-  Sandstorms, ash fall, silt-laden air, and the interior of certain ruined
-  factories deposit superfine particles that
+   ==== Construct
+   
+   You are a machine, and thus do not need to eat, breathe, or sleep. You are
+   immune to poison and disease. In practical terms: hunger, thirst, and sleep
+   deprivation are not tracked for you; you are unaffected by poison gas, smoke
+   inhalation, and suffocation; and ambient temperature within survivable ranges
+   has no effect on you. You still benefit from short and long rests by entering
+   a low-power maintenance mode. However, you are treated as a machine and are
+   subject to all effects that target machines.
+   
+   ==== Wind-Up
+   You are powered by the soul-anchor you carry within your body, which drives the
+   mechanism that moves you. When the connection to the soul-anchor is interrupted,
+   you become an inanimate object after three rounds until the connection is
+   restored. This effect can be staved off for up to one hour by winding up your
+   mechanism manually from the outside. After this time, you lose consciousness and
+   winding up has no further effect until the underlying problem is fixed.
+   
+   ==== Magnetic Vulnerability
+   Strong magnetic fields disrupt the delicate circuitry that drives your
+   mechanism. Such fields are found near unshielded magitek power plants, in the
+   shadow of certain ruined industrial sites, and during the magnetic storms that
+   occasionally roll through Dense Fog regions.
+   - *Moderate field:* --1d to all checks while in the field.
+   - *Strong field:* --2d to all checks; at the start of each round of exposure,
+     you must succeed on a Grit check (difficulty 5) or be Stunned until the end
+     of your next turn.
+   - *Severe field:* --3d to all checks; on a failed Grit check, you shut down
+     for one stretch and must be carried clear. A successful Shop check
+     (difficulty 6) by an ally can stave off the next failure.
+   
+   ==== Particulate Vulnerability
+   Sandstorms, ash fall, silt-laden air, and the interior of certain ruined
+   factories deposit superfine particles that work their way into your joints
+   and gears. After 4 hours of exposure without adequate sealing, you take --1d
+   on physical checks; this penalty accumulates by another --1d every 4 hours,
+   to a maximum of --3d. 
   
 ]})
 
@@ -70,15 +73,12 @@
 
   import meander: *
 
-  placed(center + bottom, porcelain)
+  placed(center + bottom, boundary: contour.ascii-art(read("../../../graphics/illustrations/porcelain.png.contour")), porcelain)
 
   container(align: left, width: 50%)
   container(align: right, width: 50%)
 
-content[work their way into your joints
-and gears. After 4 hours of exposure without adequate sealing, you take --1d
-on physical checks; this penalty accumulates by another --1d every 4 hours,
-to a maximum of --3d. The penalty is removed by 1 hour of dedicated
+content[The penalty is removed by 1 hour of dedicated
 maintenance per --1d incurred (a Shop check, GM's discretion), or by a long
 rest in a clean environment. Sealed face plates, oiled joint covers, and
 similar gear extend the time before the first penalty applies.
@@ -86,13 +86,11 @@ similar gear extend the time before the first penalty applies.
 ==== Fog Sensitivity
 Clockworks are themselves a form of magitek, and react to elevated Fog
 densities much more strongly than biological creatures. Your Fog Exposure
-thresholds (see _Fog Exposure_ in the Exploration chapter) are halved ---
-the inverse of humans. In addition, at the start of each stretch spent in
-Dense or Extreme Fog, you must succeed on a Grit check (difficulty 5 in Dense
-Fog, difficulty 7 in Extreme Fog) or suffer a malfunction: you are Stunned
-until the end of your next turn, or, at the GM's option, suffer a randomly
-determined minor effect (a stuck servo, a spell capacitor misfire, a limb
-that briefly ceases to obey).
+thresholds (see _Fog Exposure_ in the Exploration chapter) are halved. 
+In addition, at the start of each stretch spent in Dense or Extreme Fog,
+you must succeed on a Grit check (difficulty 5 in Dense Fog, difficulty 7
+in Extreme Fog) or suffer a malfunction: you suffer a randomly determined minor
+effect (a stuck servo, a capacitor overload, a limb that briefly ceases to obey).
 
 In addition, every clockwork must choose one of the following two subtypes:
 
@@ -100,6 +98,13 @@ In addition, every clockwork must choose one of the following two subtypes:
 You are a walking suit of armor, made to wield heavy weapons and crush your foes
 in melee. Your actual body is a magi-mechanic core that powers the limbs and
 weapons of your iron form.
+
+Ironhands gain most of their physical features from their frames, which can
+vary wildly in their designs. While most Ironhands frames are humanoid in shape,
+designs featuring serpentine bodies or bodies with large amounts of legs are
+sometimes used for specialized tasks. Work and combat frames are often large and heavy,
+weighing up to several tons, while frames more suited to interacting socially with 
+other humanoids are similar in size to humans and weigh several hundred kilos.
 
 You gain the following racial traits:
 
@@ -121,6 +126,10 @@ Your charge use is calculated as normal.
 Where the Ironhands are brute force, the Porcelains are effortless grace. Lithe,
 youthful figures, they were originally crafted as companions for the reclusive
 Just-So. When the war came, she remade them as conduits for raw magical might.
+
+Porcelains are shaped to be lithe and youthful, and, although they are genderless,
+mostly resemble female humanoids (although Porcelains built to resemble men exist as well).
+They stand between 160--185 cm tall and weigh 200-300 kg.
 
 You gain the following racial traits:
 
