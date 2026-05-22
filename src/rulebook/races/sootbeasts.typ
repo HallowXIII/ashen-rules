@@ -21,17 +21,18 @@
   container(align: right, width: 50%)
 
 content[=== Soot-Beasts
-#flavor[“The Lion-Headed God of War, jealous of his brother, pawned his
+#flavor["The Lion-Headed God of War, jealous of his brother, pawned his
   innocence to the Boar-Mother for creations of his own. Always itching for war,
   her work had the aspect of their mother, but the temperament of their
-  father.”]
+  father."]
 
 This diverse race of mostly green-skinned mostly humanoids has vexed many a
 scholar and led to the banning of many books. Optimized for life on the
 battlefield, many associate Sootbeasts with warlikeness and bravery. Although
 not all forms of them display these traits, the ones presented here do.
 
-There are two kinds of Sootbeasts: Warboars and Goldenbristles. Regardless of subtype, all Sootbeasts gain the following racial traits:
+There are two kinds of Sootbeasts: Warboars and Goldenbristles.
+Regardless of subtype, all Sootbeasts gain the following racial traits:
 
 ==== Asexual
 Sootbeasts reproduce in idiosyncratic ways and therefore do not have the
@@ -71,6 +72,11 @@ twice as long as other races before suffering penalties.
   container(align: right, width: 50%)
 
 content[
+
+==== Keen Scent
+Your battlefield heritage has left you with a powerful sense of smell. You
+gain the _Scent_ trait.
+
 ==== Tainted Flesh
 The Soot-Beasts’ close ancestral link to the Boar-Mother makes them a
 natural breeding ground for disease and a poor host for poisons. Difficulty
@@ -82,9 +88,18 @@ In addition, every Sootbeast must choose one of the following two subtypes:
 
 ==== Warboar
 
-You are the epitome of what people picture when they hear the word “Sootbeast” spoken. Tough, strong, bristling with claw and tusk, you make your enemies tremble with your coming and your allies glad to have you by their side.
+#race-infobox(
+  creature-type: "Humanoid",
+  senses: "Keen Scent",
+  height: "175--220 cm",
+  weight: "90--140 kg",
+  build: "Tough, strong; bristling with claw and tusk",
+  coloring: "Green skin (olive to forest); hair in green, red, brown, or black",
+)
 
-Warboars stand between 175 and 220 cm tall and weigh between 90 and 140 kg. Their skin is shades of green from Olive to Forest; their hair is often itself green, but can also come in shades of red, brown or black.
+You are the epitome of what people picture when they hear the word "Sootbeast" spoken. Tough, strong, bristling with claw and tusk, you make your enemies tremble with your coming and your allies glad to have you by their side.
+
+Warboars stand taller and heavier than most humans. Their skin is shades of green from Olive to Forest; the hair on their boar-like heads is often itself green, but can also come in shades of red, brown or black.
 
 As a Warboar, you gain the following racial traits:
 
@@ -101,6 +116,16 @@ cannot regain more AP than you spent on the action that triggered this ability.]
 colbreak()
 
 content[==== Goldenbristle
+
+#race-infobox(
+  creature-type: "Humanoid",
+  senses: "Keen Scent, Low-light vision",
+  height: "170--210 cm",
+  weight: "70--100 kg",
+  build: "Leaner than Warboars; charismatic bearing",
+  coloring: "Light green to yellow skin; hair in green, red, brown, black, or bright blonde",
+)
+
 Where there is brawn, there must be brain, or else the army will falter. While
 nothing compels an Warboar to be stupid, and nothing compels a Goldenbristle to
 weakness, their temperaments are by and large very different. Where a Warboar
@@ -110,8 +135,6 @@ Goldenbristle is charismatic and imperious, reflecting their designated role as 
 
 Goldenbristles have a greater diversity of colors than other Sootbeasts, reflecting the greater influence of their divine Father. Their skin ranges from light green to yellow; the hair on their heads comes in similar colors as that of Warboars, but can be bright blonde as well.
 
-Goldenbristles stand between 170-210 cm tall and weigh between 70 and 100 kg.
-
 As a Goldenbristle, you gain the following
 racial traits:
 
@@ -119,6 +142,10 @@ racial traits:
 You have a natural talent at winning others’ respect, if not loyalty, and your
 orders tend to be followed. You gain a +2 bonus on Command rolls to activate
 Command Powers.
+
+===== Low-light Vision
+A field commander must be able to survey the battlefield at all hours. You treat
+dim light as bright light for the purposes of vision.
 
 ===== Time to strike!
 You gain a +2 bonus to your Initiative roll. In addition, once per round, you

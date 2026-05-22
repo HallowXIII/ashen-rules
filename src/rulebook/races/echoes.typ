@@ -5,9 +5,14 @@
 #let shade = image("../../../graphics/illustrations/Shade.png", height: 60%)
 
 === Echoes
-#flavor[“High and Just-As-High were different from their sister. They were not
-  content to play in silence by themselves, but made wonderful playgrounds for﻿
-  themselves, and filled them with playmates.”]
+#flavor["High and Just-As-High were different from their sister. They were not
+  content to play in silence by themselves, but made wonderful playgrounds for
+  themselves, and filled them with playmates."]
+
+#race-infobox(
+  creature-type: "Fey",
+  build: "Elfin; pointed ears, slender builds, elongated proportions",
+)
 
 Echoes are fey creatures, born of the capricious goddesses of Magic, Knowledge
 and Fate. The sisters ruled over their own fey domains, twisted reflections of
@@ -85,6 +90,16 @@ choose one of the following subtypes:
 
 content[
   ==== Mirrors
+
+#race-infobox(
+  creature-type: "Fey",
+  senses: "Light-attuned (resist blinding; low light treated as darkness)",
+  height: "120--210 cm",
+  weight: "50--120 kg",
+  build: "Exaggerated proportions; generally tall and broad-shouldered",
+  coloring: "Vivid; tends toward darker skin tones, often luminous in sunlight",
+)
+
 The Mirrors, children of Might-Be, the Fateweaver, are the fairest of the
 humanoid races. They lived in the beautiful lands of Faerie, once, and like many
 of its denizens, they are adept at misleading their foes.
@@ -100,6 +115,12 @@ Mirrors can and do become both underweight and obese, and they may be well outsi
 the range of body weights given here when this happens.
 
 Mirrors gain the following racial traits:
+
+===== Light-Attuned Senses
+Your mother-goddess is the lady of day, and your senses are tuned to her domain.
+You are immune to being blinded by bright light, including magical light effects.
+However, you treat low-light conditions as darkness --- in dim light, you cannot
+see without an additional light source.
 
 ===== Children of Day
 A Mirror gains +1d on Endurance checks while in direct sunlight.
@@ -133,6 +154,16 @@ to bewilder your foes. You gain the following power:
 
 content[
 ==== Shades
+
+#race-infobox(
+  creature-type: "Fey",
+  senses: "Blindsense 5m (hearing), Low-light vision; Light-sensitive",
+  height: "165--190 cm",
+  weight: "60--80 kg",
+  build: "Middling height, slender; rarely overly portly or muscled",
+  coloring: "Pale",
+)
+
 Shades were the favored companion of Once-Was, the Knower of Ways, Goddess of
 what is Hidden and Forgotten. They are said to have dwelt deep underground, in
 glorious palaces, until they rode out to hunt in the long winter nights of
@@ -161,6 +192,13 @@ You gain the following power:
   cost: "6 FP per Tier",
   range: "15; one target",
 )
+
+===== Acute Hearing
+The huntresses of the Autumn Court stalked their prey through the endless dark of
+the deep fey. You have Blindsense out to 5 meters, allowing you to detect
+creatures and objects by sound alone without needing line of sight. However, you
+are light-sensitive --- in direct sunlight or equivalent magical brightness, you
+suffer --1d on Perception checks and attack rolls.
 
 ===== Children of Night
 A Shade gains +1d on Endurance checks while in dim light or darkness.]

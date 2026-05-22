@@ -603,6 +603,43 @@
   ))
 }
 
+#let race-infobox(
+  creature-type: none,
+  senses: none,
+  height: none,
+  weight: none,
+  build: none,
+  coloring: none,
+) = [
+  #v(0.5em)
+  #box(
+    width: 100%,
+    fill: rgb("#e2d7d3"),
+    inset: 7pt,
+  )[
+    #set text(font: fonts.sans, size: 0.9em)
+    #set par(spacing: 0.4em)
+    #{
+      let top = ()
+      if creature-type != none { top.push([*Creature Type:* #creature-type]) }
+      if senses != none { top.push([*Senses:* #senses]) }
+      if top.len() > 0 { top.join[ #h(1em) ] }
+    }
+    #{
+      let phys = ()
+      if height != none { phys.push([*Height:* #height]) }
+      if weight != none { phys.push([*Weight:* #weight]) }
+      if phys.len() > 0 {
+        linebreak()
+        phys.join[ #h(1em) ]
+      }
+    }
+    #if build != none [\ *Build:* #build]
+    #if coloring != none [\ *Coloring:* #coloring]
+  ]
+  #v(0.5em)
+]
+
 #let vehicle-stat-block(
   name,
   vehicle-type,
