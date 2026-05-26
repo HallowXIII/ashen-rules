@@ -589,41 +589,40 @@ An area power must have *line of effect* from its origin point to each target â€
 Every character has a large and varying set of actions available to take during
 combat.
 
-==== Standard Actions (1 AP)
+==== 1 AP Actions
 
-*Brace* \
-*Disengage* \
-*Draw/Stash* \
-*Drop Prone* \
-*Stand Up* \
-*Take Aim*
+- Brace
+- Disengage
+- Draw/Stash
+- Drop Prone
+- Stand Up
+- Take Aim
 
-==== Standard Actions (2 AP)
+==== 2 AP Actions
 
-*Attack* \
-*Combat Maneuver* \
-*Dash* \
-*Dismember* \
-*Use Item*
+- Attack
+- Combat Maneuver
+- Dash
+- Dismember
+- Use Item
 
-==== Standard Actions (3 AP)
+==== 3 AP Actions
 
-*Charge*
+- Charge
 
-==== Standard Actions (Special)
+==== Actions with variable AP costs
 
-*Move* \
-*Use Skill* \
-*Use Power* \
-*Cast Spell*
+- Move
+- Use Skill
+- Use Power
 
 ==== Reactions
 
-*Combat Maneuver (Reactive)* \
-*Counterspell* \
-*Dive* \
-*Fire Overwatch* \
-*Opportunity Attack*
+- Combat Maneuver (Reactive)
+- Counterspell
+- Dive
+- Fire Overwatch
+- Opportunity Attack
 
 === Explanation of Actions
 
@@ -1373,7 +1372,6 @@ has already been knocked offline, take the next entry down the table
   "Tactical Vehicle System Damage (D6)",
   columns: (1fr, 3fr),
   align: (center, left),
-  stroke: 0.5pt,
 
   [*Roll*],
   [*System Disabled*],
@@ -1395,7 +1393,6 @@ has already been knocked offline, take the next entry down the table
   "Capital Vessel System Damage (D8)",
   columns: (1fr, 3fr),
   align: (center, left),
-  stroke: 0.5pt,
 
   [*Roll*],
   [*System Disabled*],

@@ -953,8 +953,6 @@ attained, as shown in the tables below.
   [Once per encounter, you may take a move action as a free action at the start of your turn.],
 )
 
-#colbreak()
-
 #advance-block(
   "Impossible Swiftness",
   4,

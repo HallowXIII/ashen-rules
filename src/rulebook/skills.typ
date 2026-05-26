@@ -1810,8 +1810,6 @@ As with the Ritual enchantments above, half the tier of the target item (rounded
   failure: "The paste is unstable — the resistance works but degrades by 1 per encounter.",
 )
 
-#colbreak()
-
 #ritual-description(
   "Philosopher's Reagent",
   5,

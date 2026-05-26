@@ -3267,8 +3267,6 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   *Solid Moonlight:* _(Legendary.)_ Moonray grants a +4 bonus to casting Arcane spells. This bonus increases to +7 for Ice and Moonlight spells.
 ]
 
-#colbreak()
-
 #item-description(
   "Serpent Staff",
   "Catalyst",
