@@ -262,7 +262,7 @@ significant supernatural or technological assistance.
 
 Strength contributes to a character’s capacity for Athletics and Manual Labor.
 It influences the Martial and Stamina characteristics of a character. It also
-adds to their Athletics skill.
+adds to their Athletics and Impose skills.
 
 ==== Endurance
 
@@ -272,8 +272,8 @@ themselves, lest they fail to keep up; a very high-Endurance character can fight
 in the heaviest armor for hours without needing to rest.
 
 Endurance helps a character resist harsh environments and the exertions of long
-travel under muscle power. It influences a character’s Grit and Stamina
-characteristics. It also assists their Athletics skill.
+travel under muscle power. It influences a character’s Speed, Stamina and Grit
+characteristics. It also adds to the Shop skill.
 
 ==== Agility
 Agility represents a character’s ability to move their body quickly and
@@ -283,7 +283,7 @@ devastatingly fast blows.
 
 Agility assists a character in almost all spheres of physical exertion. It
 influences a character’s Martial, Speed and Dodge characteristics. It also
-assists their Acrobatics skill.
+assists their Acrobatics, Subterfuge and Piloting skills.
 
 ==== Dexterity
 Where Agility is about speed and explosivity, Dexterity represents a character’s
@@ -293,7 +293,8 @@ out of rope bindings than one with low Dexterity.
 
 Dexterity assists characters both in the control of their own body as well as in
 the manipulation of various mechanisms. Dexterity adds to a character’s
-Marksmanship characteristic, as well as their Access, Shop and Piloting skills.
+Marksmanship characteristic, as well as their Acrobatics, Access, Electronics,
+Magitek, and Shop skills.
 ==== Attunement
 Attunement represents a character’s capacity to sense and manipulate the flow of
 magical energies around them. It is an indispensable attribute for would-be
@@ -304,7 +305,7 @@ to make use of magical items. A high-Attunement character, on the other hand,
 will find these pursuits easy.
 
 Attunement adds to a character’s Arcane and Potential characteristics. It also
-aids in the Eerie, Magitek and Ritual skills.
+aids in the Eerie, Alchemy, Magitek and Occultism skills.
 ==== Sight
 Sight represents a character’s proverbial Sixth Sense: an uncanny talent to know
 things that by rights ought to be unknowable. A character with high Sight is
@@ -314,22 +315,23 @@ what lies beyond, allowing them a modicum of clairvoyance and the ability to
 make use of psychic powers.
 
 Sight contributes to a character’s Psychic and Initiative ratings. It is also
-useful for the Eerie and Occultism skills.
+useful for the Awareness, Eerie, Access, Piloting and Influence skills.
 ==== Intelligence
 Intelligence represents a character’s capacity to absorb and process new
 information. High Intelligence marks a character as quick-witted and capable of
 finding novel solutions to problems.
 
 Intelligence is the foundational attribute for most technical skills. It adds to
-a character’s Initiative and Arcane characteristics as well as their Access,
-Influence, Alchemy, Electronics and Magitek skills.
+a character’s Initiative and Arcane characteristics as well as their Deceive,
+Investigate, Subterfuge, Electronics and Ritual skills.
 ==== Perception
 The mundane counterpart to Sight, Perception measures how acute a character’s
 ordinary five senses are. A character with high Perception is more likely to
 notice fine details that another might have missed.
 
 Perception contributes to many different skills. It adds to a character’s
-Marksmanship and Dodge ratings as well as their Alchemy and Piloting skills.
+Marksmanship and Dodge ratings as well as their Awareness, Investigate and
+Alchemy skills.
 
 ==== Will
 Will represents a character’s capacity for taking decisions and seeing them
@@ -338,7 +340,7 @@ to resist pain or attempts at controlling them, as well as be more able to
 follow through on their decisions.
 
 Will contributes to a character’s Grit, Potential, Psychic and Command ratings.
-It also adds to their Impose, Occultism and Ritual skills.
+It also adds to their Athletics and Ritual skills.
 
 ==== Presence
 Presence is a measure of the character’s ability to capture others’ attention. A
@@ -347,7 +349,7 @@ to turn all the heads that can be turned. A low-Presence character is much more
 forgettable, which has social disadvantages, but also lets one be more stealthy.
 
 The Presence attribute contributes to a character’s Command rating. It also adds
-to the Impose and Influence skills.
+to the Deceive, Impose, Influence and Occultism skills.
 
 === Characteristics
 Apart from their attributes, each character also has several characteristics
@@ -367,69 +369,82 @@ advancement for details.
 
 ==== Martial
 Attributes: STR + AGI \
-This characteristic describes a character’s effectiveness in melee combat. It is
-used to make attack rolls with melee or thrown weapons. You need to make an
-opposed Martial check to resist being overpowered.
+This characteristic describes a character’s effectiveness in melee combat ---
+STR for the raw striking power, AGI for the speed to deliver it. It is used to
+make attack rolls with melee or thrown weapons. You need to make an opposed
+Martial check to resist being overpowered.
 
 ==== Marksmanship
 Attributes: DEX + PER \
 This characteristic describes a character’s skill with ranged weapons of all
-kinds. It is used to make attack rolls with ranged and thrown weapons.
+kinds --- DEX for the precision of hand, PER for the sharpness of eye. It is
+used to make attack rolls with ranged and thrown weapons.
 
 ==== Initiative
 Attributes: SGT + INT \
-This characteristic represents a character’s alertness and quickness to act. It
-determines how quickly your character gets a chance to act in combat (or in
+This characteristic represents a character’s alertness and quickness to act ---
+SGT for the intuitive awareness of danger, INT for the mental speed to react.
+It determines how quickly your character gets a chance to act in combat (or in
 structured time). Initiative checks are also rolled to avoid surprises and
 sudden dangers, such as trap doors.
 
 ==== Speed
 Attributes: AGI + END \
-This characteristic represents how quick a character is on their feet. It
+This characteristic represents how quick a character is on their feet --- AGI
+for explosive movement, END for the stamina to sustain it over distance. It
 determines a character’s movement range. You may also need to make a speed check
 when attempting to traverse ground within a certain amount of time.
 
 ==== Stamina
 Attributes: STR + END \
 This characteristic represents your character’s ability to keep fighting and
-exerting themselves under strain. Your character’s Stamina rating determines
-their *Bulk capacity* (see _Bulk and Charge_ in the Equipment chapter). Your
-character may need to make a Stamina check to resist the effects of poison,
-disease or fatigue.
+exerting themselves under strain --- STR for the physical power to carry on, END
+for the resilience to endure. Your character’s Stamina rating determines their
+*Bulk capacity* (see _Bulk and Charge_ in the Equipment chapter). Your character
+may need to make a Stamina check to resist the effects of poison, disease or
+fatigue.
 
 ==== Potential
 Attributes: ATT + WIL \
 This characteristic represents your character’s ability to control magical
-energy. Your character’s Potential rating determines their *Charge capacity*
-(see _Bulk and Charge_ in the Equipment chapter). You may also need to make a
-Potential check to resist the effects of harmful magic.
+energy --- ATT for the sensitivity to sense and shape it, WIL for the
+disciplined will to contain it. Your character’s Potential rating determines
+their *Charge capacity* (see _Bulk and Charge_ in the Equipment chapter). You
+may also need to make a Potential check to resist the effects of harmful magic.
 
 ==== Arcane
 Attributes: ATT + INT \
-This characteristic determines your character’s skill at casting Arcane magic.
-It is used when making casting rolls for Arcane spells.
+This characteristic determines your character’s skill at casting Arcane magic
+--- ATT for the magical sensitivity to channel energy, INT for the analytical
+understanding to direct it. It is used when making casting rolls for Arcane
+spells.
 
 ==== Psychic
 Attributes: SGT + WIL \
-This characteristic determines your character’s skill at using Psychic powers.
+This characteristic determines your character’s skill at using Psychic powers
+--- SGT for the intuitive insight to perceive beyond the veil, WIL for the
+force of will to focus and direct that perception.
 
 ==== Command
 Attributes: PRS + WIL \
 This characteristic represents your character’s ability to persuade both allies
-and enemies. It is used to make casting rolls for charm abilities. Since it is
-also necessary to convince Reliquaries, this characteristic additionally
-determines your character’s skill at casting Divine magic.
+and enemies --- PRS for the charismatic authority to compel, WIL for the
+unwavering conviction behind it. It is used to make casting rolls for charm
+abilities. Since it is also necessary to convince Reliquaries, this
+characteristic additionally determines your character’s skill at casting Divine
+magic.
 
 ==== Dodge
 Attributes: AGI + PER \
 This characteristic influences how easy your character is to hit with weapon
-attacks, and can allow them to avoid larger attacks as well. Dodge checks are
-usually made to avoid area attacks and effects.
+attacks --- AGI for the speed to move out of the way, PER for the awareness to
+see it coming. Dodge checks are usually made to avoid area attacks and effects.
 
 ==== Grit
 Attributes: END + WIL \
 This characteristic influences your character’s ability to resist pain,
-disturbing mental effects and similar noxious influences.
+disturbing mental effects and similar noxious influences --- END for the
+physical toughness to endure, WIL for the mental resolve to push through.
 
 === Derived Statistics
 

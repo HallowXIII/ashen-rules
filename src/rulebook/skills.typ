@@ -248,7 +248,7 @@ following chart:
 - *Acrobatics (U; AGI + DEX)* \
 Control your body, maintain your balance.
 
-- *Athletics (U; STR + END)* \
+- *Athletics (U; STR + WIL)* \
 Perform feats of strength and speed.
 
 - *Awareness (U; PER + SGT)* \
@@ -260,43 +260,43 @@ They didn’t need to know that. Or maybe they did.
 - *Eerie (U; SGT + ATT)* \
 Use your sixth sense.
 
-- *Impose (U; PRS + WIL)* \
+- *Impose (U; STR + PRS)* \
 Leave a lasting impression.
 
-- *Influence (U; PRS + INT)* \
+- *Influence (U; PRS + SGT)* \
 Give people really good advice.
 
 - *Investigate (U; INT + PER)* \
 Perform research.
 
-- *Subterfuge (U; DEX + INT)* \
+- *Subterfuge (U; AGI + INT)* \
 Steal, hide, cheat, and all other such sporting activities.
 
 === Trained Skills
-- *Access (T; DEX + INT)* \
+- *Access (T; DEX + SGT)* \
 Circumvent locks, access control systems and structurally unsound walls.
 
-- *Alchemy (T; INT + PER)* \
+- *Alchemy (T; PER + ATT)* \
 Straw to gold, lead to uranium, grapes into illegal booze.
 
 - *Electronics (T; DEX + INT)* \
 Deal with sentient creatures’ worst mistake.
 
-- *Magitek (T; INT + ATT)* \
+- *Magitek (T; DEX + ATT)* \
 Figure out how that magical gizmo works.
 
-- *Occultism (T; SGT + ATT)* \
+- *Occultism (T; PRS + ATT)* \
 Commune with your Luigi Board and other things inhabited by a supernatural
 presence.
 
-- *Piloting (T; DEX + PER)* \
+- *Piloting (T; AGI + SGT)* \
 Control high-speed vehicles of all kinds.
 
-- *Ritual (T; WIL + ATT)* \
+- *Ritual (T; WIL + INT)* \
 Perform pious and/or blasphemous invocations to the spirits and cast really
 fancy spells.
 
-- *Shop (T; DEX + STR)* \
+- *Shop (T; DEX + END)* \
 Welding, riveting, lathing… the works!
 
 
@@ -322,10 +322,12 @@ other than the additional time required. \
 
 === Acrobatics (U; AGI + DEX)
 
-Your ability to move securely through space. This skill covers keeping your
-balance on particularly treacherous ground (such as tightropes), performing
-feats of jumping or tumbling, and even avoiding or lessening injury when you
-take a fall.
+Your ability to move securely through space. AGI provides the whole-body
+coordination for balance and aerial maneuvers, while DEX supplies the fine
+motor control for precise landings and recoveries. This skill covers keeping
+your balance on particularly treacherous ground (such as tightropes),
+performing feats of jumping or tumbling, and even avoiding or lessening injury
+when you take a fall.
 
 ==== Checks
 
@@ -474,12 +476,14 @@ D 6 Acrobatics check to cross a frozen tightrope without falling.
 Any other effects that allow a character to ignore penalties from difficult
 terrain have the same influence on their Acrobatics checks.
 
-=== Athletics (U; STR + END)
+=== Athletics (U; STR + WIL)
 
-Athletics measures your skill at exerting force on the world. Where proficiency
-in Acrobatics allows you to jump and wheel freely to the world, proficiency in
-Athletics lets you lift great weights, throw objects very far, climb up sheer
-cliff faces and swim swiftly through rough waters.
+Athletics measures your skill at exerting force on the world. STR provides the
+raw power, while WIL represents the mental determination to push through the
+burn of a long climb, hold a heavy lift, or keep swimming against a current.
+Where proficiency in Acrobatics allows you to jump and wheel freely through the
+world, proficiency in Athletics lets you lift great weights, throw objects very
+far, climb up sheer cliff faces and swim swiftly through rough waters.
 
 ==== Checks
 
@@ -566,8 +570,10 @@ devices (or effects) capable of handling their weight.
 
 The awareness skill allows a character to maintain awareness of their
 surroundings and notice changes or oddities that less trained observers might
-miss. It's used to navigate unfamiliar environments, spot hidden objects and
-creatures, and notice inconsistencies in narrative.
+miss. SGT provides the intuitive alertness that something is wrong, while PER
+supplies the sharp mundane senses to identify what it is. Awareness is used to
+navigate unfamiliar environments, spot hidden objects and creatures, and notice
+inconsistencies in narrative.
 
 In general, Awareness is the skill used for spontaneous perception, whereas
 Investigation is the skill used for directed search and research.
@@ -591,10 +597,11 @@ The GM might call for an Awareness check when:
 
 === Deceive (U; INT + PRS)
 
-The Deceive skill measures a character's ability to mislead others. Characters
-with a high rating in Deceive are adept at strategically omitting information,
-convincing others of half-truths and untruths, and pretending to be who they are
-not.
+The Deceive skill measures a character's ability to mislead others. INT governs
+the intellectual construction of a convincing lie, while PRS provides the
+charisma to sell it. Characters with a high rating in Deceive are adept at
+strategically omitting information, convincing others of half-truths and
+untruths, and pretending to be who they are not.
 
 The GM may call for a Deceive check when:
 
@@ -635,8 +642,10 @@ suspicious, the GM should use the higher of the two numbers.
 === Eerie (U; SGT + ATT)
 
 The Eerie skill represents a character's aptitude for sensing things not
-entirely amenable to mundane senses. This includes the presence of magical or
-otherworldly energies as well as the motivations of an interlocutor.
+entirely amenable to mundane senses. SGT provides the intuitive perception of
+the unseen, while ATT supplies the sensitivity to magical and otherworldly
+energies. This includes the presence of supernatural forces as well as the
+motivations of an interlocutor.
 
 ==== Detect Magic
 
@@ -671,11 +680,13 @@ check.
   - Detect a lie from an extremely adept manipulator: 9
 ]
 
-=== Impose (U; PRS + WIL)
+=== Impose (U; STR + PRS)
 
-The Impose skill measures a character's ability to impress another. It can be
-used to browbeat, intimidate or otherwise overpower another in a test of wills.
-It also serves as the skill governing a character's ability to captivate and win
+The Impose skill measures a character's ability to impress another. STR
+represents the physical force and stature that makes intimidation credible,
+while PRS provides the sheer presence to command attention. Impose can be used
+to browbeat, intimidate or otherwise overpower another in a test of wills. It
+also serves as the skill governing a character's ability to captivate and win
 over others.
 
 The GM might call for an impose check when:
@@ -693,11 +704,14 @@ The GM might call for an impose check when:
   - Blackmailing a powerful immortal: 9
 ]
 
-=== Influence (U; INT + PRS)
+=== Influence (U; PRS + SGT)
 
 The influence skill measures a character's proficiency at the subtler arts of
-social conduct. Negotiation, diplomacy, manipulation -- everything requiring a
-good sense of decorum, tact, and charisma.
+social conduct. PRS provides the charisma to engage others, while SGT supplies
+the social intuition to read an audience's reactions, sense when to push or
+concede, and adapt one's approach accordingly. The skill covers negotiation,
+diplomacy, manipulation --- everything requiring a good sense of decorum, tact,
+and charisma.
 
 The GM might call for an Influence check when:
 
@@ -717,7 +731,9 @@ The GM might call for an Influence check when:
 === Investigate (U; INT + PER)
 
 The investigate skill allows a character to research, collate and correlate
-information. It is the skill used for searching through dusty tomes for clues as
+information. INT provides the analytical reasoning to connect disparate facts,
+while PER sharpens the eye for the telling detail. It is the skill used for
+searching through dusty tomes for clues as
 to the whereabouts of a long-lost temple, making sense of an archaic electronic
 records system, or poring over ledgers in search of a specific transaction. It
 is also the skill used for cultivating informants within a city, tracking the
@@ -786,11 +802,13 @@ whereabouts.
 
 #colbreak()
 
-=== Subterfuge (U; DEX + INT)
+=== Subterfuge (U; AGI + INT)
 
 The Subterfuge skill allows a character to move quietly and avoid detection, as
 well as perform feats of sleight of hand, such as pickpocketing or unseen
-manipulation of objects. The difficulty of a Subterfuge check generally depends
+manipulation of objects. AGI provides the full-body agility for silent movement
+and quick evasion, while INT supplies the planning to exploit blind spots and
+time one's actions. The difficulty of a Subterfuge check generally depends
 on the scrutiny placed upon a character. Forging a document that nobody will pay
 too close attention to while nobody is watching is a much easier feat than
 sneaking through a fortress equipped with CCTV in order to lift an artifact from
@@ -856,12 +874,15 @@ them.
 
 == Trained Skills
 
-=== Access (T; DEX + INT)
+=== Access (T; DEX + SGT)
 
 The Access skill allows a character to circumvent security systems of various
-kinds, using more or less violent means. With sufficient training, a character
-trained in Access can pick locks, hack into computers, place breaching charges,
-disable traps, and generally go where they are not supposed to go.
+kinds, using more or less violent means. DEX provides the fine manual dexterity
+for picking locks and manipulating mechanisms, while SGT supplies the intuitive
+feel for how a system works --- sensing tumblers, reading wiring, or finding the
+weak point in a barrier. With sufficient training, a character trained in Access
+can pick locks, hack into computers, place breaching charges, disable traps, and
+generally go where they are not supposed to go.
 
 The Access skill is by nature somewhat interdisciplinary, and proficiency in
 skills such as Subterfuge, Electronics or Shop is helpful when using it.
@@ -902,13 +923,15 @@ subdue the recalcitrant machine.
 _Traps_: A character trained in the Access skill can detect and disable traps.
 The difficulties for doing so are similar to lockpicking.
 
-=== Alchemy (T; INT + PER)
+=== Alchemy (T; PER + ATT)
 
 The alchemy skill allows a character to study, analyze and perform chemical
-reactions in or outside of the presence of magical energies. Successfully using
-the Alchemy skill requires having access to the appropriate equipment for the
-job at hand; even the most experienced alchemist cannot work without a
-laboratory.
+reactions in or outside of the presence of magical energies. PER provides the
+keen observation needed to monitor reactions precisely, while ATT supplies the
+sensitivity to detect and manipulate the magical properties of substances.
+Successfully using the Alchemy skill requires having access to the appropriate
+equipment for the job at hand; even the most experienced alchemist cannot work
+without a laboratory.
 
 Proficiency in Occultism and Eerie is helpful when working with magically
 charged substances, while Shop assists in crafting and modifying alchemical
@@ -960,8 +983,10 @@ Recipes_).
 
 The Electronics skill covers the hands-on diagnosis, repair, modification, and
 construction of electronic devices and systems --- from simple motors and locks
-to computing hardware and AI subsystems. It is the skill of the engineer and the
-scrapper alike.
+to computing hardware and AI subsystems. DEX provides the steady hand for
+soldering, wiring, and delicate assembly, while INT supplies the technical
+knowledge to understand circuits and diagnose faults. It is the skill of the
+engineer and the scrapper alike.
 
 Access is the natural complement when the goal is bypassing or subverting a
 system rather than understanding it; Magitek applies where magical and
@@ -1002,12 +1027,15 @@ systems, the GM may additionally call for an Electronics check to manipulate the
 underlying hardware --- particularly when physical access to the machine is
 available.
 
-=== Magitek (T; INT + ATT)
+=== Magitek (T; DEX + ATT)
 
 The Magitek skill covers understanding, operating, and working with technology
 that incorporates magical components or principles --- the ancient relics,
 enchanted machinery, and hybrid devices that populate a world where magic and
-technology were once unified.
+technology were once unified. DEX provides the hands-on dexterity for
+manipulating magical components, re-seating cores, and recalibrating
+enchantments, while ATT supplies the magical sensitivity to feel a device's
+state and workings.
 
 Electronics handles the non-magical circuitry within a magitek device; Eerie can
 supplement Magitek when sensing a device's magical state or charge; Alchemy and
@@ -1064,14 +1092,17 @@ facilities are also required --- improvised or field-expedient construction
 raises difficulties significantly, and some projects may be impossible without a
 proper workshop.
 
-=== Occultism (T; SGT + ATT)
+=== Occultism (T; PRS + ATT)
 
 Where Ritual treats magic as a natural force to be studied and reproduced,
 Occultism is the practice of engaging with forces that resist systematic
 understanding: spirits, divine powers, and the deeper currents of Fate and the
-Void. The effects it produces can be profound, but the forces involved are
-capricious --- failure is not merely a lack of result, and a catastrophic
-failure may invite consequences far beyond what the caster intended.
+Void. PRS provides the authoritative presence needed to commune with, bind, or
+ward against supernatural entities, while ATT supplies the attunement to sense
+and channel the forces involved. The effects Occultism produces can be profound,
+but the forces involved are capricious --- failure is not merely a lack of
+result, and a catastrophic failure may invite consequences far beyond what the
+caster intended.
 
 Occultism is primarily the skill of Divine magic, and applies to Psychic magic
 of an esoteric or entropic nature, such as the Fate and Void domains. Eerie is a
@@ -1131,13 +1162,16 @@ and Void domains. All other rules for ritual casting apply (see _Rituals and
 Recipes_). Unlike ritual casting with the Ritual skill, a failed check using
 Occultism may produce unintended consequences beyond the loss of reagents.
 
-=== Piloting (T; DEX + PER)
+=== Piloting (T; AGI + SGT)
 
 The Piloting skill covers the operation of vehicles of all kinds --- ground
-vehicles, aircraft, and watercraft alike. A trained pilot can push a vehicle to
-its limits, navigate hostile conditions, and fight from behind the wheel or
-controls. Routine travel under safe conditions does not require a check; rolls
-arise when speed, hazards, or hostile action demand precise control.
+vehicles, aircraft, and watercraft alike. AGI provides the quick reflexes for
+split-second maneuvers, while SGT supplies the spatial intuition to read
+terrain, sense a vehicle's limits, and react to hazards before they become
+critical. A trained pilot can push a vehicle to its limits, navigate hostile
+conditions, and fight from behind the wheel or controls. Routine travel under
+safe conditions does not require a check; rolls arise when speed, hazards, or
+hostile action demand precise control.
 
 Electronics and Magitek are useful when diagnosing or improvising repairs to a
 vehicle's systems while in motion.
@@ -1176,14 +1210,17 @@ speed and maneuverability.
   - Execute a maneuver against a vastly more agile vehicle: 8
 ]
 
-=== Ritual (T; WIL + ATT)
+=== Ritual (T; WIL + INT)
 
 The Ritual skill represents a character's command of magic as a natural,
-learnable force. Ritual magic is systematic and reproducible --- its effects are
-well-scoped and knowable, and a sufficiently skilled practitioner can analyze an
-unfamiliar working and reverse-engineer it almost like a piece of technology.
-Ritual is primarily the skill of Arcane magic, and applies to Psychic magic of a
-structural or physical nature, such as the Space and Time domains.
+learnable force. INT provides the systematic understanding of magical principles,
+while WIL supplies the discipline to channel them precisely and sustain the
+concentration a working demands. Ritual magic is systematic and reproducible ---
+its effects are well-scoped and knowable, and a sufficiently skilled practitioner
+can analyze an unfamiliar working and reverse-engineer it almost like a piece of
+technology. Ritual is primarily the skill of Arcane magic, and applies to
+Psychic magic of a structural or physical nature, such as the Space and Time
+domains.
 
 Where Ritual treats magic as a force to be understood and controlled, Occultism
 deals with the ineffable: spirits, divine powers, and forces that do not follow
@@ -1218,12 +1255,12 @@ and how well it has been obscured.
   - Decode a deliberately obfuscated or alien magical inscription: 8
 ]
 
-=== Shop (T; DEX + STR)
+=== Shop (T; DEX + END)
 
 The Shop skill covers the creation, repair, and modification of physical objects
 --- from welding and machining to woodworking, leatherworking, and general
-fabrication. DEX provides the precision for fine work; STR handles the heavy
-labour of raw construction. A character trained in Shop is equally at home in a
+fabrication. DEX provides the precision for fine work; END supplies the stamina
+for the long hours of sustained physical effort that crafting demands. A character trained in Shop is equally at home in a
 forge or a field workshop, and can turn salvaged materials into functional
 equipment given enough time and tools.
 
