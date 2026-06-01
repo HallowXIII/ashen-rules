@@ -708,3 +708,162 @@
     #body
   ]
 }
+
+// ----------------------------------------------------------------------------
+// Bestiary
+// ----------------------------------------------------------------------------
+
+// Semantic kind -> lucide SVG file name (in graphics/icons).
+#let icon-files = (
+  // action types
+  melee: "swords",
+  ranged: "line-dot-right-horizontal",
+  area: "circle-gauge",
+  // power schools
+  psychic: "eye",
+  arcane: "eclipse",
+  divine: "sparkles",
+  // equipment
+  weapon: "sword",
+  "ranged-weapon": "bow-arrow",
+  catalyst: "wand",
+  armor: "shield",
+  reaction: "redo-2",
+)
+
+// Default tint per kind, chosen for legibility on the textured paper.
+#let icon-colors = (
+  melee: colors.pfnavy,
+  ranged: colors.pfnavy,
+  area: colors.pfnavy,
+  psychic: colors.lightgreen,
+  arcane: rgb("#871F78"),
+  divine: colors.pfbrown,
+  weapon: colors.pfnavy,
+  "ranged-weapon": colors.pfnavy,
+  catalyst: colors.pfnavy,
+  armor: colors.pfnavy,
+  reaction: colors.pfmaroon,
+)
+
+// Recolor a lucide SVG (stroke="currentColor") and render it inline.
+#let icon(kind, color: none, size: 0.95em) = {
+  let file = icon-files.at(kind, default: kind)
+  let tint = if color != none { color } else {
+    icon-colors.at(kind, default: colors.pfnavy)
+  }
+  let svg = read("../../graphics/icons/" + file + ".svg")
+  let colored = svg.replace("currentColor", tint.to-hex().slice(0, 7))
+  box(baseline: 0.15em, height: size, image(bytes(colored), format: "svg"))
+}
+
+// One action line: icon + bold name + AP cost + effect body.
+#let cr-action(kind, name, ap, body) = par(hanging-indent: 1em)[
+  #icon(kind) #text(weight: "bold")[#name] #if ap != none [(#ap)] #body
+]
+
+// One casting/power line: school icon + bold name + cost, optional Tap.
+#let cr-power(school, name, cost, body, tap: none) = par(hanging-indent: 1em)[
+  #icon(school) #text(weight: "bold")[#name] #if cost != none [(#cost)] #body
+  #if tap != none [\ #h(1em) _Tap:_ #tap]
+]
+
+// One equipment line: icon + bold name + stat line.
+#let cr-equip(kind, name, line) = par(hanging-indent: 1em)[
+  #icon(kind) #text(weight: "bold")[#name]; #line
+]
+
+// Small section subhead used inside the stat block.
+#let cr-subhead(title) = {
+  v(0.35em)
+  text(font: fonts.sans, weight: "semibold", size: 0.95em)[#upper(title)]
+  line(stroke: 0.5pt + colors.pfnavy, length: 100%)
+}
+
+#let creature-stat-block(
+  name,
+  role,
+  size-type: none,
+  traits: (),
+  flavor: none,
+  hp: none,
+  fp: none,
+  armor: none,
+  ward: none,
+  evasion: none,
+  init: none,
+  speed: none,
+  resistances: none,
+  immunities: none,
+  characteristics: (:),
+  passive-traits: (),
+  actions: (),
+  casting: none,
+  command-powers: (),
+  equipment: (),
+) = {
+  set text(font: fonts.sans)
+  set par(spacing: .6em, first-line-indent: 0em)
+  let header = {
+    box(text(weight: "semibold", size: 1.4em, stretch: 50%)[#upper(name)])
+    h(1em)
+    h(1fr)
+    sym.wj
+    box(text(
+      weight: "semibold",
+      size: 1.0em,
+      stretch: 50%,
+      fill: colors.pfnavy,
+    )[#upper(role)])
+  }
+    v(1em)
+    header
+    line(stroke: 1pt, length: 100%)
+    if size-type != none [_#size-type _ \ ]
+    if traits != () [#pftraits(traits) \ ]
+    if flavor != none [_#flavor _ \ #v(0.25em)]
+
+    {
+     let defenses = ()
+     if hp != none { defenses.push([*HP* #hp]) }
+     if fp != none { defenses.push([*FP* #fp]) }
+     if armor != none { defenses.push([*Arm* #armor]) }
+     if ward != none { defenses.push([*Wrd* #ward]) }
+     if evasion != none { defenses.push([*Eva* #evasion]) }
+     if init != none { defenses.push([*Init* #init]) }
+     if speed != none { defenses.push([*Speed* #speed]) }
+     if defenses.len() > 0 { defenses.join([ #sym.bar.v ]); linebreak() }
+    }
+    if resistances != none [*Resistances:* #resistances \ ]
+    if immunities != none [*Immunities:* #immunities \ ]
+    if characteristics.len() > 0 {
+     let cline = characteristics.pairs().map(((k, v)) => [*#k* #v])
+     cline.join[ #h(0.6em) ]
+     linebreak()
+    }
+
+    if passive-traits != () {
+      cr-subhead("Traits")
+      for t in passive-traits {
+        par(hanging-indent: 1em)[#text(weight: "bold")[#t.name]: #t.body]
+      }
+    }
+    if actions != () {
+      cr-subhead("Actions")
+      for a in actions { a }
+    }
+    if casting != none {
+      cr-subhead(if casting.at("title", default: none) != none {
+        casting.title
+      } else { "Casting" })
+      for p in casting.powers { p }
+    }
+    if command-powers != () {
+      cr-subhead("Command Powers")
+      for p in command-powers { p }
+    }
+    if equipment != () {
+      cr-subhead("Equipment")
+      for e in equipment { e }
+    }
+}
