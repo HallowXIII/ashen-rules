@@ -386,6 +386,7 @@
 #let pftab(
   name,
   columns: (1fr, 4fr),
+  align: center,
   breakable: false,
   title: true,
   ..contents,
@@ -397,7 +398,7 @@
     #v(-.5em)
     #table(
       columns: columns,
-      align: center,
+      align: align,
       fill: none,
       inset: 5pt,
       stroke: (x: none, y: 0.5pt + colors.pfnavy),

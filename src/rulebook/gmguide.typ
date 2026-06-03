@@ -621,8 +621,9 @@ combats separated by narration.
 
 Use the Designing Creatures section to build combat encounters. Use the Pacing
 and Time section to structure stretch scenes. For social encounters, the skill
-system---Persuasion, Deception, Intimidation, Insight---provides the mechanical
-backbone; you supply the NPC's motivation and the stakes of the conversation.
+system---Influence, Deceive, Impose, Awareness, and Investigate---provides the
+mechanical backbone; you supply the NPC's motivation and the stakes of the
+conversation.
 
 Keep the EP economy in mind when calibrating encounter pressure, because it
 shifts dramatically across tiers. At Tier 1, characters have only 11 EP---two

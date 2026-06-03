@@ -576,7 +576,7 @@ navigate unfamiliar environments, spot hidden objects and creatures, and notice
 inconsistencies in narrative.
 
 In general, Awareness is the skill used for spontaneous perception, whereas
-Investigation is the skill used for directed search and research.
+Investigate is the skill used for directed search and research.
 
 The GM might call for an Awareness check when:
 

@@ -29,6 +29,10 @@
 
 #pagebreak()
 
+#include "quickstart.typ"
+
+#pagebreak()
+
 #include "introduction.typ"
 
 #pagebreak()
@@ -70,7 +74,6 @@
 #pagebreak()
 
 #include "character-sheet.typ"
-
 
 
 

@@ -95,9 +95,9 @@ At character creation, you will typically want to learn 3--5 trained skills
 and raise one or two of your most important skills to rank 2 or 3. A few
 guidelines:
 
-- Every character benefits from at least one social skill (Persuasion,
-  Deception, or Intimidation) and one awareness skill (Observation or
-  Investigation).
+- Every character benefits from at least one social skill (Influence, Deceive,
+  or Impose) and one perception or investigation skill (Awareness or
+  Investigate).
 - Combat characters should consider investing in Athletics or Acrobatics for
   mobility.
 - Casters should invest in the skill that matches their casting tradition:

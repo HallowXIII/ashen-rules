@@ -1,4 +1,5 @@
 #import "../formatting/declarations.typ": *
+#import "@preview/meander:0.4.3"
 
 #chap-header("1", "Introduction", "The Basics of the Game")
 
@@ -172,6 +173,373 @@ The consequences depend on the type of check:
 
 A critical failure occurs naturally when the dice come up badly --- many 1s and few successes. It is not the same as simply failing a check; a roll of 3 successes against a difficulty of 7 is an ordinary failure, not a critical failure.
 
+== Reading Your Character Sheet
+
+Ashen has many numbers, but most of them answer one of four questions: what
+you are, what you can do under pressure, what you know how to do, and what
+resources keep you in the scene. This section gives you enough context to read
+a character sheet before the Characters and Skills chapters explain the full
+rules.
+
+=== Attributes
+
+Attributes are the roots of your character sheet. Each attribute has a rank
+from 1 to 6, and those ranks feed into characteristics and skills.
+
+#float(floating-table(
+  "Attributes at a Glance",
+  columns: (1.3fr, .7fr, 2.9fr, 3.1fr),
+  align: (left, center, left, left),
+  breakable: true,
+  [Attribute],
+  [Abbr.],
+  [Feeds into],
+  [Main use],
+  [Strength],
+  [STR],
+  [Martial, Stamina, Athletics, Impose],
+  [Raw force, melee pressure, lifting, overpowering, and intimidation through physical presence.],
+  [Endurance],
+  [END],
+  [Speed, Stamina, Grit, Shop],
+  [Sustained exertion, toughness, carrying capacity, armor tolerance, and hard physical work.],
+  [Agility],
+  [AGI],
+  [Martial, Speed, Dodge, Acrobatics, Subterfuge, Piloting],
+  [Explosive movement, balance, footwork, quick repositioning, and evasive motion.],
+  [Dexterity],
+  [DEX],
+  [Marksmanship, Acrobatics, Access, Electronics, Magitek, Shop],
+  [Fine control, precise manipulation, technical work, repairs, lockwork, and accurate handling.],
+  [Attunement],
+  [ATT],
+  [Arcane, Potential, Eerie, Alchemy, Magitek, Occultism],
+  [Sensing and shaping magical energy, using magical tools, and working with supernatural forces.],
+  [Sight],
+  [SGT],
+  [Initiative, Psychic, Awareness, Eerie, Access, Piloting, Influence],
+  [Uncanny intuition, danger sense, psychic perception, and reading what ordinary senses miss.],
+  [Intelligence],
+  [INT],
+  [Initiative, Arcane, Deceive, Investigate, Subterfuge, Electronics, Ritual],
+  [Analysis, memory, planning, research, technical understanding, and structured magic.],
+  [Perception],
+  [PER],
+  [Marksmanship, Dodge, Awareness, Investigate, Alchemy],
+  [Ordinary senses, noticing detail, aiming, tracking evidence, and reacting to visible threats.],
+  [Will],
+  [WIL],
+  [Potential, Psychic, Command, Grit, Athletics, Ritual],
+  [Discipline, resolve, resisting pressure, sustaining power, and forcing yourself onward.],
+  [Presence],
+  [PRS],
+  [Command, Deceive, Impose, Influence, Occultism],
+  [Authority, charisma, social pressure, force of personality, and commanding attention.],
+), plc: center + bottom)
+
+*Strength* is the attribute for direct physical force. Look at it when your
+character hits hard, hauls something heavy, grapples, breaks obstacles, or
+uses physical presence to cow someone.
+
+*Endurance* is the attribute for lasting under strain. It matters when your
+character carries heavy equipment, keeps moving through exhaustion, works for a
+long time, or resists punishment.
+
+*Agility* is the attribute for whole-body speed and control. It supports
+characters who move first, dodge well, climb or tumble through danger, or rely
+on quick footwork in melee.
+
+*Dexterity* is the attribute for precise hands and controlled movement. It
+supports ranged weapons, lockwork, electronics, delicate repairs, and fine
+physical tasks.
+
+*Attunement* is the attribute for contact with magical forces. Arcane casters,
+ritualists, alchemists, and magitek specialists all care about how much
+supernatural power a character can sense and handle.
+
+*Sight* is supernatural intuition. It supports initiative, psychic power,
+uncanny perception, and the ability to sense danger or possibility before it is
+obvious.
+
+*Intelligence* is the attribute for reasoning and learned structure. It helps
+with research, deception, technical systems, tactics, and magic that depends on
+understanding how a thing works.
+
+*Perception* is mundane sensory acuity. It helps you spot ambushes, aim ranged
+attacks, search scenes, follow clues, and react to attacks you can see coming.
+
+*Will* is discipline under pressure. It helps you resist pain, keep control of
+magic or psychic force, endure fear or manipulation, and commit to a course of
+action.
+
+*Presence* is force of personality. It is the attribute for commanding allies,
+convincing strangers, lying convincingly, imposing yourself on a room, and
+dealing with spirits or reliquaries.
+
+=== Characteristics
+
+Characteristics are broad action ratings, usually used when the scene is
+dangerous or structured. Like skills, each characteristic rating is built from
+its own rank plus two linked attributes.
+
+#float(floating-table(
+  "Characteristics at a Glance",
+  columns: (1.4fr, 1.3fr, 4.7fr),
+  align: (left, center, left),
+  breakable: true,
+  [Characteristic],
+  [Linked attributes],
+  [Rolled for],
+  [Martial],
+  [STR + AGI],
+  [Melee and thrown attacks, close-quarters pressure, and resisting attempts to overpower you.],
+  [Marksmanship],
+  [DEX + PER],
+  [Ranged attacks, careful shots, and weapon use where precision and sight matter.],
+  [Initiative],
+  [SGT + INT],
+  [Turn order, reacting quickly, avoiding surprise, and acting before danger closes.],
+  [Speed],
+  [AGI + END],
+  [Movement range, chases, crossing ground under time pressure, and quick repositioning.],
+  [Stamina],
+  [STR + END],
+  [Poison, disease, fatigue, physical endurance, and Bulk capacity.],
+  [Potential],
+  [ATT + WIL],
+  [Containing magical energy, resisting harmful magic, and Charge capacity.],
+  [Arcane],
+  [ATT + INT],
+  [Casting Arcane spells through formula, study, and magical control.],
+  [Psychic],
+  [SGT + WIL],
+  [Using Psychic powers through supernatural perception and focused will.],
+  [Command],
+  [PRS + WIL],
+  [Divine magic, command powers, reliquary use, and forceful leadership.],
+  [Dodge],
+  [AGI + PER],
+  [Avoiding attacks and area effects; also the base for Evasion.],
+  [Grit],
+  [END + WIL],
+  [Resisting pain, fear, mental pressure, and other effects that test toughness and resolve.],
+))
+
+*Martial* is your close-combat attack rating. You look at it when you swing a
+melee weapon, throw a weapon, charge, duel, or push back against someone trying
+to physically dominate you.
+
+*Marksmanship* is your ranged attack rating. You look at it when you fire
+guns, bows, launchers, or other weapons where aim and handling decide whether
+the shot lands.
+
+*Initiative* determines how quickly you act when time tightens. In combat it
+sets turn order; outside combat it can answer whether you react before a trap,
+ambush, or sudden disaster catches you.
+
+*Speed* is practical movement under pressure. It determines your Movement
+Speed and may be rolled when distance, footing, and time all matter at once.
+
+*Stamina* is physical staying power. It sets Bulk capacity and is rolled when
+poison, disease, exhaustion, or punishing conditions test your body.
+
+*Potential* measures how much magical charge you can safely carry and control.
+It sets Charge capacity and is rolled when harmful magic tests your ability to
+contain or resist it.
+
+*Arcane* is the casting rating for Arcane spells. It is the number Arcane
+casters look at when a spell asks them to make a casting check.
+
+*Psychic* is the rating for Psychic powers. Psychic characters look at it when
+they push perception and will through reality directly.
+
+*Command* is authority made mechanical. It supports command powers, Divine
+casting, and interaction with reliquaries that require conviction as much as
+skill.
+
+*Dodge* is active defense. It is rolled against many area effects and feeds
+into Evasion, the number most attacks must meet to hit you.
+
+*Grit* is stubborn survival. You look at it when an effect attacks your nerve,
+pain tolerance, sanity, or ability to keep functioning.
+
+=== Derived Statistics and Resources
+
+Derived statistics are calculated values or equipment totals. They are the
+numbers you check when the scene asks "how much can you take, spend, carry, or
+avoid?"
+
+#float(floating-table(
+  "Derived Statistics at a Glance",
+  columns: (1.5fr, 2fr, 4.2fr),
+  align: (left, left, left),
+  breakable: true,
+  [Statistic],
+  [Comes from],
+  [When to look at it],
+  [Hit Points (HP)],
+  [Base 10 + advances],
+  [When you take damage or need to know how close you are to falling.],
+  [Focus Points (FP)],
+  [Base 10 + advances],
+  [When you cast spells, use powers, or spend extraordinary effort.],
+  [Essence Points (EP)],
+  [Base 10 + XP progression],
+  [When you revive, recover during rest, or pay the long-term cost of being Deathless.],
+  [Action Points (AP)],
+  [Usually 4 each turn],
+  [When structured time begins and you need to decide what you can do this turn.],
+  [Movement Speed],
+  [2 + Speed rating],
+  [When you move on the grid, chase, flee, or count how far one move action carries you.],
+  [Evasion],
+  [Half Dodge, modified by armor and effects],
+  [When an attack checks whether it hits you.],
+  [Armor],
+  [Equipped protection and other effects],
+  [When incoming damage is physical or otherwise reduced by physical protection.],
+  [Ward],
+  [Equipped protection and other effects],
+  [When incoming damage is magical and your defenses can blunt it.],
+  [Bulk],
+  [Equipment total against Stamina capacity],
+  [When choosing weapons, armor, and gear; too much equipped Bulk strains your body.],
+  [Charge],
+  [Equipment total against Potential capacity],
+  [When choosing magical gear, catalysts, reliquaries, and enchanted equipment.],
+))
+
+*HP* is your immediate survival buffer. When damage gets through your defenses,
+it comes off HP.
+
+*FP* is the fuel for extraordinary actions. If your character casts, channels,
+or uses powers, FP tells you how long they can keep doing it.
+
+*EP* is the Deathless resource. You spend it to come back from death or recover
+between scenes, so it measures long-term pressure more than moment-to-moment
+injury.
+
+*AP* is your turn budget in structured time. Every round, you spend AP on
+movement, attacks, powers, drawing gear, and other actions.
+
+*Movement Speed* tells you how many squares you can move with a move action.
+It is the number you check whenever exact positioning matters.
+
+*Evasion* is the target number for most weapon attacks against you. Higher
+Evasion means more attacks miss before damage is even rolled.
+
+*Armor* reduces many incoming damage rolls. It is usually provided by worn
+armor, shields, natural protection, or similar physical defenses.
+
+*Ward* reduces magical damage. It often comes from enchanted armor, protective
+items, and other supernatural defenses.
+
+*Bulk* tracks the physical load of equipment you have equipped or wielded.
+Your Stamina determines how much Bulk you can handle effectively.
+
+*Charge* tracks the magical burden of equipment you have equipped or wielded.
+Your Potential determines how much magical gear you can carry without overload.
+
+=== Skills
+
+Skills cover complex actions, specialized work, and noncombat pressure. A skill
+rating is its rank plus its two linked attributes. Untrained skills can be used
+by anyone; trained skills require at least rank 1 before you can make checks
+with them.
+
+#float(floating-table(
+  "Untrained Skills",
+  columns: (1.2fr, 1.1fr, 4.9fr),
+  align: (left, center, left),
+  breakable: true,
+  [Skill],
+  [Attributes],
+  [Plain-language use],
+  [Acrobatics],
+  [AGI + DEX],
+  [Balance, tumbling, landing safely, squeezing through danger, and precise body control.],
+  [Athletics],
+  [STR + WIL],
+  [Climbing, swimming, jumping, forcing movement, and hard physical effort.],
+  [Awareness],
+  [PER + SGT],
+  [Spontaneous perception, noticing threats, sensing ambushes, and reading your surroundings quickly.],
+  [Deceive],
+  [INT + PRS],
+  [Lying, misdirecting, bluffing, disguising intent, and selling a false story.],
+  [Eerie],
+  [SGT + ATT],
+  [Supernatural sensitivity, reading uncanny signs, and sensing things ordinary perception cannot.],
+  [Impose],
+  [STR + PRS],
+  [Intimidating, overawing, making a forceful impression, and applying social pressure directly.],
+  [Influence],
+  [PRS + SGT],
+  [Persuading, negotiating, advising, earning trust, and steering social situations.],
+  [Investigate],
+  [INT + PER],
+  [Research, searching carefully, interpreting clues, following leads, and building a case from evidence.],
+  [Subterfuge],
+  [AGI + INT],
+  [Sneaking, hiding, cheating, disguises, forgery, and practical trickery.],
+))
+
+#float(floating-table(
+  "Trained Skills",
+  columns: (1.2fr, 1.1fr, 4.9fr),
+  align: (left, center, left),
+  breakable: true,
+  [Skill],
+  [Attributes],
+  [Plain-language use],
+  [Access],
+  [DEX + SGT],
+  [Locks, access control, traps, breaching, and getting through secured places.],
+  [Alchemy],
+  [PER + ATT],
+  [Potions, reagents, transmutation, material analysis, and practical magical chemistry.],
+  [Electronics],
+  [DEX + INT],
+  [Circuits, computers, sensors, communications, and technological repair or sabotage.],
+  [Magitek],
+  [DEX + ATT],
+  [Magical devices, catalysts, engines, arcane machinery, and hybrid technical systems.],
+  [Occultism],
+  [PRS + ATT],
+  [Spirits, reliquaries, supernatural negotiation, divine practice, and informal magical rites.],
+  [Piloting],
+  [AGI + SGT],
+  [Vehicles, high-speed handling, evasive movement, and dangerous travel by machine or mount.],
+  [Ritual],
+  [WIL + INT],
+  [Formal ritual casting, spellwork, invocations, circles, sacrifices, and controlled magical procedures.],
+  [Shop],
+  [DEX + END],
+  [Crafting, repairs, machining, armor work, field fixes, and sustained practical labor.],
+))
+
+When you are trying to *notice something immediately*, expect Awareness or
+Eerie. When you have time to search, research, reconstruct events, or follow a
+trail of evidence, expect Investigate.
+
+When you are dealing with people, Influence changes minds, Deceive conceals the
+truth, Impose applies pressure, and Command is a characteristic used for
+extraordinary authority, leadership powers, and Divine magic rather than an
+ordinary social skill.
+
+When the problem is physical, Athletics covers force and exertion, Acrobatics
+covers balance and body control, Subterfuge covers stealth and trickery, and
+Piloting covers vehicles.
+
+When the problem is technical, Access gets through barriers, Electronics works
+with machines and circuits, Magitek works with magical machinery, and Shop
+builds or repairs tangible equipment.
+
+When the problem is magical or ritual, Ritual handles formal procedures,
+Occultism handles spirits and supernatural contact, Alchemy handles reagents
+and transformative substances, and Eerie notices the uncanny signs around the
+work.
+
 == Tracking Time
 
 In Ashen, as in many other role-playing games, keeping track of how much time
@@ -329,39 +697,11 @@ explanation.
 
 === Character Statistics
 
-Every character is largely defined in game terms by several sets of numbers.
-Fundamentally, a character is said to have *Attributes*, *Characteristics*,
-*Skills* and *Derived Statistics*.
-
-Of these, *Attributes* are the most fundamental: they describe your character's
-most fundamental physical and mental characteristics. Attributes include things
-like a character's strength and intelligence.
-
-*Characteristics* are a step down and measure a character's basic capability to
-move and act in certain ways. Characteristics are some of a character's most
-important numbers in combat. Characteristics describe traits such as a
-character's swiftness of foot or their skill in melee combat.
-
-*Skills* are similar to characteristics, but describe a character's skill in
-more complex domains. They tend to be used outside of combat. Skills include a
-character's proficiency in map-reading, alchemy or disguising themselves.
-
-*Statistics*, finally, is a catch-all term for numbers derived purely
-mechanically in some way from choices made in character creation and
-advancement. Such numbers include a character's hit points and armor rating.
-
-Attributes, Characteristics and Skills all have *ranks*: a number from 1 to 6
-representing a character's innate proficiency and training in that Attribute,
-Characteristic or Skill.
-
-Characteristics and Skills also have ratings: a number that ranges between *3
-and 18*. The ratings are composed of a character's ranks in that statistic, from
-1 to 6, and their *attribute bonuses* to the statistic, equal to the character's
-ranks in those attributes. Each skill and characteristic gains bonuses from two
-attributes, listed below.
-
-The values of derived statistics usually also have ratings, but there is no
-uniform way of calculating them.
+Every character sheet uses four broad kinds of numbers: *attributes*,
+*characteristics*, *skills*, and *derived statistics*. The earlier _Reading Your
+Character Sheet_ section explains what each one means at the table. The
+Characters and Skills chapters remain the full reference for calculating them,
+improving them, and using their detailed procedures.
 
 === Equipment States
 
