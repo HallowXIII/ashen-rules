@@ -1,6 +1,6 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("4", "Advances", "Progressing your Character")
+#chap-header("5", "Advances", "Progressing your Character")
 
 == What is an advance?
 

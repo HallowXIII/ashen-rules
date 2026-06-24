@@ -1,6 +1,6 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("3", "Skills", "How your character interacts with the world")
+#chap-header("4", "Skills", "How your character interacts with the world")
 
 Skills represent your character’s abilities and aptitudes that are not directly
 related to their performance in combat.

@@ -4,7 +4,7 @@
 #let mirror = image("../../../graphics/illustrations/Mirror.png", height: 60%)
 #let shade = image("../../../graphics/illustrations/Shade.png", height: 60%)
 
-=== Echoes
+== Echoes
 #flavor["High and Just-As-High were different from their sister. They were not
   content to play in silence by themselves, but made wonderful playgrounds for
   themselves, and filled them with playmates."]
@@ -26,19 +26,19 @@ Though the faerie realms from which they hailed are long gone, the Echoes still
 
 All Echoes gain the following racial traits:
 
-==== Vindictive
+=== Vindictive
 It was said that those who made enemies of the Fairies would never escape their
 pursuers. When an enemy damages you, you can choose to hold a grudge against
 that enemy. When you next attack or use a spell power against that enemy, you
 gain 1 automatic success on your attack or spell check against him. You can only
 hold a grudge against one creature at a time.
 
-==== Sustained by Magic
+=== Sustained by Magic
 In areas of Light Fog or denser, Echoes need no food or water --- ambient
 magic suffices. In Clears, they eat and drink at the standard mortal-grade
 rates.
 
-==== Cold Iron Sensitivity
+=== Cold Iron Sensitivity
 Cold-iron weapons deal 50% more damage to Echoes, and cold-iron restraints
 cannot be escaped via Fey Jaunt or any other short-range teleportation
 effect.
@@ -55,7 +55,7 @@ effect.
   requires aiming for an unarmored spot on the victim's body.]
 
 
-==== Fey Jaunt
+=== Fey Jaunt
 You gain the following power:
 
 #power-description(
@@ -69,7 +69,7 @@ You gain the following power:
   cost: "6 FP",
 )
 
-==== Fog-Fragile
+=== Fog-Fragile
 Echoes' ability to sustain
 themselves with magic causes them to absorb the chaotic, roiling energies
 of the Fog into their bodies more quickly, and they suffer its negative
@@ -89,7 +89,7 @@ choose one of the following subtypes:
   container(align: right, width: 50%)
 
 content[
-  ==== Mirrors
+  === Mirrors
 
 #race-infobox(
   creature-type: "Fey",
@@ -116,16 +116,16 @@ the range of body weights given here when this happens.
 
 Mirrors gain the following racial traits:
 
-===== Light-Attuned Senses
+==== Light-Attuned Senses
 Your mother-goddess is the lady of day, and your senses are tuned to her domain.
 You are immune to being blinded by bright light, including magical light effects.
 However, you treat low-light conditions as darkness --- in dim light, you cannot
 see without an additional light source.
 
-===== Children of Day
+==== Children of Day
 A Mirror gains +1d on Endurance checks while in direct sunlight.
 
-===== Dance of the Spring Court
+==== Dance of the Spring Court
 The old, hidden world of the fey is dead, but you can still call up its echoes
 to bewilder your foes. You gain the following power:
 
@@ -153,7 +153,7 @@ to bewilder your foes. You gain the following power:
   container(align: right, width: 50%)
 
 content[
-==== Shades
+=== Shades
 
 #race-infobox(
   creature-type: "Fey",
@@ -176,7 +176,7 @@ Shades nearly all cluster between 165-190 cm of height and 60-80 kg of body weig
 
 As a Shade, you gain the following racial trait:
 
-===== Hunt of the Autumn Court
+==== Hunt of the Autumn Court
 In days of old, the goddess Came-To-Pass was worshipped as an unerring huntress.
 You retain some of her essence.
 
@@ -193,13 +193,13 @@ You gain the following power:
   range: "15; one target",
 )
 
-===== Acute Hearing
+==== Acute Hearing
 The huntresses of the Autumn Court stalked their prey through the endless dark of
 the deep fey. You have Blindsense out to 5 meters, allowing you to detect
 creatures and objects by sound alone without needing line of sight. However, you
 are light-sensitive --- in direct sunlight or equivalent magical brightness, you
 suffer --1d on Perception checks and attack rolls.
 
-===== Children of Night
+==== Children of Night
 A Shade gains +1d on Endurance checks while in dim light or darkness.]
 })

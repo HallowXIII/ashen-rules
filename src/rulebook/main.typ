@@ -29,15 +29,15 @@
 
 #pagebreak()
 
-#include "quickstart.typ"
-
-#pagebreak()
-
 #include "introduction.typ"
 
 #pagebreak()
 
 #include "characters.typ"
+
+#pagebreak()
+
+#include "races.typ"
 
 #pagebreak()
 
@@ -74,6 +74,5 @@
 #pagebreak()
 
 #include "character-sheet.typ"
-
 
 

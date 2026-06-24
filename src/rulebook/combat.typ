@@ -1,6 +1,6 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("7", "Combat", "When only force may prevail")
+#chap-header("8", "Combat", "When only force may prevail")
 
 #flavor(citation: [Elth, Twin Swords of the Midnight Gates])[
   Zalahaiči ūyir čama mai yih kazna ayavurohu kawav ova zā. \
@@ -20,7 +20,7 @@ scene is modeled as a cyclical sequence of rounds.
 
 === The order of combat
 
-Combat is structured time (see _Structured Time_ in the Core Rules chapter). Each combat scene is divided into rounds, and the order of turns within each round is determined by initiative. For the core rules on rounds, initiative ticks, and action points, refer to that section.
+Combat is structured time (see _Structured Time_ in the Introduction). Each combat scene is divided into rounds, and the order of turns within each round is determined by initiative. For the general distinction between rounds, stretches, and open time, refer to that section.
 
 === Surprise
 
@@ -184,8 +184,8 @@ the obstacle.
 
 === Actions and Action Points
 
-The core rules for actions and Action Points are described under _Structured
-Time_ in the Core Rules chapter. In brief: each creature has a set number of AP
+The core rules for actions and Action Points are introduced under _Structured
+Time_ in the Introduction. In brief: each creature has a set number of AP
 per turn (usually 4), spent to take actions. Unspent AP is lost at the end of
 the turn and fully recovers at the start of the next.
 

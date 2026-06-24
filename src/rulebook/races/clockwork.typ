@@ -1,7 +1,7 @@
 #import "../../formatting/declarations.typ": *
 #import "@preview/meander:0.4.2"
 
-=== Clockwork
+== Clockwork
 
   #flavor["The Goddess Third loved toys and tinkers, and when she took up arms,
     her toys marched alongside her."]
@@ -15,7 +15,7 @@
   There are two kinds of clockworks: Ironhands and Porcelains. All clockworks have
   the following traits:
   
-   ==== Construct
+   === Construct
    
    You are a machine, and thus do not need to eat, breathe, or sleep. You are
    immune to poison and disease. In practical terms: hunger, thirst, and sleep
@@ -25,7 +25,7 @@
    a low-power maintenance mode. However, you are treated as a machine and are
    subject to all effects that target machines.
    
-   ==== Wind-Up
+   === Wind-Up
    You are powered by the soul-anchor you carry within your body, which drives the
    mechanism that moves you. When the connection to the soul-anchor is interrupted,
    you become an inanimate object after three rounds until the connection is
@@ -33,7 +33,7 @@
    mechanism manually from the outside. After this time, you lose consciousness and
    winding up has no further effect until the underlying problem is fixed.
    
-   ==== Magnetic Vulnerability
+   === Magnetic Vulnerability
    Strong magnetic fields disrupt the delicate circuitry that drives your
    mechanism. Such fields are found near unshielded magitek power plants, in the
    shadow of certain ruined industrial sites, and during the magnetic storms that
@@ -46,7 +46,7 @@
      for one stretch and must be carried clear. A successful Shop check
      (difficulty 6) by an ally can stave off the next failure.
    
-   ==== Particulate Vulnerability
+   === Particulate Vulnerability
    Sandstorms, ash fall, silt-laden air, and the interior of certain ruined
    factories deposit superfine particles that work their way into your joints
    and gears. After 4 hours of exposure without adequate sealing, you take --1d
@@ -58,7 +58,7 @@ maintenance per --1d incurred (a Shop check, GM's discretion), or by a long
 rest in a clean environment. Sealed face plates, oiled joint covers, and
 similar gear extend the time before the first penalty applies.
 
-==== Fog Sensitivity
+=== Fog Sensitivity
 Clockworks are themselves a form of magitek, and react to elevated Fog
 densities much more strongly than biological creatures. Your Fog Exposure
 thresholds (see _Fog Exposure_ in the Exploration chapter) are halved. 
@@ -86,7 +86,7 @@ In addition, every clockwork must choose one of the following two subtypes:
   
   content[
 
-==== Ironhands
+=== Ironhands
 
 #race-infobox(
   creature-type: "Construct",
@@ -109,19 +109,19 @@ other humanoids are similar in size to humans and weigh several hundred kilos.
 
 You gain the following racial traits:
 
-===== Integrated Weapons
+==== Integrated Weapons
 You can mount weaponry and gear to your construct body (see _Walking Armor_, below) up to its total bulk
 rating. When you do this, you ignore the bulk rating on the mounted equipment.
 Your charge use is calculated as normal.
 
-===== Electroception
+==== Electroception
 Your frame is fitted with electromagnetic sensors that detect electrical fields
 and metallic objects. You can sense the presence and approximate location of
 powered machinery, active electrical systems, and large metallic objects within
 10 meters, even through walls or obstacles.]
 
 colbreak()
-content[===== Walking Armor
+content[==== Walking Armor
 You cannot normally wear armor. Instead, your core is built to be fit into
 combat walker frames called Construct Bodies. You begin the game with a
 construct body available to you. If at any point you wish to switch to a new
@@ -148,7 +148,7 @@ your innate human-like vision, hearing and electroception.
 
 content[
 
-==== Porcelain
+=== Porcelain
 
 #race-infobox(
   creature-type: "Construct",
@@ -168,7 +168,7 @@ They stand between 160--185 cm tall and weigh 200-300 kg.
 
 You gain the following racial traits:
 
-===== Graceful Form
+==== Graceful Form
 You move with supernatural grace. While you are animated, the magic within you
 disguises your nature as a clockwork until someone touches your cold skin. You
 are immune to effects that would trip you and you ignore movement penalties from
@@ -176,7 +176,7 @@ Difficult and Treacherous terrain.]
 
 colbreak()
 
-content[===== Magicsense
+content[==== Magicsense
 Your arcane circuitry passively resonates with nearby magical fields. You can
 sense active spells, enchantments, magical items, and areas of concentrated
 magical energy within 10 meters. This sense provides awareness of the presence
@@ -184,7 +184,7 @@ and approximate direction of magical phenomena, but not their nature --- an Eeri
 check is required to identify or analyze what you are sensing. You gain +1d on
 Eerie checks to detect or analyze arcane effects.
 
-===== Spell Capacitor
+==== Spell Capacitor
 Your inner workings are optimized to focus arcane energy into destructive force.
 Whenever you expend Focus, roll a d6. On a 5 or 6, you immediately regain the
 lost Focus.]

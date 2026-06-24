@@ -126,8 +126,8 @@ Your first advances should establish your character’s core role:
   marksmanship exploits) and characteristic improvements.
 - *Arcane casters* need Spell Memory I to prepare and cast Tier 1 spells.
   Without this advance, you cannot cast arcane spells at all. You will
-  also need to acquire at least one spell to prepare (see _Arcane Spells_
-  under Basic Rules).
+  also need to acquire at least one spell to prepare (see _Arcane Powers_
+  in the Magic and Powers chapter).
 - *Divine casters* need a reliquary (purchased in step 5) to access
   prayers. Advances that improve Command help with favor checks and
   prayer casting.
@@ -209,33 +209,6 @@ rest. Consider:
   cannot bring themselves to discard it. Work with your GM to choose a
   keepsake; it may become a thread the GM can weave into the story, giving
   the character clues to who they were before the War took their memories.
-
-== Races
-
-The world of ashen is a wild place. Inhabited by magical and monstrous
-creatures, shaped by technology whose secrets of construction have long been
-lost, it is a realm of secrets and adventure.
-
-The immortal warriors that walk this land are themselves the heirs of magic and
-technology beyond modern reckoning. From the sentient machines that are the
-Clockworks to the færie Echoes, the racial composition of immortals attests to
-their atypical nature.
-
-There are seven races presented in the sections below. Each race is given a
-brief introduction, including what is known of their history.
-
-Most important are each race’s special abilities: while your race does not
-modify your statistics, it does provide you with different physical and magical
-attributes that may make particular races better or worse suited to the type of
-character you want to play.
-
-#include("races/clockwork.typ")
-
-#include("races/echoes.typ")
-
-#include("races/humans.typ")
-
-#include("races/sootbeasts.typ")
 
 == Attributes and Characteristics
 

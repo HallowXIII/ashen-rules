@@ -1,6 +1,6 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("10", "GM Guide", "How to run the game")
+#chap-header("11", "GM Guide", "How to run the game")
 
 The preceding chapters describe the rules from the player's perspective: how
 checks work, how combat flows, what powers and equipment do. This section
@@ -1437,7 +1437,7 @@ Legendary Rewards_ below.
 
 == Awarding Legendary Rewards
 
-Legendary items, powers, and advances (see _Legendary_ in the Basic Rules chapter) are among the most significant rewards a GM can offer. Because they are quest-bound and extraordinary by definition, they require more thought than standard loot or level-up choices.
+Legendary items, powers, and advances are among the most significant rewards a GM can offer. Because they are quest-bound and extraordinary by definition, they require more thought than standard loot or level-up choices.
 
 === When to Award Legendary Rewards
 

@@ -1,6 +1,6 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("6", "Equipment", "Your Material Companions")
+#chap-header("7", "Equipment", "Your Material Companions")
 
 The Deathless carry the remnants of a lost age: weapons forged in factories that no longer run, armor plated with alloys whose formulas are half-remembered, catalysts housing fragments of power that predate the cataclysm. Equipment in Ashen is not simply purchased off a shelf --- it is scavenged, repaired, inherited, and occasionally crafted anew by artisans working from incomplete knowledge.
 
@@ -45,6 +45,44 @@ A character whose total carried and equipped Bulk exceeds their carrying capacit
 Weapons, catalysts, and reliquaries each have a *focus increment* value. This value determines how much Focus a character spends when using powers through that implement. When a power's cost is expressed in _increments_ (e.g., "Cost: 2 Increments"), the actual Focus Point cost is equal to the number of increments multiplied by the wielded implement's focus increment value. For example, a character using a power that costs 2 increments through a weapon with a focus increment of 5 would spend 10 FP.
 
 Higher-tier and heavier implements tend to have larger focus increments, reflecting their greater power output. This creates a tradeoff: more powerful implements deal more damage but are more expensive to fuel with Focus. A character choosing between two weapons of the same tier might opt for one with a lower increment if they rely heavily on exploits, or a higher increment if they prefer raw damage and use powers sparingly.
+
+=== Equipment Maintenance
+
+Equipment requires regular upkeep to remain in working order. During each
+intermission, every character must pay a *maintenance cost* equal to *10% of the
+total base price* of all equipment they own: carried, equipped, and wielded.
+This covers repairs, replacement parts, ammunition stockpiling, power cell
+recharging, enchantment stabilization, and general wear.
+
+Modifications increase the maintenance cost: add the modification's cost to the
+base price before calculating the 10%. A #feathers 3150 Silvered Moontouched
+Longsword costs #feathers 315 per intermission to maintain.
+
+Items that are not maintained risk degradation. For each unmaintained item, the
+GM rolls on the following table at the start of the next act:
+
+#pftab(
+  "Equipment Degradation",
+  columns: (1fr, 5fr),
+  breakable: true,
+  [D10],
+  [Result],
+  [1--3],
+  [*Cosmetic wear.* The item looks battered but functions normally. No mechanical effect --- this time.],
+  [4--5],
+  [*Reduced stats.* One of the item's primary stats is reduced: --1/T damage (weapons), --2/T Armor or Ward (armor), or --1/2T Casting bonus (catalysts). This penalty is cumulative across intermissions and persists until the item is repaired (costs the skipped maintenance plus 25%).],
+  [6--7],
+  [*Lost quality.* One of the item's special properties ceases to function: a treatment wears off, an enchantment goes dormant, or a material property degrades. The GM chooses which. Restoring it requires re-applying the modification at full cost.],
+  [8--9],
+  [*Gained defect.* The item develops a negative quality: weapons become prone to dangerous malfunctions (gaining the Overload keyword; see _Weapon Keywords_ in the Equipment chapter); armor develops weak points (--1 Evasion); catalysts become erratic (--1d to casting checks). This defect persists until repaired.],
+  [10],
+  [*Catastrophic failure.* The item breaks down entirely and cannot be used until repaired. Repair costs the full maintenance cost plus 50%, and requires a Shop or Ritual check at difficulty equal to the item's tier + 3.],
+)
+
+Tier 0 items (Old War surplus) have no maintenance cost --- they are already in
+the worst shape they can be in. Legendary items have unique maintenance
+requirements determined by the GM, usually involving rare materials or specific
+conditions rather than a flat currency cost.
 
 === Masterwork Items
 
@@ -376,7 +414,7 @@ The following keywords may appear on weapons, armor, or other equipment. Some ar
 
 *Negative Keywords:*
 
-The following keywords represent defects, wear, and damage. They may be found on looted or salvaged equipment, or gained through neglected maintenance (see _Equipment Maintenance_ in the Intermissions section). Negative keywords can be removed by repairing the item during an intermission (Shop or appropriate skill check, difficulty equal to the item's tier + 2, plus the cost of any skipped maintenance).
+The following keywords represent defects, wear, and damage. They may be found on looted or salvaged equipment, or gained through neglected maintenance (see _Equipment Maintenance_ above). Negative keywords can be removed by repairing the item during an intermission (Shop or appropriate skill check, difficulty equal to the item's tier + 2, plus the cost of any skipped maintenance).
 
 - *Brittle:* The armor's structure is compromised --- cracked plates, weakened weave, stressed crystal lattice. Each time the wearer takes damage that is reduced by this armor's Armor value, the armor temporarily loses 1 Armor. Lost Armor is restored at the end of the encounter. If the armor's Armor value reaches 0 during an encounter, it provides no physical protection for the remainder of that encounter.
 - *Dulling:* The weapon's edge or striking surface has degraded. Each time this weapon deals damage, its base damage is temporarily reduced by 1. Lost damage is restored at the end of the encounter. If the weapon's base flat damage reaches 0, the weapon deals only its die roll.
@@ -441,7 +479,7 @@ An *enchantment* is a magical effect layered onto an item. Enchantments grant sp
 
 ==== Legendary Items
 
-Legendary items (see _Legendary_ in the Basic Rules chapter) are unique artifacts with an intrinsic trait that cannot be replicated or transferred. This legendary trait is part of the item's identity and *does not count against its enchantment slots*. A legendary item can therefore have up to three total effects: its intrinsic legendary trait plus up to two enchantments. Most tier 6 weapons and some tier 5 weapons are legendary.
+Legendary items are unique artifacts with an intrinsic trait that cannot be replicated or transferred. This legendary trait is part of the item's identity and *does not count against its enchantment slots*. A legendary item can therefore have up to three total effects: its intrinsic legendary trait plus up to two enchantments. Most tier 6 weapons and some tier 5 weapons are legendary. For guidance on awarding legendary items, powers, and advances, see _Awarding Legendary Rewards_ in the GM Guide.
 
 === Building an Item
 

@@ -1,6 +1,6 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("8", "Exploration", "Moving around the world")
+#chap-header("9", "Exploration", "Moving around the world")
 
 #flavor(citation: [The Song of the Lost])[
   Ših karimmi, amawai, amawai \
