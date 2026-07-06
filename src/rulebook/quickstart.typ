@@ -195,7 +195,7 @@ For a first character, prefer clear Tier 1 choices:
 - A ranged fighter usually wants *Press the Advantage*, *Fleet of Foot*,
   *Vault*, a Marksmanship characteristic increase, or an equipment-focused plan.
 - An arcane caster needs *Spell Memory I* and at least one spell to prepare.
-  *Leyline Attunement* also supports catalyst-heavy play.
+  *Confluence Attunement* also supports catalyst-heavy play.
 - A psychic character usually wants *Discipline (Tier 1)* or a psychic support
   advance such as *Telepathy*, *Quicken Magic*, or *Maximize Magic*.
 - A divine caster needs an appropriate reliquary. Command advances and Command

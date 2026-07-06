@@ -297,7 +297,7 @@ shapes the world in ways both subtle and profound.
 In ritual magic, the Aspects function as influences: a ritual's required Aspects
 must be present in the environment or provided through sacrificed objects. At
 higher tiers, the interplay of Aspects becomes critical, and the places where
-particular Aspects concentrate --- leylines, ancient temples, sites of great
+particular Aspects concentrate --- confluences, ancient temples, sites of great
 violence or great creation --- become strategically valuable.
 
 === Purgatory and the Curse of the Deathless

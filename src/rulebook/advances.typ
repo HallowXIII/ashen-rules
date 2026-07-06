@@ -777,7 +777,7 @@ attained, as shown in the tables below.
 === Potential
 
 #advance-block(
-  "Leyline Attunement",
+  "Confluence Attunement",
   1,
   200,
   0,

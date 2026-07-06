@@ -727,7 +727,7 @@ extreme weather without protection, or in a hostile environment. A rough rest
 provides only the benefits of a short rest, regardless of duration.
 
 *Blessed ground* — certain locations saturated with ambient magical energy
-(leyline nexuses, ancient temples, sacred groves) provide additional benefits.
+(confluences of magical current, ancient temples, sacred groves) provide additional benefits.
 When resting on blessed ground, a character recovers 1 additional EP. The GM
 determines which locations qualify.
 

@@ -1346,7 +1346,7 @@ consumed by the ritual and can be reused. The power an implement contributes
 depends on its tier and type; a well-made catalyst or a permanent ritual circle
 inscribed at a workshop can provide significant magnitude.
 
-*Influences* --- locations with strong magical resonance: leyline intersections, ancient
+*Influences* --- locations with strong magical resonance: confluences, ancient
 temples, alchemical laboratories, places where the Fog runs thick --- provide
 ambient power that the caster can draw on. The GM determines the magnitude a
 location provides based on its nature and strength.
@@ -1381,7 +1381,7 @@ in three tiers, representing how saturated with a given aspect the source is:
   water (Mist), a blade that has taken many lives (Skull).
 - *Major influence* (4--8 magnitude): strong resonance. A site of significant
   power, a potent artifact, or a large cache of aspected materials. Examples: a
-  leyline nexus (Mist), a consecrated cathedral (Crown), an active volcano
+  confluence (Mist), a consecrated cathedral (Crown), an active volcano
   (Sun), an ancient battlefield (Ash).
 - *Overwhelming influence* (9+ magnitude): the aspect saturates the area or
   object completely. These sources are rare and often dangerous. Examples: the

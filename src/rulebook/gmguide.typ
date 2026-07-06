@@ -310,7 +310,7 @@ built on four density bands (Clear, Light, Dense, Extreme) with escalating
 mechanical consequences. Your setting needs an equivalent: a graduated,
 world-spanning threat that makes travel dangerous, gates where advanced
 technology functions reliably, and provides a source of ambient energy. It could
-be radiation, a magical plague, an unstable ley-line network, or a literal
+be radiation, a magical plague, an unstable network of magical currents, or a literal
 cursed weather system---but the four-band model and its downstream effects on
 equipment, creatures, and exploration need analogs.
 
@@ -2042,7 +2042,7 @@ A ritual's sacrifice is the resource it consumes. The appropriate type depends o
 
 - *Components* (T1--T4): money and materials. A standard cost with no lasting impact beyond the price. Components are consumed whether or not the ritual succeeds.
 - *Essence* (T3--T5): the caster takes strain or a long-lasting debuff. Used for rituals that channel dangerous forces. The debuff persists for days or weeks, representing a physical or spiritual cost paid by the caster personally.
-- *Influence* (T4--T6): requires a concentration of specific aspects, either in the environment or in sacrificed objects. A ritual requiring Mist influence of magnitude 5, for example, must be cast in a strongly magical environment (a leyline, an ancient temple) or the caster must sacrifice a magical object that provides that level of aspect resonance. Influence is consumed: the environmental attunement fades, or the object is destroyed.
+- *Influence* (T4--T6): requires a concentration of specific aspects, either in the environment or in sacrificed objects. A ritual requiring Mist influence of magnitude 5, for example, must be cast in a strongly magical environment (a confluence, an ancient temple) or the caster must sacrifice a magical object that provides that level of aspect resonance. Influence is consumed: the environmental attunement fades, or the object is destroyed.
 
 === Aspect Requirements
 
