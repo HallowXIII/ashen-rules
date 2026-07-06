@@ -448,6 +448,10 @@ discretion.
           nights. Darkness provides heavy concealment (-4d to hit). Creatures without
           darkvision or another sense capable of replacing sight are effectively Blinded.
 
+          *Brilliant light* is light too strong for normal human eyes -- the harsh sun over mountain snow,
+          the glare of a floodlight -- and provides heavy concealment (-4d to hit). Creatures without
+          a form of eye protection are effectively Blinded.
+
 
         ],
       ),
