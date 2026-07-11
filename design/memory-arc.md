@@ -51,9 +51,11 @@ Notes settled in design discussion:
 ### Recognition (Glimpsed only)
 
 While a Question is Glimpsed: when you encounter a person, place, or object
-connected to it, the GM tells you so, and once per such encounter you may ask
+connected to it, once per such encounter you may ask
 one question the half-memory could plausibly answer ("which corridor leads to
-the vault?" — you garrisoned this fortress once).
+the vault?" — you garrisoned this fortress once). The GM should only provide
+hints as to this situation if the player (as opposed to the character) couldn't
+know about it.
 
 ### Recovered
 
@@ -78,6 +80,14 @@ On recovering the **Core Question** — the capstone choice:
 - **Mastery:** remain Deathless by choice rather than curse; gain a **Major
   Legendary Advance** (the fully reintegrated self) and immunity to further
   Fading.
+
+### Recollection
+
+Per stage of answered question, the character gets dice in a "Recollection" pool.
+For five questions, this means 3 x 5 = 15d, for three questions, each step of
+answering (Sealed -> Glimpsed, Glimpsed -> Recovered) can grant two dice (3 x 3 x 2 = 18d).
+This stat represents a character's accumulated and remembered world-knowledge and stands
+in for the absence of a Lore skill.
 
 ## Dials (per campaign / per Question)
 

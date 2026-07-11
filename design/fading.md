@@ -52,7 +52,7 @@ identity and stays clean.
 
 ## The track (0–5)
 
-**Every mark:** −1 maximum EP; −1d on Presence- and Command-based checks; and
+**Every mark:** −10% (minimum -1) maximum EP; −1d on Influence and ; and
 the player narrates an erosion — a face, a feeling, a taste, something the
 curse takes. The narration is mandatory; it is the point.
 
@@ -61,7 +61,7 @@ curse takes. The narration is mandatory; it is the point.
 | Fading | Threshold effect |
 |---|---|
 | 2 | **Fog-Touched.** You treat Fog density as one band lower for its effects on you, and fog obscuration no longer blocks your sight. |
-| 3 | **Veilcasting.** Your powers cost 1 less FP (minimum 1). |
+| 3 | **Veilcasting.** Your powers cost 1 fewer increment of FP (minimum 1). |
 | 4 | **Kinship.** Fog-spawned creatures do not attack you unless provoked — you alone; they half-recognize something of themselves. |
 | 5 | **Forgetting.** Your powers cost half FP (rounded up). At the end of the current act, you become **Forgotten** (NPC). |
 
