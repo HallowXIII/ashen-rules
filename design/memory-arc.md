@@ -12,8 +12,10 @@ worth recovering*: a set of **load-bearing unknowns** about the character's
 past, called **Questions**. The amnesia dial changes how many Questions exist
 and how wide each one is; everything downstream is invariant.
 
-- **Default Ashen configuration:** 5 Questions per character; the keepsake
-  (characters.typ creation step) automatically seeds one.
+- **Default Ashen configuration:** 3~5 Questions per character; the keepsake
+  (characters.typ creation step) automatically seeds one. 
+  => Review question: what do we mean by "seed"? Does it provide an answer or
+  is one of the questions always "why do I have this"?
 - Every set terminates in a **Core Question** whose answer is the character's
   Regret — the truth that binds them to the world. In minimal-amnesia settings
   the Core Question lives inside the one lost event.
@@ -53,9 +55,10 @@ Notes settled in design discussion:
 While a Question is Glimpsed: when you encounter a person, place, or object
 connected to it, once per such encounter you may ask
 one question the half-memory could plausibly answer ("which corridor leads to
-the vault?" — you garrisoned this fortress once). The GM should only provide
-hints as to this situation if the player (as opposed to the character) couldn't
-know about it.
+the vault?" — you garrisoned this fortress once).
+=> Review addition: the GM only tells you so if the player (as opposed to the character)
+has no way of knowing. Otherwise the impetus and the recognition should from the 
+player.
 
 ### Recovered
 
@@ -79,7 +82,16 @@ On recovering the **Core Question** — the capstone choice:
   game's pitch promises short of the two T6 world-rituals), **or**
 - **Mastery:** remain Deathless by choice rather than curse; gain a **Major
   Legendary Advance** (the fully reintegrated self) and immunity to further
-  Fading.
+  Fading [side note: maybe this isn't full immunity, but significant resistance].
+
+### Recognition Dice
+
+Recognition can provide a dice pool to check the character's memory. The more
+questions are answered, the better the character remembers. This substitutes
+for the otherwise missing "lore" type of skill in the rules; the pool size is
+based on steps of understanding (e.g. all questions sealed: 0d, first question
+glimpsed, 3d, all further glimpses, +1d, all further recoveries, +2d, capstone
+recovery grants a bonus die to form an 18d pool).
 
 ### Recollection
 
