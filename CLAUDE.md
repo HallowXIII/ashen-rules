@@ -127,6 +127,12 @@ The document sets (in `main.typ` and `pf-stylization`):
 
 The **`tools/`** directory holds standalone helper scripts that support the project but aren't part of the Typst build. Put any future automation, analysis, or one-off scripts here.
 
+- **tools/nano-banana.sh**: Generates (or edits) images with Google's Nano Banana models via the Gemini API — used for rulebook illustration concepts. Requires `GEMINI_API_KEY` (or a key in `~/.config/gemini/api_key`; get one at https://aistudio.google.com/apikey). Run with:
+  ```bash
+  tools/nano-banana.sh -o out.png [-m gemini-3-pro-image] [-a 2:3] [-i reference.png] "prompt"
+  ```
+  Long prompts can be piped via stdin with `-` as the prompt argument; `-n` prints the request JSON without calling the API. After generating, view the output image with the Read tool to check it.
+
 - **tools/build_optimizer.py**: A character-build analysis tool. Given a characteristic-to-attribute mapping and a set of weighted target characteristics, it brute-forces the optimal attribute + characteristic rank allocation within an XP budget (respecting cumulative XP costs and characteristic prerequisites). It was written to evaluate the balance impact of remapping a characteristic's linked attributes (e.g. Martial from STR+AGI to STR+DEX), comparing "current" vs "proposed" systems across several archetypes and printing per-archetype rating/XP/score deltas. Run with:
   ```bash
   python3 tools/build_optimizer.py

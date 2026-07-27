@@ -840,6 +840,7 @@
   ward: none,
   evasion: none,
   init: none,
+  ap: none,
   speed: none,
   resistances: none,
   immunities: none,
@@ -849,6 +850,7 @@
   casting: none,
   command-powers: (),
   equipment: (),
+  xp: none,
 ) = {
   set text(font: fonts.sans)
   set par(spacing: .6em, first-line-indent: 0em)
@@ -879,6 +881,7 @@
      if ward != none { defenses.push([*Wrd* #ward]) }
      if evasion != none { defenses.push([*Eva* #evasion]) }
      if init != none { defenses.push([*Init* #init]) }
+     if ap != none { defenses.push([*AP* #ap]) }
      if speed != none { defenses.push([*Speed* #speed]) }
      if defenses.len() > 0 { defenses.join([ #sym.bar.v ]); linebreak() }
     }
@@ -913,5 +916,10 @@
     if equipment != () {
       cr-subhead("Equipment")
       for e in equipment { e }
+    }
+    if xp != none {
+      v(0.35em)
+      line(stroke: 0.5pt + colors.pfnavy, length: 100%)
+      [*XP* #xp]
     }
 }
