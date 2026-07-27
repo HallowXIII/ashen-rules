@@ -1,6 +1,12 @@
 # Design: Legendary Advances (Minor & Major)
 
-Status: **working draft**, 2026-07-06. Founds a category the GM guide already
+Status: **drafted into rulebook** (2026-07-27) — see the "Legendary Advances"
+section at the end of `src/rulebook/advances.typ` (entries render via the new
+`legendary-advance` block in declarations.typ) and "Designing Legendary
+Advances" in `src/rulebook/gmguide.typ`. The gmguide legendary-pacing bullets
+were amended to exempt memory-arc Minors from the "none before tier 3" rule.
+Playtest-set tiers went in as suggested below. Originally: **working
+draft**, 2026-07-06. Founds a category the GM guide already
 references (legendary rewards for "character milestones (confronting past,
 earning patron trust)", gmguide.typ ~899) but which has zero entries in
 `advances.typ`/`powers.typ`. **"Legendary" is a game-wide term** meaning
@@ -31,6 +37,10 @@ authoritative.
 - **Void Jaunt** _(Legendary/Minor; Racial, Void.)_ Prerequisites: _Void Step_,
   _Fey Jaunt_ racial power. When using Fey Jaunt, your movement range increases
   by 3 squares.
+
+_Tier assignment (post-dating the reconstruction; Minors are now tiered):
+suggest Time is of the Essence T3 (an extra turn as a first Legendary would
+warp low-tier fights), Legendary Resilience T2, Void Step T2, Void Jaunt T2._
 
 ### Major
 
@@ -70,10 +80,16 @@ authoritative.
 characteristic ranks; permanent AP or reaction increases; revival EP-cost
 reduction (that's advance-tree territory — see Will Triumphant).
 
-**Grammar:** Minors are tierless (awarded by story, priced in EP at use). They
-may carry trait tags (Racial, domain, Void, …) and prerequisites, including
-chains onto racial powers (Void Jaunt) and other legendaries. Each entry should
-carry at least a line of flavor tying it to the world.
+**Grammar:** Both Minors and Majors carry a **Tier** (decided 2026-07-06 —
+unified grammar). Tier is not a purchase cost — Legendaries are never bought —
+but an **award gate**: the earliest tier at which the effect is safe to hand
+out. Some effects are catastrophically powerful as a character's first
+Legendary but perfectly balanced obtained late; tier is the guardrail. Minors
+span the full range but cluster at T1–T3; Majors sit at T5–T6 per the existing
+gmguide pacing. Advances may also carry trait tags (Racial, domain, Void, …)
+and prerequisites, including chains onto racial powers (Void Jaunt) and other
+legendaries. Each entry should carry at least a line of flavor tying it to the
+world.
 
 ### Majors
 
@@ -94,71 +110,71 @@ playtest.
 
 ### The Soldier
 
-- **Drilled to the Bone** _(Legendary/Minor.)_ Once per Scene, when initiative
+- **Drilled to the Bone** _(Tier 2 Legendary/Minor.)_ Once per Scene, when initiative
   is rolled, you may spend 2 EP: you and one ally within 5 squares each gain
   +1 AP on your first turn. _The horns sound and your body is already moving._
-- **Shield-Wall Memory** _(Legendary/Minor.)_ Once per Scene, as a reaction
+- **Shield-Wall Memory** _(Tier 2 Legendary/Minor.)_ Once per Scene, as a reaction
   when an ally within 2 squares is hit by an attack, spend 3 EP: the attack
   resolves against you instead. _You held the line once. Some part of you never
   stopped._
 
 ### The Scholar
 
-- **Dead Tongues** _(Legendary/Minor.)_ You can read and speak the languages of
+- **Dead Tongues** _(Tier 1 Legendary/Minor.)_ You can read and speak the languages of
   the fallen empires, and gain +3d on checks to decipher pre-War texts,
   inscriptions, and ciphers.
-- **Mnemonic Palace** _(Legendary/Minor.)_ Everything you have perceived since
+- **Mnemonic Palace** _(Tier 1 Legendary/Minor.)_ Everything you have perceived since
   your awakening is filed in perfect order. Once per Act, ask the GM one
   factual question about any scene you witnessed; the answer is true and
   complete.
 
 ### The Priest
 
-- **Once-Anointed** _(Legendary/Minor; Divine.)_ Reliquaries remember your
+- **Once-Anointed** _(Tier 2 Legendary/Minor; Divine.)_ Reliquaries remember your
   service: they begin neutral toward you rather than unfriendly, and you gain
   +3d on Favor checks.
-- **Litany Against the Dark** _(Legendary/Minor; Divine.)_ Once per Scene,
+- **Litany Against the Dark** _(Tier 1 Legendary/Minor; Divine.)_ Once per Scene,
   spend 2 EP and 1 AP: allies within Burst 3 end the Frightened and Panicked
   conditions. _You no longer remember the god, but the words still work._
 
 ### The Criminal
 
-- **Fingers Remember** _(Legendary/Minor.)_ Once per Act, reveal a small object
+- **Fingers Remember** _(Tier 1 Legendary/Minor.)_ Once per Act, reveal a small object
   (light enough to palm) that you lifted or planted earlier in the Act,
   narrating the flashback of when.
-- **No Face in the Crowd** _(Legendary/Minor.)_ Once per Scene, while you have
+- **No Face in the Crowd** _(Tier 2 Legendary/Minor.)_ Once per Scene, while you have
   cover or concealment, spend 2 EP as a free action to become hidden without a
   check.
 
 ### The Sovereign
 
-- **Voice of Old Command** _(Legendary/Minor.)_ Once per Scene, spend 3 EP and
+- **Voice of Old Command** _(Tier 2 Legendary/Minor.)_ Once per Scene, spend 3 EP and
   1 AP: one ally who can hear you immediately takes one 1-AP action of their
   choice. _Nobody remembers your throne. Their spines do._
-- **Weight of the Crown** _(Legendary/Minor.)_ Choose a hierarchy you once
+- **Weight of the Crown** _(Tier 1 Legendary/Minor.)_ Choose a hierarchy you once
   commanded when this advance is keyed (a legion, a priesthood, a guild).
   Its functionaries instinctively defer to you, and you gain +3d on
   Presence-based checks against its members.
 
 ### The Wanderer
 
-- **The Old Roads** _(Legendary/Minor.)_ You remember the roads from before the
+- **The Old Roads** _(Tier 1 Legendary/Minor.)_ You remember the roads from before the
   War. On routes you walked in life, your party ignores navigation-check
   penalties and travels 25% faster; you always know what pre-War roads exist in
   a region.
-- **Fog-Sense** _(Legendary/Minor.)_ Once per Act, spend 1 EP: learn the
+- **Fog-Sense** _(Tier 1 Legendary/Minor.)_ Once per Act, spend 1 EP: learn the
   direction and rough distance of the nearest blessed ground within a day's
   travel. You sense changes in Fog density band an hour before they arrive.
 
 ### The Maker
 
-- **Maker's Hands** _(Legendary/Minor.)_ Maintenance and repair costs are
+- **Maker's Hands** _(Tier 1 Legendary/Minor.)_ Maintenance and repair costs are
   halved for equipment you service yourself. Once per Act, jury-rig a broken
   item to function for one Scene.
 
 ### The Companion
 
-- **The Vow Holds** _(Legendary/Minor.)_ Once per Act, when an ally you can see
+- **The Vow Holds** _(Tier 2 Legendary/Minor.)_ Once per Act, when an ally you can see
   dies, spend 2 EP: immediately move up to your Speed toward them and take one
   1-AP action, outside the normal turn order. _You made a promise. Death is not
   an excuse._
@@ -181,7 +197,9 @@ playtest.
 
 ## Open questions
 
-1. Confirm Minors are tierless (current stance: yes).
+1. ~~Confirm Minors are tierless~~ — resolved 2026-07-06: both Minors and
+   Majors carry a Tier, read as an award gate (earliest safe tier), not a
+   cost. All seed tiers below are tentative.
 2. Major power ceiling needs 1–2 more playtest datapoints; Standard of the
    Third Legion is deliberately aggressive to probe it.
 3. Whether the "no dice to core pools" Minor constraint leaves enough design

@@ -1,6 +1,13 @@
 # Design: The Memory Arc (Questions, Fragments, Resonance)
 
-Status: **working draft** — design settled in conversation 2026-07-06, not yet in rulebook text.
+Status: **drafted into rulebook** (2026-07-27) — see `src/rulebook/curse.typ`
+(chapter 10, "The Curse"). The rulebook text is now the authoritative wording;
+this doc remains the design rationale. Drafting choices made along the way:
+the keepsake-seeded Question starts **Glimpsed** (resolving open q4 and the
+"seed" review question — the keepsake *is* a glimpse); of the two lore-pool
+sketches below, **Recollection** was kept (per-Question contribution:
+Glimpsed +1d / Recovered +3d total, doubled in 3-Question sets → 15–18d when
+fully recovered), and "Recognition Dice" was folded into it.
 Companion doc: [legendary-advances.md](legendary-advances.md) (the reward category this module consumes).
 
 ## Premise

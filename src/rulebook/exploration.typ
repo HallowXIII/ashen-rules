@@ -195,10 +195,12 @@ without adequate protection suffer the effects of Fog exposure.
   treat).
 - *Dense Fog — Deathless:* Deathless are more resilient but not immune. After 1
   month of continuous exposure, a Deathless character takes a cumulative -1d
-  penalty to all checks (maximum -3d). Healing and regeneration are halved. After
-  prolonged exposure (3 months or more), the Deathless begins losing 1 EP per
-  week. These penalties persist until the character spends at least 1 week outside
-  Dense Fog.
+  penalty to all checks (maximum -3d). Healing and regeneration are halved.
+  These penalties persist until the character spends at least 1 week outside
+  Dense Fog. Saturation also erodes the soul itself: each full month of
+  continuous exposure to Dense Fog (each full week, in Extreme Fog) marks 1
+  Fading --- see #link(<fading>)[_Fading_] in The Curse chapter. Unlike the
+  dice penalties, Fading does not recover on leaving the Fog.
 - *Extreme Fog:* Effects accumulate as Dense Fog, but on a timescale of hours
   rather than weeks. Mortals must check against Exhaustion after 4 hours;
   Deathless begin accumulating penalties after 1 day.
@@ -759,6 +761,11 @@ travels to their soul anchor and slowly reincorporates there. The process
 takes 3 to 7 days, during which the character recovers only 1 EP per day
 (instead of the usual 3). Once they have accumulated 5 EP, they reincorporate
 at the anchor with 1 HP and no Focus.
+
+The journey back is not free: when your essence begins reincorporating, mark
+1 Fading --- each return, a little less of you makes it. See
+#link(<fading>)[_Fading_] in The Curse chapter. Spot-revival in the moment of
+battle never marks Fading; only the long road home does.
 
 === Effects That Prevent Revival
 

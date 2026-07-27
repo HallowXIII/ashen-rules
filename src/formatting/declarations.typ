@@ -383,6 +383,53 @@
   special: none,
 ))
 
+// Legendary advances are awarded, never bought, so the card shows an award
+// tier in place of the feat card's XP cost and carries no HP/FP line.
+#let legendary-advance(
+  name,
+  tier,
+  kind, // "Minor" or "Major"
+  prerequisites,
+  body,
+  traits: (),
+  flavor: none,
+) = [
+  #set text(font: fonts.sans)
+  #v(1em)
+  #set par(spacing: .6em, first-line-indent: 0em)
+  #let split_format(left, right, is_header: false) = {
+    let fmt(c) = if is_header {
+      text(weight: "semibold", size: 1.4em, stretch: 50%)[#c]
+    } else {
+      text(stretch: 50%)[#c]
+    }
+    box(fmt(left))
+    h(1fr)
+    sym.wj
+    box(fmt(right))
+  }
+  #split_format(
+    upper(name),
+    upper([Tier #tier]),
+    is_header: true,
+  )
+  #line(stroke: 1pt, length: 100%)
+  #pftraits(("Legendary", kind) + traits)
+
+  #if prerequisites != none {
+    par(hanging-indent: 1em)[Prerequisites: #prerequisites]
+  }
+  #line(stroke: 1pt, length: 100%)
+  #par(hanging-indent: 0pt, first-line-indent: 1em)[#body]
+  #if flavor != none {
+    par(hanging-indent: 0pt, first-line-indent: 1em)[#text(
+        font: fonts.special,
+        style: "italic",
+        size: 11pt,
+      )[#flavor]]
+  }
+]
+
 #let pftab(
   name,
   columns: (1fr, 4fr),

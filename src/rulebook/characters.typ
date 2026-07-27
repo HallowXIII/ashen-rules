@@ -197,7 +197,11 @@ rest. Consider:
   Factions provide patrons, mission opportunities, and social connections.
 - What does your character *remember* of the Last War? Most Deathless
   remember little or nothing --- but fragments surface, and those
-  fragments shape who they are.
+  fragments shape who they are. The gaps that matter --- the ones whose
+  answers would change how your character sees themselves --- become
+  their memory *Questions*; see
+  #link(<memory-questions>)[_Memory and Questions_] in The Curse
+  chapter.
 - What drives your character *forward*? Deathless cannot truly die, so
   survival alone is not enough. What goal, grudge, or unanswered question
   keeps them moving?
@@ -207,8 +211,10 @@ rest. Consider:
   engraved on the blade, a letter in a language they no longer read. The
   character probably does not remember what it represents, or why they
   cannot bring themselves to discard it. Work with your GM to choose a
-  keepsake; it may become a thread the GM can weave into the story, giving
-  the character clues to who they were before the War took their memories.
+  keepsake; it is always tied to one of your character's memory Questions,
+  and because it is itself a surviving fragment of the past, that Question
+  begins play Glimpsed rather than Sealed (see
+  #link(<memory-questions>)[_Memory and Questions_] in The Curse chapter).
 
 == Attributes and Characteristics
 

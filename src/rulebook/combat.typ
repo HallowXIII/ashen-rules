@@ -355,6 +355,11 @@ for your soul anchor and you begin reincorporating there. See
 #link(<death-and-reincorporation>)[_Death and Reincorporation_] in
 the Exploration chapter.
 
+Spending EP --- on revival or anything else --- never harms the
+soul, no matter how low the pool runs. The lasting cost of death,
+#link(<fading>)[_Fading_], is paid only when spot-revival fails and
+the essence must make the journey home.
+
 #attention([Whether or not you choose to revive, both revival and
   discorporation occur on your turn in the round after you died. If
   your next turn after death is in the same round you died in, you

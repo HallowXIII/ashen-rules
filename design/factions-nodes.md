@@ -1,6 +1,10 @@
 # Design: Factions & Holdings (standing, debts, the faction turn)
 
-Status: **working draft** — design settled in conversation 2026-07-06.
+Status: **drafted into rulebook** (2026-07-27) — see "Factions, Standing, and
+Holdings" in `src/rulebook/gmguide.typ` (between Running Campaigns and
+Designing Creatures), with the venture menu under `<intermission-ventures>`
+and a pointer from the introduction's Intermissions section. Anchor stakes
+went in verbatim. Open questions below all remain open (playtest numbers).
 Companion docs: [memory-arc.md](memory-arc.md), [fading.md](fading.md)
 (Communion competes for intermission ventures),
 [legendary-advances.md](legendary-advances.md) (patron legendary favors).

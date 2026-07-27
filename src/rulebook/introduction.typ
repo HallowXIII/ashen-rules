@@ -254,6 +254,10 @@ equipment, maintain their gear, seek instruction, pursue faction obligations,
 and prepare for the next objective. During an intermission, characters may
 pursue individual goals -- the next act begins when the entire party is on stage again.
 Intermissions are where the campaign takes a breather, but they are still part of the game: the world may change, patrons may make demands, and new opportunities may appear.
+The GM Guide's #link(<intermission-ventures>)[_Intermission Ventures_] give
+this downtime a light structure: each character chooses two significant
+undertakings per intermission, from tending faction obligations to chasing
+the traces of their own forgotten past.
 
 == Using This Book
 
@@ -273,6 +277,8 @@ need.
   or vehicles.
 - Read *Exploration* when travel, Fog, disease, rest, economy, or soul anchors
   matter.
+- Read *The Curse* when a character's forgotten past, memory recovery, or
+  Fading is in play.
 - Read *Setting* when you need the world, factions, gods, geography, and
   history.
 - Read *GM Guide* when preparing adventures, rewards, creatures, campaigns, and

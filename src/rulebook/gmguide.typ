@@ -1,6 +1,6 @@
 #import "../formatting/declarations.typ": *
 
-#chap-header("11", "GM Guide", "How to run the game")
+#chap-header("12", "GM Guide", "How to run the game")
 
 The preceding chapters describe the rules from the player's perspective: how
 checks work, how combat flows, what powers and equipment do. This section
@@ -910,6 +910,217 @@ with the campaign as a living place rather than a sequence of missions. If you
 skip them or compress them to bookkeeping, the campaign loses the texture that
 makes long-term play rewarding.
 
+== Factions, Standing, and Holdings <factions-standing-holdings>
+
+The factions of Ashen are orders of immortals pursuing centuries-long goals,
+and the pitch of the game --- undying warriors vying for control of the
+world's remaining sources of power --- deserves more support than narration
+alone. This section provides it, as three stackable layers: *Standing*, a
+per-faction rank ladder for the characters; *the faction turn*, a procedure
+that makes the world move between acts; and *Holdings*, a generic stat block
+for anything worth fighting over. Use as much or as little as your campaign
+wants --- the _Dials_ subsection at the end names three sensible
+configurations.
+
+A design rule runs through the whole module: *benefits are existing
+mechanics, priced rather than invented*. The book already gates
+commissioning, reliquary access, blessed-ground rest, and sanctuary; this
+module tells you what they cost in loyalty.
+
+=== Standing <standing>
+
+Each character holds a Standing with each faction that matters to the
+campaign, on a six-step ladder:
+
+#pftab(
+  "Standing",
+  columns: (1fr, 2fr, 7fr),
+  align: (center, left, left),
+  [*Rank*], [*Name*], [*Meaning*],
+  [−2], [Hunted], [Kill or capture on sight.],
+  [−1], [Marked],
+  [Obstructed, watched, denied service in faction territory.],
+  [0], [Outsider], [The default. No access, no obligations.],
+  [+1], [Associate],
+  [Mission access at standard pay (see _Mission Pay_).],
+  [+2], [Sworn],
+  [Commissioning access at faction specialists (the tier-3+ equipment gate);
+    reliquary loans up to a tier cap; *anchor rights* in faction sanctums.
+    Carries obligations.],
+  [+3], [Voice],
+  [Legendary-grade commissions; faction resources in the field; a seat at
+    decisions. Carries heavy obligations.],
+)
+
+Voice is the rules-shape of what the tier-6 mission pay table already
+promises: political influence and territorial concessions.
+
+*Movement.* Adjust Standing at act boundaries based on deeds --- ±1 per
+faction is the norm; betrayal can drop a character two ranks, or straight to
+Hunted. Sworn and Voice are *invitations*: they are reached by deed and
+oath, never by point accumulation, and joining is always played out.
+
+*Obligations.* Sworn and Voice characters receive a faction demand roughly
+every intermission. Refusing slips Standing. This is the cost side that
+makes membership a choice rather than a stat bonus.
+
+*Multiple factions.* A character can be openly Sworn to allied factions, but
+never openly to rivals. Secret double allegiance is playable --- encouraged,
+in intrigue-forward campaigns --- and exposure drops the character to Marked
+or Hunted with the betrayed party.
+
+=== Debts <debts>
+
+Standing moves slowly; *Debts* move fast. A Debt is a named, spendable
+obligation --- "the Mortefactors owe me one" made concrete --- denominated
+per faction. "Debts of service" is already the book's highest-tier
+mission-pay language; this formalizes it.
+
+- *Earned* by service beyond obligation: completing a demand exceptionally,
+  volunteering for faction trouble, delivering a Holding.
+- *Spent* on extraction or rescue, expedited or above-rank commissions, a
+  reliquary loan above the rank cap, information, a transgression
+  overlooked, or access to a Holding's boons. Big asks cost multiple Debts.
+
+Debts survive Standing changes. A Hunted character holding a Debt is owed it
+still --- immortal orders keep their books, and a faction that hunts you
+while honoring its debt to you is a story, which is the point.
+
+Debts are deliberately not called Favor: divine *Favor*, the reliquary
+attunement system, remains a distinct concept.
+
+=== The Faction Turn
+
+Give each featured faction (the three to five from _The Faction Web_, each
+with its one-sentence engine) a *project clock* of 4, 6, or 8 segments by
+scale. At every intermission, run the faction turn. For each faction:
+
++ *Advance the clock.* One segment by default; one extra if the party
+  materially helped this act; hold or remove a segment if they hindered;
+  clear more on a major setback.
++ *A filled clock changes the world*, expressed in this module's vocabulary:
+  a Holding gained, lost, revealed, or destroyed; a war opened; a ritual
+  completed. Start the faction's next clock.
++ *Generate one demand or opportunity* that touches the party. This feeds
+  Sworn obligations and seeds the next act's hooks.
+
+The faction turn is GM-facing. Players see consequences --- prices rising,
+borders closing, a patron's sudden urgency --- never the segments.
+
+=== Holdings <holdings>
+
+A *Holding* is anything whose possession increases a faction's power. The
+term is deliberately generic: a piece of terrain, an object, a person, a
+secret. Write a Holding as a single line:
+
+#align(center)[*Name · Form · Tier · Boons · Hold*]
+
+*Form* is what the Holding actually is:
+
+- *Place:* a Clear, a magically saturated site, a fortified pass, a sanctum.
+  A Clear is not maintained _by_ a Holding; it *is* one --- likely the
+  largest and highest-tier form in the game.
+- *Object:* a relic lost in the Fog, a kept reliquary, a Materia cache.
+- *Person:* an oracle, a defected engineer, a Deathless whose anchor you
+  control.
+- *Knowledge:* a route through the deep Fog, the location of a treasury, a
+  rival's anchor site.
+
+*Tier* scales the boons and the opposition on the usual tier 1--6 curve.
+
+*Boons* are the mechanical interface, drawn from the existing toolbox:
+blessed-ground rest (+1 EP), Charge supply for magitek, anchor rights in a
+sanctum, a kept reliquary (divine aspect access), a ritual Influence site
+(feeding the tier 4--6 ritual Influence requirements), waystation shelter,
+revenue in feathers per intermission, or standing intelligence.
+
+*Hold* is what keeping it costs: a garrison, upkeep, ritual maintenance, or
+*secrecy* --- the natural Hold of Knowledge and of many Objects.
+
+Form determines how a Holding can be contested, and each vector is an
+act-scale objective for a party on either side --- adventure frames, not a
+wargame:
+
+#pftab(
+  "Contesting Holdings",
+  columns: (1.6fr, 3.7fr, 3.7fr),
+  align: (left, left, left),
+  [*Form*], [*Contested by*], [*Notes*],
+  [Place],
+  [Assault, siege, infiltration, severing or re-making a binding],
+  [Cannot be carried off.],
+  [Object],
+  [Theft, escort interception, destruction],
+  [Portable; invites heist frames.],
+  [Person],
+  [Turning, extraction, discrediting, killing],
+  [May have their own agenda.],
+  [Knowledge],
+  [Copying, denial, discreditation, racing to act first],
+  [*Non-exclusive* --- two factions can hold the same secret.],
+)
+
+At high tiers, the party may hold Holdings themselves --- territorial
+concessions are on the tier-6 pay table. The Hold cost then lands on them,
+including the _Tend a Holding_ venture below.
+
+==== Anchor Stakes
+
+Three rules with outsized consequences:
+
++ Anchor rights in a faction sanctum are a Sworn benefit: the character
+  reincorporates behind friendly walls.
++ If a character's anchor site falls to an enemy while they are dead, they
+  reincorporate at 1 HP and no Focus *into that enemy's hands*.
++ A Deathless character's anchor location is therefore a secret worth
+  money: a Knowledge Holding in its own right, and a commodity some
+  factions trade in.
+
+==== Example Holdings
+
+- *Khâru's Ember · Object · Tier 2.* Boons: kept reliquary (Khâru's
+  aspects). Hold: secrecy, and the goodwill of its keeper-priest.
+- *A minor market-town Clear · Place · Tier 3.* Boons: revenue, waystation,
+  commissioning access for the holder's Sworn. Hold: a garrison, and the
+  goodwill of the mortal population.
+- *The anchor site of a rival Voice · Knowledge · Tier 4.* Boons: standing
+  intelligence; the credible threat alone is spendable. Hold: secrecy ---
+  worthless the moment the rival re-binds.
+
+=== Intermission Ventures <intermission-ventures>
+
+Intermissions gain a light structure that the rest of this module --- and
+The Curse chapter --- plugs into. Spending XP, allocating skill points, and
+shopping remain free bookkeeping. Beyond that, each character gets *two
+ventures* per intermission, chosen from this menu:
+
+- *Faction Obligation* --- answer a demand; maintain Sworn or Voice
+  standing.
+- *Communion* --- dwell with your keepsake, among the living, in remembered
+  places: clear 1 Fading (see
+  #link(<clearing-fading>)[_Clearing Fading_] in The Curse chapter).
+- *Pursue a Lead* --- advance a memory Question toward Glimpsed, or set up
+  its recovery scene.
+- *Networking* --- build or repair Standing, in the Outsider-to-Associate
+  range; higher ranks move by deed only.
+- *Tend a Holding* --- pay a party-held Holding's Hold cost.
+- *Labor* --- earn feathers; modest rates, scaled to tier.
+
+The competition for those two slots is where the module set breathes: the
+character tending their soul is not doing faction work, and the faction
+loyalist is Fading.
+
+=== Dials
+
+- *Light:* Standing and obligations only; Holdings as GM color. Adds texture
+  to any campaign at nearly no overhead.
+- *Standard:* add the faction turn and Holding boons. The world moves
+  between acts, and territory has mechanical meaning.
+- *Full:* add Debts, secret multi-faction Standing, party-held Holdings, and
+  Holding contests as the campaign's spine. This is the configuration for
+  intrigue campaigns in the mold of undead-politics games --- every court a
+  web of Debts, every asset a Holding someone is plotting to take.
+
 == Designing Creatures
 
 This section provides guidelines for creating enemy creatures for use in combat encounters. Creatures in Ashen use the same mechanical framework as player characters: they have attributes, characteristics, derived statistics, equipment (or natural equivalents), and powers.
@@ -1449,9 +1660,9 @@ Legendary rewards should mark turning points in the campaign --- moments that ch
 
 The pacing of legendary rewards should follow the arc of the campaign:
 
-- *Tiers 1--2:* Legendary rewards should not feature at all. Characters at these tiers are still finding their footing, and the extraordinary nature of legendary rewards has no baseline to contrast against. Let the players discover what "normal" looks like before breaking the rules.
-- *Tiers 3--4:* Legendary rewards should be very rare --- at most one per character across both tiers, and many characters may receive none. At these tiers, legendary weapons and armor do not yet exist; the most powerful generic equipment reaches tier 4 without requiring masterwork or legendary status. Any legendary rewards at these tiers should be limited to advances, powers, or artifacts that do not directly affect a character's combat statistics --- a prophetic vision, a pact with a powerful entity, or a strange relic whose purpose is not yet clear.
-- *Tiers 5--6:* Legendary rewards become more frequent as the campaign reaches its climax. This is where legendary weapons and armor enter play (legendary items exist only at tiers 5 and 6), and where legendary powers and advances can represent the culmination of a character's arc. A character might receive two or even three legendary rewards across these tiers.
+- *Tiers 1--2:* Major legendary rewards should not feature at all. Characters at these tiers are still finding their footing, and the extraordinary nature of legendary rewards has no baseline to contrast against. The exception is *Minor legendary advances* earned through the memory arc: recovering a Question pays one whenever it happens, and the tier-1 and tier-2 entries in the Advances chapter are sized for exactly this. Respect the award gate --- an entry's tier is the earliest point at which it is safe to hand out.
+- *Tiers 3--4:* Beyond the memory arc's Minor advances, legendary rewards should be very rare --- at most one per character across both tiers, and many characters may receive none. At these tiers, legendary weapons and armor do not yet exist; the most powerful generic equipment reaches tier 4 without requiring masterwork or legendary status. Any further legendary rewards at these tiers should be limited to advances, powers, or artifacts that do not directly affect a character's combat statistics --- a prophetic vision, a pact with a powerful entity, or a strange relic whose purpose is not yet clear.
+- *Tiers 5--6:* Legendary rewards become more frequent as the campaign reaches its climax. This is where legendary weapons and armor enter play (legendary items exist only at tiers 5 and 6), and where *Major legendary advances* represent the culmination of a character's arc --- above all the Mastery capstone of the Core Question. A character might receive two or even three legendary rewards across these tiers.
 
 === Legendary Items
 
@@ -1472,6 +1683,47 @@ Some principles:
 - *Tie it to the character's story:* A legendary power is most compelling when it grows out of something the character has struggled with or worked toward. A psychic who has been haunted by visions of a past life might unlock a legendary Time power when they finally confront that memory.
 - *Rarity, not uniqueness:* Legendary powers and advances need not be strictly one-of-a-kind. A small group of beings might share a legendary trait --- the six constructs built by a goddess, the last three knights of a fallen order. What matters is that it cannot be learned from a book or purchased with experience points.
 - *Mechanical restraint:* A legendary power should be strong, but its strength should come from doing something _different_ rather than simply doing more damage. A power that ignores a fundamental rule (bypasses resistance, acts outside the normal turn order, affects a type of target that is normally immune) is more interesting than one that deals 400% damage.
+
+==== Designing Legendary Advances
+
+The memory arc makes legendary advances a regular reward rather than a
+once-a-campaign event, so you will be writing your own --- keyed to answers
+only your table knows. The entries in the Advances chapter follow a template
+worth keeping to.
+
+*Minor advances have two legal lanes:*
+
++ *Essence-fueled actives.* Once per Scene, priced at 2--3 EP. The effect may
+  be dramatic --- up to extra-turn or full-cleanse scale --- _because_ the
+  price is the game's deepest resource: 3 EP is a full long rest of recovery,
+  and spending below 5 EP puts spot-revival at risk. Burning soul-stuff for
+  power is the thematic heart of the lane; do not design the
+  revival-threshold tension away.
++ *Permissions and narrow passives.* A door open to this character alone:
+  travel, social, or knowledge permissions, or a flat +3d to a *tightly
+  scoped, non-core* dice pool (teleportation rolls, Favor checks, deciphering
+  pre-War script). Narrowness is the constraint that keeps these off the
+  bonus-stacking treadmill.
+
+*Never, on a Minor:* dice bonuses to attack pools, Evasion, damage, or
+characteristic ranks; permanent AP or reaction increases; reductions to the
+EP cost of revival. Those belong to the ordinary advance trees, where they
+are paid for.
+
+*Majors* change what a character _is_, where a Minor changes what they can
+occasionally _do_. Their power ceiling is a boss-tier tool in player hands;
+their proper volume is about one per character per campaign, typically the
+Mastery capstone; their register is the lore passage --- _Perfect Vessel_ in
+the Advances chapter is the note to hit. Legal space includes cross-tradition
+bridges, changes to the death economy (anchors, reincorporation), and the
+handling of endgame material.
+
+*Tier is an award gate, not a price.* Assign every entry the earliest tier at
+which the effect is safe as a character's _first_ legendary. An extra turn
+once per Scene would warp a tier-1 fight and is perfectly balanced at tier 3;
+a travel permission is safe from the start. When in doubt, gate one tier
+higher --- an advance that arrives late is a better story than one that
+flattens a year of early play.
 
 == Designing Equipment
 

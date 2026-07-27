@@ -65,6 +65,10 @@
 
 #pagebreak()
 
+#include "curse.typ"
+
+#pagebreak()
+
 #include "setting.typ"
 
 #pagebreak()

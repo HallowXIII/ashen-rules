@@ -1007,3 +1007,330 @@ attained, as shown in the tables below.
   "Stamina 9, Iron Constitution",
   [Once per encounter, when you would be reduced to 0 HP, you are instead reduced to 1 HP. Additionally, you are immune to the Stunned condition from non-magical sources.],
 )
+
+== Legendary Advances <legendary-advances>
+
+_Legendary_ is a game-wide term in Ashen: it marks things that are unique, or
+nearly so, and never available at-will --- legendary items, legendary item
+properties, and the advances in this section all share it by design.
+
+Legendary advances are *never purchased*. They cannot be bought with XP at any
+price; they are awarded by the GM at campaign milestones --- foremost among
+them the recovery of a memory Question (see
+#link(<memory-questions>)[_Memory and Questions_] in The Curse chapter), but
+also party story milestones, the earned trust of a powerful patron, or
+contact with a forgotten power. Because they are awards rather than
+purchases, they grant no HP or FP.
+
+Every legendary advance carries a *tier*. This is not a cost but an *award
+gate*: the earliest tier at which the effect is safe to hand out. Some
+effects are catastrophically powerful as a character's first legendary and
+perfectly balanced when obtained late --- the tier is the guardrail. The GM
+Guide's _Awarding Legendary Rewards_ section covers pacing.
+
+Legendary advances come in two grades:
+
+- *Minor* legendary advances change what you can occasionally *do*: an
+  extraordinary action fueled by your own essence, or a permission --- a
+  door open to you that is closed to everyone else. The recovery of an
+  ordinary memory Question awards one, keyed to the memory's content.
+- *Major* legendary advances change what you *are*. They sit at tiers 5--6,
+  arrive roughly once per character per campaign, and typically embody the
+  capstone of a character's arc --- Mastery of the Core Question above all.
+
+#note[The entries below are exemplars as much as a list. GMs are expected to
+  write legendary advances for their own campaigns, keyed to their own
+  characters' pasts; the _Designing Legendary Advances_ guidance in the GM
+  Guide gives the template these entries follow.]
+
+=== Minor Legendary Advances
+
+Many Minor advances spend Essence --- burning soul-stuff for power is the
+oldest bargain the Deathless know, and 2--3 EP is never a trivial price when
+revival costs 5. The entries are organized by the past self they might
+answer to; treat the headings as inspiration when authoring a character's
+forgotten life.
+
+==== The Deathless
+
+Advances any Deathless might earn, whoever they were.
+
+#legendary-advance(
+  "Time is of the Essence",
+  3,
+  "Minor",
+  none,
+  [Once per Scene, you may spend 3 EP to take an additional turn on the
+    Initiative tick of your choosing.],
+  flavor: [The moment stretches. You have died enough times to know exactly
+    how much can happen in a second.],
+)
+
+#legendary-advance(
+  "Legendary Resilience",
+  2,
+  "Minor",
+  none,
+  [Once per Scene, as a free action, you may spend 3 EP to end all conditions
+    and effects on yourself. You may take this action even if you are
+    Stunned.],
+  flavor: [Whatever holds you, you have carried worse.],
+)
+
+==== The Voidfarer
+
+#legendary-advance(
+  "Void Step",
+  2,
+  "Minor",
+  none,
+  [You can freely travel through the Void, including the deep Void, without
+    suffering ill effects. You gain a +3 bonus to all rolls made to use
+    teleportation powers or rituals.],
+  traits: ("Void",),
+  flavor: [The dark between places once knew your name. It remembers, even
+    if you do not.],
+)
+
+#legendary-advance(
+  "Void Jaunt",
+  2,
+  "Minor",
+  [_Void Step_, _Fey Jaunt_ racial power],
+  [When using Fey Jaunt, your movement range increases by 3 squares.],
+  traits: ("Racial", "Void"),
+  flavor: [A single step, and the world politely looks away.],
+)
+
+==== The Soldier
+
+#legendary-advance(
+  "Drilled to the Bone",
+  2,
+  "Minor",
+  none,
+  [Once per Scene, when initiative is rolled, you may spend 2 EP: you and one
+    ally within 5 squares each gain +1 AP on your first turn.],
+  flavor: [The horns sound and your body is already moving.],
+)
+
+#legendary-advance(
+  "Shield-Wall Memory",
+  2,
+  "Minor",
+  none,
+  [Once per Scene, as a reaction when an ally within 2 squares is hit by an
+    attack, you may spend 3 EP: the attack resolves against you instead.],
+  flavor: [You held the line once. Some part of you never stopped.],
+)
+
+==== The Scholar
+
+#legendary-advance(
+  "Dead Tongues",
+  1,
+  "Minor",
+  none,
+  [You can read and speak the languages of the fallen empires, and gain +3d
+    on checks to decipher pre-War texts, inscriptions, and ciphers.],
+  flavor: [The letters were strange for only a moment.],
+)
+
+#legendary-advance(
+  "Mnemonic Palace",
+  1,
+  "Minor",
+  none,
+  [Everything you have perceived since your awakening is filed in perfect
+    order. Once per Act, ask the GM one factual question about any scene you
+    witnessed; the answer is true and complete.],
+  flavor: [They took the old library. The new one, you guard.],
+)
+
+==== The Priest
+
+#legendary-advance(
+  "Once-Anointed",
+  2,
+  "Minor",
+  none,
+  [Reliquaries remember your service: they begin neutral toward you rather
+    than unfriendly, and you gain +3d on Favor checks.],
+  traits: ("Divine",),
+  flavor: [The gods are dead, but their bones still bend to greet you.],
+)
+
+#legendary-advance(
+  "Litany Against the Dark",
+  1,
+  "Minor",
+  none,
+  [Once per Scene, you may spend 2 EP and 1 AP: allies within Burst 3 end the
+    Frightened and Panicked conditions.],
+  traits: ("Divine",),
+  flavor: [You no longer remember the god, but the words still work.],
+)
+
+==== The Criminal
+
+#legendary-advance(
+  "Fingers Remember",
+  1,
+  "Minor",
+  none,
+  [Once per Act, reveal a small object (light enough to palm) that you lifted
+    or planted earlier in the Act, narrating the flashback of when.],
+  flavor: [You only noticed your own hands afterward. They noticed the
+    opportunity first.],
+)
+
+#legendary-advance(
+  "No Face in the Crowd",
+  2,
+  "Minor",
+  none,
+  [Once per Scene, while you have cover or concealment, you may spend 2 EP as
+    a free action to become hidden without a check.],
+  flavor: [Whoever you were, they never caught you. Habits like that outlive
+    the name.],
+)
+
+==== The Sovereign
+
+#legendary-advance(
+  "Voice of Old Command",
+  2,
+  "Minor",
+  none,
+  [Once per Scene, you may spend 3 EP and 1 AP: one ally who can hear you
+    immediately takes one 1-AP action of their choice.],
+  flavor: [Nobody remembers your throne. Their spines do.],
+)
+
+#legendary-advance(
+  "Weight of the Crown",
+  1,
+  "Minor",
+  none,
+  [Choose a hierarchy you once commanded when this advance is awarded (a
+    legion, a priesthood, a guild). Its functionaries instinctively defer to
+    you, and you gain +3d on Presence-based checks against its members.],
+  flavor: [The institution survived you. It has not stopped waiting for
+    orders.],
+)
+
+==== The Wanderer
+
+#legendary-advance(
+  "The Old Roads",
+  1,
+  "Minor",
+  none,
+  [You remember the roads from before the War. On routes you walked in life,
+    your party ignores navigation-check penalties and travels 25% faster; you
+    always know what pre-War roads exist in a region.],
+  flavor: [Maps burn. Feet remember.],
+)
+
+#legendary-advance(
+  "Fog-Sense",
+  1,
+  "Minor",
+  none,
+  [Once per Act, spend 1 EP: learn the direction and rough distance of the
+    nearest blessed ground within a day's travel. You sense changes in Fog
+    density band an hour before they arrive.],
+  flavor: [You have walked in the grey long enough to smell its moods.],
+)
+
+==== The Maker
+
+#legendary-advance(
+  "Maker's Hands",
+  1,
+  "Minor",
+  none,
+  [Maintenance and repair costs are halved for equipment you service
+    yourself. Once per Act, you may jury-rig a broken item to function for
+    one Scene.],
+  flavor: [You do not remember your workshop. Your calluses do.],
+)
+
+==== The Companion
+
+#legendary-advance(
+  "The Vow Holds",
+  2,
+  "Minor",
+  none,
+  [Once per Act, when an ally you can see dies, you may spend 2 EP:
+    immediately move up to your Speed toward them and take one 1-AP action,
+    outside the normal turn order.],
+  flavor: [You made a promise. Death is not an excuse.],
+)
+
+=== Major Legendary Advances
+
+A Major legendary advance redefines a character. Its power ceiling is on the
+order of a boss-tier tool in player hands, and its proper register is the
+culmination of an arc: the fully reintegrated self of a Mastery capstone, the
+final gift of a divine patron, the world quietly conceding that this person
+is once again who they used to be.
+
+#legendary-advance(
+  "Perfect Vessel",
+  6,
+  "Major",
+  none,
+  [Your body is perfectly attuned to divine essence. With the appropriate
+    ritual, a shard of a God can be transferred into you, causing you to
+    become a reliquary of that God equal in Tier to the fragment. While in
+    this state, you can attempt Favor checks or cast any divine powers
+    granted by that reliquary using your Arcane or Psychic characteristics
+    instead of Command. You can contain a total tier of fragments up to half
+    your maximum EP value or 18, whichever is lesser.],
+  traits: ("Porcelain", "Divine"),
+  flavor: ["Among the constructs, Third made first the Ironhands; crude but
+    flexible, she came to value them as guardians and servants. Next she made
+    the Porcelains, lithe and graceful, and adept at magic; they became her
+    maids and playmates. But her true designs she achieved only at the end,
+    when she discovered a way to lock divine essence within her Porcelains,
+    and she made five of them to be her perfect vessels."],
+)
+
+#legendary-advance(
+  "Standard of the Third Legion",
+  5,
+  "Major",
+  none,
+  [You remember the rank, and the world remembers with you. You gain a second
+    reaction each round. Once per Act, you may unfurl your authority: for one
+    round, each ally who can hear you gains +1 AP.],
+  traits: ("Command",),
+  flavor: [Three empires fell. The Third Legion never surrendered; it merely
+    ran out of members.],
+)
+
+#legendary-advance(
+  "Bound to the Kethû",
+  5,
+  "Major",
+  none,
+  [The river itself half-remembers your name. You may maintain two soul
+    anchors, and your reincorporation always takes 3 days, recovering 2 EP
+    per day.],
+  flavor: [All waters reach the Kethû, and all the dead. You have an
+    understanding.],
+)
+
+#legendary-advance(
+  "Worldsmith's Prentice",
+  6,
+  "Major",
+  none,
+  [You remember the forges where the gods' instruments were made. You can
+    craft and repair legendary items given appropriate materials, and can
+    safely handle and prepare Materia (Nigra and Rubrior) for ritual use.],
+  flavor: [The hammer was never yours. The knowledge of it was payment for
+    something you have forgotten.],
+)
