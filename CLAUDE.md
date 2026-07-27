@@ -42,6 +42,17 @@ typst watch --open --font-path fonts --root . src/rulebook/main.typ ashen.pdf
 
 To build a different target, point `typst compile` at the relevant source file (e.g. an adventure under `src/adventures/`) and keep the same `--font-path fonts --root .` flags.
 
+Build the form-fillable character sheet (`ashen-character-sheet-fillable.pdf`):
+```bash
+./build-fillable-sheet.sh                                  # blank fillable sheet
+./build-fillable-sheet.sh --list-fields                    # enumerate field names
+./build-fillable-sheet.sh --fill pregen.json -o vessa.pdf  # pre-generated character
+```
+
+**Nix flake.** `flake.nix` pins the full toolchain: `nix develop` provides typst, python3 + pypdf, and poppler-utils; `nix build .#character-sheet-fillable` builds the fillable sheet purely (the sheet's typst chain uses no network packages). The full rulebook is *not* a flake package — the race chapters import `@preview` packages that typst fetches at compile time — so build it with the scripts above. Flake evaluation only sees git-tracked files: `git add` new files before relying on `nix develop`/`nix build`.
+
+**Fillable-sheet pipeline.** `src/rulebook/character-sheet.typ` embeds an invisible `<form-field>` metadata marker inside every fillable box and under every write-on line (via the `form-mark-in`/`form-mark-here` helpers), recording name, kind (text/check), page, and exact geometry. `tools/make_fillable_sheet.py` compiles the sheet standalone, reads the markers with `typst query`, and stamps AcroForm widgets onto the PDF with pypdf. When editing the sheet, keep new boxes/lines going through the instrumented helpers (or add a marker) so the fillable version stays complete; field ids are auto-slugged from labels, with explicit `id:` arguments where rows repeat (weapons, powers, questions, holdings).
+
 ## Architecture
 
 ### Document Structure
