@@ -93,8 +93,9 @@ success for many routine tasks.
 
 You cannot take the average if you are in combat or in another situation that
 makes it impossible for you to devote your full concentration to the skill
-check. You also cannot take the average on skill checks made as part of skill
-challenges. At your GM’s discretion, you may also not be allowed to take the
+check. You also cannot take the average on skill checks made as part of an
+#link(<extended-checks>)[_Extended Check_]. At your GM’s discretion, you may
+also not be allowed to take the
 average on intrinsically dangerous or high-stakes skill checks, even if you have
 a high rating in the skill.
 
@@ -240,6 +241,176 @@ following chart:
   "9",
   "6",
 )
+
+== Extended Checks <extended-checks>
+
+Some tasks are too large, too slow, or too involved to be settled by a single
+roll. Combing a ruined archive for one buried name, holding a fracturing ward
+together while it is repaired, tracking a quarry across three days of Fog,
+talking a garrison commander out of a siege --- none of these are one moment of
+effort. They are a sustained campaign against a problem, and the interesting
+question is not whether you can do the thing but whether you can keep doing it
+long enough, and well enough, before it comes apart.
+
+An *Extended Check* models exactly that. It is not a special kind of skill; it
+is a frame built out of ordinary skill checks.
+
+=== The Procedure
+
+An Extended Check has a *target*: a total number of successes that must be
+banked to complete it. It also has a list of skills that can be used to
+participate, each with its own difficulty. Participants take turns making
+checks against those difficulties.
+
+- A check that *meets its difficulty* banks its entire total of successes ---
+  not merely the amount by which it beat the difficulty.
+- A check that *fails* banks nothing and marks a *strike*.
+- The Extended Check ends when the target is reached, or when the third strike
+  is marked, whichever comes first.
+
+Because the whole result of a passing check is banked, an Extended Check
+rewards rolling well rather than merely rolling above the line. A character who
+scrapes past the difficulty has spent an interval and gained little; a
+character who rolls spectacularly can carry the effort forward by herself. This
+is deliberate. Ashen dice are swingy, and an Extended Check is one of the few
+places where that swinginess works in the party's favour --- a single
+extraordinary roll is worth as much as several adequate ones.
+
+A check whose total is zero or less is a *critical failure*. It marks a strike
+as normal, and the GM should introduce a complication as well: a lead poisoned,
+a contact alienated, a ward flaring dangerously. Critical failures do not mark
+two strikes; three is already a short budget.
+
+=== Primary and Secondary Skills
+
+Every Extended Check names at least one *primary* skill --- the discipline the
+task genuinely turns on. Checks made with a primary skill bank their successes
+without limit.
+
+An Extended Check will usually also allow *secondary* skills: approaches that
+are relevant and useful but cannot carry the whole effort. A secondary skill
+has a *cap* on the number of successes a single check with it can bank. A check
+that rolls more than the cap banks the cap and discards the excess.
+
+Secondary skills are normally set at a *lower difficulty* than the primary
+ones. This is the point of them. A capped skill that was equally hard to pass
+would be strictly worse than the primary skill in every respect --- it would
+risk a strike just as often while contributing less --- and no one would ever
+use it. Set against a lower difficulty, a secondary skill becomes a genuine
+choice: a safe, modest contribution against a risky, unbounded one.
+
+#note[
+  *Example:* Talking a garrison commander out of a siege is an Extended Check
+  with a target of 22. _Influence_ and _Impose_ are primary skills, both at
+  difficulty 4. _Investigate_ is secondary at difficulty 2, capped at 3
+  successes --- producing the supply ledgers that prove the siege cannot be
+  sustained helps, but it does not win the argument by itself. _Occultism_ is
+  secondary at difficulty 2, capped at 2: the commander is superstitious, and an
+  ill omen read at the right moment gives him a reason to do what he already
+  wanted to.
+]
+
+The GM may also cap the total contribution a given skill can make across the
+whole Extended Check, rather than per check. Use this when an approach should
+be available once or twice and then exhausted --- the ledgers only prove the
+point the first time.
+
+=== Participating
+
+Each participating character normally makes one check per interval. A
+particularly complex or many-handed task may allow a character to make more
+than one, if the GM judges that the work admits it.
+
+*Participation is voluntary, and should stay that way.* A character with no
+relevant skill is not merely contributing little by rolling --- they are
+actively harming the effort, because a failed check costs a strike out of a
+budget of three while banking nothing. An Extended Check in which everyone is
+obliged to roll is one the party will usually lose, no matter how capable its
+specialists are. Players should feel free to stand aside, and GMs should never
+require a character to participate. If you want a character involved, give them
+a secondary skill at a difficulty they can actually pass.
+
+Adding more participants does not, by itself, make an Extended Check easier.
+Successes and strikes both accumulate for the group as a whole, so what matters
+is the quality of each check made, not how many characters are making them. A
+larger party finishes the task in fewer intervals of fiction; it does not
+finish it more reliably. Targets therefore do not scale with party size.
+
+You cannot _take the average_ or _take the maximum_ on a check made as part of
+an Extended Check. Both assume conditions --- unhurried repetition, no
+meaningful pressure --- that an Extended Check exists precisely to deny.
+
+_Helping Another_ works normally, with one clarification: the help is resolved
+first and its bonus dice are added to the participant's check, and the combined
+result is what banks successes or marks a strike. A helper never banks or
+strikes separately. Two characters spending their interval on one large, safer
+check instead of two smaller ones is frequently the correct play, since it
+exposes the party to half as many chances of a strike.
+
+=== Time and Intervals
+
+Extended Checks usually run in structured time, with each participant acting
+once per round or, more often, once per stretch. Stretches suit most of them:
+research, negotiation, a long pursuit, and repair work all sit comfortably at
+five-minute resolution.
+
+They can also run in open time when the task is measured in days or weeks --- a
+season of archival research, a diplomatic courtship conducted over months. Each
+interval is then a day, a week, or a visit, and the Extended Check becomes a
+structure laid over downtime rather than a scene.
+
+An Extended Check can also run *concurrently with combat*, with each
+participant choosing between fighting and contributing on their turn. This is
+one of the sharpest pressure devices in the game: the ritual must be unwound
+while the things it summoned are still in the room, and every turn spent on the
+unwinding is a turn not spent on staying alive. Use it when you want the party
+to feel the cost of their attention divided, and be aware that it makes both
+the fight and the Extended Check considerably harder.
+
+=== Outcomes
+
+The result of an Extended Check should rarely be binary. A party that marks
+three strikes one success short of the target has not failed in the same way as
+a party that marks three strikes having barely started, and the fiction should
+say so.
+
+When an Extended Check ends in failure, compare the successes banked against
+the target:
+
+#pftab(
+  "Extended Check Outcomes",
+  columns: (1.2fr, 3fr),
+  align: (center, left),
+  [*Banked*],
+  [*Result*],
+  [Target],
+  [*Success.* The task is accomplished as intended.],
+  [¾ or more],
+  [*Costly success.* The goal is substantially achieved, but at a price: it
+    takes far longer than hoped, something is damaged or spent, or a lesser part
+    of the objective is lost.],
+  [½ or more],
+  [*Partial success.* Real progress that falls short. The party gains a
+    meaningful portion of what they wanted --- part of the information, a
+    temporary reprieve, the quarry's direction but not its destination.],
+  [¼ or more],
+  [*Setback.* Little is gained beyond a foothold, and the situation is worse
+    for the attempt. The task may be re-attempted later at a cost.],
+  [Less than ¼],
+  [*Failure.* The attempt collapses. The opportunity is gone, and the
+    opposition has learned something.],
+)
+
+The GM should decide what each band means for a given Extended Check *before it
+is rolled*, and should tell the players the target. Knowing that they need 22
+successes and currently hold 15 with two strikes marked is what makes the
+decision to press on or withdraw a real one. An Extended Check whose target is
+hidden is just a sequence of rolls the players cannot reason about.
+
+Withdrawing deliberately is always allowed. A party that stops at 15 of 22 with
+two strikes marked takes the partial-success outcome and keeps whatever they
+have not yet spent. That choice --- bank what you have or gamble it on another
+roll --- is most of what an Extended Check is for.
 
 == Skill List
 

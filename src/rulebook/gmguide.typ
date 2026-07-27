@@ -499,6 +499,96 @@ the players can hear ticking, the players act with full knowledge of the
 trade-offs, and the GM never has to invent pressure on the fly because the
 pressure was always already in the schedule.
 
+=== Designing Extended Checks
+
+The Skills chapter defines how an #link(<extended-checks>)[_Extended Check_]
+is played. This section covers how to build one that behaves the way you
+intended.
+
+An Extended Check needs four things: a target number of successes, a difficulty
+for each participating skill, a list of which skills are primary and which are
+secondary (and what the secondary caps are), and a written outcome for each
+band. Write all four down before play. The last is the one most often skipped
+and the one that matters most --- if you have not decided in advance what half
+the target is worth, you will be tempted to decide it after the dice have
+landed, which is exactly the arbitrariness the structure exists to prevent.
+
+*Setting the target.* The useful unit is "how many good checks should this
+take?" A proficient character of a given tier banks about half their pool per
+check, so multiply that figure by the number of checks the task should
+represent. Three is a task the party should expect to complete; six is one that
+seriously threatens them. The table below gives the arithmetic already done,
+along with the resulting chance that a competent party completes the check.
+
+#float([#floating-table(
+  "Extended Check Targets by Tier",
+  columns: 7,
+  align: (left, center, center, center, center, center, center),
+  stroke: 0.5pt,
+
+  [*Tier*],
+  [*Pool*],
+  [*Diff.*],
+  [*Routine*],
+  [*Demanding*],
+  [*Hard*],
+  [*Punishing*],
+  [T1], [6], [2], [9], [12], [15], [18],
+  [T2], [8], [3], [12], [16], [20], [24],
+  [T3], [11], [4], [16], [22], [28], [33],
+  [T4], [14], [5], [21], [28], [35], [42],
+  [T5], [16], [6], [24], [32], [40], [48],
+  [T6], [17], [6], [26], [34], [43], [51],
+  [*Completes*], [---], [---], [\~90%], [\~85%], [\~78%], [\~72%],
+)])
+
+The _Pool_ column is the dice pool of a character who is genuinely good at the
+task for their tier; the _Diff._ column is a difficulty such a character passes
+roughly three times in four, which is the right feel for the primary skill of
+an Extended Check. Set secondary skills one or two lower.
+
+Note how compressed the outcome range is. Even a Punishing target fails only
+about a quarter of the time. This is intended: the interesting result of an
+Extended Check is usually _which_ band it lands in, not whether it succeeded,
+and the partial outcomes do most of the dramatic work. If you genuinely want a
+coin flip, you need roughly ten checks' worth --- a target of about 50 at Tier
+3 --- and at that length the procedure starts to outstay its welcome at the
+table. Prefer a Punishing target with severe partial-failure consequences over
+an enormous target.
+
+*Do not require universal participation.* This is the single most common way to
+break an Extended Check, and it is worth being concrete about the size of the
+effect. At Tier 3, a party of specialists facing a Routine target of 16
+completes it about 89% of the time. Replace three of those specialists with
+characters rolling 5 dice against the same difficulty --- as happens
+automatically if you rule that everyone must contribute --- and the same
+Routine check now completes about 28% of the time. The unskilled characters
+fail roughly half their rolls, and three failures is the whole budget. They are
+not diluting the effort; they are ending it.
+
+The fix is not to bar them from the scene. It is to give them a secondary skill
+at a difficulty they can pass. Dropping those same characters to difficulty 2
+takes the check from 28% back up to about 65%. A character contributing two
+capped successes at a difficulty they clear four times in five is helping; the
+same character rolling against the specialist's difficulty is a liability.
+
+*Running one alongside combat.* An Extended Check that runs concurrently with a
+fight is the most demanding version of the structure, because every check
+represents a turn not spent on the enemy. Two adjustments make it work. First,
+lower the target --- two thirds of the table value is a reasonable starting
+point, since the party cannot commit everyone. Second, make the fight
+survivable without the full party's attention; a combat balanced as a serious
+threat on its own becomes lethal when half the party is doing something else.
+The tension should come from the choice, not from the arithmetic being
+impossible.
+
+*Strikes as fiction.* Each strike should visibly change the situation when it
+is marked, not merely tick a counter. The archivist grows suspicious. The ward
+sheds another layer. The trail crosses running water. Three anonymous strikes
+feel like bookkeeping; three narrated ones feel like a situation deteriorating
+in real time, and they let the players judge how much danger they are in
+without being told a number.
+
 == Running Adventures
 
 An adventure in Ashen is one or more acts connected by a shared objective. A
