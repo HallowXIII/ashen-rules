@@ -75,9 +75,12 @@ advances one of your Questions, you may invoke Resonance --- declare it
 #pftab(
   "Resonance",
   columns: (2fr, 1fr),
-  [*Question state*], [*Bonus*],
-  [Sealed], [+3d],
-  [Glimpsed], [+6d],
+  [*Question state*],
+  [*Bonus*],
+  [Sealed],
+  [+3d],
+  [Glimpsed],
+  [+6d],
 )
 
 Any check can qualify if the fiction supports it: persuading the archivist to
@@ -128,9 +131,15 @@ The pool grows as Questions advance:
 #pftab(
   "Recollection",
   columns: (2fr, 1fr, 1fr),
-  [*Question state*], [*3 Qs*], [*4--5 Qs*],
-  [Glimpsed], [+2d], [+1d],
-  [Recovered (total)], [+6d], [+3d],
+  [*Question state*],
+  [*3 Qs*],
+  [*4--5 Qs*],
+  [Glimpsed],
+  [+2d],
+  [+1d],
+  [Recovered (total)],
+  [+6d],
+  [+3d],
 )
 
 Each Question contributes once, at the rate of its current state; a fully
@@ -247,17 +256,23 @@ apply for as long as your Fading is at or above it:
   "Fading Thresholds",
   columns: (1fr, 2fr, 6fr),
   align: (center, left, left),
-  [*Marks*], [*Threshold*], [*Effect*],
-  [2], [Fog-Touched],
+  [*Marks*],
+  [*Threshold*],
+  [*Effect*],
+  [2],
+  [Fog-Touched],
   [You treat Fog density as one band lower for its effects on you, and fog
     obscuration no longer blocks your sight.],
-  [3], [Veilcasting],
+  [3],
+  [Veilcasting],
   [Your powers cost 1 fewer increment of Focus (minimum 1 increment). EP
     costs are never reduced.],
-  [4], [Kinship],
+  [4],
+  [Kinship],
   [Fog-spawned creatures do not attack you unless provoked --- you alone;
     they half-recognize something of themselves.],
-  [5], [Forgetting],
+  [5],
+  [Forgetting],
   [Your powers cost half their increments of Focus (rounded up). At the end
     of the current act, you become *Forgotten*.],
 )
@@ -301,7 +316,8 @@ Exposure widens as the track fills:
   "Lapse Triggers",
   columns: (1fr, 8fr),
   align: (center, left),
-  [*Marks*], [*A Lapse may trigger...*],
+  [*Marks*],
+  [*A Lapse may trigger...*],
   [2],
   [When you mark a new point of Fading, and on GM-keyed reminders of the
     forgotten past ("something in this place reaches for you" --- the dark
@@ -309,7 +325,8 @@ Exposure widens as the track fills:
   [3],
   [...and during long rests. A Lapse during a long rest downgrades it to a
     rough rest: you wandered instead of sleeping, and recover no EP.],
-  [4], [...and during any quiet stretch.],
+  [4],
+  [...and during any quiet stretch.],
   [5],
   [*Inversion.* The Lapse is the resting state. In unstructured time, being
     *present* is what requires the Grit check; the Forgetting character

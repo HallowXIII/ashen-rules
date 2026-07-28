@@ -19,13 +19,13 @@
   ),
   abilities: (
     [*Bite --- 2 AP* \
-     _Melee, Martial vs Evasion, single target_ \
-     *Damage:* 4+1D8],
+      _Melee, Martial vs Evasion, single target_ \
+      *Damage:* 4+1D8],
 
     [*Pounce --- 2 AP* \
-     _Move up to Speed, then Melee, Martial vs Evasion, single target_ \
-     *Damage:* 4+1D8 \
-     *On hit:* Target is Exposed (save ends).],
+      _Move up to Speed, then Melee, Martial vs Evasion, single target_ \
+      *Damage:* 4+1D8 \
+      *On hit:* Target is Exposed (save ends).],
   ),
   xp: 15,
 )
@@ -51,10 +51,10 @@
   immunities: [Frightened, Dominated],
   abilities: (
     [*Slam --- 2 AP* \
-     _Melee, Martial vs Evasion, single target_ \
-     *Damage:* 3+1D8 \
-     *On hit:* Target is Grabbed (save ends). While Grabbed, the Husk
-     does not need to spend AP to maintain the grab.],
+      _Melee, Martial vs Evasion, single target_ \
+      *Damage:* 3+1D8 \
+      *On hit:* Target is Grabbed (save ends). While Grabbed, the Husk
+      does not need to spend AP to maintain the grab.],
   ),
   xp: 7,
 )
@@ -81,12 +81,12 @@
   ),
   special: [*Immobile*: The Drone's lift array is shot. It is embedded in the ground and cannot move.],
   abilities: (
-    [*Obliterator Cannon --- 2 AP* \ 
-     _Ranged, Burst 3, range increment 80 squares_ \
-     *Damage:* 20+2D12 Thermal; *Pen* 18 \
-     *Special:* The magnetic coils on this cannon are damaged. On every shot, the drone must make a 
-     save; on 0 successes or fewer, the plasma loses containment and the cannon explodes violently,
-     destroying the drone instantly and dealing 60+6D12 damage to everything within 10 squares of it.
+    [*Obliterator Cannon --- 2 AP* \
+      _Ranged, Burst 3, range increment 80 squares_ \
+      *Damage:* 20+2D12 Thermal; *Pen* 18 \
+      *Special:* The magnetic coils on this cannon are damaged. On every shot, the drone must make a
+      save; on 0 successes or fewer, the plasma loses containment and the cannon explodes violently,
+      destroying the drone instantly and dealing 60+6D12 damage to everything within 10 squares of it.
     ],
   ),
   xp: 25,
@@ -117,13 +117,13 @@
     healing.],
   abilities: (
     [*Heavy Slam --- 2 AP* \
-     _Melee, Martial vs Evasion, single target_ \
-     *Damage:* 8+2D8 \
-     *On hit:* Target is knocked Prone.],
+      _Melee, Martial vs Evasion, single target_ \
+      *Damage:* 8+2D8 \
+      *On hit:* Target is knocked Prone.],
 
     [*Sweeping Strike --- 2 AP* \
-     _Melee, Martial vs Evasion, all enemies within 2 squares_ \
-     *Damage:* 5+1D10],
+      _Melee, Martial vs Evasion, all enemies within 2 squares_ \
+      *Damage:* 5+1D10],
   ),
   xp: 25,
 )
@@ -156,30 +156,30 @@
     all attack rolls and his Evasion is reduced by 1 (to 2).],
   abilities: (
     [*Alchemical Bolt --- 2 AP* \
-     _Ranged 10, Arcane vs Evasion, single target_ \
-     *Damage:* 5+1D8 \
-     Šauhahten hurls a volatile alchemical compound that detonates on
-     impact.],
+      _Ranged 10, Arcane vs Evasion, single target_ \
+      *Damage:* 5+1D8 \
+      Šauhahten hurls a volatile alchemical compound that detonates on
+      impact.],
 
     [*Soul Siphon --- 3 AP* \
-     _Ranged 8, Arcane vs Ward, single target_ \
-     *Damage:* 6+1D12 \
-     *On hit:* Šauhahten heals HP equal to half the damage dealt. \
-     A tendril of pale light connects Šauhahten to the target, drawing
-     vitality from them. Mortefactor technique.],
+      _Ranged 8, Arcane vs Ward, single target_ \
+      *Damage:* 6+1D12 \
+      *On hit:* Šauhahten heals HP equal to half the damage dealt. \
+      A tendril of pale light connects Šauhahten to the target, drawing
+      vitality from them. Mortefactor technique.],
 
     [*Fey Displacement --- 1 AP (Reaction)* \
-     _Trigger: Šauhahten is hit by an attack._ \
-     Šauhahten teleports up to 3 squares. Once per round. \
-     His Mirror nature allows him to step briefly between reflections.],
+      _Trigger: Šauhahten is hit by an attack._ \
+      Šauhahten teleports up to 3 squares. Once per round. \
+      His Mirror nature allows him to step briefly between reflections.],
 
     [*Distillation Overload --- 3 AP* \
-     _Burst 2 within 8, Arcane vs Evasion_ \
-     *Damage:* 10+2D8 \
-     Šauhahten destabilizes one of his alchemical apparatuses, causing it
-     to violently discharge. This ability is only available while the
-     distillation array in the laboratory is intact. Each use visibly
-     damages the equipment.],
+      _Burst 2 within 8, Arcane vs Evasion_ \
+      *Damage:* 10+2D8 \
+      Šauhahten destabilizes one of his alchemical apparatuses, causing it
+      to violently discharge. This ability is only available while the
+      distillation array in the laboratory is intact. Each use visibly
+      damages the equipment.],
   ),
   xp: 60,
 )

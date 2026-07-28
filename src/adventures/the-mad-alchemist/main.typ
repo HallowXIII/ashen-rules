@@ -10,7 +10,11 @@
   description: "A Tier 1 Adventure for the Ashen Role-Playing Game",
 )
 
-#titlepage("The Mad Alchemist", subtitle: "A Tier 1 Adventure", description: "For the Ashen Role-Playing Game")
+#titlepage(
+  "The Mad Alchemist",
+  subtitle: "A Tier 1 Adventure",
+  description: "For the Ashen Role-Playing Game",
+)
 
 #outline(depth: 2)
 

@@ -7,8 +7,8 @@
 )
 
 Ashen is a game born out of a simple emotion: the Game Master's frustration at not being able to design
-  satisfying combat encounters for fear of killing player characters. What, I asked myself, could solve this
-  problem? I considered many different answers, but the simplest, it seemed to me, was to make death irrelevant.
+satisfying combat encounters for fear of killing player characters. What, I asked myself, could solve this
+problem? I considered many different answers, but the simplest, it seemed to me, was to make death irrelevant.
 
 The days of tabletop RPGs being primarily a form of survival horror game are long past --- some may regret
 the passing of this era, but to those who wish to feel the fear of violent death in their bones, I say:

@@ -30,12 +30,12 @@ The following entries present the playable peoples of Ashen and their subtypes.
 Each entry gives a brief history, a physical and social overview, and the
 special abilities that come from that origin.
 
-#include("races/clockwork.typ")
+#include "races/clockwork.typ"
 
-#include("races/echoes.typ")
+#include "races/echoes.typ"
 
-#include("races/humans.typ")
+#include "races/humans.typ"
 
-#include("races/sootbeasts.typ")
+#include "races/sootbeasts.typ"
 
 #set page(columns: 2)

@@ -73,9 +73,15 @@
   v(0.5em)
   align(center, box(width: width, body))
   v(1em)
-  if(citation != none){
-    let l = box(image(height: 0.5em, "../../graphics/citation-ornament-left.svg"))
-    let r = box(image(height: 0.5em, "../../graphics/citation-ornament-right.svg"))
+  if (citation != none) {
+    let l = box(image(
+      height: 0.5em,
+      "../../graphics/citation-ornament-left.svg",
+    ))
+    let r = box(image(
+      height: 0.5em,
+      "../../graphics/citation-ornament-right.svg",
+    ))
     align(center)[#text(font: fonts.sans, style: "normal")[
       #l
       #h(0.25em)
@@ -423,10 +429,10 @@
   #par(hanging-indent: 0pt, first-line-indent: 1em)[#body]
   #if flavor != none {
     par(hanging-indent: 0pt, first-line-indent: 1em)[#text(
-        font: fonts.special,
-        style: "italic",
-        size: 11pt,
-      )[#flavor]]
+      font: fonts.special,
+      style: "italic",
+      size: 11pt,
+    )[#flavor]]
   }
 ]
 
@@ -615,9 +621,11 @@
   // Characteristics
   if characteristics.len() > 0 {
     details.push([---])
-    let char-line = characteristics.pairs().map(((k, v)) => {
-      [*#upper(k.first())#k.slice(1)* #v]
-    })
+    let char-line = characteristics
+      .pairs()
+      .map(((k, v)) => {
+        [*#upper(k.first())#k.slice(1)* #v]
+      })
     details.push(char-line.join([ #sym.bar.v ]))
   }
 
@@ -732,15 +740,21 @@
       if armor != none { stats.push([#text(weight: "semibold")[Armor] #armor]) }
       if ward != none { stats.push([#text(weight: "semibold")[Ward] #ward]) }
       if speed != none { stats.push([#text(weight: "semibold")[Speed] #speed]) }
-      if maneuverability != none { stats.push([#text(weight: "semibold")[Maneuver] #maneuverability]) }
+      if maneuverability != none {
+        stats.push([#text(weight: "semibold")[Maneuver] #maneuverability])
+      }
       if size != none { stats.push([#text(weight: "semibold")[Size] #size]) }
       if stats.len() > 0 {
         stats.join[ | ]
         linebreak()
       }
       let caps = ()
-      if weight-cap != none { caps.push([#text(weight: "semibold")[Wt Cap] #weight-cap]) }
-      if reactor-cap != none { caps.push([#text(weight: "semibold")[Reactor Cap] #reactor-cap]) }
+      if weight-cap != none {
+        caps.push([#text(weight: "semibold")[Wt Cap] #weight-cap])
+      }
+      if reactor-cap != none {
+        caps.push([#text(weight: "semibold")[Reactor Cap] #reactor-cap])
+      }
       if crew != none { caps.push([#text(weight: "semibold")[Crew] #crew]) }
       if caps.len() > 0 {
         caps.join[ | ]
@@ -866,60 +880,63 @@
       fill: colors.pfnavy,
     )[#upper(role)])
   }
-    v(1em)
-    header
-    line(stroke: 1pt, length: 100%)
-    if size-type != none [_#size-type _ \ ]
-    if traits != () [#pftraits(traits) \ ]
-    if flavor != none [_#flavor _ \ #v(0.25em)]
+  v(1em)
+  header
+  line(stroke: 1pt, length: 100%)
+  if size-type != none [_#size-type _ \ ]
+  if traits != () [#pftraits(traits) \ ]
+  if flavor != none [_#flavor _ \ #v(0.25em)]
 
-    {
-     let defenses = ()
-     if hp != none { defenses.push([*HP* #hp]) }
-     if fp != none { defenses.push([*FP* #fp]) }
-     if armor != none { defenses.push([*Arm* #armor]) }
-     if ward != none { defenses.push([*Wrd* #ward]) }
-     if evasion != none { defenses.push([*Eva* #evasion]) }
-     if init != none { defenses.push([*Init* #init]) }
-     if ap != none { defenses.push([*AP* #ap]) }
-     if speed != none { defenses.push([*Speed* #speed]) }
-     if defenses.len() > 0 { defenses.join([ #sym.bar.v ]); linebreak() }
+  {
+    let defenses = ()
+    if hp != none { defenses.push([*HP* #hp]) }
+    if fp != none { defenses.push([*FP* #fp]) }
+    if armor != none { defenses.push([*Arm* #armor]) }
+    if ward != none { defenses.push([*Wrd* #ward]) }
+    if evasion != none { defenses.push([*Eva* #evasion]) }
+    if init != none { defenses.push([*Init* #init]) }
+    if ap != none { defenses.push([*AP* #ap]) }
+    if speed != none { defenses.push([*Speed* #speed]) }
+    if defenses.len() > 0 {
+      defenses.join([ #sym.bar.v ])
+      linebreak()
     }
-    if resistances != none [*Resistances:* #resistances \ ]
-    if immunities != none [*Immunities:* #immunities \ ]
-    if characteristics.len() > 0 {
-     let cline = characteristics.pairs().map(((k, v)) => [*#k* #v])
-     cline.join[ #h(0.6em) ]
-     linebreak()
-    }
+  }
+  if resistances != none [*Resistances:* #resistances \ ]
+  if immunities != none [*Immunities:* #immunities \ ]
+  if characteristics.len() > 0 {
+    let cline = characteristics.pairs().map(((k, v)) => [*#k* #v])
+    cline.join[ #h(0.6em) ]
+    linebreak()
+  }
 
-    if passive-traits != () {
-      cr-subhead("Traits")
-      for t in passive-traits {
-        par(hanging-indent: 1em)[#text(weight: "bold")[#t.name]: #t.body]
-      }
+  if passive-traits != () {
+    cr-subhead("Traits")
+    for t in passive-traits {
+      par(hanging-indent: 1em)[#text(weight: "bold")[#t.name]: #t.body]
     }
-    if actions != () {
-      cr-subhead("Actions")
-      for a in actions { a }
-    }
-    if casting != none {
-      cr-subhead(if casting.at("title", default: none) != none {
-        casting.title
-      } else { "Casting" })
-      for p in casting.powers { p }
-    }
-    if command-powers != () {
-      cr-subhead("Command Powers")
-      for p in command-powers { p }
-    }
-    if equipment != () {
-      cr-subhead("Equipment")
-      for e in equipment { e }
-    }
-    if xp != none {
-      v(0.35em)
-      line(stroke: 0.5pt + colors.pfnavy, length: 100%)
-      [*XP* #xp]
-    }
+  }
+  if actions != () {
+    cr-subhead("Actions")
+    for a in actions { a }
+  }
+  if casting != none {
+    cr-subhead(if casting.at("title", default: none) != none {
+      casting.title
+    } else { "Casting" })
+    for p in casting.powers { p }
+  }
+  if command-powers != () {
+    cr-subhead("Command Powers")
+    for p in command-powers { p }
+  }
+  if equipment != () {
+    cr-subhead("Equipment")
+    for e in equipment { e }
+  }
+  if xp != none {
+    v(0.35em)
+    line(stroke: 0.5pt + colors.pfnavy, length: 100%)
+    [*XP* #xp]
+  }
 }

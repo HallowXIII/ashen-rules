@@ -18,7 +18,11 @@
   ),
 )
 
-#titlepage("A s h e n", subtitle: "Role-Playing Game", description: "Core Rulebook")
+#titlepage(
+  "A s h e n",
+  subtitle: "Role-Playing Game",
+  description: "Core Rulebook",
+)
 
 #include "foreword.typ"
 

@@ -364,11 +364,11 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   2,
   "3 AP; sustain 1 AP",
   [You conjure a combat-ready elemental, larger and more aggressive than a
-          servant. The elemental is a mindless summon with the following baseline
-          stats: 20/T HP, 4+2/T Armor, 2+2/T Ward, 2+T Evasion, 4 AP, Speed 4+T.
+    servant. The elemental is a mindless summon with the following baseline
+    stats: 20/T HP, 4+2/T Armor, 2+2/T Ward, 2+T Evasion, 4 AP, Speed 4+T.
 
-          It makes melee attacks at 3+2/T dice dealing 100% damage of a type matching
-          its element. The elemental persists as long as you sustain this power.],
+    It makes melee attacks at 3+2/T dice dealing 100% damage of a type matching
+    its element. The elemental persists as long as you sustain this power.],
   keywords: ("Summon", "Key"),
   difficulty: "5",
   cost: "3 Increments; sustain 1",
@@ -380,13 +380,13 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Arcane Spell",
   2,
   "3 AP; sustain 1 AP",
-  [You raise an armored skeleton from a corpse, binding it with stronger 
-   magic than a simple animation. The skeleton is a mindless summon with the
-   following baseline stats: 20/T HP, 4/T Armor, 0 Ward, 3+T Evasion, 4 AP, Speed 1+T.
-   It fights with a shield and weapon: 3/T dice dealing 100% Rending damage,
-   and it has Parry +2d. The skeleton persists as long as you sustain this power.
-   If there is no suitable corpse within range, this spell fails and the 
-   Focus cost is not paid.],
+  [You raise an armored skeleton from a corpse, binding it with stronger
+    magic than a simple animation. The skeleton is a mindless summon with the
+    following baseline stats: 20/T HP, 4/T Armor, 0 Ward, 3+T Evasion, 4 AP, Speed 1+T.
+    It fights with a shield and weapon: 3/T dice dealing 100% Rending damage,
+    and it has Parry +2d. The skeleton persists as long as you sustain this power.
+    If there is no suitable corpse within range, this spell fails and the
+    Focus cost is not paid.],
   keywords: ("Summon", "Skull"),
   difficulty: "5",
   cost: "3 Increments; sustain 1",

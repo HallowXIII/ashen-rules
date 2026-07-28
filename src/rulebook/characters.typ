@@ -163,7 +163,7 @@ loot as the game progresses.
 
 #attention[
   Arcane casters: remember that you need at least one *spell* to equip.
-  Your starting budget can be used to purchase a spell at character creation. 
+  Your starting budget can be used to purchase a spell at character creation.
   Discuss this with your GM during character creation.
 ]
 

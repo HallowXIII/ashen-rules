@@ -150,13 +150,13 @@ reason, the game shifts between different modes depending on how closely time
 must be tracked.
 
 To make this easier, Ashen utilizes an abstract time structure to divide up
-a campaign. At the top level, a campaign can be thought of as being like a 
+a campaign. At the top level, a campaign can be thought of as being like a
 play -- divided into a sequence of Acts, separated by Intermissions. Each Act
-is itself divided into multiple Scenes. 
+is itself divided into multiple Scenes.
 
 === Acts
 
-An Act is a meaningful unit of play---a period during which the characters 
+An Act is a meaningful unit of play---a period during which the characters
 come together to further their shared goals and develop the campaign's plot, if any.
 The important thing is that like in a theater, the audience's full attention is on
 the stage during an act. An act could be a raid on an enemy fortress, a

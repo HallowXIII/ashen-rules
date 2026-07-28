@@ -37,14 +37,14 @@
 #let form-mark-in(id, kind) = place(layout(size => context {
   let pos = here().position()
   [#metadata((
-      id: id,
-      kind: kind,
-      page: pos.page,
-      x: pos.x.pt(),
-      y: pos.y.pt(),
-      w: size.width.pt(),
-      h: size.height.pt(),
-    )) <form-field>]
+    id: id,
+    kind: kind,
+    page: pos.page,
+    x: pos.x.pt(),
+    y: pos.y.pt(),
+    w: size.width.pt(),
+    h: size.height.pt(),
+  )) <form-field>]
 }))
 
 // Marker at the current flow position, spanning the container's width and
@@ -52,14 +52,14 @@
 #let form-mark-here(id, kind, h) = place(layout(size => context {
   let pos = here().position()
   [#metadata((
-      id: id,
-      kind: kind,
-      page: pos.page,
-      x: pos.x.pt(),
-      y: pos.y.pt(),
-      w: size.width.pt(),
-      h: h.pt(),
-    )) <form-field>]
+    id: id,
+    kind: kind,
+    page: pos.page,
+    x: pos.x.pt(),
+    y: pos.y.pt(),
+    w: size.width.pt(),
+    h: h.pt(),
+  )) <form-field>]
 }))
 
 // ── Helper functions ──────────────────────────────────────────────────
@@ -730,7 +730,6 @@
       skill-row("Shop", "DEX+END", trained: true),
     )
     v(8pt)
-
 
     sheet-header("Languages")
     v(1pt)

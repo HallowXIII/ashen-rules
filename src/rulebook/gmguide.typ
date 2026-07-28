@@ -533,13 +533,55 @@ along with the resulting chance that a competent party completes the check.
   [*Demanding*],
   [*Hard*],
   [*Punishing*],
-  [T1], [6], [2], [9], [12], [15], [18],
-  [T2], [8], [3], [12], [16], [20], [24],
-  [T3], [11], [4], [16], [22], [28], [33],
-  [T4], [14], [5], [21], [28], [35], [42],
-  [T5], [16], [6], [24], [32], [40], [48],
-  [T6], [17], [6], [26], [34], [43], [51],
-  [*Completes*], [---], [---], [\~90%], [\~85%], [\~78%], [\~72%],
+  [T1],
+  [6],
+  [2],
+  [9],
+  [12],
+  [15],
+  [18],
+  [T2],
+  [8],
+  [3],
+  [12],
+  [16],
+  [20],
+  [24],
+  [T3],
+  [11],
+  [4],
+  [16],
+  [22],
+  [28],
+  [33],
+  [T4],
+  [14],
+  [5],
+  [21],
+  [28],
+  [35],
+  [42],
+  [T5],
+  [16],
+  [6],
+  [24],
+  [32],
+  [40],
+  [48],
+  [T6],
+  [17],
+  [6],
+  [26],
+  [34],
+  [43],
+  [51],
+  [*Completes*],
+  [---],
+  [---],
+  [\~90%],
+  [\~85%],
+  [\~78%],
+  [\~72%],
 )])
 
 The _Pool_ column is the dice pool of a character who is genuinely good at the
@@ -913,6 +955,12 @@ help you plan, not to constrain you.
 
 === The Faction Web
 
+While the Deathless are not very numerous (you can, of course, change this in your
+setting, if you so wish, but we recommend keeping their numbers at a manageable level),
+they are individually all the more powerful. It follows that the organizations they build
+and the relationships between them are a feature of the world that the PCs will have
+a hard time avoiding.
+
 Choose three to five factions that will feature in the campaign. At minimum, you
 need the party's faction (if they have one), one or two factions that provide
 missions and support, and one or two factions whose goals oppose the party's.
@@ -940,10 +988,19 @@ Mortefactors." Let the faction's personality, values, and methods emerge through
 the NPCs who represent it. The players will form opinions about factions based
 on the people they meet---use that.
 
+How you use this information depends on the style of campaign you are running.
+If you are running a relatively static-world game, where nothing changes except
+through party actions, then you can use these notes to give you an inkling of
+where and when the party might run into faction adversaries, or which people
+they can talk to when they are in need of advice and support.
+
+If you are running a more sandbox-like game, where you make use of the Faction turn,
+then these notes on Factions take on a more central role.
+
 === Seeding Mysteries
 
 Most campaigns have at least one large-scale mystery that the players will
-uncover over the course of play. Before the campaign begins---or at least before
+uncover over the course of play. Before the campaign begins--e-or at least before
 a mystery becomes relevant---decide its answer. A mystery without an answer is a
 mystery without satisfying clues, and the clues are what make the journey worth
 it.
@@ -971,12 +1028,20 @@ Old Ko Vihya. The Setting Secrets section provides frameworks for each.
 
 === Managing Long-Term Progression
 
-The wealth and XP benchmarks in the Progression and Rewards section are your
-campaign health check. At each intermission, compare the party's cumulative XP
-and total wealth to the tables. If the party is significantly ahead---more than
-20% above the expected range---reduce mission pay or loot density for a few
-adventures. If they are behind, offer a windfall: a vault in a ruin, a patron's
-bonus for exceptional work, a particularly lucrative salvage haul.
+As the party goes from adventure to adventure and rises in power and standing,
+it can become complicated to keep track of where the party is relative to
+"standard" assumptions of progression, and therefore what level of challenge
+is appropriate for them.
+
+The wealth and XP benchmarks in the Progression and Rewards section are a useful
+reference in such a situation. At each intermission, compare the party's cumulative XP
+and total wealth to the tables. If the Party's gear is significantly behind the tier
+their XP and wealth indicate they are at, consider placing more high-tier items for the
+characters to find. If the other way around, you'll need to tread carefully. Characters
+with "overpowered" equipment will deal more damage, take less damage, and cast more spells;
+in exchange, their HP and FP will not necessarily keep up with what the enemy design for
+a given tier expects. Consider upgrading the enemies they face, but using fewer of them
+to compensate for the imbalance. Total XP should catch up fast enough.
 
 The item availability gates create natural campaign beats. The Tier 3 transition
 ---equipment must be commissioned from specialists---gives the party a reason to
@@ -1026,24 +1091,31 @@ campaign, on a six-step ladder:
   "Standing",
   columns: (1fr, 2fr, 7fr),
   align: (center, left, left),
-  [*Rank*], [*Name*], [*Meaning*],
-  [−2], [Hunted], [Kill or capture on sight.],
-  [−1], [Marked],
+  [*Rank*],
+  [*Name*],
+  [*Meaning*],
+  [−2],
+  [Hated],
+  [Kill or capture on sight.],
+  [−1],
+  [Enemy],
   [Obstructed, watched, denied service in faction territory.],
-  [0], [Outsider], [The default. No access, no obligations.],
-  [+1], [Associate],
+  [0],
+  [Outsider],
+  [The default. No access, no obligations.],
+  [+1],
+  [Associate],
   [Mission access at standard pay (see _Mission Pay_).],
-  [+2], [Sworn],
+  [+2],
+  [Friend],
   [Commissioning access at faction specialists (the tier-3+ equipment gate);
     reliquary loans up to a tier cap; *anchor rights* in faction sanctums.
     Carries obligations.],
-  [+3], [Voice],
+  [+3],
+  [Champion],
   [Legendary-grade commissions; faction resources in the field; a seat at
     decisions. Carries heavy obligations.],
 )
-
-Voice is the rules-shape of what the tier-6 mission pay table already
-promises: political influence and territorial concessions.
 
 *Movement.* Adjust Standing at act boundaries based on deeds --- ±1 per
 faction is the norm; betrayal can drop a character two ranks, or straight to
@@ -1062,9 +1134,11 @@ or Hunted with the betrayed party.
 === Debts <debts>
 
 Standing moves slowly; *Debts* move fast. A Debt is a named, spendable
-obligation --- "the Mortefactors owe me one" made concrete --- denominated
-per faction. "Debts of service" is already the book's highest-tier
-mission-pay language; this formalizes it.
+obligation, linked to a specific faction. Despite the name, a Debt need not be
+a monetary obligation. In simple terms, they are the
+mechanical reification of "the Mortefactors owe me one".
+
+A Debt is:
 
 - *Earned* by service beyond obligation: completing a demand exceptionally,
   volunteering for faction trouble, delivering a Holding.
@@ -1072,12 +1146,15 @@ mission-pay language; this formalizes it.
   reliquary loan above the rank cap, information, a transgression
   overlooked, or access to a Holding's boons. Big asks cost multiple Debts.
 
-Debts survive Standing changes. A Hunted character holding a Debt is owed it
+==== Debts and Standing
+
+Debts mostly survive standing changes unharmed. However, once a character's standing
+with a given faction falls too low, they may no longer be willing to honor their Debt,
+or they may do so in a way that causes trouble for the creditor.
+
+Debts largely survive Standing changes. A Hunted character holding a Debt is owed it
 still --- immortal orders keep their books, and a faction that hunts you
 while honoring its debt to you is a story, which is the point.
-
-Debts are deliberately not called Favor: divine *Favor*, the reliquary
-attunement system, remains a distinct concept.
 
 === The Faction Turn
 
@@ -1108,19 +1185,17 @@ secret. Write a Holding as a single line:
 *Form* is what the Holding actually is:
 
 - *Place:* a Clear, a magically saturated site, a fortified pass, a sanctum.
-  A Clear is not maintained _by_ a Holding; it *is* one --- likely the
-  largest and highest-tier form in the game.
 - *Object:* a relic lost in the Fog, a kept reliquary, a Materia cache.
-- *Person:* an oracle, a defected engineer, a Deathless whose anchor you
-  control.
+- *Person:* someone possessing an unusual ability, helping the faction out of free choice or duress.
 - *Knowledge:* a route through the deep Fog, the location of a treasury, a
   rival's anchor site.
 
 *Tier* scales the boons and the opposition on the usual tier 1--6 curve.
 
-*Boons* are the mechanical interface, drawn from the existing toolbox:
-blessed-ground rest (+1 EP), Charge supply for magitek, anchor rights in a
-sanctum, a kept reliquary (divine aspect access), a ritual Influence site
+*Boons* are the benefits that a Holding provides. This depends on the type
+of the holding. Places provide static effects linked to their location:
+rest on blessed-ground rest (+1 EP), an energy supply for magitek, or ritual
+influences. A person may be valuable for their contacts:  anchor rights in a sanctum, a kept reliquary (divine aspect access), a ritual Influence site
 (feeding the tier 4--6 ritual Influence requirements), waystation shelter,
 revenue in feathers per intermission, or standing intelligence.
 
@@ -1128,14 +1203,15 @@ revenue in feathers per intermission, or standing intelligence.
 *secrecy* --- the natural Hold of Knowledge and of many Objects.
 
 Form determines how a Holding can be contested, and each vector is an
-act-scale objective for a party on either side --- adventure frames, not a
-wargame:
+act-scale objective for a party on either side.
 
 #pftab(
   "Contesting Holdings",
   columns: (1.6fr, 3.7fr, 3.7fr),
   align: (left, left, left),
-  [*Form*], [*Contested by*], [*Notes*],
+  [*Form*],
+  [*Contested by*],
+  [*Notes*],
   [Place],
   [Assault, siege, infiltration, severing or re-making a binding],
   [Cannot be carried off.],

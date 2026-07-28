@@ -13,9 +13,9 @@
 )
 
 #let fonts = (
-  sans: ("Barlow"),
-  serif: ("Source Serif 4"),
-  special: ("EB Garamond 08"),
+  sans: "Barlow",
+  serif: "Source Serif 4",
+  special: "EB Garamond 08",
 )
 
 #let pf-stylization(doc) = {
