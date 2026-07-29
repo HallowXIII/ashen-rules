@@ -70,7 +70,7 @@ GM rolls on the following table at the start of the next act:
   [1--3],
   [*Cosmetic wear.* The item looks battered but functions normally. No mechanical effect --- this time.],
   [4--5],
-  [*Reduced stats.* One of the item's primary stats is reduced: --1/T damage (weapons), --2/T Armor or Ward (armor), or --1/2T Casting bonus (catalysts). This penalty is cumulative across intermissions and persists until the item is repaired (costs the skipped maintenance plus 25%).],
+  [*Reduced stats.* One of the item's primary stats is reduced: --1/T damage (weapons), --1/T Armor or Ward (armor), or --1/2T Casting bonus (catalysts). This penalty is cumulative across intermissions and persists until the item is repaired (costs the skipped maintenance plus 25%).],
   [6--7],
   [*Lost quality.* One of the item's special properties ceases to function: a treatment wears off, an enchantment goes dormant, or a material property degrades. The GM chooses which. Restoring it requires re-applying the modification at full cost.],
   [8--9],
@@ -211,7 +211,7 @@ Armor protects the wearer from physical and magical damage. Like weapons, armor 
 
 - *Armor:* Physical damage reduction. Incoming physical damage is reduced by this value.
 - *Ward:* Magical damage reduction. Incoming magical damage is reduced by this value.
-- *Evasion:* Bonus or penalty to the wearer's Evasion score.
+- *Evasion:* Bonus or penalty to the wearer's Evasion score. Bonuses are typed as either _Stealth_ or _Deflection_ (see _Armor Layering_ below); penalties are untyped and always apply.
 - *Bulk:* Physical weight and encumbrance.
 - *Charge:* Magical encumbrance (see _Bulk and Charge_ above).
 - *Profile:* The armor's physical form factor, which determines how it layers with other armor (see _Armor Layering_ below).
@@ -226,7 +226,12 @@ A character may wear up to one piece of armor in each of three *profile* slots. 
 
 A character may wear one piece of armor in each slot. Full-body armor such as power armor and construct frames occupies both the Close-fit and Plating slots (marked *C+P* in the armor table), meaning nothing can be worn underneath them.
 
-When multiple pieces of armor are worn, their *Armor*, *Ward*, *Evasion*, *Bulk*, and *Charge* values are all added together. Special properties such as camouflage or stealth bonuses only apply if the piece with that property is the character's outermost worn layer.
+When multiple pieces of armor are worn, their *Armor*, *Ward*, *Bulk*, and *Charge* values are all added together. Evasion modifiers combine differently. Evasion *penalties* always apply and stack. Evasion *bonuses* carry one of two keywords:
+
+- *Stealth:* The bonus comes from a sleek profile, camouflage, or light-bending trickery. A Stealth bonus applies only if its source is worn as the outermost layer, and Stealth bonuses never stack --- a character benefits from at most one Stealth bonus at a time.
+- *Deflection:* The bonus comes from actively turning attacks aside, usually magically. Deflection bonuses apply regardless of layering and stack freely, both with each other and with a Stealth bonus. Deflection bonuses are typically small (+1).
+
+The Evasion bonuses in the base armor tables are Stealth bonuses unless an item's description says otherwise. Other special properties such as camouflage or stealth systems likewise apply only if the piece with that property is the character's outermost worn layer.
 
 ==== Armor Materials
 
@@ -266,17 +271,21 @@ The heaviest forms of Plating add partial limb protection and helmets, being jus
 The following plating materials are available:
 
 - *Ceramic Composite:* The standard plating material --- sintered steel-ceramic or carbon-ceramic plates. Uses the base Plating stats with no special resistance. Available, affordable, effective.
-- *Cerafiber:* A hardened, fibrous material that frays on impact, catching and stopping all but the most high-velocity projectiles. Grants resistance to *Rending* damage (3 × tier), but its Armor value is reduced by 1 × tier compared to the base.
-- *Reactive:* Plates with shock-dampening gel or reactive explosive elements sandwiched between layers. When struck, the reactive layer detonates inward, cushioning the impact. Grants resistance to *Impact* damage (3 × tier), but its Armor value is reduced by 1 × tier compared to the base.
+- *Cerafiber:* A hardened, fibrous material that frays on impact, catching and stopping all but the most high-velocity projectiles. Grants resistance to *Rending* damage (3 × tier), but its Armor value is reduced by ½ × tier (rounded up) compared to the base.
+- *Reactive:* Plates with shock-dampening gel or reactive explosive elements sandwiched between layers. When struck, the reactive layer detonates inward, cushioning the impact. Grants resistance to *Impact* damage (3 × tier), but its Armor value is reduced by ½ × tier (rounded up) compared to the base.
 - *Ablative:* Layered heat-sink material designed as a countermeasure to plasma weapons. Each layer chars and flakes off to dissipate thermal energy, protecting the layers beneath. Grants resistance to *Thermal* damage (3 × tier).
 - *Insulated:* Multi-layered insulation combining cryo-resistant polymers and non-conductive barriers. Grants resistance to *Cold* and *Lightning* damage (1½ × tier each, rounded down).
-- *Crystplate:* Echo Crystplate --- a lost pre-cataclysm technology. The crystalline lattice resonates with incoming magical energy, dispersing it across the plate's structure. Crystplate is the only plating material that grants meaningful Ward: bonus Ward equal to *2 × tier* on top of normal plating stats. Crystplate cannot be manufactured; it must be salvaged, recovered, or reworked by an artisan with fragments of the old techniques. _(Rare.)_
+- *Crystplate:* Echo Crystplate --- a lost pre-cataclysm technology. The crystalline lattice resonates with incoming magical energy, dispersing it across the plate's structure. Crystplate is the only plating material that grants meaningful Ward: bonus Ward equal to *1 × tier* on top of normal plating stats. Crystplate cannot be manufactured; it must be salvaged, recovered, or reworked by an artisan with fragments of the old techniques. _(Rare.)_
 
 ===== Full-Body
 
 These pieces of armor encase the entire body, consisting of a tight-fitting base layer with fully jointed armor on top
 that forms closed suit once fully donned. The underlying materials of these suits are the same or similar as for
-more disjointed plating layers. More advanced suits of full-body armor are air-tight when the helmet and
+more disjointed plating layers. 
+
+The degree of protection and insulation of these armors varies by weight class. Medium sets of full-body armor are closer
+to the Close-Fit bodysuits, but often made of more exotic protective materials. Heavy sets represent true closed armor,
+offering all-round protection. More advanced suits of full-body armor are air-tight when the helmet and
 heat vents are closed, and can be used with a rebreather system to venture into contaminated areas.
 
 Powered armors usually go a step further --- they are so heavy they are impossible to move without the power servos
@@ -289,11 +298,11 @@ has their clockwork core integrated into a new armored frame that then becomes t
 Full-body armor uses the same material variants as Plating, but at higher resistance rates due to the greater surface area and thicker construction:
 
 - *Ceramic Composite:* Base stats, no special resistance.
-- *Cerafiber:* Rending resistance (5 × tier for heavy, 4 × tier for medium). Armor reduced by 2 × tier.
-- *Reactive:* Impact resistance (5 × tier for heavy, 4 × tier for medium). Armor reduced by 2 × tier.
+- *Cerafiber:* Rending resistance (5 × tier for heavy, 4 × tier for medium). Armor reduced by 1 × tier.
+- *Reactive:* Impact resistance (5 × tier for heavy, 4 × tier for medium). Armor reduced by 1 × tier.
 - *Ablative:* Thermal resistance (4 × tier for heavy, 3 × tier for medium).
 - *Insulated:* Cold and Electric resistance (2 × tier each for heavy, 1½ × tier each for medium, rounded down).
-- *Crystplate:* Bonus Ward equal to 3 × tier for heavy, 2 × tier for medium. _(Rare.)_
+- *Crystplate:* Bonus Ward equal to 2 × tier for heavy, 1 × tier for medium. _(Rare.)_
 
 ===== Overgarments
 
@@ -469,7 +478,8 @@ An *enchantment* is a magical effect layered onto an item. Enchantments grant sp
 ==== Armor Enchantments
 
 - *Deflecting:* The armor's surface is magically treated to scatter incoming magical energy. When the wearer is targeted by an area-effect spell or magical ability, the armor grants the wearer light cover against that effect. _(Ritual.)_
-- *Lightbender:* The armor bends light around itself. When the wearer is fighting in bright light, the armor's Evasion bonus increases by 1. _(Ritual.)_
+- *Lightbender:* The armor bends light around itself. When the wearer is fighting in bright light, the armor's Evasion bonus increases by 1. This is a Stealth bonus --- it applies only while the armor is the outermost worn layer. _(Ritual.)_
+- *Repulsing:* The armor projects a thin repulsion field that nudges incoming blows off course. Grants a +1 Deflection bonus to Evasion. _(Ritual.)_
 
 ==== Catalyst and Implement Enchantments
 
@@ -521,18 +531,18 @@ Final: 4+D8 damage, *2 Pen*, ½ Bulk, Inc 3. Force, Rending. \
 _An energy-edged blade manufactured by the Lantern foundries. Light enough to pair with a catalyst._
 
 *Nanoplate Midnight Bodysuit* (T2 Close-fit, Nanoplate) \
-Base: T2 Close-fit --- Armor 5, Ward 4, Eva +1, Bulk 1, Charge 0. \
+Base: T2 Close-fit --- Armor 3, Ward 2, Eva +1, Bulk 1, Charge 0. \
 Material: Nanoplate --- Impact resistance 4 (2 × tier). No cost increase for standard material. \
 Cost: #feathers 600. \
-Final: Armor 5, Ward 4, Eva +1, Bulk 1, Charge 0. *Impact Resistance 4.* \
+Final: Armor 3, Ward 2, Eva +1, Bulk 1, Charge 0. *Impact Resistance 4.* \
 _A stealth operative's suit with impact-dispersing nanoscales woven into the synfiber._
 
 *Cerafiber Flak Vest, Deflecting* (T3 Plating, Cerafiber + Deflecting enchantment) \
-Base: T3 Plating --- Armor 10, Ward 2, Eva -1, Bulk 2½, Charge 0. \
-Material: Cerafiber --- Armor reduced by 3 (1 × tier), Rending resistance 12 (4 × tier). +25% base price. \
+Base: T3 Plating --- Armor 6, Ward 1, Eva -1, Bulk 2½, Charge 0. \
+Material: Cerafiber --- Armor reduced by 2 (½ × tier, rounded up), Rending resistance 9 (3 × tier). +25% base price. \
 Enchantment: Deflecting --- light cover vs area spells. Enchantment cost ~#feathers 1500. \
 Cost: #feathers 1875 (base) + #feathers 1500 (enchantment) = #feathers 3375. \
-Final: *Armor 7*, Ward 2, Eva -1, Bulk 2½, Charge 0. *Rending Resistance 12.* Deflecting. \
+Final: *Armor 4*, Ward 1, Eva -1, Bulk 2½, Charge 0. *Rending Resistance 9.* Deflecting. \
 _A fibrous vest that frays to stop bullets, magically treated to scatter area spells. Built for soldiers expecting both conventional and magical fire._
 
 *Silvered Dragon Guard Longsword, Moontouched* (T2 Medium Sword, Silvered + Moontouched) \
@@ -1783,46 +1793,46 @@ The following tables show base armor stats organized by profile (see _Armor Laye
   [Charge],
   [1],
   [#feathers 250],
-  [3],
-  [3],
+  [2],
+  [2],
   [+1],
   [1],
-  [1],
+  [0],
   [2],
   [#feathers 600],
-  [5],
-  [4],
+  [3],
+  [2],
   [+1],
   [1],
   [0],
   [3],
   [#feathers 2000],
-  [8],
-  [5],
+  [4],
+  [3],
   [+1],
   [1],
   [1],
   [4],
   [#feathers 5000],
-  [12],
-  [8],
+  [5],
+  [4],
   [+2],
   [1],
   [1],
   [5],
   [#feathers 10000],
-  [15],
-  [9],
+  [7],
+  [5],
   [+2],
-  [2],
+  [1],
   [2],
   [6],
   [#feathers 14000],
-  [18],
-  [10],
+  [9],
+  [7],
   [+3],
+  [1],
   [2],
-  [3],
 )
 
 #pftab(
@@ -1837,36 +1847,36 @@ The following tables show base armor stats organized by profile (see _Armor Laye
   [Charge],
   [2],
   [#feathers 500],
-  [6],
+  [5],
   [1],
   [-2],
   [2],
   [0],
   [3],
   [#feathers 1500],
-  [10],
-  [2],
+  [6],
+  [1],
   [-1],
   [2½],
   [0],
   [4],
   [#feathers 4500],
-  [16],
-  [5],
+  [8],
+  [2],
   [-1],
   [3],
-  [1],
+  [0],
   [5],
   [#feathers 9000],
-  [20],
-  [6],
+  [10],
+  [2],
   [-1],
   [3½],
   [1],
   [6],
   [#feathers 12000],
-  [24],
-  [8],
+  [13],
+  [3],
   [0],
   [4],
   [1],
@@ -1884,44 +1894,44 @@ The following tables show base armor stats organized by profile (see _Armor Laye
   [Charge],
   [1],
   [#feathers 300],
-  [3],
-  [6],
-  [+1],
+  [1],
+  [2],
+  [0],
   [1],
   [2],
   [2],
   [#feathers 1000],
-  [4],
-  [8],
-  [+1],
   [1],
   [3],
+  [0],
+  [1],
+  [2],
   [3],
   [#feathers 2500],
-  [7],
-  [10],
-  [0],
   [2],
+  [5],
+  [0],
+  [1],
   [3],
   [4],
   [#feathers 5000],
-  [9],
-  [18],
+  [2],
+  [6],
   [0],
   [1],
-  [4],
+  [3],
   [5],
   [#feathers 10000],
-  [10],
-  [12],
-  [+1],
-  [2],
   [3],
+  [8],
+  [+1],
+  [1],
+  [4],
   [6],
   [#feathers 16000],
-  [12],
-  [22],
-  [+2],
+  [3],
+  [10],
+  [+1],
   [1],
   [4],
 )
@@ -1941,91 +1951,91 @@ The following tables show base armor stats organized by profile (see _Armor Laye
   [1],
   [H],
   [#feathers 500],
-  [7],
-  [5],
-  [-2],
-  [5],
+  [6],
   [2],
+  [-2],
+  [4],
+  [1],
   [2],
   [M],
   [#feathers 1200],
-  [8],
-  [6],
-  [0],
-  [3½],
+  [7],
   [3],
+  [0],
+  [3],
+  [1],
   [2],
   [H],
   [#feathers 1500],
-  [9],
   [10],
+  [3],
   [-2],
   [5],
-  [3],
-  [3],
-  [M],
-  [#feathers 2500],
-  [12],
-  [8],
-  [-1],
-  [4],
-  [2],
-  [3],
-  [H],
-  [#feathers 3000],
-  [15],
-  [10],
-  [-4],
-  [5],
   [1],
+  [3],
+  [M],
+  [#feathers 3000],
+  [9],
+  [4],
+  [0],
+  [3],
+  [2],
+  [3],
+  [H],
+  [#feathers 3500],
+  [12],
+  [4],
+  [-3],
+  [5],
+  [2],
   [4],
   [M],
-  [#feathers 6000],
-  [18],
+  [#feathers 6500],
   [12],
-  [-1],
-  [4½],
+  [5],
+  [0],
+  [3½],
   [2],
   [4],
   [H],
-  [#feathers 6500],
-  [25],
-  [19],
-  [-4],
+  [#feathers 8000],
+  [16],
+  [6],
+  [-3],
   [5],
-  [3],
+  [2],
   [5],
   [M],
   [#feathers 12000],
-  [16],
-  [10],
-  [-1],
-  [4],
-  [2],
+  [15],
+  [7],
+  [0],
+  [3½],
+  [3],
   [5],
   [H],
-  [#feathers 18000],
-  [24],
-  [16],
+  [#feathers 15000],
+  [20],
+  [7],
   [-3],
   [6],
-  [1],
+  [3],
   [6],
   [M],
   [#feathers 20000],
   [20],
-  [14],
-  [-1],
-  [5],
-  [2],
+  [9],
+  [0],
+  [4],
+  [3],
   [6],
   [H],
   [#feathers 25000],
-  [30],
-  [20],
+  [26],
+  [9],
   [-3],
-  [6½],
-  [2],
+  [6],
+  [3],
 )
 
 Named armor with special traits or unique properties is described in the _Item Descriptions_ section.
@@ -2108,7 +2118,7 @@ capacity, the generator is dead weight).
   [Old War Buckler],
   [0],
   [#feathers 0],
-  [2],
+  [1],
   [0],
   [Parry +2d],
   [½],
@@ -2118,7 +2128,7 @@ capacity, the generator is dead weight).
   [Lantern Riot Shield],
   [1],
   [#feathers 250],
-  [4],
+  [2],
   [0],
   [Brace],
   [2],
@@ -2129,7 +2139,7 @@ capacity, the generator is dead weight).
   [1],
   [#feathers 300],
   [0],
-  [3],
+  [2],
   [Parry +1d],
   [¼],
   [1],
@@ -2138,7 +2148,7 @@ capacity, the generator is dead weight).
   [Dragon Guard Tower Shield],
   [2],
   [#feathers 800],
-  [6],
+  [3],
   [0],
   [Brace],
   [3],
@@ -2149,7 +2159,7 @@ capacity, the generator is dead weight).
   [2],
   [#feathers 700],
   [0],
-  [5],
+  [3],
   [Parry +2d],
   [½],
   [2],
@@ -2159,7 +2169,7 @@ capacity, the generator is dead weight).
   [3],
   [#feathers 2000],
   [0],
-  [8],
+  [5],
   [Parry +3d],
   [½],
   [2],
@@ -2168,7 +2178,7 @@ capacity, the generator is dead weight).
   [Breacher Shield],
   [3],
   [#feathers 1800],
-  [5],
+  [4],
   [0],
   [Brace],
   [2],
@@ -3226,8 +3236,8 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   keywords: "Robe, Ice, Light",
   flavor: "The priests of Iyalan specialized in spinning the silver light of the moon into magical threads, cold to the touch as silver, yet sheer as silk.",
   price: "25000",
-  armor: "10",
-  ward: "25",
+  armor: "4",
+  ward: "14",
   evasion: "+2",
   bulk: "1",
   charge: "4",
@@ -3236,12 +3246,12 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
 
   *Aura of Cold:* In battle, these robes generate a vortex of cold air. The vortex is an Aura 1; any creature that enters or starts its turn in the aura takes 20 Cold damage. Suppressing or reactivating this aura is a free action, but can only be done once per round.
 
-  *Sheer Reflection:* In moonlight, the robes become suffused with magical power. Their Ward and Evasion bonuses increase to 30 and +5 respectively; additionally, the casting bonuses increase to +5 each.
+  *Sheer Reflection:* In moonlight, the robes become suffused with magical power. Their Ward and Evasion bonuses increase to 18 and +5 respectively; additionally, the casting bonuses increase to +5 each.
 ]
 
 #item-description(
   "Moonlight Combat Suit",
-  "Masterwork Light Armor",
+  "Masterwork Full-body Armor (C+P)",
   6,
   keywords: "Moonlight",
   flavor: "Branded with the sigil of the Heirs, this masterwork combat suit was made for one of the Blood Moon's Oathpledged.",
@@ -3265,7 +3275,7 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
 
 #item-description(
   "Vanth's Sypharion",
-  "Legendary Light Armor",
+  "Legendary Full-body Armor (C+P)",
   6,
   flavor: "This set of armor was once owned by Vanth, shadow of the midnight gates. Seemingly composed of the actual black scales of some monstrous serpent, it does not provide the protection of heavier materias, but its magical powers more than make up for it.",
   price: "30000",
