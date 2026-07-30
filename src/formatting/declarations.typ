@@ -127,15 +127,33 @@
 ) = {
   set par(spacing: .6em, first-line-indent: 0em) // hanging-indent: 1em)
   set text(font: fonts.sans)
+  // Name and type/tier normally sit side by side. Names too long to leave
+  // room for the type on one line get a stacked header instead, with the
+  // type and tier on their own line below --- otherwise the two collide and
+  // overflow the column.
   let header(body) = {
-    box(
-      text(weight: "semibold", size: 1.4em, stretch: 50%)[#upper(name)],
-    )
-    h(1fr)
-    sym.wj
-    box(text(weight: "semibold", size: 1.4em, stretch: 50%)[
-      #upper(body) #tier
-    ])
+    let head-text(it) = text(weight: "semibold", size: 1.4em, stretch: 50%)[#it]
+    let name-part = head-text[#upper(name)]
+    let type-part = head-text[#upper(body) #tier]
+    layout(container => context {
+      let gutter = 0.5em.to-absolute()
+      let fits = (
+        measure(name-part).width + gutter + measure(type-part).width
+      ) <= container.width
+      if fits {
+        grid(
+          columns: (1fr, auto),
+          column-gutter: gutter,
+          align: (left + bottom, right + bottom),
+          name-part,
+          type-part,
+        )
+      } else {
+        name-part
+        linebreak()
+        type-part
+      }
+    })
   }
   block[
     #v(1em)
@@ -243,15 +261,33 @@
       (..keywords, domain)
     }
   }
+  // Name and type/tier normally sit side by side. Names too long to leave
+  // room for the type on one line get a stacked header instead, with the
+  // type and tier on their own line below --- otherwise the two collide and
+  // overflow the column.
   let header(body) = {
-    box(
-      text(weight: "semibold", size: 1.4em, stretch: 50%)[#upper(name)],
-    )
-    h(1fr)
-    sym.wj
-    box(text(weight: "semibold", size: 1.4em, stretch: 50%)[
-      #upper(body) #tier
-    ])
+    let head-text(it) = text(weight: "semibold", size: 1.4em, stretch: 50%)[#it]
+    let name-part = head-text[#upper(name)]
+    let type-part = head-text[#upper(body) #tier]
+    layout(container => context {
+      let gutter = 0.5em.to-absolute()
+      let fits = (
+        measure(name-part).width + gutter + measure(type-part).width
+      ) <= container.width
+      if fits {
+        grid(
+          columns: (1fr, auto),
+          column-gutter: gutter,
+          align: (left + bottom, right + bottom),
+          name-part,
+          type-part,
+        )
+      } else {
+        name-part
+        linebreak()
+        type-part
+      }
+    })
   }
   block(breakable: false)[
     #v(1em)

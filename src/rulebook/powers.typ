@@ -530,8 +530,8 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "3 AP",
   "A thin green ray strikes the target. On a hit, the target takes 300% Impact damage, ignoring all armor and Hardness. If this damage reduces the target to 0 HP, they and all equipment they carry are reduced to fine dust. Objects and structures targeted by this spell take double damage.",
   keywords: ("Force",),
-  difficulty: "12",
-  cost: "4 Increments",
+  difficulty: "11",
+  cost: "3 Increments",
   range: "one creature or object within 20",
   resistance: "D10 Stamina",
   miss: "100% Impact damage, ignoring armor.",
@@ -563,6 +563,95 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   range: "Close Burst 5",
   resistance: "D10 Stamina",
   miss: "Half damage, Slowed (5) for 1 round.",
+)
+
+==== The Lord of the Flame
+
+Three spells stand apart from the rest of the arcane repertoire. They are
+not shaped fire --- not a bolt or a wall or a burning field --- but the
+three things a fire actually gives off: its motion, its heat, and its
+light. Each is a bargain rather than a weapon, and each takes something
+from the caster or from those who accept it. Scholars of the Mist aspect
+argue endlessly over whether these were ever human work at all.
+
+#power-description(
+  "Lord of the Flame — Dance",
+  "Arcane Spell",
+  6,
+  "3 AP; sustain 1 AP",
+  [
+    You channel the pure essence of fire into the targets, and they begin
+    to burn the way a fire burns: faster than a body should move, and only
+    for as long as there is fuel. Each target gains *2 additional AP*.
+    #pfi[At the beginning of each target's turn, that target loses *2 EP*
+      --- and 1 EP more on every turn thereafter, so 3 EP on its second
+      turn, 4 EP on its third, and so on. Each target's cost escalates
+      separately, counted from the turn it first paid.]
+    #pfi[A target may end the effect on itself at the beginning of its
+      turn, before paying, requiring no action. Only creatures that have
+      Essence Points can be targeted by this spell.]
+    #pfi[EP lost to this spell never marks Fading. A target reduced to 0 EP
+      goes on dancing, but cannot spend EP to revive until it has completed
+      a long rest.]
+  ],
+  keywords: ("Fire",),
+  flavor: "They do not move faster so much as they stop waiting. Every gesture arrives already finished, and each of them is a little less afterwards.",
+  range: "up to 6 allies within 5",
+  difficulty: "10",
+  cost: "3 Increments; sustain 1",
+)
+
+#power-description(
+  "Lord of the Flame — Sublimation",
+  "Arcane Spell",
+  6,
+  "3 AP",
+  [
+    The target's substance forgets how to be substance. It takes *300%
+    Untyped damage*; this damage is reduced by Ward but not by Armor, and
+    it cannot be resisted.
+    #pfi[If this damage leaves the target at half its maximum HP or below,
+      it must pass the resistance check or *sublimate*: it is reduced to 0
+      HP and its body is destroyed, as described under
+      #link(<death-and-revival>)[_Death and Revival_]. Nothing remains but
+      a drift of fine, warm dust --- there is no corpse to dismember, no
+      body to return to, and a Deathless killed this way must reincorporate
+      at their soul anchor.]
+    #pfi[Objects and structures take double damage and sublimate with no
+      check.]
+  ],
+  keywords: ("Fire",),
+  flavor: "The heat of it is almost gentle. What it takes, it takes completely, and it leaves the air smelling of nothing at all.",
+  range: "one creature or object within 40",
+  difficulty: "12",
+  cost: "4 Increments",
+  resistance: "D10 Potential",
+)
+
+#power-description(
+  "Lord of the Flame — Illumination",
+  "Arcane Spell",
+  6,
+  "3 AP; sustain 1 AP",
+  [
+    You become a lantern of the first fire. While the effect lasts, every
+    square in the burst is lit by the Flame, and:
+    #pfi[Concealment, darkness and invisibility do not function within the
+      area. Creatures in the area cannot Hide and lose the benefit of any
+      effect that obscures them. Illusions of Tier 5 or lower within the
+      area end.]
+    #pfi[*You have line of effect to anything you can see.* Every arcane
+      spell you cast may be targeted at any point in your line of sight,
+      ignoring its listed range. Area sizes are unchanged.]
+    #pfi[*You cast no shadow of your own.* You cannot benefit from cover or
+      concealment by any means, and every creature that can see you has
+      line of effect to you on the same terms that you have to it.]
+  ],
+  keywords: ("Fire",),
+  flavor: "There is no such thing as a hidden place. There are only places the light has not yet been asked to reach.",
+  range: "Self; Close Burst 20",
+  difficulty: "10",
+  cost: "3 Increments; sustain 1",
 )
 
 == Divine
