@@ -121,8 +121,8 @@ In addition, every clockwork must choose one of the following two subtypes:
     You gain the following racial traits:
 
     ==== Integrated Weapons
-    You can mount weaponry and gear to your construct body (see _Walking Armor_, below) up to its total bulk
-    rating. When you do this, you ignore the bulk rating on the mounted equipment.
+    You can mount weaponry and gear to your construct body (see _Walking Armor_, below) up to its
+    *Mounts* rating. When you do this, you ignore the bulk rating on the mounted equipment.
     Your charge use is calculated as normal.
 
     ==== Electroception
@@ -133,18 +133,21 @@ In addition, every clockwork must choose one of the following two subtypes:
 
   colbreak()
   content[==== Walking Armor
-    You cannot normally wear armor. Instead, your core is built to be fit into
-    combat walker frames called Construct Bodies. You begin the game with a
-    construct body available to you. If at any point you wish to switch to a new
-    one, your core must be uninstalled from your current body and inserted into the
-    new one. This is an operation that takes significant time -- the engineer
-    conducting it must roll Shop against the Equipment Rank of the construct body,
-    with every roll taking one day.
+    You cannot wear close-fit armor or plating. Instead, your core is built to be
+    fit into combat walker frames called Construct Bodies, which occupy both slots
+    at once; you may still wear an overgarment over your frame. You must buy a
+    construct body at character creation, and it will likely be your largest
+    purchase. If at any point you wish to switch to a new one, your core must be
+    uninstalled from your current body and inserted into the new one. This is an
+    operation that takes significant time -- the engineer conducting it must roll
+    Shop at a difficulty equal to the new frame's tier + 3, with every roll taking
+    one day, and you are inert and helpless throughout.
 
     Your frame decides your physical appearance, base Armor and Ward, number and
     type of limbs, and slots for you to use with your Integrated Weapons ability.
     Different frames may also provide you with special senses beyond
-    your innate human-like vision, hearing and electroception.
+    your innate human-like vision, hearing and electroception. Frames are listed
+    under _Construct Frames_ in the Equipment chapter.
 
   ]
 })

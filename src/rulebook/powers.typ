@@ -252,7 +252,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Arcane Spell",
   1,
   "2",
-  "The target takes 100% Lightning damage and must make a D3 Stamina resist. On failure: the target is stunned for one round.",
+  "The target takes 100% Lightning damage and must make a D3 Stamina resist. On failure: the target is dazed (save ends).",
   keywords: ("Lightning",),
   flavor: "You raise your catalyst, and with a deafening peal of thunder, a bolt of lightning erupts from it to smite your enemies.",
   range: "Line 10",
@@ -267,7 +267,7 @@ exploits, they do not require a catalyst; they require a ranged weapon to use.
   "Arcane Spell",
   1,
   "2",
-  "On hit: 100% Cold damage and the target must make a D3 Stamina resist. On failure: The target is Slowed (5) for 1 round.",
+  "On hit: 100% Cold damage and the target must make a D3 Stamina resist. On failure: The target is Slowed (5) (save ends).",
   keywords: ("Cold",),
   range: "one creature within 15",
   difficulty: "2",
@@ -1826,7 +1826,7 @@ the more general powers of their parent.
   "2 AP",
   "You take careful aim and fire. Make a ranged attack with +2d. If you have not moved this turn, the attack deals an additional 50% damage.",
   keywords: ("Weapon", "Ranged"),
-  difficulty: "+2",
+  difficulty: "+0",
   range: "Weapon range",
 )
 

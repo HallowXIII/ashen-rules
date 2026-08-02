@@ -199,13 +199,171 @@ The tradeoff is that electricity is stopped cold by insulated or non-conductive 
 
 === Armor
 
-Armor protects the wearer from physical and magical damage. Like weapons, armor comes in weight classes: Light, Medium, and Heavy.
+Armor protects the wearer from physical and magical damage. Every piece of
+armor in Ashen is built from the same economy: it spends *Bulk* to buy
+*Armor*, and *Charge* to buy *Ward*, at an exchange rate set by its tier.
+Everything else about a piece --- its weight class, its Evasion modifier,
+how it stacks with other gear --- follows from how much budget it spends and
+in which currency.
 
-*Light armor* offers modest physical protection but does not hinder the wearer's mobility. Light armor typically grants a positive Evasion bonus. Robes, combat suits, and cloaks fall into this category.
+==== The Protection Economy
 
-*Medium armor* balances protection and mobility. Medium armor typically has no Evasion penalty. Combat plates, reinforced suits, and construct frames fall into this category.
+At a given tier, one point of Bulk buys a fixed amount of Armor, and one
+point of Charge buys the same amount of Ward. The rate is the item's tier
+plus one:
 
-*Heavy armor* offers the greatest protection but significantly reduces mobility. Heavy armor imposes an Evasion penalty. Power armor, battle plates, and siege frames fall into this category.
+#pftab(
+  "Protection Rate by Tier",
+  columns: (2.2fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  align: (left, center, center, center, center, center, center),
+  [Tier],
+  [1],
+  [2],
+  [3],
+  [4],
+  [5],
+  [6],
+  [Armor per Bulk],
+  [2],
+  [3],
+  [4],
+  [5],
+  [6],
+  [7],
+  [Ward per Charge],
+  [2],
+  [3],
+  [4],
+  [5],
+  [6],
+  [7],
+)
+
+A piece's *budget* is the number of points it spends; its protection is that
+budget multiplied by the rate, rounded to the nearest point. A tier 4 flak
+vest spending 2 points of Armor provides 10 Armor. A tier 4 mage's robe
+spending 2 points of Ward provides 10 Ward. A tier 6 suit of heavy plating
+spending 3 points provides 21 Armor.
+
+What a point *costs* differs between the two currencies, and this is the
+central asymmetry of the system. A point of Ward costs one Charge at every
+tier: magical protection is woven finer as it grows stronger, never heavier.
+Armor is physical, and it weighs. *Armor made of standard materials provides
+three Armor for every point of Bulk --- at every tier.*
+
+The protection a slot can hold rises with tier; the exchange rate does not.
+A tier 1 suit of heavy plating carries 6 Armor and weighs 2 Bulk; the tier 6
+version carries 21 Armor and weighs 7. Since a point buys tier + 1 Armor and
+a Bulk carries 3, a point of Armor costs (tier + 1) ÷ 3 Bulk --- two-thirds
+of a Bulk at tier 1, rising to two and a third at tier 6. The item tables
+round each piece to the nearest half Bulk.
+
+This is why Stamina keeps mattering. A character who means to wear serious
+plate at the top of the game needs the capacity to carry it, and that demand
+grows faster than the campaign does: a tier 6 character in the heaviest
+layered stack is carrying nine and a half Bulk of armor before they pick up
+a weapon. Charge capacity buys reach into a crowded field --- catalysts,
+wards, enchanted weapons, shield generators --- while Bulk capacity buys the
+right to keep wearing plate.
+
+Three Armor per Bulk is the rate for *standard* materials: ceramic composite,
+sintered plate, ordinary synfiber. Exotic materials convert better, and a
+lighter conversion is among the most valuable upgrades a suit can carry. It
+does not raise the piece's protection, its weight class, or its slot cost
+--- it makes that protection affordable to a character who could not
+otherwise carry it. See _Armor Materials_ below.
+
+Masterwork quality raises an item's effective tier, and with it its rate: a
+Masterwork +1 tier 6 mantle buys at rate 8 rather than 7, and a Masterwork
++2 mantle at rate 9. Conversion is a property of the material, not of the
+tier --- masterwork armor is better, not lighter, unless it is also made of
+something exotic.
+
+Almost every piece of armor spends its budget in a *single* currency.
+Plating is bought with Bulk and provides only Armor. Overgarments are bought
+with Charge and provide only Ward. Close-fit garments come in an armored
+suit and a warded weave, and a character wears one or the other. The
+exceptions --- pieces that provide both at once --- are integrated suits
+designed to be a character's *only* protection, and they pay for that
+versatility in special abilities and price rather than in raw numbers. These
+are almost always Close-fit or Full-body pieces. The single material
+exception is Echo Crystplate, which adds Ward to plating (see _Armor
+Materials_ below).
+
+Named, unique, and legendary armor rarely breaks the *protection* budget ---
+what it breaks is the conversion. Vanth's Sypharion carries 15 Armor, barely
+more than the 14 a standard tier 6 medium full-body suit provides; what
+makes it legendary is that it does so at 1 Bulk instead of four and a half.
+The economy describes what can be bought, not what can exist, and the usual
+form of the exception is a material no artisan alive can reproduce.
+
+==== Weight Class
+
+A piece's *weight class* follows from the points it spends on *Armor* alone.
+Ward is bought with Charge, which is magical encumbrance and does not weigh
+on the body, so heavily warded gear stays light however much Ward it carries
+--- its cost is paid in Charge capacity and in coin, not in mobility.
+
+Because the class is measured in points rather than in Bulk, it does not
+drift as tiers rise: a suit of heavy plating is Heavy at tier 1 and Heavy at
+tier 6, even though the tier 6 version weighs twice as much.
+
+The Evasion modifier does scale with tier, and in both directions. Evasion
+is a small number --- a typical rating runs from 2 or 3 at tier 1 to 8 or 9
+at tier 6 --- so a fixed modifier would mean something quite different at
+each end of the game. A piece of armor therefore shifts Evasion by one step
+of its tier band, in whichever direction its weight class points.
+
+#pftab(
+  "Armor Weight Class",
+  columns: (1.6fr, 1.2fr, 1fr, 1fr, 1fr),
+  align: (center, center, center, center, center),
+  [Points of Armor],
+  [Class],
+  [T1--3],
+  [T4--5],
+  [T6],
+  [1 or fewer],
+  [Light],
+  [+1\*],
+  [+2\*],
+  [+3\*],
+  [2],
+  [Medium],
+  [0],
+  [0],
+  [0],
+  [3],
+  [Heavy],
+  [--1],
+  [--2],
+  [--3],
+  [4],
+  [Heavy],
+  [--2],
+  [--3],
+  [--4],
+)
+
+_\*Permitted, not automatic._ Light armor does not grant an Evasion bonus by
+virtue of being light --- it merely leaves room for one. Close-fit suits and
+weaves, camouflage cloaks, and lightbending mantles carry the *Stealth*
+bonus shown; light plating carries nothing, being merely unobtrusive. An
+enchantment may grant an Evasion bonus to a piece of any weight class, since
+such a bonus comes from the working rather than from the garment.
+
+Penalties are untyped, always apply, and stack, but they cannot drive a
+character's Evasion below zero. A character in the heaviest armor of their
+tier is not harder to hit than a sleeping one.
+
+The penalty is worth more than its size suggests. Evasion is the threshold
+an attacker's successes must meet, and every success *above* that threshold
+feeds the weapon's hit rate --- so lowering it does not merely make a
+character easier to hit, it converts near-misses into hits and hits into
+extra hits. Two points of Evasion is frequently a whole additional strike's
+worth of damage. This is the real price of plate, and it is why the heaviest
+armor in the game is worn by characters who intend never to be missed and to
+survive being hit anyway.
 
 ==== Armor Stats
 
@@ -226,6 +384,46 @@ A character may wear up to one piece of armor in each of three *profile* slots. 
 
 A character may wear one piece of armor in each slot. Full-body armor such as power armor and construct frames occupies both the Close-fit and Plating slots (marked *C+P* in the armor table), meaning nothing can be worn underneath them.
 
+Each slot holds a limited budget, and each slot deals in its own currency:
+
+#pftab(
+  "Profile Slot Budgets",
+  columns: (2.2fr, 1.6fr, 3.2fr),
+  align: (left, center, left),
+  [Profile],
+  [Budget],
+  [Currency],
+  [Close-fit (C)],
+  [1 point],
+  [Armor _or_ Ward],
+  [Plating (P)],
+  [3 points],
+  [Armor only],
+  [Overgarment (O)],
+  [3 points],
+  [Ward only],
+  [Full-body (C+P)],
+  [5 points],
+  [Up to 4 Armor, at most 1 Ward],
+)
+
+Whatever the loadout, *at most four points may be Armor and at most four
+points may be Ward*. A layered character --- close-fit, plating, overgarment
+--- commands seven points in total, since the close-fit slot holds only one.
+At tier 6 that is 28 Armor and 21 Ward for a plated soldier under a warded
+mantle, or 21 Armor and 28 Ward for the same soldier who trades their
+armored underlayer for a warded weave.
+
+Full-body armor is the exception, and the reason power armor exists: because
+it owns two slots outright it carries five points where a close-fit-plus-
+plating stack carries four, and a heavy suit under an overgarment reaches
+*eight* points --- the four-and-four maximum, and the heaviest configuration
+in the game. It is priced accordingly. At tier 6 that means 28 Armor and 28
+Ward, bought with more than ten Bulk, four Charge, a --4 Evasion penalty,
+and a suit that cannot be mixed and matched. Very few characters can carry
+it, and none can without committing to Stamina. Both ceilings sit in
+elite-creature territory for their tier, which is where they belong.
+
 When multiple pieces of armor are worn, their *Armor*, *Ward*, *Bulk*, and *Charge* values are all added together. Evasion modifiers combine differently. Evasion *penalties* always apply and stack. Evasion *bonuses* carry one of two keywords:
 
 - *Stealth:* The bonus comes from a sleek profile, camouflage, or light-bending trickery. A Stealth bonus applies only if its source is worn as the outermost layer, and Stealth bonuses never stack --- a character benefits from at most one Stealth bonus at a time.
@@ -237,6 +435,59 @@ The Evasion bonuses in the base armor tables are Stealth bonuses unless an item'
 
 Protective gear's base characteristics depend on the materials from which they are made, as it is the case for melee weapons,
 and much as a ranged weapon's characteristics depend on the mechanism by which it delivers energy onto the target.
+
+A piece of armor has exactly *one* material. Most materials grant a damage
+resistance; a few instead grant Ward, or convert Bulk into Armor at a better
+rate than standard. Because the slot holds only one, every choice of an
+exotic material is a resistance given up.
+
+===== Conversion
+
+A material's *conversion* is how much Armor it delivers per point of Bulk.
+Standard materials convert at 3. Better conversion does not change a piece's
+Armor, Ward, weight class, Evasion, or the budget it spends --- only what it
+weighs on the wearer.
+
+#pftab(
+  "Material Conversion",
+  columns: (1.4fr, 1.4fr, 1.4fr, 2.4fr),
+  align: (left, center, center, left),
+  [Grade],
+  [Armor per Bulk],
+  [Price],
+  [Availability],
+  [Standard],
+  [3],
+  [Base],
+  [Common at every tier],
+  [Fine],
+  [4],
+  [+50%],
+  [Uncommon; tier 3 and above],
+  [Exquisite],
+  [6],
+  [+100%],
+  [Rare; tier 5 and above],
+  [Peerless],
+  [9 or more],
+  [---],
+  [Unique and legendary items only],
+)
+
+To find a piece's Bulk, divide its Armor by its material's conversion and
+round to the nearest half. A tier 6 suit of heavy plating carries 21 Armor:
+7 Bulk in ceramic composite, 5½ in Latticeplate, 3½ in Synscale.
+
+- *Latticeplate* (plating, full-body): Plate formed around an engineered
+  void lattice --- the same stopping power for two-thirds the mass. Widely
+  coveted and never quite affordable. Conversion 4. _(Uncommon.)_
+- *Synscale* (close-fit, full-body): Thousands of overlapping scales of an
+  ultra-thin composite, layered like fish-mail. A Synscale suit can be worn
+  under clothing and moves like cloth. Conversion 6. _(Rare.)_
+
+Peerless conversions are not manufactured. They are the scales of things
+that should not have had scales, weaves recovered from the dead gods' own
+armories, and materials whose making died with the war.
 
 ===== Close-Fit
 
@@ -293,7 +544,8 @@ assisting the wearer's movement, and to prevent their occupants from overheating
 that integrate with the armor's base layer to run climatized water close to the wearer's body.
 
 The final progression, of course, are the Ironhands' construct frames --- rather than wear a suit of armor, an Ironhands
-has their clockwork core integrated into a new armored frame that then becomes their new body.
+has their clockwork core integrated into a new armored frame that then becomes their new body. Frames are treated
+as a variety of full-body armor and are covered separately below.
 
 Full-body armor uses the same material variants as Plating, but at higher resistance rates due to the greater surface area and thicker construction:
 
@@ -303,6 +555,67 @@ Full-body armor uses the same material variants as Plating, but at higher resist
 - *Ablative:* Thermal resistance (4 × tier for heavy, 3 × tier for medium).
 - *Insulated:* Cold and Electric resistance (2 × tier each for heavy, 1½ × tier each for medium, rounded down).
 - *Crystplate:* Bonus Ward equal to 2 × tier for heavy, 1 × tier for medium. _(Rare.)_
+
+===== Construct Frames
+
+A construct frame --- a *Construct Body*, in the Ironhands' own usage --- is
+the walking chassis into which an Ironhand's magi-mechanic core is fitted.
+Mechanically a frame is full-body armor: it occupies the Close-fit and
+Plating slots together, spends the same five points of budget, and buys
+Armor and Ward at the same rate and conversion as any other suit. Everything
+that follows is the difference between wearing a suit of armor and *being*
+one.
+
+Every Ironhands needs a frame. It is not a loadout choice --- a core without
+a chassis is a box that talks. An Ironhands buys their first frame at
+character creation exactly as other characters buy their armor, and for most
+starting Ironhands this is the single largest purchase they will make.
+
+Frames come in three weight classes rather than two. In addition to the
+medium and heavy builds that mirror ordinary full-body armor, frames are
+made in a *light* class: the slighter, human-scaled chassis worn by
+Ironhands who work among people rather than fight in front of them. A light
+frame spends one point of its budget on Armor and one on Ward, leaves the
+rest unspent, and gets back the mobility and the presence that a walking
+tank does not have.
+
+- *Fitted, not worn.* A frame's Bulk counts against the Ironhand's Bulk
+  capacity like any other armor --- a frame is heavy, and hauling it is what
+  an Ironhand's Stamina is for. Its Charge counts against Potential the same
+  way.
+- *Integrated Weapons.* Weapons and gear mounted to the frame, up to a total
+  Bulk equal to the frame's *Mounts* rating, cost the Ironhands no Bulk at
+  all (their Charge is paid as normal). This is the compensation for being
+  locked into a single suit: an Ironhands carries their armament on
+  hardpoints rather than on their back.
+- *No plating, no close-fit.* The frame is both layers. An Ironhands may
+  still wear an *overgarment* over the chassis --- a mantle or a set of
+  robes drapes over a walking suit of armor as readily as over a person ---
+  but no other armor.
+- *Weight class as normal.* A heavy frame carries the same Evasion penalty
+  as heavy full-body armor of its tier; a light frame may carry a Stealth
+  Evasion bonus. Being born into your armor does not exempt you from its
+  bulk.
+- *Limbs and senses.* A frame determines the Ironhand's appearance, their
+  number and type of limbs, and any senses beyond their innate vision,
+  hearing, and electroception. Frames with additional limbs let the Ironhand
+  wield one further item per extra limb and satisfy two-handed requirements
+  more freely, but grant no additional actions or attacks.
+- *Changing frames is surgery.* Transferring a core into a new chassis
+  requires an engineer to make a Shop check at a difficulty equal to the new
+  frame's tier + 3, with each attempt taking a full day. The Ironhands is
+  inert and helpless for the duration. Frames cannot be swapped in the
+  field, and a frame looted from a ruin is a project, not a pickup.
+- *The frame is the body.* Damage to an Ironhands is damage to their frame;
+  the two are not tracked separately, and a frame is not destroyed
+  independently of its bearer. When an Ironhands reincorporates, their frame
+  reincorporates with them --- it is their body, not their equipment.
+
+Frames use the same material variants and resistance rates as full-body
+armor. Common chassis lines include the *Ironhaven Pattern* line frames
+(medium, T1--T3), the squat and much-copied *Bastion* siege chassis (heavy),
+and the human-scaled *Envoy* and *Steward* frames (light) favored by
+Ironhands in civil service.
 
 ===== Overgarments
 
@@ -320,11 +633,11 @@ base layer.
 
 Some armor provides *resistance* to a specific damage type --- Thermal, Cold, Electric, Chemical, or Rending --- based on its materials or construction. Resistance reduces incoming damage of that type by a flat value, applied after Armor or Ward reduction (whichever is relevant).
 
-The amount of resistance an armor piece grants scales with its tier and weight class:
+The amount of resistance an armor piece grants scales with its tier and weight class (see _Weight Class_ above):
 
-- *Light armor* (Close-fit, Overgarment): resistance equal to *2 × tier*.
-- *Medium armor* (Plating, medium Full-body): resistance equal to *3 × tier*.
-- *Heavy armor* (heavy Full-body): resistance equal to *4 × tier*.
+- *Light armor:* resistance equal to *2 × tier*.
+- *Medium armor:* resistance equal to *3 × tier*.
+- *Heavy armor:* resistance equal to *4 × tier*.
 
 Not every piece of armor has a damage resistance. Resistance is a property of the specific materials used --- a Synfiber suit reinforced with thermostatic weave might resist Thermal damage, while one layered with insulated nanoscales might resist Lightning. The base armor tables show stats without resistance; resistance is noted in the item's description or granted by a treatment or enchantment.
 
@@ -497,9 +810,9 @@ Every piece of equipment in Ashen is built from a combination of a *base item*, 
 
 To construct or evaluate any piece of equipment, follow these steps:
 
-+ *Choose the base type and tier.* Look up the base stats in the Equipment Tables. For weapons, this is the weapon type (dagger, plasma rifle, etc.) at the desired tier. For armor, this is the profile (C, P, O, or C+P) at the desired tier. For catalysts, this is the weight class (Light, Medium, Heavy) at the desired tier. The base type determines the item's fundamental stats.
++ *Choose the base type and tier.* Look up the base stats in the Equipment Tables. For weapons, this is the weapon type (dagger, plasma rifle, etc.) at the desired tier. For armor, this is the profile (C, P, O, or C+P) and weight class at the desired tier --- that is, how much of the slot's budget the piece spends, and in which currency. For catalysts, this is the weight class (Light, Medium, Heavy) at the desired tier. The base type determines the item's fundamental stats.
 
-+ *Choose a material (armor only).* Armor is made from a specific material that may grant damage resistance or other properties. The default material (Synfiber for Close-fit, Ceramic Composite for Plating and Full-body) uses the base stats as-is. Specialized materials may modify the base stats (Cerafiber and Reactive reduce Armor) or add bonuses (Crystplate adds Ward). A piece of armor has exactly one material.
++ *Choose a material (armor only).* Armor is made from a specific material that may grant damage resistance or other properties. The default material (Synfiber for Close-fit, Ceramic Composite for Plating and Full-body) uses the base stats as-is and converts at 3 Armor per Bulk. Specialized materials may modify the base stats (Cerafiber and Reactive reduce Armor), add bonuses (Crystplate adds Ward), or convert at a better rate and so weigh less for the same protection (Latticeplate, Synscale). A piece of armor has exactly one material, so a lighter suit is one that forgoes a resistance.
 
 + *Apply a technology (weapons only).* Weapons may incorporate one technology (Force, Chain, or Power Field) that modifies their base stats. Technologies change fundamental properties like Penetration, damage, weight class, or damage type. A weapon has at most one technology. Catalysts and armor do not use technologies --- catalysts are enhanced through enchantments only, and armor uses the material system instead.
 
@@ -530,19 +843,19 @@ Cost: #feathers 375. \
 Final: 4+D8 damage, *2 Pen*, ½ Bulk, Inc 3. Force, Rending. \
 _An energy-edged blade manufactured by the Lantern foundries. Light enough to pair with a catalyst._
 
-*Nanoplate Midnight Bodysuit* (T2 Close-fit, Nanoplate) \
-Base: T2 Close-fit --- Armor 3, Ward 2, Eva +1, Bulk 1, Charge 0. \
-Material: Nanoplate --- Impact resistance 4 (2 × tier). No cost increase for standard material. \
-Cost: #feathers 600. \
-Final: Armor 3, Ward 2, Eva +1, Bulk 1, Charge 0. *Impact Resistance 4.* \
+*Nanoplate Midnight Bodysuit* (T2 Close-fit Suit, Nanoplate) \
+Base: T2 Close-fit Suit --- 1 point at rate 3 = Armor 3, Eva +1, Charge 0. Light. Standard synfiber converts at 3, so 3 Armor weighs 1 Bulk. \
+Material: Nanoplate --- Impact resistance 4 (2 × tier, Light). No cost increase for standard material. \
+Cost: #feathers 500. \
+Final: Armor 3, Ward 0, Eva +1, Bulk 1, Charge 0. *Impact Resistance 4.* \
 _A stealth operative's suit with impact-dispersing nanoscales woven into the synfiber._
 
-*Cerafiber Flak Vest, Deflecting* (T3 Plating, Cerafiber + Deflecting enchantment) \
-Base: T3 Plating --- Armor 6, Ward 1, Eva -1, Bulk 2½, Charge 0. \
-Material: Cerafiber --- Armor reduced by 2 (½ × tier, rounded up), Rending resistance 9 (3 × tier). +25% base price. \
+*Cerafiber Flak Vest, Deflecting* (T3 Medium Plating, Cerafiber + Deflecting enchantment) \
+Base: T3 Medium Plating --- 2 points at rate 4 = Armor 8, Eva 0. Medium. \
+Material: Cerafiber --- Armor reduced by 2 (½ × tier, rounded up), Rending resistance 9 (3 × tier, Medium). Conversion 3 (standard), so 6 Armor weighs 2. +25% base price. \
 Enchantment: Deflecting --- light cover vs area spells. Enchantment cost ~#feathers 1500. \
-Cost: #feathers 1875 (base) + #feathers 1500 (enchantment) = #feathers 3375. \
-Final: *Armor 4*, Ward 1, Eva -1, Bulk 2½, Charge 0. *Rending Resistance 9.* Deflecting. \
+Cost: #feathers 2500 (base) + #feathers 1500 (enchantment) = #feathers 4000. \
+Final: *Armor 6*, Ward 0, Eva 0, Bulk 2, Charge 0. *Rending Resistance 9.* Deflecting. \
 _A fibrous vest that frays to stop bullets, magically treated to scatter area spells. Built for soldiers expecting both conventional and magical fire._
 
 *Silvered Dragon Guard Longsword, Moontouched* (T2 Medium Sword, Silvered + Moontouched) \
@@ -629,7 +942,7 @@ All melee weapons deal *Rending* damage unless otherwise noted. Blunt weapons de
   [Bulk],
   [Inc],
   [0],
-  [—],
+  [#feathers 100],
   [2+D6],
   [0],
   [½],
@@ -687,7 +1000,7 @@ All melee weapons deal *Rending* damage unless otherwise noted. Blunt weapons de
   [Inc],
   [0],
   [M],
-  [—],
+  [#feathers 125],
   [4+D4],
   [0],
   [1],
@@ -790,7 +1103,7 @@ All melee weapons deal *Rending* damage unless otherwise noted. Blunt weapons de
   [Bulk],
   [Inc],
   [0],
-  [—],
+  [#feathers 250],
   [4+D6],
   [0],
   [2],
@@ -845,7 +1158,7 @@ All melee weapons deal *Rending* damage unless otherwise noted. Blunt weapons de
   [Bulk],
   [Inc],
   [0],
-  [—],
+  [#feathers 250],
   [6+D3],
   [0],
   [2],
@@ -902,7 +1215,7 @@ One-handed blunt weapons (maces, disruption hammers) are Medium weight, 1 hand, 
   [Bulk],
   [Inc],
   [0],
-  [—],
+  [#feathers 175],
   [5+D3],
   [0],
   [2 (M)],
@@ -957,7 +1270,7 @@ One-handed blunt weapons (maces, disruption hammers) are Medium weight, 1 hand, 
   [Bulk],
   [Inc],
   [0],
-  [—],
+  [#feathers 100],
   [2+D4],
   [0],
   [¼],
@@ -1025,14 +1338,14 @@ Form factors:
   [Inc],
   [Pistol],
   [0],
-  [—],
+  [#feathers 100],
   [1+D4],
   [0],
   [½],
   [2],
   [Rifle],
   [0],
-  [—],
+  [#feathers 175],
   [3+D3],
   [0],
   [1],
@@ -1779,12 +2092,30 @@ Form factors:
   [18],
 )
 
-The following tables show base armor stats organized by profile (see _Armor Layering_ above). A character may wear one piece in each of the C, P, and O slots. Full-body armor (C+P) occupies both the close-fit and plating slots and comes in medium and heavy variants.
+The following tables show base armor stats organized by profile (see _Armor
+Layering_ above). A character may wear one piece in each of the C, P, and O
+slots. Full-body armor (C+P) occupies both the close-fit and plating slots.
+Every entry is simply its slot budget multiplied by the tier rate: the
+tables are a convenience, not a separate set of rules.
+
+The tier 5 and 6 rows describe armor that must be masterwork, since generic
+items stop at tier 4 (see _Masterwork Items_ above). The numbers work out
+the same either way --- a tier 4 piece with Masterwork +1 buys at rate 6,
+which is the tier 5 row, and Masterwork +2 buys at rate 7, which is the
+tier 6 row.
+
+Close-fit garments spend their single point in one currency or the other.
+An armored *suit* spends it on Bulk and provides Armor; a warded *weave*
+spends it on Charge and provides Ward. Both are Light, and both grant a
+Stealth Evasion bonus while worn as the outermost layer.
 
 #pftab(
   "Base Armor — Close-fit (C)",
-  columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  columns: (0.7fr, 1.1fr, 1.4fr, 1fr, 1fr, 0.8fr, 0.8fr, 1fr),
+  breakable: true,
+  align: (center, left, center, center, center, center, center, center),
   [Tier],
+  [Type],
   [Price],
   [Armor],
   [Ward],
@@ -1792,156 +2123,395 @@ The following tables show base armor stats organized by profile (see _Armor Laye
   [Bulk],
   [Charge],
   [1],
+  [Suit],
   [#feathers 250],
   [2],
+  [0],
+  [+1],
+  [½],
+  [0],
+  [1],
+  [Weave],
+  [#feathers 300],
+  [0],
   [2],
+  [+1],
+  [0],
+  [1],
+  [2],
+  [Suit],
+  [#feathers 500],
+  [3],
+  [0],
   [+1],
   [1],
   [0],
   [2],
+  [Weave],
   [#feathers 600],
-  [3],
-  [2],
-  [+1],
-  [1],
   [0],
   [3],
-  [#feathers 2000],
-  [4],
-  [3],
   [+1],
+  [0],
   [1],
+  [3],
+  [Suit],
+  [#feathers 1000],
+  [4],
+  [0],
+  [+1],
+  [1½],
+  [0],
+  [3],
+  [Weave],
+  [#feathers 1250],
+  [0],
+  [4],
+  [+1],
+  [0],
   [1],
   [4],
-  [#feathers 5000],
+  [Suit],
+  [#feathers 2000],
   [5],
+  [0],
+  [+2],
+  [1½],
+  [0],
   [4],
-  [+2],
-  [1],
-  [1],
-  [5],
-  [#feathers 10000],
-  [7],
+  [Weave],
+  [#feathers 2500],
+  [0],
   [5],
   [+2],
+  [0],
   [1],
-  [2],
+  [5],
+  [Suit],
+  [#feathers 4000],
   [6],
-  [#feathers 14000],
-  [9],
+  [0],
+  [+2],
+  [2],
+  [0],
+  [5],
+  [Weave],
+  [#feathers 5000],
+  [0],
+  [6],
+  [+2],
+  [0],
+  [1],
+  [6],
+  [Suit],
+  [#feathers 6000],
+  [7],
+  [0],
+  [+3],
+  [2½],
+  [0],
+  [6],
+  [Weave],
+  [#feathers 7500],
+  [0],
   [7],
   [+3],
+  [0],
   [1],
-  [2],
 )
+
+Plating is bought entirely with Bulk and provides only Armor (Echo
+Crystplate excepted). Light plating is a thin vest that can be worn under a
+close-fit suit without compromising it; medium plating is a flak vest;
+heavy plating adds limb protection and a helmet, one step short of a
+full-body suit. Plating has Charge 0.
 
 #pftab(
   "Base Armor — Plating (P)",
-  columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  columns: (0.7fr, 1.2fr, 1.4fr, 1fr, 0.8fr, 0.8fr),
+  breakable: true,
+  align: (center, left, center, center, center, center),
   [Tier],
+  [Class],
   [Price],
   [Armor],
-  [Ward],
   [Eva],
   [Bulk],
-  [Charge],
+  [1],
+  [Light],
+  [#feathers 250],
   [2],
+  [0],
+  [½],
+  [1],
+  [Medium],
   [#feathers 500],
-  [5],
-  [1],
-  [-2],
-  [2],
+  [4],
   [0],
+  [1½],
+  [1],
+  [Heavy],
+  [#feathers 750],
+  [6],
+  [--1],
+  [2],
+  [2],
+  [Light],
+  [#feathers 500],
   [3],
+  [0],
+  [1],
+  [2],
+  [Medium],
+  [#feathers 1000],
+  [6],
+  [0],
+  [2],
+  [2],
+  [Heavy],
   [#feathers 1500],
-  [6],
-  [1],
-  [-1],
-  [2½],
-  [0],
+  [9],
+  [--1],
+  [3],
+  [3],
+  [Light],
+  [#feathers 1000],
   [4],
-  [#feathers 4500],
+  [0],
+  [1½],
+  [3],
+  [Medium],
+  [#feathers 2000],
   [8],
-  [2],
-  [-1],
-  [3],
   [0],
-  [5],
-  [#feathers 9000],
-  [10],
-  [2],
-  [-1],
-  [3½],
-  [1],
-  [6],
-  [#feathers 12000],
-  [13],
+  [2½],
   [3],
+  [Heavy],
+  [#feathers 3000],
+  [12],
+  [--1],
+  [4],
+  [4],
+  [Light],
+  [#feathers 2000],
+  [5],
+  [0],
+  [1½],
+  [4],
+  [Medium],
+  [#feathers 4000],
+  [10],
+  [0],
+  [3½],
+  [4],
+  [Heavy],
+  [#feathers 6000],
+  [15],
+  [--2],
+  [5],
+  [5],
+  [Light],
+  [#feathers 4000],
+  [6],
+  [0],
+  [2],
+  [5],
+  [Medium],
+  [#feathers 8000],
+  [12],
   [0],
   [4],
-  [1],
+  [5],
+  [Heavy],
+  [#feathers 12000],
+  [18],
+  [--2],
+  [6],
+  [6],
+  [Light],
+  [#feathers 6000],
+  [7],
+  [0],
+  [2½],
+  [6],
+  [Medium],
+  [#feathers 12000],
+  [14],
+  [0],
+  [4½],
+  [6],
+  [Heavy],
+  [#feathers 18000],
+  [21],
+  [--3],
+  [7],
 )
+
+Overgarments are bought entirely with Charge and provide only Ward. All are
+Light regardless of how much Ward they carry --- a heavy mantle is heavy in
+resonance, not in weight --- and none grants an Evasion bonus by default;
+camouflage cloaks, lightbending mantles, and similar workings do, as noted
+in their descriptions. Overgarments have Armor 0.
 
 #pftab(
   "Base Armor — Overgarment (O)",
-  columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  columns: (0.7fr, 1.2fr, 1.4fr, 1fr, 0.8fr, 0.8fr, 1fr),
+  breakable: true,
+  align: (center, left, center, center, center, center, center),
   [Tier],
+  [Class],
   [Price],
-  [Armor],
   [Ward],
   [Eva],
   [Bulk],
   [Charge],
   [1],
+  [Light],
   [#feathers 300],
-  [1],
   [2],
   [0],
+  [½],
   [1],
-  [2],
-  [2],
-  [#feathers 1000],
   [1],
-  [3],
+  [Medium],
+  [#feathers 600],
+  [4],
+  [0],
+  [½],
+  [2],
+  [1],
+  [Heavy],
+  [#feathers 900],
+  [6],
   [0],
   [1],
-  [2],
   [3],
+  [2],
+  [Light],
+  [#feathers 600],
+  [3],
+  [0],
+  [½],
+  [1],
+  [2],
+  [Medium],
+  [#feathers 1250],
+  [6],
+  [0],
+  [½],
+  [2],
+  [2],
+  [Heavy],
+  [#feathers 1900],
+  [9],
+  [0],
+  [1],
+  [3],
+  [3],
+  [Light],
+  [#feathers 1250],
+  [4],
+  [0],
+  [½],
+  [1],
+  [3],
+  [Medium],
   [#feathers 2500],
-  [2],
-  [5],
-  [0],
-  [1],
-  [3],
-  [4],
-  [#feathers 5000],
-  [2],
-  [6],
-  [0],
-  [1],
-  [3],
-  [5],
-  [#feathers 10000],
-  [3],
   [8],
-  [+1],
-  [1],
-  [4],
-  [6],
-  [#feathers 16000],
+  [0],
+  [½],
+  [2],
   [3],
-  [10],
-  [+1],
+  [Heavy],
+  [#feathers 3800],
+  [12],
+  [0],
+  [1],
+  [3],
+  [4],
+  [Light],
+  [#feathers 2500],
+  [5],
+  [0],
+  [½],
   [1],
   [4],
+  [Medium],
+  [#feathers 5000],
+  [10],
+  [0],
+  [½],
+  [2],
+  [4],
+  [Heavy],
+  [#feathers 7500],
+  [15],
+  [0],
+  [1],
+  [3],
+  [5],
+  [Light],
+  [#feathers 5000],
+  [6],
+  [0],
+  [½],
+  [1],
+  [5],
+  [Medium],
+  [#feathers 10000],
+  [12],
+  [0],
+  [½],
+  [2],
+  [5],
+  [Heavy],
+  [#feathers 15000],
+  [18],
+  [0],
+  [1],
+  [3],
+  [6],
+  [Light],
+  [#feathers 7500],
+  [7],
+  [0],
+  [½],
+  [1],
+  [6],
+  [Medium],
+  [#feathers 15000],
+  [14],
+  [0],
+  [½],
+  [2],
+  [6],
+  [Heavy],
+  [#feathers 22500],
+  [21],
+  [0],
+  [1],
+  [3],
 )
+
+Full-body armor is the one common profile that buys in both currencies: it
+occupies the Close-fit and Plating slots together, and its integrated
+underlayer carries one point of the budget as Ward. Medium suits spend 2
+points of Armor and 1 of Ward; heavy suits spend 4 and 1, which is a full
+point of Armor more than any layered stack can reach --- and, at tier 6,
+nine and a half Bulk to carry. A full-body suit is sealed --- with the helmet
+closed and a rebreather fitted it can be worn into contaminated air --- and
+a medium suit reaches its protection for less Bulk than the equivalent
+close-fit-plus-plating stack. The price is a fixed form that cannot be
+mixed, a standing demand on Charge, and, for heavy suits, a steep Evasion
+penalty and a great deal of weight.
 
 #pftab(
   "Base Armor — Full-body (C+P)",
-  columns: (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+  columns: (0.7fr, 1.2fr, 1.4fr, 1fr, 1fr, 0.8fr, 0.8fr, 1fr),
   breakable: true,
+  align: (center, left, center, center, center, center, center, center),
   [Tier],
-  [Wt],
+  [Class],
   [Price],
   [Armor],
   [Ward],
@@ -1949,93 +2519,287 @@ The following tables show base armor stats organized by profile (see _Armor Laye
   [Bulk],
   [Charge],
   [1],
-  [H],
-  [#feathers 500],
-  [6],
-  [2],
-  [-2],
+  [Medium],
+  [#feathers 750],
   [4],
-  [1],
   [2],
-  [M],
+  [0],
+  [1½],
+  [1],
+  [1],
+  [Heavy],
   [#feathers 1200],
-  [7],
-  [3],
-  [0],
-  [3],
+  [8],
+  [2],
+  [--2],
+  [2½],
   [1],
   [2],
-  [H],
-  [#feathers 1500],
-  [10],
+  [Medium],
+  [#feathers 1450],
+  [6],
   [3],
-  [-2],
-  [5],
+  [0],
+  [2],
+  [1],
+  [2],
+  [Heavy],
+  [#feathers 2350],
+  [12],
+  [3],
+  [--2],
+  [4],
   [1],
   [3],
-  [M],
-  [#feathers 3000],
-  [9],
+  [Medium],
+  [#feathers 2900],
+  [8],
   [4],
   [0],
+  [2½],
+  [1],
   [3],
-  [2],
-  [3],
-  [H],
-  [#feathers 3500],
-  [12],
-  [4],
-  [-3],
-  [5],
-  [2],
-  [4],
-  [M],
-  [#feathers 6500],
-  [12],
-  [5],
-  [0],
-  [3½],
-  [2],
-  [4],
-  [H],
-  [#feathers 8000],
+  [Heavy],
+  [#feathers 4700],
   [16],
-  [6],
-  [-3],
+  [4],
+  [--2],
+  [5½],
+  [1],
+  [4],
+  [Medium],
+  [#feathers 5850],
+  [10],
   [5],
-  [2],
-  [5],
-  [M],
-  [#feathers 12000],
-  [15],
-  [7],
   [0],
   [3½],
-  [3],
+  [1],
+  [4],
+  [Heavy],
+  [#feathers 9450],
+  [20],
   [5],
-  [H],
-  [#feathers 15000],
-  [20],
-  [7],
-  [-3],
+  [--3],
+  [6½],
+  [1],
+  [5],
+  [Medium],
+  [#feathers 11700],
+  [12],
   [6],
-  [3],
-  [6],
-  [M],
-  [#feathers 20000],
-  [20],
-  [9],
   [0],
   [4],
-  [3],
+  [1],
+  [5],
+  [Heavy],
+  [#feathers 18900],
+  [24],
   [6],
-  [H],
-  [#feathers 25000],
-  [26],
-  [9],
-  [-3],
+  [--3],
+  [8],
+  [1],
+  [6],
+  [Medium],
+  [#feathers 17500],
+  [14],
+  [7],
+  [0],
+  [4½],
+  [1],
+  [6],
+  [Heavy],
+  [#feathers 28350],
+  [28],
+  [7],
+  [--4],
+  [9½],
+  [1],
+)
+
+Construct frames buy from the full-body budget and, in the medium and heavy
+classes, are statistically identical to full-body suits of the same tier ---
+the difference is in how they are worn, not in what they provide. The light
+class is unique to frames. *Mounts* is the total Bulk of weapons and gear
+the frame can carry on its hardpoints at no cost to its bearer. Mounts are a
+function of the chassis rather than of what it is made from: the figure is
+the frame's Bulk at standard conversion (its Armor divided by three), so a
+frame built from a lighter-converting alloy weighs less without losing
+hardpoints.
+
+#pftab(
+  "Base Armor — Construct Frames (C+P)",
+  columns: (0.7fr, 1.2fr, 1.4fr, 1fr, 1fr, 0.8fr, 0.8fr, 1fr),
+  breakable: true,
+  align: (
+    center,
+    left,
+    center,
+    center,
+    center,
+    center,
+    center,
+    center,
+  ),
+  [Tier],
+  [Class],
+  [Price],
+  [Armor],
+  [Ward],
+  [Eva],
+  [Bulk],
+  [Charge],
+  [0],
+  [Heavy],
+  [#feathers 600],
+  [6],
+  [1],
+  [--2],
+  [3],
+  [1],
+  [1],
+  [Light],
+  [#feathers 500],
+  [2],
+  [2],
+  [+1],
+  [1],
+  [1],
+  [1],
+  [Medium],
+  [#feathers 750],
+  [4],
+  [2],
+  [0],
+  [2],
+  [1],
+  [1],
+  [Heavy],
+  [#feathers 1200],
+  [8],
+  [2],
+  [--2],
+  [4],
+  [1],
+  [2],
+  [Light],
+  [#feathers 1000],
+  [3],
+  [3],
+  [+1],
+  [1],
+  [1],
+  [2],
+  [Medium],
+  [#feathers 1450],
   [6],
   [3],
+  [0],
+  [2],
+  [1],
+  [2],
+  [Heavy],
+  [#feathers 2350],
+  [12],
+  [3],
+  [--2],
+  [4],
+  [1],
+  [3],
+  [Light],
+  [#feathers 2000],
+  [4],
+  [4],
+  [+1],
+  [1½],
+  [1],
+  [3],
+  [Medium],
+  [#feathers 2900],
+  [8],
+  [4],
+  [0],
+  [2½],
+  [1],
+  [3],
+  [Heavy],
+  [#feathers 4700],
+  [16],
+  [4],
+  [--2],
+  [5½],
+  [1],
+  [4],
+  [Light],
+  [#feathers 4000],
+  [5],
+  [5],
+  [+2],
+  [1½],
+  [1],
+  [4],
+  [Medium],
+  [#feathers 5850],
+  [10],
+  [5],
+  [0],
+  [3½],
+  [1],
+  [4],
+  [Heavy],
+  [#feathers 9450],
+  [20],
+  [5],
+  [--3],
+  [6½],
+  [1],
+  [5],
+  [Light],
+  [#feathers 8000],
+  [6],
+  [6],
+  [+2],
+  [2],
+  [1],
+  [5],
+  [Medium],
+  [#feathers 11700],
+  [12],
+  [6],
+  [0],
+  [4],
+  [1],
+  [5],
+  [Heavy],
+  [#feathers 18900],
+  [24],
+  [6],
+  [--3],
+  [8],
+  [1],
+  [6],
+  [Light],
+  [#feathers 12000],
+  [7],
+  [7],
+  [+3],
+  [2½],
+  [1],
+  [6],
+  [Medium],
+  [#feathers 17500],
+  [14],
+  [7],
+  [0],
+  [4½],
+  [1],
+  [6],
+  [Heavy],
+  [#feathers 28350],
+  [28],
+  [7],
+  [--4],
+  [9½],
+  [1],
 )
 
 Named armor with special traits or unique properties is described in the _Item Descriptions_ section.
@@ -2080,6 +2844,16 @@ provide no benefit when unpowered (if total Charge exceeds the character's
 capacity, the generator is dead weight).
 
 ==== Shield Stats
+
+Shields use the same protection economy as armor, but buy at *half rate*: a
+shield gets ½ × (tier + 1) Armor per point of Bulk, and a generator the same
+Ward per point of Charge, rounded up. What they give up in raw protection
+they get back in utility --- Parry dice, Brace, and the simple fact that a
+shield can be interposed against whichever attack matters most. Shields do
+not occupy a profile slot and do not count against the layering ceiling, and
+their Bulk is set by their own construction rather than by the Bulk-per-point
+costs that apply to worn armor --- a shield is carried in the hand, and the
+hand is the real price.
 
 - *Armor* (physical) or *Ward* (generator): The defensive value provided.
 - *Parry +Nd:* Bonus dice on defensive maneuver checks (small shields and
@@ -2142,13 +2916,13 @@ capacity, the generator is dead weight).
   [2],
   [Parry +1d],
   [¼],
-  [1],
+  [2],
   [0],
   [Arm-Strapped],
   [Dragon Guard Tower Shield],
   [2],
-  [#feathers 800],
-  [3],
+  [#feathers 1000],
+  [4],
   [0],
   [Brace],
   [3],
@@ -2169,7 +2943,7 @@ capacity, the generator is dead weight).
   [3],
   [#feathers 2000],
   [0],
-  [5],
+  [4],
   [Parry +3d],
   [½],
   [2],
@@ -3231,22 +4005,22 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
 
 #item-description(
   "Coldlight Robes",
-  "Masterwork Light Armor",
+  "Masterwork Overgarment (O)",
   6,
   keywords: "Robe, Ice, Light",
   flavor: "The priests of Iyalan specialized in spinning the silver light of the moon into magical threads, cold to the touch as silver, yet sheer as silk.",
   price: "25000",
-  armor: "4",
-  ward: "14",
+  armor: "0",
+  ward: "18",
   evasion: "+2",
   bulk: "1",
-  charge: "4",
+  charge: "3",
 )[
   *Moonsilver:* These robes grant the wearer a +3 bonus to casting Ice and Moonlight spells.
 
   *Aura of Cold:* In battle, these robes generate a vortex of cold air. The vortex is an Aura 1; any creature that enters or starts its turn in the aura takes 20 Cold damage. Suppressing or reactivating this aura is a free action, but can only be done once per round.
 
-  *Sheer Reflection:* In moonlight, the robes become suffused with magical power. Their Ward and Evasion bonuses increase to 18 and +5 respectively; additionally, the casting bonuses increase to +5 each.
+  *Sheer Reflection:* In moonlight, the robes become suffused with magical power. Their Ward and Evasion bonuses increase to 24 and +5 respectively; additionally, the casting bonuses increase to +5 each.
 ]
 
 #item-description(
@@ -3264,9 +4038,9 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
 )[
   This suit is a +2 Lightbender Deflecting Synscale combat suit.
 
-  *Masterwork Synscale:* The overlapping plates of ultra-thin material provide excellent protection and hide the wearer's physical and magical emissions. The wearer gains a +4d bonus to subterfuge checks to avoid detection by any senses, including lifesense and magicsense, other than smell.
+  *Masterwork Synscale:* The overlapping plates of ultra-thin material provide excellent protection and hide the wearer's physical and magical emissions. Worked to this standard the scales reach conversion 9, half again what ordinary Synscale manages, which is why a suit carrying 18 Armor weighs 2 Bulk. The wearer gains a +4d bonus to subterfuge checks to avoid detection by any senses, including lifesense and magicsense, other than smell.
 
-  *Light Bender:* This suit bends the light around it. When fighting in bright light, its Evasion bonus increases by 1.
+  *Light Bender:* This suit bends the light around it. Its Evasion bonus is granted by this working rather than by the suit's weight class, and increases by a further 1 when fighting in bright light.
 
   *Deflecting:* The synscales are magically treated. When the wearer is targeted by an area-effect spell or magical ability, the suit grants the wearer light cover against that effect.
 
@@ -3285,11 +4059,76 @@ _\*Prima Materia and its derivatives are extraordinarily rare and cannot ordinar
   bulk: "1",
   charge: "3",
 )[
-  *Shadowscale:* The scales attenuate the presence of the wearer. The wearer gains a +5d bonus to subterfuge checks made to avoid detection by any senses, including supernatural ones. Its Evasion bonus increases to +5 in low light or darkness.
+  *Shadowscale:* A peerless material --- conversion 15, where the finest manufactured Synscale reaches 6. The Sypharion carries the protection of a standard tier 6 medium full-body suit at less than a quarter of its weight, and that, rather than the raw numbers, is what no artisan alive can reproduce. The scales also attenuate the presence of the wearer: the wearer gains a +5d bonus to subterfuge checks made to avoid detection by any senses, including supernatural ones, and the armor's Evasion bonus increases to +5 in low light or darkness.
 
   *Keratin Point:* The scales are artfully arranged to present very few flat surfaces, deflecting a great proportion of incoming thrusts. The wearer gains cover against attacks dealing piercing damage.
 
   *Slough Off:* _(Legendary.)_ When damaged, the armor can expel a thin layer of skin, like the moult of a snake. Once per round, when hit by an attack, a wearer possessing the Fey Jaunt ability can use it to escape the attack, leaving behind a husk of sloughed-off skin. The attack affects the husk instead.
+]
+
+#item-description(
+  "Deepwalker Pattern",
+  "Construct Frame (C+P)",
+  3,
+  keywords: "Medium, Sealed, Survey",
+  flavor: "A hunched, four-armed survey chassis with a lamp-cluster where a face should be. The Deepwalker was built to go where nothing that breathes can follow, and to come back with a map.",
+  price: "4200",
+  armor: "8",
+  ward: "4",
+  evasion: "0",
+  bulk: "2½",
+  charge: "2",
+)[
+  Mounts 2½.
+
+  *Survey Suite:* The lamp cluster houses ranging optics and a resonance
+  emitter. The wearer has blindsense out to 10 squares and can see
+  perfectly in darkness of any kind, magical or otherwise.
+
+  *Auxiliary Manipulators:* Two fine-work arms are mounted below the primary
+  pair. The wearer may wield two further items, and never needs a free hand
+  to use a tool or kit they have already mounted. The auxiliaries grant no
+  additional actions or attacks.
+
+  *Anchor Feet:* Electromagnetic soles. As a free action the wearer can
+  anchor to any metallic or stone surface: they gain +4d against forced
+  movement and cannot be knocked prone, but their Movement Speed is 0 until
+  they release.
+]
+
+#item-description(
+  "Bulwark of the Third Legion",
+  "Legendary Construct Frame (C+P)",
+  6,
+  keywords: "Heavy, Sealed, Command",
+  flavor: "One of the seventy siege chassis Third cast for her own guard, and one of perhaps four still walking. The Legion did not surrender; the Bulwarks simply stopped receiving orders, and stood where they were until someone came.",
+  price: "32000",
+  armor: "28",
+  ward: "7",
+  evasion: "--1",
+  bulk: "3½",
+  charge: "3",
+)[
+  Mounts 9½.
+
+  *Legionary Adamant:* The plate came out of Third's own foundries and
+  cannot be reproduced --- conversion 8, against the 3 of standard
+  manufacture. The Bulwark carries the protection of a full tier 6 siege
+  chassis at a little over a third of its weight, and it does so without
+  giving up a single hardpoint.
+
+  *Servo Cascade:* The frame's actuators anticipate their bearer. Its
+  Evasion penalty is --1 rather than the --4 of its weight class; this is a
+  property of the working, not of the frame's construction, and the Bulwark
+  is a heavy frame for every other purpose.
+
+  *Hold the Line:* While the wearer has not moved since the end of their
+  last turn, allies adjacent to them benefit from light cover.
+
+  *Unbroken:* _(Legendary.)_ Once per act, when the wearer would be reduced
+  to 0 HP, they instead remain standing at 1 HP until the end of their next
+  turn. During that time they cannot be moved against their will by any
+  effect, and no attack against them can score a critical hit.
 ]
 
 #item-description(

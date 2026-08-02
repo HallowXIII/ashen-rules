@@ -1713,9 +1713,9 @@ reasons to visit settlements.
 
 @wealth-benchmarks shows the approximate cumulative wealth a character
 should have earned (from all sources, including their starting #feathers
-500) by the time they are solidly established at each tier. These values
+1500) by the time they are solidly established at each tier. These values
 assume the party can afford a full tier-appropriate kit --- one weapon, one
-set of armor, and one catalyst or reliquary if relevant.
+set of armor or construct frame, and one catalyst or reliquary if relevant.
 
 #floating-table(
   "Cumulative Wealth Benchmarks",
@@ -1738,11 +1738,11 @@ set of armor, and one catalyst or reliquary if relevant.
   [24000--37000],
   [Quest],
   [Cumulative Earned],
-  [500--1000],
-  [2500--4500],
-  [7000--14000],
-  [22000--36000],
-  [46000--73000],
+  [1500--2000],
+  [3500--5500],
+  [8000--15000],
+  [23000--37000],
+  [47000--74000],
   [---],
 ) <wealth-benchmarks>
 
@@ -2059,106 +2059,134 @@ Ranged weapons follow the same damage table as melee for their weight class, wit
 
 === Armor Scaling by Tier
 
+Armor is not designed by picking numbers off a table --- it is bought. A
+piece of armor spends *points* to buy Armor and Ward at a rate equal to its
+tier plus one, and its weight class, Evasion modifier, and price all follow
+from that spend. A point of Ward always costs 1 Charge. Armor of standard
+materials always converts at *3 Armor per point of Bulk* --- so a piece's
+Bulk is simply its Armor divided by 3, rounded to the nearest half, and
+high-tier armor is better *and* proportionally heavier. Stamina therefore
+keeps paying off for a character who means to wear plate. The full rules are
+in the _Armor_ section of the Equipment chapter; what follows is the
+designer's summary.
+
+*Conversion is the upgrade axis.* Exotic materials deliver more Armor per
+Bulk --- 4 for Fine, 6 for Exquisite, 9 or more for the peerless materials
+of unique items. A better conversion never changes a piece's protection,
+weight class, Evasion, or slot cost; it changes only who can afford to carry
+it. This is the cleanest lever for making a piece of armor feel like a
+reward without inflating the defensive numbers, and it is what most named
+and legendary armor is actually doing.
+
 #float([#floating-table(
-  "Armor Scaling",
-  columns: 10,
-  align: (
-    left,
-    center,
-    center,
-    center,
-    center,
-    center,
-    center,
-    center,
-    center,
-    center,
-  ),
+  "Armor Design Budgets",
+  columns: 8,
+  align: (left, center, center, center, center, center, center, center),
   stroke: 0.5pt,
 
   [*Tier*],
-  [*Light Armor*],
-  [*Light Ward*],
-  [*Light Bulk*],
-  [*Med Armor*],
-  [*Med Ward*],
-  [*Med Bulk*],
-  [*Heavy Armor*],
-  [*Heavy Ward*],
-  [*Heavy Bulk*],
-  [0],
-  [2],
-  [2],
+  [*Rate*],
+  [*C*],
+  [*P*],
+  [*O*],
+  [*C+P*],
+  [*Baseline*],
+  [*Ceiling*],
   [1],
-  [3],
   [2],
   [2],
   [6],
-  [4],
-  [3],
-  [1],
-  [3],
-  [3],
-  [1],
-  [5],
-  [4],
-  [2],
-  [8],
   [6],
-  [4],
-  [2],
-  [5],
-  [4],
-  [1],
-  [8],
-  [5],
-  [3],
-  [11],
-  [8],
-  [4],
-  [3],
-  [8],
-  [5],
-  [2],
   [10],
-  [7],
+  [5 / 4],
+  [8 / 8],
+  [2],
   [3],
-  [15],
-  [10],
-  [5],
-  [4],
-  [12],
+  [3],
   [9],
-  [2],
-  [19],
-  [12],
-  [3],
-  [25],
-  [20],
-  [5],
-  [5],
-  [11],
-  [8],
-  [2],
+  [9],
   [15],
-  [10],
+  [8 / 5],
+  [12 / 12],
+  [3],
   [4],
-  [24],
-  [16],
-  [6],
-  [6],
-  [14],
-  [11],
-  [2],
-  [19],
-  [13],
   [4],
-  [30],
+  [12],
+  [12],
   [20],
+  [10 / 8],
+  [16 / 16],
+  [4],
+  [5],
+  [5],
+  [15],
+  [15],
+  [25],
+  [13 / 10],
+  [20 / 20],
+  [5],
+  [6],
+  [6],
+  [18],
+  [18],
+  [30],
+  [17 / 13],
+  [24 / 24],
+  [6],
   [7],
+  [7],
+  [21],
+  [21],
+  [35],
+  [22 / 17],
+  [28 / 28],
 ) <armor-scaling>])
 
-@armor-scaling gives the average values stats for armor by weight class and tier. Modifiers follow the armor's weight class: light armor grants +1 to +2 Evasion, medium armor grants 0 to +1, and heavy armor imposes --1 to --4. Higher-tier armor within a weight class may improve evasion slightly compared to lower-tier examples.
+@armor-scaling reads as follows. *Rate* is the Armor bought per point of
+Bulk, and equally the Ward bought per point of Charge. The *C*, *P*, *O* and
+*C+P* columns give the maximum protection a piece in that profile slot can
+carry: 1 point of budget for close-fit, 3 for plating, 3 for an overgarment,
+5 for a full-body suit. *Baseline* is the Armor / Ward of a character in
+standard medium gear --- the same figures as the Creature Stat Guidelines
+above.
+
+*Ceiling* is the four-points-of-Armor, four-points-of-Ward maximum, and it
+should land in elite-creature territory rather than above it. Only a heavy
+full-body suit under an overgarment reaches both halves at once, at eight
+points of encumbrance and --4 Evasion; a layered close-fit-plus-plating
+character commands seven points and must choose which half to max. Do not
+write a piece that lets a layered loadout reach the ceiling in both --- that
+privilege is what the full-body profile is for.
+
+The economy constrains what a new piece may carry, not what it may do. Spend
+part of a piece's budget on special abilities rather than raw protection and
+it comes out under these numbers --- that is the normal shape of a named or
+masterwork item. Named, unique, and legendary armor may exceed the budgets
+outright.
+
+Two rules of thumb when writing new armor:
+
+- *One currency per piece.* Plating gives Armor, overgarments give Ward,
+  close-fit garments give one or the other. Pieces that give both are
+  integrated suits meant to be worn as a character's only protection, and
+  they earn that with stealth bonuses or special abilities. Echo Crystplate
+  is the sole material exception.
+- *Weight class follows points of Armor, not total protection and not Bulk.*
+  One point or fewer is Light, 2 is Medium, 3 and 4 are Heavy. Measuring in
+  points rather than Bulk keeps the class stable across tiers. A heavily
+  warded mantle costs Charge and coin, not mobility.
+- *The Evasion modifier is banded, not fixed.* One step per band ---
+  #box[+1 / +2 / +3] for Light at T1--3 / T4--5 / T6, the same figures
+  negated for 3-point Heavy, and one further step for 4-point Heavy. Evasion
+  runs from about 2 at tier 1 to about 9 at tier 6, so a flat modifier would
+  be crippling at the bottom of the game and a rounding error at the top.
+  Remember that a point of Evasion is worth more than it looks: successes
+  above a target's Evasion feed the attacker's hit rate, so a penalty buys
+  the attacker extra hits, not just a better chance of landing the first.
+
+Masterwork quality raises effective tier and therefore rate: this is the
+only way armor exceeds the tier-4 generic ceiling, and it is why there is no
+separate masterwork bonus to Armor or Ward.
 
 === Charge (Magical Encumbrance)
 
@@ -2192,27 +2220,27 @@ Approximate price ranges in feathers (#feathers):
   [10--50],
   [1],
   [100--500],
-  [100--500],
+  [250--950],
   [200--600],
   [50--250],
   [2],
   [500--1500],
-  [500--1500],
+  [500--1900],
   [600--1500],
   [150--500],
   [3],
   [1500--3500],
-  [1500--3000],
+  [1000--3800],
   [1500--3000],
   [300--1000],
   [4],
   [5000--8000],
-  [5000--6500],
+  [2000--9500],
   [3000--6000],
   [500--2000],
   [5],
   [8000--15000],
-  [8000--12000],
+  [4000--19000],
   [6000--10000],
   [1000--5000],
   [6],

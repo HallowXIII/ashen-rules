@@ -54,7 +54,7 @@ fully-fledged Ashen character:
 The first step is to pick your character’s race. Your race determines your
 starting racial traits --- innate powers and abilities that define how your
 character interacts with the world. Some races are better suited to certain
-roles than others: Ironhand Clockworks make natural heavy fighters, Porcelains
+roles than others: Ironhands Clockworks make natural heavy fighters, Porcelains
 are gifted arcanists, Echoes are mobile and elusive, Soot-Beasts are
 resilient brawlers and commanders, and Humans have a unique relationship with
 magic and the divine. Read the _Races_ chapter for full descriptions of each
@@ -142,24 +142,32 @@ intermission, when higher-tier advances and new powers become available.
 
 === 5. Buy Equipment
 
-Each character begins the game with *#feathers 500* to spend on starting
+Each character begins the game with *#feathers 1500* to spend on starting
 equipment. At minimum, you will need:
 
 - A *weapon* appropriate to your fighting style (melee, ranged, or both).
 - *Armor* suitable to your build (light for mobile characters and casters,
   medium for a balance of protection and mobility, heavy for frontline
-  fighters).
+  fighters). *Ironhands* buy a *construct frame* instead --- see _Construct
+  Frames_ in the Equipment chapter. A frame is not optional, and it is
+  usually an Ironhand's largest single purchase.
 - A *catalyst* (if you cast arcane or psychic powers) or a *reliquary*
   (if you cast divine prayers). Without the appropriate implement, you
   cannot cast.
 - Basic *gear*: a pack, rope, a light source, and any tools relevant to
   your skills (a healer’s kit, a climbing kit, an alchemy kit, etc.).
 
-Consult the _Equipment Tables_ section for prices and statistics. At
-#feathers 500, you can afford a full Tier 1 kit with some feathers left
-over for consumables and sundries, or a partial Tier 2 kit if you are
-willing to skimp elsewhere. You will earn more feathers through missions and
-loot as the game progresses.
+Consult the _Equipment Tables_ section for prices and statistics.
+#feathers 1500 buys a complete Tier 1 loadout --- weapon, armor, implement
+if you need one, and a working kit of tools and sundries --- with enough
+slack that the choices are yours rather than the budget's. It does not
+stretch to a Tier 2 kit; if you want one Tier 2 piece, you will be paying
+for it out of the rest of your gear. Tier 0 items are Old War surplus and
+cost nothing, so a character who sinks their whole budget into armor still
+walks out with a weapon in hand.
+
+You will earn more feathers through missions and loot as the game
+progresses.
 
 #attention[
   Arcane casters: remember that you need at least one *spell* to equip.

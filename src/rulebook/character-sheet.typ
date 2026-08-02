@@ -887,7 +887,7 @@
       grid(
         columns: (3fr, 1fr, 1fr, 1fr),
         column-gutter: 3pt,
-        field("Name / Material", height: 14pt, id: a + "-name"),
+        field("Name / Material", height: 12pt, id: a + "-name"),
         field("Tier", height: 12pt, id: a + "-tier"),
         field("Profile", height: 12pt, id: a + "-profile"),
         field("Price", height: 12pt, id: a + "-price"),

@@ -208,12 +208,13 @@ Weapon exploits need appropriate weapons.
 
 === 6. Buy equipment
 
-You begin with #feathers 500. Buy enough to function in your first mission.
+You begin with #feathers 1500. Buy enough to function in your first mission.
 
 At minimum, choose:
 
 - a weapon you can use effectively;
-- armor that does not overload your Bulk capacity;
+- armor that does not overload your Bulk capacity (an Ironhands buys a
+  construct frame instead, and must buy one);
 - a catalyst if you cast arcane or psychic powers;
 - a reliquary if you cast divine prayers;
 - basic gear and any tools your skills assume.

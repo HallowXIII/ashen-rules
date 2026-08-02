@@ -524,13 +524,13 @@ attained, as shown in the tables below.
     same round. Effects that prevent revival have no effect on you.],
 )
 
-#advance-block(
-  "Will of Steel",
-  5,
-  1100,
-  7,
-  4,
-  "Grit 10, x",
+
+ 
+ 
+ 
+ 
+ 
+ 
   [When an attack would reduce you to 0 Health: you may make a D6 Grit resist;
     on success, you survive with 1 Health. Every time you invoke this power per
     scene, the Grit difficulty increases by 2.],
@@ -589,12 +589,11 @@ attained, as shown in the tables below.
   2,
   0,
   "None",
-  [You become adept at exploiting moments of inattentiveness. When you have
-    combat advantage against a creature, your attacks and powers against that
-    target have a +2 bonus to hit; additionally, your attacks against that
-    target gain extra AP equal to your tier. You gain combat advantage against a
-    creature when you are totally obscured from it, or when you are in a
-    flanking position.],
+  [You become adept at exploiting moments of inattentiveness. If a creature would
+   provoke an attack of opportunity from you, you may instead Mark it until the end
+   of your next turn. While the creature is Marked in this way, your attacks and powers
+   against that target have a +2 bonus to hit.
+   ],
 )
 
 #advance-block(
