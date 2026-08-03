@@ -609,6 +609,26 @@ attained, as shown in the tables below.
 === Marksmanship
 
 #advance-block(
+  "CQB Specialist",
+  1,
+  200,
+  2,
+  0,
+  "Marksmanship 4, Initiative 4",
+  [Your ranged attacks and ranged Weapon attack powers targeting enemies within 3 squares of you do not provoke Opportunity Attacks.],
+)
+
+#advance-block(
+  "Pistoleer",
+  1,
+  100,
+  1,
+  0,
+  "Marksmanship 4",
+  [You gain a +2d bonus to hit enemies at 3 squares or less with pistols.],
+)
+
+#advance-block(
   "Heavy Gunner",
   3,
   500,

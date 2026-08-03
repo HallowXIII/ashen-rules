@@ -22,7 +22,14 @@ from a JSON file mapping names to values (checkbox values: true/false):
     python3 tools/make_fillable_sheet.py --fill mycharacter.json \
         -o mycharacter.pdf
 
-List all field names with --list-fields.
+List all field names with --list-fields. See pregens/README.md for the fill
+format and pregens/vessa.json for a complete worked example.
+
+The inverse also works: read the values back out of a sheet that has been
+filled in by hand in a PDF viewer, as JSON suitable for --fill. This reads
+the PDF's own form data, so it needs neither typst nor the sheet source:
+
+    python3 tools/make_fillable_sheet.py --extract played.pdf -o played.json
 """
 
 import argparse
@@ -200,11 +207,69 @@ def build_form(sheet_pdf: Path, markers, out_path: Path, fill=None):
         writer.write(f)
 
 
+def extract_form(pdf_path: Path, include_empty=False):
+    """Read field values out of a filled sheet — the inverse of --fill.
+
+    Walks the AcroForm /Fields array rather than the page annotations, so the
+    result comes out in the same reading order the fields were stamped in.
+    Text fields yield strings, checkboxes yield booleans; blank text and
+    unchecked boxes are omitted unless include_empty is set, keeping the
+    output small enough to diff against a hand-written pregen.
+    """
+    from pypdf import PdfReader
+
+    reader = PdfReader(pdf_path)
+    acro = reader.trailer["/Root"].get("/AcroForm")
+    if acro is None:
+        sys.exit(
+            f"{pdf_path}: no form fields found. Flattened or printed-to-PDF "
+            "sheets lose their fields; extract from the file you filled in."
+        )
+
+    out = {}
+
+    def visit(ref, prefix, ft, value):
+        field = ref.get_object()
+        # /FT and /V are inheritable; a viewer that rewrites the flat form we
+        # stamp into a field tree leaves them on the ancestor node
+        ft = field.get("/FT", ft)
+        value = field.get("/V", value)
+        name = prefix
+        if "/T" in field:
+            part = str(field["/T"])
+            name = f"{prefix}.{part}" if prefix else part
+        if "/Kids" in field:
+            for kid in field["/Kids"]:
+                visit(kid, name, ft, value)
+            return
+        if not name:
+            return
+        if name in out:
+            print(f"warning: duplicate field {name}, keeping first",
+                  file=sys.stderr)
+            return
+        if ft == "/Btn":
+            checked = value is not None and str(value) != "/Off"
+            if checked or include_empty:
+                out[name] = checked
+        else:
+            # viewers write CR, CRLF or LF for multi-line edits
+            text = "" if value is None else str(value)
+            text = text.replace("\r\n", "\n").replace("\r", "\n").strip()
+            if text or include_empty:
+                out[name] = text
+
+    for ref in acro.get_object().get("/Fields", []):
+        visit(ref, "", None, None)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument(
-        "-o", "--output", type=Path, default=DEFAULT_OUT,
-        help=f"output PDF (default: {DEFAULT_OUT.name})",
+        "-o", "--output", type=Path, default=None,
+        help=f"output file (default: {DEFAULT_OUT.name}, "
+        "or stdout with --extract)",
     )
     ap.add_argument(
         "--fill", type=Path, metavar="DATA.json",
@@ -212,11 +277,31 @@ def main():
         "(checkboxes: true/false)",
     )
     ap.add_argument(
+        "--extract", type=Path, metavar="FILLED.pdf",
+        help="read field values out of a filled sheet as JSON, ready to feed "
+        "back to --fill (the inverse of --fill; needs no typst)",
+    )
+    ap.add_argument(
+        "--all", action="store_true",
+        help="with --extract, also emit blank text fields and unchecked boxes",
+    )
+    ap.add_argument(
         "--list-fields", action="store_true",
         help="print all field names (page, kind) and exit",
     )
     args = ap.parse_args()
 
+    if args.extract:
+        data = extract_form(args.extract, include_empty=args.all)
+        text = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
+        if args.output:
+            args.output.write_text(text, encoding="utf-8")
+            print(f"wrote {args.output} ({len(data)} fields)", file=sys.stderr)
+        else:
+            sys.stdout.write(text)
+        return
+
+    out_path = args.output or DEFAULT_OUT
     build_dir = REPO / "build"
     build_dir.mkdir(exist_ok=True)
     sheet_pdf, markers = run_typst(build_dir)
@@ -233,11 +318,11 @@ def main():
         if not isinstance(fill, dict):
             sys.exit("--fill data must be a JSON object of name -> value")
 
-    build_form(sheet_pdf, markers, args.output, fill=fill)
+    build_form(sheet_pdf, markers, out_path, fill=fill)
     n_text = sum(1 for m in markers if m["kind"] == "text")
     n_check = len(markers) - n_text
     print(
-        f"wrote {args.output} "
+        f"wrote {out_path} "
         f"({n_text} text fields, {n_check} checkboxes"
         + (f", {len(fill)} pre-filled" if fill else "")
         + ")"

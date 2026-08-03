@@ -245,9 +245,20 @@ If you are wielding a ranged weapon and are targeted for a charge, you can make 
 
 ===== Opportunity Attack
 
-When you are wielding a melee weapon, and another creature takes a move action
-that passes through your weapon reach and does not end next to you, you can
-immediately make a strike against it (response).
+When you are wielding a melee weapon, and another creature provokes an Opportunity Attack from you, you may immediately make a strike against it (response). 
+
+A creature provokes an Opportunity Attack if it does anything of the following:
+- exit another creature's melee range except by use of the Disengage action;
+- uses a ranged attack or power;
+- uses an area attack or power with a range other than Close;
+- uses an item or makes a skill check.
+
+In intuitive terms, any action that a creature takes that takes its attention away from the combatants next to it allows those combatants to exploit this temporary
+lack of attention.
+
+Some advances and powers allow a character to take an action other than a Strike
+when the target provokes an Opportunity Attack. These actions are collectively 
+referred to as Opportunity Actions.
 
 == Strikes and Attack Powers
 

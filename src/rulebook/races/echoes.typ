@@ -30,7 +30,7 @@ All Echoes gain the following racial traits:
 It was said that those who made enemies of the Fairies would never escape their
 pursuers. When an enemy damages you, you can choose to hold a grudge against
 that enemy. When you next attack or use a spell power against that enemy, you
-gain 1 automatic success on your attack or spell check against him. You can only
+gain a +2d bonus on your attack or spell check against him. You can only
 hold a grudge against one creature at a time.
 
 === Sustained by Magic
@@ -128,7 +128,7 @@ choose one of the following subtypes:
     see without an additional light source.
 
     ==== Children of Day
-    A Mirror gains +1d on Endurance checks while in direct sunlight.
+    A Mirror gains +1d on Stamina checks while in direct sunlight.
 
     ==== Dance of the Spring Court
     The old, hidden world of the fey is dead, but you can still call up its echoes
@@ -192,7 +192,7 @@ choose one of the following subtypes:
       "2 AP",
       "Target one enemy within range that you or your allies can see. You place a mark upon it; while it is marked, your ranged attacks against the target ignore obscuration and partial cover. Additionally, whenever you use your Fey Jaunt power, you can choose to appear in a square adjacent to your enemy instead, even if the enemy would otherwise be out of range.",
       keywords: ("Innate", "Unerring"),
-      cost: "6 FP per Tier",
+      cost: "6 FP",
       range: "15; one target",
     )
 
@@ -204,5 +204,5 @@ choose one of the following subtypes:
     suffer --1d on Perception checks and attack rolls.
 
     ==== Children of Night
-    A Shade gains +1d on Endurance checks while in dim light or darkness.]
+    A Shade gains +1d on Stamina checks while in dim light or darkness.]
 })
