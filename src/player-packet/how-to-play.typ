@@ -115,6 +115,90 @@ Your sheet is filled in already. These are the boxes you will actually touch:
 Everything else on the sheet is reference material for a longer campaign. Ignore
 it today.
 
+#colbreak()
+
+== What the Ratings Mean 
+
+Your ratings come in two groups. *Characteristics* cover fighting and resisting
+harm; *skills* cover everything else. Both are rolled the same way: the total rating =
+the number of dice you throw.
+
+#pftab(
+  "Characteristics",
+  columns: (1.4fr, 2.6fr),
+  align: (left, left),
+  [*Characteristic*],
+  [*Roll it to...*],
+  [Martial],
+  [Attack with melee and thrown weapons; resist being overpowered.],
+  [Marksmanship],
+  [Attack with ranged weapons.],
+  [Initiative],
+  [Determine turn order; react to surprises and sudden dangers.],
+  [Speed],
+  [Cover ground under time pressure. Also sets your Move.],
+  [Stamina],
+  [Resist poison, disease, and fatigue. Also sets how much you can carry.],
+  [Potential],
+  [Resist harmful magic. Also sets how much magical equipment you can bear.],
+  [Arcane],
+  [Cast arcane spells.],
+  [Psychic],
+  [Use psychic powers.],
+  [Command],
+  [Use command powers and divine prayers.],
+  [Dodge],
+  [Avoid area attacks and effects. Also sets your Evasion.],
+  [Grit],
+  [Resist pain, fear, and mental influence.],
+)
+
+#pftab(
+  "Skills",
+  columns: (1fr, 3fr),
+  align: (left, left),
+  [*Skill*],
+  [*Roll it to...*],
+  [Acrobatics],
+  [Keep your balance, tumble, contort, land safely.],
+  [Athletics],
+  [Climb, jump, swim, lift; feats of strength.],
+  [Awareness],
+  [Notice threats and details in your surroundings.],
+  [Deceive],
+  [Lie convincingly.],
+  [Eerie],
+  [Use your sixth sense: detect magic, hidden danger, false motives.],
+  [Impose],
+  [Get your way through intimidation.],
+  [Influence],
+  [Get your way through persuasion.],
+  [Investigate],
+  [Research, deduce, search methodically.],
+  [Subterfuge],
+  [Sneak, hide, steal, cheat.],
+  [Access #super[T]],
+  [Bypass locks, security systems, and barriers.],
+  [Alchemy #super[T]],
+  [Identify and prepare chemical and alchemical substances.],
+  [Electronics #super[T]],
+  [Operate, repair, and subvert electronic devices.],
+  [Magitek #super[T]],
+  [Understand and operate magical technology.],
+  [Occultism #super[T]],
+  [Deal with spirits and objects a supernatural presence inhabits.],
+  [Piloting #super[T]],
+  [Control high-speed vehicles.],
+  [Ritual #super[T]],
+  [Perform invocations and other long-form magic.],
+  [Shop #super[T]],
+  [Weld, rivet, lathe, repair machinery.],
+)
+
+Skills marked #super[T] are *trained*: no matter what your total
+rating would be, if the skill is not checked on your sheet, you cannot
+attempt it at all. Everything else can always be rolled.
+
 == Combat
 
 Unless you are exceptionally clever, it is likely you will find yourself in combat at some point during the adventure. Combat uses a slightly more granular resolution system than normal play: each combatant gets one turn per round; each turn you get *4 AP* to spend.
@@ -123,6 +207,8 @@ Unless you are exceptionally clever, it is likely you will find yourself in comb
 
 To determine your place in the turn order, roll a number of d6 equal to your *Initiative rating* when combat starts. Unlike all other such rolls, here you
 add the *pips* --- the actual numbers on the dice, not successes. Highest goes first.
+
+#colbreak()
 
 === Spending AP
 
@@ -142,29 +228,79 @@ add the *pips* --- the actual numbers on the dice, not successes. Highest goes f
   [Move, use a skill, use a power],
 )
 
-Your *first* Move each turn costs 1 AP. Your second costs 2, your third costs 3.
-Walking back and forth is expensive; commit to a direction.
+Move actions are special: Your *first* Move each turn costs 1 AP. Your second costs 2,
+your third costs 3 and so on, though in practice it is very rare for a character to ever
+be in a position to move three times per turn.
 
 === Making an attack
 
 + Pick a target in range.
 + Roll *Martial* for melee, *Marksmanship* for ranged, or whatever the power
   tells you.
-+ Successes equal to or greater than the target's *Evasion* means you hit.
-+ Roll the weapon's damage.
++ Successes equal to or greater than the target's *Evasion* means you hit. If
+  the number of successes greatly exceeds the target's Evasion, you may hit
+  multiple times.
++ For each hit: Roll the weapon's damage.
 + Subtract the target's Armor (physical) or Ward (magical). *Penetration* on
   your weapon cancels that much Armor.
 + What is left comes off their HP.
 
+=== Combat Maneuvers
+
+Instead of making an attack, you may also perform a Combat Maneuver. This is a
+catch-all term for an action in melee that consists of more than striking with 
+your weapon for damage. Some examples of combat maneuvers include:
+
+- throwing sand into an enemy's eyes to distract them
+- using the haft of your polearm to trip an opponent
+- shooting a weapon out of someone's hand with your pistol
+- cutting off a part of a dragon's wing to prevent it from flying
+
+To perform a maneuver, describe what you are trying to do to the GM. The GM
+decides whether the maneuver is achievable and if so, at what penalty you roll.
+If your attack roll hits the target after the penalty is applied, your maneuver
+takes effect. As for attacks, the more successes, the better the result.
+
+If the maneuver involves striking the target with a weapon, it deals damage,
+but never inflicts more than one hit. Excess successes convert into a better
+result on the maneuver instead.
+
 === Reactions
 
-You get *one reaction per round*, for free, out of turn. The common ones:
+In addition to the actions your character has on each turn, they may
+also take reactions. You get *one reaction per round*.
 
-- *Opportunity Attack* --- someone leaves your reach, you hit them.
-- *Dive* --- drop prone to reduce incoming ranged damage.
-- *Fire Overwatch* --- shoot someone entering an area you are covering.
+Reactions obey a certain number of special rules:
+- A reaction must be triggered by another action to be performed
+- You may never take a reaction on your own turn
 
-Reactions are the main reason moving past enemies is dangerous.
+There are five reactions each character always has access to:
+
+#pftab(
+  "Universal Reactions",
+  align: auto,
+  columns: (1fr, 2fr, 2fr),
+  [*Reaction*],
+  [*Trigger*],
+  [*Effect*],
+  [Opportunity Attack],
+  [An enemy leaves your melee range or attacks outside of it while in it],
+  [You make a strike against the target],
+  [Dive],
+  [You are targeted by an Area effect or power],
+  [You roll out of the area],
+  [Counterspell],
+  [Another creature casts a magical power of a type you can cast],
+  [You counter it with your own magic],
+  [Fire Overwatch],
+  [Another creature charges you],
+  [You can fire a ranged weapon at it],
+  [Reactive Maneuver],
+  [Nearly anything],
+  [You interfere with the enemy somehow],
+)
+
+Reactive Maneuvers include things like parries or trips.
 
 === Damage, and dying
 
@@ -173,22 +309,28 @@ to get straight back up, provided your body is still in one piece.
 If you cannot or will not, your essence goes home to your soul anchor 
 and you are out of the fight
 
-Enemies that understand what you are will try to wreck the corpse to stop the
-first option. This is the polite way the setting tells you that positioning
-matters.
+Enemies that understand what you are may try to damage your dead body in
+order to prevent your revival on the spot.
 
 === Powers
 
 Some characters have *powers*: supernatural abilities they can use in combat
-in lieu of a more mundane action. Powers cost *Focus*, or *FP* for short. 
+in lieu of a more mundane action. Powers can have a dizzying array of
+effects; each Power's description explains exactly what it does.
+Powers cost *Focus*, or *FP* for short.
 
-#attention[
-  Most powers cost *increments* rather than a flat number. One increment costs
-  the FP listed on your implement --- your profile spells out exactly how many
-  times you can use each of your powers today. It is usually two or three.
+Powers generally require some sort of implement to use, either a weapon or a
+magical focus called a *Catalyst*. The cost of these powers are given in
+*increments* of Focus. The increment is a property of the implement used to
+manifest the power.
+
+#note[
+  *Example:* *Flamethrower* is an Arcane Spell that costs
+1 Increment of focus; the Increment of a *Mist Capacitor* is 8, so casting this
+spell with that catalyst costs 8 Focus.
 ]
 
-#colbreak()
+The exception are *innate powers*, which have a flat FP cost.
 
 === Resting and Recovery
 

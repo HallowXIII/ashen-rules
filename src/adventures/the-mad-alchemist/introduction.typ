@@ -1,20 +1,27 @@
 #import "../../formatting/declarations.typ": *
 
-#chap-header("1", [= Introduction], "What this adventure is about")
+#chap-header("1", [Introduction], "What this adventure is and how to run it")
 
 == Adventure Summary
 
-_The Mad Alchemist_ is a Tier 1 adventure for the Ashen role-playing game,
-designed for a party of four characters and approximately eight sessions of
-play. It is written with a first-time Game Master in mind: every mechanical
-element is explained, every decision point is flagged, and the structure
-rewards preparation without punishing improvisation.
+_The Mad Alchemist_ is a *learn-to-play adventure* for the Ashen
+role-playing game: a single session of three and a half to four hours,
+designed for a table of new players using the seven pregenerated
+characters from the player packet. Every scene introduces one part of the
+system, in play, at the moment the players need it --- no rules lecture
+required.
+
+The structure follows the five-room dungeon model adapted for teaching:
+an easy skills scene, a fun first fight, a roleplay scene, a showcase of
+the system's signature mechanic, and a climactic battle. Each scene's
+chapter opens with the *system lesson* it carries and the *time budget*
+it should stay inside.
 
 #attention[
   *For the Game Master:* This adventure assumes you have read the core
   rulebook, but it does not assume you have run a game before. Where the
-  adventure asks you to make a judgement call, it tells you what factors to
-  weigh. Where it presents a skill check, it tells you what the result
+  adventure asks you to make a judgement call, it tells you what factors
+  to weigh. Where it presents a skill check, it tells you what the result
   means. Trust the structure, and trust your players.
 ]
 
@@ -39,7 +46,7 @@ information quickly during play:
 #attention[
   Text in this style flags something important --- a common pitfall, a
   design intention you should not undermine, or a moment that requires
-  careful handling. Read these before the session in which they appear.
+  careful handling. Read these before the session.
 ]
 
 Skill checks are noted inline as *Skill DN* (e.g. *Occultism D3*), where
@@ -48,166 +55,307 @@ it yields or what happens on success --- follows immediately.
 
 == Adventure Synopsis
 
-The adventure takes place in and around Keshto Village, a frontier
-settlement in Venna Weald clear. People have been disappearing ---
-foragers, patrols, travelers between settlements --- and the
-disappearances are accelerating. The Never-Still have issued a Black Guard
-contract for Deathless willing to investigate.
+People are disappearing from the outskirts of Keshto Village --- foragers,
+travelers, and now Never-Still peacekeepers sent to investigate. The
+Never-Still have posted a Black Guard contract, and Merzaghaal, their
+agent in Keshto, briefs the party (*Scene 0*).
 
-The party's investigation leads them from the village into the wilds of the
-Weald's outskirts, where they discover two sites: a dump site where
-soulless corpses have been discarded, and a ritual site where the
-extractions are performed. The method is alchemical and scholarly ---
-Mortefactor-derived, though twisted beyond what the faction would condone.
+The party follows the trail of the disappearances northeast into the
+thinning Weald (*Scene 1*) and finds the ravine where the perpetrator
+dumps his victims: desiccated bodies, emptied of their souls by
+methodical, scholarly alchemy. The dead do not stay still --- reanimated
+peacekeepers and Fog-drawn beasts attack, led by something that used to
+be a sergeant of the watch (*Scene 2*).
 
-Returning to Keshto with this evidence, the party connects with a
-Mortefactor tracker who has been quietly hunting the culprit: Šauhahten, a
-Mirror expelled from the Most Ancient and Noble Order of Mortefactors for
-experimenting on souls. He is attempting to create Prima Materia --- the
-pinnacle of alchemy --- by rendering down mortal souls, guided by a voice
-in the Fog whose true nature he does not understand.
+Evidence in hand, the party returns to Keshto, where Merzaghaal points
+them to Sennakht, a reclusive ex-Mortefactor. If they can persuade her to
+talk (*Scene 3*), she names the culprit --- Šauhahten, a Mirror expelled
+from the Most Ancient and Noble Order of Mortefactors for experimenting
+on souls --- and shares the secret of the old fey shrine he has made his
+lair beneath: _the door opens only for the dead_.
 
-Armed with the alchemist's identity and the location of his laboratory ---
-hidden beneath an ancient Faerie ruin the party may have already visited ---
-the party descends into a layered dungeon defended by reanimated victims,
-fey illusions, and an alchemical monstrosity. At the heart of it, they
-confront Šauhahten himself: calm, articulate, and utterly certain that his
-murders are necessary to heal the world.
+At the shrine (*Scene 4*), the party pays the threshold's price --- a
+Deathless character must die to open the way, and rises again by the
+grace of the Essence that makes the Deathless what they are. Below, in a
+laboratory of glass and stolen souls (*Scene 5*), they confront Šauhahten
+himself: calm, articulate, and utterly certain that his murders are
+necessary to heal the world. He fights beside his Chimera and his
+homunculi until his work is lost --- then vanishes through a silvered
+mirror, beaten but not finished.
 
-The party's victory lies in destroying the laboratory and its research,
-setting Šauhahten back by years or decades. He cannot be permanently killed
---- he is Deathless, and will reincorporate at his soul anchor. The
-adventure ends with a victory and an open threat, ready to seed future
-adventures.
+The contract is fulfilled. The victims are avenged. And somewhere in the
+Fog, the Mad Alchemist begins again (*Epilogue*).
 
-== Player Hooks
+== The Five Rooms
 
-Why is your character in Keshto Village, answering a Black Guard contract?
-
-- *Never-Still member:* You were sent by the faction leadership. Never-Still
-  peacekeepers are among the missing, and there is an old Faerie site nearby
-  that the faction considers significant. This is faction business.
-- *Free Agent:* You are here for the coin and the reputation. Black Guard
-  contracts pay well, and completing one builds your name.
-- *Other faction member:* Your faction sent you here for reasons that may not
-  be entirely transparent. Perhaps they have heard rumours of Mortefactor
-  research being misused. Perhaps they simply want eyes on the situation.
-
-== Session Overview
+Each scene teaches one thing. Introduce rules only when the scene needs
+them; the character profiles in the player packet carry the rest.
 
 #pftab(
-  "Session Overview",
-  columns: (1fr, 2fr, 2fr, 2fr),
-  [*Session*],
-  [*Location*],
-  [*Focus*],
-  [*System Lessons*],
-  [1--2],
-  [Keshto Village],
-  [Social investigation, gathering leads],
-  [Social interaction, skill checks],
-  [3--4],
-  [Dump Site, Ritual Site],
-  [Field exploration, crime scene investigation],
-  [Exploration, hazards, Fog, first combat],
+  "Scenes and System Lessons",
+  columns: (0.8fr, 1.8fr, 2.6fr),
+  [*Scene*],
+  [*What Happens*],
+  [*What It Teaches*],
+  [0],
+  [Merzaghaal's briefing],
+  [Who the characters are; how to talk to an NPC],
+  [1],
+  [Investigation and tracking],
+  [Skill checks, group checks, preparation paying off],
+  [2],
+  [Fight at the dump site],
+  [Initiative, AP, attacks, conditions, terrain],
+  [3],
+  [Persuading the recluse],
+  [Social play; more than one approach works],
+  [4],
+  [The threshold sacrifice],
+  [Death, spot-revival, and Essence Points --- the
+    signature mechanic, demonstrated safely],
   [5],
-  [Keshto Village],
-  [Faction politics, assembling the picture],
-  [Social negotiation, faction dynamics],
-  [6--8],
-  [The Faerie Ruin],
-  [Dungeon, combat, climax],
-  [Combat, puzzles, threat assessment, Deathless],
+  [Šauhahten's laboratory],
+  [Powers and FP under pressure; objectives beyond
+    "kill everything"],
 )
 
-== XP and Wealth Budget
+== Pacing for Seven Players
+
+The session budget below totals about 3 hours 40 minutes plus a break.
+The two combats are the immovable objects; everything else flexes around
+them.
+
+#pftab(
+  "Session Clock",
+  columns: (2.2fr, 1fr, 1.2fr),
+  [*Scene*],
+  [*Budget*],
+  [*Clock (elapsed)*],
+  [Scene 0 --- The Briefing],
+  [15 min],
+  [0:15],
+  [Scene 1 --- The Investigation],
+  [30 min],
+  [0:45],
+  [Scene 2 --- Fight at the Dump Site],
+  [65 min],
+  [1:50],
+  [_Break_],
+  [10 min],
+  [2:00],
+  [Scene 3 --- The Recluse],
+  [25 min],
+  [2:25],
+  [Scene 4 --- The Threshold],
+  [15 min],
+  [2:40],
+  [Scene 5 --- The Laboratory],
+  [65 min],
+  [3:45],
+  [Epilogue],
+  [10 min],
+  [3:55],
+)
+
+#attention[
+  *Checkpoints and cuts.* If you are not rolling initiative at the dump
+  site by the one-hour mark, stop calling for checks and hand the party
+  the trail. If Scene 2 runs long, compress Scene 3: Sennakht names her
+  price immediately (the journals) and one good roll seals the deal. If
+  you reach Scene 5 with less than an hour left, drop two homunculi and
+  trigger The Vanishing the moment Šauhahten drops below half HP.
+
+  *Speeding up seven-player combat:*
+  - Enemies act in groups: all husks on one initiative count, both beasts
+    on another, named creatures on their own.
+  - Ask each player to plan their turn while the previous one resolves.
+    Every character profile ends with a scripted opening move --- point
+    new players at it.
+  - Minions die to almost any hit. Do not track their HP precisely;
+    track how many are left.
+  - Call the round order out loud so people know when they are "on deck."
+]
+
+== The Characters
+
+The adventure assumes the seven pregenerated characters from the player
+packet. Each of them has a personal stake in this contract, and each has
+a scene where their sheet gets to shine. If a character is not in play,
+their spotlight beats simply go unused --- nothing breaks.
+
+#float[
+  #floating-table(
+  "Spotlight Map",
+  columns: (1fr, 2fr, 2.6fr),
+  [*Character*],
+  [*Stake*],
+  [*Spotlight Moments*],
+  [Ushtâng],
+  [Vazhan, a vanished peacekeeper, was his friend],
+  [Scene 2: faces what Vazhan has become],
+  [Zamazaha],
+  [A free agent, here for the contract],
+  [Scenes 2 & 5: duels the revenant and the Chimera],
+  [Pâhâk],
+  [Vague Perfector orders about the disappearances],
+  [Scene 4: Electroception senses the machinery below;
+    covering fire everywhere],
+  [Kalariyar],
+  [The fey sites might hold their lost memories],
+  [Scene 1: best tracker; Scene 3: Sennakht knows what
+    a Shade is; Scene 4: the door "remembers" them],
+  [Wishanya],
+  [Wants the practitioner's notes],
+  [Scene 2: reads the alchemy; Scene 5: fire stops the
+    Chimera's regeneration],
+  [Kho Prea],
+  [Sent because the Clear is thinning],
+  [Scene 1: investigation; Scene 4: understands the
+    ritual; healing in both fights],
+  [Mbazân],
+  [Lost patrols are his business],
+  [Scenes 0, 1 & 3: the party's voice; command powers
+    in both fights],
+)]
+
+== NPC Quick Reference
+
+#pftab(
+  "NPCs",
+  columns: (1.4fr, 1.2fr, 1.4fr, 2.2fr),
+  [*Name*],
+  [*Race*],
+  [*Faction*],
+  [*Role*],
+  [Merzaghaal],
+  [Goldenbristle],
+  [Never-Still],
+  [Quest-giver, faction contact],
+  [Reeve Ottavan],
+  [Human],
+  [---],
+  [Local authority, disappearance records],
+  [Dashek],
+  [Human],
+  [Never-Still],
+  [Surviving peacekeeper, points to the field],
+  [Vazhan],
+  [Human (dead)],
+  [Never-Still],
+  [Ushtâng's friend; rises as the Hollow Revenant],
+  [Sennakht],
+  [Human (Deathless)],
+  [Mortefactors (retired)],
+  [Recluse; knows Šauhahten and the fey door],
+  [Šauhahten],
+  [Mirror],
+  [Ex-Mortefactors],
+  [Villain],
+)
+
+#colbreak()
+
+== XP and Wealth
+
+A single-session award, tallied at the end. With the mission bonus and
+loot, each character finishes with roughly 350 XP toward their next
+advances --- a concrete "here is what playing on looks like" hook.
 
 #pftab(
   "Expected XP per Character",
   columns: (2fr, 1fr),
   [*Source*],
   [*XP*],
-  [Combat (field encounters)],
-  [15--30],
-  [Combat (undead sentries)],
-  [28--42],
-  [Combat / bypass (monstrosity)],
-  [25],
-  [Combat (Šauhahten)],
-  [60],
-  [Mission XP (primary: destroy laboratory)],
-  [100],
-  [Mission XP (secondary, optional)],
+  [Scene 2 combat (husks, beasts, revenant)],
+  [102],
+  [Scene 5 combat (Šauhahten, Chimera, homunculi)],
+  [118],
+  [Mission XP (fulfil the contract)],
   [100],
   [Loot XP (estimated)],
-  [50--100],
+  [30--60],
   [*Total*],
-  [*378--457*],
+  [*350--380*],
 )
 
-Over eight sessions, characters should earn roughly 1500--2000 XP total
-(including XP from sources not itemised above, such as incidental encounters
-and additional loot). Combined with the 1000 XP every character starts with,
-this puts the party at approximately 2500--3000 cumulative XP by the end of
-the adventure --- ready to begin purchasing Tier 2 advances.
+The Black Guard contract pays *700 #feathers* to the party on completion,
+plus whatever they salvage from the laboratory (see the Loot Table in the
+Appendix).
 
-#pftab(
-  "Expected Wealth per Character",
-  columns: (2fr, 1fr),
-  [*Source*],
-  [*Feathers*],
-  [Black Guard contract payout],
-  [500--1000],
-  [Field site salvage],
-  [100--200],
-  [Laboratory salvage],
-  [300--600],
-  [*Total income*],
-  [*900--1800*],
-  [Maintenance costs (est. 2--3 intermissions)],
-  [200--600],
-  [*Net wealth*],
-  [*300--1200*],
-)
+#pagebreak()
 
-== NPC Quick Reference
+#chap-header("1",[Scene 0: The Briefing], "")
 
-#pftab(
-  "NPCs",
-  columns: (1.5fr, 1fr, 1.5fr, 2fr, 1fr),
-  [*Name*],
-  [*Race*],
-  [*Faction*],
-  [*Role*],
-  [*Location*],
-  [Merzaghaal],
-  [Goldenbristle],
-  [Never-Still],
-  [Quest-giver, faction contact],
-  [Keshto],
-  [The Town Reeve],
-  [TBD],
-  [---],
-  [Local authority, disappearance records],
-  [Keshto],
-  [Surviving Peacekeeper],
-  [TBD],
-  [Never-Still],
-  [Bridge to field exploration],
-  [Keshto],
-  [Mortefactor Tracker],
-  [TBD],
-  [Mortefactors],
-  [Faction intel, cipher, tension],
-  [Keshto],
-  [Local Who Remembers],
-  [TBD],
-  [---],
-  [Personal details on Šauhahten],
-  [Keshto],
-  [Šauhahten],
-  [Mirror],
-  [Ex-Mortefactors],
-  [Villain],
-  [Faerie Ruin],
-)
+*Time budget: 15 minutes. Lesson: who the characters are, and how
+talking to an NPC works.*
+
+The adventure begins in Keshto Village, a frontier settlement in the
+Venna Weald clear, at the village's only inn, where Merzaghaal has
+gathered everyone who answered the contract.
+
+#flavor[
+  Keshto is small and practical --- a cluster of stone and timber buildings
+  around a market square, ringed by a low wall that marks the boundary
+  between settlement and wilderness. The Weald presses close on all sides,
+  ancient forest visible over the rooftops. The air smells of woodsmoke
+  and rain.
+]
+
+#note[
+  *Before the briefing:* go around the table and have each player
+  introduce their character in a sentence or two --- name, what they look
+  like, why they answered the contract (each profile's "Who You Are"
+  section answers this). With seven players this is the cheapest way to
+  make the table feel like a party, and it hands you their hooks to call
+  back to later. Keep it brisk: one minute each.
+]
+
+== Merzaghaal's Briefing
+
+#aloud[
+  The Goldenbristle leans forward across the table, his bristled mane
+  catching the lamplight. He speaks carefully, as if weighing each word
+  against the cost of saying it.
+
+  "Thank you for coming. I will be direct. Over the past three months,
+  eleven people have gone missing from the outskirts of this settlement.
+  Six civilians --- foragers, a trapper, a courier. Five of our
+  peacekeepers, sent to investigate. None have returned. No bodies have
+  been recovered.
+
+  "The disappearances cluster along the northeastern routes, where the
+  Weald thins and the Fog gets thicker. They are accelerating --- three in
+  the last two weeks alone.
+
+  "Your job is to find out what is taking these people and put a stop to
+  it. Speak to Reeve Ottavan --- she keeps the records. Speak to Dashek ---
+  he is the only one who came back. And then follow whatever you find.
+  Payment on completion: seven hundred feathers."
+]
+
+=== Merzaghaal
+
+- *Race:* Goldenbristle (Sootbeast)
+- *Faction:* Never-Still (mid-level agent)
+- *Personality:* Competent, professional, dry. Cares about this as a
+  faction matter first, a humanitarian crisis second. Not callous ---
+  simply prioritised. He will be frustrated if the party wastes time.
+- *What he knows:* The timeline and geography of the disappearances. That
+  the peacekeepers who were sent were competent and should not have simply
+  vanished. That there is an old fey shrine northeast of Keshto the
+  Never-Still consider significant --- though he has no reason yet to
+  connect it to the case.
+- *What he can provide:* Introductions to the reeve and to Dashek, access
+  to Never-Still records and supplies, and a sounding board when the party
+  returns with new information.
+
+#note[
+  Merzaghaal is the party's anchor NPC. He does not go into the field, but
+  he is always available in Keshto to discuss findings and broker
+  introductions. If the party is ever stuck, he can suggest the next
+  step --- but he should not solve their problems for them.
+
+  If Mbazân is in play, Merzaghaal knows him by reputation --- a fellow
+  Goldenbristle officer of the Never-Still --- and addresses him as a
+  colleague. Let that player field the briefing questions.
+]

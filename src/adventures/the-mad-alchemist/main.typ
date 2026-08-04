@@ -7,22 +7,27 @@
 #set document(
   title: "The Mad Alchemist",
   author: "Hallow XIII",
-  description: "A Tier 1 Adventure for the Ashen Role-Playing Game",
+  description: "A Learn-to-Play Adventure for the Ashen Role-Playing Game",
 )
 
 #titlepage(
-  "The Mad Alchemist",
-  subtitle: "A Tier 1 Adventure",
-  description: "For the Ashen Role-Playing Game",
+  [The Mad \ 
+  Alchemist],
+  subtitle: "A Learn-to-Play Adventure",
+  description: "One session for seven new players --- for the Ashen Role-Playing Game",
 )
 
+#set page(columns: 1)
 #outline(depth: 2)
+
+#pagebreak()
+#set page(columns: 2)
 
 #include "introduction.typ"
 
 #pagebreak()
 
-#include "keshto-village.typ"
+#include "investigation.typ"
 
 #pagebreak()
 
@@ -30,11 +35,11 @@
 
 #pagebreak()
 
-#include "ritual-site.typ"
+#include "recluse.typ"
 
 #pagebreak()
 
-#include "faerie-ruin.typ"
+#include "sanctum.typ"
 
 #pagebreak()
 

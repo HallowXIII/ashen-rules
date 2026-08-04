@@ -1,9 +1,9 @@
 #import "../../formatting/declarations.typ": *
 
 // Fog-Touched Beast — T1 Standard
-// A predator warped by prolonged Fog exposure. Used as a field encounter
-// at the dump site or ritual site (Phase 2).
-#let fog-touched-beast() = creature(
+// A predator warped by prolonged Fog exposure. Two of them join the
+// Scene 2 fight at the dump site, drawn by the noise.
+#let fog-touched-beast() = creature-stat-block(
   "Fog-Touched Beast",
   "T1 Standard",
   traits: ("Beast", "Fog-Touched"),
@@ -11,18 +11,19 @@
   armor: 5,
   ward: 4,
   evasion: 2,
+  ap: 4,
   speed: 4,
   characteristics: (
-    martial: 6,
-    stamina: 5,
-    grit: 4,
+    Martial: 6,
+    Stamina: 5,
+    Grit: 4,
   ),
-  abilities: (
-    [*Bite --- 2 AP* \
+  actions: (
+    cr-action("melee", "Bite", "2 AP")[\
       _Melee, Martial vs Evasion, single target_ \
       *Damage:* 4+1D8],
 
-    [*Pounce --- 2 AP* \
+    cr-action("melee", "Pounce", "2 AP")[\
       _Move up to Speed, then Melee, Martial vs Evasion, single target_ \
       *Damage:* 4+1D8 \
       *On hit:* Target is Exposed (save ends).],
@@ -31,9 +32,9 @@
 )
 
 // Soulless Husk — T1 Minion
-// Reanimated bodies of Šauhahten's victims, stripped of their souls and
-// repurposed as mindless sentries. Used in the laboratory (Layer 2).
-#let soulless-husk() = creature(
+// Reanimated bodies of Šauhahten's victims, stripped of their souls. The
+// six that rise at the dump site wear Never-Still peacekeeper colors.
+#let soulless-husk() = creature-stat-block(
   "Soulless Husk",
   "T1 Minion",
   traits: ("Undead", "Mindless"),
@@ -41,16 +42,16 @@
   armor: 5,
   ward: 3,
   evasion: 2,
-  speed: 2,
   ap: 3,
-  characteristics: (
-    martial: 5,
-    stamina: 4,
-    grit: 3,
-  ),
+  speed: 2,
   immunities: [Frightened, Dominated],
-  abilities: (
-    [*Slam --- 2 AP* \
+  characteristics: (
+    Martial: 5,
+    Stamina: 4,
+    Grit: 3,
+  ),
+  actions: (
+    cr-action("melee", "Slam", "2 AP")[\
       _Melee, Martial vs Evasion, single target_ \
       *Damage:* 3+1D8 \
       *On hit:* Target is Grabbed (save ends). While Grabbed, the Husk
@@ -59,81 +60,157 @@
   xp: 7,
 )
 
-// Derelict Obliterator Drone -- T6 stats, but defective and immobile
-// More of a puzzle encounter than a fight
-#let derelict-obliterator() = creature(
-  "Derelict Obliterator Drone",
-  "T5 Elite",
-  traits: ("Construct", "Derelict", "Size 3"),
-  hp: 200,
-  fp: 80,
-  armor: 25,
-  ward: 22,
-  evasion: 0,
-  speed: 0,
+// Vazhan, Hollow Revenant — T1 Elite
+// Sergeant Vazhan of the Never-Still — Ushtâng's friend. Šauhahten's
+// extraction failed partway on him: a fragment of soul remained, and the
+// Fog wove the residue of a dozen stolen souls around it. What rose is
+// stronger and far angrier than a husk, and it screams with voices that
+// are not all its own. Mini-boss of the Scene 2 fight.
+#let hollow-revenant() = creature-stat-block(
+  "Vazhan, Hollow Revenant",
+  "T1 Elite",
+  traits: ("Undead", "Fog-Touched", "Peacekeeper"),
+  hp: 32,
+  armor: 5,
+  ward: 6,
+  evasion: 2,
+  ap: 4,
+  speed: 3,
+  immunities: [Frightened, Dominated],
   characteristics: (
-    marksmanship: 8,
-    potential: 16,
-    grit: 12,
-    stamina: 17,
-    dodge: 0,
-    initiative: 9,
+    Martial: 6,
+    Potential: 6,
+    Stamina: 5,
+    Grit: 6,
   ),
-  special: [*Immobile*: The Drone's lift array is shot. It is embedded in the ground and cannot move.],
-  abilities: (
-    [*Obliterator Cannon --- 2 AP* \
-      _Ranged, Burst 3, range increment 80 squares_ \
-      *Damage:* 20+2D12 Thermal; *Pen* 18 \
-      *Special:* The magnetic coils on this cannon are damaged. On every shot, the drone must make a
-      save; on 0 successes or fewer, the plasma loses containment and the cannon explodes violently,
-      destroying the drone instantly and dealing 60+6D12 damage to everything within 10 squares of it.
-    ],
+  passive-traits: (
+    (
+      name: "What Remains",
+      body: [Once per round, a character may spend 1 AP to call Vazhan by
+        name. Until the end of the round, Vazhan attacks that character
+        with --1d. A character who knew Vazhan in life needs no check;
+        anyone else must succeed on an *Influence D3* as part of the
+        action.],
+    ),
   ),
-  xp: 25,
+  actions: (
+    cr-action("melee", "Halberd of the Watch", "2 AP")[\
+      _Melee (reach 2), Martial vs Evasion, single target_ \
+      *Damage:* 5+1D8 \
+      He still fights with the drill-ground precision of a watch sergeant.
+      The residue does not remember why.],
+
+    cr-action("area", "Wail of the Taken", "3 AP")[\
+      _Burst 2 centred on self; each creature in the area resists with
+      Grit D3_ \
+      *Damage:* 4 psychic on a failed resist, and the target is Dazed
+      until the end of its next turn. On a success, no damage. \
+      The voices of every soul Šauhahten has taken scream through him at
+      once.],
+
+    cr-action("psychic", "Grasp of Residue", "2 AP")[\
+      _Ranged 6, Potential vs Ward, single target_ \
+      *Damage:* 4+1D6 psychic \
+      *On hit:* Target is Slowed (save ends). Pale, half-formed hands
+      clutch at the target from the Fog.],
+  ),
+  xp: 30,
 )
 
-// Alchemical Monstrosity — T2 Standard (overtuned for T1)
-// A byproduct of Šauhahten's Prima Materia research. Too large, too fast,
-// visibly wrong. Not intended to be fought head-on. Used in the laboratory
-// (Layer 4).
-#let alchemical-monstrosity() = creature(
-  "Alchemical Monstrosity",
-  "T2 Standard",
-  traits: ("Construct", "Alchemical", "Large"),
-  hp: 55,
-  armor: 7,
-  ward: 6,
-  evasion: 3,
-  speed: 3,
-  characteristics: (
-    martial: 8,
-    stamina: 7,
-    grit: 6,
-  ),
+// The Chimera — T1 Elite
+// The living byproduct of Šauhahten's Prima Materia research: a mass of
+// fused tissue grown around a cauldron-heart, kept as a guardian because
+// destroying it would waste the material. Fights beside its maker in
+// Scene 5. Fire stops its regeneration.
+#let chimera() = creature-stat-block(
+  "The Chimera",
+  "T1 Elite",
+  size-type: [Size 2 Construct],
+  traits: ("Construct", "Alchemical", "Size 2"),
+  hp: 45,
+  armor: 6,
+  ward: 5,
+  evasion: 2,
+  ap: 4,
+  speed: 4,
   immunities: [Frightened, Dominated, Poisoned],
-  special: [*Regeneration:* The Monstrosity recovers 5 HP at the start of
-    each of its turns. This regeneration ceases if the Monstrosity takes
-    fire damage or is affected by an effect that specifically prevents
-    healing.],
-  abilities: (
-    [*Heavy Slam --- 2 AP* \
+  characteristics: (
+    Martial: 7,
+    Stamina: 6,
+    Grit: 5,
+  ),
+  passive-traits: (
+    (
+      name: "Regeneration",
+      body: [The Chimera recovers 3 HP at the start of each of its turns.
+        This regeneration ceases for the rest of the scene the first time
+        the Chimera takes fire or Thermal damage.],
+    ),
+  ),
+  actions: (
+    cr-action("melee", "Rending Bite", "2 AP")[\
       _Melee, Martial vs Evasion, single target_ \
-      *Damage:* 8+2D8 \
+      *Damage:* 6+1D10],
+
+    cr-action("melee", "Lurching Charge", "3 AP")[\
+      _Move up to Speed, then Melee, Martial vs Evasion, single target,
+      +1d to hit_ \
+      *Damage:* 6+1D10 \
       *On hit:* Target is knocked Prone.],
 
-    [*Sweeping Strike --- 2 AP* \
+    cr-action("area", "Sweeping Lash", "2 AP")[\
       _Melee, Martial vs Evasion, all enemies within 2 squares_ \
-      *Damage:* 5+1D10],
+      *Damage:* 4+1D8],
   ),
-  xp: 25,
+  xp: 30,
+)
+
+// Alchemical Homunculus — T1 Minion
+// Šauhahten's lab assistants: knee-high figures of wax, glass, and vat
+// flesh, animated by a droplet of soul residue each. They fetch, stir,
+// take notes — and, when the laboratory is threatened, they weaponize
+// themselves. Minions of the Scene 5 fight.
+#let homunculus() = creature-stat-block(
+  "Alchemical Homunculus",
+  "T1 Minion",
+  size-type: [Size 0 Construct],
+  traits: ("Construct", "Alchemical", "Size 0"),
+  hp: 8,
+  armor: 4,
+  ward: 4,
+  evasion: 3,
+  ap: 3,
+  speed: 4,
+  immunities: [Frightened, Dominated, Poisoned],
+  characteristics: (
+    Martial: 4,
+    Stamina: 3,
+    Grit: 3,
+  ),
+  passive-traits: (
+    (
+      name: "Alembic Burst",
+      body: [When the Homunculus is destroyed, its reagent core shatters
+        --- Burst 1 centred on it, 3 chemical damage, *Evasion D2*
+        negates.],
+    ),
+  ),
+  actions: (
+    cr-action("ranged", "Caustic Alembic", "2 AP")[\
+      _Melee or Ranged 5, Martial vs Evasion, single target_ \
+      *Damage:* 3+1D6 chemical \
+      It swings, or throws, a stoppered vessel of something that steams
+      where it splashes.],
+  ),
+  xp: 7,
 )
 
 // Šauhahten, the Mad Alchemist — T1 Boss
 // Mirror (Echo), ex-Mortefactor. Calm, articulate, utterly certain.
 // Fights to defend his work with a mix of alchemy, Mortefactor technique,
 // and fey birthright. Escalates from composed certainty to grandiose rage
-// as his laboratory is destroyed.
-#let sauhahten() = creature(
+// as his laboratory is destroyed — and escapes before the end.
+#let sauhahten() = creature-stat-block(
   "Šauhahten, the Mad Alchemist",
   "T1 Boss",
   traits: ("Deathless", "Mirror", "Humanoid"),
@@ -144,36 +221,54 @@
   evasion: 3,
   ap: 5,
   speed: 3,
-  characteristics: (
-    arcane: 7,
-    martial: 5,
-    potential: 6,
-    stamina: 5,
-    grit: 5,
-  ),
   immunities: [Dominated],
-  special: [*Desperate Fury:* While below half HP, Šauhahten gains +1d on
-    all attack rolls and his Evasion is reduced by 1 (to 2).],
-  abilities: (
-    [*Alchemical Bolt --- 2 AP* \
+  characteristics: (
+    Arcane: 7,
+    Martial: 5,
+    Potential: 6,
+    Stamina: 5,
+    Grit: 5,
+  ),
+  passive-traits: (
+    (
+      name: "Legendary Reflex",
+      body: [Once per round, after another creature ends its turn,
+        Šauhahten may move up to 3 squares or make an Alchemical Bolt
+        attack. This costs no AP.],
+    ),
+    (
+      name: "Desperate Fury",
+      body: [While below half HP, Šauhahten gains +1d on all attack rolls
+        and his Evasion is reduced by 1 (to 2).],
+    ),
+    (
+      name: "The Vanishing",
+      body: [Šauhahten does not intend to die here. When reduced below 12
+        HP --- or when his laboratory is lost and the fight with it --- he
+        escapes through the silvered mirror at the back of the laboratory
+        (see _The Vanishing_ in Scene 5). Award full XP.],
+    ),
+  ),
+  actions: (
+    cr-action("ranged", "Alchemical Bolt", "2 AP")[\
       _Ranged 10, Arcane vs Evasion, single target_ \
       *Damage:* 5+1D8 \
       Šauhahten hurls a volatile alchemical compound that detonates on
       impact.],
 
-    [*Soul Siphon --- 3 AP* \
+    cr-action("arcane", "Soul Siphon", "3 AP")[\
       _Ranged 8, Arcane vs Ward, single target_ \
       *Damage:* 6+1D12 \
       *On hit:* Šauhahten heals HP equal to half the damage dealt. \
       A tendril of pale light connects Šauhahten to the target, drawing
       vitality from them. Mortefactor technique.],
 
-    [*Fey Displacement --- 1 AP (Reaction)* \
+    cr-action("reaction", "Fey Displacement", "1 AP")[\
       _Trigger: Šauhahten is hit by an attack._ \
       Šauhahten teleports up to 3 squares. Once per round. \
       His Mirror nature allows him to step briefly between reflections.],
 
-    [*Distillation Overload --- 3 AP* \
+    cr-action("area", "Distillation Overload", "3 AP")[\
       _Burst 2 within 8, Arcane vs Evasion_ \
       *Damage:* 10+2D8 \
       Šauhahten destabilizes one of his alchemical apparatuses, causing it

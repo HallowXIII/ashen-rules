@@ -59,7 +59,7 @@
 
 #set page(columns: 1)
 
-#chap-header([], "The Seven", "Pregenerated characters to pick from")
+#chap-header([], "Character Profiles", "Pregenerated characters to pick from")
 
 The following pages introduce seven ready-to-play characters.
 Every one of them is built to the same budget, so no single one
@@ -70,7 +70,7 @@ a more detailed explanation of what they can do in combat and how to play
 them in a fight.
 
 The names given to these playtest characters aren't set in stone: if you'd
-prefer to play Juan the Warboar to Ushtâng the warboar, or make any other
+prefer to play Juan the Warboar to Ushtang the warboar, or make any other
 modifications, that is perfectly possible. For this reason, too, while ideally
 every player would pick a different character, if more than one person
 prefers to play the same character, then that character can simply be made into
@@ -84,7 +84,7 @@ two with a name change and perhaps one or two minor tweaks.
   [*Kind*],
   [*Does what*],
   [*Fiddly?*],
-  [Ushtâng],
+  [Ushtang],
   [Warboar],
   [Hits things until they stop],
   [No],
@@ -92,7 +92,7 @@ two with a name change and perhaps one or two minor tweaks.
   [Porcelain],
   [Duels, dances, punishes misses],
   [A little],
-  [Pâhâk],
+  [Pahak],
   [Ironhands],
   [Carries the machine gun],
   [No],
@@ -108,7 +108,7 @@ two with a name change and perhaps one or two minor tweaks.
   [Human],
   [Heals, blesses, saves rolls],
   [Some],
-  [Mbazân],
+  [Mbazan],
   [Goldenbristle],
   [Gives orders, slows enemies],
   [Most],
@@ -119,13 +119,23 @@ two with a name change and perhaps one or two minor tweaks.
 #set page(columns: 2)
 
 // =========================================================================
-#profile-header("Ushtâng", "Front Line")
+#profile-header("Ushtang", "Front Line")
 Warboar Sootbeast --- _Never-Still, by way of a friend_
 
-#quote-line["Sixty years I have been dying for other people's reasons. This one
-  I picked."]
+#quote-line["Usually when I go looking for someone it's just business. This
+time it's quite personal."]
 
 #portrait("ushtang.png", height: 50%)
+
+#stat-line(
+  ("HP", "19"),
+  ("FP", "11"),
+  ("EP", "11"),
+  ("Evasion", "0"),
+  ("Armor", "6"),
+  ("Ward", "2"),
+  ("Move", "7"),
+)
 
 #beat("Who You Are")[
   One of the peacekeepers who vanished outside Keshto was a friend. He was
@@ -169,16 +179,6 @@ Warboar Sootbeast --- _Never-Still, by way of a friend_
   and you go again. Simple, but effective.
 ]
 
-#stat-line(
-  ("HP", "19"),
-  ("FP", "11"),
-  ("EP", "11"),
-  ("Evasion", "0"),
-  ("Armor", "6"),
-  ("Ward", "2"),
-  ("Move", "7"),
-)
-
 #pagebreak()
 
 // =========================================================================
@@ -189,6 +189,16 @@ Porcelain Clockwork --- _A free agent, building her name_
 
 #portrait("zamazaha.jpg", height: 50%)
 
+#stat-line(
+  ("HP", "16"),
+  ("FP", "13"),
+  ("EP", "11"),
+  ("Evasion", "4"),
+  ("Armor", "5"),
+  ("Ward", "0"),
+  ("Move", "7"),
+)
+
 #beat("Who You Are")[
   The Porcelains, it is said, were meant to be their Goddess' playmates, before they were repurposed as tools of war.
   In your case, you awoke with an encyclopaedic knowledge of tea ceremony and a bladed weapon in your hands. Finding
@@ -196,6 +206,8 @@ Porcelain Clockwork --- _A free agent, building her name_
 
   As a free agent, you take whatever contract pleases you. The ones with large amounts of feathers attached please you the most.
 ]
+
+#colbreak()
 
 #beat("What You're Good At")[
   - *Reaching and cutting.* Your weapon is a Force Glaive, 7+d6, *Penetration 2*,
@@ -228,26 +240,26 @@ Porcelain Clockwork --- _A free agent, building her name_
   do this three times before you run out.
 ]
 
-#stat-line(
-  ("HP", "16"),
-  ("FP", "13"),
-  ("EP", "11"),
-  ("Evasion", "4"),
-  ("Armor", "5"),
-  ("Ward", "0"),
-  ("Move", "7"),
-)
-
 #pagebreak()
 
 // =========================================================================
-#profile-header("Pâhâk", "Heavy Weapons")
+#profile-header("Pahak", "Heavy Weapons")
 Ironhands Clockwork --- _On the Perfectors' secret service_
 
 #quote-line["My orders are to observe and report. I have found that observation
   goes better with covering fire."]
 
 #portrait("pahak.jpg", height: 50%)
+
+#stat-line(
+  ("HP", "17"),
+  ("FP", "12"),
+  ("EP", "11"),
+  ("Evasion", "0"),
+  ("Armor", "6"),
+  ("Ward", "1"),
+  ("Move", "6"),
+)
 
 #beat("Who You Are")[
   You are an agent of the Perfectors, that ancient order of gearsmiths
@@ -259,6 +271,8 @@ Ironhands Clockwork --- _On the Perfectors' secret service_
   As far as your teammates are concerned, though, you are mostly a weapons platform with legs.
   Your job is to make the range between the party and the enemy expensive to cross.
 ]
+
+#colbreak()
 
 #beat("What You're Good At")[
   - *Volume.* Your weapon is a Perfector Gatling Mk IV: 8+d8 at Long range,
@@ -290,16 +304,6 @@ Ironhands Clockwork --- _On the Perfectors' secret service_
   *Gun and Run* instead and do both for 2 AP.
 ]
 
-#stat-line(
-  ("HP", "17"),
-  ("FP", "12"),
-  ("EP", "11"),
-  ("Evasion", "0"),
-  ("Armor", "6"),
-  ("Ward", "1"),
-  ("Move", "6"),
-)
-
 #pagebreak()
 
 // =========================================================================
@@ -311,6 +315,16 @@ Shade Echo --- _On personal business_
 
 #portrait("kalariyar.jpg", height: 50%)
 
+#stat-line(
+  ("HP", "14"),
+  ("FP", "13"),
+  ("EP", "11"),
+  ("Evasion", "4"),
+  ("Armor", "4"),
+  ("Ward", "0"),
+  ("Move", "6"),
+)
+
 #beat("Who You Are")[
   You are a Shade; an erstwhile denizen of the realms of Faerie, and companion 
   of the Midnight Princess. Shades hunted the long winter nights of Faerie for
@@ -321,6 +335,8 @@ Shade Echo --- _On personal business_
   of your past. Somebody is killing people next to them, and you want to know
   whether that is coincidence.
 ]
+
+#colbreak()
 
 #beat("What You're Good At")[
   - *Noticing.* You have an Awareness of 7, the best in the party by two.
@@ -352,16 +368,6 @@ Shade Echo --- _On personal business_
   two innate powers per scene, so choose wisely when to make use of it.
 ]
 
-#stat-line(
-  ("HP", "14"),
-  ("FP", "13"),
-  ("EP", "11"),
-  ("Evasion", "4"),
-  ("Armor", "4"),
-  ("Ward", "0"),
-  ("Move", "6"),
-)
-
 #pagebreak()
 
 // =========================================================================
@@ -372,45 +378,6 @@ Porcelain Clockwork --- _Following the method_
 
 #portrait("wishanya.jpg", height: 50%)
 
-#beat("Who You Are")[
-  Just-So, Goddess of Magic, built the Porcelains as conduits for raw magical force.
-  You went further on your own initiative: you read voraciously; Alchemy, Ritual, Magitek,
-  whatever survived the war in a condition worth reading.
-
-  You took this contract because the little you have heard about the
-  disappearances sounds *methodical*, and methodical means a practitioner.
-  You would quite like to see their notes.
-]
-
-#beat("What You're Good At")[
-  - *Area damage.* *Flamethrower:* a Cone *11* of Thermal damage (8+d4) plus 3
-    ongoing burn that lasts until saved against. Arcane 6 to cast.
-  - *Knowing things.* Investigate 7 --- best in the party. Alchemy 6, Eerie 6,
-    Magitek 5, Ritual 5. If it is written down or magical, it is yours.
-  - *Sensing magic.* Magicsense 10m, +1d on Eerie about arcane effects.
-  - *Free Focus.* *Spell Capacitor:* every time you spend Focus, roll a d6 ---
-    on a 5 or 6 you get it all back. Cast as though you had more than you do.
-  - *Footing.* *Graceful Form:* untrippable, and difficult terrain does not slow
-    you.
-  - *Sneaking.* Subterfuge 6, which is unusual for artillery.
-]
-
-#beat("What You Should Watch For")[
-  - *Fragility.* 13 HP, Ward 0, Move 5. You are the squishiest thing here and
-    the slowest. Stand behind Ushtâng.
-  - *Friendly fire.* A Cone 11 is enormous. Check who is standing in it *before*
-    you roll --- the party's melee are usually in front of you.
-  - *Melee.* Martial 3 and a pistol for a backup. Do not get engaged.
-  - *Fog and magnets.* Standard Clockwork frailties, at half thresholds.
-]
-
-#beat("Combat Tactics")[
-  Wait for two enemies to line up, then 2 AP *Flamethrower* (8 FP): Cone 11,
-  difficulty 3, resisted by each target's Dodge against your cast. Full Thermal
-  damage plus 3 ongoing. You have Focus for *two* casts --- more if Spell
-  Capacitor is kind --- so the first one should catch at least two targets.
-]
-
 #stat-line(
   ("HP", "13"),
   ("FP", "16"),
@@ -420,6 +387,41 @@ Porcelain Clockwork --- _Following the method_
   ("Ward", "0"),
   ("Move", "5"),
 )
+
+#beat("Who You Are")[
+  Just-So, Goddess of Magic, built the Porcelains as conduits for raw magical force.
+  You went further on your own initiative: you read voraciously; Alchemy, Ritual, Magitek,
+  whatever survived the war in a condition worth reading.
+
+  You took this contract because the little you have heard about the
+  disappearances sounds methodical, and methodical means a practitioner.
+  You would quite like to see their notes.
+]
+
+#colbreak()
+
+#beat("What You're Good At")[
+  - *Area damage.* Your *Flamethrower* is an 11 meter Cone of Thermal damage (8+d4)
+    plus 3 ongoing burn that lasts until saved against.
+  - *Dealing with magic.* Your Porcelain ancestry gives you Magicsense to 10m and
+    a bonus to your Eerie checks; your Skills mean you have an easy time researching
+    and understanding magical workings. 
+  - *Free Focus.* Your *Spell Capacitor* lets you roll a d6 every time you spend Focus,
+    on a 5 or 6 you get it all back.
+]
+
+#beat("What You Should Watch For")[
+  - *Friendly fire.* A Cone 11 is enormous. Be careful not to burn the rest of the party.
+  - *Melee.* Between your magic and your pistol, you prefer staying at range.
+  - *Fog and magnets.* The frailties of every Clockwork.
+]
+
+#beat("Combat Tactics")[
+  Wait for two enemies to line up, then 2 AP *Flamethrower* (8 FP): Cone 11,
+  difficulty 3, resisted by each target's Dodge against your cast. Full Thermal
+  damage plus 3 ongoing. You have Focus for *two* casts --- more if Spell
+  Capacitor is kind --- so the first one should catch at least two targets.
+]
 
 #pagebreak()
 
@@ -432,8 +434,18 @@ Human --- _Sent by the Children of the Flame_
 
 #portrait("kho-prea.jpg", height: 50%)
 
+#stat-line(
+  ("HP", "15"),
+  ("FP", "15"),
+  ("EP", "11"),
+  ("Evasion", "2"),
+  ("Armor", "2"),
+  ("Ward", "4"),
+  ("Move", "6"),
+)
+
 #beat("Who You Are")[
-  Humans were adopted by the Sun God Khâru when their own mother turned on them.
+  Humans were adopted by the Sun God Kharu when their own mother turned on them.
   You have elected to show your appreciation for this inheritance.
   The Children of the Flame keep the Clears alive; when this one started showing
   signs of destabilizing, you were sent to keep an eye on it. All the easier to
@@ -442,6 +454,8 @@ Human --- _Sent by the Children of the Flame_
   You carry with you an ember of the Sun-God's flame, light and warmth unto
   the wretched; you also carry a gun, for the especially wretched.
 ]
+
+#colbreak()
 
 #beat("What You're Good At")[
   - *Healing.* *Mend Wounds* (5 FP, 3 casts) is your staple prayer. An ally within 15
@@ -476,20 +490,10 @@ Human --- _Sent by the Children of the Flame_
   those are cheaper than a death.
 ]
 
-#stat-line(
-  ("HP", "15"),
-  ("FP", "15"),
-  ("EP", "11"),
-  ("Evasion", "2"),
-  ("Armor", "2"),
-  ("Ward", "4"),
-  ("Move", "6"),
-)
-
 #pagebreak()
 
 // =========================================================================
-#profile-header("Mbazân", "Command")
+#profile-header("Mbazan", "Command")
 Goldenbristle Sootbeast --- _The most directly concerned_
 
 #quote-line["I have lost patrols before. I have never lost them quietly. That is
@@ -497,15 +501,27 @@ Goldenbristle Sootbeast --- _The most directly concerned_
 
 #portrait("mbazan.jpg", height: 50%)
 
+#stat-line(
+  ("HP", "13"),
+  ("FP", "17"),
+  ("EP", "11"),
+  ("Evasion", "2"),
+  ("Armor", "2"),
+  ("Ward", "4"),
+  ("Move", "5"),
+)
+
 #beat("Who You Are")[
   Goldenbristles were bred as the field commanders of Sootbeast armies, and the
   Never-Still gave you a real command to go with the instinct. You are in charge
   of policing in a different village; when Keshto began losing patrols, you applied
   to come and help --- better solve this problem here, before it's your men on the line.
 
-  You do not fight that well yourself. You make other people fight better, and you decide
-  when they do it.
+  You don't fight that well on your own, but that's fine. Every team needs at least one team
+  player. 
 ]
+
+#colbreak()
 
 #beat("What You're Good At")[
   - *Talking.* You have Influence 7 --- the best in the party, and a respectable
@@ -524,11 +540,11 @@ Goldenbristle Sootbeast --- _The most directly concerned_
 ]
 
 #beat("What You Should Watch For")[
-  - *Fragility.* With 13 HP, Evasion 2, and Move 5, you have the lowest HP and slowest
-    feet, in one package with rather middling dodging ability.
-  - *Fighting.* You have both Martial and Marksmanship at 3. The rifle is for when you have
-    nothing better to do, which should be rare.
-  - *Poison and disease.* Your Sootbeast ancestry makes you vulnerable to Chemical damage.
+  - *Physical Attacks.* With 13 HP and 2 Armor, you have the least ability to absorb
+    damage, in one package with rather middling dodging ability.
+  - *Missing.* You have both Martial and Marksmanship at 3. The rifle shouldn't be
+    your first choice. 
+  - *Poisons.* Your Sootbeast ancestry makes you vulnerable to Chemical damage.
 ]
 
 #beat("Combat Tactics")[
@@ -538,13 +554,3 @@ Goldenbristle Sootbeast --- _The most directly concerned_
   whatever is closing on your casters. You have Focus for roughly three casts
   plus Rallies, and 17 FP is the largest pool in the party.
 ]
-
-#stat-line(
-  ("HP", "13"),
-  ("FP", "17"),
-  ("EP", "11"),
-  ("Evasion", "2"),
-  ("Armor", "2"),
-  ("Ward", "4"),
-  ("Move", "5"),
-)

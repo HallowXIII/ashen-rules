@@ -1,212 +1,174 @@
 #import "../../formatting/declarations.typ": *
 #import "creatures.typ": *
 
-#chap-header("6", [= Appendix], "Reference tables and bestiary")
+#chap-header("6", [Appendix], "Reference tables and bestiary")
 
 == Bestiary
 
-The following stat blocks are for recurring or generic creatures encountered
-during the adventure. Unique creatures (the Alchemical Monstrosity and
-Šauhahten) have their stat blocks in the Faerie Ruin chapter where they
-appear.
-
-=== Fog-Touched Beast
-
-A predator warped by prolonged Fog exposure. These creatures are found near
-the Fog boundary in the Weald's outskirts, drawn to areas of residual
-supernatural energy. They are aggressive but not suicidal --- they flee if
-reduced below half HP.
-
-#fog-touched-beast()
+All creatures in the adventure, in order of appearance.
 
 === Soulless Husk
 
 The reanimated bodies of Šauhahten's victims, stripped of their souls and
-bound into mindless servitude. They are slow, relentless, and unsettling.
-They do not speak, do not retreat, and do not respond to pain.
+filled with just enough residual Fog energy to move. They are slow,
+relentless, and unsettling. They do not speak, do not retreat, and do not
+respond to pain. The six at the dump site wear peacekeeper colors.
 
 #soulless-husk()
+#colbreak()
 
-=== Derelict Obliterator Drone
+=== Fog-Touched Beast
 
-This Perfector war machine has been rotting in its current location for
-untold decades. Its armor cladding is covered in grime, steel components are rusted,
-and the targeting lenses are cracked. The mist reactor produces a sickly hum,
-and its lift arrays have long failed. Unfortunately, its cannon still works, and
-it still treats unknown humanoids as threats.
+A predator warped by prolonged Fog exposure, drawn to areas of residual
+supernatural energy. Aggressive but not suicidal --- a beast below half
+HP flees.
 
-#derelict-obliterator()
+#fog-touched-beast()
+#colbreak()
+
+=== Vazhan, Hollow Revenant
+
+Sergeant of the Never-Still watch, Ushtâng's friend, and Šauhahten's one
+failed extraction: a fragment of soul remained, and the Fog wove the
+residue of the other victims around it. He holds the cave mouth like the
+watchman he was, and screams with voices that are not his own.
+
+#hollow-revenant()
+#colbreak()
+
+=== The Chimera
+
+The living byproduct of the Prima Materia process --- fused tissue grown
+around a cauldron-heart, kept because destroying it would waste the
+material. Its wounds close on their own until fire teaches them not to.
+
+#chimera()
+
+=== Alchemical Homunculus
+
+Šauhahten's knee-high laboratory assistants, animated by a droplet of
+soul residue each. In peacetime they stir, fetch, and take notes. In
+wartime they are ammunition.
+
+#homunculus()
+
+=== Šauhahten, the Mad Alchemist
+
+Mirror, ex-Mortefactor, Deathless. Calm, articulate, and utterly certain
+that his murders are arithmetic. He fights to defend the work, not to
+kill --- and he does not intend to die here.
+
+#sauhahten()
 
 == Skill Check Reference
 
 #pftab(
-  "Skill Checks by Location",
-  columns: (1.5fr, 1.5fr, 0.5fr, 3fr),
+  "Skill Checks by Scene",
+  columns: (1.4fr, 1.5fr, 0.5fr, 3fr),
   breakable: true,
-  [*Location*],
+  [*Scene*],
   [*Skill*],
   [*DC*],
   [*Result*],
 
-  // Keshto Village — Phase 1
-  [Keshto (Phase 1)],
+  // Scene 1 — Investigation
+  [1 --- Keshto],
   [Investigate],
   [2],
-  [Disappearance timeline and geographic pattern],
-  [Keshto (Phase 1)],
+  [Disappearance timeline and northeast pattern],
+  [1 --- Keshto],
   [Influence],
   [3],
-  [Reeve opens up about personal toll on community],
-  [Keshto (Phase 1)],
+  [Reeve opens up about the toll on the community],
+  [1 --- Keshto],
   [Influence],
   [2],
-  [Peacekeeper talks about what happened],
-  [Keshto (Phase 1)],
+  [Dashek talks; detailed directions (tracking bonus)],
+  [1 --- Keshto],
   [Awareness],
   [3],
-  [Peacekeeper is holding back emotion (not info)],
-  [Keshto (Phase 1)],
-  [Occultism],
-  [5],
-  [Faerie resonance unusually preserved (flavour)],
-  [Keshto (Phase 1)],
-  [Investigate],
-  [6],
-  [Someone has visited the shrine recently (very hard)],
-  [Keshto (Phase 1)],
+  [Dashek is carrying guilt, not information],
+  [1 --- Keshto],
   [Investigate],
   [3],
-  [Find the local who remembers Šauhahten],
-
-  // Dump Site — Tracking Challenge
-  [Dump Site],
+  [Find Ibbeh, who remembers the Mirror customer],
+  [1 --- Tracking],
   [Awareness],
   [3],
-  [Read disturbed vegetation and repeated passage (tracking)],
-  [Dump Site],
+  [Read the terrain (group check stretch)],
+  [1 --- Tracking],
   [Investigate],
   [3],
-  [Reason out disposal logic to narrow search area (tracking)],
-  [Dump Site],
+  [Reason out the disposal logic (group check stretch)],
+  [1 --- Tracking],
   [Stamina],
   [4],
-  [Push through rough terrain and Fog discomfort (tracking)],
+  [Push through terrain and Fog-headache (stretch)],
 
-  // Dump Site — Investigation
-  [Dump Site],
+  // Scene 2 — Dump Site
+  [2 --- Dump Site],
+  [Awareness],
+  [3],
+  [Spot the tarp moving; not surprised by the husks],
+  [2 --- Dump Site],
+  [Athletics],
+  [2],
+  [Scramble up to the north ridgeline in 1 square],
+  [2 --- Cave],
   [Occultism],
   [3],
-  [Souls have been extracted from the bodies],
-  [Dump Site],
+  [Souls extracted deliberately --- not a predator],
+  [2 --- Cave],
   [Medicine/Alchemy],
   [4],
-  [No conventional violence; desiccation from soul removal],
-  [Dump Site],
+  [Surgical method; desiccation is a side effect],
+  [2 --- Cave],
   [Investigate],
   [3],
-  [Methodical disposal; bodies brought post-mortem],
-  [Dump Site],
-  [Awareness],
-  [4],
-  [Trail leading to the ritual site],
+  [Months of use; iterated circles; lone perpetrator],
+  [2 --- Cave],
+  [Ritual/Occultism],
+  [3/4],
+  [Not necromancy --- scholarly soul-distillation],
 
-  // Dump Site — Hazard
-  [Dump Site],
-  [Grit],
-  [3],
-  [Resist soul residue discharge (4 psychic, Dazed on fail)],
-
-  // Ritual Site
-  [Ritual Site],
-  [Alchemy],
-  [4],
-  [Sophisticated extraction process, disciplined technique],
-  [Ritual Site],
-  [Occultism],
-  [4],
-  [Soul extraction, not necromancy],
-  [Ritual Site],
-  [Investigate],
-  [3],
-  [Repeated use, iterating process, volume matches missing],
-  [Ritual Site],
-  [Awareness],
-  [3],
-  [Trail to dump site; second trail goes cold],
-  [Ritual Site],
-  [Occultism/Alchemy],
-  [5],
-  [Technique is Mortefactor-derived (pivotal clue)],
-
-  // Keshto Village — Phase 3
-  [Keshto (Phase 3)],
+  // Scene 3 — Sennakht
+  [3 --- Sennakht],
   [Influence],
   [3],
-  [Merzaghaal shares faction intel],
-  [Keshto (Phase 3)],
-  [Awareness],
+  [Appeal to the victims; she opens up],
+  [3 --- Sennakht],
+  [Occultism],
+  [3],
+  [Speak her language; treated as a colleague],
+  [3 --- Sennakht],
+  [Impose],
   [4],
-  [Tracker has his own agenda],
-  [Keshto (Phase 3)],
-  [Influence],
-  [4],
-  [Negotiate terms with the tracker],
-  [Keshto (Phase 3)],
-  [Investigate],
-  [2],
-  [Find the local who remembers (reduced DC with description)],
+  [She talks --- flatly, omitting the one-way door],
 
-  // Faerie Ruin
-  [Faerie Ruin],
-  [Occultism],
-  [4],
-  [Open entrance with tracker's cipher],
-  [Faerie Ruin],
-  [Occultism],
-  [6],
-  [Open entrance without cipher],
-  [Faerie Ruin],
-  [Awareness],
-  [2],
-  [Recognise undead as dump site victims],
-  [Faerie Ruin],
-  [Occultism],
-  [4],
-  [See through Faerie illusion (per stretch)],
-  [Faerie Ruin],
-  [Awareness],
-  [5],
-  [Notice spatial inconsistency (per stretch)],
-  [Faerie Ruin],
-  [Investigate],
-  [4],
-  [Map and logic through illusions (per stretch)],
-  [Faerie Ruin],
-  [Athletics],
-  [4],
-  [Collapse pillar onto monstrosity],
-  [Faerie Ruin],
-  [Occultism],
-  [4],
-  [Reactivate Faerie ward (D2 with cipher)],
-  [Faerie Ruin],
-  [Athletics],
-  [3],
-  [Squeeze through narrow passage (Large only)],
-  [Faerie Ruin],
+  // Scene 4 — Threshold
+  [4 --- Threshold],
   [Occultism],
   [2],
-  [Recognise soul vessels contain aware, suffering people],
-  [Faerie Ruin],
+  [Read the inscription: give the door your death],
+  [4 --- Descent],
+  [Subterfuge],
+  [3],
+  [Group check: arrive unannounced, act first],
+
+  // Scene 5 — Laboratory
+  [5 --- Laboratory],
+  [Occultism],
+  [2],
+  [The soul vessels hold aware, suffering people],
+  [5 --- Laboratory],
   [Athletics],
   [3],
-  [Smash the distillation array],
+  [Smash the distillation array (2 AP)],
 )
 
 == Loot Table
 
-Values are per party, not per character. The party divides loot as they
-see fit.
+Values are per party, not per character.
 
 #pftab(
   "Loot by Location",
@@ -217,33 +179,27 @@ see fit.
   [*Value*],
   [*Notes*],
 
-  // Field Sites
   [Dump Site],
   [Personal effects of victims],
   [50 #feathers],
-  [Coins, trinkets, equipment from the missing],
-  [Ritual Site],
-  [Alchemical reagents (crude)],
+  [Coins, trinkets, gear --- returning them to Keshto
+    is worth more goodwill than feathers],
+  [Cave],
+  [Crude reagents and glassware],
   [100 #feathers],
-  [Leftover extraction byproducts, salvageable],
-  [Ritual Site],
-  [Glassware and apparatus],
-  [150 #feathers],
-  [Too heavy to carry all; party chooses what to take],
-
-  // Laboratory — depends on alert level and combat destruction
+  [Extraction byproducts, salvageable],
   [Laboratory],
   [Alchemical equipment],
   [400 #feathers],
-  [Destroyed if distillation array smashed],
+  [Destroyed if the distillation array is smashed],
   [Laboratory],
   [Refined reagents],
   [200 #feathers],
-  [Destroyed if reagent stockpile detonated],
+  [Destroyed if the stockpile is detonated],
   [Laboratory],
   [Research journals],
   [300 #feathers],
-  [Tracker claims if recovered; destroyed if burned],
+  [Promised to Sennakht? Destroyed? The party chooses],
   [Laboratory],
   [Soul vessels (intact)],
   [---],
@@ -251,21 +207,17 @@ see fit.
   [Laboratory],
   [Šauhahten's personal effects],
   [100 #feathers],
-  [Mirror-crafted items, alchemical tools, cipher notes],
+  [Mirror-crafted tools, cipher notes],
 
-  // Totals
   [*Maximum total*],
   [],
-  [*1300 #feathers*],
-  [Everything intact, nothing destroyed],
-  [*Minimum total*],
-  [],
-  [*200 #feathers*],
-  [Loud alert, all targets destroyed in combat],
+  [*1150 #feathers*],
+  [Everything intact --- which means the contract's
+    primary targets survived],
   [*Typical total*],
   [],
-  [*600--900 #feathers*],
-  [Moderate alert, some destruction],
+  [*300--600 #feathers*],
+  [Array and stockpile destroyed per the mission],
 )
 
 == XP Summary
@@ -277,108 +229,77 @@ see fit.
   [*XP*],
   [*Notes*],
 
-  [Fog-Touched Beast (×1, dump site)],
-  [15],
-  [Field encounter],
-  [Soulless Husks (×2, dump site)],
-  [14],
-  [Risen dead at dump site, 7 each],
-  [Soulless Husks (×4, laboratory)],
+  [Soulless Husks (×6)],
+  [42],
+  [Scene 2, 7 each],
+  [Fog-Touched Beasts (×2)],
+  [30],
+  [Scene 2, 15 each],
+  [Vazhan, Hollow Revenant],
+  [30],
+  [Scene 2 mini-boss],
+  [The Chimera],
+  [30],
+  [Scene 5],
+  [Alchemical Homunculi (×4)],
   [28],
-  [Laboratory Layer 2, 7 each],
-  [Alchemical Monstrosity],
-  [25],
-  [Fought or bypassed],
+  [Scene 5, 7 each],
   [Šauhahten],
   [60],
-  [Laboratory Layer 5],
-  [Mission: destroy laboratory],
+  [Scene 5 --- awarded in full when he flees],
+  [Mission: fulfil the contract],
   [100],
-  [Primary objective],
-  [Mission: secondary (optional)],
-  [100],
-  [E.g. recover research, confirm patron's existence],
+  [Array and stockpile destroyed],
   [Loot XP],
-  [20--90],
-  [1 XP per 10#feathers recovered],
-  [*Total from adventure*],
-  [*362--432*],
+  [30--60],
+  [1 XP per 10 #feathers recovered],
+  [*Total*],
+  [*350--380*],
   [*Per character*],
 )
 
-#note[
-  This table covers only XP sources explicitly detailed in the adventure.
-  Over eight sessions, characters will also earn XP from incidental
-  encounters, additional loot, and GM-awarded story milestones. The
-  expected total per character over the full adventure is 1500--2000 XP.
-]
+== Clue Safety Net
 
-== Clue Flowchart
+The adventure needs the party to learn three things. None of them can be
+lost to bad dice:
 
-The investigation has four threads that build toward the climax. The
-following shows which clues are mandatory (the adventure cannot proceed
-without them) and which are optional (they enrich the picture but are not
-required).
-
-=== Thread 1: The Facts
-- *Source:* Town Reeve, peacekeeper, Merzaghaal
-- *Key information:* People are disappearing. Northeast. Accelerating.
-- *Status:* Mandatory. The party receives this without checks.
-
-=== Thread 2: The What
-- *Source:* Dump site, ritual site
-- *Key information:* Souls are being extracted. The method is alchemical.
-- *Status:* Mandatory. Requires visiting at least one field site.
-- *Fallback:* If the party visits neither site, Merzaghaal sends another
-  search party that finds the dump site and reports back.
-
-=== Thread 3: The Who
-- *Source:* Ritual site (Mortefactor-derived technique) → Mortefactor
-  Tracker → Šauhahten's identity
-- *Key information:* A Mirror ex-Mortefactor named Šauhahten.
-- *Status:* Mandatory. Requires the Mortefactor connection.
-- *Fallback:* If the party cannot make the Occultism/Alchemy D5 check at
-  the ritual site, provide the Mortefactor clue through alternative means
-  (see the Ritual Site chapter).
-
-=== Thread 4: The Where
-- *Source:* Tracker's knowledge of Prima Materia requirements + the Faerie
-  site's characteristics. Optionally confirmed by the local who remembers
-  (supply routes pointing northeast toward the shrine).
-- *Key information:* The laboratory is beneath the Faerie shrine.
-- *Status:* Mandatory. The tracker provides this if the party cannot deduce
-  it themselves.
++ *Something is extracting souls, northeast.* Dashek's directions are
+  given freely; the dump site delivers the rest on sight.
++ *The method belongs to a scholarly order.* The notebook page behind
+  the distillation rig is found without a check; Merzaghaal makes the
+  Mortefactor connection and points to Sennakht.
++ *The lair is under the shrine, and the door takes a death.* Sennakht
+  provides both once persuaded --- and if the party never wins her over,
+  Merzaghaal's faction channels produce the name and the place overnight,
+  leaving only the door's secret to be learned the hard way at the
+  threshold (Kalariyar feels it; the inscription spells it out at
+  *Occultism D2*).
 
 == Open Threads
 
-The following plot threads are deliberately left unresolved at the end of
-the adventure. They are hooks for future adventures, to be developed by the
-GM as they see fit.
+Deliberately unresolved, for whoever runs the next session:
 
 === Šauhahten Will Return
-He is Deathless. He will reincorporate at his soul anchor in a matter of
-days. The laboratory is destroyed, but his knowledge is intact. He will
-start over --- somewhere else, with better security, and with a grudge.
-Whether he targets the party specifically or simply resumes his work
-elsewhere depends on the tone the GM wants for the campaign.
+He escaped with his knowledge and his conviction intact and his life's
+work in ashes. He will start over --- somewhere else, with better
+security, and with a list of names. Whether he seeks the party out or
+simply resumes elsewhere sets the tone of the next arc.
 
 === The Patron in the Fog
-Šauhahten was guided by a voice in the Fog --- an intelligence that offered
-knowledge and encouragement. The adventure deliberately leaves the patron's
-nature undefined. It is not what Šauhahten thinks it is. It benefits from
-souls being rendered down. Beyond that, the GM decides: a dead god's echo,
-a Faerie parasite, a Fog-born intelligence, or something else entirely.
+Šauhahten was guided by a voice in the Fog --- an intelligence that
+offered knowledge and encouragement. It is not what he thinks it is. It
+benefits from souls being rendered down. Beyond that, the GM decides: a
+dead god's echo, a Faerie parasite, a Fog-born intelligence, or something
+else entirely.
 
-=== The Mortefactor Favour
-If the party accepted the tracker's help opening the laboratory entrance,
-they owe the Mortefactors a favour. The nature of this favour is
-unspecified --- the Mortefactors will call it in when it serves them. This
-is a faction hook: it ties the party into the politics of the Most Ancient
-and Noble Order, for better or worse.
+=== Sennakht and the Doors
+She knows more about the Deep Court seals than she said, and she asked
+Kalariyar to bring her rubbings of other doors. A retired Lector with two
+hundred years of guilt makes an excellent patron --- or an excellent
+tragedy.
 
 === The Research
-If the research journals survived, the Mortefactors now possess detailed
-notes on Prima Materia extraction. Whether they secure this knowledge
-responsibly or whether it creates problems of its own is a question for
-future adventures. If the research was destroyed, the knowledge died with
-the journals --- but Šauhahten still remembers.
+If the journals survived, someone now holds detailed notes on Prima
+Materia extraction --- Sennakht, the Order, or the party's packs. If they
+burned, the knowledge lives only in Šauhahten's memory. Either way, the
+Perfectors have told Pâhâk to keep watching.
