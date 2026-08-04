@@ -57,11 +57,13 @@
 
 // --- Chapter -------------------------------------------------------------
 
-#chap-header([], "The Seven", "Pick one and read one page")
+#set page(columns: 1)
 
-Seven characters are ready to play. Every one of them is built to the same
-budget, so no single one is stronger than the others, but every character
-is good at different things.
+#chap-header([], "The Seven", "Pregenerated characters to pick from")
+
+The following pages introduce seven ready-to-play characters.
+Every one of them is built to the same budget, so no single one
+is stronger than the others, but every character is good at different things.
 
 As combat is the most complex part of the game, each character comes with
 a more detailed explanation of what they can do in combat and how to play
@@ -71,11 +73,11 @@ The names given to these playtest characters aren't set in stone: if you'd
 prefer to play Juan the Warboar to Ushtâng the warboar, or make any other
 modifications, that is perfectly possible. For this reason, too, while ideally
 every player would pick a different character, if more than one person
-must play the same character, then that character can simply be made into
+prefers to play the same character, then that character can simply be made into
 two with a name change and perhaps one or two minor tweaks.
 
 #float(pftab(
-  "Pick a Character",
+  "Character Overview",
   columns: (1fr, 1fr, 2.4fr, 0.8fr),
   align: (left, left, left, center),
   [*Name*],
@@ -114,6 +116,8 @@ two with a name change and perhaps one or two minor tweaks.
 
 #pagebreak()
 
+#set page(columns: 2)
+
 // =========================================================================
 #profile-header("Ushtâng", "Front Line")
 Warboar Sootbeast --- _Never-Still, by way of a friend_
@@ -124,44 +128,45 @@ Warboar Sootbeast --- _Never-Still, by way of a friend_
 #portrait("ushtang.png", height: 50%)
 
 #beat("Who You Are")[
-  One of the peacekeepers who vanished outside Keshto was yours --- a century of
-  campaigns together, the sort of debt that does not get itemised. You are not
-  Never-Still and you do not care about restoring Faerie. You came because
-  somebody took something of yours and you intend to be present when it is
-  explained to them.
+  One of the peacekeepers who vanished outside Keshto was a friend. He was
+  mortal, and so your friendship was always destined to end, but you are
+  incensed at the way it did. The concerns of the Never-Still are not your
+  concerns; you only came because somebody took something of yours, and you
+  intend to make sure that the responsible parties are made to understand
+  their transgressions.
 
-  You are the largest, toughest thing the party owns, and you have no magic
-  whatsoever. This is not a weakness. It means your sheet has no moving parts
-  and you never lose a turn looking something up.
+  You are the largest, toughest member of the party, but you have no magic
+  whatsoever. You have, so far, found that you do not need it.
 ]
 
 #colbreak()
 
-#beat("Strong At")[
-  - *Hitting things.* Martial 7 --- the best melee pool in the party. Roll 7d6.
-  - *Not dying.* 19 HP, Armor 6, Ward 2. You have the most of all three.
+#beat("What You're Good At")[
+  - *Hitting things.* Your Martial stat is 7 --- the best melee pool in the party.
+  - *Not dying.* 19 HP, Armor 6, Ward 2. You are not going down any time soon.
   - *Momentum.* *Tide of Iron:* every kill hands you back up to 2 AP, so a good
     turn keeps going.
   - *Refusing to move.* +2 against anything that would shove, pull, or drag you,
     and +2 when you do it to someone else.
-  - *Fear.* You are immune to it. Entirely. Walk at the thing.
-  - *Second wind.* Once per fight, 1 AP heals you and clears all ongoing damage.
-  - *Terrain.* Athletics 7, Acrobatics 6. Climb it, jump it, break it.
+  - *Courage.* As a Warboar, you are simply immune to fear. A privilege when combined
+    with immortality.
+  - *Staying in.* Once per fight, 1 AP heals you and clears all ongoing damage.
+  - *Dealing with terrain.* You have trained your body well. You have Athletics 7,
+    Acrobatics 6. Climb it, jump it, break it.
 ]
 
-#beat("Watch Out For")[
-  - *Evasion 0.* Everything hits you. That is the trade; your Armor eats it.
-  - *Range.* Marksmanship 3 and a hammer. If the fight is at distance you are
-    just walking.
+#beat("What You Should Watch For")[
+  - *Evasion 0.* Everything hits you. The armor helps, but it won't absorb everything.
+  - *Range.* You have Marksmanship 3 and a hammer. If the fight is at a distance you are
+    doing some walking.
   - *Poison.* Sootbeast flesh takes 50% extra poison damage and resists disease
     at +2 difficulty. Do not drink the strange liquid.
-  - *Thinking.* Investigate 3. Let someone else read the ledger.
 ]
 
-#beat("Your First Turn")[
+#beat("Combat tactics")[
   *Charge* --- 3 AP, move at the nearest enemy, attack with +4d. That is *11
-  dice* on your opening swing. Spend the last AP on a 1-square step, or hold it.
-  If the charge kills, Tide of Iron refunds up to 2 AP and you go again.
+  dice* on your opening swing. If the charge kills, Tide of Iron refunds up to 2 AP
+  and you go again. Simple, but effective.
 ]
 
 #stat-line(
@@ -178,51 +183,49 @@ Warboar Sootbeast --- _Never-Still, by way of a friend_
 
 // =========================================================================
 #profile-header("Zamazaha", "Front Line")
-Porcelain Clockwork --- _Free agent, building a name_
+Porcelain Clockwork --- _A free agent, building her name_
 
-#quote-line["I was made to pour tea. I have had a great deal of time to consider
-  alternatives."]
+#quote-line["I was made to pour tea. What excuse do you have?"]
 
-#portrait("porcelain.png")
+#portrait("zamazaha.jpg", height: 50%)
 
 #beat("Who You Are")[
-  You were built as a companion --- decorative, attentive, harmless --- and then
-  the war came and you were rebuilt into something that carries a glaive.
-  Nobody asked you about either decision. You take Black Guard contracts now
-  because a contract is a thing you agree to, and the novelty has not worn off.
+  The Porcelains, it is said, were meant to be their Goddess' playmates, before they were repurposed as tools of war.
+  In your case, you awoke with an encyclopaedic knowledge of tea ceremony and a bladed weapon in your hands. Finding
+  little use for the former, you ended up making your living with the latter. 
 
-  You are the party's duelist: fast, hard to pin down, and best when you are
-  the one choosing where the fight happens.
+  As a free agent, you take whatever contract pleases you. The ones with large amounts of feathers attached please you the most.
 ]
 
-#beat("Strong At")[
-  - *Reach and cut.* Force Glaive, 7+d6, *Penetration 2*, hits at 2 squares.
-    Martial 6.
-  - *Moving.* Move 7 --- the fastest in the party. *Vault* lets you walk through
-    enemy squares as though they were merely awkward.
-  - *Punishing misses.* *Riposte:* when an enemy misses you in melee, hit them
-    back. This is free and it happens on their turn.
-  - *Footing.* *Graceful Form:* you cannot be tripped and you ignore difficult
-    and treacherous terrain entirely.
-  - *Staying missed.* Evasion 4, Armor 5 --- best of both among the front line.
-  - *Sensing magic.* Magicsense 10m, +1d on Eerie checks about arcane effects.
+#beat("What You're Good At")[
+  - *Reaching and cutting.* Your weapon is a Force Glaive, 7+d6, *Penetration 2*,
+     hits at 2 squares.
+  - *Moving.* Your Move 7 is tied for the fastest in the party.
+    Your *Vault* advance and *Graceful Form* trait let you walk through enemy
+    squares as though they weren't there.
+  - *Punishing misses.* When an enemy misses you in melee, you can hit them
+    back with your *Riposte* before their turn is done.
+  - *Not being hit.* Your Evasion of 4 make you able to dodge many attacks,
+    and Armor 5 isn't bad either.
+  - *Sensing magic.* Your ancestry gives you Magicsense out to 10m,
+    and a bonus +1d on Eerie checks about arcane effects to boot.
 ]
 
-#beat("Watch Out For")[
-  - *Ward 0.* Physical hits bounce; magic goes straight through. Do not tank the
-    caster.
-  - *Fog.* Clockworks suffer at half the usual exposure thresholds, and Dense
+#beat("What You Should Watch For")[
+  - *Magic.* Your ability to resist magic is very low; try to get your friends
+    to distract any spellcasters.
+  - *The Fog.* Clockworks suffer at half the usual exposure thresholds, and Dense
     Fog can make you malfunction outright.
   - *Magnets and grit.* Strong magnetic fields and airborne particulates both
-    give you stacking penalties. Flagged when relevant.
-  - *Talking.* Deceive 3. You are honest largely by construction.
+    give you stacking penalties.
+  - *Questions.* You have Deceive 3. You are honest largely by construction.
 ]
 
-#beat("Your First Turn")[
-  1 AP to move into reach at 2 squares, then 2 AP for *Measured Strike* (4 FP):
-  full damage *and* +2 Evasion until your next turn --- so you swing first and
-  are harder to hit for the reply. You have 3 uses. The last AP buys a step
-  back out of reach.
+#beat("Combat tactics")[
+  Use 1 AP to move into reach at 2 squares, then 2 AP for *Measured Strike* (4 FP):
+  full damage *and* +2 Evasion until your next turn: you swing first, and if the
+  enemy attempts to hit back, you are likely to evade and *Riposte*. At 13 FP you can
+  do this three times before you run out.
 ]
 
 #stat-line(
@@ -239,51 +242,51 @@ Porcelain Clockwork --- _Free agent, building a name_
 
 // =========================================================================
 #profile-header("Pâhâk", "Heavy Weapons")
-Ironhands Clockwork --- _Perfector business, not fully disclosed_
+Ironhands Clockwork --- _On the Perfectors' secret service_
 
 #quote-line["My orders are to observe and report. I have found that observation
   goes better with covering fire."]
 
-#portrait("Ironhands.png", height: 6cm)
+#portrait("pahak.jpg", height: 50%)
 
 #beat("Who You Are")[
-  Your soul sits in a magi-mechanic core bolted inside a walking frame, and the
-  Perfectors --- who believe the world is a machine that can be repaired ---
-  paid for the frame. They sent you to Keshto with instructions that are
-  slightly vaguer than you would like. Something about the disappearances
-  interests them, and they did not say what.
+  You are an agent of the Perfectors, that ancient order of gearsmiths
+  pledged to the memory of Third, Mother-Goddess of arcane magic and machinery.
+  They sent you to Keshto with instructions that are slightly vaguer than you
+  would like. Something about the disappearances interests them, but your superior
+  did not deign to share the details with you. Perhaps his superior hadn't either.
 
-  You are a weapons platform with legs. Your job is to make the range between
-  the party and the enemy expensive to cross.
+  As far as your teammates are concerned, though, you are mostly a weapons platform with legs.
+  Your job is to make the range between the party and the enemy expensive to cross.
 ]
 
-#beat("Strong At")[
-  - *Volume.* Perfector Gatling Mk IV: 8+d8 at Long range, *full auto*.
-    Marksmanship 6.
-  - *Absorbing.* 17 HP behind Armor 6 and Ward 1, and the gun is *Integrated* so
-    its Bulk costs you nothing.
-  - *Seeing through walls.* Electroception 10m --- you sense powered machinery,
-    live circuits, and big metal through solid obstacles. This is a scouting
-    tool; use it.
-  - *Shoot and scoot.* *Gun and Run* (5 FP, 2 uses): move up to half your Speed
-    *as part of* the attack, for full damage.
-  - *Getting in.* Access 6 --- the party's best at locks, doors, and systems.
-    Athletics 6, Shop 5.
+#beat("What You're Good At")[
+  - *Volume.* Your weapon is a Perfector Gatling Mk IV: 8+d8 at Long range,
+    firing full auto from Marksmanship 6.
+  - *Absorbing.* You're not quite as heavy as the Warboar, but you have 
+    17 HP behind Armor 6 and Ward 1.
+  - *Seeing through walls.* Your nature grants you Electroception out to 10m
+    --- you sense powered and magnetic things through solid obstacles.
+  - *Shooting and scooting.* With your *Gun and Run* power (5 FP, 2 uses), you
+    can move up to half your Speed *as part of* an attack, for full damage.
+  - *Getting in.* You have Access 6 and Shop 5 --- the party's best at locks, doors, and systems.
+  And if brute strength is necessary, your Athletics rating is 6.
 ]
 
-#beat("Watch Out For")[
+#beat("What You Should Watch For")[
   - *Evasion 0.* Your frame is not dodging anything. Use cover instead.
-  - *Stealth.* Subterfuge 3, and you weigh several hundred kilos. You are the
-    reason the plan gets loud.
+  - *A lack of stealth.* Your Subterfuge is only 3, and you weigh several hundred kilos.
+    You are, in all likelihood, the reason the plan gets loud.
   - *Fog, magnets, dust.* All three degrade you, and Fog affects you at half the
     normal thresholds.
-  - *Nuance.* Deceive 3, Eerie 3, Investigate 4.
+  - *Nuance.* Deceive 3, Eerie 3, Investigate 4 --- if you expect to have to lie, or
+    be lied to, you'll want backup.
 ]
 
-#beat("Your First Turn")[
+#beat("Combat tactics")[
   1 AP *Take Aim*, then 2 AP to fire the gatling at the largest threat you can
-  see --- full auto, 6d6 to hit. Keep the last AP for a reaction-free
-  reposition, or bank it. If you need to change position and still shoot, use
+  see --- full auto, 7d to hit. Keep the last AP for a reaction-free
+  reposition. If you need to change position and still shoot, use
   *Gun and Run* instead and do both for 2 AP.
 ]
 
@@ -301,57 +304,52 @@ Ironhands Clockwork --- _Perfector business, not fully disclosed_
 
 // =========================================================================
 #profile-header("Kalariyar", "Scout")
-Shade Echo --- _Personal business in the Weald_
+Shade Echo --- _On personal business_
 
 #quote-line["The old sites remember me. I would rather find out why before
   somebody else does."]
 
-#portrait("Shade.png", height: 7cm)
+#portrait("kalariyar.jpg", height: 50%)
 
 #beat("Who You Are")[
-  You are an Echo --- a fragment of the vanished Faerie Realms, still walking
-  around in the Age of Ash. Shades hunted the long winter nights of Faerie for
-  the Goddess of what is Hidden and Forgotten, and you have kept the instinct if
+  You are a Shade; an erstwhile denizen of the realms of Faerie, and companion 
+  of the Midnight Princess. Shades hunted the long winter nights of Faerie for
+  the Goddess of what is Hidden and Forgotten, and you have kept the instinct, if
   not the memory.
 
-  The fey sites around Venna Weald are the closest thing you have to a
-  biography. Somebody is killing people next to them, and you want to know
+  The fey sites around Venna Weald are your best chance at remembering something
+  of your past. Somebody is killing people next to them, and you want to know
   whether that is coincidence.
-
-  You are the party's eyes, and its answer to armour.
 ]
 
-#beat("Strong At")[
-  - *Noticing.* Awareness 7 --- the best in the party by two. Investigate 6,
-    Subterfuge 6.
-  - *Hearing in the dark.* Blindsense 5m: you detect things by sound with no
-    line of sight at all. +1d on Stamina checks in dim light.
-  - *Punching through armour.* Cryo Pistol, 7+d8, *Penetration 4* --- far and
-    away the party's best answer to a heavily armoured target.
-  - *Freezing.* Every hit forces a Stamina check; failure means *Slowed*, and
-    hitting an already-Slowed target *Freezes* it outright.
+#beat("What You're Good At")[
+  - *Noticing.* You have an Awareness of 7, the best in the party by two.
+    Your Shade ancestry grants you Blindsense out to 5m: you detect things by
+    sound with no line of sight at all.
+  - *Dealing with armor.* Your Cryo Pistol has *Penetration 4*, far and away
+     the party's best answer to a heavily armored target. Even better, every hit
+     forces a Stamina check; failure means *Slowed*, and hitting an
+     already-Slowed target *Freezes* it outright.
   - *Point blank.* *Pistoleer* gives +2d at 3 squares or less (*7 dice*), and
     *CQB Specialist* means shooting inside melee does not provoke.
   - *Going where you like.* *Fey Jaunt* (6 FP): teleport anywhere within your
     move range, as a move.
 ]
 
-#beat("Watch Out For")[
-  - *Daylight.* --1d on Perception checks *and attack rolls* in direct sunlight.
+#beat("What You Should Watch For")[
+  - *Daylight.* You take --1d on Perception checks *and attack rolls* in direct sunlight.
     You are a night and interior operator.
-  - *Being hit.* 14 HP, Ward 0. Evasion 4 is good; use it and cover.
-  - *Cold iron.* Weapons of cold-worked iron do 50% more damage to you, and
-    cold-iron restraints block teleporting out.
-  - *Lifting things.* Strength 1, Endurance 1. Athletics 3, Grit 3.
-  - *Fog.* Halved exposure thresholds.
+  - *Being hit.* You're a bit more fragile than some others. Evasion 4 is good,
+    but cover is also your friend.
+  - *Physical exertion.* At Strength 1 and Endurance 1, brawn is not your forte.
 ]
 
-#beat("Your First Turn")[
-  The signature play: 2 AP *Hunt of the Autumn Court* (6 FP) to mark an enemy
-  within 15 --- your shots then ignore its cover and obscuration --- then 2 AP
+#beat("Combat Tactics")[
+  You have a signature move: use 2 AP for *Hunt of the Autumn Court* (6 FP) to mark an enemy
+  within 15 --- your shots then ignore its cover and concealment --- then 2 AP
   to shoot it. Later, *Fey Jaunt* can drop you *adjacent to the mark at any
   distance*, which is how you reach the enemy's back line. You have Focus for
-  two innate powers today, so pick the moment.
+  two innate powers per scene, so choose wisely when to make use of it.
 ]
 
 #stat-line(
@@ -368,27 +366,23 @@ Shade Echo --- _Personal business in the Weald_
 
 // =========================================================================
 #profile-header("Wishanya", "Arcane")
-Porcelain Clockwork --- _Following the method, not the money_
+Porcelain Clockwork --- _Following the method_
 
-#quote-line["Whoever is doing this is a competent alchemist. That is the part
-  that worries me."]
+#quote-line["Whoever is doing this knows what they're doing. That makes it predictable."]
 
-#portrait("porcelain.png")
+#portrait("wishanya.jpg", height: 50%)
 
 #beat("Who You Are")[
-  The Just-So built the Porcelains as companions and then remade them into
-  conduits for raw magical force. You went further on your own initiative: you
-  read. Alchemy, ritual, magitek, whatever survived the war in a condition worth
-  reading.
+  Just-So, Goddess of Magic, built the Porcelains as conduits for raw magical force.
+  You went further on your own initiative: you read voraciously; Alchemy, Ritual, Magitek,
+  whatever survived the war in a condition worth reading.
 
   You took this contract because the little you have heard about the
-  disappearances sounds *methodical*, and methodical means a practitioner, and
-  you would like to see their notes.
-
-  You are the party's artillery and its library.
+  disappearances sounds *methodical*, and methodical means a practitioner.
+  You would quite like to see their notes.
 ]
 
-#beat("Strong At")[
+#beat("What You're Good At")[
   - *Area damage.* *Flamethrower:* a Cone *11* of Thermal damage (8+d4) plus 3
     ongoing burn that lasts until saved against. Arcane 6 to cast.
   - *Knowing things.* Investigate 7 --- best in the party. Alchemy 6, Eerie 6,
@@ -401,7 +395,7 @@ Porcelain Clockwork --- _Following the method, not the money_
   - *Sneaking.* Subterfuge 6, which is unusual for artillery.
 ]
 
-#beat("Watch Out For")[
+#beat("What You Should Watch For")[
   - *Fragility.* 13 HP, Ward 0, Move 5. You are the squishiest thing here and
     the slowest. Stand behind Ushtâng.
   - *Friendly fire.* A Cone 11 is enormous. Check who is standing in it *before*
@@ -410,7 +404,7 @@ Porcelain Clockwork --- _Following the method, not the money_
   - *Fog and magnets.* Standard Clockwork frailties, at half thresholds.
 ]
 
-#beat("Your First Turn")[
+#beat("Combat Tactics")[
   Wait for two enemies to line up, then 2 AP *Flamethrower* (8 FP): Cone 11,
   difficulty 3, resisted by each target's Dodge against your cast. Full Thermal
   damage plus 3 ongoing. You have Focus for *two* casts --- more if Spell
@@ -431,58 +425,55 @@ Porcelain Clockwork --- _Following the method, not the money_
 
 // =========================================================================
 #profile-header("Kho Prea", "Divine Support")
-Human --- _Children of the Flame_
+Human --- _Sent by the Children of the Flame_
 
 #quote-line["The Clear is thinning at the western edge. Nobody in Keshto has
   mentioned it. I find that interesting."]
 
-#portrait("HumanFrontierPriest.png", height: 7cm)
+#portrait("kho-prea.jpg", height: 50%)
 
 #beat("Who You Are")[
-  Humans were adopted by the Sun God Khâru when their own mother turned on them,
-  and you have made a career of that inheritance. The Children of the Flame keep
-  the Clears alive; you are the one they send when a Clear's edge starts
-  behaving badly and the cause is probably a person.
+  Humans were adopted by the Sun God Khâru when their own mother turned on them.
+  You have elected to show your appreciation for this inheritance.
+  The Children of the Flame keep the Clears alive; when this one started showing
+  signs of destabilizing, you were sent to keep an eye on it. All the easier to
+  do so if the cause might be a person.
 
-  You carry Khâru's Ember, a sun-catalyst, and a rifle, because faith and
-  logistics are not opposites.
-
-  You are the reason the party survives its mistakes.
+  You carry with you an ember of the Sun-God's flame, light and warmth unto
+  the wretched; you also carry a gun, for the especially wretched.
 ]
 
-#beat("Strong At")[
-  - *Healing.* *Mend Wounds* (5 FP, 3 casts): an ally within 15 recovers 4+d3
-    HP. *Tap* it to double that. Command 7 to cast --- the biggest pool in the
-    party.
-  - *Making someone else terrifying.* *Sunfire Blessing:* an ally's weapon gains
-    half your damage roll as bonus Thermal damage; tapped, the full roll.
-  - *Rescuing any roll.* *Gift of the Sun:* spend 2 EP to add *2 automatic
-    successes to any check* --- and you decide *after seeing the dice*. Once per
-    round. This is the party's emergency button, and it works on other people's
-    problems only through your own checks, so speak up early.
+#beat("What You're Good At")[
+  - *Healing.* *Mend Wounds* (5 FP, 3 casts) is your staple prayer. An ally within 15
+    squares of you recovers 4+d3 HP. *Tap* it to double that. At Command 7, you have
+    a very good chance of the God-Shard coming to your aid. 
+  - *Strengthening your allies.* With *Sunfire Blessing*, an ally's weapon gains
+    half your damage roll as bonus Thermal damage, and when tapped, the full roll.
+  - *Rescuing any roll.* Your Human ancestry comes with the *Gift of the Sun:*
+    spend 2 EP to add *2 automatic successes to any check*. And you decide
+    *after seeing the dice*! 
   - *Free taps.* *Golden Apple:* you start attuned with 1 favor, and the first
     tap each encounter costs nothing.
   - *Ward 4.* The best magical defence in the party.
-  - *Being useful out of combat.* Investigate 6, Ritual 6, Deceive 6,
-    Athletics 6, Alchemy 5. Spirit Sight senses consecrated ground, undead, and
-    divine attention out to 20m --- which will matter here.
+  - *Being an all-rounder out of combat.* Investigate 6, Ritual 6, Deceive 6,
+    Athletics 6, Alchemy 5. You have a lot of useful skills in a lot of domains.
 ]
 
-#beat("Watch Out For")[
-  - *Armor 2, Evasion 2.* Physical attacks land and hurt. Keep bodies between
-    you and them.
-  - *Hostile magic.* *Gift of the Earth* cuts both ways: your buffs last two
+#beat("What You Should Watch For")[
+  - *Physical attacks.* At Armor and Evasion 2, both gun and sword land and hurt.
+    Keep something between you and them.
+  - *Hostile magic.* Your *Gift of the Earth* cuts both ways: your buffs last two
     rounds longer, but your saves against hostile magic need *3* successes
     instead of 2.
-  - *Being the only healer.* You are. There is one other healing potion in the
-    party. Budget accordingly.
+  - *Being the only healer.* Everyone else has at most a potion. Your magic may 
+    come in more than handy. 
 ]
 
-#beat("Your First Turn")[
-  Open with *Sunfire Blessing* on whoever is about to swing hardest --- Ushtâng
-  or Pâhâk --- for 2 AP and 5 FP, and tap it for free because it is your first
-  tap this encounter. Then 2 AP to shoot, or hold the AP so you can react. Keep
-  at least 5 FP in reserve at all times; that is somebody's life later.
+#beat("Combat Tactics")[
+  Open with *Sunfire Blessing* on whoever is about to swing hardest, for 2 AP and 5 FP;
+  tap it for free because it is your first tap this encounter. You can spend 2 AP to shoot,
+  or move to reposition. You'll probably want to keep 5 FP in reserve at all times; 
+  those are cheaper than a death.
 ]
 
 #stat-line(
@@ -499,55 +490,51 @@ Human --- _Children of the Flame_
 
 // =========================================================================
 #profile-header("Mbazân", "Command")
-Goldenbristle Sootbeast --- _Never-Still, and senior about it_
+Goldenbristle Sootbeast --- _The most directly concerned_
 
 #quote-line["I have lost patrols before. I have never lost them quietly. That is
   what is wrong here."]
 
-#portrait("sootbeasts.png", height: 7cm)
+#portrait("mbazan.jpg", height: 50%)
 
 #beat("Who You Are")[
   Goldenbristles were bred as the field commanders of Sootbeast armies, and the
-  Never-Still gave you a real command to go with the instinct. The missing
-  peacekeepers were *your* patrol. You were not there. You have been sent to
-  Keshto to work with the faction's local contact and put that right, and you
-  are aware that this is a courtesy rather than a promotion.
+  Never-Still gave you a real command to go with the instinct. You are in charge
+  of policing in a different village; when Keshto began losing patrols, you applied
+  to come and help --- better solve this problem here, before it's your men on the line.
 
-  You do not fight well. You make other people fight better, and you decide
+  You do not fight that well yourself. You make other people fight better, and you decide
   when they do it.
 ]
 
-#beat("Strong At")[
-  - *Talking.* Influence 7 --- the best in the party. Impose 6. You are the one
-    who deals with the Reeve, the factions, and anyone who needs handling.
-  - *Command powers.* *Rally* (4 FP): an ally within 10 gets +2 on their next
+#beat("What You're Good At")[
+  - *Talking.* You have Influence 7 --- the best in the party, and a respectable
+    Impose 6. You are good at dealing with anyone who needs to be convinced, one way or the other.
+  - *Command powers.* With *Rally* (4 FP), an ally within 10 meters gets +2 on their next
     attack or resistance check, and may immediately shake off fear. *Born
     Leader* gives +2 on the roll to activate it.
-  - *Breaking tempo.* *Slow* (5 FP, 3 casts): a target within 12 loses Movement
-    Speed and Initiative if it fails a Potential check. Psychic 6.
-  - *Owning the initiative.* +2 to your Initiative roll, and *once per round you
-    may swap places in the initiative order with any ally you can see.* This is
-    quietly the strongest thing on this page --- you can hand your turn to
-    whoever needs to go now.
-  - *Fear.* Immune, like all Sootbeasts. Also a second wind once per fight for
+  - *Breaking tempo.* You're not just a leader of men, but a psychic to boot ---
+    with *Slow* (5 FP, 3 casts), a target within 12 loses Movement 
+    Speed and Initiative if it fails its Potential check.
+  - *Owning the initiative.* As a Goldenbristle, you get +2 dice to your Initiative
+    roll, and *once per round you may swap places in the initiative order with any
+    ally you can see.* With judicious use of this ability, the battle is yours to control.
     1 AP.
-  - *Ward 4.* Tied best in the party.
+  - *Facing Magic.* With 4 Ward, you're tied for best magic resist in the party.
 ]
 
-#beat("Watch Out For")[
-  - *Fragility.* 13 HP, Evasion 2, Move 5 --- lowest HP and slowest feet, in one
-    package. Stay behind the line.
-  - *Fighting.* Martial 3, Marksmanship 3. The rifle is for when you have
+#beat("What You Should Watch For")[
+  - *Fragility.* With 13 HP, Evasion 2, and Move 5, you have the lowest HP and slowest
+    feet, in one package with rather middling dodging ability.
+  - *Fighting.* You have both Martial and Marksmanship at 3. The rifle is for when you have
     nothing better to do, which should be rare.
-  - *Poison and disease.* Sootbeast Tainted Flesh: +50% poison damage,
-    disease resisted at +2 difficulty.
-  - *Investigating.* Investigate 3. Ask Wishanya or Kalariyar.
+  - *Poison and disease.* Your Sootbeast ancestry makes you vulnerable to Chemical damage.
 ]
 
-#beat("Your First Turn")[
+#beat("Combat Tactics")[
   Before you do anything, look at the initiative order and consider swapping
   with whoever is badly placed --- it is free and it is once per round. Then 2 AP
-  *Rally* on the ally about to make the important attack, and 2 AP *Slow* on
+  *Rally* on the ally about to make the important attack, or 2 AP *Slow* on
   whatever is closing on your casters. You have Focus for roughly three casts
   plus Rallies, and 17 FP is the largest pool in the party.
 ]

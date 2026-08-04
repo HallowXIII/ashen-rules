@@ -188,6 +188,8 @@ in lieu of a more mundane action. Powers cost *Focus*, or *FP* for short.
   times you can use each of your powers today. It is usually two or three.
 ]
 
+#colbreak()
+
 === Resting and Recovery
 
 If you've been in a fight, you are likely to be injured, or have spent all your

@@ -32,6 +32,8 @@ the *Fogborn*, men adapted to the strange environment outside, and some of the
 Deathless make their home there. But life is harder, people are fewer, and whosoever
 would dwell in the Fog must be prepared to reckon with it.
 
+#colbreak()
+
 == You Are Deathless
 
 You died in the Last War. You did not stay dead.
@@ -66,6 +68,8 @@ and find out why.
 
 You took it.
 
+#colbreak()
+
 == Why You Are Here
 
 Each premade character's profile names a reason for their participation. If
@@ -78,9 +82,11 @@ reasons why anyone would pledge their name at the Black Bazaar.
 - *Something personal.* There's something about these events that touches on business
   you have not finished with.
 
+#colbreak()
+
 == Your Objective
 
-Find out what is taking people. Find out where. Stop it.
+Find out what is taking people, where it's taking them, and stop it.
 
 Sounds simple --- but if it were trivial, the authorities of the Weald would
 have dealt with it already. Be prepared to have to earn your pay, by hook, crook, 
