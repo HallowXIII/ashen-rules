@@ -44,6 +44,8 @@ material. Its wounds close on their own until fire teaches them not to.
 
 #chimera()
 
+#colbreak()
+
 === Alchemical Homunculus
 
 Šauhahten's knee-high laboratory assistants, animated by a droplet of
@@ -59,6 +61,8 @@ that his murders are arithmetic. He fights to defend the work, not to
 kill --- and he does not intend to die here.
 
 #sauhahten()
+
+#pagebreak()
 
 == Skill Check Reference
 

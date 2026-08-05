@@ -10,23 +10,31 @@
   hp: 22,
   armor: 5,
   ward: 4,
-  evasion: 2,
+  evasion: 3,
   ap: 4,
-  speed: 4,
+  speed: 8,
   characteristics: (
-    Martial: 6,
+    Martial: 8,
+    Marksmanship: 3,
+    Initiative: 6,
+    Speed: 6,
     Stamina: 5,
+    Potential: 4,
+    Arcane: 3,
+    Psychic: 3,
+    Command: 3,
+    Dodge: 6,
     Grit: 4,
   ),
   actions: (
     cr-action("melee", "Bite", "2 AP")[\
       _Melee, Martial vs Evasion, single target_ \
-      *Damage:* 4+1D8],
+      *Damage:* 5+1D8],
 
     cr-action("melee", "Pounce", "2 AP")[\
       _Move up to Speed, then Melee, Martial vs Evasion, single target_ \
-      *Damage:* 4+1D8 \
-      *On hit:* Target is Exposed (save ends).],
+      *Damage:* 5+1D8 \
+      *On hit:* D3 Initiative; on failure target is Exposed until the beginning of its next turn.],
   ),
   xp: 15,
 )
@@ -41,13 +49,18 @@
   hp: 10,
   armor: 5,
   ward: 3,
-  evasion: 2,
+  evasion: 1,
   ap: 3,
   speed: 2,
   immunities: [Frightened, Dominated],
   characteristics: (
     Martial: 5,
+    Marksmanship: 5,
+    Initiative: 4,
+    Speed: 3,
     Stamina: 4,
+    Potential: 3,
+    Dodge: 3,
     Grit: 3,
   ),
   actions: (
@@ -56,6 +69,11 @@
       *Damage:* 3+1D8 \
       *On hit:* Target is Grabbed (save ends). While Grabbed, the Husk
       does not need to spend AP to maintain the grab.],
+    cr-action("ranged", "Guardsman's Rifle", "2 AP")[\
+      _Melee, Marksmanship vs Evasion, single target_ \
+      *Range:* Medium (30) \
+      *Damage:* 8+1D6 \
+    ]
   ),
   xp: 7,
 )
@@ -78,9 +96,16 @@
   speed: 3,
   immunities: [Frightened, Dominated],
   characteristics: (
-    Martial: 6,
-    Potential: 6,
+    Martial: 8,
+    Marksmanship: 3,
+    Initiative: 6,
+    Speed: 6,
     Stamina: 5,
+    Potential: 6,
+    Arcane: 3,
+    Psychic: 6,
+    Command: 3,
+    Dodge: 6,
     Grit: 6,
   ),
   passive-traits: (
@@ -128,6 +153,7 @@
   size-type: [Size 2 Construct],
   traits: ("Construct", "Alchemical", "Size 2"),
   hp: 45,
+  fp: 20,
   armor: 6,
   ward: 5,
   evasion: 2,
@@ -136,8 +162,16 @@
   immunities: [Frightened, Dominated, Poisoned],
   characteristics: (
     Martial: 7,
-    Stamina: 6,
+    Marksmanship: 3,
+    Speed: 6,
+    Dodge: 6,
     Grit: 5,
+    Initiative: 6,
+    Stamina: 6,
+    Potential: 4,
+    Arcane: 3,
+    Psychic: 3,
+    Command: 3,
   ),
   passive-traits: (
     (
@@ -161,6 +195,12 @@
     cr-action("area", "Sweeping Lash", "2 AP")[\
       _Melee, Martial vs Evasion, all enemies within 2 squares_ \
       *Damage:* 4+1D8],
+
+    cr-action("area", "Alchemic Discharge", "3 AP")[\
+      _Innate, 10 FP, Cone 10_ \
+      *Resist:* Stamina D3 \
+      *Effect:* 8+D8 Lightning, and the target is _Dazed_ (save ends). On resist: half damage, no effect.
+    ]
   ),
   xp: 30,
 )
@@ -184,7 +224,15 @@
   immunities: [Frightened, Dominated, Poisoned],
   characteristics: (
     Martial: 4,
+    Marksmanship: 3,
+    Initiative: 6,
+    Speed: 6,
+    Dodge: 6,
     Stamina: 3,
+    Potential: 4,
+    Arcane: 3,
+    Psychic: 3,
+    Command: 3,
     Grit: 3,
   ),
   passive-traits: (
@@ -220,13 +268,19 @@
   ward: 5,
   evasion: 3,
   ap: 5,
-  speed: 3,
+  speed: 8,
   immunities: [Dominated],
   characteristics: (
-    Arcane: 7,
     Martial: 5,
-    Potential: 6,
+    Marksmanship: 3,
+    Initiative: 6,
+    Dodge: 6,
+    Speed: 6,
     Stamina: 5,
+    Potential: 6,
+    Arcane: 7,
+    Psychic: 3,
+    Command: 3,
     Grit: 5,
   ),
   passive-traits: (
@@ -251,26 +305,27 @@
   ),
   actions: (
     cr-action("ranged", "Alchemical Bolt", "2 AP")[\
-      _Ranged 10, Arcane vs Evasion, single target_ \
-      *Damage:* 5+1D8 \
+      _Ranged 10, Martial vs Evasion, single target_ \
+      *Damage:* 5+D8 Chemical \
       Šauhahten hurls a volatile alchemical compound that detonates on
       impact.],
 
     cr-action("arcane", "Soul Siphon", "3 AP")[\
-      _Ranged 8, Arcane vs Ward, single target_ \
-      *Damage:* 6+1D12 \
+      _Ranged 8, Arcane D3, 6 FP single target_ \
+      *Damage:* 6+D6 Untyped (Ward) \
       *On hit:* Šauhahten heals HP equal to half the damage dealt. \
       A tendril of pale light connects Šauhahten to the target, drawing
       vitality from them. Mortefactor technique.],
 
-    cr-action("reaction", "Fey Displacement", "1 AP")[\
+    cr-action("reaction", "Dance of the Spring Court", "Interrupt")[\
       _Trigger: Šauhahten is hit by an attack._ \
-      Šauhahten teleports up to 3 squares. Once per round. \
+      Šauhahten teleports up to 8 squares. Once per round. \
       His Mirror nature allows him to step briefly between reflections.],
 
     cr-action("area", "Distillation Overload", "3 AP")[\
-      _Burst 2 within 8, Arcane vs Evasion_ \
-      *Damage:* 10+2D8 \
+      _Burst 2 within 10 of the Array_ \
+      *Resist:* Dodge D3 \
+      *Damage:* 10+2D8 Chemical \
       Šauhahten destabilizes one of his alchemical apparatuses, causing it
       to violently discharge. This ability is only available while the
       distillation array in the laboratory is intact. Each use visibly

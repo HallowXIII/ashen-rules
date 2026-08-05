@@ -941,7 +941,7 @@
   if resistances != none [*Resistances:* #resistances \ ]
   if immunities != none [*Immunities:* #immunities \ ]
   if characteristics.len() > 0 {
-    let cline = characteristics.pairs().map(((k, v)) => [*#k* #v])
+    let cline = characteristics.pairs().map(((k, v)) => box[*#k* #v])
     cline.join[ #h(0.6em) ]
     linebreak()
   }

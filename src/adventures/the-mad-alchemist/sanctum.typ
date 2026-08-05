@@ -259,19 +259,19 @@ The victory condition is not killing Šauhahten --- it is destroying the
 laboratory. Say this out loud when the fight starts, via Sennakht's
 words if needed: _the man comes back; the work is what matters._
 
-- *The distillation array* (central chamber): 2 AP and an *Athletics D3*
-  (smashing), or any attack dealing 10+ damage to it. When it goes,
+- *The distillation array* (central chamber): 15 HP, Armor 5. 2 AP and an
+  *Athletics D3* (smashing) to deal 10 damage, or attack. When it goes,
   Šauhahten loses Distillation Overload and his composure cracks: +1d on
   his attacks, --1d on all his resist checks, for the rest of the fight.
-- *The research journals* (writing desk): 1 AP to burn or shred. If the
+- *The research journals* (writing desk): 3 AP to burn or shred. If the
   party promised them to Sennakht, this is the promise, breaking.
-- *The soul vessels* (back recess): 1 AP per vessel; there are three.
+- *The soul vessels* (back recess): 2 AP per vessel; there are three.
   Released souls dissipate with an expression that might be gratitude.
   Šauhahten reacts with genuine anguish --- not for the people, for the
   material.
-- *The reagent stockpile* (side chamber): 2 AP, and messy --- volatile
-  compounds detonate in a *Burst 1* of chemical fire, 6 damage, *Evasion
-  D2* negates, centred on the stockpile.
+- *The reagent stockpile* (side chamber): 3 AP, and messy --- volatile
+  compounds detonate in a *Burst 3* of chemical fire, 11 Thermal damage,
+  *Dodge D2* negates, centred on the stockpile.
 
 #note[
   Track destruction on a visible tally. The contract is fulfilled if the
